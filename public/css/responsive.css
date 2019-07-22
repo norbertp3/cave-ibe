@@ -4,27 +4,49 @@
 
 @media (min-width: 992px) { 
 
+    /* body */
+
     body {
         line-height: 26px;
         font-size: 16px;
     }
-    
     h1, .h1 {
         font-size: 38px;
     }
-    
     h2, .h2 {
         font-size: 24px;
     }
+    .reverse {
+        flex-direction: row;
+    }
 
+    /* Home page */
+
+    .home-ft-large-img {
+        height: 500px;
+    }
+    .home-ft-large-text {
+        padding: 50px;
+    }
+    .home-ft-large {
+        margin-bottom: 50px;
+    }
+    .home-ft-large-img-border-left {
+        border-left: 10px solid #a54b89;
+    }
+    .home-ft-large-img-border-right {
+        border-right: 10px solid #a54b89;
+    }
+    .home-box-content {
+        background-color: #eee;
+        padding: 50px; 
+    }
  }
 
- // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
 
  }
 
-// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
 
  }

@@ -8,16 +8,17 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/responsive.css">
 
-    <!-- Slick -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Bootstrap -->
+    <!-- Vendors -->
+    <link rel="stylesheet" type="text/css" href="public/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/slick-theme.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 <body>
+
     <!-- Desktop Nav -->
     <nav id="desktop-nav">
         <div class="containet-fluid">
@@ -40,22 +41,202 @@
         </div>
     </nav>
 
+    <!-- Features -->
 
+    <!-- Home Large Text Image -->
+    <div class="home-ft-large">
+        <div class="container-fluid">
+            <div class="row reverse">
+                <div class="col-12 col-lg-4">
+                    <div class="home-ft-large-text">
+
+                        <h3>Dublin</h3>
+                        <span class="custom-sep"></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        
+                        <!-- mobile btn -->
+                        <a href="#" class="d-block d-md-none"><button type="button" class="btn btn-secondary w-100">Fina a place in Dublin</button></a>
+                        
+                        <!-- desktop link -->
+                        <a href="#" class="d-none d-md-block link2">Fina a place in Dublin 
+                            <svg>
+                                <defs>
+                                    <marker id="m" markerWidth="4" markerHeight="8" 
+                                    refX="0" refY="1" viewBox="0 0 1 2">
+                                    <polygon points="0,0 1,1 0,2" fill="#a54b89"/>
+                                    </marker>
+                                    </defs>
+                                <line x1="0" y1="50%" x2="100%" y2="50%" 
+                                stroke-width="2" marker-end="url(#markerArrow)" stroke="#a54b89"/>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 pr-md-0">
+                    <div class="home-ft-large-img home-ft-large-img-border-left" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Home Large Image Text -->
+    <div class="home-ft-large">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-12 col-lg-8 pl-md-0">
+                    <div class="home-ft-large-img home-ft-large-img-border-right" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center; "></div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="home-ft-large-text">
+
+                        <h3>Dublin</h3>
+
+                        <span class="custom-sep"></span>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        
+                        <!-- mobile btn -->
+                        <a href="#" class="d-block d-md-none"><button type="button" class="btn btn-secondary w-100">Fina a place in Dublin</button></a>
+                        
+                        <!-- desktop link -->
+                        <a href="#" class="d-none d-md-block link2">Fina a place in Dublin 
+                                <svg>
+                                    <defs>
+                                        <marker id="m" markerWidth="4" markerHeight="8" 
+                                        refX="0" refY="1" viewBox="0 0 1 2">
+                                        <polygon points="0,0 1,1 0,2" fill="#a54b89"/>
+                                        </marker>
+                                        </defs>
+                                    <line x1="0" y1="50%" x2="100%" y2="50%" 
+                                    stroke-width="2" marker-end="url(#markerArrow)" stroke="#a54b89"/>
+                                </svg>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Center heading and content -->
+    <div class="container text-center">
+        <h2>Heading</h2>
+        <span class="custom-sep mx-auto"></span>
+        <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+
+    <!-- Home 3 boxes -->
+    <div class="home-3-boxes d-none d-lg-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="public/images/Screenshot_35.jpg" alt="" style="width: 100%; border-bottom: solid 5px #f7be40">
+                    <div class="home-box-content">
+                        <h1>abc</h1>
+                        <span class="custom-sep"></span>
+                        <p>sssfcd sd fg</p>
+                        <a href="#" class="d-none d-md-block link2">Fina a place in Dublin 
+                                <svg>
+                                    <defs>
+                                        <marker id="m" markerWidth="4" markerHeight="8" 
+                                        refX="0" refY="1" viewBox="0 0 1 2">
+                                        <polygon points="0,0 1,1 0,2" fill="#a54b89"/>
+                                        </marker>
+                                        </defs>
+                                    <line x1="0" y1="50%" x2="100%" y2="50%" 
+                                    stroke-width="2" marker-end="url(#markerArrow)" stroke="#a54b89"/>
+                                </svg>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="public/images/Screenshot_35.jpg" alt="" style="width: 100%; border-bottom: solid 5px #00aebb">
+                    <div class="home-box-content">
+                            <h1>abc</h1>
+                            <span class="custom-sep"></span>
+                            <p>sssfcd sd fg</p>
+                            <a href="#" class="d-none d-md-block link2">Fina a place in Dublin 
+                                    <svg>
+                                        <defs>
+                                            <marker id="m" markerWidth="4" markerHeight="8" 
+                                            refX="0" refY="1" viewBox="0 0 1 2">
+                                            <polygon points="0,0 1,1 0,2" fill="#a54b89"/>
+                                            </marker>
+                                            </defs>
+                                        <line x1="0" y1="50%" x2="100%" y2="50%" 
+                                        stroke-width="2" marker-end="url(#markerArrow)" stroke="#a54b89"/>
+                                    </svg>
+                                </a>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="public/images/Screenshot_35.jpg" alt="" style="width: 100%; border-bottom: solid 5px #b9c077">
+                    <div class="home-box-content">
+                            <h1>abc</h1>
+                            <span class="custom-sep"></span>
+                            <p>sssfcd sd fg</p>
+                            <a href="#" class="d-none d-md-block link2">Fina a place in Dublin 
+                                    <svg>
+                                        <defs>
+                                            <marker id="m" markerWidth="4" markerHeight="8" 
+                                            refX="0" refY="1" viewBox="0 0 1 2">
+                                            <polygon points="0,0 1,1 0,2" fill="#a54b89"/>
+                                            </marker>
+                                            </defs>
+                                        <line x1="0" y1="50%" x2="100%" y2="50%" 
+                                        stroke-width="2" marker-end="url(#markerArrow)" stroke="#a54b89"/>
+                                    </svg>
+                                </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 boxes mobile slider -->
+    <section class="home-3-boxes-slider slider d-lg-none">
+        <div>
+            <img src="public/images/Screenshot_35.jpg" alt="" style="width: 190px; height: 190px; border-bottom: solid 5px #f7be40">
+        </div>
+        <div>
+            <img src="public/images/Screenshot_35.jpg" alt="" style="width: 190px; height: 190px; border-bottom: solid 5px #00aebb">
+        </div>
+        <div>
+            <img src="public/images/Screenshot_35.jpg" alt="" style="width: 190px; height: 190px; border-bottom: solid 5px #b9c077">
+        </div>
+    </section>
 
 
     <!-- JS Files -->
 
     <!-- jQuery -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    
     <!-- Slick -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="public/js/slick.min.js"></script>
     
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- Custom -->
     <script src="public/js/custom.js"></script>
+
+    <script type="text/javascript">
+            $(".home-3-boxes-slider").slick({
+                dots: true,
+                infinite: false,
+                slidesToShow: 1.5,
+                slidesToScroll: 1
+            });
+    </script>
 
 
 </body>
