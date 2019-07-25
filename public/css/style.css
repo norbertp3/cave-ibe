@@ -17,15 +17,16 @@ h1, .h1 {
 
 h2, .h2 {
     font-family: 'Roboto Slab', serif;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 400;
     color:  #716C70; 
+    font-size: 26px;
 }
 h3, .h3 {
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     font-weight: 400;
-    color:  #473E47; 
+    color:  #473E47;
 }
 h4, .h4 {
     font-family: 'Roboto Slab', serif;
@@ -45,7 +46,7 @@ p {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     color:  #473E47; 
-    line-height: 22px;
+    line-height: 1.4;
     font-size: 15px;
 }
 
@@ -81,12 +82,6 @@ a.link2, a.link2:hover {
     color: #473e47!important;
     text-decoration: none;
 }
-/* a.link2:after {
-    width: 60px;
-} */
-/* a.link2:after:hover {
-    content:"\00a9";
-} */
 
 svg {
     width: 50px;
@@ -94,16 +89,13 @@ svg {
     transition:width 2s ease;
     overflow: visible;
 }
-.link2 svg:hover {
-    width: 60px;
-}
 
 .custom-sep {
     width: 50px;
     display: block;
-    border-bottom: solid 5px #a54b89;
-    margin: 35px 0;
+    margin: 20px 0;
 }
+
 
 /* ------------------------- */
 
@@ -114,19 +106,44 @@ svg {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100px;
-    width: auto;
+    min-height: 180px;
+    min-width: 280px;
+    margin-bottom: 10px;
 }
 .home-ft-large {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
-.home-3-boxes-slider{
+.home-ft-large h2 {
+    margin-bottom: 13px;
+    font-size: 20px;
+}
+
+.home-3-boxes-slider {
     margin-left: 15px;
-    /* margin-right: -15px; */
     overflow: hidden;
-    /* max-width: 85%; */
+    position: relative;
 }
 .home-3-boxes-slider-slide {
-    /* padding-right: 15px!important; */
     display: block;
+}
+
+.home-3-boxes-slider span {
+    color: #fff;
+    top: 150px;
+    position:absolute;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+}
+.home-3-boxes-slider figure  {
+    position: relative;
+}
+
+    /* Standard Heading Text */
+
+.standard-heading-text {
+    margin-bottom: 40px
+}
+.standard-heading-text h2 {
+    margin-top: 10px;
+    font-size:34px;
 }
