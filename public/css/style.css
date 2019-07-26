@@ -268,3 +268,88 @@ svg {
     font-weight: normal;
     background-color: #00aebb!important;
 }
+
+/* Footer */
+
+footer {
+    background-color: #473e47;
+    padding: 44px 0 21px 0;
+}
+
+.footer-top {
+    height: 54px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+}
+
+footer p, li {
+    color: #fff;
+}
+
+footer a {
+    color: #fff!important;
+    font-weight: 400;
+}
+footer a:hover {
+    color: #fff!important;
+    font-weight: 400;
+    text-decoration: none;
+}
+footer ul {
+    padding-left: 0;
+    font-size: 16px;
+}
+footer li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+footer li:last-child {
+    padding-bottom: 00px;
+}
+
+.footer-desktop-nav li {
+    opacity: 0.5;
+}
+
+.social-channels-footer {
+    padding-left: 0;
+}
+
+.social-channels-footer li {
+    display: inline-block;
+}
+ul.social-channels-footer {
+    padding: 20px 0;
+    border-top: 1px solid #fff;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.social-channels-footer .fa { 
+    height: 30px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #473e47;
+    padding-top: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.social-channels-footer .fa:hover { 
+    background-color: #fff; 
+    cursor: pointer; 
+}
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+.social-channels-footer .fa-facebook-f {
+    padding-left: 8px;
+    padding-top: 6px;
+}
+.social-channels-footer .fa-instagram {
+    padding-left: 6px;
+    padding-top: 6px;
+}
+.social-channels-footer .fa-linkedin {
+    padding-left: 7px;
+    padding-top: 5px;
+}

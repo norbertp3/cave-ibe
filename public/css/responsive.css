@@ -95,6 +95,9 @@
         color: #fff;
         line-height: 1.53;
     }
+    .home-3-boxes {
+        margin: 60px; 
+    }
  }
 
  @media (min-width: 1200px) {
