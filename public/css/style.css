@@ -127,6 +127,11 @@ svg {
     display: block;
 }
 
+.home-box-content {
+    background-color: #eee;
+    padding: 15px; 
+}
+
 .home-3-boxes-slider span {
     color: #fff;
     top: 150px;
@@ -146,4 +151,120 @@ svg {
 .standard-heading-text h2 {
     margin-top: 10px;
     font-size:34px;
+}
+
+    /* Insta */
+
+#instagram {
+    visibility: visible;
+    margin: 10px 0;
+}
+
+#instagram .imgDescription {
+    font-size: 11px;
+    color: white;
+}
+
+.imageTimeline figure { width: 32%; overflow: hidden; position: relative; margin: 0 0 10px; }
+
+.imageTimeline figure figcaption { background: rgba(55, 82, 93, 0.8); color: #fff; display: -webkit-flex; display: -moz-flex; display: flex; font-family: 'Lato', sans-serif; font-size: 15px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding: 20px; padding-top: 80px; opacity: 0; visibility: hidden; transition: all 0.5s ease; -webkit-transition: all 0.5s ease; z-index: 1 }
+
+.imageTimeline figure figcaption * { opacity: 0; transform: scale(0.8); -webkit-transform: scale(0.8); transition: opacity 0.3s ease 0.2s, transform 0.3s ease 0.2s; -webkit-transition: opacity 0.3s ease 0.2s, transform 0.3s ease 0.2s }
+
+.imageTimeline figure figcaption .imgButtons { position: absolute; top: 40px; left: 20px; right: 20px; overflow: hidden; padding: 0 1px }
+
+.imageTimeline figure figcaption .imgButtons a { color: #fff }
+
+.imageTimeline figure figcaption .imgButtons a + a { float: right }
+
+.imageTimeline figure figcaption .imgButtons a:hover { color: #ff9c86 }
+
+.imageTimeline figure figcaption .imgButtons i { font-size: 18px; margin-right: 5px }
+
+.imageTimeline figure figcaption p { font-family: 'Lato', sans-serif; font-size: 15px; text-align: center }
+
+.imageTimeline figure figcaption .imgDescription { display: -webkit-flex; display: -moz-flex; display: flex; align-items: center }
+
+.imageTimeline figure:hover figcaption { opacity: 1; visibility: visible }
+
+.imageTimeline figure:hover figcaption * { opacity: 1; transform: scale(1); -webkit-transform: scale(1) }
+
+.imageTimeline figure figcaption { font-size: 14px; padding-top: 50px }
+
+.imageTimeline figure figcaption .imgButtons { top: 20px }
+
+.imageTimeline figure figcaption p { font-size: 14px }
+
+.imageTimeline figure:hover { 
+    cursor: pointer; 
+}
+
+.flexRow, .flexColumn { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; flex-direction: row; justify-content: space-between }
+
+.flexRow { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; align-items: stretch; -webkit-align-items: stretch; }
+
+
+/* Social Icons Main */
+
+.social-channels {
+    padding-left: 0;
+    margin: 40px 0;
+}
+
+.social-channels li {
+    display: inline-block;
+    margin: 0 13.3px;
+}
+
+.social-channels .fa { 
+    height: 40px;
+    width: 40px;
+    background-color: #a54b89;
+    color: #fff;
+    padding-top: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.social-channels .fa:hover { 
+    background-color: #844882; 
+    cursor: pointer; 
+}
+
+/* Newsletter */
+
+.newsletter {
+    background-color: rgba(71, 62, 71, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.newsletter span { 
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+.newsletter p { 
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.47;
+}
+.newsletter .input {
+    border-radius: 1px;
+    background-color: #ffffff;
+    padding: 5px;
+    width: 100%;
+    color: #413b40;
+    font-size: 16px;
+    padding: 5px 10px;
+    line-height: 1.5;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 20px;
+    
+}
+.newsletter .submitBtn {
+    width: 100%;
+    font-weight: normal;
+    background-color: #00aebb!important;
 }
