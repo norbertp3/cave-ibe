@@ -60,8 +60,13 @@
         font-size: 16px;
         line-height: 1.63
     }
-    .imageTimeline figure { width: 16.25%; overflow: hidden; position: relative }
-    
+    .imageTimeline figure { 
+        width: 16.25%; 
+        overflow: hidden; 
+        position: relative 
+    }
+    .imageTimeline figure figcaption .imgButtons { top: 20px; }
+
     .social-channels .fa { 
         height: 50px;
         width: 50px;
@@ -97,6 +102,37 @@
     }
     .home-3-boxes {
         margin: 60px; 
+    }
+    .footer-bottom-nav {
+        margin-top: 21px;
+    }
+    .footer-top {
+        padding-bottom: 50px;
+    }
+    .social-channels-footer .fa-facebook-f {
+        padding-left: 8px;
+        padding-top: 6px;
+    }
+    .social-channels-footer .fa-instagram {
+        padding-left: 6px;
+        padding-top: 6px;
+    }
+    .social-channels-footer .fa-linkedin {
+        padding-left: 7px;
+        padding-top: 5px;
+    }
+    .mobile-footer-nav {
+        text-align: left;
+    }
+    .footer-bottom-nav li:after {
+        content:"\2022";
+        padding-left: 5px;
+    }
+    .footer-bottom-nav li:last-child:after {
+        display: none;
+    }
+    ul.footer-master-nav {
+        column-count: 1;
     }
  }
 

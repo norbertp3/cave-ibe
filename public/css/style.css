@@ -179,7 +179,7 @@ svg {
 
 .imageTimeline figure figcaption .imgButtons a:hover { color: #ff9c86 }
 
-.imageTimeline figure figcaption .imgButtons i { font-size: 18px; margin-right: 5px }
+.imageTimeline figure figcaption .imgButtons i { font-size: 18px; margin-right: 5px; color: #fff; }
 
 .imageTimeline figure figcaption p { font-family: 'Lato', sans-serif; font-size: 15px; text-align: center }
 
@@ -191,7 +191,7 @@ svg {
 
 .imageTimeline figure figcaption { font-size: 14px; padding-top: 50px }
 
-.imageTimeline figure figcaption .imgButtons { top: 20px }
+.imageTimeline figure figcaption .imgButtons { top: 50% }
 
 .imageTimeline figure figcaption p { font-size: 14px }
 
@@ -261,7 +261,8 @@ svg {
     line-height: 1.5;
     font-family: 'Nunito', sans-serif;
     margin-bottom: 20px;
-    
+    border: 0px solid;
+    padding-bottom: 7px;
 }
 .newsletter .submitBtn {
     width: 100%;
@@ -280,6 +281,7 @@ footer {
     height: 54px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     margin-bottom: 30px;
+    padding-bottom: 70px;
 }
 
 footer p, li {
@@ -304,7 +306,7 @@ footer li {
     padding-bottom: 10px;
 }
 footer li:last-child {
-    padding-bottom: 00px;
+    padding-bottom: 0px;
 }
 
 .footer-desktop-nav li {
@@ -320,7 +322,7 @@ footer li:last-child {
 }
 ul.social-channels-footer {
     padding: 20px 0;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #665a66;
     margin-bottom: 0;
     margin-top: 20px;
 }
@@ -342,14 +344,36 @@ ul.social-channels-footer {
     margin-bottom: 10px;
 }
 .social-channels-footer .fa-facebook-f {
-    padding-left: 8px;
+    padding-left: 0px;
     padding-top: 6px;
 }
 .social-channels-footer .fa-instagram {
-    padding-left: 6px;
+    padding-left: 0px;
     padding-top: 6px;
 }
 .social-channels-footer .fa-linkedin {
-    padding-left: 7px;
+    padding-left: 0px;
     padding-top: 5px;
+}
+.footer-bottom-nav {
+    text-align: center;
+    margin-top: 30px;
+}
+.footer-bottom-nav li {
+    display: inline-block;
+    opacity: 0.5;
+}
+.footer-bottom-nav li:nth-child(1):after {
+    content:"\2022";
+    padding-left: 5px;
+}
+.footer-bottom-nav li:nth-child(2):after {
+    content:"\2022";
+    padding-left: 5px;
+}
+.mobile-footer-nav {
+    text-align: center;
+}
+ul.footer-master-nav {
+    column-count: 2;
 }
