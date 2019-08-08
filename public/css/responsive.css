@@ -28,8 +28,45 @@
     .custom-sep {
         margin: 30px 0;
     }
+    a.link-btn{
+        font-family: 'Roboto Slab', serif;
+        font-size: 18px;
+        border-radius: 1px;
+        background-color: rgba(0,0,0,0);
+        color: #473e47!important;
+        padding: 0;
+        text-align: left;
+    }
 
     /* Home page */
+
+    .home-slide {
+        height: 520px;
+    }
+
+    .home-banner-large-text {
+        padding: 77px;
+        text-align: left;
+    }
+
+    .home-banner-large-text .custom-sep {
+        margin-left: 0;
+    }
+
+    .home-slide-text {
+        position: absolute!important;
+        top: -40px;
+        margin-left: 77px;
+        text-align: right;
+        padding: 100px 30px 55px 30px;
+    }
+    .home-slide-text-border {
+        border-left: 10px solid #3aaebb;
+    }
+
+    .slick-initialized .slick-slide {
+        padding-top: 40px;
+    }
 
     .home-ft-large-img {
         height: 520px;

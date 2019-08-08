@@ -19,29 +19,52 @@
 </head>
 <body>
 
-    <!-- Desktop Nav -->
-    <!-- <nav id="desktop-nav">
-        <div class="containet-fluid">
-            <div class="col-md-3">
+    <!-- Home Banner -->
 
-            </div>
-            <div class="col-md-6">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
+        <!-- Home Large Image Text -->
 
+        <section class="home-ft-large mt-5">
+            <div class="container-fluid">
+                <div class="row reverse">
+                    <div class="col-12 col-lg-8 pl-lg-0">
+                        <div class="home-slider slider">
+                            <div>
+                                <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center;"></div>
+                                <div class="home-slide-text home-slide-text-border">
+                                    <h3>Last Minute Sale!</h3>
+                                    <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
+                                    <a href="">Learn More</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center;"></div>
+                                <div class="home-slide-text home-slide-text-border">
+                                    <h3>Last Minute Sale!</h3>
+                                    <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
+                                    <a href="">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="home-banner-large-text">
+                            <h2>the KeyCollections</h2>
+                            <span class="custom-sep" style="border-bottom: 4px solid #a54b89"></span>
+                            <p>theKeyCollections brings together a unique set of hotels, apartments and guesthouses, each with its own distinctive character, in Dublin, London and Carrick-on Shannon. Each property provides our guests with a great place to stay in an outstanding central location that allows you to delve into, ramble through and enjoy the unique qualities of your surroundings.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav> -->
+        </section>
 
     <!-- Features -->
+
+    <!-- Center heading and content -->
+
+    <div class="container text-center standard-heading-text">
+        <h2>Our Locations</h2>
+        <span class="custom-sep mx-auto" style="border-bottom: 4px solid #a54b89"></span>
+    </div>
 
     <!-- Home Large Text Image -->
 
@@ -54,15 +77,7 @@
                         <h2>Dublin</h2>
                         <span class="custom-sep d-none d-lg-block" style="border-bottom: 4px solid #a54b89"></span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        
-                        <!-- mobile btn -->
-                        <a href="#" class="d-block d-lg-none"><button type="button" class="btn btn-secondary w-100">Fina a place in Dublin</button></a>
-                        
-                        <!-- desktop link -->
-                        <a href="#" class="d-none d-lg-block link2">Fina a place in Dublin 
-
-                        </a>
-
+                        <a href="#" class="link-btn">Find a place in Dublin</a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-8 pr-lg-0">
@@ -88,11 +103,7 @@
                         <h2>Dublin</h2>
                         <span class="custom-sep d-none d-lg-block" style="border-bottom: 4px solid #a54b89"></span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <!-- mobile btn -->
-                        <a href="#" class="d-block d-lg-none"><button type="button" class="btn btn-secondary w-100">Fina a place in Dublin</button></a>
-                        <!-- desktop link -->
-                        <a href="#" class="d-none d-lg-block link2">Find a place in Dublin 
-                        </a>
+                        <a href="#" class="link-btn">Find a place in Dublin</a>
                     </div>
                 </div>
             </div>
@@ -386,9 +397,16 @@
 
     <script type="text/javascript">
             $(".home-3-boxes-slider").slick({
-                dots: true,
+                dots: false,
                 infinite: false,
                 slidesToShow: 1.5,
+                slidesToScroll: 1
+            });
+
+            $(".home-slider").slick({
+                dots: true,
+                infinite: false,
+                slidesToShow: 1,
                 slidesToScroll: 1
             });
     </script>
