@@ -85,14 +85,14 @@ a, a:hover {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     color: #a54b89!important;
-    text-decoration: none;
+    text-decoration: none!important;
+    font-weight: 600;
 }
 
 a.link2, a.link2:hover {
     font-family: 'Roboto Slab', serif;
     font-size: 18px;
     color: #473e47!important;
-    text-decoration: none;
 }
 
 svg {
@@ -123,6 +123,10 @@ a.link-btn {
 
 a.link-btn:hover {
     text-decoration: none;
+}
+
+.nav-item a {
+    font-weight: 400;
 }
 
 
@@ -493,6 +497,7 @@ ul.social-channels-footer {
     content:"\2022";
     padding-left: 5px;
 }
+
 .mobile-footer-nav {
     text-align: center;
 }

@@ -20,89 +20,231 @@
 
     <!-- Mobile Navigation -->
         <div class="d-lg-none">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="p-3 w-100">
-                <a class="navbar-brand" href="#"><img src="public/images/key-logo.png"></a>
-                <button class="navbar-toggler collapsed float-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar top-bar"></span>
-                    <span class="icon-bar middle-bar"></span>
-                    <span class="icon-bar bottom-bar"></span>                
-                </button>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="mobile-nav-wrapper">
+                    <a class="navbar-brand" href="#"><a href=""><img src="public/images/key-logo.png"></a>
+                    <button class="navbar-toggler collapsed float-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>                
+                    </button>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Features</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">Pricing</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown link <i class="fa fa-angle-down rotate" style="float: right"></i>
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
+                        </div>
                     </li>
                     <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                          </li>
-                  </ul>
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    </ul>
                 </div>
-              </nav>
-            </div>
+            </nav>
+        </div>
 
         <!-- Desktop Navigation -->
         <div class="d-none d-lg-block">
-                <nav class="navbar navbar-expand-lg navbar-light nav-main">
-                        <a class="navbar-brand" href="#"><img src="public/images/key-logo.png"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                          <ul class="navbar-nav mx-auto">
-                            <li class="nav-item active">
-                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown link
-                              </a>
-                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <span class="navbar-text">
-                            <ul class="my-auto">
-                                <li><i class="fa fa-adjust" aria-hidden="true"></i></li>
-                                <li><i class="fa fa-adjust" aria-hidden="true"></i></li>
-                                <li><i class="fa fa-adjust" aria-hidden="true"></i></li>
-                            </ul>
-                        </span>
-                      </nav>
-                    </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="public/images/key-logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Locations
+                            </a>
+                            <div class="dropdown-menu w-100" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="row nav-width-container">
+                                    <div class="col-lg-4">
+                                        <a href="">
+                                            <div class="card" style="">
+                                                <img src="public/images/menu-dublin.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h4>Dublin<span>16 places to Stay</span></h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="">
+                                        <div class="card" style="">
+                                            <img src="public/images/menu-london.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h4>London<span>1 place to Stay</span></h4>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                            <a href="">
+                                        <div class="card" style="">
+                                            <img src="public/images/menu-carrick.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h4>Carrick-On-Shannon<span>1 place to Stay</span></h4>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hotels
+                            </a>
+                            <div class="dropdown-menu w-100" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="nav-width-container multi-row-nav">
+                                    <h3>Dublin</h3>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <a href="">
+                                                <ul>
+                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li>                                                        
+                                                        <div class="card-body">
+                                                            <h4>Handels Hotel Temple Bar</h4>
+                                                            <img src="public/images/reviews-placeholder.svg">
+                                                            <p>Temple Bar, Dublin 1</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="">
+                                                <ul>
+                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li>                                                        
+                                                        <div class="card-body">
+                                                            <h4>The Camden Hotel</h4>
+                                                            <img src="public/images/reviews-placeholder.svg">
+                                                            <p>Camden St, Dublin 2</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="">
+                                                <ul>
+                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li>                                                        
+                                                        <div class="card-body">
+                                                            <h4>Hotel St. George</h4>
+                                                            <img src="public/images/reviews-placeholder.svg">
+                                                            <p>Parnell Square, Dublin 1</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="">
+                                                <ul>
+                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li>                                                        
+                                                        <div class="card-body">
+                                                            <h4>Kildare Street Hotel</h4>
+                                                            <img src="public/images/reviews-placeholder.svg">
+                                                            <p>Kildare St, Dublin 2</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="">
+                                                <ul>
+                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li>                                                        
+                                                        <div class="card-body">
+                                                            <h4>The Gate Hotel</h4>
+                                                            <img src="public/images/reviews-placeholder.svg">
+                                                            <p>Parnell Street, Dublin 1</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                        </div>                                        
+                                    </div>
+                                    <h3>London</h3>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <a href="">
+                                                <ul>
+                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li>                                                        
+                                                        <div class="card-body">
+                                                            <h4>The Exhibitionist</h4>
+                                                            <img src="public/images/reviews-placeholder.svg">
+                                                            <p>South Kensington, London</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                        </div>                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Apartaments</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Guesthouses
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="navbar-text">
+                    <ul class="my-auto">
+                        <li><a href=""><img src="public/images/icon-wishlist.svg"></a></li>
+                        <li><a href=""><img src="public/images/icon-login.svg"></a></li>
+                        <li><a href=""><img src="public/images/icon-contact.svg"></a></li>
+                    </ul>
+                </span>
+            </nav>
+        </div>
 
     <!-- Mobile booking widget button -->
 

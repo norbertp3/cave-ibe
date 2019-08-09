@@ -53,6 +53,14 @@
         background:#fff;
         padding: 0 10px;
         margin-bottom: 40px;
+        font-weight: 600;
+    }
+    .expand-more a:active, .expand-more a:focus {
+        text-decoration: none;
+    }
+    .mobile-nav-wrapper {
+        padding: 16px 20px;
+        width: 100%;
     }
 
     /* Main Navigation */
@@ -142,6 +150,11 @@
 
       .navbar-light .navbar-toggler, .navbar-light .navbar-toggler:active {
           border: none!important;
+      }
+
+      .navbar-toggler:focus, .navbar-toggler:active {
+        outline: none;
+        box-shadow: none;
       }
 }
 
@@ -309,19 +322,105 @@
 
     /* Main Nav */
 
-    .nav-main a {
+    .navbar {
+        background-color: #473e47;
+    }
+
+    .navbar a {
         color: #fff!important;
-        font-size: 18px;
+        font-size: 15px;
+        font-weight: 400;
     }
 
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 20px!important;
-        padding-left: 20px!important;
+        padding: 20px 5px!important;
     }
 
     .navbar-text li {
         display: inline-block;
-        padding: 0 15px;
+        padding: 5px;
+    }
+    nav .nav-width-container {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        border: none;
+        background: #3a323a;
+        margin-top: 0;
+    }
+    .dropdown-menu span {
+        font-size: 14px;
+        color: rgba(234, 233, 234, 0.6);
+        margin-left: 15px;
+    }
+    .dropdown-menu h4 {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 0;
+    }
+    .dropdown-menu .card-body {
+        background-color: #473e47;
+        padding: 10px 15px 15px 15px;
+    }
+    .dropdown-menu .card {
+        border: none;
+        border-radius: 0!important;
+    }
+    .dropdown-menu {
+        border-radius: 0!important;
+        padding: 30px 0!important;
+    }
+    .multi-row-nav h3 {
+        color: #fff;
+        position: relative;
+        margin-bottom: 14px;
+    }
+    .multi-row-nav h3:after {
+        content: "";
+        display: block;
+        width: 92%;
+        height: 1px;
+        background: #473e47;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: -2;
+    }
+    .multi-row-nav h4 {
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+    }
+    .multi-row-nav p {
+        font-size: 14px;
+        font-family: 'Nunito', sans-serif!important;
+        color: rgba(234, 233, 234, 0.6);
+        margin-bottom: 0;
+    }
+    .multi-row-nav .card-body {
+        padding: 14px auto auto 13px;
+        min-height: 100px;
+        width: 220px;
+    }
+    .multi-row-nav li {
+        display: inline-block;
+    }
+    .multi-row-nav ul {
+        padding-left: 0;
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .position-static.show {
+        background-color: #3a323a;
+    }
+    .navbar {
+        padding: 0 1rem!important;
+    }
+    .dropdown-item:focus, .dropdown-item:hover {
+        background-color: #473e47!important;
+    }
+    .dropdown-toggle::after {
+        display: none!important;
     }
  }
 
@@ -330,5 +429,28 @@
     .home-box-content {
         padding: 70px; 
     }
-    
+    .multi-row-nav .card-body {
+        width: 264px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 20px!important;
+        padding-left: 20px!important;
+    }
+    .navbar-text li {
+        display: inline-block;
+        padding: 0 5px;
+    }
+    .navbar a {
+        color: #fff!important;
+        font-size: 15px;
+        font-weight: 400;
+    }
+ }
+ @media (min-width: 1300px) {
+    .navbar-text li {
+        padding: 0 15px;
+    }
+    .navbar a {
+        font-size: 18px;
+    }
  }
