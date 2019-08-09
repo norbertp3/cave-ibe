@@ -93,6 +93,7 @@ a.link2, a.link2:hover {
     font-family: 'Roboto Slab', serif;
     font-size: 18px;
     color: #473e47!important;
+    font-weight: 400;
 }
 
 svg {
