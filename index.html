@@ -15,47 +15,159 @@
     <link rel="stylesheet" type="text/css" href="public/css/slick-theme.css"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
 </head>
 <body>
 
+    <!-- Mobile Navigation -->
+        <div class="d-lg-none">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="p-3 w-100">
+                <a class="navbar-brand" href="#"><img src="public/images/key-logo.png"></a>
+                <button class="navbar-toggler collapsed float-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>                
+                </button>
+            </div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link <i class="fa fa-angle-down rotate" style="float: right"></i>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                          </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
+        <!-- Desktop Navigation -->
+        <div class="d-none d-lg-block">
+                <nav class="navbar navbar-expand-lg navbar-light nav-main">
+                        <a class="navbar-brand" href="#"><img src="public/images/key-logo.png"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown link
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <span class="navbar-text">
+                            <ul class="my-auto">
+                                <li><i class="fa fa-adjust" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-adjust" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-adjust" aria-hidden="true"></i></li>
+                            </ul>
+                        </span>
+                      </nav>
+                    </div>
+
+    <!-- Mobile booking widget button -->
+
+    <section class="d-block d-lg-none">
+        <div class="mobile-booking-widget" style="background: url(public/images/home-banner-mob.jpg) no-repeat center center;">
+            <a href="">
+                <div class="booking-widget-middle">
+                    <div class="booking-widget-middle-input"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Choose dates</div>
+                    <div class="booking-widget-middle-btn">SEARCH</div>
+                </div>
+            </a>
+    </section>
+
     <!-- Home Banner -->
 
-        <!-- Home Large Image Text -->
-
-        <section class="home-ft-large mt-5">
-            <div class="container-fluid">
-                <div class="row reverse">
-                    <div class="col-12 col-lg-8 pl-lg-0">
-                        <div class="home-slider slider">
-                            <div>
-                                <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center;"></div>
-                                <div class="home-slide-text home-slide-text-border">
-                                    <h3>Last Minute Sale!</h3>
-                                    <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
-                                    <a href="">Learn More</a>
-                                </div>
+    <section class="home-slider-large mt-5">
+        <div class="container-fluid">
+            <div class="row reverse">
+                <div class="col-12 col-lg-8 pl-lg-0">
+                    <div class="home-slider slider">
+                        <div>
+                            <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center;"></div>
+                            <div class="home-slide-text home-slide-text-border">
+                                <h3>Last Minute Sale!</h3>
+                                <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
+                                <a href="">Learn More</a>
                             </div>
-                            <div>
-                                <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center;"></div>
-                                <div class="home-slide-text home-slide-text-border">
-                                    <h3>Last Minute Sale!</h3>
-                                    <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
-                                    <a href="">Learn More</a>
-                                </div>
+                        </div>
+                        <div>
+                            <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center;"></div>
+                            <div class="home-slide-text home-slide-text-border">
+                                <h3>Last Minute Sale!</h3>
+                                <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
+                                <a href="">Learn More</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center;"></div>
+                            <div class="home-slide-text home-slide-text-border">
+                                <h3>Last Minute Sale!</h3>
+                                <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
+                                <a href="">Learn More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="home-banner-large-text">
-                            <h2>the KeyCollections</h2>
-                            <span class="custom-sep" style="border-bottom: 4px solid #a54b89"></span>
-                            <p>theKeyCollections brings together a unique set of hotels, apartments and guesthouses, each with its own distinctive character, in Dublin, London and Carrick-on Shannon. Each property provides our guests with a great place to stay in an outstanding central location that allows you to delve into, ramble through and enjoy the unique qualities of your surroundings.</p>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="home-banner-large-text">
+                        <h2>the KeyCollections</h2>
+                        <span class="custom-sep" style="border-bottom: 4px solid #a54b89"></span>
+                        <div class="wrapper">
+                            <div class="small">
+                                <p>theKeyCollections brings together a unique set of hotels, apartments and guesthouses, each with its own distinctive character, in Dublin, London and Carrick-on Shannon. Each property provides our guests with a great place to stay in an outstanding central location that allows you to delve into, ramble through and enjoy the unique qualities of your surroundings.</p>
+                            </div>
+                            <div class="d-block d-lg-none mb-3 mb-lg-0">
+                                <div class="expand-more">
+                                    <a href="#">READ MORE</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <!-- Features -->
 
@@ -211,7 +323,7 @@
                     <a href="#" target="_blank"><div class="imgDescription"></div></a>
                 </figcaption>
             </figure>
-            <figure id="inst1">
+            <figure id="inst2">
                 <img src="public/images/insta1.jpg" alt="img">
                 <figcaption>
                     <div class="imgButtons">
@@ -221,7 +333,7 @@
                     <a href="#" target="_blank"><div class="imgDescription"></div></a>
                 </figcaption>
             </figure>
-            <figure id="inst1">
+            <figure id="inst3">
                 <img src="public/images/insta1.jpg" alt="img">
                 <figcaption>
                     <div class="imgButtons">
@@ -231,7 +343,7 @@
                     <a href="#" target="_blank"><div class="imgDescription"></div></a>
                 </figcaption>
             </figure>
-            <figure id="inst1">
+            <figure id="inst4">
                 <img src="public/images/insta1.jpg" alt="img">
                 <figcaption>
                     <div class="imgButtons">
@@ -241,7 +353,7 @@
                     <a href="#" target="_blank"><div class="imgDescription"></div></a>
                 </figcaption>
             </figure>
-            <figure id="inst1">
+            <figure id="inst5">
                 <img src="public/images/insta1.jpg" alt="img">
                 <figcaption>
                     <div class="imgButtons">
@@ -407,7 +519,9 @@
                 dots: true,
                 infinite: false,
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000
             });
     </script>
 

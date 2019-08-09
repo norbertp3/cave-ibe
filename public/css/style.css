@@ -54,6 +54,19 @@ p {
     flex-direction: column-reverse;
 }
 
+.rotate{
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.rotate.down{
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 /* ------------------------ */
 
 /* Components */
@@ -71,7 +84,6 @@ p {
 a, a:hover {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
-    font-weight: 600;
     color: #a54b89!important;
     text-decoration: none;
 }
@@ -127,6 +139,10 @@ a.link-btn:hover {
     min-width: 280px;
 }
 
+.home-slider-large {
+    overflow: hidden;
+}
+
 .home-banner-large-text {
     text-align: center;
 }
@@ -168,6 +184,44 @@ a.link-btn:hover {
 .slick-dots li.slick-active button:before {
     opacity: .95!important;
     color: #fff;
+}
+.mobile-booking-widget {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 220px;
+    position: relative;
+}
+.booking-widget-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -120px;
+    margin-top: -25px;
+}
+.booking-widget-middle-input {
+    padding: 13px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #413b40;
+    background: white;
+    float: left;
+}
+.booking-widget-middle-btn {
+    padding: 13px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #413b40;
+    background: #a54b89;
+    float: right;
+    color: #fff;
+}
+.booking-widget-middle .fa {
+    color: rgba(113, 108, 112, 0.4);
+    margin-right: 10px;
 }
 .home-ft-large-img {
     -webkit-background-size: cover;
