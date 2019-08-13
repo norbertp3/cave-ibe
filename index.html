@@ -19,7 +19,7 @@
 <body>
 
     <!-- ------------------------------------------------------------------ -->
-    <!-- Mobile Navigation -->
+    <!-- Mobile & Desktop Navigation -->
 
         <div class="d-lg-none">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -75,11 +75,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item dropdown position-static">
+                        <li class="nav-item dropdown position-static location-nav">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Locations
                             </a>
-                            <div class="dropdown-menu w-100" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown-menu w-100 location-nav-dropdown" aria-labelledby="navbarDropdownMenuLink">
                                 <div class="row nav-width-container">
                                     <div class="col-lg-4">
                                         <a href="">
@@ -114,18 +114,18 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item dropdown position-static">
+                        <li class="nav-item dropdown position-static hotels-nav">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Hotels
                             </a>
-                            <div class="dropdown-menu w-100" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown-menu w-100 hotels-nav-dropdown" aria-labelledby="navbarDropdownMenuLink">
                                 <div class="nav-width-container multi-row-nav">
                                     <h3>Dublin</h3>
                                     <div class="row">
                                         <div class="col-lg-4">
                                             <a href="">
-                                                <ul>
+                                                <ul class="small-cards">
                                                     <li><img src="public/images/100.jpg"></li>
                                                     <li>                                                        
                                                         <div class="card-body">
@@ -139,7 +139,7 @@
                                         </div>
                                         <div class="col-lg-4">
                                             <a href="">
-                                                <ul>
+                                                <ul class="small-cards">
                                                     <li><img src="public/images/100.jpg"></li>
                                                     <li>                                                        
                                                         <div class="card-body">
@@ -153,7 +153,7 @@
                                         </div>
                                         <div class="col-lg-4">
                                             <a href="">
-                                                <ul>
+                                                <ul class="small-cards">
                                                     <li><img src="public/images/100.jpg"></li>
                                                     <li>                                                        
                                                         <div class="card-body">
@@ -162,12 +162,12 @@
                                                             <p>Parnell Square, Dublin 1</p>
                                                         </div>
                                                     </li>
-                                                </ul>
+                                                </ul class="small-cards">
                                             </a>
                                         </div>
                                         <div class="col-lg-4">
                                             <a href="">
-                                                <ul>
+                                                <ul class="small-cards">
                                                     <li><img src="public/images/100.jpg"></li>
                                                     <li>                                                        
                                                         <div class="card-body">
@@ -181,7 +181,7 @@
                                         </div>
                                         <div class="col-lg-4">
                                             <a href="">
-                                                <ul>
+                                                <ul class="small-cards">
                                                     <li><img src="public/images/100.jpg"></li>
                                                     <li>                                                        
                                                         <div class="card-body">
@@ -198,7 +198,7 @@
                                     <div class="row">
                                         <div class="col-lg-4">
                                             <a href="">
-                                                <ul>
+                                                <ul class="small-cards">
                                                     <li><img src="public/images/100.jpg"></li>
                                                     <li>                                                        
                                                         <div class="card-body">
@@ -218,7 +218,7 @@
                             <a class="nav-link" href="#">Hotels</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Apartaments</a>
+                            <a class="nav-link" href="#">Apartments</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -253,7 +253,7 @@
     <!-- Mobile booking widget button -->
 
     <section class="d-block d-lg-none">
-        <div class="mobile-booking-widget" style="background: url(public/images/home-banner-mob.jpg) no-repeat center center;">
+        <div class="mobile-booking-widget" style="background: url(public/images/home-banner-mob.jpg) no-repeat center center; background-size: cover;">
             <a href="">
                 <div class="booking-widget-middle">
                     <div class="booking-widget-middle-input"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Choose dates</div>
@@ -271,7 +271,7 @@
                 <div class="col-12 col-lg-8 pl-lg-0">
                     <div class="home-slider slider">
                         <div>
-                            <div class="home-slide" style="background: url(public/images/bitmap.jpg) no-repeat center center;"></div>
+                            <div class="home-slide" style="background: url(public/images/bitmap.jpg) no-repeat center center; background-size: cover;"></div>
                             <div class="home-slide-text home-slide-text-border">
                                 <h3>Last Minute Sale!</h3>
                                 <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
@@ -279,7 +279,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center;"></div>
+                            <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center; background-size: cover;"></div>
                             <div class="home-slide-text home-slide-text-border">
                                 <h3>Last Minute Sale!</h3>
                                 <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
@@ -287,7 +287,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center;"></div>
+                            <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center; background-size: cover;"></div>
                             <div class="home-slide-text home-slide-text-border">
                                 <h3>Last Minute Sale!</h3>
                                 <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
@@ -298,11 +298,11 @@
                 </div>
                 <div class="col-12 col-lg-4">
                     <div class="home-banner-large-text">
-                        <h2>the KeyCollections</h2>
+                        <h1>the <span style="color:#000;">Key</span>Collections</h1>
                         <span class="custom-sep" style="border-bottom: 4px solid #a54b89"></span>
                         <div class="wrapper">
                             <div class="small">
-                                <p>theKeyCollections brings together a unique set of hotels, apartments and guesthouses, each with its own distinctive character, in Dublin, London and Carrick-on Shannon. Each property provides our guests with a great place to stay in an outstanding central location that allows you to delve into, ramble through and enjoy the unique qualities of your surroundings.</p>
+                                <p>theKeyCollections brings together a unique set of hotels, apartments and guesthouses, each with its own distinctive character, in great locations across <a href="">Dublin</a>, <a href="">London</a> and <a href="">Carrick on Shannon</a>. Our vision is to exceed your expectations across each of our properties providing your with a great place to stay in a great location that allows you to delve into, ramble through and enjoy the unique qualities of your surroundings.</p>
                             </div>
                             <div class="d-block d-lg-none mb-3 mb-lg-0">
                                 <div class="expand-more">
@@ -334,15 +334,15 @@
         <div class="container-fluid">
             <div class="row reverse">
                 <div class="col-12 col-lg-4">
-                    <div class="home-ft-large-text">
+                    <div class="home-ft-large-text home-ft-large-text-left">
                         <h2>Dublin</h2>
-                        <span class="custom-sep d-none d-lg-block" style="border-bottom: 4px solid #a54b89"></span>
-                        <p>The small capital with the big heart. Stay in the centre of Dublin with us and explore all the culture and craic this medieval city has to offer.</p>
+                        <span class="custom-sep d-none d-lg-block " style="border-bottom: 4px solid #a54b89"></span>
+                        <p>The small capital with the big heart. Stay in the centre of Dublin with us and explore all the culture and craic this medieval city has to offer.Stay in the heart of the city that wants to meet you. With properties centrally located in the city’s historical and cultural neighbourhoods all you have to do is choose where you stay with us.</p>
                         <a href="#" class="link-btn">Find a place in Dublin</a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-8 pr-lg-0">
-                    <div class="home-ft-large-img" style="background: url(public/images/img-dublin.jpg) no-repeat center center; border-left: 10px solid #a54b89;"></div>
+                    <div class="home-ft-large-img home-ft-large-img-border-left " style="background: url(public/images/img-dublin.jpg) no-repeat center center; background-size: cover;"></div>
                 </div>
             </div>
         </div>
@@ -357,13 +357,13 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-8 pl-lg-0">
-                    <div class="home-ft-large-img" style="background: url(public/images/img-london.jpg) no-repeat center center; border-right: 10px solid #a54b89;"></div>
+                    <div class="home-ft-large-img home-ft-large-img-border-right" style="background: url(public/images/img-london.jpg) no-repeat center center; background-size: cover;"></div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="home-ft-large-text">
+                    <div class="home-ft-large-text home-ft-large-text-right">
                         <h2>London</h2>
                         <span class="custom-sep d-none d-lg-block" style="border-bottom: 4px solid #a54b89"></span>
-                        <p>For the hustle and bustle of the big city London never disappoints, with its shopping, food scene and wealth of attractions.</p>
+                        <p>London calling to… you. There are so many reasons to visit this diverse and exciting city. Historical landmarks, iconic shops, legendary cafes, bars and restaurants. So stay with us in the heart of it all.</p>
                         <a href="#" class="link-btn">Stay In London</a>
                     </div>
                 </div>
@@ -379,15 +379,15 @@
         <div class="container-fluid">
             <div class="row reverse">
                 <div class="col-12 col-lg-4">
-                    <div class="home-ft-large-text">
+                    <div class="home-ft-large-text home-ft-large-text-left">
                         <h2>Carrick-on-Shannon</h2>
                         <span class="custom-sep d-none d-lg-block" style="border-bottom: 4px solid #a54b89"></span>
-                        <p>For music and arts, great pubs and nightlife, Carrick-on-Shannon has it all. Stay with us and explore what this charming riverside town has to offer.</p>
+                        <p>Carrick on Shannon is the most popular resort towns in Ireland. Staying in the town centre experience the beauty and activities offered by the River Shannon. Or unwind while enjoying the many local bars and restaurants.</p>
                         <a href="#" class="link-btn">Stay in Carrick</a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-8 pr-lg-0">
-                    <div class="home-ft-large-img" style="background: url(public/images/img-carrick.jpg) no-repeat center center; border-left: 10px solid #a54b89;"></div>
+                    <div class="home-ft-large-img home-ft-large-img-border-left" style="background: url(public/images/img-carrick.jpg) no-repeat center center; background-size: cover;"></div>
                 </div>
             </div>
         </div>
@@ -417,27 +417,27 @@
                     <div class="home-box-content">
                         <h2>Hotels</h2>
                         <span class="custom-sep" style="border-bottom: 4px solid #f7be40"></span>
-                        <p>theKeyCollections brings together a unique set of hotels, apartments and guesthouses, each with its own distinctive character.</p>
+                        <p class="home-box-content-text">A genuine and authentic welcome awaits you at all our hotels. If you are uncertain about where to stay you can choose a 2 star up to 5 star hotel. Delighted in the knowledge that you’ve booked the perfect hotel for your trip.</p>
                         <a href="#" class="d-none d-sm-block link2">View All Hotels</a>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <img src="public/images/apartments.jpg" alt="" style="width: 100%; border-bottom: solid 5px #00aebb">
                     <div class="home-box-content">
-                            <h2>Apartments</h2>
-                            <span class="custom-sep" style="border-bottom: 4px solid #00aebb"></span>
-                            <p>theKeyCollections brings together a unique set of hotels, apartments and guesthouses, each with its own distinctive character.</p>
-                            <a href="#" class="d-none d-sm-block link2">View All Apartments</a>
-                        </div>
+                        <h2>Apartments</h2>
+                        <span class="custom-sep" style="border-bottom: 4px solid #00aebb"></span>
+                        <p class="home-box-content-text">The freedom for you to enjoy your visit your way. Choose a place with enough beds and living space that is tailored for your needs. Really experience the local neighbourhood to experience what your destination really has to offer.</p>
+                        <a href="#" class="d-none d-sm-block link2">View All Apartments</a>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <img src="public/images/guesthouse.jpg" alt="" style="width: 100%; border-bottom: solid 5px #b9c077">
                     <div class="home-box-content">
-                            <h2>Guesthouses</h2>
-                            <span class="custom-sep" style="border-bottom: 4px solid #b9c077"></span>
-                            <p>theKeyCollections brings together a unique set of hotels, apartments and guesthouses, each with its own distinctive character.</p>
-                            <a href="#" class="d-none d-sm-block link2">See Guesthouses</a>
-                        </div>
+                        <h2>Guesthouses</h2>
+                        <span class="custom-sep" style="border-bottom: 4px solid #b9c077"></span>
+                        <p class="home-box-content-text">Our Guesthouses are uniquely small meaning only a few get to experience what it is like to stay here. With only limited availability, you will greeted with a distinctively personalised level of service in great locations.</p>
+                        <a href="#" class="d-none d-sm-block link2">See Guesthouses</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -445,23 +445,23 @@
 
         <!-- Home 3 boxes (Only mobile) -->
 
-        <section class="home-3-boxes-slider slider d-lg-none text-center">
+        <section class="home-3-boxes-slider slider d-lg-none">
             <div>
                 <figure>
-                    <img src="public/images/hotels.jpg" alt="" style="width: 95%; height: 200px; border-bottom: solid 5px #f7be40">
-                    <span style="left: 70px;">Hotel</span>
+                    <img src="public/images/hotels.jpg" alt="" style="width: 95%; height: 200px; border-bottom: solid 5px #f7be40; border-radius: 5px;">
+                    <span>Hotel</span>
                 </figure>
             </div>
             <div>
                 <figure>
-                    <img src="public/images/apartments.jpg" alt="" style="width: 95%; height: 200px; border-bottom: solid 5px #00aebb">
-                    <span style="left: 35px;">Apartments</span>
+                    <img src="public/images/apartments.jpg" alt="" style="width: 95%; height: 200px; border-bottom: solid 5px #00aebb;  border-radius: 5px;">
+                    <span>Apartments</span>
                 </figure>        
             </div>
             <div>
                 <figure>
-                    <img src="public/images/guesthouse.jpg" alt="" style="width: 95%; height: 200px; border-bottom: solid 5px #b9c077">
-                    <span style="left: 30px;">Guesthouses</span>
+                    <img src="public/images/guesthouse.jpg" alt="" style="width: 95%; height: 200px; border-bottom: solid 5px #b9c077; border-radius: 5px;">
+                    <span>Guesthouses</span>
                 </figure>        
             </div>
         </section>
@@ -569,6 +569,13 @@
     </section>
 
     <!-- END Newsletter Signup -->
+
+    <!-- Start mobile bottom buttons -->
+    <div class="mobile-btns text-center d-block d-md-none">
+        <a href="#" class="float-left"><i class="fa fa-phone" aria-hidden="true"></i> CALL</a>
+        <a href="#" class="float-left btn-book-mobile">BOOK</a>
+    </div>
+    <!-- END mobile bottom buttons -->
 
 
     <!-- ------------------------------------------------------------------ -->
