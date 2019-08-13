@@ -277,9 +277,10 @@
         padding: 20px; 
     }
     .standard-heading-text {
-        margin-bottom: 60px
+        margin-bottom: 60px;
+        margin-top: 104px;
     }
-    .standard-heading-textp {
+    .standard-heading-text p {
         font-size: 16px;
         line-height: 1.63
     }
@@ -331,9 +332,6 @@
         font-size: 17px;
         color: #fff;
         line-height: 1.53;
-    }
-    .home-3-boxes {
-        margin: 60px; 
     }
     .footer-bottom-nav {
         margin-top: 21px;
@@ -497,6 +495,10 @@
     .home-ft-large h2 {
         margin-bottom: 13px;
         font-size: 26px!important;
+    }
+    .home-3-boxes .col-lg-4 {
+        padding-left: 20px!important;
+        padding-right: 20px!important;
     }
 
  }
