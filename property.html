@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HOME PAGE</title>
+    <title>PROPERTY OVERVIEW</title>
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="public/css/style.css">
@@ -250,323 +250,62 @@
 
 
     <!-- ------------------------------------------------------------------ -->
-    <!-- Mobile booking widget button -->
+    <!-- Property banner -->
 
-    <section class="d-block d-lg-none">
-        <div class="mobile-booking-widget" style="background: url(public/images/home-banner-mob.jpg) no-repeat center center; background-size: cover;">
-            <div class="mobile-booking-widget-content">
-            <a href="">
-                <div class="booking-widget-middle">
-                    <div class="booking-widget-middle-input"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Choose dates</div>
-                    <div class="booking-widget-middle-btn">SEARCH</div>
-                </div>
-            </a>
-        </div>
-        </div>
+    <section>
+        <div class="mobile-booking-widget property-banner text-center" style="background: url(public/images/jervis-banner.jpg) no-repeat center center; background-size: cover; opacity: 0.8;">
+            <h1>Jervis Apartments</h1>
+            <span>by theKeyCollections</span>
+            <div class="d-block d-lg-none">
+                <a href="">
+                    <div class="booking-widget-middle">
+                        <div class="booking-widget-middle-input"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Choose dates</div>
+                        <div class="booking-widget-middle-btn">SEARCH</div>
+                    </div>
+                </a>
+            </div>
     </section>
 
     <!-- ------------------------------------------------------------------ -->
-    <!-- Home Banner -->
+    <!-- Property Sub Navigation -->
 
-    <section class="home-slider-large mt-5">
-        <div class="container-fluid">
-            <div class="row reverse">
-                <div class="col-12 col-lg-8 pl-lg-0">
-                    <div class="home-slider slider">
-                        <div>
-                            <div class="home-slide" style="background: url(public/images/bitmap.jpg) no-repeat center center; background-size: cover;"></div>
-                            <div class="home-slide-text home-slide-text-border">
-                                <h3>Last Minute Sale!</h3>
-                                <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
-                                <a href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center; background-size: cover;"></div>
-                            <div class="home-slide-text home-slide-text-border">
-                                <h3>Last Minute Sale!</h3>
-                                <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
-                                <a href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center; background-size: cover;"></div>
-                            <div class="home-slide-text home-slide-text-border">
-                                <h3>Last Minute Sale!</h3>
-                                <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
-                                <a href="">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="home-banner-large-text">
-                        <h1>the <span style="color:#473e47;">Key</span>Collections</h1>
-                        <span class="custom-sep" style="border-bottom: 4px solid #a54b89"></span>
-                        <div class="wrapper">
-                            <div class="small">
-                                <p>theKeyCollections brings together a unique set of hotels, apartments and guesthouses, each with its own distinctive character, in great locations across <a href="">Dublin</a>, <a href="">London</a> and <a href="">Carrick on Shannon</a>. Our vision is to exceed your expectations across each of our properties providing your with a great place to stay in a great location that allows you to delve into, ramble through and enjoy the unique qualities of your surroundings.</p>
-                            </div>
-                            <div class="d-block d-lg-none mb-3 mb-lg-0">
-                                <div class="expand-more">
-                                    <a href="#">READ MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg" id="property-nav">
+            <div class="property-nav-top w-100 d-lg-none">
+                <a class="navbar-brand">Explore</a>
+                <button class="navbar-toggler collapsed float-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>                 
+                </button>
             </div>
-        </div>
-    </section>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Overview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Apartments <i class="fa fa-angle-right d-lg-none" style="float: right"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery <i class="fa fa-angle-right d-lg-none" style="float: right"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reviews <i class="fa fa-angle-right d-lg-none" style="float: right"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Location <i class="fa fa-angle-right d-lg-none" style="float: right"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact <i class="fa fa-angle-right d-lg-none" style="float: right"></i></a>
+                </li>
+            </ul>
+            </div>
+          </nav>
 
 
     <!-- ------------------------------------------------------------------ -->
     <!-- Features -->
 
-
-    <!-- Center heading and content -->
-
-    <div class="container text-center standard-heading-text">
-        <h2>Our Locations</h2>
-        <span class="custom-sep mx-auto" style="border-bottom: 4px solid #a54b89"></span>
-    </div>
-
-    <!-- Home Large Text Image -->
-
-    <section class="home-ft-large">
-        <div class="container-fluid">
-            <div class="row reverse">
-                <div class="col-12 col-lg-4">
-                    <div class="home-ft-large-text home-ft-large-text-left">
-                        <h2>Dublin</h2>
-                        <span class="custom-sep d-none d-lg-block " style="border-bottom: 4px solid #a54b89"></span>
-                        <p>The small capital with the big heart. Stay in the centre of Dublin with us and explore all the culture and craic this medieval city has to offer.Stay in the heart of the city that wants to meet you. With properties centrally located in the city’s historical and cultural neighbourhoods all you have to do is choose where you stay with us.</p>
-                        <a href="#" class="link-btn">Find a place in Dublin</a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-8 pr-lg-0">
-                    <div class="home-ft-large-img home-ft-large-img-border-left " style="background: url(public/images/img-dublin.jpg) no-repeat center center; background-size: cover;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- END -->
-
-
-    <!-- Home Large Image Text -->
-
-    <section class="home-ft-large">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-lg-8 pl-lg-0">
-                    <div class="home-ft-large-img home-ft-large-img-border-right" style="background: url(public/images/img-london.jpg) no-repeat center center; background-size: cover;"></div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="home-ft-large-text home-ft-large-text-right">
-                        <h2>London</h2>
-                        <span class="custom-sep d-none d-lg-block" style="border-bottom: 4px solid #a54b89"></span>
-                        <p>London calling to… you. There are so many reasons to visit this diverse and exciting city. Historical landmarks, iconic shops, legendary cafes, bars and restaurants. So stay with us in the heart of it all.</p>
-                        <a href="#" class="link-btn">Stay In London</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- END -->
-
-    <!-- Home Large Text Image -->
-
-    <section class="home-ft-large">
-        <div class="container-fluid">
-            <div class="row reverse">
-                <div class="col-12 col-lg-4">
-                    <div class="home-ft-large-text home-ft-large-text-left">
-                        <h2>Carrick-on-Shannon</h2>
-                        <span class="custom-sep d-none d-lg-block" style="border-bottom: 4px solid #a54b89"></span>
-                        <p>Carrick on Shannon is the most popular resort towns in Ireland. Staying in the town centre experience the beauty and activities offered by the River Shannon. Or unwind while enjoying the many local bars and restaurants.</p>
-                        <a href="#" class="link-btn">Stay in Carrick</a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-8 pr-lg-0">
-                    <div class="home-ft-large-img home-ft-large-img-border-left" style="background: url(public/images/img-carrick.jpg) no-repeat center center; background-size: cover;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- END -->
-
-    <!-- ------------------------------------------------------------------ -->
-    <!-- Center heading and content -->
-
-    <div class="container text-center standard-heading-text">
-        <h2>Stay with Us</h2>
-        <span class="custom-sep mx-auto" style="border-bottom: 4px solid #a54b89"></span>
-        <p>No matter how you choose to stay with us, you know you'll be guaranteed free WIFI, a superb location, friendly staff and a comfortable bed.</p>
-    </div>
-
-    <!-- END -->
-
-    <!-- ------------------------------------------------------------------ -->
-    <!-- Home 3 boxes -->
-
-    <section class="home-3-boxes d-none d-lg-block">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4">
-                    <img src="public/images/hotels.jpg" alt="" style="width: 100%; border-bottom: solid 5px #f7be40">
-                    <div class="home-box-content">
-                        <h2>Hotels</h2>
-                        <span class="custom-sep" style="border-bottom: 4px solid #f7be40"></span>
-                        <p class="home-box-content-text">A genuine and authentic welcome awaits you at all our hotels. If you are uncertain about where to stay you can choose a 2 star up to 5 star hotel. Delighted in the knowledge that you’ve booked the perfect hotel for your trip.</p>
-                        <a href="#" class="d-none d-sm-block link2">View All Hotels</a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <img src="public/images/apartments.jpg" alt="" style="width: 100%; border-bottom: solid 5px #00aebb">
-                    <div class="home-box-content">
-                        <h2>Apartments</h2>
-                        <span class="custom-sep" style="border-bottom: 4px solid #00aebb"></span>
-                        <p class="home-box-content-text">The freedom for you to enjoy your visit your way. Choose a place with enough beds and living space that is tailored for your needs. Really experience the local neighbourhood to experience what your destination really has to offer.</p>
-                        <a href="#" class="d-none d-sm-block link2">View All Apartments</a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <img src="public/images/guesthouse.jpg" alt="" style="width: 100%; border-bottom: solid 5px #b9c077">
-                    <div class="home-box-content">
-                        <h2>Guesthouses</h2>
-                        <span class="custom-sep" style="border-bottom: 4px solid #b9c077"></span>
-                        <p class="home-box-content-text">Our Guesthouses are uniquely small meaning only a few get to experience what it is like to stay here. With only limited availability, you will greeted with a distinctively personalised level of service in great locations.</p>
-                        <a href="#" class="d-none d-sm-block link2">See Guesthouses</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        <!-- Home 3 boxes (Only mobile) -->
-
-        <section class="home-3-boxes-slider slider d-lg-none">
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="public/images/hotels.jpg" alt="" style="width: 95%; height: 200px; border-bottom: solid 5px #f7be40; border-radius: 5px;">
-                        <span>Hotel</span>
-                    </figure>
-                </a>
-            </div>
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="public/images/apartments.jpg" alt="" style="width: 95%; height: 200px; border-bottom: solid 5px #00aebb;  border-radius: 5px;">
-                        <span>Apartments</span>
-                    </figure>
-                </a>      
-            </div>
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="public/images/guesthouse.jpg" alt="" style="width: 95%; height: 200px; border-bottom: solid 5px #b9c077; border-radius: 5px;">
-                        <span>Guesthouses</span>
-                    </figure>
-                </a>        
-            </div>
-        </section>
-
-    <!-- END -->
-
-    <!-- ------------------------------------------------------------------ -->
-
-    <div class="container text-center standard-heading-text">
-        <h2>#yourDublin</h2>
-        <span class="custom-sep mx-auto" style="border-bottom: 4px solid #a54b89"></span>
-    </div>
-
-
-    <!-- ------------------------------------------------------------------ -->
-    <!-- Instagram feed -->
-
-    <section id="instagram" class="imageTimeline flexRow">
-            <figure id="inst0">
-                <img src="public/images/insta1.jpg" alt="img">
-                <figcaption>
-                    <div class="imgButtons">
-                        <a href="#" target="_blank"><i class="fa fa-heart-o"></i> <span class="likes"></span></a>
-                        <a href="#" target="_blank"><i class="fa fa-comment-o"></i> <span class="comments"></span></a>
-                    </div>
-                    <a href="#" target="_blank"><div class="imgDescription d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></a>
-                </figcaption>
-            </figure>
-            <figure id="inst1">
-                <img src="public/images/insta1.jpg" alt="img">
-                <figcaption>
-                    <div class="imgButtons">
-                        <a href="#" target="_blank"><i class="fa fa-heart-o"></i> <span class="likes"></span></a>
-                        <a href="#" target="_blank"><i class="fa fa-comment-o"></i> <span class="comments"></span></a>
-                    </div>
-                    <a href="#" target="_blank"><div class="imgDescription"></div></a>
-                </figcaption>
-            </figure>
-            <figure id="inst2">
-                <img src="public/images/insta-img-1.jpg" alt="img">
-                <figcaption>
-                    <div class="imgButtons">
-                        <a href="#" target="_blank"><i class="fa fa-heart-o"></i> <span class="likes"></span></a>
-                        <a href="#" target="_blank"><i class="fa fa-comment-o"></i> <span class="comments"></span></a>
-                    </div>
-                    <a href="#" target="_blank"><div class="imgDescription"></div></a>
-                </figcaption>
-            </figure>
-            <figure id="inst3">
-                <img src="public/images/insta-img-6.jpg" alt="img">
-                <figcaption>
-                    <div class="imgButtons">
-                        <a href="#" target="_blank"><i class="fa fa-heart-o"></i> <span class="likes"></span></a>
-                        <a href="#" target="_blank"><i class="fa fa-comment-o"></i> <span class="comments"></span></a>
-                    </div>
-                    <a href="#" target="_blank"><div class="imgDescription"></div></a>
-                </figcaption>
-            </figure>
-            <figure id="inst4">
-                <img src="public/images/insta-img-4.jpg" alt="img">
-                <figcaption>
-                    <div class="imgButtons">
-                        <a href="#" target="_blank"><i class="fa fa-heart-o"></i> <span class="likes"></span></a>
-                        <a href="#" target="_blank"><i class="fa fa-comment-o"></i> <span class="comments"></span></a>
-                    </div>
-                    <a href="#" target="_blank"><div class="imgDescription"></div></a>
-                </figcaption>
-            </figure>
-            <figure id="inst5">
-                <img src="public/images/insta-img-5.jpg" alt="img">
-                <figcaption>
-                    <div class="imgButtons">
-                        <a href="#" target="_blank"><i class="fa fa-heart-o"></i> <span class="likes"></span></a>
-                        <a href="#" target="_blank"><i class="fa fa-comment-o"></i> <span class="comments"></span></a>
-                    </div>
-                    <a href="#" target="_blank"><div class="imgDescription"></div></a>
-                </figcaption>
-            </figure>
-    
-    </section>
-
-    <!-- End Instagra feed -->
-
-
-    <!-- ------------------------------------------------------------------ -->
-    <!-- Social Media -->
-
-    <section class="container text-center">
-        <ul class="social-channels">
-            <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
-            <li><a href=""><i class="fa fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa fa-linkedin"></a></i></li>
-        </ul>
-    </section>
-
-    <!-- End social media -->
 
     <!-- ------------------------------------------------------------------ -->
     <!-- Newsletter Signup -->
@@ -590,10 +329,9 @@
 
     <!-- END Newsletter Signup -->
 
-    <!-- ------------------------------------------------------------------ -->
     <!-- Start mobile bottom buttons -->
     <div class="mobile-btns text-center d-block d-md-none">
-        <a href="#" class="float-left"><img src="public/images/svg/icon-call-mob.svg"> CALL</a>
+        <a href="#" class="float-left"><i class="fa fa-phone" aria-hidden="true"></i> CALL</a>
         <a href="#" class="float-left btn-book-mobile">BOOK</a>
     </div>
     <!-- END mobile bottom buttons -->

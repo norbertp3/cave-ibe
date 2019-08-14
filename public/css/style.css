@@ -83,7 +83,7 @@ p {
 
 a, a:hover {
     font-family: 'Nunito', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     color: #a54b89!important;
     text-decoration: none!important;
     font-weight: 600;
@@ -159,7 +159,7 @@ a.link-btn:hover {
     padding: 10px 10px 25px 10px;
 }
 .home-slide-text h3, .home-slide-text p {
-    color: #fff!important;
+    color: #eae9ea!important;
 }
 .home-slide-text a {
     color: #fff!important;
@@ -170,7 +170,7 @@ a.link-btn:hover {
     text-decoration: none;
 }
 .slick-dots {
-    bottom: 5px!important;
+    bottom: 20px!important;
     text-align: right!important;
     right: 20px!important;
 }
@@ -180,7 +180,7 @@ a.link-btn:hover {
 }
 
 .slick-dots li button:before {
-    font-size: 35px!important;
+    font-size: 44px!important;
     color: #fff!important;
     opacity: .65!important;
 }
@@ -199,6 +199,22 @@ a.link-btn:hover {
     background-size: cover;
     height: 220px;
     position: relative;
+    width: 100%;
+}
+.mobile-booking-widget:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, rgba(165, 75, 137, 0.1), rgba(165, 75, 137, 0.1));
+    opacity: 0.6;
+}
+.mobile-booking-widget-content {
+    position: relative;
+    z-index: 10;
+    top: 100px;
 }
 .booking-widget-middle {
     position: absolute;
@@ -237,6 +253,9 @@ a.link-btn:hover {
 }
 .home-ft-large {
     margin-bottom: 40px;
+}
+.home-ft-large p {
+    margin-bottom: 30px;
 }
 .home-ft-large h2 {
     margin-bottom: 13px;
@@ -279,6 +298,9 @@ a.link-btn:hover {
     height: 145px;
     width: 95%;
     content: '';
+}
+.home-3-boxes-slider a {
+    font-weight: 400;
 }
 
     /* Standard Heading Text */
@@ -402,13 +424,13 @@ a.link-btn:hover {
     margin-bottom: 20px;
     border: 0px solid;
     padding-bottom: 7px;
-    height: 48px;
+    height: 50px;
 }
 .newsletter .submitBtn {
     width: 100%;
     font-weight: normal;
     background-color: #00aebb!important;
-    height: 48px;
+    height: 50px;
 }
 
 /* Footer */
@@ -420,7 +442,7 @@ footer {
 
 .footer-top {
     height: 54px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     margin-bottom: 30px;
     padding-bottom: 70px;
 }
@@ -432,6 +454,10 @@ footer p, li {
 footer a {
     color: #fff!important;
     font-weight: 400;
+    opacity: 0.5;
+}
+footer a:hover {
+    opacity: 1;
 }
 footer a:hover {
     color: #fff!important;
@@ -449,13 +475,19 @@ footer li {
 footer li:last-child {
     padding-bottom: 0px;
 }
-
-.footer-desktop-nav li {
-    opacity: 0.5;
+.footer-bottom-nav li:after {
+    opacity: 0.5!important;
 }
+
+/* .footer-desktop-nav li {
+    opacity: 0.5;
+} */
 
 .social-channels-footer {
     padding-left: 0;
+}
+.social-channels-footer a {
+    opacity: 1;
 }
 
 .social-channels-footer li {
@@ -506,20 +538,31 @@ ul.social-channels-footer {
 }
 .footer-bottom-nav li {
     display: inline-block;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
-.footer-bottom-nav li:nth-child(1):after {
-    content:"\2022";
-    padding-left: 5px;
-}
-.footer-bottom-nav li:nth-child(2):after {
-    content:"\2022";
-    padding-left: 5px;
-}
-
 .mobile-footer-nav {
     text-align: center;
 }
 ul.footer-master-nav {
     column-count: 2;
+}
+
+/* Property */
+
+.property-banner h1 {
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+.property-banner span {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 20px!important;
+}
+.property-banner .booking-widget-middle {
+    top: 80%;
+}
+.property-banner {
+    background-color: #a54b89!important;
 }

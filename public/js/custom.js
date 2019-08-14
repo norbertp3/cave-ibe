@@ -1,5 +1,4 @@
 // Expand textp
-
 $('.wrapper').find('a[href="#"]').on('click', function (e) {
     e.preventDefault();
     this.expand = !this.expand;
@@ -24,6 +23,7 @@ $(".home-3-boxes").each(function(){
     $(this).find(".home-box-content-text").css({"height":largest+"px"});
 });
 
+// Navigation hover
 $(".location-nav-dropdown").hover(function(){
     $(".location-nav").toggleClass("add-nav-hover");
 });
