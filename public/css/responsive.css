@@ -320,7 +320,7 @@
         top: -40px;
         margin-left: 77px;
         text-align: right;
-        padding: 100px 30px 55px 30px;
+        padding: 80px 30px 40px 30px;
         width: 428px;
     }
     .home-slide-text h3 {
@@ -457,6 +457,13 @@
         column-count: 1;
     }
 
+    .slick-dots {
+        bottom: 20px!important;
+        right: 20px!important;
+    }
+    .slick-dots li button:before {
+        font-size: 44px!important;
+    }
     /* Main Nav */
 
     .navbar {
