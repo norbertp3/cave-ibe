@@ -15,6 +15,13 @@
     <link rel="stylesheet" type="text/css" href="public/css/slick-theme.css"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <style>
+        .standard-content li::before {
+            color: #00aebb;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -24,7 +31,7 @@
         <div class="d-lg-none">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="mobile-nav-wrapper">
-                    <a class="navbar-brand" href="#"><a href=""><img src="public/images/key-logo.png"></a>
+                    <a class="navbar-brand" href="#"><img src="public/images/key-logo.png"></a>
                     <button class="navbar-toggler collapsed float-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar top-bar"></span>
                         <span class="icon-bar middle-bar"></span>
@@ -253,16 +260,20 @@
     <!-- Property banner -->
 
     <section>
-        <div class="mobile-booking-widget property-banner text-center" style="background: url(public/images/jervis-banner.jpg) no-repeat center center; background-size: cover; opacity: 0.8;">
-            <h1>Jervis Apartments</h1>
-            <span>by theKeyCollections</span>
-            <div class="d-block d-lg-none">
-                <a href="">
-                    <div class="booking-widget-middle">
-                        <div class="booking-widget-middle-input"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Choose dates</div>
-                        <div class="booking-widget-middle-btn">SEARCH</div>
-                    </div>
-                </a>
+        <div class="property-banner" style="background: url(public/images/jervis-banner.jpg) no-repeat center center; background-size: cover;">
+            <div class="property-banner-wrapper">
+                <div class="property-banner-hero">
+                    <h1>Jervis Apartments</h1>
+                    <span>by theKeyCollections</span>
+                </div>
+                <div class="d-block d-lg-none">
+                    <a href="">
+                        <div class="booking-widget-middle">
+                            <div class="booking-widget-middle-input"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Choose dates</div>
+                            <div class="booking-widget-middle-btn">SEARCH</div>
+                        </div>
+                    </a>
+                </div>
             </div>
     </section>
 
@@ -302,11 +313,117 @@
             </div>
           </nav>
 
+    <div class="container standard-content" id="property-wrapper">
 
     <!-- ------------------------------------------------------------------ -->
     <!-- Features -->
+    
+    <section id="ft-property-details">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="ft-property-details-content">
+                    <h2>Jervis Apartments</h2>
+                    <span class="custom-sep" style="border-bottom: 4px solid #00aebb"></span>
+                    <div class="row">
+                        <div class="col-1"><img src="public/images/svg/location.svg"></div>
+                        <div class="col-10"><p>1-6 Wolfetone Court, Wolf Tone Street, Dublin, Ireland</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><img src="public/images/svg/contact.svg"></div>
+                        <div class="col-10"><p>(01) 532 0630</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><img src="public/images/svg/email.svg"></div>
+                        <div class="col-10"><p>reservations@jervisapartments.com</p></div>
+                    </div>
+                </div>
+                <p>Perfectly located where Dublin's shopping quarter meets the vibrant culture of Temple Bar, these apartments are perfect for your city stay. With our Jervis Street Apartments you will find great value alongside a great central location just minutes from <a href="#">Temple Bar</a>, the <a href="#">Guinness Storehouse</a>, O’Connell Street & more.</p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <section class="standard-slider slider">
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="" style="">
+                    </div>
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="" style="">
+                    </div>
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="" style="">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section id="ft-property-img-text">
+        <div class="row reverse">
+            <div class="col-12 col-lg-6">
+                <section class="standard-slider slider">
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="" style="">
+                    </div>
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="" style="">
+                    </div>
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="" style="">
+                    </div>
+                </section>
+            </div>
+            <div class="col-12 col-lg-6">
+                    <h2>Our Guests Love</h2>
+                    <span class="custom-sep" style="border-bottom: 4px solid #00aebb"></span>
+                    <p>Our apartments are modern, spacious and come fully furnished, and provide the perfect base for work or play. With every apartment comes the following as standard. </p>
+                    <ul>
+                        <li>Bathroom with shower & bathtub, towels and free toiletries</li>
+                        <li>Kitchen with full cooking facilities including oven, fridge-freezer, microwave, kettle, toaster</li>
+                        <li>Shared lounge and dining area with flat-screen satellite TV</li>
+                        <li>High Speed Wifi and Telephone</li>
+                        <li>Baby cot and highchairs available on request</li>
+                        <li>Full room clean for stays of 7+ days</li>
+                        <li>24 hour reception, with free luggage storage</li>
+                    </ul>
+                    <a href="#" class="link-btn">See All Apartments</a>
+                </div>
+        </div>
+    </section>
 
 
+    <section id="ft-property-text-img">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h2>The Neighbourhood</h2>
+                <span class="custom-sep" style="border-bottom: 4px solid #00aebb"></span>
+                <p>Whether you're a solo traveller, a family, or a couple, the way to make the most of your visit to Dublin is to choose to stay in the heart of Dublin City. With our Jervis Street Apartments you will find great value alongside a great central location just minutes from Temple Bar, the Guinness Storehouse, O’Connell Street & more.</p>
+                <a href="#" class="link-btn">See Our Local Guide</a>
+
+            </div>
+            <div class="col-12 col-lg-6">
+                <section class="standard-slider slider">
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="" style="">
+                    </div>
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="" style="">
+                    </div>
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="" style="">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    </div>
     <!-- ------------------------------------------------------------------ -->
     <!-- Newsletter Signup -->
 
@@ -329,12 +446,13 @@
 
     <!-- END Newsletter Signup -->
 
+    <!-- ------------------------------------------------------------------ -->
     <!-- Start mobile bottom buttons -->
     <div class="mobile-btns text-center d-block d-md-none">
-        <a href="#" class="float-left"><i class="fa fa-phone" aria-hidden="true"></i> CALL</a>
-        <a href="#" class="float-left btn-book-mobile">BOOK</a>
-    </div>
-    <!-- END mobile bottom buttons -->
+            <a href="#" class="float-left"><img src="public/images/svg/icon-call-mob.svg"> CALL</a>
+            <a href="#" class="float-left btn-book-mobile">BOOK</a>
+        </div>
+        <!-- END mobile bottom buttons -->
 
 
     <!-- ------------------------------------------------------------------ -->
@@ -459,6 +577,23 @@
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 3000
+            });
+            $(".standard-slider").slick({
+                dots: true,
+                infinite: false,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 300000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                        }
+                    }
+                ]
             });
     </script>
 
