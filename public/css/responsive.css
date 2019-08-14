@@ -277,6 +277,9 @@
     .ft-property-details-content p {
         padding-top: 3px;
     }
+    #property-wrapper h2 {
+        text-align: center;
+    }
 }
 
 @media (min-width: 992px) { 
@@ -660,15 +663,14 @@
     }
     #property-wrapper h2 {
         margin: 26px 0 30px 0;
-        text-align: left;
     }
     #ft-property-img-text, #ft-property-text-img {
         margin-bottom: 100px;
     }
-    section ul {
+    .feature ul {
         margin-left: 50px;
     }
-    section li {
+    .feature li {
         font-size: 16px;
     }
 }
