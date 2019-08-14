@@ -214,7 +214,7 @@ a.link-btn:hover {
 .mobile-booking-widget-content {
     position: relative;
     z-index: 10;
-    top: 100px;
+    top: 110px;
 }
 .booking-widget-middle {
     position: absolute;
@@ -431,6 +431,11 @@ a.link-btn:hover {
     font-weight: normal;
     background-color: #00aebb!important;
     height: 50px;
+    color: #fff;
+}
+.newsletter .submitBtn:hover {
+    background-color: #02929d!important;
+    color: #fff;
 }
 
 /* Footer */
