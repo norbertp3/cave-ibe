@@ -3,6 +3,10 @@
     .home-box-content {
         padding: 15px; 
     }
+    #all-properties ul {
+        column-count: 2;
+        padding-left: 0;
+    }
 
  }
 
@@ -415,7 +419,7 @@
     }
     .standard-heading-text {
         margin-bottom: 60px;
-        margin-top: 104px;
+        /* margin-top: 104px; */
     }
     .standard-heading-text p {
         font-size: 16px;
@@ -452,7 +456,7 @@
     }
     .newsletter {
         padding: 40px 0 25px 0;
-        margin-top: 100px;
+        margin-top: 60px;
     }
     .newsletter .input {
         max-width: 263px;
@@ -703,6 +707,24 @@
     }
     .property-banner-hero {
         max-width: 1600px;
+    }
+    #property-wrapper h3 {
+        margin-bottom: 30px;
+    }
+    .enquiry-cover {
+        padding: 30px;
+    }
+    .enquiry-cover .submitBtn {
+        width: 232px;
+    }
+    .custom-pr-35 {
+        padding-right: 35px!important;
+    }
+    .custom-pl-35 {
+        padding-left: 35px!important;
+    }
+    #all-properties li {
+        display: inline-block;
     }
 }
 @media (min-width: 1200px) {

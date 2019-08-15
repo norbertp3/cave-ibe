@@ -147,7 +147,7 @@ li {
     line-height: 1.63;
     padding-left: 1em; 
     text-indent: -20px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     font-size: 15px;
 }
 .feature li::before {
@@ -162,6 +162,15 @@ li {
 
 .not-slider img {
     width: 100%;
+}
+
+.standard-slider .slick-dots {
+    text-align: center!important;
+    right: 0!important;
+}
+.standard-slider img {
+    width: 100%;
+    height: 100%;
 }
 
 /* .navbar-brand {
@@ -492,16 +501,36 @@ li {
     padding-bottom: 7px;
     height: 50px;
 }
-.newsletter .submitBtn {
-    width: 100%;
+.submitBtn {
+    /* width: 100%; */
     font-weight: normal;
     background-color: #00aebb!important;
     height: 50px;
-    color: #fff;
+    color: #fff!important;
+    padding: 0 30px;
 }
-.newsletter .submitBtn:hover {
+.submitBtn:hover {
     background-color: #02929d!important;
     color: #fff;
+}
+
+.enquiry-cover .submitBtn {
+    width: 100%;
+}
+.enquiry-cover .form-control:focus {
+    box-shadow: none;
+    border-color: #9e9e9e; 
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-size: 10px;
+    background-position: calc(100% - 8px) 50%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-image: url(/public/images/svg/dropdown-arrows.svg);
 }
 
 /* Footer */
@@ -675,14 +704,89 @@ ul.footer-master-nav {
 #ft-property-details {
     margin-bottom: 40px;
 }
-.standard-slider .slick-dots {
-    text-align: center!important;
-    right: 0!important;
-}
-.standard-slider img {
-    width: 100%;
-    height: 100%;
-}
 #ft-property-img-text, #ft-property-text-img {
     margin-bottom: 10px;
+}
+
+/* Contact Us */
+
+#property-wrapper h3 {
+    margin-bottom: 40px;
+}
+
+.enquiry-cover {
+    padding: 20px 10px;
+    background: #eae9ea;
+    font-family: 'Nunito', sans-serif;
+}
+.enquiry-cover label {
+    font-size: 14px;
+    line-height: 1.43;
+    margin-bottom: 5px;
+}
+.enquiry-cover input, .enquiry-cover select, .enquiry-cover textarea {
+    height: 50px;
+    border-radius: 2px;
+    border: solid 1px rgba(113, 108, 112, 0.3);
+}
+.checkbox-group input {
+    height: auto;
+}
+span.custom-check {
+    background: #fff;
+    border: 1px solid hsla(198,5%,61%,.5);
+    margin-right: 10px;
+    border-radius: 0;
+}
+span.custom-check, span.custom-radio {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 0;
+    top: -2px;
+    position: relative;
+}
+input[type=checkbox]:checked+span.custom-check:after {
+    content: "\f00c";
+    font: normal normal normal 17px/1 FontAwesome;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    animation: form-zoom .5s ease-in-out;
+    padding: 2px;
+    background: #a54b89;
+}
+.form-group input[type=checkbox], .form-group input[type=radio], label input[type=checkbox], label input[type=radio] {
+    display: none;
+}
+.enquiry-cover .custom-select {
+    width: 80px!important;
+}
+.enquiry-cover .input-group>.custom-select {
+    flex: none!important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-size: 10px;
+    background-position: calc(100% - 8px) 50%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-image: url(/public/images/svg/dropdown-arrows.svg);
+    border: solid 1px rgba(113, 108, 112, 0.4);
+}
+.custom-select:focus {
+    box-shadow: none!important;
+    border-color: #9e9e9e;
+}
+#all-properties {
+    margin-top: 50px;
+}
+#all-properties li {
+    list-style: none;
+    padding-bottom: 20px;
+}
+#all-properties ul {
+    padding-left: 20px;
 }

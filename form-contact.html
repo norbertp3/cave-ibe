@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HOME PAGE</title>
+    <title>PROPERTY LOCATION</title>
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="public/css/style.css">
@@ -15,8 +15,17 @@
     <link rel="stylesheet" type="text/css" href="public/css/slick-theme.css"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <style>
+        .feature li::before {
+            color: #00aebb!important;
+        }
+    </style>
+
 </head>
+
 <body>
+
         <div class="m-2">
                 <div class="btn-group" role="group" aria-label="Basic example">
                     <a href="/"><button type="button" class="btn btn-secondary">Home</button></a>
@@ -25,14 +34,15 @@
                     <a href="/form-contact.html"><button type="button" class="btn btn-secondary">Form Contact</button></a>
                 </div>
             </div>
+
     <!-- ------------------------------------------------------------------ -->
     <!-- Mobile & Desktop Navigation -->
 
         <div class="d-lg-none">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="mobile-nav-wrapper">
-                    <a class="navbar-brand" href="#"><img src="public/images/key-logo.png" class="img-fluid"></a>
-                    <button class="navbar-toggler collapsed float-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="#"><img src="public/images/key-logo.png"></a>
+                    <button class="navbar-toggler collapsed float-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-labell="Toggle navigation">
                         <span class="icon-bar top-bar"></span>
                         <span class="icon-bar middle-bar"></span>
                         <span class="icon-bar bottom-bar"></span>                
@@ -53,7 +63,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown link <i class="fa fa-angle-down rotate" style="float: right"></i>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="dropdown-menu" aria-labellledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a>
@@ -76,8 +86,8 @@
         <!-- Desktop Navigation -->
         <div class="d-none d-lg-block">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#"><img src="public/images/key-logo.png" class="img-fluid"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#"><img src="public/images/key-logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-labell="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -86,7 +96,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Locations
                             </a>
-                            <div class="dropdown-menu w-100 location-nav-dropdown" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown-menu w-100 location-nav-dropdown" aria-labellledby="navbarDropdownMenuLink">
                                 <div class="row nav-width-container">
                                     <div class="col-lg-4">
                                         <a href="">
@@ -126,7 +136,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Hotels
                             </a>
-                            <div class="dropdown-menu w-100 hotels-nav-dropdown" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown-menu w-100 hotels-nav-dropdown" aria-labellledby="navbarDropdownMenuLink">
                                 <div class="nav-width-container multi-row-nav">
                                     <h3>Dublin</h3>
                                     <div class="row">
@@ -231,7 +241,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Guesthouses
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown-menu" aria-labellledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
@@ -257,324 +267,158 @@
 
 
     <!-- ------------------------------------------------------------------ -->
-    <!-- Mobile booking widget button -->
+    <!-- Property banner -->
 
-    <section class="d-block d-lg-none">
-        <div class="mobile-booking-widget" style="background: url(public/images/home-banner-mob.jpg) no-repeat center center; background-size: cover;">
-            <div class="mobile-booking-widget-content">
-            <a href="">
-                <div class="booking-widget-middle">
-                    <div class="booking-widget-middle-input"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Choose dates</div>
-                    <div class="booking-widget-middle-btn">SEARCH</div>
+    <section>
+        <div class="property-banner" style="background: url(public/images/jervis-banner.jpg) no-repeat center center; background-size: cover;">
+            <div class="property-banner-wrapper">
+                <div class="property-banner-hero">
+                    <h1>Jervis Apartments</h1>
+                    <span>by theKeyCollections</span>
                 </div>
-            </a>
-        </div>
-        </div>
+                <div class="d-block d-lg-none">
+                    <a href="">
+                        <div class="booking-widget-middle">
+                            <div class="booking-widget-middle-input"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Choose dates</div>
+                            <div class="booking-widget-middle-btn">SEARCH</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
     </section>
 
-    <!-- ------------------------------------------------------------------ -->
-    <!-- Home Banner -->
+<div class="container" id="property-wrapper">
 
-    <section class="home-slider-large mt-5">
-        <div class="container-fluid">
-            <div class="row reverse">
-                <div class="col-12 col-lg-8 pl-lg-0">
-                    <div class="home-slider slider">
-                        <div>
-                            <div class="home-slide" style="background: url(public/images/bitmap.jpg) no-repeat center center; background-size: cover;"></div>
-                            <div class="home-slide-text home-slide-text-border">
-                                <h3>Last Minute Sale!</h3>
-                                <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
-                                <a href="">Learn More</a>
+    <div class="text-center standard-heading-text">
+        <h2>Contact Us</h2>
+        <span class="custom-sep mx-auto" style="border-bottom: 4px solid #a54b89"></span>
+    </div>
+
+    <div class="row reverse">
+        <div class="col-12 col-lg-6">
+            <div class="enquiry-cover">
+                <form class="">
+                    <div class="row">
+
+                        
+                        
+                        
+                        <div class="form-group col-sm-6">
+                            <label>Name *</label>
+                            <input type="text" class="form-control" placeholder="" name="" required="">
+                        </div>
+                        
+                        
+                        
+                        <div class="form-group col-sm-6">
+                            <label>Phone Number *</label>
+                            <div class="input-group mb-3">
+                                <select class="custom-select" id="">
+                                    <option selected>+353</option>
+                                    <option value="1">+48</option>
+                                    <option value="2">+1</option>
+                                </select>
+                                <input type="text" class="form-control" placeholder="" name="" required="">
                             </div>
                         </div>
-                        <div>
-                            <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center; background-size: cover;"></div>
-                            <div class="home-slide-text home-slide-text-border">
-                                <h3>Last Minute Sale!</h3>
-                                <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
-                                <a href="">Learn More</a>
-                            </div>
+                        
+
+                        <div class="form-group col-12">
+                            <label>Email Address *</label>
+                            <input type="email" class="form-control" name="" placeholder="" required="">
                         </div>
-                        <div>
-                            <div class="home-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center; background-size: cover;"></div>
-                            <div class="home-slide-text home-slide-text-border">
-                                <h3>Last Minute Sale!</h3>
-                                <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
-                                <a href="">Learn More</a>
-                            </div>
+
+
+                        <div class="form-group col-12">
+                            <label>Which property do you wish to contact?</label>
+                            <select class="form-control" required="">
+                                <option value="">Jervis Apartments</option>
+                                <option value="">Jervis Apartments</option>
+                                <option value="">Jervis Apartments</option>
+                                <option value="">Jervis Apartments</option>
+                                <option value=""></option>
+                            </select>
                         </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="home-banner-large-text">
-                        <h1>the <span style="color:#473e47;">Key</span>Collections</h1>
-                        <span class="custom-sep" style="border-bottom: 4px solid #a54b89"></span>
-                        <div class="wrapper">
-                            <div class="small">
-                                <p>theKeyCollections brings together a unique set of hotels, apartments and guesthouses, each with its own distinctive character, in great locations across <a href="">Dublin</a>, <a href="">London</a> and <a href="">Carrick on Shannon</a>. Our vision is to exceed your expectations across each of our properties providing your with a great place to stay in a great location that allows you to delve into, ramble through and enjoy the unique qualities of your surroundings.</p>
-                            </div>
-                            <div class="d-block d-lg-none mb-3 mb-lg-0">
-                                <div class="expand-more">
-                                    <a href="#">READ MORE</a>
+
+
+                        <div class="form-group col-sm-12">
+                            <label>Your Message</label>
+                            <textarea class="form-control" name="Enquiry" placeholder="Type here..." required=""></textarea>
+                        </div>
+
+
+                        <div class="form-group col-sm-12 checkbox-group">
+                            <label>Email me information about...</label>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                <label>
+                                    <input type="checkbox" name="newsletter"> <span class="custom-check"></span>Your Dublin Discounts</label>
+                                </div>
+                                <div class="col-sm-6">
+                                <label>
+                                    <input type="checkbox" name="newsletter"> <span class="custom-check"></span>Your Dublin Travel Guides</label>
+                                </div>
+                                <div class="col-sm-6">
+                                <label>
+                                    <input type="checkbox" name="newsletter"> <span class="custom-check"></span>Your Dublin Newsletter</label>
                                 </div>
                             </div>
                         </div>
+                        <div class="text-right col-sm-12">
+                            <button type="submit" id="submit" class="submitBtn btn">SEND</button>
+                        </div>
                     </div>
+                </form>
+                <div class="conftext" style="display: none;">
+                    Thank you.
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <!-- ------------------------------------------------------------------ -->
-    <!-- Features -->
-
-
-    <!-- Center heading and content -->
-
-    <div class="container text-center standard-heading-text">
-        <h2>Our Locations</h2>
-        <span class="custom-sep mx-auto" style="border-bottom: 4px solid #a54b89"></span>
-    </div>
-
-    <!-- Home Large Text Image -->
-
-    <section class="home-ft-large">
-        <div class="container-fluid">
-            <div class="row reverse">
-                <div class="col-12 col-lg-4">
-                    <div class="home-ft-large-text home-ft-large-text-left">
-                        <h2>Dublin</h2>
-                        <span class="custom-sep d-none d-lg-block " style="border-bottom: 4px solid #a54b89"></span>
-                        <p>The small capital with the big heart. Stay in the centre of Dublin with us and explore all the culture and craic this medieval city has to offer.Stay in the heart of the city that wants to meet you. With properties centrally located in the city’s historical and cultural neighbourhoods all you have to do is choose where you stay with us.</p>
-                        <a href="#" class="link-btn">Find a place in Dublin</a>
-                    </div>
+        <div class="col-12 col-lg-6">
+            <div class="ft-property-details-content">
+                <h3>Jervis Apartments</h3>
+                <div class="row">
+                    <div class="col-1"><img src="public/images/svg/contact.svg"></div>
+                    <div class="col-10"><p>+353 (0)1 234 5678</p></div>
                 </div>
-                <div class="col-12 col-lg-8 pr-lg-0">
-                    <div class="home-ft-large-img home-ft-large-img-border-left " style="background: url(public/images/img-dublin.jpg) no-repeat center center; background-size: cover;"></div>
+                <div class="row">
+                    <div class="col-1"><img src="public/images/svg/email.svg"></div>
+                    <div class="col-10"><p>reservations@jervisapartments.com</p></div>
                 </div>
+
+
+
+                <!-- Div is Detach on mobile -->
+                <div id="all-properties">
+                    <h3>All Properties</h3>
+                    <ul>
+                        <li><a href="">Amberly Apartments</a></li>
+                        <li><a href="">Amberly Guesthouse</a></li>
+                        <li><a href="">The Camden Hotel</a></li>
+                        <li><a href="">Carrick Plaza Suites</a></li>
+                        <li><a href="">City Studios & Apartments</a></li>
+                        <li><a href="">Clifden Guesthouse</a></li>
+                        <li><a href="">Clifden House Apartments</a></li>
+                        <li><a href="">Dorset Street Apartments</a></li>
+                        <li><a href="">Dublin Airport Manor</a></li>
+                        <li><a href="">Dublin City Aparthotels</a></li>
+                        <li><a href="">Temple Bar Apartments</a></li>
+                        <li><a href="">Handles Hotel</a></li>
+                        <li><a href="">Hotel St. George</a></li>
+                        <li><a href="">IFSC Apartments</a></li>
+                        <li><a href="">Jervis Apartments</a></li>
+                        <li><a href="">Kildare Street Hotel</a></li>
+                        <li><a href="">The Exhibitionist Hotel</a></li>
+                    </ul>
+                </div>
+
+                
             </div>
         </div>
-    </section>
-
-    <!-- END -->
+    </div> 
 
 
-    <!-- Home Large Image Text -->
-
-    <section class="home-ft-large">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-lg-8 pl-lg-0">
-                    <div class="home-ft-large-img home-ft-large-img-border-right" style="background: url(public/images/img-london.jpg) no-repeat center center; background-size: cover;"></div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="home-ft-large-text home-ft-large-text-right">
-                        <h2>London</h2>
-                        <span class="custom-sep d-none d-lg-block" style="border-bottom: 4px solid #a54b89"></span>
-                        <p>London calling to… you. There are so many reasons to visit this diverse and exciting city. Historical landmarks, iconic shops, legendary cafes, bars and restaurants. So stay with us in the heart of it all.</p>
-                        <a href="#" class="link-btn">Stay In London</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- END -->
-
-    <!-- Home Large Text Image -->
-
-    <section class="home-ft-large">
-        <div class="container-fluid">
-            <div class="row reverse">
-                <div class="col-12 col-lg-4">
-                    <div class="home-ft-large-text home-ft-large-text-left">
-                        <h2>Carrick-on-Shannon</h2>
-                        <span class="custom-sep d-none d-lg-block" style="border-bottom: 4px solid #a54b89"></span>
-                        <p>Carrick on Shannon is the most popular resort towns in Ireland. Staying in the town centre experience the beauty and activities offered by the River Shannon. Or unwind while enjoying the many local bars and restaurants.</p>
-                        <a href="#" class="link-btn">Stay in Carrick</a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-8 pr-lg-0">
-                    <div class="home-ft-large-img home-ft-large-img-border-left" style="background: url(public/images/img-carrick.jpg) no-repeat center center; background-size: cover;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- END -->
-
-    <!-- ------------------------------------------------------------------ -->
-    <!-- Center heading and content -->
-
-    <div class="container text-center standard-heading-text">
-        <h2>Stay with Us</h2>
-        <span class="custom-sep mx-auto" style="border-bottom: 4px solid #a54b89"></span>
-        <p>No matter how you choose to stay with us, you know you'll be guaranteed free WIFI, a superb location, friendly staff and a comfortable bed.</p>
-    </div>
-
-    <!-- END -->
-
-    <!-- ------------------------------------------------------------------ -->
-    <!-- Home 3 boxes -->
-
-    <section class="home-3-boxes d-none d-lg-block">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4">
-                    <img src="public/images/hotels.jpg" alt="" style="width: 100%; border-bottom: solid 5px #f7be40">
-                    <div class="home-box-content">
-                        <h2>Hotels</h2>
-                        <span class="custom-sep" style="border-bottom: 4px solid #f7be40"></span>
-                        <p class="home-box-content-text">A genuine and authentic welcome awaits you at all our hotels. If you are uncertain about where to stay you can choose a 2 star up to 5 star hotel. Delighted in the knowledge that you’ve booked the perfect hotel for your trip.</p>
-                        <a href="#" class="d-none d-sm-block link2">View All Hotels</a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <img src="public/images/apartments.jpg" alt="" style="width: 100%; border-bottom: solid 5px #00aebb">
-                    <div class="home-box-content">
-                        <h2>Apartments</h2>
-                        <span class="custom-sep" style="border-bottom: 4px solid #00aebb"></span>
-                        <p class="home-box-content-text">The freedom for you to enjoy your visit your way. Choose a place with enough beds and living space that is tailored for your needs. Really experience the local neighbourhood to experience what your destination really has to offer.</p>
-                        <a href="#" class="d-none d-sm-block link2">View All Apartments</a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <img src="public/images/guesthouse.jpg" alt="" style="width: 100%; border-bottom: solid 5px #b9c077">
-                    <div class="home-box-content">
-                        <h2>Guesthouses</h2>
-                        <span class="custom-sep" style="border-bottom: 4px solid #b9c077"></span>
-                        <p class="home-box-content-text">Our Guesthouses are uniquely small meaning only a few get to experience what it is like to stay here. With only limited availability, you will greeted with a distinctively personalised level of service in great locations.</p>
-                        <a href="#" class="d-none d-sm-block link2">See Guesthouses</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        <!-- Home 3 boxes (Only mobile) -->
-
-        <section class="home-3-boxes-slider slider d-lg-none">
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="public/images/hotels.jpg" alt="" style="width: 95%; height: 200px; border-bottom: solid 5px #f7be40; border-radius: 5px;">
-                        <span>Hotel</span>
-                    </figure>
-                </a>
-            </div>
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="public/images/apartments.jpg" alt="" style="width: 95%; height: 200px; border-bottom: solid 5px #00aebb;  border-radius: 5px;">
-                        <span>Apartments</span>
-                    </figure>
-                </a>      
-            </div>
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="public/images/guesthouse.jpg" alt="" style="width: 95%; height: 200px; border-bottom: solid 5px #b9c077; border-radius: 5px;">
-                        <span>Guesthouses</span>
-                    </figure>
-                </a>        
-            </div>
-        </section>
-
-    <!-- END -->
-
-    <!-- ------------------------------------------------------------------ -->
-
-    <div class="container text-center standard-heading-text">
-        <h2>#yourDublin</h2>
-        <span class="custom-sep mx-auto" style="border-bottom: 4px solid #a54b89"></span>
-    </div>
-
-
-    <!-- ------------------------------------------------------------------ -->
-    <!-- Instagram feed -->
-
-    <section id="instagram" class="imageTimeline flexRow">
-            <figure id="inst0">
-                <img src="public/images/insta1.jpg" alt="img">
-                <figcaption>
-                    <div class="imgButtons">
-                        <a href="#" target="_blank"><i class="fa fa-heart-o"></i> <span class="likes"></span></a>
-                        <a href="#" target="_blank"><i class="fa fa-comment-o"></i> <span class="comments"></span></a>
-                    </div>
-                    <a href="#" target="_blank"><div class="imgDescription d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></a>
-                </figcaption>
-            </figure>
-            <figure id="inst1">
-                <img src="public/images/insta1.jpg" alt="img">
-                <figcaption>
-                    <div class="imgButtons">
-                        <a href="#" target="_blank"><i class="fa fa-heart-o"></i> <span class="likes"></span></a>
-                        <a href="#" target="_blank"><i class="fa fa-comment-o"></i> <span class="comments"></span></a>
-                    </div>
-                    <a href="#" target="_blank"><div class="imgDescription"></div></a>
-                </figcaption>
-            </figure>
-            <figure id="inst2">
-                <img src="public/images/insta-img-1.jpg" alt="img">
-                <figcaption>
-                    <div class="imgButtons">
-                        <a href="#" target="_blank"><i class="fa fa-heart-o"></i> <span class="likes"></span></a>
-                        <a href="#" target="_blank"><i class="fa fa-comment-o"></i> <span class="comments"></span></a>
-                    </div>
-                    <a href="#" target="_blank"><div class="imgDescription"></div></a>
-                </figcaption>
-            </figure>
-            <figure id="inst3">
-                <img src="public/images/insta-img-6.jpg" alt="img">
-                <figcaption>
-                    <div class="imgButtons">
-                        <a href="#" target="_blank"><i class="fa fa-heart-o"></i> <span class="likes"></span></a>
-                        <a href="#" target="_blank"><i class="fa fa-comment-o"></i> <span class="comments"></span></a>
-                    </div>
-                    <a href="#" target="_blank"><div class="imgDescription"></div></a>
-                </figcaption>
-            </figure>
-            <figure id="inst4">
-                <img src="public/images/insta-img-4.jpg" alt="img">
-                <figcaption>
-                    <div class="imgButtons">
-                        <a href="#" target="_blank"><i class="fa fa-heart-o"></i> <span class="likes"></span></a>
-                        <a href="#" target="_blank"><i class="fa fa-comment-o"></i> <span class="comments"></span></a>
-                    </div>
-                    <a href="#" target="_blank"><div class="imgDescription"></div></a>
-                </figcaption>
-            </figure>
-            <figure id="inst5">
-                <img src="public/images/insta-img-5.jpg" alt="img">
-                <figcaption>
-                    <div class="imgButtons">
-                        <a href="#" target="_blank"><i class="fa fa-heart-o"></i> <span class="likes"></span></a>
-                        <a href="#" target="_blank"><i class="fa fa-comment-o"></i> <span class="comments"></span></a>
-                    </div>
-                    <a href="#" target="_blank"><div class="imgDescription"></div></a>
-                </figcaption>
-            </figure>
-    
-    </section>
-
-    <!-- End Instagra feed -->
-
-
-    <!-- ------------------------------------------------------------------ -->
-    <!-- Social Media -->
-
-    <section class="container text-center">
-        <ul class="social-channels">
-            <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
-            <li><a href=""><i class="fa fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa fa-linkedin"></a></i></li>
-        </ul>
-    </section>
-
-    <!-- End social media -->
-
+</div>
     <!-- ------------------------------------------------------------------ -->
     <!-- Newsletter Signup -->
 
@@ -600,10 +444,10 @@
     <!-- ------------------------------------------------------------------ -->
     <!-- Start mobile bottom buttons -->
     <div class="mobile-btns text-center d-block d-md-none">
-        <a href="#" class="float-left"><img src="public/images/svg/icon-call-mob.svg"> CALL</a>
-        <a href="#" class="float-left btn-book-mobile">BOOK</a>
-    </div>
-    <!-- END mobile bottom buttons -->
+            <a href="#" class="float-left"><img src="public/images/svg/icon-call-mob.svg"> CALL</a>
+            <a href="#" class="float-left btn-book-mobile">BOOK</a>
+        </div>
+        <!-- END mobile bottom buttons -->
 
 
     <!-- ------------------------------------------------------------------ -->
@@ -714,21 +558,6 @@
     <script src="public/js/custom.js"></script>
 
     <script type="text/javascript">
-            $(".home-3-boxes-slider").slick({
-                dots: false,
-                infinite: false,
-                slidesToShow: 1.5,
-                slidesToScroll: 1
-            });
-
-            $(".home-slider").slick({
-                dots: true,
-                infinite: false,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 3000
-            });
     </script>
 
 

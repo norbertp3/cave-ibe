@@ -30,3 +30,8 @@ $(".location-nav-dropdown").hover(function(){
 $(".hotels-nav-dropdown").hover(function(){
     $(".hotels-nav").toggleClass("add-nav-hover");
 });
+
+// Detach properties listWidth
+if ($(window).width() < 767) {
+    $("#all-properties").detach().insertAfter(".enquiry-cover");
+}
