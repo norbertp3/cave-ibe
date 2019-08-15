@@ -280,7 +280,7 @@
     <!-- ------------------------------------------------------------------ -->
     <!-- Property Sub Navigation -->
 
-    <nav class="navbar navbar-expand-lg" id="property-nav">
+<nav class="navbar navbar-expand-lg" id="property-nav">
             <div class="property-nav-top w-100 d-lg-none">
                 <a class="navbar-brand">Explore</a>
                 <button class="navbar-toggler collapsed float-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -311,16 +311,16 @@
                 </li>
             </ul>
             </div>
-          </nav>
+</nav>
 
-    <div class="container standard-content" id="property-wrapper">
+<div class="container" id="property-wrapper">
 
     <!-- ------------------------------------------------------------------ -->
     <!-- Features -->
     
     <section id="ft-property-details" class="feature">
         <div class="row">
-            <div class="col-12 col-lg-6 pr-lg-5">
+            <div class="col-12 col-lg-6 pr-lg-4">
                 <div class="ft-property-details-content">
                     <h2>Jervis Apartments</h2>
                     <span class="custom-sep" style="border-bottom: 4px solid #00aebb"></span>
@@ -339,7 +339,7 @@
                 </div>
                 <p>Perfectly located where Dublin's shopping quarter meets the vibrant culture of Temple Bar, these apartments are perfect for your city stay. With our Jervis Street Apartments you will find great value alongside a great central location just minutes from <a href="#">Temple Bar</a>, the <a href="#">Guinness Storehouse</a>, O’Connell Street & more.</p>
             </div>
-            <div class="col-12 col-lg-6 pl-lg-5">
+            <div class="col-12 col-lg-6 pl-lg-4">
                 <section class="standard-slider slider">
                     <div>
                         <img src="public/images/apartment.jpg" alt="">
@@ -360,7 +360,7 @@
 
     <section id="ft-property-img-text" class="feature">
         <div class="row reverse">
-            <div class="col-12 col-lg-6 pr-lg-5">
+            <div class="col-12 col-lg-6 pr-lg-4">
                 <section class="standard-slider slider">
                     <div>
                         <img src="public/images/apartment.jpg" alt="">
@@ -376,7 +376,7 @@
                     </div>
                 </section>
             </div>
-            <div class="col-12 col-lg-6 pl-lg-5">
+            <div class="col-12 col-lg-6 pl-lg-4">
                     <h2>Our Guests Love</h2>
                     <span class="custom-sep" style="border-bottom: 4px solid #00aebb"></span>
                     <p>Our apartments are modern, spacious and come fully furnished, and provide the perfect base for work or play. With every apartment comes the following as standard. </p>
@@ -397,14 +397,14 @@
 
     <section id="ft-property-text-img" class="feature">
         <div class="row">
-            <div class="col-12 col-lg-6 pr-lg-5">
+            <div class="col-12 col-lg-6 pr-lg-4">
                 <h2>The Neighbourhood</h2>
                 <span class="custom-sep" style="border-bottom: 4px solid #00aebb"></span>
                 <p>Whether you're a solo traveller, a family, or a couple, the way to make the most of your visit to Dublin is to choose to stay in the heart of Dublin City. With our Jervis Street Apartments you will find great value alongside a great central location just minutes from Temple Bar, the Guinness Storehouse, O’Connell Street & more.</p>
                 <a href="#" class="link-btn">See Our Local Guide</a>
 
             </div>
-            <div class="col-12 col-lg-6 pl-lg-5">
+            <div class="col-12 col-lg-6 pl-lg-4">
                 <section class="standard-slider slider">
                     <div>
                         <img src="public/images/apartment.jpg" alt="">
@@ -424,11 +424,42 @@
     </section>
 
     <div class="text-center standard-heading-text">
-            <h2>#yourDublin</h2>
-            <span class="custom-sep mx-auto" style="border-bottom: 4px solid #a54b89"></span>
-        </div>
-
+        <h2>#yourDublin</h2>
+        <span class="custom-sep mx-auto" style="border-bottom: 4px solid #a54b89"></span>
     </div>
+
+    <div class="row ">
+        <div class="col-12">
+            <div class="large-slider slider">
+                <div>
+                    <div class="large-slide" style="background: url(public/images/bitmap.jpg) no-repeat center center; background-size: cover;"></div>
+                    <div class="large-slide-text large-slide-text-border">
+                        <h3>Last Minute Sale!</h3>
+                        <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="large-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center; background-size: cover;"></div>
+                    <div class="large-slide-text large-slide-text-border">
+                        <h3>Last Minute Sale!</h3>
+                        <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="large-slide" style="background: url(public/images/Screenshot_33.jpg) no-repeat center center; background-size: cover;"></div>
+                    <div class="large-slide-text large-slide-text-border">
+                        <h3>Last Minute Sale!</h3>
+                        <p>Book a stay in Dublin's Fair City next weekend with rooms from €58!</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
     <!-- ------------------------------------------------------------------ -->
     <!-- Newsletter Signup -->
 
@@ -599,6 +630,15 @@
                         }
                     }
                 ]
+            });
+            
+            $(".large-slider").slick({
+                dots: true,
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000
             });
     </script>
 

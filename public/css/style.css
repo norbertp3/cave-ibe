@@ -178,6 +178,14 @@ li {
     min-height: 120px;
     min-width: 280px;
 }
+.large-slide {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 120px;
+    min-width: 280px;
+}
 
 .home-slider-large {
     overflow: hidden;
@@ -203,6 +211,21 @@ li {
     font-family: 'Roboto Slab', serif;
 }
 .home-slide-text a:hover {
+    text-decoration: none;
+}
+.large-slide-text {
+    background-color: rgba(71, 62, 71, 0.9);
+    padding: 10px 10px 25px 10px;
+}
+.large-slide-text h3, .large-slide-text p {
+    color: #eae9ea!important;
+}
+.large-slide-text a {
+    color: #fff!important;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+}
+.large-slide-text a:hover {
     text-decoration: none;
 }
 .slick-dots {
@@ -433,6 +456,7 @@ li {
     color: #fff;
     text-align: center;
     padding: 20px 10px;
+    margin-top: 60px;
 }
 
 .newsletter span { 
