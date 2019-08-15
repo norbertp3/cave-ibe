@@ -213,6 +213,9 @@ li {
 .home-slide-text a:hover {
     text-decoration: none;
 }
+.large-slider {
+    overflow-x: hidden;
+}
 .large-slide-text {
     background-color: rgba(71, 62, 71, 0.9);
     padding: 10px 10px 25px 10px;
