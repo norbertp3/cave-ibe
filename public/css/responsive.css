@@ -701,6 +701,9 @@
     .feature li {
         font-size: 16px;
     }
+    .property-banner-hero {
+        max-width: 1600px;
+    }
 }
 @media (min-width: 1200px) {
     .home-banner-large-text {
@@ -764,10 +767,6 @@
         font-size: 22px;
         font-family: 'Roboto Slab', serif;
         margin-left: 20px!important;
-    }
-    .property-banner-hero {
-        display: inline-block;
-        max-width: 1100px;
     }
 }
 @media (min-width: 1300px) {
