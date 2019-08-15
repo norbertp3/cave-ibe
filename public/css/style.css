@@ -160,6 +160,10 @@ li {
     display: none;
 }
 
+.not-slider img {
+    width: 100%;
+}
+
 /* .navbar-brand {
     width: 210px;
     height: 37px;
