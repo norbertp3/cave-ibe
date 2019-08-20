@@ -891,7 +891,7 @@ input[type=checkbox]:checked+span.custom-check:after {
 .blog-list .card-img-top {
     border-radius: 0;
 }
-.blog-list span {
+.blog-list span, .blog-article span {
     font-size: 14px;
     font-weight: 600;
     color: rgba(113, 108, 112, 0.6);
@@ -904,4 +904,35 @@ input[type=checkbox]:checked+span.custom-check:after {
 }
 .blog-filters .text-right {
     margin-bottom: 20px;
+}
+.blog-link a {
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+    color: #473e47!important;
+    margin: 20px 0;
+    display: block;
+}
+.blog-link a:hover {
+    font-size: 18px;
+}
+.share-social .fa {
+    height: 30px;
+    width: 30px;
+    background-color: #a54b89;
+    color: #fff;
+    padding-top: 8px;
+    padding-left: 9px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+.blog-article img {
+    width: 100%;
+    height: auto;
+}
+.blog-article h3 {
+    margin: 20px 0;
+}
+.blog-article iframe {
+    width: 260px;
+    height: auto;
 }

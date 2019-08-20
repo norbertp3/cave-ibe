@@ -66,6 +66,8 @@ $('.custom-tab-head').click(function(){
     $(this).next().slideToggle('slow');
 });
 
+
+// Blog filters
 $('.open-filters').click(function(){
     $(".blog-filters-checkboxes").slideToggle('slow');
 });

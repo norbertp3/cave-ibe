@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BLOG LIST</title>
+    <title>PROPERTY OVERVIEW</title>
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="public/css/style.css">
@@ -16,6 +16,11 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
+    <style>
+        .feature li::before {
+            color: #00aebb!important;
+        }
+    </style>
 
 </head>
 
@@ -32,7 +37,6 @@
                     <li style="display: inline-block"><a href="/blog-list.html">Blog |</a></li>
                 </ul>
             </div>
-
 
     <!-- ------------------------------------------------------------------ -->
     <!-- Mobile & Desktop Navigation -->
@@ -264,119 +268,42 @@
             </nav>
         </div>
 
-<div class="container" id="">
+<div class="container" id="property-wrapper">
 
-        <div class="standard-heading-text">
-            <h2 class="text-center">Our Blog</h2>
-            <span class="custom-sep mx-auto" style="border-bottom: 4px solid #a54b89"></span>
-        </div>
+    <div class="blog-link">
+        <a href="#">Back to All Posts</a>
+    </div>
 
+    <section class="blog-article">
+        <img src="public/images/blog-banner.jpg" alt="" class="img-fluid mb-3">
+        <div class="col col-lg-8 mx-auto">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <span>14 May 2019</span>
+                <div class="share-social d-none d-lg-block">
+                    <span>SHARE: <a href=""><i class="fa fa-facebook-f ml-2"></i></a></span>               
+                </div>
+            </div>
+            <h1>Our Local Guide to Dublin's Best Pubs</h1>
+            <span class="custom-sep" style="border-bottom: 4px solid #a54b89"></span>
+            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
+            <h3>1. O'Donoghues Bar – Merrion Row</h3>
+            <p>Fusce vehicula dolor arcu, <a href="">sit amet blandit dolor mollis nec.</a> Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. </p>
+            <img src="public/images/noname-bar.jpg" alt="">
 
-        <section class="blog-filters">
-            <div class="text-right"><a href="javascript:void(0)" class="open-filters"><span class="filter-text">FILTER BLOG POSTS</span></a></div>
-            <div class="blog-filters-checkboxes">
-                <form>
-                    <div class="checkbox-group">
-                        <label>
-                            <input type="checkbox" name=""> <span class="custom-check"></span>Dublin
-                        </label>
-                        <label>
-                            <input type="checkbox" name=""> <span class="custom-check"></span>London
-                        </label>
-                        <label>
-                            <input type="checkbox" name=""> <span class="custom-check"></span>Carrick-On-Shannon
-                        </label>
-                        <label>
-                            <input type="checkbox" name=""> <span class="custom-check"></span>Events
-                        </label>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-    <!-- ------------------------------------------------------------------ -->
-    <!-- Location three boxes -->
-    <section class="blog-list">
-        <div class="row">
-            <div class="col-12 col-lg-4">
-                <div class="card" style="">
-                    <img src="/public/images/kayaking-liffy.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <span>14 May 2019</span>
-                        <h3 class="card-title">Henry Street</h3>
-                        <div class="clearfix"></div>
-                        <p class="card-text">Only a stone's throw from one of Dublin's biggest shopping streets... </p>
-                        <a href="#"><button type="button" class="btn btn-dark">READ MORE</button></a>
-                    </div>
+            <h3>2. The Secret Bar/The Bar With No Name</h3>
+            <p>Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices.</p>
+            <iframe src="https://www.youtube.com/embed/O9a8pVGa1Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="blog-link">
+                    <a href="#">Back to All Posts</a>
+                </div>
+                <div class="share-social d-none d-lg-block">
+                    <span>SHARE: <a href=""><i class="fa fa-facebook-f ml-2"></i></a></span>               
                 </div>
             </div>
-            <div class="col-12 col-lg-4">
-                <div class="card" style="">
-                    <img src="/public/images/easter.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <span>14 May 2019</span>
-                        <h3 class="card-title">Trinity College & The Book of Kells</h3>
-                        <div class="clearfix"></div>
-                        <p class="card-text">Go see Ireland’s greatest cultural treasure and the world’s most famous
-                            medieval manuscript...</p>
-                        <a href="#"><button type="button" class="btn btn-dark">READ MORE</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card" style="">
-                    <img src="/public/images/dublin-pub.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <span>14 May 2019</span>
-                        <h3 class="card-title">The National Leprechaun Museum</h3>
-                        <div class="clearfix"></div>
-                        <p class="card-text">One for all the family, with interactive exhibits telling stories of
-                            Ireland's mythical creatures...</p>
-                        <a href="#"><button type="button" class="btn btn-dark">READ MORE</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card" style="">
-                    <img src="/public/images/kayaking-liffy.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <span>14 May 2019</span>
-                        <h3 class="card-title">Henry Street</h3>
-                        <div class="clearfix"></div>
-                        <p class="card-text">Only a stone's throw from one of Dublin's biggest shopping streets... </p>
-                        <a href="#"><button type="button" class="btn btn-dark">READ MORE</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card" style="">
-                    <img src="/public/images/easter.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <span>14 May 2019</span>
-                        <h3 class="card-title">Trinity College & The Book of Kells</h3>
-                        <div class="clearfix"></div>
-                        <p class="card-text">Go see Ireland’s greatest cultural treasure and the world’s most famous
-                            medieval manuscript...</p>
-                        <a href="#"><button type="button" class="btn btn-dark">READ MORE</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card" style="">
-                    <img src="/public/images/dublin-pub.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <span>14 May 2019</span>
-                        <h3 class="card-title">The National Leprechaun Museum</h3>
-                        <div class="clearfix"></div>
-                        <p class="card-text">One for all the family, with interactive exhibits telling stories of
-                            Ireland's mythical creatures...</p>
-                        <a href="#"><button type="button" class="btn btn-dark">READ MORE</button></a>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </section>
-
 </div>
     <!-- ------------------------------------------------------------------ -->
     <!-- Newsletter Signup -->

@@ -11,6 +11,10 @@
  }
 
  @media (min-width: 768px) { 
+    .blog-article iframe {
+        width: 560px;
+        height: 315px;
+    }
 
 }
 
@@ -763,6 +767,10 @@
     .blog-list .card {
         border: none;
         margin-bottom: 40px;
+    }
+    .blog-article iframe {
+        width: 560px;
+        height: 315px;
     }
 }
 @media (min-width: 1200px) {
