@@ -284,6 +284,13 @@
     #property-wrapper h2 {
         text-align: center;
     }
+    .blog-filters-checkboxes label {
+        width: 100%;
+    }
+    .blog-filters-checkboxes label {
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (min-width: 992px) { 
@@ -632,13 +639,13 @@
     .dropdown-toggle::after {
         display: none!important;
     }
-    .card img {
+    .navbar-nav .card img {
         opacity: 0.9;
     }
     .card:hover img {
         opacity: 1;
     }
-    .card:hover .card-body {
+    .navbar-nav .card:hover .card-body {
         background-color: #554a55;
     }
     .navbar-nav .card {
@@ -727,6 +734,36 @@
     #all-properties li {
         display: inline-block;
     }
+    .fature-x-boxes .card-body {
+        position: relative;
+        /* display: inline-table; */
+    }
+    .fature-x-boxes a.link-btn {
+        position: absolute;
+        bottom: -50px;
+    }
+    .fature-x-boxes {
+        margin-bottom: 100px;
+    }
+    .fature-tabs .col-lg-6:nth-child(odd) {
+        padding-right: 35px!important;
+    }
+    .fature-tabs .col-lg-6:nth-child(even) {
+        padding-left: 35px!important;
+    }
+    .standard-heading-text ul {
+        margin-bottom: 30px;
+    }
+    .custom-tab .fa {
+        right: 20px;
+    }
+    .blog-list .btn-dark {
+        width: 140px;
+    }
+    .blog-list .card {
+        border: none;
+        margin-bottom: 40px;
+    }
 }
 @media (min-width: 1200px) {
     .home-banner-large-text {
@@ -790,6 +827,10 @@
         font-size: 22px;
         font-family: 'Roboto Slab', serif;
         margin-left: 20px!important;
+    }
+    #googleMap {
+        width: 100%;
+        height: 469px;
     }
 }
 @media (min-width: 1300px) {
