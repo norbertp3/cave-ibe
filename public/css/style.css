@@ -673,9 +673,9 @@ ul.footer-master-nav {
     height: 220px;
     position: relative;
 }
-.property-banner {
-    background-color: #a54b89!important;
-}
+/* .property-banner {
+    background-color: #473e47!important;
+} */
 .property-banner-wrapper {
     position: relative;
     text-align: center;
@@ -866,6 +866,10 @@ input[type=checkbox]:checked+span.custom-check:after {
     margin-bottom: 40px;
 }
 
+.standard-heading-text b {
+    font-weight: 600!important;
+}
+
 /* Blog */
 .blog-filters-checkboxes {
     background-color: #473e47;
@@ -988,4 +992,13 @@ ul.multiselect-container {
 
 .multiselect-container li.active {
     background-color: #eae9ea;
+}
+.multiselect-container>li {
+    padding: 10px 0!important;
+}
+
+/* fix for large slider h3 */
+
+.large-slide-text h3, .home-slide-text h3 {
+    margin-bottom: 10px!important;
 }
