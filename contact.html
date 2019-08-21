@@ -13,6 +13,7 @@
     <!-- Vendors -->
     <link rel="stylesheet" type="text/css" href="public/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="public/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap-multiselect.css"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
@@ -335,18 +336,13 @@
 
 
                         <div class="form-group col-12">
-                            <label>Which property do you wish to contact?</label>
-                            <select multiple class="form-control" required="">
-                                <option value="">Jervis Apartments</option>
-                                <option value="">Jervis Apartments</option>
-                                <option value="">Jervis Apartments</option>
-                                <option value="">Jervis Apartments</option>
-                                <option value="">Jervis Apartments</option>
-                                <option value="">Jervis Apartments</option>
-                                <option value="">Jervis Apartments</option>
-                                <option value="">Jervis Apartments</option>
-                                <option value=""></option>
-                            </select>
+                            <label class="w-100">Which property do you wish to contact?</label>
+                            <select id="multiple-selected" multiple="multiple">
+                                    <option value="jervis">Jervis Apartments</option>
+                                    <option value="london">London Apartments</option>
+                                    <option value="camden">Camden Street Apartments</option>
+                                </select>
+                                  
                         </div>
 
 
@@ -540,6 +536,8 @@
     
     <!-- Slick -->
     <script type="text/javascript" src="public/js/slick.min.js"></script>
+    <script type="text/javascript" src="public/js/popper.js"></script>
+    <script type="text/javascript" src="public/js/bootstrap-multiselect.js"></script>
     
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

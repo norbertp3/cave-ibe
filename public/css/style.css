@@ -936,3 +936,52 @@ input[type=checkbox]:checked+span.custom-check:after {
     width: 260px;
     height: auto;
 }
+.bootstrap-select .bs-ok-default::after {
+    width: 0.3em;
+    height: 0.6em;
+    border-width: 0 0.1em 0.1em 0;
+    transform: rotate(45deg) translateY(0.5rem);
+}
+
+.btn.dropdown-toggle:focus {
+    outline: none !important;
+}
+
+#multiple-selected .btn-group-vertical>.btn, .btn-group>.btn {
+    background: #fff;
+    text-align: left;
+    height: 50px;
+    border-radius: 2px;
+    border: solid 1px rgba(113, 108, 112, 0.3);
+    color: #473E47!important;
+    overflow: hidden;
+}
+#multiple-selected .btn-group-vertical>.btn, .btn-group>.btn:focus {
+    border-color: #9e9e9e;
+    box-shadow: none;
+}
+.btn-group, .btn-group-vertical {
+    width: 100%
+}
+.multiselect-selected-text {
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+}
+.multiselect-container .dropdown-menu .show, ul.multiselect-container {
+    width: 100%!important;
+}
+.multiselect-container a {
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    color: #473E47!important;
+}
+.multiselect-container label.checkbox:focus {
+    outline-color: rgba(255, 255, 255, 0)!important;
+}
+.multiselect-container>li>a:focus {
+    outline-color: rgba(255, 255, 255, 0)!important;
+}
+
+.multiselect-container li.active {
+    background-color: #eae9ea;
+}

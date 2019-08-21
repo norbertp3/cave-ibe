@@ -75,3 +75,8 @@ $('.open-filters').click(function(){
 $(".open-filters").click(function () {
     $(".filter-text").text(($(".filter-text").text() == 'CLOSE FILTERS') ? 'FILTER BLOG POSTS' : 'CLOSE FILTERS');
 })
+
+$(document).ready(function() {
+    $('#multiple-selected').multiselect();
+});
+  
