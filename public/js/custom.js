@@ -77,6 +77,7 @@ $(".open-filters").click(function () {
 })
 
 $(document).ready(function() {
-    $('#multiple-selected').multiselect();
+    $('#multiple-selected').multiselect({
+    });
 });
   

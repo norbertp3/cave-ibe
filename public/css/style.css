@@ -528,7 +528,8 @@ li {
 }
 .enquiry-cover .form-control:focus {
     box-shadow: none;
-    border-color: #9e9e9e; 
+    border-radius: 2px;
+    border: solid 1px #473e47;
 }
 
 select {
@@ -733,6 +734,7 @@ ul.footer-master-nav {
     line-height: 1.43;
     margin-bottom: 5px;
 }
+
 .enquiry-cover input, .enquiry-cover select, .enquiry-cover textarea {
     height: 50px;
     border-radius: 2px;
@@ -881,9 +883,15 @@ input[type=checkbox]:checked+span.custom-check:after {
 .blog-filters-checkboxes label {
     margin-right: 15px;
     margin-bottom: 0;
+    font-family: 'Nunito', sans-serif;
 }
-.blog-filters {
-    
+.blog-filters-checkboxes span.custom-check {
+    border: none;
+    border-radius: 1px;
+}
+.blog-filters-checkboxes input[type=checkbox]:checked+span.custom-check:after {
+    top:0;
+    border-radius: 1px;
 }
 .blog-list .card-body {
     padding: 10px 0;
@@ -905,6 +913,7 @@ input[type=checkbox]:checked+span.custom-check:after {
 }
 .blog-list .btn-dark {
     width: 100%;
+    height: 50px;
 }
 .blog-filters .text-right {
     margin-bottom: 20px;
@@ -961,7 +970,8 @@ input[type=checkbox]:checked+span.custom-check:after {
     overflow: hidden;
 }
 #multiple-selected .btn-group-vertical>.btn, .btn-group>.btn:focus {
-    border-color: #9e9e9e;
+    border-radius: 2px;
+    border: solid 1px #473e47;
     box-shadow: none;
 }
 .btn-group, .btn-group-vertical {
@@ -975,7 +985,7 @@ input[type=checkbox]:checked+span.custom-check:after {
     width: 100%!important;
 }
 ul.multiselect-container {
-    border: 1px solid #9e9e9e!important;
+    border: solid 1px #473e47!important;
     border-radius: 0;
     margin-top: 0;
 }
@@ -1037,6 +1047,10 @@ input[type=checkbox]:checked+span.checkbox:after {
     left: -1px;
     top: -1px;
 }
+
+.checkbox-group .d-flex {
+    margin-bottom: 10px;
+} 
 
 
 /* fix for large slider h3 */
