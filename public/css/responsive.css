@@ -318,6 +318,8 @@
     }
     .reverse {
         flex-direction: row;
+        -webkit-flex-direction: row;
+ 
     }
     .custom-sep {
         margin: 30px 0;
