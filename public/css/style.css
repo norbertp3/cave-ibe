@@ -53,7 +53,6 @@ p {
 .reverse {
     flex-direction: column-reverse;
     -webkit-flex-direction: column-reverse;
-    -webkit-flex: 1 1 15em;
 }
 
 .rotate{
@@ -82,6 +81,10 @@ p {
 
 .btn-secondary {
     background-color: #a54b89!important;
+    border: none!important;
+}
+.btn-secondary:hover {
+    background-color: #844882!important;
 }
 
 a, a:hover {

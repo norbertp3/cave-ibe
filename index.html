@@ -331,6 +331,414 @@
     </section>
 
 
+    
+
+    <div id="booking-widget-banner" class="homepage-widget">
+        <form action="" class="booking-widget-banner"
+            name="booking-widget-banner">
+            <input type="hidden" name="_token" value="">
+    
+            <div class="booking-widget-inner container">
+    
+                <div class="row">
+                    <div class="col-lg-10 homepage-hide-widget">
+                        <div class="clearfix"></div>
+                        <div class="row">
+
+                            <!-- Check-in -->
+                            <div class="d-flex widget-checkin p-5px">
+                                <input class="datepicker hasDatepicker" type="text" value="" id="arrival"
+                                    name="arrival" placeholder="Check-in" readonly="readonly"
+                                    data-date-format="dd mm yy">
+                            </div>
+
+                            <!-- Location  -->
+                            <div class="d-flex widget-nigts p-5px">
+                                <select name="city" id="booking_city">
+                                    <option value="1">1 Night</option>
+                                    <option value="2">
+                                        2 Nights
+                                    </option>
+                                    <option value="3">
+                                        3 Nights
+                                    </option>
+                                </select>
+
+                            </div>
+
+                            <!-- Location  -->
+                            <div class="d-flex widget-location p-5px">
+                                <select name="city" id="booking_city">
+                                    <option value="">Dublin</option>
+                                    <option value="34">
+                                        Aberdeen
+                                    </option>
+                                    <option value="10">
+                                        Edinburgh
+                                    </option>
+                                    <option value="9">
+                                        Glasgow
+                                    </option>
+                                    <option value="3">
+                                        London
+                                    </option>
+                                    <option value="5">
+                                        Manchester
+                                    </option>
+                                    <option value="101">
+                                        Perth
+                                    </option>
+                                    <option value="18">
+                                        Southampton
+                                    </option>
+                                </select>
+    
+                                <div id="choose-hotel-city" class="booking-widget-tooltip" data-toggle="tooltip"
+                                    data-placement="bottom" title="Please select a location."></div>
+                            </div>
+    
+                            <!-- Hotel -->
+                            <div class="d-flex widget-hotel p-5px">
+                                <select name="hotel" id="booking_hotel">
+                                    <option value="">All properties</option>
+                                    <option data-city="101"
+                                        data-url=""
+                                        value="3">
+                                        Jervis Apartments
+                                    </option>
+                                    <option data-city="10"
+                                        data-url=""
+                                        value="5">
+                                        Jervis Apartments
+                                    </option>
+                                </select>
+                            </div>
+    
+                            <!-- Rooms -->
+                            <div class="d-flex p-5px widget-rooms">
+                                <select name="rooms" id="rooms">
+                                    <option selected="">
+                                        1 Room
+                                    </option>
+                                    <option>
+                                        2 Rooms
+                                    </option>
+                                    <option>
+                                        3 Rooms
+                                    </option>
+                                    <option>
+                                        4 Rooms
+                                    </option>
+                                    <option>
+                                        5 Rooms
+                                    </option>
+                                    <option>
+                                        6 Rooms
+                                    </option>
+                                    <option>
+                                        7 Rooms
+                                    </option>
+                                    <option>
+                                        8 Rooms
+                                    </option>
+                                    <option>
+                                        9 Rooms
+                                    </option>
+                                </select>
+                            </div>
+    
+                            <div class="rooms_list p-5px">
+                                <div id="roomId1" class="room-details extra-rooms row" style="display: flex;">
+                                    <div class="d-flex widget-adults adults p-5px">
+                                        <select name="adults[1]">
+                                            <option value="1">1 adult</option>
+                                            <option value="2">2 adults</option>
+                                            <option value="3">3 adults</option>
+                                            <option value="4">4 adults</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex widget-children children p-5px">
+                                        <select name="children[1]">
+                                            <option value="0">0 kids</option>
+                                            <option value="1">1 kid</option>
+                                            <option value="2">2 kids</option>
+                                            <option value="3">3 kids</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="roomId2" class="room-details extra-rooms row cutom-room-extra" style="display: none;">
+                                    <label class="room-number">Room 2</label>
+                                    <div class="col-lg-6 widget-adults adults p-5px">
+                                        <select name="adults[2]">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 widget-children children p-5px">
+                                        <select name="children[2]">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="roomId3" class="room-details extra-rooms row cutom-room-extra" style="display: none;">
+                                    <label class="room-number">Room 3</label>
+                                    <div class="col-lg-6 widget-adults adults p-5px">
+                                        <select name="adults[3]">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 widget-children children p-5px">
+                                        <select name="children[3]">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="roomId4" class="room-details extra-rooms row cutom-room-extra" style="display: none;">
+                                    <label class="room-number">Room 4</label>
+                                    <div class="col-lg-6 widget-adults adults p-5px">
+                                        <select name="adults[4]">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 widget-children children p-5px">
+                                        <select name="children[4]">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="roomId5" class="room-details extra-rooms row cutom-room-extra" style="display: none;">
+                                    <label class="room-number">Room 5</label>
+                                    <div class="col-lg-6 widget-adults adults p-5px">
+                                        <select name="adults[5]">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 widget-children children p-5px">
+                                        <select name="children[5]">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="roomId6" class="room-details extra-rooms row cutom-room-extra" style="display: none;">
+                                    <label class="room-number">Room 6</label>
+                                    <div class="col-lg-6 widget-adults adults p-5px">
+                                        <select name="adults[6]">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 widget-children children p-5px">
+                                        <select name="children[6]">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="roomId7" class="room-details extra-rooms row cutom-room-extra" style="display: none;">
+                                    <label class="room-number">Room 7</label>
+                                    <div class="col-lg-6 widget-adults adults p-5px">
+                                        <select name="adults[7]">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 widget-children children p-5px">
+                                        <select name="children[7]">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="roomId8" class="room-details extra-rooms row cutom-room-extra" style="display: none;">
+                                    <label class="room-number">Room 8</label>
+                                    <div class="col-lg-6 widget-adults adults p-5px">
+                                        <select name="adults[8]">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 widget-children children p-5px">
+                                        <select name="children[8]">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="roomId9" class="room-details extra-rooms row cutom-room-extra" style="display: none;">
+                                    <label class="room-number">Room 9</label>
+                                    <div class="col-lg-6 widget-adults adults p-5px">
+                                        <select name="adults[9]">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 widget-children children p-5px">
+                                        <select name="children[9]">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 p-5px">
+                        <!-- Submit -->
+                        <div class="widget-submit">
+                            <label></label>
+                            <button type="submit" class="btn btn-secondary ipad">SEARCH</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row booking-widget-errors">
+                    <div class="col-lg-12">
+                        <p class="info-text group-booking" style="display: none;">To make a group booking <a
+                                title="Group Booking" href="/group-booking">click here</a> to complete our online form and a
+                            member of our team will be in touch to help you with your booking within 48 hours.</p>
+                    </div>
+                </div>
+            </div>
+    
+        </form>
+    </div>
+
+
     <!-- ------------------------------------------------------------------ -->
     <!-- Features -->
 

@@ -80,4 +80,35 @@ $(document).ready(function() {
     $('#multiple-selected').multiselect({
     });
 });
-  
+
+/* Rooms dropdown */
+$('select[name="rooms"]').on('change', function () {
+    update_room_dropdowns();
+});
+
+
+//Update rooms dropdown
+function update_room_dropdowns() {
+    rooms = parseInt($('#rooms').val());
+    parent = $('#rooms').parents('form');
+    totalNumberOfDivs = $('form .rooms_list .extra-rooms').length;
+    if (rooms < 10) {
+        for (i = 1; i <= totalNumberOfDivs; i++) {
+            if (i <= rooms) {
+                $('form #roomId' + i).css('display', 'flex');
+            } else {
+                $('form #roomId' + i).hide();
+            }
+        }
+        $('.info-text.group-booking').hide();
+        $('#booking-widget-banner button[type=submit]').show();
+        $('.add-promo').show();
+        $('.booking-widget-inner .rooms_list').show();
+    } else {
+        $('.info-text.group-booking').show();
+        $('#booking-widget-banner button[type=submit]').hide();
+        $('.add-promo').hide();
+        $('.booking-widget-inner .rooms_list').hide();
+        $('form .room-details.extra-rooms:not("#roomId1")').hide();
+    }
+}
