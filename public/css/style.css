@@ -53,6 +53,7 @@ p {
 .reverse {
     flex-direction: column-reverse;
     -webkit-flex-direction: column-reverse;
+    -webkit-flex: 1 1 15em;
 }
 
 .rotate{
