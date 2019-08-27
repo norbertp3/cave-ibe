@@ -1063,3 +1063,19 @@ input[type=checkbox]:checked+span.checkbox:after {
 .large-slide-text h3, .home-slide-text h3 {
     margin-bottom: 10px!important;
 }
+
+.booking-widget-modal {
+    padding: 0!important;
+}
+.booking-widget-modal .modal-dialog {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.booking-widget-modal .modal-content {
+    border-radius: 0;
+    border: 0;
+    height: 100%;
+    background-color: #473e47!important;
+    width: 100%;
+}

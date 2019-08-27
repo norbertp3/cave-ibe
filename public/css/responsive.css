@@ -202,7 +202,7 @@
         position: fixed;
         bottom: 0;
         width: 100%;
-        z-index: 9999;
+        z-index: 99;
     }
 
     .mobile-btns a {
@@ -294,6 +294,30 @@
     .blog-filters-checkboxes label {
         margin-right: 15px;
         margin-bottom: 10px;
+    }
+    .widget-nigts select, .widget-location select, .widget-hotel select, .widget-rooms select, .rooms_list select {
+        width: 100%;
+        height: 50px;
+        margin: 5px 0;
+    }
+    .widget-checkin {
+        width: 100%;
+    }
+    .p-10px {
+        padding: 5px;
+    }
+    #booking-widget-banner input, #booking-widget-banner select {
+        border: none!important;
+        border-radius: 0;
+        font-size: 14px;
+        padding: 7px 10px;
+        outline: none;
+        width: 100%;
+        height: 50px;
+    }
+    #booking-widget-banner .btn-secondary {
+        height: 50px;
+        width: 100%;
     }
 }
 
@@ -805,13 +829,14 @@
         width: 100%;
         height: 50px;
     }
-    #booking-widget-banner {
+    .homepage-widget {
         background-color: #473e47!important;
         padding: 10px 0;
         margin: 45px 0;
     }
     #booking-widget-banner .btn-secondary {
         height: 50px;
+        width: 95%;
     }
     .p-5px {
         padding: 0 3px!important;
@@ -857,11 +882,14 @@
         top: 5px;
         color: white;
     }
-    #booking-widget-banner{
+    #booking-widget-banner {
         height: 70px;
     }
     .cutom-room-extra, .room-number {
         background-color: #473e47!important;
+    }
+    .no-bg.cutom-room-extra ,.no-bg.room-number {
+        background-color: rgba(71, 62, 71, 0)!important;
     }
     .cutom-room-extra {
         margin-top: 5px;
@@ -876,6 +904,18 @@
     }
     .cutom-room-extra select {
         margin-left: 3px;
+    }
+    #property-wrapper .homepage-widget {
+        background-color: transparent!important;
+    }
+    .property-banner {
+        height: 373px;
+    }
+    .property-banner h1 {
+        color: #fff;
+        text-align: center;
+        padding-top: 114px;
+        font-size: 49px!important;
     }
     
 }
@@ -927,15 +967,6 @@
 
     /* Property */
 
-    .property-banner {
-        height: 373px;
-    }
-    .property-banner h1 {
-        color: #fff;
-        text-align: center;
-        padding-top: 114px;
-        font-size: 49px!important;
-    }
     .property-banner span {
         color: rgba(255, 255, 255, 0.8);
         font-size: 22px;
