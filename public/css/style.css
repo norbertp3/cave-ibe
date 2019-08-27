@@ -1075,7 +1075,8 @@ input[type=checkbox]:checked+span.checkbox:after {
 .booking-widget-modal .modal-content {
     border-radius: 0;
     border: 0;
-    height: 100%;
+    height: auto;
     background-color: #473e47!important;
+    min-height:  100%;
     width: 100%;
 }
