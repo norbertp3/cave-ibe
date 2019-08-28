@@ -358,6 +358,8 @@
                                                 :trigger-element-id="'trigger-single'"
                                                 :mode= "'single'"
                                                 :date-one="date1"
+                                                :min-date="'2019-08-28'"
+                                                :fullscreen-mobile="true"
                                                 v-on:date-one-selected="function(val) { date1 = val }"
                                               ></airbnb-style-datepicker>
                                             </div>
@@ -1421,12 +1423,13 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.js"></script>
   <script>
-    // define options (optional)
-    var datepickerOptions = {
-      sundayFirst: true
-    }
     // install plugin
     Vue.use(window.AirbnbStyleDatepicker, datepickerOptions)
+
+    // define options (optional)
+    var datepickerOptions = {
+      sundayFirst: false,
+    }
 
     var app = new Vue({
       el: '#app',
