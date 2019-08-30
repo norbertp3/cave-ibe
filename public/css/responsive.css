@@ -708,6 +708,11 @@
     .small-cards img {
         opacity: 0.9;
     }
+    .small-cards .apt-img img{
+        height: 100%;
+        width: 100px;
+        object-fit: cover;
+    }
     .small-cards:hover img {
         opacity: 1;
     }

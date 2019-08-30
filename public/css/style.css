@@ -1080,6 +1080,3 @@ input[type=checkbox]:checked+span.checkbox:after {
     min-height:  100%;
     width: 100%;
 }
-.widget-checkin {
-    cursor: pointer;
-}

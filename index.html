@@ -140,10 +140,10 @@
                                         <div class="col-lg-4">
                                             <a href="">
                                                 <ul class="small-cards">
-                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li class="apt-img"><img src="public/images/100.jpg"></li>
                                                     <li>                                                        
                                                         <div class="card-body">
-                                                            <h4>Handels Hotel Temple Bar</h4>
+                                                            <h4>Handels Hotel Temple Bar Test large</h4>
                                                             <img src="public/images/reviews-placeholder.svg">
                                                             <p>Temple Bar, Dublin 1</p>
                                                         </div>
@@ -154,7 +154,7 @@
                                         <div class="col-lg-4">
                                             <a href="">
                                                 <ul class="small-cards">
-                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li class="apt-img"><img src="public/images/100.jpg"></li>
                                                     <li>                                                        
                                                         <div class="card-body">
                                                             <h4>The Camden Hotel</h4>
@@ -168,7 +168,7 @@
                                         <div class="col-lg-4">
                                             <a href="">
                                                 <ul class="small-cards">
-                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li class="apt-img"><img src="public/images/100.jpg"></li>
                                                     <li>                                                        
                                                         <div class="card-body">
                                                             <h4>Hotel St. George</h4>
@@ -182,7 +182,7 @@
                                         <div class="col-lg-4">
                                             <a href="">
                                                 <ul class="small-cards">
-                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li class="apt-img"><img src="public/images/100.jpg"></li>
                                                     <li>                                                        
                                                         <div class="card-body">
                                                             <h4>Kildare Street Hotel</h4>
@@ -196,7 +196,7 @@
                                         <div class="col-lg-4">
                                             <a href="">
                                                 <ul class="small-cards">
-                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li class="apt-img"><img src="public/images/100.jpg"></li>
                                                     <li>                                                        
                                                         <div class="card-body">
                                                             <h4>The Gate Hotel</h4>
@@ -351,18 +351,9 @@
 
                             <!-- Check-in -->
                             <div class="d-flex widget-checkin p-5px">
-                                    <div id="app">
-                                            <div class="datepicker-trigger">
-                                              <input type="text" id="trigger-single" :value="date1" placeholder="Select date" readonly>
-                                              <airbnb-style-datepicker
-                                                :trigger-element-id="'trigger-single'"
-                                                :mode= "'single'"
-                                                :date-one="date1"
-                                                :min-date="'2019-08-28'"
-                                                v-on:date-one-selected="function(val) { date1 = val }"
-                                              ></airbnb-style-datepicker>
-                                            </div>
-                                          </div> 
+                                <div id="app">
+                                    <vuejs-datepicker placeholder="Select Date" format="d MMM"></vuejs-datepicker>
+                                </div>
                             </div>
 
                             <!-- Nights  -->
@@ -1142,20 +1133,9 @@
 
                                         <!-- Check-in -->
                                         <div class="col-6 widget-checkin pr-1 my-auto">
-                                                <div id="app">
-                                                        <div class="datepicker-trigger">
-                                                          <input type="text" id="trigger-single" :value="date1" placeholder="Select date" readonly>
-                                                          <airbnb-style-datepicker
-                                                            :trigger-element-id="'trigger-single'"
-                                                            :mode= "'single'"
-                                                            :date-one="date1"
-                                                            :min-date="'2019-08-28'"
-                                                            :fullscreen-mobile="true"
-                                                            :mobile-header="'Mobile header text'"
-                                                            v-on:date-one-selected="function(val) { date1 = val }"
-                                                          ></airbnb-style-datepicker>
-                                                        </div>
-                                                      </div> 
+                                            <div id="app">
+                                                <vuejs-datepicker placeholder="Select Date" format="d MMM"></vuejs-datepicker>
+                                            </div>
                                         </div>
 
                                         <!-- Nights  -->
@@ -1422,25 +1402,16 @@
     </script>
 
     
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.js"></script>
-  <script>
-    // install plugin
-    Vue.use(window.AirbnbStyleDatepicker, datepickerOptions)
-
-    // define options (optional)
-    var datepickerOptions = {
-      sundayFirst: false,
-    }
-
-    var app = new Vue({
-      el: '#app',
-      data: {
-        date1: '',
-        date2: ''
-      }
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuejs-datepicker"></script>
+    <script>
+    const app = new Vue({
+    el: '#app',
+        components: {
+            vuejsDatepicker
+        }
     })
-  </script>    
+    </script> 
     
     <!-- Custom -->
     <script src="public/js/custom.js"></script>
