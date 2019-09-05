@@ -12,10 +12,6 @@
 
 @media only screen and (max-width: 991px) {
 
-    .room-details-desktop {
-        display: none!important;
-    }
-
     /* Expand text */
     .small {
         height: 70px;
@@ -24,11 +20,6 @@
 
     .big {
         height: auto;
-    }
-
-    .px-mob-10 {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
     }
 
     .expand-more {
@@ -341,18 +332,6 @@
     .close-modal {
         margin: 29px 0;
     }
-
-    /* Property Rooms */
-
-    .room-details .card-body h3 {
-        margin-bottom: 20px!important;
-    }
-
-    .room-details .card-body img {
-        width: 30px;
-    }
-
-    
 }
 
 @media (min-width: 992px) { 
@@ -392,12 +371,6 @@
         text-align: left;
         width: auto!important;
         margin: 30px 0;
-    }
-    .px-des-lr-35:nth-child(even) {
-        padding-left: 35px!important;
-    }
-    .px-des-lr-35:nth-child(odd) {
-        padding-right: 35px!important;
     }
 
     /* Home page */
@@ -963,57 +936,7 @@
         padding-top: 114px;
         font-size: 49px!important;
     }
-
-    /* Propety Rooms */
-
-    .room-details {
-        margin-bottom: 60px;
-    }
-
-    .room-details .card-body {
-        padding: 14px 30px 30px 30px;
-        background-color: #eae9ea;
-    }
-    .room-details .card-body li {
-        display: inline-block;
-        color: #716c70;
-        font-size: 15px;
-        font-family: 'Nunito', sans-serif;
-        text-align: center;
-        width: 32.5%;
-    }
-    .room-details .card-body img {
-        margin-bottom:10px;
-    }
-    .room-details .card-body ul {
-        padding-left: 0px;
-        margin-bottom: 43px;
-    }
-    .room-details .btn-white {
-        margin-right: 15px;
-    }
-    .room-details .btn-secondary {
-        margin-left: 15px;
-    }
     
-    .room-details .slider img {
-        height: 350px;
-        object-fit: cover;
-    }
-    .room-details-desktop h2 {
-        color: #a54b89;
-        font-size: 24px;
-        line-height: 1;
-    }
-    .room-details-desktop span {
-        font-size: 13px;
-        color: #716c70;
-        line-height: 16px;
-    }
-    .room-details-desktop {
-        margin-bottom: 42px;
-    }
-
 }
 @media (min-width: 1200px) {
     .home-banner-large-text {
