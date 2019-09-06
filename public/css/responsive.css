@@ -358,6 +358,44 @@
 
 @media (min-width: 992px) { 
 
+    /* Modal Core */
+    
+    .modal-content {
+        border-radius: 0!important;
+    }
+    .modal-dialog {
+        height: auto;
+        min-width: 707px!important;
+        margin-top: 100px!important;
+        margin-bottom: auto!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+    .modal-custom .btn {
+        margin-bottom: 26px;
+        width: 232px;
+    }
+    .modal-header {
+        height: 20px!important;
+        background-color: transparent;
+        display: block!important;
+        border-top-left-radius: 0!important;
+        border-top-right-radius: 0!important;
+        z-index: 20;
+        width: auto!important;
+        position: relative!important;
+        padding: 0!important;
+        margin-bottom: 10px;
+        border-bottom: none!important;
+    }
+    .modal-header a {
+        color: #fff!important;
+    }
+    .modal-body {
+        background-color: #fff;
+        padding: 40px!important;
+    }
+
     /* body */
 
     p {
@@ -1024,44 +1062,48 @@
         content: '';
         z-index: 9;
     }
+    .roomInfoIcons li {
+        display: inline-block;
+        color: #716c70;
+        font-size: 15px;
+        font-family: 'Nunito', sans-serif;
+        text-align: center;
+        width: 20%;
+    }
+    .roomInfoIcons img {
+        width: auto;
+        margin: 12px 0;
+    }
+    #roomInfo .modal-dialog {
+        max-width: 1000px!important;
+    }
+    #roomInfo p {
+        font-size: 17px;
+    }
+    ul.roomInfoList {
+        column-count: 3;
+        padding-left: 15px;
+    }
+    ul.roomInfoIcons {
+        padding-left: 0;
+    }
 
-    /* Modal Core */
-
-
-    .modal-content {
-        border-radius: 0!important;
+    #roomInfo .standard-slider img {
+        height: 600px;
+        margin-top: 0;
+        object-fit: cover;
     }
-    .modal-dialog {
-        height: auto;
-        min-width: 707px!important;
-        margin-top: 150px!important;
-        margin-bottom: auto!important;
-        margin-left: auto!important;
-        margin-right: auto!important;
-    }
-    .modal-custom .btn {
-        margin-bottom: 26px;
-        width: 232px;
-    }
-    .modal-header {
-        height: 20px!important;
-        background-color: transparent;
-        display: block!important;
-        border-top-left-radius: 0!important;
-        border-top-right-radius: 0!important;
-        z-index: 20;
-        width: auto!important;
-        position: relative!important;
-        padding: 0!important;
-        margin-bottom: 10px;
-        border-bottom: none!important;
-    }
-    .modal-header a {
-        color: #fff!important;
+    .modal-large-slider {
+        padding: 40px 40px 0 40px;
+        background-color: #fff;
     }
 
 }
 @media (min-width: 1200px) {
+
+
+    /* home */
+
     .home-banner-large-text {
         padding: 100px 94px 0 58px;
         text-align: left;

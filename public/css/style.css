@@ -203,11 +203,48 @@ li {
     border-color: #3a323a!important;
 }
 
-/* .navbar-brand {
-    width: 210px;
-    height: 37px;
-    padding: 0 0 0 10px!important;
-} */
+/* Modal Core */
+
+.modal {
+    -webkit-overflow-scrolling: touch!important;
+}
+
+.modal-content {
+    border-radius: 0!important;
+    min-width: 100%;
+    min-height: 100%;
+    border: none!important;
+    background-color: transparent!important;
+}
+.modal-dialog {
+    margin: 0!important;
+    height: 100%;
+    min-width: 100%!important;
+}
+.modal-header {
+    height: 56px!important;
+    background-color: #eae9ea;
+    display: block!important;
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important;
+    z-index: 20;
+    width: 100%!important;
+    position: fixed!important;
+}
+.modal-header span {
+    position: relative;
+    font-size: 25px;
+    top: 3px;
+}
+.modal-header a {
+    position: relative;
+    top: -10px;
+    color: #a54b89!important;
+}
+.modal-body {
+    background-color: #fff;
+    padding: 56px 18px 18px 18px!important;
+}
 
 /* ------------------------- */
 
@@ -1116,7 +1153,7 @@ input[type=checkbox]:checked+span.checkbox:after {
     border-top: 8px solid #00aebb;
 }
 
-.room-details .card-body li {
+.room-details .card-body li  {
     display: block;
     color: #716c70;
     font-size: 15px;
@@ -1151,20 +1188,7 @@ input[type=checkbox]:checked+span.checkbox:after {
 .selected-property {
     background-image: url(/public/images/wishlist/icon-heart-saved.png);
 }
-/* .room-details .slider::after {
-    display: block;
-    position: relative;
-    background-image: linear-gradient(to bottom, rgba(71, 62, 71, 0.0), rgba(71, 62, 71, 0.2));
-    margin-top: -195px;
-    height: 195px;
-    width: 100%;
-    content: '';
-    z-index: 1;
-} */
 
-.modal-custom img {
-    margin: 24px 0 30px 0;
-}
 .modal-custom h3 {
     font-size: 20px!important;
     margin-bottom: 15px;
@@ -1177,49 +1201,26 @@ input[type=checkbox]:checked+span.checkbox:after {
     display: block;
     /* color: #a54b89!important; */
 }
-.modal-custom .btn {
+.modal-custom .btn-secondary {
     margin-bottom: 26px;
     width: 100%;
 }
-/* Modal Core */
-
-.modal {
-    -webkit-overflow-scrolling: touch!important;
+.roomInfoIcons li  {
+    display: block;
+    color: #716c70;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 15px;
 }
-
-.modal-content {
-    border-radius: 0!important;
-    min-width: 100%;
-    min-height: 100%;
-    border: none!important;
-    background-color: transparent!important;
+.roomInfoIcons img {
+    width: 30px;
+    margin: 0;
 }
-.modal-dialog {
-    margin: 0!important;
-    height: 100%;
-    min-width: 100%!important;
+.roomInfoList li {
+    margin-bottom: 10px;
 }
-.modal-header {
-    height: 56px!important;
-    background-color: #eae9ea;
-    display: block!important;
-    border-top-left-radius: 0!important;
-    border-top-right-radius: 0!important;
-    z-index: 20;
-    width: 100%!important;
-    position: fixed!important;
-}
-.modal-header span {
-    position: relative;
-    font-size: 25px;
-    top: 3px;
-}
-.modal-header a {
-    position: relative;
-    top: -10px;
-    color: #a54b89!important;
-}
-.modal-body {
-    padding-top: 56px!important;
-    background-color: #fff;
+#roomInfo .standard-slider img {
+    height: 210px;
+    margin-top: 36px;
+    object-fit: cover;
 }
