@@ -112,3 +112,6 @@ function update_room_dropdowns() {
         $('form .room-details.extra-rooms:not("#roomId1")').hide();
     }
 }
+var vpH = window.innerHeight;
+document.documentElement.style.height = vpH.toString() + "px";
+body.style.height = vpH.toString() + "px";
