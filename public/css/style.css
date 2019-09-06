@@ -1226,3 +1226,6 @@ input[type=checkbox]:checked+span.checkbox:after {
     margin-top: 36px;
     object-fit: cover;
 }
+.room-details-wrapper {
+    margin-bottom: 30px;
+}

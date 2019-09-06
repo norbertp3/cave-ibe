@@ -7,7 +7,9 @@
         column-count: 2;
         padding-left: 0;
     }
-
+    ul.roomInfoList {
+        column-count: 2;
+    }
  }
 
 @media only screen and (max-width: 991px) {
@@ -1097,7 +1099,9 @@
         padding: 40px 40px 0 40px;
         background-color: #fff;
     }
-
+    .room-details-wrapper {
+        margin-bottom: 60px;
+    }
 }
 @media (min-width: 1200px) {
 
