@@ -68,6 +68,8 @@ p {
     transform: rotate(180deg);
 }
 
+select::-ms-expand { display: none; }
+
 /* ------------------------ */
 
 /* Components */
@@ -1136,7 +1138,7 @@ input[type=checkbox]:checked+span.checkbox:after {
 
 /* Property Rooms */
 
-.room-details {
+.property-room-details {
     margin-bottom: 30px;
 }
 
