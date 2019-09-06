@@ -338,9 +338,7 @@
     .custom-room-extra .widget-adults {
         margin-right: 10px;
     }
-    .modal-content a {
-        color: #fff!important;
-    }
+
     .close-modal {
         margin: 29px 0;
     }
@@ -1026,20 +1024,40 @@
         content: '';
         z-index: 9;
     }
+
+    /* Modal Core */
+
+
     .modal-content {
         border-radius: 0!important;
     }
     .modal-dialog {
         height: auto;
         min-width: 707px!important;
-        margin-top: 250px!important;
+        margin-top: 150px!important;
         margin-bottom: auto!important;
         margin-left: auto!important;
         margin-right: auto!important;
     }
-    #addedToList .btn {
+    .modal-custom .btn {
         margin-bottom: 26px;
         width: 232px;
+    }
+    .modal-header {
+        height: 20px!important;
+        background-color: transparent;
+        display: block!important;
+        border-top-left-radius: 0!important;
+        border-top-right-radius: 0!important;
+        z-index: 20;
+        width: auto!important;
+        position: relative!important;
+        padding: 0!important;
+        margin-bottom: 10px;
+        border-bottom: none!important;
+    }
+    .modal-header a {
+        color: #fff!important;
     }
 
 }
