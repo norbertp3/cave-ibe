@@ -1187,6 +1187,7 @@ input[type=checkbox]:checked+span.checkbox:after {
     border-radius: 0!important;
     min-width: 100%;
     min-height: 100%;
+    border: none!important;
 }
 .modal-dialog {
     margin: 0!important;
@@ -1194,7 +1195,22 @@ input[type=checkbox]:checked+span.checkbox:after {
     min-width: 100%!important;
 }
 .modal-header {
-    height: 56px;
+    height: 56px!important;
     background-color: #eae9ea;
-    text-align: right;
+    display: block!important;
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important;
+    z-index: 20;
+}
+.modal-header span {
+    position: relative;
+    font-size: 25px;
+    top: 3px;
+}
+.modal-header a {
+    position: relative;
+    top: -10px;
+}
+.modal-body {
+    padding-top: 56px!important;
 }
