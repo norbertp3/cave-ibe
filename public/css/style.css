@@ -1184,6 +1184,10 @@ input[type=checkbox]:checked+span.checkbox:after {
 }
 /* Modal Core */
 
+.modal {
+    -webkit-overflow-scrolling: touch!important;
+}
+
 .modal-content {
     border-radius: 0!important;
     min-width: 100%;

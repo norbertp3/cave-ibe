@@ -112,39 +112,3 @@ function update_room_dropdowns() {
         $('form .room-details.extra-rooms:not("#roomId1")').hide();
     }
 }
-
-
-var $docEl = $('html, body'),
-  $wrap = $('.content'),
-  $.scrollTop;
-
-$.lockBody = function() {
-  if(window.pageYOffset) {
-    scrollTop = window.pageYOffset;
-
-    $wrap.css({
-      top: - (scrollTop)
-    });
-  }
-
-  $docEl.css({
-    height: "100%",
-    overflow: "hidden"
-  });
-}
-
-$.unlockBody = function() {
-  $docEl.css({
-    height: "",
-    overflow: ""
-  });
-
-  $wrap.css({
-    top: ''
-  });
-
-  window.scrollTo(0, scrollTop);
-  window.setTimeout(function () {
-    scrollTop = null;
-  }, 0);
-}
