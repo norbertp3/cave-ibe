@@ -117,3 +117,49 @@ function update_room_dropdowns() {
 var vpH = window.innerHeight;
 document.documentElement.style.height = vpH.toString() + "px";
 body.style.height = vpH.toString() + "px";
+
+// function initSlickSlider() {
+//     setTimeout( function() {
+//         $(".home-3-boxes-slider").slick({
+//             dots: false,
+//             infinite: false,
+//             slidesToShow: 1.5,
+//             slidesToScroll: 1
+//         });
+    
+//         $(".home-slider").slick({
+//             dots: true,
+//             infinite: false,
+//             slidesToShow: 1,
+//             slidesToScroll: 1,
+//             autoplay: true,
+//             autoplaySpeed: 3000
+//         });
+//         $(".standard-slider").slick({
+//             dots: true,
+//             infinite: false,
+//             arrows: true,
+//             slidesToShow: 1,
+//             slidesToScroll: 1,
+//             autoplay: true,
+//             autoplaySpeed: 300000,
+//             responsive: [
+//                 {
+//                     breakpoint: 768,
+//                     settings: {
+//                         arrows: false,
+//                     }
+//                 }
+//             ]
+//         });
+        
+//         $(".large-slider").slick({
+//             dots: true,
+//             infinite: false,
+//             slidesToShow: 1,
+//             slidesToScroll: 1,
+//             autoplay: true,
+//             autoplaySpeed: 3000
+//         });
+//     }, 500);
+// }

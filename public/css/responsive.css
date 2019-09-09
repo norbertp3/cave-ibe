@@ -816,25 +816,27 @@
     
     .standard-slider .slick-prev {
         left: 0;
-        z-index: 5;
+        z-index: 10;
         padding-left: 30px!important;
         padding-top: 225px!important;
         padding-bottom: 225px!important;
         padding-right: 200px;
     }
     .standard-slider .slick-prev:before {
-        content: ' \25C0';
+        /* content: ' \25C0'; */
     }
     .standard-slider .slick-next {
         right: 0px;
+        z-index: 10;
         padding-left: 200px!important;
         padding-top: 225px!important;
         padding-bottom: 225px!important;
         padding-right: 30px;
     }
     .standard-slider .slick-next:before {
-        content: ' \25BA';
+        /* content: ('/public/images/mobile-slider-arrow-right.png'); */
     }
+
     #property-wrapper h2 {
         margin: 26px 0 30px 0;
     }
@@ -1101,6 +1103,9 @@
     }
     .room-details-wrapper {
         margin-bottom: 60px;
+    }
+    ul.social-channels-footer {
+        width: 80%;
     }
 }
 @media (min-width: 1200px) {
