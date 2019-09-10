@@ -353,7 +353,16 @@
                             <!-- Check-in -->
                             <div class="d-flex widget-checkin p-5px">
                                 <div id="app">
-                                    <vuejs-datepicker placeholder="Select Date" format="d MMM"></vuejs-datepicker>
+                                    <div class="datepicker-trigger">
+                                        <input type="text" id="trigger-range" :value="date1 + ' - ' + date2" readonly>
+                                        <airbnb-style-datepicker
+                                        :trigger-element-id="'trigger-range'"
+                                        :date-one="date1"
+                                        :date-two="date2"
+                                        v-on:date-one-selected="function(val) { date1 = val }"
+                                        v-on:date-two-selected="function(val) { date2 = val }"
+                                        ></airbnb-style-datepicker>
+                                    </div>
                                 </div>
                             </div>
 
@@ -1134,9 +1143,18 @@
 
                                         <!-- Check-in -->
                                         <div class="col-6 widget-checkin pr-1 my-auto">
-                                            <div id="app">
-                                                <vuejs-datepicker placeholder="Select Date" format="d MMM"></vuejs-datepicker>
-                                            </div>
+                                                <div id="app">
+                                                        <div class="datepicker-trigger">
+                                                          <input type="text" id="trigger-range" :value="date1 + ' - ' + date2" readonly>
+                                                          <airbnb-style-datepicker
+                                                            :trigger-element-id="'trigger-range'"
+                                                            :date-one="date1"
+                                                            :date-two="date2"
+                                                            v-on:date-one-selected="function(val) { date1 = val }"
+                                                            v-on:date-two-selected="function(val) { date2 = val }"
+                                                          ></airbnb-style-datepicker>
+                                                        </div>
+                                                      </div>
                                         </div>
 
                                         <!-- Nights  -->
@@ -1404,15 +1422,24 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/vuejs-datepicker"></script>
+    <script src="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/no-dep/vue-airbnb-style-datepicker.min.js"></script>
+
     <script>
-    const app = new Vue({
-    el: '#app',
-        components: {
-            vuejsDatepicker
-        }
-    })
-    </script> 
+            // define options (optional)
+            var datepickerOptions = {
+              sundayFirst: true
+            }
+            // install plugin
+            Vue.use(window.AirbnbStyleDatepicker, datepickerOptions)
+        
+            var app = new Vue({
+              el: '#app',
+              data: {
+                date1: '',
+                date2: ''
+              }
+            })
+          </script>
     
     <!-- Custom -->
     <script src="public/js/custom.js"></script>

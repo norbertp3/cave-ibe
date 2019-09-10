@@ -163,3 +163,12 @@ body.style.height = vpH.toString() + "px";
 //         });
 //     }, 500);
 // }
+
+
+// IBE 
+// ****************************************************************
+$(document).ready(function(){
+    $('.ibe-join-mobile-close').click(function(){
+        $('.ibe-join-mobile').hide();
+    });
+});
