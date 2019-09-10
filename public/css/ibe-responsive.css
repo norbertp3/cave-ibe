@@ -1,13 +1,5 @@
 @media (min-width: 576px) { 
 
-    .home-box-content {
-        padding: 15px; 
-    }
-    #all-properties ul {
-        column-count: 2;
-        padding-left: 0;
-    }
-
  }
 
 @media only screen and (max-width: 991px) {
@@ -207,54 +199,7 @@
         background-color: #a54b89;
     }
 
-    /* Property Mobile Nav */
-
-    #property-nav {
-        margin: 10px 10px 5px 10px;
-        background: #fff;
-    }
-
-    #property-nav a {
-        font-weight: 400;
-        padding-left: 10px;
-        font-size: 16px;
-        line-height: 1.5;
-        color: #fff;
-    }
-
-    #property-nav .nav-item {
-        padding: 0px !important;
-        margin: 3px 0;
-        border-top: none;
-        background-color: #eae9ea;
-    }
-
-    #property-nav .property-nav-top {
-        background-color: #00aebb;
-        border-radius: 1px;
-        padding: 8px 0;
-        margin-bottom: 5px;
-    }
-
-    #property-nav a.nav-link {
-        color: #00aebb !important;
     
-    }
-
-    #property-nav .nav-link {
-        padding: 13px 10px;
-    }
-
-    #property-nav .icon-bar {
-        background-color: #fff !important;
-    }
-    #property-nav .nav-item.active {
-        border-left: 5px solid #00aebb;
-    }
-    #property-nav .fa {
-        font-size: 25px;
-        margin-right: 10px;
-    }
     .footer-bottom-nav li:nth-child(1):after {
         content:"\2022";
         padding-left: 5px;
@@ -265,27 +210,6 @@
     }
     .slick-dotted.slick-slider {
         margin-top: 20px;
-    }
-    .ft-property-details-content h2 {
-        text-align: center;
-    }
-    #property-wrapper .custom-sep {
-        margin: 30px 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .ft-property-details-content p {
-        padding-top: 3px;
-    }
-    #property-wrapper h2 {
-        text-align: center;
-    }
-    .blog-filters-checkboxes label {
-        width: 100%;
-    }
-    .blog-filters-checkboxes label {
-        margin-right: 15px;
-        margin-bottom: 10px;
     }
     .widget-nigts select, .widget-location select, .widget-hotel select, .widget-rooms select, .rooms_list select {
         width: 100%;
@@ -332,6 +256,9 @@
     .close-modal {
         margin: 29px 0;
     }
+    #top-bar .container{
+        padding: 0!important;
+    }
 }
 
 @media (min-width: 992px) { 
@@ -373,109 +300,7 @@
         margin: 30px 0;
     }
 
-    /* Home page */
-
-    .home-slide {
-        height: 495px;
-    }
-    .large-slide {
-        height: 495px;
-    }
-
-    .home-banner-large-text {
-        padding: 50px 47px 0 25px;
-        text-align: left;
-    }
-
-    .home-banner-large-text .custom-sep {
-        margin-left: 0;
-    }
-
-    .home-slide-text {
-        position: absolute!important;
-        top: -40px;
-        margin-left: 77px;
-        text-align: right;
-        padding: 80px 30px 40px 30px;
-        width: 428px;
-    }
-    .home-slide-text h3 {
-       font-size: 30px!important;
-       margin-bottom: 20px;
-    }
-    .home-slide-text a {
-       font-size: 18px!important;
-    }
-    .home-slide-text-border {
-        border-left: 10px solid #3aaebb;
-    }
-    .large-slide-text-border {
-        border-left: 10px solid #3aaebb;
-    }
-    .large-slide-text {
-        position: absolute!important;
-        top: -40px;
-        margin-left: 77px;
-        text-align: right;
-        padding: 80px 30px 40px 30px;
-        width: 428px;
-    }
-    .large-slide-text h3 {
-       font-size: 30px!important;
-       margin-bottom: 20px;
-    }
-    .large-slide-text a {
-       font-size: 18px!important;
-    }
-    .large-slide-text-border {
-        border-left: 10px solid #3aaebb;
-    }
-
-    .home-slider .slick-slide {
-        padding-top: 40px;
-    }
-    .large-slider .slick-slide {
-        padding-top: 40px;
-    }
-    .home-ft-large-img {
-        height: 420px;
-    }
-    .home-ft-large p {
-        font-size: 16px;
-        line-height: 1.63;
-    }
-    .home-ft-large-text {
-        padding: 77px;
-    }
-    .home-ft-large-text-left {
-        padding: 0px 38px 0 39px; 
-    } 
-    .home-ft-large-text-right {
-        padding: 0px 39px 0 38px; 
-    } 
-    .home-ft-large-img-border-left {
-        border-left: 10px solid #a54b89
-    }
-    .home-ft-large-img-border-right {
-        border-right: 10px solid #a54b89
-    }
-    .home-ft-large {
-        margin-bottom: 100px;
-    }
-    .home-box-content {
-        padding: 20px; 
-    }
-    .home-box-content h2 {
-        font-size: 32px!important;
-    }
-    .standard-heading-text {
-        margin-bottom: 60px;
-        /* margin-top: 104px; */
-    }
-    .standard-heading-text p {
-        font-size: 16px;
-        line-height: 1.63
-    }
+    
     .imageTimeline figure { 
         width: 16.25%; 
         overflow: hidden; 
@@ -767,76 +592,7 @@
     .standard-slider .slick-next:before {
         content: ' \25BA';
     }
-    #property-wrapper h2 {
-        margin: 26px 0 30px 0;
-    }
-    #ft-property-img-text, #ft-property-text-img {
-        margin-bottom: 100px;
-    }
-    .feature ul {
-        margin-left: 50px;
-    }
-    .feature li {
-        font-size: 16px;
-    }
-    .property-banner-hero {
-        max-width: 1600px;
-    }
-    #property-wrapper h3 {
-        margin-bottom: 30px;
-    }
-    .enquiry-cover {
-        padding: 30px;
-    }
-    .enquiry-cover .submitBtn {
-        width: 232px;
-    }
-    .custom-pr-35 {
-        padding-right: 35px!important;
-    }
-    .custom-pl-35 {
-        padding-left: 35px!important;
-    }
-    #all-properties li {
-        display: inline-block;
-    }
-    .fature-x-boxes .card-body {
-        position: relative;
-        /* display: inline-table; */
-    }
-    .fature-x-boxes a.link-btn {
-        position: absolute;
-        bottom: -60px;
-    }
-    .fature-x-boxes {
-        margin-bottom: 100px;
-    }
-    .fature-tabs .col-lg-6:nth-child(odd) {
-        padding-right: 35px!important;
-    }
-    .fature-tabs .col-lg-6:nth-child(even) {
-        padding-left: 35px!important;
-    }
-    .standard-heading-text ul {
-        margin-bottom: 30px;
-    }
-    .custom-tab .fa {
-        right: 20px;
-    }
-    .blog-list .btn-dark {
-        width: 140px;
-    }
-    .blog-list .card {
-        border: none;
-        margin-bottom: 40px;
-    }
-    .blog-article iframe {
-        width: 100%;
-        height: 315px;
-    }
-    .ft-property-details-content p {
-        font-size: 16px;
-    }
+    
 
     #booking-widget-banner input, #booking-widget-banner select {
         border: none!important;
@@ -936,17 +692,49 @@
         padding-top: 114px;
         font-size: 49px!important;
     }
+
+
+    /* Top Bar */
+    #top-bar ul {
+        display: inherit;
+    }
+    #top-bar {
+        background-color: #595159;
+    }
+    #top-bar form {
+        border-left: none;
+        height: 40px;
+        padding-left: 0;
+    }
+    #top-bar li { 
+        display: inline-block;
+        color: #fff;
+        padding: 14px 30px;
+        border-right: 1px solid rgba(255, 255, 255, 0.27);
+        font-weight: 600;
+        font-size: 15px;
+    }
+    #top-bar ul {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    #top-bar .fa {
+        padding-right: 7px;
+    }
+    #currency-options {
+    border: none!important;
+    border-radius: 1px;
+    font-size: 14px;
+    padding: 7px 10px;
+    outline: none;
+    width: 80px;
+    height: 40px;
+    border: solid 1px rgba(113, 108, 112, 0.3);
+    color: #473e47;
+    }
     
 }
 @media (min-width: 1200px) {
-    .home-banner-large-text {
-        padding: 100px 94px 0 58px;
-        text-align: left;
-    }
-    .home-box-content {
-        padding: 70px 50px 70px 70px; 
-    }
-
     .multi-row-nav .card-body {
         width: 264px;
     }
@@ -974,14 +762,13 @@
         max-width: 263px;
         float: right;
     }
-    .home-ft-large-text-left {
-        padding: 60px 75px 0 77px; 
-    } 
-    .home-ft-large-text-right {
-        padding: 60px 77px 0 75px; 
+    .widget-location {
+        width: 180px;
+        height: 50px;
     }
-    .home-ft-large-img {
-        height: 520px;
+    .widget-hotel {
+        width: 235px;
+        height: 50px;
     }
 
     /* Property */
@@ -996,17 +783,7 @@
         width: 100%;
         height: 469px;
     }
-    .large-slide-text h3, .home-slide-text h3 {
-        margin-bottom: 20px!important;
-    }
-    .widget-location {
-        width: 180px;
-        height: 50px;
-    }
-    .widget-hotel {
-        width: 235px;
-        height: 50px;
-    }
+
 
 }
 @media (min-width: 1300px) {

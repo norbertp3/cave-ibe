@@ -101,6 +101,14 @@ select::-ms-expand { display: none; }
     border: solid 1px #473e47;
     box-shadow: none!important;
 }
+.btn-red {
+    background-color: #d75548!important;
+    border: none!important;
+    color: #fff!important;
+}
+.btn-red:hover {
+    background-color: #af463b!important;
+}
 a, a:hover {
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
@@ -1203,7 +1211,7 @@ input[type=checkbox]:checked+span.checkbox:after {
     display: block;
     /* color: #a54b89!important; */
 }
-.modal-custom .btn-secondary {
+.modal-custom .btn-secondary, .modal-custom .btn-red {
     margin-bottom: 26px;
     width: 100%;
 }
