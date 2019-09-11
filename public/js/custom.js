@@ -81,6 +81,8 @@ $(document).ready(function() {
     });
 });
 
+
+
 /* Rooms dropdown */
 $('select[name="rooms"]').on('change', function () {
     update_room_dropdowns();
@@ -114,9 +116,11 @@ function update_room_dropdowns() {
 }
 
 // Modal disable scroll
-var vpH = window.innerHeight;
-document.documentElement.style.height = vpH.toString() + "px";
-body.style.height = vpH.toString() + "px";
+// var vpH = window.innerHeight;
+// document.documentElement.style.height = vpH.toString() + "px";
+// body.style.height = vpH.toString() + "px";
+
+
 
 // function initSlickSlider() {
 //     setTimeout( function() {
@@ -167,8 +171,19 @@ body.style.height = vpH.toString() + "px";
 
 // IBE 
 // ****************************************************************
-$(document).ready(function(){
-    $('.ibe-join-mobile-close').click(function(){
-        $('.ibe-join-mobile').hide();
-    });
+
+
+$('.view-room-btn').click(function(){
+    var showBtn = 'SHOW RATES <i class="fa fa-chevron-down float-right"></i>';
+    var hideBtn = 'HIDE RATES <i class="fa fa-chevron-up float-right"></i>'; 
+    $(this).closest('.main-room').find('.rates-list-wrapper').slideToggle();
+    this.expand = !this.expand;
+    $(this).html(this.expand? hideBtn:showBtn );
+    $("html, body").animate({
+        scrollTop: $(this).closest('.main-room').find('.main-room-content').offset().top - 10
+    }, 'slow');
+});
+
+$('.ibe-join-mobile-close').click(function(){
+    $('.ibe-join-mobile').hide();
 });

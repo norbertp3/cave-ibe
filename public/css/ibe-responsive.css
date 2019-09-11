@@ -263,7 +263,7 @@
         padding-left: 10px!important;
         padding-right: 10px!important;
     }
-    .main-room-content .fa {
+    .main-room-content .fa-info-circle {
         color: #a54b89;
         padding-top: 3px;
     }
@@ -756,7 +756,66 @@
         color: #716c70;
         font-family: 'Roboto Slab', serif;
     }
-    
+    .view-room-btn {
+        width: 179px;
+        float: right;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .show-rates {
+        position: absolute;
+        right: 34px;
+        bottom: 0;
+    }
+    .rates-list-wrapper .show-rates {
+        position: relative;
+        right: 0;
+    }
+    .rates-list {
+        padding: 0px 20px 20px 20px;
+    } 
+    .main-room-content {
+        padding: 20px 20px 45px 20px;
+    }
+    .main-room-img {
+        padding: 20px 0 20px 20px;
+    }
+    .main-room-content h3 {
+        font-size: 18px!important;
+    }
+    .show-rates .room-stay-details h4 {
+        font-size: 20px;
+        line-height: 0.8;
+    }
+    .room-stay-details {
+        padding: 4px 0;
+    }
+    .main-room-icons {
+        margin-bottom: 20px;
+    }
+    .rates-list-wrapper .cashback h4 {
+        font-size: 16px;
+    }
+    .rates-list-wrapper .cashback span {
+        margin-top: 4px;
+    }
+    .rates-list-info p {
+        padding-left: 20px;
+    }
+    .main-room-img img {
+        height: 100%; 
+        width: 100%;
+    }
+    .rates-list .btn {
+        font-size: 13px!important;
+    }
+    .main-room-content .btn-white {
+        height: 38px;
+    }
+    .rates-list-wrapper .show-rates .cashback span {
+        font-size: 13px;
+        color: #00aebb;
+    }
 }
 @media (min-width: 1200px) {
     .multi-row-nav .card-body {
@@ -795,19 +854,13 @@
         height: 50px;
     }
 
-    /* Property */
-
-    .property-banner span {
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 22px;
-        font-family: 'Roboto Slab', serif;
-        margin-left: 20px!important;
+    .rates-list .btn {
+        font-size: 16px!important;
     }
-    #googleMap {
-        width: 100%;
-        height: 469px;
+    .rates-list-wrapper .show-rates .cashback span {
+        font-size: 14px;
+        color: #00aebb;
     }
-
 
 }
 @media (min-width: 1300px) {

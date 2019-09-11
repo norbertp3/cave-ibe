@@ -86,6 +86,16 @@ p {
 .btn-secondary:hover {
     background-color: #844882!important;
 }
+.btn-white {
+    background-color: #fff!important;
+}
+.btn-white:hover {
+    background-color: #473e47!important;
+    color: #fff!important;
+}
+.btn-white:focus {
+    box-shadow: none!important;
+}
 
 a, a:hover {
     font-family: 'Nunito', sans-serif;
@@ -657,9 +667,10 @@ a.ibe-join-mobile-close {
 #ibe .main-room {
     background-color: #eae9ea;
     overflow-x: hidden;
+    margin-bottom: 30px;
 }
 .main-room-content {
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
 }
 .main-room-content h3 {
     font-size: 16px!important;
@@ -677,6 +688,9 @@ a.ibe-join-mobile-close {
 }
 .main-room-icons {
     margin-bottom: 5px;
+}
+.show-rates {
+    margin-top: 11px;
 }
 .show-rates .btn-secondary {
     height: 45px;
@@ -696,7 +710,7 @@ a.ibe-join-mobile-close {
     font-size: 17px;
     color: #a54b89;
     margin-bottom: 0;
-    line-height: 1.4;
+    line-height: 1.1;
     padding-left: 5px;
 }
 .show-rates .room-stay-details span {
@@ -705,7 +719,7 @@ a.ibe-join-mobile-close {
 }
 .rates-list {
     padding: 10px;
-    border-top: 1px solid #ccc;
+    /* border-top: 1px solid #ccc; */
 }
 span.rates-list-nights {
     font-size: 15px;
@@ -721,4 +735,41 @@ span.rates-list-nights {
 }
 .rates-list b {
     color: #009c55;
+}
+.rates-list:before {
+    content: ""; 
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+.discount-applied p {
+    color: #fff;
+    background-color: #00aebb;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.view-room-btn {
+    width: 100%;
+}
+.main-room .btn  .fa {
+    color: #fff!important;
+    margin-top: 3px;
+}
+.btn-secondary.focus, .btn-secondary:focus {
+    box-shadow: none!important;
+}
+.main-room-img img {
+    height: auto; 
+    width: 100%;
+    object-fit: contain;
+}
+.cashback span, .cashback h4, .room-stay-details h4 {
+    font-family: 'Roboto Slab', serif;
+}
+.room-stay-details span, .rates-list-nights {
+    font-family: 'Nunito', sans-serif;
 }
