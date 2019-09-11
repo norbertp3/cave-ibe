@@ -67,6 +67,9 @@ p {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
+.rotate180 {
+    transform: rotate(180deg);
+}
 
 /* ------------------------ */
 
@@ -560,7 +563,7 @@ input[type=checkbox]:checked+span.checkbox:after {
 
 #top-bar {
     background-color: #eae9ea;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 #top-bar form {
@@ -772,4 +775,46 @@ span.rates-list-nights {
 }
 .room-stay-details span, .rates-list-nights {
     font-family: 'Nunito', sans-serif;
+}
+.my-booking-info {
+    padding: 10px;
+}
+.booking-data {
+    padding: 0 10px;
+    border-bottom: 1px solid #d8d8d8;
+}
+.booking-data-last {
+    border-bottom: none!important;
+}
+.my-booking-cover {
+    border-radius: 2px;
+    border: solid 1px #d8d8d8;
+    outline-offset: -1px;
+}
+.my-booking-heading {
+    background-color: rgba(71, 62, 71, 0.9);
+    width: 100%;
+}
+.my-booking-heading h2{
+    padding: 15px 20px;
+    font-family: 'Nunito', sans-serif!important;
+    font-size: 17px!important;
+    color: #fff!important;
+}
+.booking-data p {
+    margin: 10px 0;
+}
+.my-booking-heading .fa {
+    color: #fff;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    /* padding-right: 20px;
+    padding-top: 10px; */
+}
+.my-booking-cover {
+    margin-bottom: 30px;
+}
+.my-booking-info {
+    display: none;
 }

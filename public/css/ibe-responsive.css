@@ -816,6 +816,17 @@
         font-size: 13px;
         color: #00aebb;
     }
+    .my-booking-heading a {
+        background-color: #a54b89;
+        padding: 13px;
+        color: #fff!important;
+    }
+    #top-bar {
+        margin-bottom: 40px;
+    }
+    .my-booking-info {
+        display: block;
+    }
 }
 @media (min-width: 1200px) {
     .multi-row-nav .card-body {
