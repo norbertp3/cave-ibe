@@ -788,8 +788,8 @@ span.rates-list-nights {
 }
 .my-booking-cover {
     border-radius: 2px;
-    border: solid 1px #d8d8d8;
-    outline-offset: -1px;
+    /* border: solid 1px #d8d8d8; */
+    box-shadow:inset 0px 0px 0px 1px #d8d8d8;
 }
 .my-booking-heading {
     background-color: rgba(71, 62, 71, 0.9);
@@ -817,4 +817,23 @@ span.rates-list-nights {
 }
 .my-booking-info {
     display: none;
+}
+.main-room-img-container {
+    position: relative;
+}
+.ibe-fav {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 25px;
+}
+.ibe-zoom {
+    position: absolute;
+    bottom: 5px;
+    width: 26px;
+    right: 5px;
+}
+.my-booking-heading a:hover {
+    background-color: #844882;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }

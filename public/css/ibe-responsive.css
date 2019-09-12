@@ -827,6 +827,9 @@
     .my-booking-info {
         display: block;
     }
+    .my-booking-cover {
+        margin-bottom: 20px;
+    }
 }
 @media (min-width: 1200px) {
     .multi-row-nav .card-body {
