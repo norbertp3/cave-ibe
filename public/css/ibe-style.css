@@ -282,10 +282,10 @@ li {
     color: #fff;
 }
 
-.enquiry-cover .submitBtn {
+.guest-form .submitBtn {
     width: 100%;
 }
-.enquiry-cover .form-control:focus {
+.guest-form .form-control:focus {
     box-shadow: none;
     border-radius: 2px;
     border: solid 1px #473e47;
@@ -481,7 +481,7 @@ ul.multiselect-container {
     vertical-align: middle;
     margin-right: 5px;
 }
-.multiselect-container .enquiry-cover input,.multiselect-container .enquiry-cover select,.multiselect-container .enquiry-cover textarea {
+.multiselect-container .guest-form input,.multiselect-container .guest-form select,.multiselect-container .guest-form textarea {
     height: 15px;
 }
 
@@ -833,7 +833,152 @@ span.rates-list-nights {
     width: 26px;
     right: 5px;
 }
-.my-booking-heading a:hover {
+.my-booking-heading.d-none a:hover {
     background-color: #844882;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+/* #ibe .btn {
+    border-radius: 1px!important;
+} */
+
+/* Guest */
+
+.guest-form {
+    padding: 20px 10px 10px 10px;
+    background: #eae9ea;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 30px;
+}
+.guest-form label {
+    font-size: 14px;
+    line-height: 1.43;
+    margin-bottom: 5px;
+    color: #473e47;
+}
+
+.guest-form input, .guest-form select, .guest-form textarea {
+    height: 50px;
+    border-radius: 2px;
+    border: solid 1px rgba(113, 108, 112, 0.3);
+}
+.checkbox-group input {
+    height: auto;
+}
+span.custom-check {
+    background: #fff;
+    border: 1px solid hsla(198,5%,61%,.5);
+    margin-right: 10px;
+    border-radius: 0;
+}
+span.custom-check, span.custom-radio {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 0;
+    top: -2px;
+    position: relative;
+}
+input[type=checkbox]:checked+span.custom-check:after {
+    content: "\f00c";
+    font: normal normal normal 17px/1 FontAwesome;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    animation: form-zoom .5s ease-in-out;
+    padding: 0px 2px;
+    background: #a54b89;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+}
+.form-group input[type=checkbox], .form-group input[type=radio], label input[type=checkbox], label input[type=radio] {
+    display: none;
+}
+.guest-form .custom-select {
+    width: 80px!important;
+}
+.guest-form .input-group>.custom-select {
+    flex: none!important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-size: 10px;
+    background-position: calc(100% - 8px) 50%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-image: url(/public/images/svg/dropdown-arrows.svg);
+    border: solid 1px rgba(113, 108, 112, 0.4);
+}
+.custom-select:focus {
+    box-shadow: none!important;
+    border-color: #9e9e9e;
+}
+.guest-form .checkbox-group label {
+    color: #404f51;
+    font-size: 15px;
+}
+.booking-details {
+    text-align: center;
+    background-color: rgba(71, 62, 71, 0.9);
+    border-radius: 2px;
+    padding: 12px 10px 14px 10px;
+    margin-bottom: 20px;
+}
+.booking-details p {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 8px;
+}
+.booking-details h4 {
+    font-size: 17px;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.29;
+}
+.booking-details-middle {
+    border-right: 1px solid #d8d8d8;
+    border-left: 1px solid #d8d8d8;
+}
+.rate-info-guest-form {
+    padding: 0 10px;
+}
+.rate-info-guest-form b {
+    color: #009c55;
+    font-weight: 600;
+}
+.guest-form-card label ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.guest-form-card li {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: bottom;
+    margin-left: 1px;
+}
+.guest-form-card .fa-info-circle {
+    color: #a54b89;
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+.desktop-form-card {
+    display: none;
+}
+.mobile-form-card {
+    display: contents;
+}
+.submit-btn {
+    height: 50px;
+    width: 100%;
+}
+.t-and-c a {
+    font-weight: normal;
+    display: contents;
+}
+label.t-and-c{
+    font-size: 15px;
 }

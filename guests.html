@@ -294,411 +294,156 @@
 
             <div class="step-cover">
                 <ul class="pl-0">
-                    <li class="">
+                    <li class="step-inactive">
                         <span>1</span> Select Rooms
                     </li>
                     <li class="step-inactive">
                         >
                     </li>
-                    <li class="step-inactive">
+                    <li class="">
                         <span>2</span> Your Details
                     </li>
                 </ul>
             </div>
-            <div class="d-flex align-items-end multi-room-display">
-                <h2 class="mb-0">Room 1</h2>
-                <span class="">(2 Adults, 2 children)</span>
-            </div>
 
-            <div class="discount-applied d-lg-none">
-                <p>Your 10% discount has been applied.</p>
-            </div>
+        <form>
+            <section class="guest-form">
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <label>Name *</label>
+                        <input type="text" class="form-control" placeholder="" name="" required="">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label>Name *</label>
+                        <input type="text" class="form-control" placeholder="" name="" required="">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label>Phone Number *</label>
+                        <div class="input-group">
+                            <select class="custom-select" id="">
+                                <option selected>+353</option>
+                                <option value="1">+48</option>
+                                <option value="2">+1</option>
+                            </select>
+                            <input type="text" class="form-control" placeholder="" name="" required="">
+                        </div>
+                    </div>
+                    <div class="form-group col-12 col-lg-6">
+                        <label>Email Address *</label>
+                        <input type="email" class="form-control" name="" placeholder="" required="">
+                    </div>
+                    <div class="form-group col-sm-12 checkbox-group">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label class="d-flex">
+                                    <input type="checkbox" name="newsletter"> <span class="custom-check"></span>Send me special
+                                    offers by email.</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <div class="main-room">
+            <section class="booking-details">
                 <div class="row">
-                    <div class="col-4 pr-0">
-                        <div class="main-room-img">
-                            <div class="main-room-img-container">
-                                <a href="#"><img src="public/images/hotel-rates.jpg" style=""></a>
-                                <a href="#"><div class="ibe-fav"><img src="public/images/svg/icon-favourite-be.svg"></div></a>
-                                <div class="ibe-zoom d-none d-lg-block"><img src="public/images/svg/search.svg"></div>
-                            </div>
+                    <div class="col-4">
+                        <p>Total</p>
+                        <h4>€216.00</h4>
+                    </div>
+                    <div class="col-4 booking-details-middle">
+                        <p>Due Now</p>
+                        <h4>€0.00</h4>
+                    </div>
+                    <div class="col-4">
+                        <p>On Arrival</p>
+                        <h4>€216.00</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rate-info-guest-form">
+                <div class="d-lg-none">
+                    <p><b>No Payment now,</b> pay on arrival!</p>
+                    <p><b>FREE</b> Cancellation until 12pm on Thu 9 Jul</p>
+                </div>
+                <div class="d-none d-lg-flex">
+                    <p><b>Don't worry, you won't be charged anything!</b> Card details are for guarantee purposes only.</p>
+                    <img src="public/images/norton.jpg">
+                </div>
+            </section>
+
+            <section class="guest-form guest-form-card">
+                <div class="row mb-3">
+                    <div class="form-group col-12 col-xl-6">
+                        <label class="w-100">Card number*
+                            <ul>
+                                <li><img src="public/images/svg/card-master.svg"></li>
+                                <li><img src="public/images/svg/card-visa.svg"></li>
+                                <li><img src="public/images/svg/card-amex.svg"></li>
+                            </ul>
+                        </label>
+                        <input type="text" class="form-control" placeholder="" name="" required="">
+                    </div>
+                    <div class="desktop-form-card">
+                        <div class="form-group col-5 col-lg-2 pr-0 exp-date">
+                            <label>Expiry Date*</label>
+                            <select class="custom-select" id="">
+                                    <option disabled selected >MM</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-5 col-lg-1 p-0">
+                            <label>&nbsp;</label>
+                            <select class="custom-select" id="">
+                                    <option disabled selected >YY</option>
+                                    <option value="1">18</option>
+                                    <option value="2">19</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-5 col-lg-2 pr-0 ml-3">
+                            <label>Security Code*</label>
+                            <input type="text" class="form-control" placeholder="3/4 digits" name="" required="">
+                        </div>
+                        <div class="col-2 col-lg-1 p-0 card-form-info">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
                         </div>
                     </div>
-                    <div class="col-8 pl-0">
-                        <div class="main-room-content">
-                            <div class="d-flex justify-content-between mb-3">
-                                <h3 class="mt-lg-2">1 Bedroom Apartment Sleeps 3</h3>
-                                <i class="fa fa-info-circle d-lg-none" aria-hidden="true"></i>
-                                <button class="btn btn-white d-none d-lg-block">DETAILS</button>
-                            </div>
-                            <div class="d-flex align-items-center main-room-icons">
-                                <img src="public/images/room-icons/icon-bed-cut.png">
-                                <p>1 double, 1 sofa bed</p>
-                            </div>
-                            <div class="d-flex align-items-center main-room-icons mb-3">
-                                <img src="public/images/room-icons/icon-sleeps5.png">
-                                <p>Sleep 5</p>
-                            </div>
-                            <div class="show-rates">
-                                <div class="cashback d-flex justify-content-end"><span>€21.60 cash back!</span> <strike>
-                                        <h4>€216.00</h4>
-                                    </strike></div>
-                                <div class="room-stay-details d-flex justify-content-end"><span>3 nights from</span>
-                                    <h4>€194.40</h4>
-                                </div>
-                                <button class="btn btn-secondary view-room-btn">SHOW RATES <i
-                                        class="fa fa-chevron-down float-right" aria-hidden="true"></i></button>
-                            </div>
+                    <div class="mobile-form-card">
+                        <div class="form-group col-5 pr-0">
+                            <label>Expiry Date *</label>
+                            <input type="text" class="form-control" placeholder="MM/YY" name="" required="">
+                        </div>
+                        <div class="form-group col-5 pl-4 pr-0">
+                            <label>Security Code *</label>
+                            <input type="text" class="form-control" placeholder="3/4 digits" name="" required="">
+                        </div>
+                        <div class="col-2">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
-                <div class="rates-list-wrapper" style="display: none;">
-                    <div class="rates-list">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 rates-list-info">
-                                <h3>Early Booker - Save 10%</h3>
-                                <p>Pay today, non-refundable.</p>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="show-rates text-right">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-5 pl-lg-0">
-                                            <div class="cashback d-flex justify-content-end flex-lg-column ">
-                                                <span>€21.60 cash back!</span>
-                                                <strike>
-                                                    <h4>€216.00</h4>
-                                                </strike>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-7 pl-lg-0">
-                                            <button class="btn btn-secondary w-100 my-1">BOOK FOR €194.40 <i
-                                                    class="fa fa-chevron-right float-right"
-                                                    aria-hidden="true"></i></button>
-                                            <span class="rates-list-nights">3 nights from</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rates-list">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 rates-list-info">
-                                <h3>Fully Flexible</h3>
-                                <p><b>No Payment now,</b> pay on arrival!</p>
-                                <p><b>FREE Cancellation</b> until 12pm on Thu 9 Jul</p>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="show-rates text-right">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-5 pl-lg-0">
-                                            <div class="cashback d-flex justify-content-end flex-lg-column ">
-                                                <span>€21.60 cash back!</span>
-                                                <strike>
-                                                    <h4>€216.00</h4>
-                                                </strike>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-7 pl-lg-0">
-                                            <button class="btn btn-secondary w-100 my-1">BOOK FOR €194.40 <i
-                                                    class="fa fa-chevron-right float-right"
-                                                    aria-hidden="true"></i></button>
-                                            <span class="rates-list-nights">3 nights from</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main-room">
                 <div class="row">
-                    <div class="col-4 pr-0">
-                        <div class="main-room-img">
-                            <img src="public/images/hotel-rates.jpg" style="">
-                        </div>
+                    <div class="col-12 col-lg-6">
+                        <label class="d-flex t-and-c">
+                            <input type="checkbox" name="newsletter">
+                            <span class="custom-check"></span>
+                            I agree to the <a href="#">Terms & Conditions</a> & <a href="#">Privacy Policy</a>
+                        </label>
                     </div>
-                    <div class="col-8 pl-0">
-                        <div class="main-room-content">
-                            <div class="d-flex justify-content-between mb-3">
-                                <h3 class="mt-lg-2">1 Bedroom Apartment Sleeps 3</h3>
-                                <i class="fa fa-info-circle d-lg-none" aria-hidden="true"></i>
-                                <button class="btn btn-white d-none d-lg-block">DETAILS</button>
-                            </div>
-                            <div class="d-flex align-items-center main-room-icons">
-                                <img src="public/images/room-icons/icon-bed-cut.png">
-                                <p>1 double, 1 sofa bed</p>
-                            </div>
-                            <div class="d-flex align-items-center main-room-icons mb-3">
-                                <img src="public/images/room-icons/icon-sleeps5.png">
-                                <p>Sleep 5</p>
-                            </div>
-                            <div class="show-rates">
-                                <div class="cashback d-flex justify-content-end"><span>€21.60 cash back!</span> <strike>
-                                        <h4>€216.00</h4>
-                                    </strike></div>
-                                <div class="room-stay-details d-flex justify-content-end"><span>3 nights from</span>
-                                    <h4>€194.40</h4>
-                                </div>
-                                <button class="btn btn-secondary view-room-btn">SHOW RATES <i
-                                        class="fa fa-chevron-down float-right" aria-hidden="true"></i></button>
-                            </div>
-                        </div>
+                    <div class="col-6 d-lg-none my-auto">
+                            <img src="public/images/norton.jpg">
+                    </div>
+                    <div class="col-6 pl-0 pl-sm-3">
+                        <button class="btn btn-secondary submit-btn" type="submit">CONFIRM</button>
                     </div>
                 </div>
-                <div class="rates-list-wrapper" style="display: none;">
-                    <div class="rates-list">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 rates-list-info">
-                                <h3>Early Booker - Save 10%</h3>
-                                <p>Pay today, non-refundable.</p>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="show-rates text-right">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-5 pl-lg-0">
-                                            <div class="cashback d-flex justify-content-end flex-lg-column ">
-                                                <span>€21.60 cash back!</span>
-                                                <strike>
-                                                    <h4>€216.00</h4>
-                                                </strike>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-7 pl-lg-0">
-                                            <button class="btn btn-secondary w-100 my-1">BOOK FOR €194.40 <i
-                                                    class="fa fa-chevron-right float-right"
-                                                    aria-hidden="true"></i></button>
-                                            <span class="rates-list-nights">3 nights from</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rates-list">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 rates-list-info">
-                                <h3>Fully Flexible</h3>
-                                <p><b>No Payment now,</b> pay on arrival!</p>
-                                <p><b>FREE Cancellation</b> until 12pm on Thu 9 Jul</p>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="show-rates text-right">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-5 pl-lg-0">
-                                            <div class="cashback d-flex justify-content-end flex-lg-column ">
-                                                <span>€21.60 cash back!</span>
-                                                <strike>
-                                                    <h4>€216.00</h4>
-                                                </strike>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-7 pl-lg-0">
-                                            <button class="btn btn-secondary w-100 my-1">BOOK FOR €194.40 <i
-                                                    class="fa fa-chevron-right float-right"
-                                                    aria-hidden="true"></i></button>
-                                            <span class="rates-list-nights">3 nights from</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main-room">
-                <div class="row">
-                    <div class="col-4 pr-0">
-                        <div class="main-room-img">
-                            <img src="public/images/hotel-rates.jpg" style="">
-                        </div>
-                    </div>
-                    <div class="col-8 pl-0">
-                        <div class="main-room-content">
-                            <div class="d-flex justify-content-between mb-3">
-                                <h3 class="mt-lg-2">1 Bedroom Apartment Sleeps 3</h3>
-                                <i class="fa fa-info-circle d-lg-none" aria-hidden="true"></i>
-                                <button class="btn btn-white d-none d-lg-block">DETAILS</button>
-                            </div>
-                            <div class="d-flex align-items-center main-room-icons">
-                                <img src="public/images/room-icons/icon-bed-cut.png">
-                                <p>1 double, 1 sofa bed</p>
-                            </div>
-                            <div class="d-flex align-items-center main-room-icons mb-3">
-                                <img src="public/images/room-icons/icon-sleeps5.png">
-                                <p>Sleep 5</p>
-                            </div>
-                            <div class="show-rates">
-                                <div class="cashback d-flex justify-content-end"><span>€21.60 cash back!</span> <strike>
-                                        <h4>€216.00</h4>
-                                    </strike></div>
-                                <div class="room-stay-details d-flex justify-content-end"><span>3 nights from</span>
-                                    <h4>€194.40</h4>
-                                </div>
-                                <button class="btn btn-secondary view-room-btn">SHOW RATES <i
-                                        class="fa fa-chevron-down float-right" aria-hidden="true"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="rates-list-wrapper" style="display: none;">
-                    <div class="rates-list">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 rates-list-info">
-                                <h3>Early Booker - Save 10%</h3>
-                                <p>Pay today, non-refundable.</p>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="show-rates text-right">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-5 pl-lg-0">
-                                            <div class="cashback d-flex justify-content-end flex-lg-column ">
-                                                <span>€21.60 cash back!</span>
-                                                <strike>
-                                                    <h4>€216.00</h4>
-                                                </strike>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-7 pl-lg-0">
-                                            <button class="btn btn-secondary w-100 my-1">BOOK FOR €194.40 <i
-                                                    class="fa fa-chevron-right float-right"
-                                                    aria-hidden="true"></i></button>
-                                            <span class="rates-list-nights">3 nights from</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rates-list">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 rates-list-info">
-                                <h3>Fully Flexible</h3>
-                                <p><b>No Payment now,</b> pay on arrival!</p>
-                                <p><b>FREE Cancellation</b> until 12pm on Thu 9 Jul</p>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="show-rates text-right">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-5 pl-lg-0">
-                                            <div class="cashback d-flex justify-content-end flex-lg-column ">
-                                                <span>€21.60 cash back!</span>
-                                                <strike>
-                                                    <h4>€216.00</h4>
-                                                </strike>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-7 pl-lg-0">
-                                            <button class="btn btn-secondary w-100 my-1">BOOK FOR €194.40 <i
-                                                    class="fa fa-chevron-right float-right"
-                                                    aria-hidden="true"></i></button>
-                                            <span class="rates-list-nights">3 nights from</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main-room">
-                <div class="row">
-                    <div class="col-4 pr-0">
-                        <div class="main-room-img">
-                            <img src="public/images/hotel-rates.jpg" style="">
-                        </div>
-                    </div>
-                    <div class="col-8 pl-0">
-                        <div class="main-room-content">
-                            <div class="d-flex justify-content-between mb-3">
-                                <h3 class="mt-lg-2">1 Bedroom Apartment Sleeps 3</h3>
-                                <i class="fa fa-info-circle d-lg-none" aria-hidden="true"></i>
-                                <button class="btn btn-white d-none d-lg-block">DETAILS</button>
-                            </div>
-                            <div class="d-flex align-items-center main-room-icons">
-                                <img src="public/images/room-icons/icon-bed-cut.png">
-                                <p>1 double, 1 sofa bed</p>
-                            </div>
-                            <div class="d-flex align-items-center main-room-icons mb-3">
-                                <img src="public/images/room-icons/icon-sleeps5.png">
-                                <p>Sleep 5</p>
-                            </div>
-                            <div class="show-rates">
-                                <div class="cashback d-flex justify-content-end"><span>€21.60 cash back!</span> <strike>
-                                        <h4>€216.00</h4>
-                                    </strike></div>
-                                <div class="room-stay-details d-flex justify-content-end"><span>3 nights from</span>
-                                    <h4>€194.40</h4>
-                                </div>
-                                <button class="btn btn-secondary view-room-btn">SHOW RATES <i
-                                        class="fa fa-chevron-down float-right" aria-hidden="true"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="rates-list-wrapper" style="display: none;">
-                    <div class="rates-list">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 rates-list-info">
-                                <h3>Early Booker - Save 10%</h3>
-                                <p>Pay today, non-refundable.</p>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="show-rates text-right">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-5 pl-lg-0">
-                                            <div class="cashback d-flex justify-content-end flex-lg-column ">
-                                                <span>€21.60 cash back!</span>
-                                                <strike>
-                                                    <h4>€216.00</h4>
-                                                </strike>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-7 pl-lg-0">
-                                            <button class="btn btn-secondary w-100 my-1">BOOK FOR €194.40 <i
-                                                    class="fa fa-chevron-right float-right"
-                                                    aria-hidden="true"></i></button>
-                                            <span class="rates-list-nights">3 nights from</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rates-list">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 rates-list-info">
-                                <h3>Fully Flexible</h3>
-                                <p><b>No Payment now,</b> pay on arrival!</p>
-                                <p><b>FREE Cancellation</b> until 12pm on Thu 9 Jul</p>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="show-rates text-right">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-5 pl-lg-0">
-                                            <div class="cashback d-flex justify-content-end flex-lg-column ">
-                                                <span>€21.60 cash back!</span>
-                                                <strike>
-                                                    <h4>€216.00</h4>
-                                                </strike>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-7 pl-lg-0">
-                                            <button class="btn btn-secondary w-100 my-1">BOOK FOR €194.40 <i
-                                                    class="fa fa-chevron-right float-right"
-                                                    aria-hidden="true"></i></button>
-                                            <span class="rates-list-nights">3 nights from</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+            </section>
+
+
+        </form>
+    </div>
 
         <div class="col-lg-4 px-mob-10" id="sidebar_affix">
             <div class="my-booking-cover affix-top" id="booking">

@@ -1,3 +1,8 @@
+@media (max-width: 320px) { 
+    span.custom-check, span.custom-radio {
+        width: 28px;
+    }
+ }
 @media (min-width: 576px) { 
 
  }
@@ -267,6 +272,7 @@
         color: #a54b89;
         padding-top: 3px;
     }
+
 }
 
 @media (min-width: 992px) { 
@@ -830,8 +836,78 @@
     .my-booking-cover {
         margin-bottom: 20px;
     }
+    .guest-form {
+        padding: 20px;
+    }
+    .discount-join {
+        border-radius: 1px;
+    }
+    .discount-img-text {
+        background-image: url(/public/images/img-cash-back.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 116px;
+        width: 100%;
+    }
+    .discount-img-text h3 {
+        color: #fff!important;
+        padding: 20px;
+        line-height: 1.27;
+        width: 185px;
+        font-size: 22px;
+    }
+    .discount-text {
+        background-color: #00aebb;
+        padding: 20px;
+        border-bottom-left-radius: 1px;
+        border-bottom-right-radius: 1px;
+    }
+    .discount-text p {
+        max-width: 50%;
+        margin-bottom: 0;
+        font-weight: 600;
+        line-height: 1.38;
+        color: #fff;
+    }
+    .discount-text .btn-white {
+        color: #00aebb;
+        height: 45px;
+        max-width: 148px;
+    }
+    .booking-details {
+        background-color: #fff;
+        border: 1px solid #d8d8d8;
+    }
+    .booking-details p {
+        color: #716c70;
+        font-size: 15px;
+    }
+    .booking-details h4 {
+        color: #473e47;
+        font-size: 21px;
+    }
+    .rate-info-guest-form {
+        padding: 0;
+    }
+    .rate-info-guest-form img {
+        height: 100%;
+    }
+    .card-form-info {
+        max-width: 7.333333%!important;
+    }
+    .card-form-info i {
+        padding-left: 20px
+    }
+
+    .exp-date {
+        max-width: 14.666667%!important;
+    }
+    .submit-btn {
+        width: 100%;
+    }
 }
 @media (min-width: 1200px) {
+
     .multi-row-nav .card-body {
         width: 264px;
     }
@@ -874,6 +950,12 @@
     .rates-list-wrapper .show-rates .cashback span {
         font-size: 14px;
         color: #00aebb;
+    }
+    .mobile-form-card {
+        display: none;
+    }
+    .desktop-form-card {
+        display: contents;
     }
 
 }
