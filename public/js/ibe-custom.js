@@ -147,3 +147,10 @@ $('.view-room-btn').click(function(){
 $('.ibe-join-mobile-close').click(function(){
     $('.ibe-join-mobile').hide();
 });
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})
