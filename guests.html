@@ -310,12 +310,18 @@
             <section class="guest-form">
                 <div class="row">
                     <div class="form-group col-sm-6">
-                        <label>Name *</label>
-                        <input type="text" class="form-control" placeholder="" name="" required="">
+                        <label>First Name *</label>
+                        <input type="text" class="form-control is-invalid" placeholder="" name="" required="">
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
                     </div>
                     <div class="form-group col-sm-6">
-                        <label>Name *</label>
+                        <label>Surname *</label>
                         <input type="text" class="form-control" placeholder="" name="" required="">
+                        <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
                     </div>
                     <div class="form-group col-sm-6">
                         <label>Phone Number *</label>
@@ -326,17 +332,24 @@
                                 <option value="2">+1</option>
                             </select>
                             <input type="text" class="form-control" placeholder="" name="" required="">
+                                                    <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
                         </div>
                     </div>
                     <div class="form-group col-12 col-lg-6">
                         <label>Email Address *</label>
                         <input type="email" class="form-control" name="" placeholder="" required="">
+                        <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
                     </div>
                     <div class="form-group col-sm-12 checkbox-group">
                         <div class="row">
                             <div class="col-sm-6">
                                 <label class="d-flex">
-                                    <input type="checkbox" name="newsletter"> <span class="custom-check"></span>Send me special
+                                    <input type="checkbox" name="newsletter"> <span class="custom-check"></span>Send me
+                                    special
                                     offers by email.</label>
                             </div>
                         </div>
@@ -363,8 +376,8 @@
 
             <section class="rate-info-guest-form">
                 <div class="d-lg-none">
-                    <p><b>No Payment now,</b> pay on arrival!</p>
-                    <p><b>FREE</b> Cancellation until 12pm on Thu 9 Jul</p>
+                    <p><img src="public/images/svg/bullet-tick.svg"><b>No Payment now,</b> pay on arrival!</p>
+                    <p><img src="public/images/svg/bullet-tick.svg"><b>FREE</b> Cancellation until 12pm on Thu 9 Jul</p>
                 </div>
                 <div class="d-none d-lg-flex">
                     <p><b>Don't worry, you won't be charged anything!</b> Card details are for guarantee purposes only.</p>
@@ -383,8 +396,11 @@
                             </ul>
                         </label>
                         <input type="text" class="form-control" placeholder="" name="" required="">
+                        <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
                     </div>
-                    <div class="desktop-form-card">
+                    <!-- <div class="desktop-form-card">
                         <div class="form-group col-5 col-lg-2 pr-0 exp-date">
                             <label>Expiry Date*</label>
                             <select class="custom-select" id="">
@@ -408,20 +424,24 @@
                         <div class="col-2 col-lg-1 p-0 card-form-info">
                             <i class="fa fa-info-circle" aria-hidden="true"></i>
                         </div>
-                    </div>
-                    <div class="mobile-form-card">
-                        <div class="form-group col-5 pr-0">
+                    </div> -->
+                        <div class="form-group col-5 col-lg-2 pr-0">
                             <label>Expiry Date *</label>
                             <input type="text" class="form-control" placeholder="MM/YY" name="" required="">
+                            <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
                         </div>
-                        <div class="form-group col-5 pl-4 pr-0">
+                        <div class="form-group col-5 pl-4 col-lg-3 pr-0">
                             <label>Security Code *</label>
                             <input type="text" class="form-control" placeholder="3/4 digits" name="" required="">
+                            <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-2 col-lg-1">
                             <i class="fa fa-info-circle" aria-hidden="true"></i>
                         </div>
-                    </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-6">
@@ -459,39 +479,92 @@
                 <div class="my-booking-info">
                     <div class="my-booking-table">
                         <div class="booking-row">
-                            <div class="booking-data d-flex justify-content-between">
+                            <div class="booking-data d-flex ">
                                 <p>Hotel</p>
                                 <p>Jervis Apartments</p>
                             </div>
                         </div>
                         <div class="booking-row">
-                            <div class="booking-data d-flex justify-content-between">
+                            <div class="booking-data d-flex ">
                                 <p>Arriving</p>
                                 <p>10 Jul 2019</p>
                             </div>
                         </div>
                         <div class="booking-row">
-                            <div class="booking-data d-flex justify-content-between">
+                            <div class="booking-data d-flex ">
                                 <p>Staying</p>
                                 <p>3 nights</p>
                             </div>
                         </div>
                         <div class="booking-row">
-                            <div class="booking-data d-flex justify-content-between">
+                            <div class="booking-data d-flex ">
                                 <p>Leaving</p>
                                 <p>13 Jul 2019 </p>
                             </div>
                         </div>
                         <div class="booking-row">
-                            <div class="booking-data d-flex justify-content-between">
+                            <div class="booking-data d-flex ">
                                 <p>People</p>
                                 <p>4 adults, 1 child</p>
                             </div>
                         </div>
                         <div class="booking-row">
-                            <div class="booking-data booking-data-last d-flex justify-content-between">
+                            <div class="booking-data d-flex ">
                                 <p>No. Apartments</p>
                                 <p>1</p>
+                            </div>
+                        </div>
+                        <div class="booking-row booking-row-rate">
+                            <div class="booking-data">
+                                <div class="d-flex align-items-center mt-2">
+                                    <img src="public/images/hotels.jpg" alt="">
+                                    <p style="font-weight: 600;">1 Bedroom Apartment Sleeps 3</p>
+                                </div>
+                                <p style="font-weight: 600; margin-top: 5px;">Fully Flexible</p>
+                                <p><b>No Payment now,</b> pay on arrival!</p>
+                                <p><b>FREE</b> Cancellation until 12pm on Thu 9 Jul</p>
+                            </div>
+                        </div>
+                        <div class="booking-row">
+                            <div class="booking-data d-flex ">
+                                <p>Check-in</p>
+                                <p>2pm</p>
+                            </div>
+                        </div>
+                        <div class="booking-row">
+                            <div class="booking-data d-flex ">
+                                <p>Check-out</p>
+                                <p>11am</p>
+                            </div>
+                        </div>
+                        <div class="booking-row">
+                            <div class="booking-data d-flex ">
+                                <p>Total</p>
+                                <p>€240.00</p>
+                            </div>
+                        </div>
+                        <div class="booking-row booking-row-cashback">
+                            <div class="booking-data d-flex ">
+                                <p>Cash Back</p>
+                                <p>€24.00</p>
+                            </div>
+                        </div>
+                        <div class="booking-row booking-row-total">
+                            <div class="booking-data d-flex ">
+                                <p>Total</p>
+                                <p>€216.00</p>
+                            </div>
+                        </div>
+                        <div class="booking-row">
+                            <div class="booking-data d-flex ">
+                                <p>Due Now</p>
+                                <p>0.00</p>
+                            </div>
+                        </div>
+                        <div class="booking-row">
+                            <div class="booking-data booking-data-last d-flex ">
+                                <p>Pay on Arrival</p>
+                                <p>216.00</p>
                             </div>
                         </div>
                     </div>

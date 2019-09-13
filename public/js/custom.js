@@ -187,3 +187,6 @@ $('.view-room-btn').click(function(){
 $('.ibe-join-mobile-close').click(function(){
     $('.ibe-join-mobile').hide();
 });
+$('.show-extra-guest').click(function(){
+    $('.extra-details').slideToggle();
+})

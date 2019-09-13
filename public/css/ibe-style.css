@@ -3,7 +3,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
-    color:  #473E47; 
+    color:  #473e47; 
     line-height: 22px;
     font-size: 15px;
 }
@@ -26,18 +26,18 @@ h3, .h3 {
     font-family: 'Roboto Slab', serif;
     font-size: 20px!important;
     font-weight: 400;
-    color:  #473E47;
+    color:  #473e47;
 }
 h4, .h4 {
     font-family: 'Roboto Slab', serif;
     font-size: 18px;
     font-weight: 400;
-    color:  #473E47; 
+    color:  #473e47; 
 }
 h5, .h5 {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
-    color:  #473E47; 
+    color:  #473e47; 
     font-size: 17px;
 }
 
@@ -45,7 +45,7 @@ h5, .h5 {
 p {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
-    color:  #473E47; 
+    color:  #473e47; 
     line-height: 1.4;
     font-size: 15px;
 }
@@ -433,7 +433,7 @@ ul.footer-master-nav {
     height: 50px;
     border-radius: 2px;
     border: solid 1px rgba(113, 108, 112, 0.3);
-    color: #473E47!important;
+    color: #473e47!important;
     overflow: hidden;
 }
 #multiple-selected .btn-group-vertical>.btn, .btn-group>.btn:focus {
@@ -459,7 +459,7 @@ ul.multiselect-container {
 .multiselect-container a {
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
-    color: #473E47!important;
+    color: #473e47!important;
 }
 .multiselect-container label.checkbox:focus {
     outline-color: rgba(255, 255, 255, 0)!important;
@@ -803,6 +803,7 @@ span.rates-list-nights {
 }
 .booking-data p {
     margin: 10px 0;
+    width: 50%;
 }
 .my-booking-heading .fa {
     color: #fff;
@@ -941,6 +942,9 @@ input[type=checkbox]:checked+span.custom-check:after {
     border-right: 1px solid #d8d8d8;
     border-left: 1px solid #d8d8d8;
 }
+.my-booking-table p {
+    font-size: 15px;
+}
 .rate-info-guest-form {
     padding: 0 10px;
 }
@@ -964,13 +968,6 @@ input[type=checkbox]:checked+span.custom-check:after {
     font-size: 20px;
     margin-top: 45px;
 }
-
-.desktop-form-card {
-    display: none;
-}
-.mobile-form-card {
-    display: contents;
-}
 .submit-btn {
     height: 50px;
     width: 100%;
@@ -981,4 +978,27 @@ input[type=checkbox]:checked+span.custom-check:after {
 }
 label.t-and-c{
     font-size: 15px;
+}
+.extra-details {
+    display: contents;
+}
+.booking-row-cashback p {
+    color: #00aebb;
+    font-family: 'Roboto Slab', serif;
+}
+.booking-row-total p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.booking-row-rate .booking-data p {
+    width:100%;
+    margin: 0 0 5px 0;
+}
+.booking-row-rate .booking-data b {
+    color: #009c55;
+}
+.booking-row-rate img {
+    width: 40px;
+    height: 30px;
+    margin-right: 5px;
 }
