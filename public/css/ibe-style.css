@@ -1002,3 +1002,12 @@ label.t-and-c{
     height: 30px;
     margin-right: 5px;
 }
+
+.currency-note {
+    background-color: #00aebb;
+    padding: 10px;
+    color: #fff;
+}
+p.currency-note {
+    line-height: 20px!important; 
+}
