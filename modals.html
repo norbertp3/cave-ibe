@@ -264,8 +264,98 @@
 
 
 <div class="container" id="ibe">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg m-5" data-toggle="modal" data-target="#modalTabs">Info Bar
+    Modal</button>
 
-    <!-- CONTENT HERE -->
+<!-- Info Modal -->
+<div class="modal fade modal-tabs" id="modalTabs" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-right">
+                <a href="#" data-dismiss="modal" aria-label="Close" style="color: #a54b89;">Close <span
+                        aria-hidden="true">&times;</span></a>
+            </div>
+
+            <div class="modal-body">
+
+                <div role="tabpanel">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="info-tab">
+                            <a href="#infoTab" aria-controls="uploadTab" role="tab" data-toggle="tab" class="active">Info</a>
+                        </li>
+                        <li role="presentation" class="gallery-tab">
+                            <a href="#galleryTab" aria-controls="browseTab" role="tab" data-toggle="tab">Gallery</a>
+                        </li>
+                        <li role="presentation" class="map-tab">
+                            <a href="#mapTab" aria-controls="browseTab" role="tab" data-toggle="tab">Map</a>
+                        </li>
+                        <li role="presentation" class="reviews-tab">
+                            <a href="#reviewsTab" aria-controls="browseTab" role="tab" data-toggle="tab">Reviews</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="infoTab">
+                            <div>
+                                <img src="public/images/apartments.jpg" alt="" class="float-left d-none d-lg-block" style="width: 350px; height: 260px; object-fit: cover;">
+                                <div class="tab-info-apartment">
+                                    <h2>Jervis Apartments</h2>
+                                    <div class="tab-property-details">
+                                        <div class="row">
+                                            <div class="col-1"><img src="public/images/svg/location.svg"></div>
+                                            <div class="col-10">
+                                                <p>1-6 Wolfetone Court, Wolf Tone Street, Dublin, Ireland</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-1"><img src="public/images/svg/contact.svg"></div>
+                                            <div class="col-10">
+                                                <p>(01) 532 0630</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-1"><img src="public/images/svg/email.svg"></div>
+                                            <div class="col-10">
+                                                <p>reservations@jervisapartments.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <ul class="tab-list-facilities">
+                                <li><img src="public/images/svg/facilities/breakfast-1.svg"><span>Restaurants</span></li>
+                                <li><img src="public/images/svg/facilities/breakfast-1.svg"><span>Lift</span></li>
+                                <li><img src="public/images/svg/facilities/breakfast-1.svg"><span>24 hr Reception</span></li>
+                                <li><img src="public/images/svg/facilities/breakfast-1.svg"><span>Car-parking</span></li>
+                                <li><img src="public/images/svg/facilities/breakfast-1.svg"><span>Family Rooms</span></li>
+                                <li><img src="public/images/svg/facilities/breakfast-1.svg"><span>Twin Rooms</span></li>
+                            </ul>
+                            <p>Perfectly located where Dublin's shopping quarter meets the vibrant culture of Temple Bar, these apartments are perfect for your city stay. With our Jervis Street Apartments you will find great value alongside a great central location just minutes from Temple Bar, the Guinness Storehouse, O’Connell Street & more.</p>
+                            <div class="row d-flex tab-info-footer align-items-center">
+                                <div class="col-12 col-md-4 order-3 order-md-1"><button class="btn btn-blue">VISIT PROPERTY PAGE</button></div>
+                                <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 text-right"><span>2 nights from <b>€216.00</b></span></div>
+                                <div class="col-12 col-md-3 col-lg-2 order-2 order-md-3"><button class="btn btn-secondary">BOOK</button></div>
+                            </div>
+                        </div>
+
+
+                        <div role="tabpanel" class="tab-pane" id="galleryTab">browseTab</div>
+                        <div role="tabpanel" class="tab-pane" id="mapTab">MAP</div>
+                        <div role="tabpanel" class="tab-pane" id="reviewsTab">REVIEWS</div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
 
 </div>
     <!-- ------------------------------------------------------------------ -->

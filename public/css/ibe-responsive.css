@@ -3,8 +3,24 @@
         width: 28px;
     }
  }
+@media (max-width: 767px) { 
+    ul.tab-list-facilities {
+        column-count: 2;
+    }
+    .tab-list-facilities li {
+        width: 100%;
+    }
+ }
 @media (min-width: 576px) { 
+    .tab-list-facilities li {
+        padding-right: 10px;
+    }
 
+ }
+@media (min-width: 768px) { 
+    .tab-info-footer .btn, .tab-info-footer .text-right  {
+        margin-bottom: 0px!important;
+    }
  }
 
 @media only screen and (max-width: 991px) {
@@ -255,9 +271,9 @@
     .custom-room-extra .widget-adults {
         margin-right: 10px;
     }
-    .modal-content a {
+    /* .modal-content a {
         color: #fff!important;
-    }
+    } */
     .close-modal {
         margin: 29px 0;
     }
@@ -395,6 +411,47 @@
     }
     ul.footer-master-nav {
         column-count: 1;
+    }
+    /* Modal Core */
+    
+    .modal-content {
+        border-radius: 0!important;
+    }
+    .modal-dialog {
+        height: auto;
+        min-width: 707px!important;
+        margin-top: 100px!important;
+        margin-bottom: auto!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+    .modal-custom .btn {
+        margin-bottom: 26px;
+        width: 232px;
+    }
+    .modal-header {
+        height: 20px!important;
+        background-color: transparent;
+        display: block!important;
+        border-top-left-radius: 0!important;
+        border-top-right-radius: 0!important;
+        z-index: 20;
+        width: auto!important;
+        position: relative!important;
+        padding: 0!important;
+        margin-bottom: 10px;
+        border-bottom: none!important;
+    }
+    .modal-header a {
+        color: #fff!important;
+    }
+    .modal-body {
+        background-color: #fff;
+        padding: 40px!important;
+    }
+
+    #ibe .modal-dialog {
+        max-width: 1000px!important;
     }
 
     .slick-dots {
@@ -904,6 +961,53 @@
     }
     .submit-btn {
         width: 100%;
+    }
+    .conf-info-head p {
+        margin-top: 20px!important;
+    }
+    .tab-list-facilities li {
+        padding-right: 42px;
+    }
+    .tab-info-footer .btn-blue {
+        width: 236px;
+    }
+    .tab-info-footer .btn-secondary {
+        width: 167px;
+        float: right;
+    }
+    .tab-info-footer span {
+        padding-right: 20px;
+    }
+    #ibe .tab-content {
+        padding: 40px;
+        background-color: #fff;
+    }
+    .modal-tabs .modal-body {
+        padding: 0!important;
+    }
+    .modal-tabs .modal-body {
+        background-color: transparent;
+    }
+    .nav-tabs li {
+        background-color: #fff;
+        width: 183px;
+        margin-right: 4px;
+        border-top-left-radius: 5px!important;
+        border-top-right-radius: 5px!important;
+    }
+    #ibe .nav-tabs a {
+        border-bottom: none;
+        background-color: #eae9ea;
+        color: #473e47!important;
+        border-top-left-radius: 5px!important;
+        border-top-right-radius: 5px!important;
+    }
+    #ibe .nav-tabs a.active {
+        background-color: #fff;
+    }
+    .tab-info-apartment {
+        padding: 25px 0 0 40px;
+        display: inline-block;
     }
 }
 @media (min-width: 1200px) {
