@@ -264,9 +264,352 @@
 
 
 <div class="container" id="ibe">
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg m-5" data-toggle="modal" data-target="#modalTabs">Info Bar
+<!-- Info Modal Trigger -->
+<button type="button" class="btn btn-primary btn-lg mt-5" data-toggle="modal" data-target="#modalTabs">Info Bar
     Modal</button>
+
+<!-- Compare Modal Trigger -->
+<button type="button" class="btn btn-primary btn-lg mt-5" data-toggle="modal" data-target="#compareModal">Compare Properties</button>
+
+
+<!-- Room Info Modal Trigger-->
+<button type="button" class="btn btn-primary btn-lg mt-5" data-toggle="modal" data-target="#roomInfo">Room Info</button>
+
+
+<!-- Room Info Modal -->
+<div class="modal fade modal-custom" id="roomInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-right">
+                <a href="#" data-dismiss="modal" aria-label="Close">Close <span aria-hidden="true">&times;</span></a>
+            </div>
+            <div class="modal-large-slider">
+                <section class="standard-slider slider">
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="" style="">
+                    </div>
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="" style="">
+                    </div>
+                    <div>
+                        <img src="public/images/apartment.jpg" alt="" style="">
+                    </div>
+                </section>
+            </div>
+            <div class="modal-body pt-3">
+
+                <h3 class="">1 Bedroom Apartment Sleeps 3</h3>
+                <ul class="roomInfoIcons">
+                    <li>
+                        <div class="row d-flex align-items-center">
+                            <div class="col-2 col-sm-1 col-lg-12"><img src="public/images/room-icons/icon-sleeps3.png"></div>
+                            <div class="col-8 col-sm-11 col-lg-12">Sleeps 3</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row d-flex align-items-center">
+                                <div class="col-2 col-sm-1 col-lg-12"><img src="public/images/room-icons/icon-bed.png"></div>
+                                <div class="col-8 col-sm-11 col-lg-12">1 double & 1 sofa bed</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row d-flex align-items-center">
+                                <div class="col-2 col-sm-1 col-lg-12"><img src="public/images/room-icons/icon-ruler.png"></div>
+                                <div class="col-8 col-sm-11 col-lg-12">32-38m2</div>
+                        </div>
+                    </li>
+                </ul>
+                <p>All of our large one bedroom apartments can cater for up to four guests. Each bedroom has a large double bed, while there is a large comfortable sofa bed in the living room which can also cater for up to 2 guests. Each apartment comes with a fully fitted kitchen and a dining area.</p>
+                <ul class="roomInfoList">
+                    <li>Fridge-freezer</li>
+                    <li>Fridge-freezer</li>
+                    <li>Fridge-freezer</li>
+                    <li>Fridge-freezer</li>
+                    <li>Fridge-freezer</li>
+                    <li>Fridge-freezer</li>
+                    <li>Fridge-freezer</li>
+                    <li>Fridge-freezer</li>
+                    <li>Fridge-freezer</li>
+                    <li>Fridge-freezer</li>
+                    <li>Fridge-freezer</li>
+                    <li>Fridge-freezer</li>
+                    <li>Fridge-freezer</li>
+                </ul>
+                <div class="float-right d-lg-none">
+                    <h3 style="margin-bottom: 5px!important;"><small>from</small> €89.00</h3>
+                </div>
+                <button  class="btn btn-secondary float-right">BOOK</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<!-- Compare Modal -->
+<div class="modal fade" id="compareModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header text-right">
+            <a href="#" data-dismiss="modal" aria-label="Close" style="color: #a54b89;">Close <span
+                    aria-hidden="true">&times;</span></a>
+        </div>
+        <div class="modal-body">
+            <div role="tabpanel" class="d-lg-none">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="apa-blue" style="width: 33.33333%">
+                        <a href="#apa1" aria-controls="uploadTab" role="tab" data-toggle="tab" class="active">Info</a>
+                    </li>
+                    <li role="presentation" class="apa-yellow" style="width: 33.33333%">
+                        <a href="#apa2" aria-controls="browseTab" role="tab" data-toggle="tab">Gallery</a>
+                    </li>
+                    <li role="presentation" class="apa-green" style="width: 33.33333%">
+                        <a href="#apa3" aria-controls="browseTab" role="tab" data-toggle="tab">Map</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!-- Tab Info -->
+                    <div role="tabpanel" class="tab-pane active" id="apa1">
+                        <div class="apa-head">
+                            <img src="public/images/apartments.jpg" alt="" class=""
+                                style="border-bottom: 7px solid #00aebb;">
+                        </div>
+                        <div class="apa-info-table text-center">
+                            <div class="apa-data">
+                                <h3>Hotel Saint George</h3>
+                                <p class="pt-0">Double Room</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>from <b>€93.00</b></p>
+                            </div>
+                            <div class="apa-data">
+                                <img src="public/images/reviews-placeholder.svg">
+                            </div>
+                            <div class="apa-data">
+                                <p>Dublin - 300m from centre</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>Sleeps 2</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>1 Double Bed</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>Size 22-25m2</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>Kitchenette (mini-fridge & microwave)</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>Private Ensuite Bathroom</p>
+                            </div>
+
+                            <button class="btn btn-secondary w-100">PRICES & BOOK</button>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="apa2">
+                        <div class="apa-head">
+                            <img src="public/images/apartments.jpg" alt="" class=""
+                                style="border-bottom: 7px solid #f7be40;">
+                        </div>
+                        <div class="apa-info-table text-center">
+                            <div class="apa-data">
+                                <h3>Jervis Apartments</h3>
+                                <p class="pt-0">1 Bedroom Apartment Sleeps 3</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>from <b>€93.00</b></p>
+                            </div>
+                            <div class="apa-data">
+                                <img src="public/images/reviews-placeholder.svg">
+                            </div>
+                            <div class="apa-data">
+                                <p>Dublin - 300m from centre</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>Sleeps 2</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>1 Double Bed</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>Size 22-25m2</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>Kitchenette (mini-fridge & microwave)</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>Private Ensuite Bathroom</p>
+                            </div>
+                            <button class="btn btn-secondary w-100">PRICES & BOOK</button>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="apa3">
+                        <div class="apa-head">
+                            <img src="public/images/apartments.jpg" alt="" class=""
+                                style="border-bottom: 7px solid #b9c077;">
+                        </div>
+                        <div class="apa-info-table text-center">
+                            <div class="apa-data">
+                                <h3>Amberly House</h3>
+                                <p class="pt-0">Small Double Room</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>from <b>€93.00</b></p>
+                            </div>
+                            <div class="apa-data">
+                                <img src="public/images/reviews-placeholder.svg">
+                            </div>
+                            <div class="apa-data">
+                                <p>Dublin - 300m from centre</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>Sleeps 2</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>1 Double Bed</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>Size 22-25m2</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>Kitchenette (mini-fridge & microwave)</p>
+                            </div>
+                            <div class="apa-data">
+                                <p>Private Ensuite Bathroom</p>
+                            </div>
+                            <button class="btn btn-secondary w-100">PRICES & BOOK</button>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="reviewsTab">REVIEWS</div>
+                </div>
+            </div>
+            <div class="desktop-compare d-none d-lg-flex justify-content-center ">
+                <div class="apa-wrapper">
+                    <div class="apa-head">
+                        <img src="public/images/apartments.jpg" alt="" class=""
+                            style="border-bottom: 7px solid #f7be40;">
+                    </div>
+                    <div class="apa-info-table text-center">
+                        <div class="apa-data">
+                            <h3>Hotel Saint George</h3>
+                            <p class="pt-0">Double Room</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>from <b>€93.00</b></p>
+                        </div>
+                        <div class="apa-data">
+                            <img src="public/images/reviews-placeholder.svg">
+                        </div>
+                        <div class="apa-data">
+                            <p>Dublin - 300m from centre</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>Sleeps 2</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>1 Double Bed</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>Size 22-25m2</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>Kitchenette (mini-fridge & microwave)</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>Private Ensuite Bathroom</p>
+                        </div>
+
+                        <button class="btn btn-secondary w-100">PRICES & BOOK</button>
+                    </div>
+                </div>
+                <div class="apa-wrapper">
+                    <div class="apa-head">
+                        <img src="public/images/apartments.jpg" alt="" class=""
+                            style="border-bottom: 7px solid #00aebb;">
+                    </div>
+                    <div class="apa-info-table text-center">
+                        <div class="apa-data">
+                            <h3>Jervis Apartments</h3>
+                            <p class="pt-0">1 Bedroom Apartment Sleeps 3</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>from <b>€93.00</b></p>
+                        </div>
+                        <div class="apa-data">
+                            <img src="public/images/reviews-placeholder.svg">
+                        </div>
+                        <div class="apa-data">
+                            <p>Dublin - 300m from centre</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>Sleeps 2</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>1 Double Bed</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>Size 22-25m2</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>Kitchenette (mini-fridge & microwave)</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>Private Ensuite Bathroom</p>
+                        </div>
+
+                        <button class="btn btn-secondary w-100">PRICES & BOOK</button>
+                    </div>
+                </div>
+                <div class="apa-wrapper">
+                    <div class="apa-head">
+                        <img src="public/images/apartments.jpg" alt="" class=""
+                            style="border-bottom: 7px solid #b9c077;">
+                    </div>
+                    <div class="apa-info-table text-center">
+                        <div class="apa-data">
+                            <h3>Amberly House</h3>
+                            <p class="pt-0">Small Double Room</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>from <b>€93.00</b></p>
+                        </div>
+                        <div class="apa-data">
+                            <img src="public/images/reviews-placeholder.svg">
+                        </div>
+                        <div class="apa-data">
+                            <p>Dublin - 300m from centre</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>Sleeps 2</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>1 Double Bed</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>Size 22-25m2</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>Kitchenette (mini-fridge & microwave)</p>
+                        </div>
+                        <div class="apa-data">
+                            <p>Private Ensuite Bathroom</p>
+                        </div>
+
+                        <button class="btn btn-secondary w-100">PRICES & BOOK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
 
 <!-- Info Modal -->
 <div class="modal fade modal-tabs" id="modalTabs" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -277,9 +620,7 @@
                 <a href="#" data-dismiss="modal" aria-label="Close" style="color: #a54b89;">Close <span
                         aria-hidden="true">&times;</span></a>
             </div>
-
             <div class="modal-body">
-
                 <div role="tabpanel">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
@@ -296,8 +637,10 @@
                             <a href="#reviewsTab" aria-controls="browseTab" role="tab" data-toggle="tab">Reviews</a>
                         </li>
                     </ul>
+
                     <!-- Tab panes -->
                     <div class="tab-content">
+                        <!-- Tab Info -->
                         <div role="tabpanel" class="tab-pane active" id="infoTab">
                             <div>
                                 <img src="public/images/apartments.jpg" alt="" class="float-left d-none d-lg-block" style="width: 350px; height: 260px; object-fit: cover;">
@@ -336,26 +679,111 @@
                             </ul>
                             <p>Perfectly located where Dublin's shopping quarter meets the vibrant culture of Temple Bar, these apartments are perfect for your city stay. With our Jervis Street Apartments you will find great value alongside a great central location just minutes from Temple Bar, the Guinness Storehouse, O’Connell Street & more.</p>
                             <div class="row d-flex tab-info-footer align-items-center">
-                                <div class="col-12 col-md-4 order-3 order-md-1"><button class="btn btn-blue">VISIT PROPERTY PAGE</button></div>
+                                <div class="col-12 col-md-4 order-3 order-md-1"><a href="#"><button class="btn btn-blue">VISIT PROPERTY PAGE</button></a></div>
                                 <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 text-right"><span>2 nights from <b>€216.00</b></span></div>
-                                <div class="col-12 col-md-3 col-lg-2 order-2 order-md-3"><button class="btn btn-secondary">BOOK</button></div>
+                                <div class="col-12 col-md-3 col-lg-2 order-2 order-md-3"><a href="#"><button class="btn btn-secondary">BOOK</button></a></div>
                             </div>
                         </div>
-
-
-                        <div role="tabpanel" class="tab-pane" id="galleryTab">browseTab</div>
-                        <div role="tabpanel" class="tab-pane" id="mapTab">MAP</div>
+                        <div role="tabpanel" class="tab-pane" id="galleryTab">
+                                <section class="standard-slider slider">
+                                        <div>
+                                            <img src="public/images/apartment.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="public/images/apartment.jpg" alt="" style="">
+                                        </div>
+                                        <div>
+                                            <img src="public/images/apartment.jpg" alt="" style="">
+                                        </div>
+                                        <div>
+                                            <img src="public/images/apartment.jpg" alt="" style="">
+                                        </div>
+                                    </section>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="mapTab">
+                            <div class="tab-map-cover">
+                                <div id="googleMap" style="width: 100%; height: 400px; position: relative; overflow: hidden;"></div>
+                                <section class="directions-tabs">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <div class="custom-tab">
+                                                    <div class="custom-tab-head">
+                                                        <h4>Getting here from the airport <i class="fa fa-angle-down" style="float: right"></i></h4>
+                                                    </div>
+                                                    <div class="custom-tab-body">
+                                                        <p>Best Option: Take the 747 Bus from Dublin Airport to the City Centre. The 747 Bus stops on
+                                                            Lower O’Connell Street which is 4 minute walk, along Henry Street then onto Jervis
+                                                            Apartments Dublin City.
+                                                            <br>
+                                                            The bus departs from outside the arrivals hall every 15 minutes. Tickets are €7 per adult
+                                                            and the journey can take between 20 to 30 minutes depending on traffic.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="custom-tab">
+                                                    <div class="custom-tab-head">
+                                                        <h4>Getting here from the airport <i class="fa fa-angle-down" style="float: right"></i></h4>
+                                                    </div>
+                                                    <div class="custom-tab-body">
+                                                        <p>Best Option: Take the 747 Bus from Dublin Airport to the City Centre. The 747 Bus stops on
+                                                            Lower O’Connell Street which is 4 minute walk, along Henry Street then onto Jervis
+                                                            Apartments Dublin City.
+                                                            <br>
+                                                            The bus departs from outside the arrivals hall every 15 minutes. Tickets are €7 per adult
+                                                            and the journey can take between 20 to 30 minutes depending on traffic.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="custom-tab">
+                                                    <div class="custom-tab-head">
+                                                        <h4>Getting here from the airport <i class="fa fa-angle-down" style="float: right"></i></h4>
+                                                    </div>
+                                                    <div class="custom-tab-body">
+                                                        <p>Best Option: Take the 747 Bus from Dublin Airport to the City Centre. The 747 Bus stops on
+                                                            Lower O’Connell Street which is 4 minute walk, along Henry Street then onto Jervis
+                                                            Apartments Dublin City.
+                                                            <br>
+                                                            The bus departs from outside the arrivals hall every 15 minutes. Tickets are €7 per adult
+                                                            and the journey can take between 20 to 30 minutes depending on traffic.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="custom-tab">
+                                                    <div class="custom-tab-head">
+                                                        <h4>Getting here from the airport <i class="fa fa-angle-down" style="float: right"></i></h4>
+                                                    </div>
+                                                    <div class="custom-tab-body">
+                                                        <p>Best Option: Take the 747 Bus from Dublin Airport to the City Centre. The 747 Bus stops on
+                                                            Lower O’Connell Street which is 4 minute walk, along Henry Street then onto Jervis
+                                                            Apartments Dublin City.
+                                                            <br>
+                                                            The bus departs from outside the arrivals hall every 15 minutes. Tickets are €7 per adult
+                                                            and the journey can take between 20 to 30 minutes depending on traffic.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                
+                                    </section>
+                            </div>   
+                        </div>
                         <div role="tabpanel" class="tab-pane" id="reviewsTab">REVIEWS</div>
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
     </div>
 </div>
+
+
 
 </div>
     <!-- ------------------------------------------------------------------ -->
@@ -500,15 +928,53 @@
     <script type="text/javascript" src="public/js/prefixfree.viewport-units.js"></script>
     <script type="text/javascript" src="public/js/prefixfree.jquery.js"></script>
 
+    <!-- Goole Maps  -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByzmrkHnx_a8Mq7FWJMeXOLHQm12u3jyA"></script>
+
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     
     <!-- Custom -->
-    <script src="public/js/custom.js"></script>
+    <script src="public/js/ibe-custom.js"></script>
 
     <script type="text/javascript">
+                $(".standard-slider").slick({
+                dots: true,
+                infinite: false,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 300000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                        }
+                    }
+                ]
+            });
+
+            function myMap() {
+                var myLatLng = {lat: 53.348913, lng: -6.267689};
+                var image = '/public/images/svg/map-pin-apartment.svg';
+                var map = new google.maps.Map(document.getElementById('googleMap'), {
+                    zoom: 15,
+                    center: myLatLng
+                });
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Hello World!',
+                    icon: image
+                });
+            }
+            myMap();
+
+
     </script>
 
 

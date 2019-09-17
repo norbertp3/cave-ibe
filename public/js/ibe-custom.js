@@ -13,6 +13,7 @@ if ($(window).width() < 991) {
         $(this).find('.fa').toggleClass('rotate180');
     });
     $("#sidebar_affix").detach().insertAfter("#top-bar");
+
 }
 
 // Navigation hover
@@ -32,6 +33,7 @@ if ($(window).width() < 767) {
 
 $('.custom-tab-head').click(function(){
     $(this).next().slideToggle('slow');
+    $(this).find('.fa').toggleClass('rotate180');
 });
 
 
@@ -74,6 +76,8 @@ function update_room_dropdowns() {
         $('form .room-details.extra-rooms:not("#roomId1")').hide();
     }
 }
+
+
 
 // Modal disable scroll
 // var vpH = window.innerHeight;
