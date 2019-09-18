@@ -1124,6 +1124,9 @@
     ul.social-channels-footer {
         width: 80%;
     }
+    ul.roomInfoIcons {
+        margin-bottom: 30px;
+    }
 }
 @media (min-width: 1200px) {
 

@@ -1201,7 +1201,7 @@ input[type=checkbox]:checked+span.checkbox:after {
 
 .modal-custom h3 {
     font-size: 20px!important;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 .modal-custom p {
     margin-bottom: 30px;
@@ -1236,4 +1236,7 @@ input[type=checkbox]:checked+span.checkbox:after {
 }
 .room-details-wrapper {
     margin-bottom: 30px;
+}
+ul.roomInfoIcons {
+    margin-bottom: 23px;
 }

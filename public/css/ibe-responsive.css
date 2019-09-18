@@ -1088,6 +1088,16 @@
         margin-top: 0;
         object-fit: cover;
     }
+    ul.roomInfoIcons {
+        margin-bottom: 30px;
+    }
+    #roomInfo .cashback h4 {
+        padding-top: 17px;
+    }
+    #roomInfo ul.roomInfoList {
+        margin-bottom: 41px;
+    }
+
 }
 @media (min-width: 1200px) {
 
