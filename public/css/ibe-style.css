@@ -193,6 +193,7 @@ li {
 .standard-slider .slick-dots {
     text-align: center!important;
     right: 0!important;
+    bottom: 5px!important;
 }
 .standard-slider img {
     width: 100%;
@@ -209,6 +210,9 @@ li {
     font-size: 8px!important;
     color: #fff!important;
     opacity: .65!important;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0!important;
 }
 .btn-dark {
     background-color: #473e47!important;
@@ -1319,4 +1323,9 @@ ul.tab-list-facilities {
 .roomInfoIcons img {
     width: 30px;
     margin: 0;
+}
+#roomInfo .standard-slider img {
+    height: 210px;
+    margin-top: 36px;
+    object-fit: cover;
 }
