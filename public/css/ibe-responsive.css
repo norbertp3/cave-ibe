@@ -19,6 +19,9 @@
         height: 420px;
 
     }
+    ul.roomInfoList {
+        column-count: 3;
+    }
 
  }
 @media (min-width: 768px) { 
@@ -291,6 +294,9 @@
     .main-room-content .fa-info-circle {
         color: #a54b89;
         padding-top: 3px;
+    }
+    #conf-page-content {
+        margin-top: 40px;
     }
 
 }
@@ -1097,7 +1103,6 @@
     #roomInfo ul.roomInfoList {
         margin-bottom: 41px;
     }
-
 }
 @media (min-width: 1200px) {
 
