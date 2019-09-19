@@ -1229,6 +1229,14 @@ input[type=checkbox]:checked+span.checkbox:after {
 .roomInfoList li {
     margin-bottom: 10px;
 }
+.roomInfoList li::before {
+    content: "• ";
+    color: #a54b89;
+    padding-right: 8px;
+}
+.roomInfoList li {
+    display: block;
+}
 #roomInfo .standard-slider img {
     height: 210px;
     margin-top: 36px;
