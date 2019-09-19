@@ -1130,6 +1130,9 @@
     ul.roomInfoIcons {
         margin-bottom: 30px;
     }
+    .room-details-desktop h2 {
+        font-size: 31px !important;
+    }
 }
 @media (min-width: 1200px) {
 
