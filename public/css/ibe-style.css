@@ -613,6 +613,10 @@ input[type=checkbox]:checked+span.checkbox:after {
 /* ------------------------------------------------------------------------------------ */
 /* Booking Engine */
 
+#ibe {
+    margin-top: 40px;
+}
+
 #currency-options {
     border: none!important;
     border-radius: 1px;
@@ -1331,6 +1335,14 @@ ul.tab-list-facilities {
     font-family: 'Nunito', sans-serif;
     margin-bottom: 15px;
 }
+.roomInfoList li::before {
+    content: "• ";
+    color: #a54b89;
+    padding-right: 8px;
+}
+.roomInfoList li {
+    display: block;
+}
 .roomInfoIcons img {
     width: 30px;
     margin: 0;
@@ -1353,5 +1365,92 @@ ul.roomInfoIcons {
     margin-top: 3px;
 }
 #roomInfo ul.roomInfoList {
+    margin-bottom: 30px;
+}
+
+/* My List Template */
+.empty-list-card {
+    height: 420px;
+    width: 100%;
+    border: dashed 2px rgba(113, 108, 112, 0.4);
+    text-align: center;
+}
+.empty-list-card p {
+    font-family: 'nunito', sans-serif;
+    font-size: 16px;
+    color: rgba(113, 108, 112, 0.7);
+    margin-top: 20px;
+}
+.empty-list-card-content {
+    position: relative;
+    top: 40%;
+}
+.compare-apa .card {
+    border: none;
+}
+/* .compare-apa .slide {
+    height: 160px;
+    width: 100%;
+} */
+.compare-apa img {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+}
+.compare-apa .card-heart {
+    background-image: url(/public/images/wishlist/icon-heart-not-saved.png);
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    z-index:11;
+    right: 20px;
+    top: 20px;
+}
+.compare-apa .card-body {
+    padding: 10px;
+    background-color: #eae9ea;
+} 
+.compare-apa p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.compare-apa-info-row .fa {
+    margin-right: 5px;
+}
+.compare-apa-info-row {
+    margin-bottom: 20px;
+}
+.compare-apa-checkbox-price label {
+    color: #473e47;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+.compare-apa-checkbox-price span {
+    color: #716c70;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1;
+}
+.compare-apa-checkbox-price b {
+    color: #716c70;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+.compare-apa button {
+    margin-top: 20px;
+}
+.image-top-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3px 6px;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    z-index: 11;
+}
+.compare-apa .card {
     margin-bottom: 30px;
 }

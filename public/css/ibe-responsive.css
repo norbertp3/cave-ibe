@@ -1,7 +1,7 @@
 @media (max-width: 320px) { 
-    span.custom-check, span.custom-radio {
+    /* span.custom-check, span.custom-radio {
         width: 28px;
-    }
+    } */
  }
 @media (max-width: 767px) { 
     ul.tab-list-facilities {
@@ -647,7 +647,6 @@
     #ft-property-details {
         margin-bottom: 100px;
     }
-
     .slick-prev, .slick-next {
         display: none!important;
     }
@@ -1102,6 +1101,32 @@
     }
     #roomInfo ul.roomInfoList {
         margin-bottom: 41px;
+    }
+    .empty-list-card {
+        max-width: 360px;
+    }
+    .compare-apa img {
+        height: 192px;
+        width: 100%;
+    }
+    .compare-apa .btn-white {
+        width: 150px!important;
+        margin-top: 0;
+        height: 45px;
+    }
+    .compare-apa .card-body {
+        padding: 20px;
+    }
+    .compare-apa b {
+        color: #a54b89;
+    }
+    .compare-apa .slick-slide {
+        height: 192px;
+        width: 100%;
+        position: relative!important;
+    }
+    .compare-apa .card {
+        margin-bottom: 60px;
     }
 }
 @media (min-width: 1200px) {
