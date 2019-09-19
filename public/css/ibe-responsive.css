@@ -1153,10 +1153,10 @@
         display: none;
     }
     .desktop-form-card {
-        display: contents;
+        /* display: contents; */
     }
     .guest-form-card span.custom-check {
-        width: 24px!important;
+        margin-top: 5px;
     }
 
 }

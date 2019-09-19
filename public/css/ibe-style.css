@@ -1048,13 +1048,16 @@ input[type=checkbox]:checked+span.custom-check:after {
 }
 .t-and-c a {
     font-weight: normal;
-    display: contents;
+    /* display: contents; */
+}
+.t-and-c p {
+    display: table;
 }
 label.t-and-c{
     font-size: 15px;
 }
 .extra-details {
-    display: contents;
+    /* display: contents; */
 }
 .booking-row-cashback p {
     color: #00aebb;
