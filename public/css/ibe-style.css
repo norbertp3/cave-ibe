@@ -1400,8 +1400,8 @@ ul.roomInfoIcons {
 .compare-apa .card-heart {
     background-image: url(/public/images/wishlist/icon-heart-not-saved.png);
     background-repeat: no-repeat;
-    width: 26px;
-    height: 26px;
+    width: 36px;
+    height: 34px;
     position: absolute;
     z-index:11;
     right: 20px;
@@ -1453,4 +1453,11 @@ ul.roomInfoIcons {
 }
 .compare-apa .card {
     margin-bottom: 30px;
+}
+
+/* Search Rates */
+.search-rates-form {
+    max-width: 500px;
+    background-color: #473e47;
+    padding: 20px;
 }
