@@ -16,7 +16,8 @@
     <link rel="stylesheet" type="text/css" href="public/css/bootstrap-multiselect.css"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.css">
+
 
 </head>
 
@@ -266,7 +267,7 @@
         <section class="mobile-new-search d-lg-none">
                     <div class="d-flex justify-content-between align-items-center">
                         <p class="mb-0">Jul 10 - Jul 13</p>
-                        <a href="#">NEW SEARCH</a>
+                        <a href="javascript:;" data-toggle="modal" data-target=".booking-widget-modal">NEW SEARCH</a>
                     </div>
         </section>
 
@@ -708,7 +709,7 @@
             <div class="my-booking-cover affix-top" id="booking">
                 <div class="my-booking-heading d-none d-lg-flex justify-content-between">
                     <h2 class="mb-0">My Booking</h2>
-                    <a href="#">NEW SEARCH</a>
+                    <a href="javascript:;" data-toggle="modal" data-target=".booking-widget-modal">NEW SEARCH</a>
                 </div>
                 <div class="my-booking-heading d-lg-none">
                     <a href="#" class="pull-right" onclick="return false;"><i class="fa fa-angle-down fa-2x"></i></a>
@@ -882,6 +883,285 @@
     <!-- END Footer -->
 
 
+    <!-- Booking Widget -->
+    <div class="modal fade booking-widget-modal mx-auto" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                    <div class="container p-lg-0">
+                            <div class="row">
+                                <div class="col-12 p-lg-0">
+                                    <div class="text-right close-modal">
+                                        <a href="javascript:" data-dismiss="modal" aria-label="Close"> CLOSE X</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                <div id="booking-widget-banner" class="homepage-widget">
+                    <form action="" class="booking-widget-banner" name="booking-widget-banner">
+                        <input type="hidden" name="_token" value="">
+
+                        <div class="booking-widget-inner container">
+
+                            <div class="row">
+                                <div class="col-12 homepage-hide-widget">
+                                    <div class="clearfix"></div>
+                                    <div class="row">
+
+                                        <!-- Check-in -->
+                                        <div class="col-6 widget-checkin pr-1 my-auto">
+                                                <div id="app">
+                                                        <div class="datepicker-trigger">
+                                                          <input type="text" id="trigger-single" :value="date1" placeholder="Select date" readonly>
+                                                          <airbnb-style-datepicker
+                                                            :trigger-element-id="'trigger-single'"
+                                                            :mode= "'single'"
+                                                            :date-one="date1"
+                                                            v-on:date-one-selected="function(val) { date1 = val }"
+                                                          ></airbnb-style-datepicker>
+                                                        </div>
+                                                      </div> 
+                                        </div>
+
+                                        <!-- Nights  -->
+                                        <div class="col-6 widget-nigts pl-1">
+                                            <select name="city" id="booking_city">
+                                                <option value="1">1 Night</option>
+                                                <option value="2">
+                                                    2 Nights
+                                                </option>
+                                                <option value="3">
+                                                    3 Nights
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <!-- Location  -->
+                                        <div class="col-12 widget-location">
+                                            <select name="city" id="booking_city">
+                                                <option value="">Dublin</option>
+                                                <option value="34">
+                                                    Aberdeen
+                                                </option>
+                                                <option value="10">
+                                                    Edinburgh
+                                                </option>
+                                                <option value="9">
+                                                    Glasgow
+                                                </option>
+                                                <option value="3">
+                                                    London
+                                                </option>
+                                                <option value="5">
+                                                    Manchester
+                                                </option>
+                                                <option value="101">
+                                                    Perth
+                                                </option>
+                                                <option value="18">
+                                                    Southampton
+                                                </option>
+                                            </select>
+
+                                            <div id="choose-hotel-city" class="booking-widget-tooltip"
+                                                data-toggle="tooltip" data-placement="bottom"
+                                                title="Please select a location."></div>
+                                        </div>
+
+                                        <!-- Hotel -->
+                                        <div class="col-12 widget-hotel">
+                                            <select name="hotel" id="booking_hotel">
+                                                <option value="">All properties</option>
+                                                <option data-city="101" data-url="" value="3">
+                                                    Jervis Apartments
+                                                </option>
+                                                <option data-city="10" data-url="" value="5">
+                                                    Jervis Apartments
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <!-- Rooms -->
+                                        <div class="col-12 widget-rooms">
+                                            <select name="rooms" id="rooms">
+                                                <option selected="">
+                                                    1 Room
+                                                </option>
+                                                <option>
+                                                    2 Rooms
+                                                </option>
+                                                <option>
+                                                    3 Rooms
+                                                </option>
+                                                <option>
+                                                    4 Rooms
+                                                </option>
+                                                <option>
+                                                    5 Rooms
+                                                </option>
+                                                <option>
+                                                    6 Rooms
+                                                </option>
+                                                <option>
+                                                    7 Rooms
+                                                </option>
+                                                <option>
+                                                    8 Rooms
+                                                </option>
+                                                <option>
+                                                    9 Rooms
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="rooms_list col-12">
+                                            <div id="roomId1" class="room-details extra-rooms row"
+                                                style="display: flex;">
+                                                <div class="col-6 widget-adults adults pr-1">
+                                                    <select name="adults[1]">
+                                                        <option value="1">1 adult</option>
+                                                        <option value="2">2 adults</option>
+                                                        <option value="3">3 adults</option>
+                                                        <option value="4">4 adults</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-6 widget-children children pl-1">
+                                                    <select name="children[1]">
+                                                        <option value="0">0 kids</option>
+                                                        <option value="1">1 kid</option>
+                                                        <option value="2">2 kids</option>
+                                                        <option value="3">3 kids</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div id="roomId2" class="room-details extra-rooms row custom-room-extra"
+                                                style="display: none;">
+                                                <label class="room-number">Room 2</label>
+                                                <div class="widget-adults adults">
+                                                    <select name="adults[2]">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                    </select>
+                                                </div>
+                                                <div class="widget-children children">
+                                                    <select name="children[2]">
+                                                        <option value="0">0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div id="roomId3" class="room-details extra-rooms row custom-room-extra"
+                                                style="display: none;">
+                                                <label class="room-number">Room 3</label>
+                                                <div class="widget-adults adults">
+                                                    <select name="adults[3]">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                    </select>
+                                                </div>
+                                                <div class="widget-children children">
+                                                    <select name="children[3]">
+                                                        <option value="0">0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div id="roomId4" class="room-details extra-rooms row custom-room-extra"
+                                                style="display: none;">
+                                                <label class="room-number">Room 4</label>
+                                                <div class="widget-adults adults">
+                                                    <select name="adults[4]">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                    </select>
+                                                </div>
+                                                <div class="widget-children children">
+                                                    <select name="children[4]">
+                                                        <option value="0">0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 form-discount mb-3">
+                                                <a href="javascript:;" class="rotate-fa-slide-next"><label >Add discount code <i class="fa fa-angle-down"></i></label></a>
+                                                <input type="text" class="form-control input-discount" placeholder="" name="" required="" style="display: none;">
+                                            </div>
+                                        <div class="col-12 p-10px">
+                                                <!-- Submit -->
+                                                <div class="widget-submit pb-3">
+                                                    <button type="submit" class="btn btn-secondary w-100">SEARCH</button>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row booking-widget-errors">
+                                <div class="col-lg-12">
+                                    <p class="info-text group-booking" style="display: none;">To make a group booking <a
+                                            title="Group Booking" href="/group-booking">click here</a> to complete our
+                                        online form and a
+                                        member of our team will be in touch to help you with your booking within 48
+                                        hours.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     
 
 
@@ -909,6 +1189,25 @@
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.js"></script>
+    <script>
+    // define options (optional)
+    var datepickerOptions = {
+        sundayFirst: true
+    }
+    // install plugin
+    Vue.use(window.AirbnbStyleDatepicker, datepickerOptions)
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+        date1: '',
+        date2: ''
+        }
+    })
     </script>
     
     <!-- Custom -->

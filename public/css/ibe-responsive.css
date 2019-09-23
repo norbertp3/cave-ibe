@@ -695,93 +695,67 @@
         height: 100%;
     }
     
+    /* booking widget */
 
+    .booking-widget-modal {
+        height: auto!important;
+    }
     #booking-widget-banner input, #booking-widget-banner select {
         border: none!important;
-        border-radius: 1px;
+        border-radius: 2px;
         font-size: 14px;
         padding: 7px 10px;
         outline: none;
         width: 100%;
         height: 50px;
-        box-shadow: 0 1px 2px 0 rgba(65, 59, 64, 0.4);
+        /* box-shadow: 0 1px 2px 0 rgba(65, 59, 64, 0.4); */
+        border: solid 1px rgba(113, 108, 112, 0.3)!important;
     }
+
     .homepage-widget {
+        background-color: #eae9ea!important;
+        padding: 20px 0;
+        width: 320px;
+        margin: 0 auto;
+        /* margin: 45px 0; */
+    }
+    .search-rates-form .homepage-widget {
         background-color: #473e47!important;
-        padding: 10px 0;
-        margin: 45px 0;
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+        /* margin: 45px 0; */
     }
     #booking-widget-banner .btn-secondary {
         height: 50px;
         width: 95%;
     }
+    .booking-widget-modal .modal-content {
+        background-color: transparent!important;
+        width: 320px;
+    }
+    .booking-widget-modal .modal-dialog {
+        width: 320px;
+        min-width: 320px!important;
+    }
+    .booking-widget-modal .close-modal {
+        margin: 10px;
+    }
+    .booking-widget-modal .close-modal a {
+        color: #fff!important;
+    }
+    #booking-widget-banner.homepage-widget .extra-rooms .room-number {
+        color: #473e47;
+    }
+    .search-rates-form .homepage-widget .extra-rooms .room-number {
+        color: #fff!important;
+    }
+    #booking-widget-banner.homepage-widget .extra-rooms .room-number
     .p-5px {
         padding: 0 3px!important;
     }
-    .widget-checkin {
-        max-width: 135px;
-        height: 50px;
-    }
-    .widget-nigts {
-        width: 105px;
-        height: 50px;
-    }
-    .widget-location {
-        width: 110px;
-        height: 50px;
-    }
-    .widget-hotel {
-        width: 153px;
-        height: 50px;
-    }
-    .widget-rooms {
-        width: 100px;
-        height: 50px;
-    }
-    .widget-adults, .widget-adults option {
-        width: 100px;
-        height: 50px;
-    }
-    .widget-children {
-        width: 100px;
-        height: 50px;
-    }
-    .rooms_list {
-        margin-left: 12px;
-        background-color: #473e47!important;
-    }
-    #booking-widget-banner.homepage-widget .extra-rooms {
-        position: relative;
-    }
-    #booking-widget-banner.homepage-widget .extra-rooms .room-number {
-        position: absolute;
-        left: -97px;
-        top: 5px;
-        color: white;
-    }
-    #booking-widget-banner {
-        height: 70px;
-    }
-    .custom-room-extra, .room-number {
-        background-color: #473e47!important;
-    }
-    .no-bg.custom-room-extra ,.no-bg.room-number {
-        background-color: rgba(71, 62, 71, 0)!important;
-    }
-    .custom-room-extra {
-        margin-top: 5px;
-        right: 3px;
-        z-index: 9;
-    }
-    .room-number {
-        height: 55px;
-        width: 303px; 
-        padding-left: 35px;
-        padding-top: 9px;
-    }
-    .custom-room-extra select {
-        margin-left: 3px;
-    }
+    
+    
     #property-wrapper .homepage-widget {
         background-color: transparent!important;
     }
@@ -1157,14 +1131,6 @@
     .newsletter .submitBtn {
         max-width: 263px;
         float: right;
-    }
-    .widget-location {
-        width: 180px;
-        height: 50px;
-    }
-    .widget-hotel {
-        width: 235px;
-        height: 50px;
     }
 
     .rates-list .btn {

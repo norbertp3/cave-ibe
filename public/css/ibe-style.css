@@ -1486,5 +1486,65 @@ ul.roomInfoIcons {
     border: none!important;
     font-family: 'Nunito', sans-serif;
     padding: 10px;
-
+}
+.booking-widget-modal {
+    padding: 0!important;
+}
+.booking-widget-modal .modal-dialog {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.booking-widget-modal .modal-content {
+    border-radius: 0;
+    border: 0;
+    height: auto;
+    background-color: #473e47!important;
+    min-height:  100%;
+    width: 100%;
+}
+.widget-nigts select, .widget-location select, .widget-hotel select, .widget-rooms select, .rooms_list select {
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #473e47;
+}
+.widget-checkin {
+    width: 100%;
+}
+.p-10px {
+    padding: 5px;
+}
+#booking-widget-banner input, #booking-widget-banner select {
+    border: none!important;
+    border-radius: 1px;
+    font-size: 14px;
+    padding: 7px 10px;
+    outline: none;
+    width: 100%;
+    height: 50px;
+}
+#booking-widget-banner .btn-secondary {
+    height: 50px;
+    width: 100%;
+}
+#booking-widget-banner.homepage-widget .extra-rooms .room-number {
+    position: relative;
+    top: 20px;
+    left: 15px;
+    color: #fff; 
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    margin-right: 40px;
+}
+.custom-room-extra .widget-adults, .custom-room-extra .widget-children {
+    width: 31.5%;
+}
+.custom-room-extra .widget-adults {
+    margin-right: 10px;
+}
+.close-modal {
+    margin: 29px 0;
 }
