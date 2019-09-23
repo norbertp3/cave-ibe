@@ -256,6 +256,11 @@ li {
     padding: 56px 18px 18px 18px!important;
 }
 
+.booking-widget-inner select, .booking-widget-inner input {
+    font-family: 'Nunito', sans-serif;
+}
+
+
 /* ------------------------- */
 
 /* Home Page */
@@ -845,6 +850,8 @@ input[type=checkbox]:checked+span.custom-check:after {
 }
 .enquiry-cover .custom-select {
     width: 80px!important;
+    font-family: 'Nunito', sans-serif;
+
 }
 .enquiry-cover .input-group>.custom-select {
     flex: none!important;

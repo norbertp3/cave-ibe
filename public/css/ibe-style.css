@@ -1461,3 +1461,30 @@ ul.roomInfoIcons {
     background-color: #473e47;
     padding: 20px;
 }
+.search-rates-form .form-control {
+    border-radius: 0;
+    box-shadow: none!important;
+    border: none!important;
+    font-family: 'Nunito', sans-serif;
+
+}
+.search-rates-form p {
+    color: #fff;
+}
+.search-rates-form .form-group {
+    margin-bottom: 10px;
+    font-family: 
+}
+.search-rates-form h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.search-rates-form .datepicker-trigger input {
+    height: 38px;
+    width: 100%;
+    box-shadow: none!important;
+    border: none!important;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+
+}

@@ -36,6 +36,11 @@ $('.custom-tab-head').click(function(){
     $(this).find('.fa').toggleClass('rotate180');
 });
 
+$('.rotate-fa-slide-next').click(function(){
+    $(this).next().slideToggle('slow');
+    $(this).find('.fa').toggleClass('rotate180');
+});
+
 
 
 $(document).ready(function() {

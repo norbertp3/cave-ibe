@@ -16,7 +16,8 @@
     <link rel="stylesheet" type="text/css" href="public/css/bootstrap-multiselect.css"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.css">
+
 
 </head>
 
@@ -264,33 +265,40 @@
         </div>
 
 
-<div class="" id="ibe">
+<div class="container" id="ibe">
 
     <section class="search-rates-form mx-auto">
+        <h3>When do you want to stay?</h3>
         <form>
             <div class="row">
-                <div class="form-group col-12 col-md-6">
-                    <select name="" class="form-control">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                    </select>
+                <div class="form-group col-12 col-md-6 pr-md-1">
+                        <div id="app">
+                                <div class="datepicker-trigger">
+                                  <input type="text" id="trigger-single" :value="date1" placeholder="Select date" readonly>
+                                  <airbnb-style-datepicker
+                                    :trigger-element-id="'trigger-single'"
+                                    :mode= "'single'"
+                                    :date-one="date1"
+                                    v-on:date-one-selected="function(val) { date1 = val }"
+                                  ></airbnb-style-datepicker>
+                                </div>
+                              </div> 
                 </div>
-                <div class="form-group col-12 col-md-6">
+                <div class="form-group col-12 col-md-6 pl-md-1">
                     <select name="" class="form-control">
                         <option value="">1 Night</option>
                         <option value="">2 Nights</option>
                         <option value="">3 Nights</option>
                     </select>
                 </div>
-                <div class="form-group col-12 col-md-6">
+                <div class="form-group col-12 col-md-6 pr-md-1">
                     <select name="" class="form-control">
                         <option value="">Dublin</option>
                         <option value="">London</option>
                         <option value="">Manchester</option>
                     </select>
                 </div>
-                <div class="form-group col-12 col-md-6">
+                <div class="form-group col-12 col-md-6 pl-md-1">
                     <select name="" class="form-control">
                         <option value="">All properties</option>
                         <option value="">Property 1</option>
@@ -304,26 +312,60 @@
                         <option value="">3 Rooms</option>
                     </select>
                 </div>
-                <div class="col-4 col-md-2">
-                    <p>Room 1</p>
-                </div>
-                <div class="form-group col-4 col-md-5">
+                    <div class="col-12 col-md-4 text-md-right mt-2">
+                        <p class="mb-0">Room 1</p>
+                    </div>
+                    <div class="form-group col-6 col-md-4 pr-1">
                         <select name="" class="form-control">
-                            <option value="">1 Room</option>
-                            <option value="">2 Rooms</option>
-                            <option value="">3 Rooms</option>
+                            <option value="">1 Adult</option>
+                            <option value="">2 Adults</option>
+                            <option value="">3 Adults</option>
                         </select>
                     </div>
-                <div class="form-group col-4 col-md-5">
+                    <div class="form-group col-6 col-md-4 pl-1">
                         <select name="" class="form-control">
-                            <option value="">1 Room</option>
-                            <option value="">2 Rooms</option>
-                            <option value="">3 Rooms</option>
+                            <option value="">1 Children</option>
+                            <option value="">2 Childrens</option>
+                            <option value="">3 Childrens</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-4 text-md-right mt-2">
+                        <p class="mb-0">Room 2</p>
+                    </div>
+                    <div class="form-group col-6 col-md-4 pr-1">
+                        <select name="" class="form-control">
+                            <option value="">1 Adult</option>
+                            <option value="">2 Adults</option>
+                            <option value="">3 Adults</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-6 col-md-4 pl-1">
+                        <select name="" class="form-control">
+                            <option value="">1 Children</option>
+                            <option value="">2 Childrens</option>
+                            <option value="">3 Childrens</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-4 text-md-right mt-2">
+                        <p class="mb-0">Room 3</p>
+                    </div>
+                    <div class="form-group col-6 col-md-4 pr-1">
+                        <select name="" class="form-control">
+                            <option value="">1 Adult</option>
+                            <option value="">2 Adults</option>
+                            <option value="">3 Adults</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-6 col-md-4 pl-1">
+                        <select name="" class="form-control">
+                            <option value="">1 Children</option>
+                            <option value="">2 Childrens</option>
+                            <option value="">3 Childrens</option>
                         </select>
                     </div>
                 <div class="col-12 form-discount mb-3">
-                    <a href="#"><label>Add discount code </label></a>
-                    <input type="text" class="form-control input-discount" placeholder="" name="" required="" style="">
+                    <a href="javascript:;" class="rotate-fa-slide-next"><label >Add discount code <i class="fa fa-angle-down"></i></label></a>
+                    <input type="text" class="form-control input-discount" placeholder="" name="" required="" style="display: none;">
                 </div>
                 <div class="col-12">
                     <button class="btn btn-secondary w-100">BOOK NOW</button>
@@ -479,7 +521,26 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.js"></script>
+    <script>
+    // define options (optional)
+    var datepickerOptions = {
+        sundayFirst: true
+    }
+    // install plugin
+    Vue.use(window.AirbnbStyleDatepicker, datepickerOptions)
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+        date1: '',
+        date2: ''
+        }
+    })
+    </script>
+
     <!-- Custom -->
     <script src="public/js/ibe-custom.js"></script>
 
