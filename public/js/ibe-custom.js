@@ -166,6 +166,6 @@ $(function () {
 $('.modal').on('shown.bs.modal', function () {
     $(this).find('.standard-slider').slick("getSlick").refresh();
 });
-$('.modal').on('shown.bs.modal', function () {
+$('.modal-tabs').on('shown.bs.modal', function () {
     $(this).find('.slider-for').slick("getSlick").refresh();
 });
