@@ -274,6 +274,9 @@
 <!-- Room Info Modal Trigger-->
 <button type="button" class="btn btn-primary btn-lg mt-5" data-toggle="modal" data-target="#roomInfo" data-slick-int>Room Info</button>
 
+<!-- Room Info Modal Trigger-->
+<button type="button" class="btn btn-primary btn-lg mt-5" data-toggle="modal" data-target="#signupModal" data-slick-int>Sign Up</button>
+
 
 
 
@@ -849,6 +852,69 @@ aria-hidden="true">
                         <div role="tabpanel" class="tab-pane" id="reviewsList">PLUGIN</div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="modal fade modal-custom" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-right">
+                <a href="#" data-dismiss="modal" aria-label="Close">Close <span aria-hidden="true">&times;</span></a>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <h3 class="pt-3 pt-lg-0">Join The Collections</h3>
+                    <p>Join now and get 10% instant cash back on your booking today. It's free and it only takes a
+                        minute! </p>
+                </div>
+                <form>
+                    <section class="guest-form">
+                        <div class="row">
+                            <div class="form-group col-12 col-sm-6">
+                                <label>First Name *</label>
+                                <input type="text" class="form-control" placeholder="" name="" required="">
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+                            <div class="form-group col-12 col-sm-6">
+                                <label>Last Name *</label>
+                                <input type="text" class="form-control" placeholder="" name="" required="">
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="form-group col-12 col-sm-6">
+                                <label>Email Address *</label>
+                                <input type="email" class="form-control" name="" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6 checkbox-group mb-0">
+                                <label class="">
+                                    <input type="checkbox" name="newsletter"> <span class="custom-check"></span>Send me
+                                    special offers by email.</label>
+                                <label class="">
+                                    <div class="row">
+                                        <div class="col-1"><input type="checkbox" name="newsletter"> <span class="custom-check"></span></div>
+                                        <div class="col-10">I agree
+                                                to the <a href="#">T&Cs</a> and <a href="#">Privacy Policy</a>.</div>
+                                        </label>
+                                    </div>
+                            </div>
+                            <div class="col-12 mt-3 join-footer">
+                                <button class="btn btn-secondary float-right d-block">JOIN NOW</button>
+                                <p>Already a joined in? <a href="#">Login</a></p>
+                            </div>
+                        </div>
+                    </section>
+                </form>
             </div>
         </div>
     </div>

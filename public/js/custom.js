@@ -122,74 +122,45 @@ function update_room_dropdowns() {
 
 
 
-// function initSlickSlider() {
-//     setTimeout( function() {
-//         $(".home-3-boxes-slider").slick({
-//             dots: false,
-//             infinite: false,
-//             slidesToShow: 1.5,
-//             slidesToScroll: 1
-//         });
-    
-//         $(".home-slider").slick({
-//             dots: true,
-//             infinite: false,
-//             slidesToShow: 1,
-//             slidesToScroll: 1,
-//             autoplay: true,
-//             autoplaySpeed: 3000
-//         });
-//         $(".standard-slider").slick({
-//             dots: true,
-//             infinite: false,
-//             arrows: true,
-//             slidesToShow: 1,
-//             slidesToScroll: 1,
-//             autoplay: true,
-//             autoplaySpeed: 300000,
-//             responsive: [
-//                 {
-//                     breakpoint: 768,
-//                     settings: {
-//                         arrows: false,
-//                     }
-//                 }
-//             ]
-//         });
-        
-//         $(".large-slider").slick({
-//             dots: true,
-//             infinite: false,
-//             slidesToShow: 1,
-//             slidesToScroll: 1,
-//             autoplay: true,
-//             autoplaySpeed: 3000
-//         });
-//     }, 500);
-// }
 
-
-// IBE 
-// ****************************************************************
-
-
-$('.view-room-btn').click(function(){
-    var showBtn = 'SHOW RATES <i class="fa fa-chevron-down float-right"></i>';
-    var hideBtn = 'HIDE RATES <i class="fa fa-chevron-up float-right"></i>'; 
-    $(this).closest('.main-room').find('.rates-list-wrapper').slideToggle();
-    this.expand = !this.expand;
-    $(this).html(this.expand? hideBtn:showBtn );
-    $("html, body").animate({
-        scrollTop: $(this).closest('.main-room').find('.main-room-content').offset().top - 10
-    }, 'slow');
+$(".home-3-boxes-slider").slick({
+    dots: false,
+    infinite: false,
+    slidesToShow: 1.5,
+    slidesToScroll: 1
 });
 
-$('.ibe-join-mobile-close').click(function(){
-    $('.ibe-join-mobile').hide();
+$(".home-slider").slick({
+    dots: true,
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000
 });
-$('.show-extra-guest').click(function(){
-    $('.extra-details').slideToggle();
-})
-$('.modal').on('shown.bs.modal', function () {
-    $(this).find('.standard-slider').slick("getSlick").refresh();
+$(".standard-slider").slick({
+    dots: true,
+    infinite: false,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 300000,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+            }
+        }
+    ]
+});
+
+$(".large-slider").slick({
+    dots: true,
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000
 });
