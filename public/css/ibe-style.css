@@ -1548,3 +1548,10 @@ ul.roomInfoIcons {
 .close-modal {
     margin: 29px 0;
 }
+
+.slider-nav img {
+  height: 76px;
+  width: 100%;
+  object-fit: cover;
+  padding-right: 10px;
+}

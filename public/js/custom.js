@@ -190,3 +190,6 @@ $('.ibe-join-mobile-close').click(function(){
 $('.show-extra-guest').click(function(){
     $('.extra-details').slideToggle();
 })
+$('.modal').on('shown.bs.modal', function () {
+    $(this).find('.standard-slider').slick("getSlick").refresh();
+});

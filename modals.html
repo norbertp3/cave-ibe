@@ -272,7 +272,7 @@
 <button type="button" class="btn btn-primary btn-lg mt-5" data-toggle="modal" data-target="#compareModal">Compare Properties</button>
 
 <!-- Room Info Modal Trigger-->
-<button type="button" class="btn btn-primary btn-lg mt-5" data-toggle="modal" data-target="#roomInfo">Room Info</button>
+<button type="button" class="btn btn-primary btn-lg mt-5" data-toggle="modal" data-target="#roomInfo" data-slick-int>Room Info</button>
 
 
 
@@ -742,20 +742,34 @@ aria-hidden="true">
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="galleryTab">
-                                <section class="standard-slider slider">
-                                        <div>
-                                            <img src="public/images/apartment.jpg" alt="">
-                                        </div>
-                                        <div>
-                                            <img src="public/images/apartment.jpg" alt="" style="">
-                                        </div>
-                                        <div>
-                                            <img src="public/images/apartment.jpg" alt="" style="">
-                                        </div>
-                                        <div>
-                                            <img src="public/images/apartment.jpg" alt="" style="">
-                                        </div>
-                                    </section>
+                            <section class=" slider slider-for">
+                                <div>
+                                    <img src="public/images/apartment.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="public/images/apartment.jpg" alt="" style="">
+                                </div>
+                                <div>
+                                    <img src="public/images/apartment.jpg" alt="" style="">
+                                </div>
+                                <div>
+                                    <img src="public/images/apartment.jpg" alt="" style="">
+                                </div>
+                            </section>
+                            <div class="slider-nav mt-3">
+                                <div>
+                                    <img src="public/images/apartment.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="public/images/apartment.jpg" alt="" style="">
+                                </div>
+                                <div>
+                                    <img src="public/images/apartment.jpg" alt="" style="">
+                                </div>
+                                <div>
+                                    <img src="public/images/apartment.jpg" alt="" style="">
+                                </div>
+                            </div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="mapTab">
                             <div class="tab-map-cover">
@@ -1014,6 +1028,23 @@ aria-hidden="true">
                     }
                 ]
             });
+
+            $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            centerMode: false,
+            focusOnSelect: true
+            });
+	
 
             function myMap() {
                 var myLatLng = {lat: 53.348913, lng: -6.267689};
