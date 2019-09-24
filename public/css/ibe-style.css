@@ -609,6 +609,7 @@ input[type=checkbox]:checked+span.checkbox:after {
     background-color: #fff;
     padding: 56px 10px 18px 10px!important;
 }
+select::-ms-expand { display: none; }
 
 /* ------------------------------------------------------------------------------------ */
 /* Booking Engine */
