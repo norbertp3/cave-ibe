@@ -30,6 +30,7 @@
                     <li style="display: inline-block"><a href="rooms-rates.html">Rooms Rates |</a></li>
                     <li style="display: inline-block"><a href="guests.html">Guest Details |</a></li>
                     <li style="display: inline-block"><a href="conf-page.html">Confirmation Page |</a></li>
+                    <li style="display: inline-block"><a href="my-list.html">Favorite |</a></li>
                     <li style="display: inline-block"><a href="modals.html">Modals |</a></li>
                 </ul>
             </div>
@@ -909,17 +910,17 @@
 
                                         <!-- Check-in -->
                                         <div class="col-6 widget-checkin pr-1 my-auto">
-                                                <div id="app">
-                                                        <div class="datepicker-trigger">
-                                                          <input type="text" id="trigger-single" :value="date1" placeholder="Select date" readonly>
-                                                          <airbnb-style-datepicker
-                                                            :trigger-element-id="'trigger-single'"
-                                                            :mode= "'single'"
-                                                            :date-one="date1"
-                                                            v-on:date-one-selected="function(val) { date1 = val }"
-                                                          ></airbnb-style-datepicker>
-                                                        </div>
-                                                      </div> 
+                                            <div id="app">
+                                                <div class="datepicker-trigger">
+                                                    <i aria-hidden="true" class="fa fa-calendar-check-o icon"></i>
+                                                    <input type="text" id="trigger-single" :value="date1"
+                                                        placeholder="Select date" readonly>
+                                                    <airbnb-style-datepicker :trigger-element-id="'trigger-single'"
+                                                        :mode="'single'" :date-one="date1"
+                                                        v-on:date-one-selected="function(val) { date1 = val }">
+                                                    </airbnb-style-datepicker>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <!-- Nights  -->
@@ -1130,13 +1131,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 form-discount mb-3">
-                                                <a href="javascript:;" class="rotate-fa-slide-next"><label >Add discount code <i class="fa fa-angle-down"></i></label></a>
+                                        <div class="col-12 form-discount">
+                                                <a href="javascript:;" class="rotate-fa-slide-next"><label class="mb-0">Add discount code <i class="fa fa-angle-down"></i></label></a>
                                                 <input type="text" class="form-control input-discount" placeholder="" name="" required="" style="display: none;">
                                             </div>
                                         <div class="col-12 p-10px">
                                                 <!-- Submit -->
-                                                <div class="widget-submit pb-3">
+                                                <div class="widget-submit">
                                                     <button type="submit" class="btn btn-secondary w-100">SEARCH</button>
                                                 </div>
                                             </div>

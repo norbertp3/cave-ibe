@@ -1123,6 +1123,16 @@
     #signupModal .btn {
         width: 278px;
     }
+    .compare-apa .standard-slider .slick-next {
+        margin-top: 0;
+        padding-left: 105px!important;
+        padding-bottom: 0!important;
+    }
+    .compare-apa .standard-slider .slick-prev {
+        margin-top: 0;
+        padding-right: 105px!important;
+        padding-bottom: 0!important;
+    }
 
 }
 @media (min-width: 1200px) {
