@@ -1,19 +1,33 @@
-@media (max-width: 320px) { 
+@media (max-width: 320px) {
     /* span.custom-check, span.custom-radio {
         width: 28px;
     } */
  }
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
     ul.tab-list-facilities {
         column-count: 2;
     }
     .tab-list-facilities li {
         width: 100%;
     }
+    .city-search-apartment-info .btn-secondary {
+        width: 47%;
+        margin-left: 10px;
+        float: right;
+    }
+    .city-search-apartment-info .btn-white {
+        width: 47%;
+    }
+    .city-search-apartment-info span {
+        line-height: 1.1;
+    }
+    .city-search-apartment-info-distance-night-from {
+        margin-bottom: 16px;
+    }
  }
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
     .tab-list-facilities li {
-        padding-right: 10px;
+        padding-right: 10px;t
     }
     #galleryTab .slider img {
         height: 420px;
@@ -33,9 +47,46 @@
     }
 
  }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .tab-info-footer .btn, .tab-info-footer .text-right  {
         margin-bottom: 0px!important;
+    }
+    .city-search-apartment-info .btn-secondary {
+        width: 115px;
+        margin-left: 10px;
+    }
+    .city-search-apartment-info .btn-white {
+        width: 95px;
+    }
+    .city-search-apartment-info-distance {
+        width: 50%;
+    }
+    .city-search-apartment-info-reviews {
+        width: 50%;
+        padding-bottom: 20px;
+    }
+    .city-search-apartment-info h4 {
+        margin-bottom: 20px;
+    }
+    .city-search-apartment-info-distance p {
+        padding-bottom: 20px;
+    }
+    .city-search-apartment .standard-slider img {
+        height: 215px;
+    }
+    .city-search-apartment .slick-dotted.slick-slider {
+        margin-top: 0!important;
+    }
+    .city-search-apartment-info {
+        height: 215px;
+    }
+    .city-search-apartment .standard-slider .slick-next {
+        padding-bottom: 0!important;
+        padding-left: 85px!important;
+    }
+    .city-search-apartment .standard-slider .slick-prev {
+        padding-bottom: 0!important;
+        padding-right: 85px!important;
     }
  }
 
@@ -236,7 +287,7 @@
         background-color: #a54b89;
     }
 
-    
+
     .footer-bottom-nav li:nth-child(1):after {
         content:"\2022";
         padding-left: 5px;
@@ -276,7 +327,7 @@
         position: relative;
         top: 20px;
         left: 15px;
-        color: #fff; 
+        color: #fff;
         font-size: 15px;
         font-family: 'Nunito', sans-serif;
         margin-right: 40px;
@@ -313,7 +364,7 @@
 
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 
     /* body */
 
@@ -335,7 +386,7 @@
     .reverse {
         flex-direction: row;
         -webkit-flex-direction: row;
- 
+
     }
     .custom-sep {
         margin: 30px 0;
@@ -352,22 +403,22 @@
         margin: 30px 0;
     }
 
-    
-    .imageTimeline figure { 
-        width: 16.25%; 
-        overflow: hidden; 
+
+    .imageTimeline figure {
+        width: 16.25%;
+        overflow: hidden;
         position: relative;
         height: 16vw;
     }
-    .imageTimeline figure img{ 
-        width: 100%; 
-        overflow: hidden; 
+    .imageTimeline figure img{
+        width: 100%;
+        overflow: hidden;
         position: relative;
         height: 100%;
     }
     .imageTimeline figure figcaption .imgButtons { top: 20px; }
 
-    .social-channels .fa { 
+    .social-channels .fa {
         height: 50px;
         width: 50px;
         background-color: #a54b89;
@@ -393,11 +444,11 @@
         max-width: 263px;
         border: none;
     }
-    .newsletter span { 
+    .newsletter span {
         font-size: 34px;
         margin-bottom: 8.5px;
     }
-    .newsletter p { 
+    .newsletter p {
         font-size: 17px;
         color: #fff;
         line-height: 1.53;
@@ -435,13 +486,13 @@
         column-count: 1;
     }
     /* Modal Core */
-    
+
     .modal-content {
         border-radius: 0!important;
     }
     .modal-dialog {
         height: auto;
-        min-width: 707px!important;
+        min-width: 1000px!important;
         margin-top: 20px!important;
         margin-bottom: auto!important;
         margin-left: auto!important;
@@ -670,7 +721,7 @@
         display: block!important;
         background-image: linear-gradient(to left, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0) 25%, transparent 75%);
     }
-    
+
     .standard-slider .slick-prev {
         left: 0;
         z-index: 10;
@@ -706,7 +757,7 @@
         top: 50%;
         height: 100%;
     }
-    
+
     /* booking widget */
 
     .booking-widget-modal {
@@ -766,8 +817,8 @@
     .p-5px {
         padding: 0 3px!important;
     }
-    
-    
+
+
     #property-wrapper .homepage-widget {
         background-color: transparent!important;
     }
@@ -794,7 +845,7 @@
         height: 40px;
         padding-left: 0;
     }
-    #top-bar li { 
+    #top-bar li a {
         display: inline-block;
         color: #fff;
         padding: 14px 30px;
@@ -853,7 +904,7 @@
     }
     .rates-list {
         padding: 0px 20px 20px 20px;
-    } 
+    }
     .main-room-content {
         padding: 20px 20px 45px 20px;
     }
@@ -883,7 +934,7 @@
         padding-left: 20px;
     }
     .main-room-img img {
-        height: 100%; 
+        height: 100%;
         width: 100%;
     }
     .rates-list .btn {
@@ -995,9 +1046,9 @@
     .tab-info-footer span {
         padding-right: 20px;
     }
-    #ibe .tab-content {
+    .tab-content {
         background-color: #fff;
-        padding: 40px;
+        padding: 40px!important;
     }
     #infoTab, #mapTab, #reviewsTab {
         padding: 0;
@@ -1015,14 +1066,14 @@
         border-top-left-radius: 5px!important;
         border-top-right-radius: 5px!important;
     }
-    #ibe .nav-tabs a {
+    .nav-tabs a {
         border-bottom: none;
         background-color: #eae9ea;
         color: #473e47!important;
         border-top-left-radius: 5px!important;
         border-top-right-radius: 5px!important;
     }
-    #ibe .nav-tabs a.active {
+    .nav-tabs a.active {
         background-color: #fff;
     }
     .tab-info-apartment {
@@ -1133,6 +1184,19 @@
         padding-right: 105px!important;
         padding-bottom: 0!important;
     }
+    .city-search-apartment-info .btn-secondary {
+        width: 115px;
+        margin-left: 10px;
+    }
+    .city-search-apartment-info .btn-white {
+        width: 95px;
+    }
+    .city-search-apartment-info {
+        padding: 20px;
+    }
+    .city-search-apartment-info-distance-night-from span {
+        padding-top: 3px;
+    }
 
 }
 @media (min-width: 1200px) {
@@ -1180,6 +1244,13 @@
     }
     .guest-form-card span.custom-check {
         margin-top: 5px;
+    }
+    .city-search-apartment-info .btn-secondary {
+        width: 151px;
+        margin-left: 10px;
+    }
+    .city-search-apartment-info .btn-white {
+        width: 110px;
     }
 
 }

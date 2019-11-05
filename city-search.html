@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>City Search</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="public/css/ibe-style.css">
+    <link rel="stylesheet" href="public/css/ibe-responsive.css">
+
+    <!-- Vendors -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="public/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap-multiselect.css"/>
+
+</head>
+
+<body>
+
+        <div class="m-2">  
+                <ul>
+                    <li style="display: inline-block"><a href="/">CMS --> |</a></li>
+                    <li style="display: inline-block"><a href="rooms-rates.html">Rooms Rates |</a></li>
+                    <li style="display: inline-block"><a href="guests.html">Guest Details |</a></li>
+                    <li style="display: inline-block"><a href="conf-page.html">Confirmation Page |</a></li>
+                    <li style="display: inline-block"><a href="my-list.html">Favorite |</a></li>
+                    <li style="display: inline-block"><a href="modals.html">Modals |</a></li>
+                </ul>
+            </div>
+
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Mobile & Desktop Navigation -->
+
+        <div class="d-lg-none">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="mobile-nav-wrapper">
+                    <a class="navbar-brand" href="#"><img src="public/images/key-logo.png"></a>
+                    <button class="navbar-toggler collapsed float-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>                
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link <i class="fa fa-angle-down rotate" style="float: right"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="d-none d-lg-block">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="public/images/key-logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown position-static location-nav">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Locations
+                            </a>
+                            <div class="dropdown-menu w-100 location-nav-dropdown" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="row nav-width-container">
+                                    <div class="col-lg-4">
+                                        <a href="">
+                                            <div class="card" style="">
+                                                <img src="public/images/menu-dublin.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h4>Dublin<span>16 places to Stay</span></h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="">
+                                        <div class="card" style="">
+                                            <img src="public/images/menu-london.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h4>London<span>1 place to Stay</span></h4>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                            <a href="">
+                                        <div class="card" style="">
+                                            <img src="public/images/menu-carrick.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h4>Carrick-On-Shannon<span>1 place to Stay</span></h4>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown position-static hotels-nav">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hotels
+                            </a>
+                            <div class="dropdown-menu w-100 hotels-nav-dropdown" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="nav-width-container multi-row-nav">
+                                    <h3>Dublin</h3>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <a href="">
+                                                <ul class="small-cards">
+                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li>                                                        
+                                                        <div class="card-body">
+                                                            <h4>Handels Hotel Temple Bar</h4>
+                                                            <img src="public/images/reviews-placeholder.svg">
+                                                            <p>Temple Bar, Dublin 1</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="">
+                                                <ul class="small-cards">
+                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li>                                                        
+                                                        <div class="card-body">
+                                                            <h4>The Camden Hotel</h4>
+                                                            <img src="public/images/reviews-placeholder.svg">
+                                                            <p>Camden St, Dublin 2</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="">
+                                                <ul class="small-cards">
+                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li>                                                        
+                                                        <div class="card-body">
+                                                            <h4>Hotel St. George</h4>
+                                                            <img src="public/images/reviews-placeholder.svg">
+                                                            <p>Parnell Square, Dublin 1</p>
+                                                        </div>
+                                                    </li>
+                                                </ul class="small-cards">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="">
+                                                <ul class="small-cards">
+                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li>                                                        
+                                                        <div class="card-body">
+                                                            <h4>Kildare Street Hotel</h4>
+                                                            <img src="public/images/reviews-placeholder.svg">
+                                                            <p>Kildare St, Dublin 2</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="">
+                                                <ul class="small-cards">
+                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li>                                                        
+                                                        <div class="card-body">
+                                                            <h4>The Gate Hotel</h4>
+                                                            <img src="public/images/reviews-placeholder.svg">
+                                                            <p>Parnell Street, Dublin 1</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                        </div>                                        
+                                    </div>
+                                    <h3>London</h3>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <a href="">
+                                                <ul class="small-cards">
+                                                    <li><img src="public/images/100.jpg"></li>
+                                                    <li>                                                        
+                                                        <div class="card-body">
+                                                            <h4>The Exhibitionist</h4>
+                                                            <img src="public/images/reviews-placeholder.svg">
+                                                            <p>South Kensington, London</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                        </div>                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Apartments</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Guesthouses
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="navbar-text">
+                    <ul class="my-auto">
+                        <li><a href=""><img src="public/images/icon-wishlist.svg"></a></li>
+                        <li><a href=""><img src="public/images/icon-login.svg"></a></li>
+                        <li><a href=""><img src="public/images/icon-contact.svg"></a></li>
+                    </ul>
+                </span>
+            </nav>
+        </div>
+
+
+<div class="container" id="ibe">
+
+<div class="row">
+    <div class="col-12 col-lg-3"></div>
+    <div class="col-12 col-lg-9 px-mob-10">
+        <div class="d-flex justify-content-between city-search-apa-filters">
+            <h3>16 Results in Dublin </h3>
+            <div class="d-none d-md-flex justify-content-end">
+                <form class="city-search-filter">
+                    <div class="d-flex">
+                        <span class="mr-2 my-auto">SORT:</span>
+                        <div class="form-group mr-2">
+                            <select class="form-control" id="">
+                                <option>Highest Rating</option>
+                                <option>Highest Rating</option>
+                                <option>Highest Rating</option>
+                                <option>Highest Rating</option>
+                                <option>Highest Rating</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="">
+                                <option>EUR</option>
+                                <option>GBP</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <p>thekeycollections guarantees Free WIFI, Superb Location, Friendly Staff and a Comfortable Bed.</p>
+
+        <section class="city-search-apa-list">
+            <div class="city-search-apartment">
+                <div class="row">
+                    <div class="col-12 col-md-4 pr-md-0">
+                        <section class="standard-slider slider">
+                            <div>
+                                <img src="public/images/apartment.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="public/images/apartment.jpg" alt="" style="">
+                            </div>
+                            <div>
+                                <img src="public/images/apartment.jpg" alt="" style="">
+                            </div>
+                            <div>
+                                <img src="public/images/apartment.jpg" alt="" style="">
+                            </div>
+                        </section>
+                        <div class="image-top-tag" style="background-color: #00aebb;">Apartment</div>
+                        <div class="ibe-zoom d-none d-lg-block"><img src="public/images/svg/search.svg"></div>
+                    </div>
+                    <div class="col-12 col-md-8 pl-md-0">
+                        <div class="city-search-apartment-info">
+                            <h4>City Studios & Apartments</h4>
+                            <div class="d-md-flex">
+                                <div class="city-search-apartment-info-distance">
+                                    <p class="mb-0"><i class="fa fa-map-marker" aria-hidden="true"></i> Dublin - 950m from centre</p>
+                                </div>
+                                <div class="city-search-apartment-info-reviews d-flex align-items-center">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <p class="mb-0">(145 reviews)</p>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><img src="/public/images/city-search-icons/wifi.png"></li>
+                                <li><img src="/public/images/city-search-icons/wifi.png"></li>
+                                <li><img src="/public/images/city-search-icons/wifi.png"></li>
+                                <li><img src="/public/images/city-search-icons/wifi.png"></li>
+                                <li><img src="/public/images/city-search-icons/wifi.png"></li>
+                                <li><img src="/public/images/city-search-icons/wifi.png"></li>
+                                <li><img src="/public/images/city-search-icons/wifi.png"></li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-12 col-md-5 d-flex align-items-end align-items-md-center city-search-apartment-info-distance-night-from">
+                                        <span>1 night from</span><h3 class="mb-0 ml-2">€75</h3>
+                                </div>
+                                <div class="col-12 col-md-7">
+                                    <button class="btn btn-white">DETAILS</button>
+                                    <button class="btn btn-secondary">BOOK <span class="d-none d-md-inline-block">NOW</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</div>
+
+</div>
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Newsletter Signup -->
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <span class="float-lg-right">Get Special Offers</span>
+                    <p class="float-lg-right">Get our newsletter for special offers, events and more!</p>
+                </div>
+                <div class="col-12 col-lg-6 my-auto">
+                    <form action="">
+                        <input name="email" type="email" placeholder="Email Address" class="input" required="">
+                        <button type="submit" class="submitBtn btn btn w-100">SIGN UP</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END Newsletter Signup -->
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Start mobile bottom buttons -->
+    <div class="mobile-btns text-center d-block d-md-none">
+            <a href="#" class="float-left"><img src="public/images/svg/icon-call-mob.svg"> CALL</a>
+            <a href="#" class="float-left btn-book-mobile">BOOK</a>
+        </div>
+        <!-- END mobile bottom buttons -->
+
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Footer -->
+
+    <footer style="border-top: 7.6px solid #b9c077">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 mobile-footer-nav">
+                    <div class="footer-top">
+                        <img src="public/images/key-logo.png">
+                    </div>
+                    <ul class="footer-master-nav">
+                        <li><a href="">Careers</a></li>
+                        <li>Sitemap</li>
+                        <li>Contact Us</li>
+                        <li>About Us</li>
+                        <li>Blog</li>
+                        <li>Latest News</li>
+                        <li>Offers</li>
+                    </ul>
+                    <div class="footer-bottom">
+                        <ul class="social-channels-footer">
+                            <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></a></i></li>
+                        </ul>
+                        <p><a href="">Tel: +353 01 866 5626</a></p>
+                        <p><a href="">Email: info@thekeycollection</a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 d-none d-lg-block">
+                    <div class="footer-top">
+                        <p>Hotels</p>
+                    </div>
+                    <ul class="footer-desktop-nav">
+                        <li><a href="">Handels Hotel Temple Bar</a></li>
+                        <li>Kildare Street Hotel</li>
+                        <li>Hotel St. George</li>
+                        <li>The Camden Hotel</li>
+                        <li>The Gate Hotel</li>
+                        <li>The Exhibitionist</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 d-none d-lg-block">
+                    <div class="footer-top">
+                        <p>Apartments</p>
+                    </div>
+                    <ul class="footer-desktop-nav">
+                        <li><a href="">Amberley Apartments</a></li>
+                        <li>Clifden Apartments</li>
+                        <li>IFSC Apartments</li>
+                        <li>Liffey Apartments</li>
+                        <li>Temple Bar Apartments</li>
+                        <li>Jervis Apartments</li>
+                        <li>City Studios & Apartments</li>
+                        <li>Dorset Street Apartments</li>
+                        <li>Ellis Quay Apartments</li>
+                        <li>Dublin City Aparthotel</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 d-none d-lg-block">
+                    <div class="footer-top">
+                        <p>Guesthouses</p>
+                    </div>
+                    <ul class="footer-desktop-nav">
+                        <li><a href="">Amberley House</a></li>
+                        <li>Dublin Airport Manor</li>
+                        <li>Clifden Guest House</li>
+                        <li>Barnacles</li>
+                        <li>Carrick Plaza Suites</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-nav">
+            <ul class="">
+                <li><a href="">T&Cs</a></li>
+                <li><a href="">Cookie Policy</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">2019 All Rights Reserved</a></li>
+                <li><a href="">Website by p3 Hotels</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- END Footer -->
+
+
+    
+
+
+    <!-- JS Files -->
+
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    
+    <!-- Slick -->
+    <script type="text/javascript" src="public/js/slick.min.js"></script>
+
+    <!-- Multi Select -->
+    <script type="text/javascript" src="public/js/popper.js"></script>
+    <script type="text/javascript" src="public/js/bootstrap-multiselect.js"></script>
+
+    <!-- Prefixfree -->
+    <script type="text/javascript" src="public/js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="public/js/prefixfree.dynamic-dom.min.js"></script>
+    <script type="text/javascript" src="public/js/prefixfree.viewport-units.js"></script>
+    <script type="text/javascript" src="public/js/prefixfree.jquery.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    
+    <!-- Custom -->
+    <script src="public/js/ibe-custom.js"></script>
+
+    <script type="text/javascript">
+    </script>
+
+
+</body>
+</html>
