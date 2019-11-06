@@ -74,6 +74,11 @@
     .city-search-apartment .standard-slider img {
         height: 215px;
     }
+    .single-img img {
+        height: 215px;
+        width: 100%;
+        border-right: 5px solid #00aebb;
+    }
     .city-search-apartment .slick-dotted.slick-slider {
         margin-top: 0!important;
     }
@@ -87,6 +92,74 @@
     .city-search-apartment .standard-slider .slick-prev {
         padding-bottom: 0!important;
         padding-right: 85px!important;
+    }
+    .view-map-city-search {
+        background: url('../images/map-image.jpg');
+        width: 100%;
+        height: 140px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+    .view-map-city-search-text {
+        position: absolute;
+        background-color: #fff;
+        padding: 10px 20px;
+        font-family: 'nunito', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #473e47;
+        border-radius: 1px;
+        top: 50%;
+        left: 50%;
+        margin-left: -67.5px;
+        margin-top: -22px;
+    }
+    .city-search-filters .form-control {
+        border-radius: 0!important;
+        margin-bottom: 10px;
+        font-family: 'nunito', sans-serif;
+        padding-left: 30px;
+        font-size: 16px;
+        color: rgba(71, 62, 71, 0.5);
+    }
+    .city-search-filters .form-control:focus {
+        outline: none!important;
+        border-color: #000;
+        box-shadow: none!important;
+    }
+    .city-search-input-container .fa {
+        position: absolute;
+        padding-top: 10px;
+        padding-left: 10px;
+        color: rgba(71, 62, 71, 0.5);
+    }
+    .city-search-filters ul {
+        padding-left: 0;
+        display: block;
+    }
+    .city-search-filters li {
+        list-style-type:none;
+    }
+    .city-search-filters a {
+        margin: 30px 0;
+        color: #a54b89;
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+    }
+    .city-search-filters a:hover {
+        color: #a54b89;
+    }
+    .city-search-filters label {
+        font-size: 15px;
+        color: #473e47;
+        font-weight: normal!important;
+        font-family: 'Nunito', sans-serif;
+    }
+    .city-search-filters span.custom-check, .city-search-filters span.custom-radio {
+        border-radius: 1px;
+        border: solid 1px rgba(113, 108, 112, 0.3);
     }
  }
 
@@ -528,6 +601,9 @@
 
     #ibe .modal-dialog {
         max-width: 1000px!important;
+    }
+    #ibe {
+        margin-top: 40px;
     }
 
     .slick-dots {

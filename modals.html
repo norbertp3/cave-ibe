@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PROPERTY OVERVIEW</title>
+    <title>MODALS</title>
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="public/css/ibe-style.css">
@@ -277,6 +277,12 @@
 
 <!-- Room Info Modal Trigger-->
 <button type="button" class="btn btn-primary btn-lg mt-5" data-toggle="modal" data-target="#signupModal" data-slick-int>Sign Up</button>
+
+<!-- Room Info Modal Trigger-->
+<button type="button" class="btn btn-primary btn-lg mt-5" data-toggle="modal" data-target="#filtersModal" data-slick-int>City Search Filters</button>
+
+<!-- Room Info Modal Trigger-->
+<button type="button" class="btn btn-primary btn-lg mt-5" data-toggle="modal" data-target="#locationInfoModal" data-slick-int>Location Info</button>
 
 
 
@@ -858,64 +864,202 @@ aria-hidden="true">
     </div>
 </div>
 
-<!-- Signup Modal -->
-<div class="modal fade modal-custom" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<!-- City Search Filters Modal -->
+<div class="modal fade modal-custom" id="filtersModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header text-right">
-                <a href="#" data-dismiss="modal" aria-label="Close">Close <span aria-hidden="true">&times;</span></a>
+                <a href="#" data-dismiss="modal" aria-label="Close">APPLY & CLOSE <span aria-hidden="true">&times;</span></a>
             </div>
             <div class="modal-body">
-                <div class="text-center">
-                    <h3 class="pt-3 pt-lg-0">Join The Collections</h3>
-                    <p>Join now and get 10% instant cash back on your booking today. It's free and it only takes a
-                        minute! </p>
-                </div>
-                <form>
-                    <section class="guest-form">
-                        <div class="row">
-                            <div class="form-group col-12 col-sm-6">
-                                <label>First Name *</label>
-                                <input type="text" class="form-control" placeholder="" name="" required="">
-                                <div class="invalid-feedback">
-                                    Please provide a valid state.
-                                </div>
-                            </div>
-                            <div class="form-group col-12 col-sm-6">
-                                <label>Last Name *</label>
-                                <input type="text" class="form-control" placeholder="" name="" required="">
-                                <div class="invalid-feedback">
-                                    Please provide a valid state.
-                                </div>
-                            </div>
-
-                            <div class="form-group col-12 col-sm-6">
-                                <label>Email Address *</label>
-                                <input type="email" class="form-control" name="" placeholder="" required="">
-                                <div class="invalid-feedback">
-                                    Please provide a valid state.
-                                </div>
-                            </div>
-                            <div class="form-group col-sm-6 checkbox-group mb-0">
-                                <label class="">
-                                    <input type="checkbox" name="newsletter"> <span class="custom-check"></span>Send me
-                                    special offers by email.</label>
-                                <label class="">
+                <div class="filters-block-modal"> 
+                    <p>PROPERTY TYPE <a href="javascript:" class="float-right">Reset</a></p>
+                    <ul class="filterCheck filters">
+                        <li>
+                            <div class="checkbox-group">
+                                <label>
                                     <div class="row">
-                                        <div class="col-1"><input type="checkbox" name="newsletter"> <span class="custom-check"></span></div>
-                                        <div class="col-10">I agree
-                                                to the <a href="#">T&Cs</a> and <a href="#">Privacy Policy</a>.</div>
-                                        </label>
+                                        <div class="col-2"><input type="checkbox" name="facility-features"><span class="custom-check"></span></div>
+                                        <div class="col-9">Free WiFi</div>
                                     </div>
+                                </label>
                             </div>
-                            <div class="col-12 mt-3 join-footer">
-                                <button class="btn btn-secondary float-right d-block">JOIN NOW</button>
-                                <p>Already a joined in? <a href="#">Login</a></p>
+                        </li>
+                        <li>
+                            <div class="checkbox-group">
+                                <label>
+                                    <div class="row">
+                                        <div class="col-2"><input type="checkbox" name="facility-features"><span class="custom-check"></span></div>
+                                        <div class="col-9">Free WiFi</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox-group">
+                                <label>
+                                    <div class="row">
+                                        <div class="col-2"><input type="checkbox" name="facility-features"><span class="custom-check"></span></div>
+                                        <div class="col-9">Free WiFi</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox-group">
+                                <label>
+                                    <div class="row">
+                                        <div class="col-2"><input type="checkbox" name="facility-features"><span class="custom-check"></span></div>
+                                        <div class="col-9">Free WiFi</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox-group">
+                                <label>
+                                    <div class="row">
+                                        <div class="col-2"><input type="checkbox" name="facility-features"><span class="custom-check"></span></div>
+                                        <div class="col-9">Free WiFi</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox-group">
+                                <label>
+                                    <div class="row">
+                                        <div class="col-2"><input type="checkbox" name="facility-features"><span class="custom-check"></span></div>
+                                        <div class="col-9">Free WiFi</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filters-block-modal"> 
+                    <p>PROPERTY TYPE</p>
+                    <ul class="filterCheck filters">
+                        <li>
+                            <div class="checkbox-group">
+                                <label>
+                                    <div class="row">
+                                        <div class="col-2"><input type="checkbox" name="facility-features"><span class="custom-check"></span></div>
+                                        <div class="col-9">Free WiFi</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox-group">
+                                <label>
+                                    <div class="row">
+                                        <div class="col-2"><input type="checkbox" name="facility-features"><span class="custom-check"></span></div>
+                                        <div class="col-9">Free WiFi</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox-group">
+                                <label>
+                                    <div class="row">
+                                        <div class="col-2"><input type="checkbox" name="facility-features"><span class="custom-check"></span></div>
+                                        <div class="col-9">Free WiFi</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox-group">
+                                <label>
+                                    <div class="row">
+                                        <div class="col-2"><input type="checkbox" name="facility-features"><span class="custom-check"></span></div>
+                                        <div class="col-9">Free WiFi</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox-group">
+                                <label>
+                                    <div class="row">
+                                        <div class="col-2"><input type="checkbox" name="facility-features"><span class="custom-check"></span></div>
+                                        <div class="col-9">Free WiFi</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox-group">
+                                <label>
+                                    <div class="row">
+                                        <div class="col-2"><input type="checkbox" name="facility-features"><span class="custom-check"></span></div>
+                                        <div class="col-9">Free WiFi</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <form class="city-search-filter">
+                        <div class="d-flex">
+                            <span class="mr-2 my-auto">SORT BY</span>
+                            <div class="form-group mr-2 ">
+                                <select class="form-control" id="">
+                                    <option>Highest Rating</option>
+                                    <option>Highest Rating</option>
+                                    <option>Highest Rating</option>
+                                    <option>Highest Rating</option>
+                                    <option>Highest Rating</option>
+                                </select>
                             </div>
                         </div>
-                    </section>
-                </form>
+                    </form>
+                </div>
+                <button class="btn btn-secondary w-100 mt-4 d-block">APPLY</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Location Info Modal -->
+<div class="modal fade modal-custom" id="locationInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-right">
+                <a href="#" data-dismiss="modal" aria-label="Close">CLOSE <span aria-hidden="true">&times;</span></a>
+            </div>
+            <div class="modal-body">
+                <h2>Jervis Apartments</h2>
+                <div class="tab-property-details">
+                    <div class="row">
+                        <div class="col-1"><img src="public/images/svg/location.svg"></div>
+                        <div class="col-10">
+                            <p>1-6 Wolfetone Court, Wolf Tone Street, Dublin, Ireland</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><img src="public/images/svg/contact.svg"></div>
+                        <div class="col-10">
+                            <p>(01) 532 0630</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><img src="public/images/svg/email.svg"></div>
+                        <div class="col-10">
+                            <p>reservations@jervisapartments.com</p>
+                        </div>
+                    </div>
+                </div>
+                <p>Perfectly located where Dublin's shopping quarter meets the vibrant culture of Temple Bar, these apartments are perfect for your city stay. With our Jervis Street Apartments you will find great value alongside a great central location just minutes from Temple Bar, the Guinness Storehouse, O’Connell Street & more.</p>
+                <div class="float-right d-lg-none">
+                        <h3 style="margin-bottom: 5px!important;"><small>from</small> €89.00</h3>
+                    </div>
+                    <button class="btn btn-secondary w-100 mt-4 d-block">BOOK</button>
             </div>
         </div>
     </div>

@@ -619,7 +619,7 @@ select::-ms-expand { display: none; }
 /* Booking Engine */
 
 #ibe {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 #currency-options {
@@ -919,6 +919,10 @@ span.rates-list-nights {
     bottom: 5px;
     width: 26px;
     right: 5px;
+}
+.city-search-apartment .ibe-zoom {
+    right: 15px;
+    bottom: 10px;
 }
 .my-booking-heading.d-none a:hover {
     background-color: #844882;
@@ -1588,6 +1592,7 @@ ul.roomInfoIcons {
     display: block;
     color: #473e47;
     font-size: 16px;
+    font-family: 'Nunito', sans-serif;
 }
 .city-search-filter select:focus {
     color: #495057;
@@ -1640,6 +1645,7 @@ ul.roomInfoIcons {
 .city-search-apartment .standard-slider img {
     height: 160px;
     object-fit: cover;
+    border-bottom: 5px solid #00aebb;
 }
 .city-search-apartment-info-distance p {
     font-size: 16px!important;
@@ -1660,4 +1666,53 @@ ul.roomInfoIcons {
 .city-search-apartment-info-distance-night-from h3 {
     font-size: 22px;
     color: #473e47;
+}
+.city-search-bar a {
+    color: #a54b89;
+    padding: 14px 17px;
+    height: 50px;
+
+}
+.filters-block-modal li {
+    list-style-type: none;
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.filters-block-modal ul {
+    padding-left: 10px;
+}
+.filters-block-modal p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #a54b89;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 30px;
+}
+.filters-block-modal {
+    margin-top: 30px;
+}
+.filters-block-modal {
+    color: #473e47;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+.filters-block-modal span.custom-check {
+    border-radius: 1px;
+    border: solid 1px rgba(113, 108, 112, 0.3);
+}
+#filtersModal .modal-header a, #locationInfoModal .modal-header a {
+    color: #a54b89;
+}
+#locationInfoModal h2 {
+    margin: 30px 0;
+    font-size: 22px!important;
+
+}
+#locationInfoModal .tab-property-details {
+    margin-bottom: 14px;
+}
+.filters-block-modal a {
+    color: #a54b89;
 }
