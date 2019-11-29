@@ -1716,3 +1716,6 @@ ul.roomInfoIcons {
 .filters-block-modal a {
     color: #a54b89;
 }
+.filters-block img {
+    padding-bottom: 5px;
+}
