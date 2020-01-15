@@ -1279,6 +1279,10 @@
     #signupModal .modal-body {
         padding-top: 20px!important;
     }
+    #signupModal .modal-dialog {
+        max-width: 707px!important;
+        min-width: auto!important;
+    }
 
 }
 @media (min-width: 1200px) {

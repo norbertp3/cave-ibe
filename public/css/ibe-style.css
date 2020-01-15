@@ -1725,10 +1725,6 @@ ul.roomInfoIcons {
     background-color: #00aebb;
     height: 91px;
 }
-#signupModal .modal-dialog {
-    max-width: 707px!important;
-    min-width: auto!important;
-}
 #signupModal .guest-form {
     margin-bottom: 0;
 }
