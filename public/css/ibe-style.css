@@ -1719,3 +1719,28 @@ ul.roomInfoIcons {
 .filters-block img {
     padding-bottom: 5px;
 }
+
+/* Signup Modal */
+.signup-header {
+    background-color: #00aebb;
+    height: 91px;
+}
+#signupModal .modal-dialog {
+    max-width: 707px!important;
+    min-width: auto!important;
+}
+#signupModal .guest-form {
+    margin-bottom: 0;
+}
+#signupModal p {
+    font-family: 'Nunito', sans-serif;
+}
+#signupModal a {
+    color: #a54b89;
+}
+#signupModal a:hover {
+    color: #844882;
+}
+#signupModal .modal-body {
+    padding-top: 20px!important;
+}

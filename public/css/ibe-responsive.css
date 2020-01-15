@@ -434,6 +434,9 @@
     .slider-for {
         margin-top: 10px;
     }
+    .signup-header {
+        margin-top: 56px;
+    }
 
 }
 
@@ -1272,6 +1275,9 @@
     }
     .city-search-apartment-info-distance-night-from span {
         padding-top: 3px;
+    }
+    #signupModal .modal-body {
+        padding-top: 20px!important;
     }
 
 }
