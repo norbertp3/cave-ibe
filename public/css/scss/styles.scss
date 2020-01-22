@@ -1,0 +1,74 @@
+@import './variables';
+@import './resets';
+@import './mixins';
+@import './header';
+@import './footer';
+
+body {
+    font-family: $headingFont;
+}
+
+.container {
+    @include mQ('991px') {
+        max-width: 1480px;
+        padding: 0 60px;
+    }
+}
+
+.btn-primary {
+    background-color: $primaryColor;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#banner {
+    background-color: $primaryColor;
+    color: #fff;
+    padding: 20px 0 27px 0;
+    position: relative;
+    h1 {
+        font-size: 20px;
+        margin-top: 19px;
+        margin-bottom: 32px;
+    }
+    p {
+        font-size: 16px;
+        margin-bottom: 53px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 16px;
+    }
+}
+
+.hotel-info-buttons .btn-primary {
+    border: 1px solid rgba(131, 111, 111, 0.8);
+    padding: 8.5px 17.5px;
+    &:hover {
+        border: 1px solid #fff;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    &:not(:disabled):not(.disabled):active {
+        box-shadow: none;
+        background-color: #fff;
+        color: $primaryColor;
+    }
+    &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus {
+        box-shadow: none;
+    }
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
+        border-color: $primaryColor;
+    }
+}
+
+.hotel-gallery {
+    background: linear-gradient(104deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)), url("https://www.ahstatic.com/photos/9399_ho_00_p_1024x768.jpg") no-repeat center center;
+    height: 240px;
+    width: 100%;
+    position: absolute;
+    top: -212px;
+    right: 0;
+    
+}

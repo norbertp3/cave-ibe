@@ -7,8 +7,8 @@
     <title>HOME PAGE</title>
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="public/css/bootstrap.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/bootstrap-4.0.0/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/styles.css">
 
     <link rel="stylesheet" href="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.css">
 
@@ -17,9 +17,51 @@
     <link rel="stylesheet" type="text/css" href="public/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="public/css/slick-theme.css"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <header>
+    <div class="header-container d-flex justify-content-between align-items-center">
+      <a href="#"><img src="/public/images/redworth_logo-1.png"></a>
+      <div class="main-nav">
+        <ul class="mt-auto mb-auto">
+          <li><a href="">Rooms</a></li>
+          <li><a href="">Retreat Spa</a></li>
+          <li><a href="">Weedings</a></li>
+          <li><a href="">Meetings and Events</a></li>
+          <li><a href="">Restaurant</a></li>
+          <li><a href="">Offers</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+      <a href="#"><button type="button" class="btn btn-primary float-right">Book a room</button></a>
+    </div>
+  </header>
+
+  <section id="banner">
+    <div class="container">
+      <h1>The Redworth Hall Hotel</h1>
+      <p>Surtees Rd, Newton Aycliffe DL5 6NL, UK</p>
+      <!-- HOTEL INFO BUTTONS -->
+      <div class="hotel-info-buttons d-none d-lg-flex">
+        <a href="#"><button class="btn btn-primary">Hotel Info</button></a>
+        <a href="#"><button class="btn btn-primary">Map</button></a>
+        <a href="#"><button class="btn btn-primary">Gallery</button></a>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6">
+          <a href="javascript:;"><div class="hotel-gallery">
+            <img src="public/images/icons/icon-open-gallery.svg" class="icon-open-gallery">
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </section>
     
 
     

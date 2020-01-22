@@ -1,0 +1,80 @@
+@mixin clearFix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+// Custom Grid
+@mixin grid ($cols, $mgn) {
+    float: left;
+    margin-right: $mgn;
+    margin-bottom: $mgn;
+    width: ((100% - ($cols - 1) * $mgn) / $cols );
+    &:nth-child(#{$cols}n) {
+        margin-right: 0;
+    }
+}
+
+//Media Queries
+
+@mixin mQ($arg...){
+    @if length($arg) == 1 {
+        @media screen and (min-width: nth($arg, 1)) {
+            @content;
+        }
+    }
+    @if length($arg) == 2 {
+        @media screen and (min-width: nth($arg, 1)) and (max-width: nth($arg, 2)) {
+            @content;
+        }
+    }
+}
+
+//Media Queries Max Width
+
+@mixin mQmax($arg){
+    @media screen and (max-width: $arg) {
+        @content;
+    }
+}
+
+
+// Bootstrap buttons reset
+
+.btn-primary {
+    background-color: $primaryColor;
+    border-radius: 0;
+    border: 1px solid $primaryColor;
+    &:hover {
+        background-color: #fff;
+        color: $primaryColor;
+        border: 1px solid $primaryColor;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    &:not(:disabled):not(.disabled):active {
+        box-shadow: none;
+        background-color: $primaryColor;
+        background-color: $secondaryColor;
+        color: $primaryColor;
+    }
+    &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus {
+        box-shadow: none;
+    }
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
+        border-color: $primaryColor;
+    }
+}
+
+// Gallery Icon
+.icon-open-gallery {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+// Hotel Info Buttons
+.hotel-info-buttons .btn-primary {
+    margin-right: 10px;
+}
