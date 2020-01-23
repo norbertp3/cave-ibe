@@ -23,24 +23,67 @@
 <body>
 
   <header>
-    <div class="header-container d-flex justify-content-between align-items-center">
-      <a href="#"><img src="/public/images/redworth_logo-1.png"></a>
-      <div class="main-nav">
-        <ul class="mt-auto mb-auto">
-          <li><a href="">Rooms</a></li>
-          <li><a href="">Retreat Spa</a></li>
-          <li><a href="">Weedings</a></li>
-          <li><a href="">Meetings and Events</a></li>
-          <li><a href="">Restaurant</a></li>
-          <li><a href="">Offers</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-      </div>
-      <a href="#"><button type="button" class="btn btn-primary float-right">Book a room</button></a>
+
+    <!-- Mobile Nav -->
+    <div class="d-lg-none">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="mobile-nav-top w-100">
+          <a href="#"><img src="/public/images/redworth_logo-1.png" class="logo"></a>
+          <div class="float-right">
+            <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="three">
+              <a href="javascript:;" data-toggle="collapse" data-target="#navbarCollapse">
+              <div class="hamburger" id="hamburger-6">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active nav-book-now">Book a Room</a>
+                <a href="https://www.redworthhalldurham.co.uk/rooms/" class="nav-item nav-link">Rooms</a>
+                <a href="https://www.redworthhalldurham.co.uk/spa/" class="nav-item nav-link">Retreat Spa</a>
+                <a href="https://www.redworthhalldurham.co.uk/weddings/" class="nav-item nav-link">Weddings</a>
+                <a href="https://www.redworthhalldurham.co.uk/meetings-and-events/" class="nav-item nav-link">Meeting & Events</a>
+                <a href="https://www.redworthhalldurham.co.uk/restaurant/" class="nav-item nav-link">Restaurant</a>
+                <a href="https://www.redworthhalldurham.co.uk/offers/" class="nav-item nav-link">Offers & What's On</a>
+                <a href="https://www.redworthhalldurham.co.uk/contact-us/" class="nav-item nav-link">Contact</a>
+                <a href="https://shops.giftvoucherbrilliance.co.uk/pages/redworth_hall/Home" class="nav-item nav-link mb-5">Gift Vouchers</a>
+            </div>
+        </div>
+      </nav>
     </div>
+    <!-- End Mobile Nav -->
+
+    <!-- Desktop Nav -->
+    <div class="d-none d-lg-block">
+      <div class="header-container d-flex justify-content-between align-items-center">
+        <a href="#"><img src="/public/images/redworth_logo-1.png" class="logo"></a>
+        <div class="main-nav">
+          <ul class="mt-auto mb-auto">
+            <li><a href="">Rooms</a></li>
+            <li><a href="">Retreat Spa</a></li>
+            <li><a href="">Weedings</a></li>
+            <li><a href="">Meetings and Events</a></li>
+            <li><a href="">Restaurant</a></li>
+            <li><a href="">Offers</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <a href="#"><button type="button" class="btn btn-primary float-right">Book a room</button></a>
+      </div>
+    </div>
+    <!-- End Desktop Nav -->
   </header>
 
-  <section id="banner">
+  <section id="banner" class="d-none d-lg-block">
     <div class="container">
       <h1>The Redworth Hall Hotel</h1>
       <p>Surtees Rd, Newton Aycliffe DL5 6NL, UK</p>
@@ -62,6 +105,26 @@
       </div>
     </div>
   </section>
+
+  <!-- IBE -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <!-- Booking Summary -->
+        <section id="booking-summary">
+          <!-- Booking Summary Heading -->
+          <div class="booking-summary-heading d-flex justify-content-between">
+            <h2>My Booking</h2>
+            <button class="btn btn-btn-secondary edit-search-btn">Edit</button>
+          </div>
+        </section>
+      </div>
+      <div class="col-12 col-lg-8">
+
+      </div>
+    </div>
+
+  </div>
     
 
     

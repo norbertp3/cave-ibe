@@ -1,5 +1,8 @@
 header {
-    margin: 20px 0;
+    // margin: 20px 0;
+    @include mQ(992px) {
+        margin: 20px 0;
+    }
     .header-container {
         height: 50px;
         max-width: 1480px;
@@ -29,9 +32,35 @@ header {
         .btn-primary {
                 padding: 10.5px 32px;
         }
-        img {
+    }
+    .logo {
+        width: 102px;
+        height: auto;
+        @include mQ(992px) {
             width: 128px;
             height: 50px;
         }
+    }
+}
+.navbar {
+    padding: 0;
+    .mobile-nav-top {
+        padding: 16px 20px;
+    }
+    .navbar-nav a {
+        padding: 27px 0;
+        margin: 0 20px;
+        font-family: 'EB Garamond', serif;
+        color: #222222!important;
+        font-size: 18px;
+        border-bottom: 1px solid #222222;
+    }
+    .nav-book-now {
+        background-color: #000;
+        margin: 0!important;
+        padding: 27px 20px!important;
+    }
+    a.nav-book-now {
+        color: #fff!important;
     }
 }

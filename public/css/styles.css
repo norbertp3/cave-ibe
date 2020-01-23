@@ -61,8 +61,10 @@ button {
   margin-right: 10px;
 }
 
-header {
-  margin: 20px 0;
+@media screen and (min-width: 992px) {
+  header {
+    margin: 20px 0;
+  }
 }
 
 header .header-container {
@@ -101,9 +103,43 @@ header .header-container .btn-primary {
   padding: 10.5px 32px;
 }
 
-header .header-container img {
-  width: 128px;
-  height: 50px;
+header .logo {
+  width: 102px;
+  height: auto;
+}
+
+@media screen and (min-width: 992px) {
+  header .logo {
+    width: 128px;
+    height: 50px;
+  }
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar .mobile-nav-top {
+  padding: 16px 20px;
+}
+
+.navbar .navbar-nav a {
+  padding: 27px 0;
+  margin: 0 20px;
+  font-family: 'EB Garamond', serif;
+  color: #222222 !important;
+  font-size: 18px;
+  border-bottom: 1px solid #222222;
+}
+
+.navbar .nav-book-now {
+  background-color: #000;
+  margin: 0 !important;
+  padding: 27px 20px !important;
+}
+
+.navbar a.nav-book-now {
+  color: #fff !important;
 }
 
 body {
@@ -130,6 +166,7 @@ body {
   color: #fff;
   padding: 20px 0 27px 0;
   position: relative;
+  margin-bottom: 30px;
 }
 
 #banner h1 {
@@ -143,6 +180,12 @@ body {
   margin-bottom: 53px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  #banner {
+    margin-bottom: 40px;
+  }
 }
 
 .hotel-info-buttons .btn-primary {
@@ -182,5 +225,56 @@ body {
   position: absolute;
   top: -212px;
   right: 0;
+}
+
+/* ALL */
+.three {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #222222;
+  text-align: center;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 5px;
+  background-color: #333232;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+#hamburger-6.is-active {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#hamburger-6.is-active .line:nth-child(2) {
+  width: 0px;
+}
+
+#hamburger-6.is-active .line:nth-child(1),
+#hamburger-6.is-active .line:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+#hamburger-6.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(13px);
+  transform: translateY(13px);
+}
+
+#hamburger-6.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-13px) rotate(90deg);
+  transform: translateY(-13px) rotate(90deg);
 }
 /*# sourceMappingURL=styles.css.map */
