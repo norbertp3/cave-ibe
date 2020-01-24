@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+*:focus {
+  outline: none;
+}
+
 p {
   margin-bottom: 0;
 }
@@ -23,18 +27,22 @@ button {
   border: 1px solid #333232;
 }
 
-.btn-primary:hover {
+.btn {
+  border-radius: 0;
+}
+
+.btn:hover {
   background-color: #fff;
   color: #333232;
   border: 1px solid #333232;
 }
 
-.btn-primary:focus {
+.btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active {
+.btn:not(:disabled):not(.disabled):active {
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: #333232;
@@ -42,13 +50,17 @@ button {
   color: #333232;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+.btn:not(:disabled):not(.disabled).active:focus, .btn:not(:disabled):not(.disabled):active:focus, .show > .btn.dropdown-toggle:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+.btn:not(:disabled):not(.disabled).active, .btn:not(:disabled):not(.disabled):active, .show > .btn.dropdown-toggle {
   border-color: #333232;
+}
+
+select:focus {
+  outline: none;
 }
 
 .icon-open-gallery {
@@ -61,6 +73,105 @@ button {
   margin-right: 10px;
 }
 
+#mobile-hotel-info {
+  background-color: #333232;
+  padding: 14px 0;
+}
+
+#mobile-hotel-info a {
+  font-size: 15px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+#mobile-hotel-info a:focus {
+  text-decoration: none;
+}
+
+.hotel-info-buttons .btn-primary {
+  border: 1px solid rgba(131, 111, 111, 0.8);
+  padding: 8.5px 17.5px;
+}
+
+.hotel-info-buttons .btn-primary:hover {
+  border: 1px solid #fff;
+}
+
+.hotel-info-buttons .btn-primary:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.hotel-info-buttons .btn-primary:not(:disabled):not(.disabled):active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #fff;
+  color: #333232;
+}
+
+.hotel-info-buttons .btn-primary:not(:disabled):not(.disabled).active:focus, .hotel-info-buttons .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .hotel-info-buttons .btn-primary.dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.hotel-info-buttons .btn-primary:not(:disabled):not(.disabled).active, .hotel-info-buttons .btn-primary:not(:disabled):not(.disabled):active, .show > .hotel-info-buttons .btn-primary.dropdown-toggle {
+  border-color: #333232;
+}
+
+.booking-summary-heading {
+  padding: 10px;
+  background-color: #f2f2f2;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-width: 992px) {
+  .booking-summary-heading {
+    padding: 30px 30px 20px 30px;
+  }
+}
+
+.booking-summary-heading h2 {
+  font-size: 15px;
+  color: #333232;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 992px) {
+  .booking-summary-heading h2 {
+    font-size: 22px;
+  }
+}
+
+.booking-summary-data {
+  background-color: #f2f2f2;
+  padding: 0 10px;
+}
+
+.booking-summary-data p {
+  width: 50%;
+}
+
+.booking-summary-data .booking-row {
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 992px) {
+  .booking-summary-data {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .booking-summary-data {
+    display: none;
+  }
+}
+
+.rotate180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 @media screen and (min-width: 992px) {
   header {
     margin: 20px 0;
@@ -68,7 +179,7 @@ button {
 }
 
 header .header-container {
-  height: 50px;
+  height: 60px;
   max-width: 1480px;
   padding: 0 60px;
   margin: 0 auto;
@@ -92,11 +203,18 @@ header .header-container .main-nav li {
 header .header-container .main-nav a {
   color: #000;
   text-decoration: none;
-  padding: 16px;
+  padding: 16px 8px;
   display: block;
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   font-family: 'EB Garamond', serif;
+}
+
+@media screen and (min-width: 1403px) {
+  header .header-container .main-nav a {
+    padding: 16px 17px;
+    font-size: 18px;
+  }
 }
 
 header .header-container .btn-primary {
@@ -148,8 +266,15 @@ body {
 
 @media screen and (min-width: 991px) {
   .container {
-    max-width: 1480px;
+    max-width: 1500px;
     padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -186,36 +311,6 @@ body {
   #banner {
     margin-bottom: 40px;
   }
-}
-
-.hotel-info-buttons .btn-primary {
-  border: 1px solid rgba(131, 111, 111, 0.8);
-  padding: 8.5px 17.5px;
-}
-
-.hotel-info-buttons .btn-primary:hover {
-  border: 1px solid #fff;
-}
-
-.hotel-info-buttons .btn-primary:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.hotel-info-buttons .btn-primary:not(:disabled):not(.disabled):active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-color: #fff;
-  color: #333232;
-}
-
-.hotel-info-buttons .btn-primary:not(:disabled):not(.disabled).active:focus, .hotel-info-buttons .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .hotel-info-buttons .btn-primary.dropdown-toggle:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.hotel-info-buttons .btn-primary:not(:disabled):not(.disabled).active, .hotel-info-buttons .btn-primary:not(:disabled):not(.disabled):active, .show > .hotel-info-buttons .btn-primary.dropdown-toggle {
-  border-color: #333232;
 }
 
 .hotel-gallery {
@@ -276,5 +371,132 @@ body {
 #hamburger-6.is-active .line:nth-child(3) {
   -webkit-transform: translateY(-13px) rotate(90deg);
   transform: translateY(-13px) rotate(90deg);
+}
+
+.edit-search-btn {
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  border: solid 1px rgba(51, 50, 50, 0.8);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.open-booking-summery .fa {
+  background: #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 17px;
+  padding-left: 7px;
+  padding-top: 6px;
+  color: #fff;
+}
+
+.booking-summary-data p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.booking-summary-data p:nth-child(even) {
+  text-align: right;
+}
+
+.booking-summary-heading span {
+  font-size: 13px;
+  color: rgba(51, 50, 50, 0.5);
+}
+
+.booking-summary-table {
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 992px) {
+  .booking-summary-table {
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+  }
+}
+
+.desktop-sign-up {
+  background-color: #f2f2f2;
+  padding: 10px 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .desktop-sign-up {
+    padding: 38px 30px;
+  }
+}
+
+.desktop-sign-up h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.desktop-sign-up .desktop-sign-up-content {
+  padding: 10px 0 0 20px;
+}
+
+.desktop-sign-up p {
+  font-size: 15px;
+  line-height: 1.73;
+  color: rgba(51, 50, 50, 0.8);
+  margin-bottom: 15px;
+}
+
+.desktop-sign-up .btn {
+  margin-bottom: 15px;
+}
+
+.desktop-sign-up a {
+  color: #333232;
+  text-decoration: underline;
+}
+
+.desktop-sign-up a:hover {
+  color: #333232;
+  cursor: pointer;
+}
+
+.desktop-sign-up img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#progress-steps .active {
+  color: #333232;
+}
+
+.pregress-steps-desktop {
+  color: rgba(51, 50, 50, 0.5);
+  font-size: 14px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.progress-steps-mobile {
+  margin: 30px 0;
+}
+
+.progress-steps-mobile img {
+  margin-right: 15px;
+}
+
+.progress-steps-mobile h3 {
+  font-size: 18px;
+  color: #333232;
+}
+
+.progress-steps-mobile span {
+  font-size: 13px;
+  color: rgba(51, 50, 50, 0.5);
+}
+
+.dropdown-currency select {
+  border: none;
+  font-size: 13px;
+  color: rgba(51, 50, 50, 0.5);
+  margin-left: 70px;
 }
 /*# sourceMappingURL=styles.css.map */

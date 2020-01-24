@@ -1,6 +1,7 @@
 @import './variables';
 @import './resets';
 @import './mixins';
+@import './p3';
 @import './header';
 @import './footer';
 
@@ -10,8 +11,12 @@ body {
 
 .container {
     @include mQ('991px') {
-        max-width: 1480px;
+        max-width: 1500px;
         padding: 0 60px;
+    }
+    @include mQmax(575px) {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -45,28 +50,6 @@ body {
     }
 }
 
-.hotel-info-buttons .btn-primary {
-    border: 1px solid rgba(131, 111, 111, 0.8);
-    padding: 8.5px 17.5px;
-    &:hover {
-        border: 1px solid #fff;
-    }
-    &:focus {
-        box-shadow: none;
-    }
-    &:not(:disabled):not(.disabled):active {
-        box-shadow: none;
-        background-color: #fff;
-        color: $primaryColor;
-    }
-    &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus {
-        box-shadow: none;
-    }
-    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
-        border-color: $primaryColor;
-    }
-}
-
 .hotel-gallery {
     background: linear-gradient(104deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)), url("https://www.ahstatic.com/photos/9399_ho_00_p_1024x768.jpg") no-repeat center center;
     height: 240px;
@@ -75,6 +58,8 @@ body {
     top: -212px;
     right: 0;
 }
+
+
 // Mobile Hamburger
 
 /* ALL */
@@ -140,3 +125,117 @@ body {
     -o-transform: translateY(-13px) rotate(90deg);
     transform: translateY(-13px) rotate(90deg);
   }
+
+// Booking Summery
+.edit-search-btn {
+    background-color: $bookingSummaryBackgroundColor;
+    border-radius: 25px;
+    border: solid 1px rgba(51, 50, 50, 0.8);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.open-booking-summery .fa {
+    background: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 17px;
+    padding-left: 7px;
+    padding-top: 6px;
+    color: #fff;
+}
+.booking-summary-data {
+  p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  p:nth-child(even) {
+    text-align: right;
+  }
+}
+.booking-summary-heading span {
+  font-size: 13px;
+  color: rgba(51, 50, 50, 0.5);
+}
+
+.booking-summary-table {
+  @include mQ (992px) {
+      border-top: 1px solid #d8d8d8;
+      border-bottom: 1px solid #d8d8d8;
+  }
+  padding: 10px 0;
+}
+
+// Loyalty Signup
+
+.desktop-sign-up {
+  background-color: $bookingSummaryBackgroundColor;
+  padding: 10px 10px;
+  @include mQ(992px) {
+      padding: 38px 30px;
+  }
+  h2 {
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+  }
+  .desktop-sign-up-content {
+      padding: 10px 0 0 20px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.73;
+    color: rgba(51, 50, 50, 0.8);
+    margin-bottom: 15px;
+  }
+  .btn {
+    margin-bottom: 15px;
+  }
+  a {
+    color: $primaryColor;
+    text-decoration: underline;
+    &:hover {
+      color: $primaryColor;
+      cursor: pointer;
+    }
+  }
+  img {
+    object-fit: cover;
+  }
+}
+
+// Progress Steps
+
+#progress-steps {
+  .active {
+    color: $primaryColor;
+  }
+}
+.pregress-steps-desktop {
+  color: rgba(51, 50, 50, 0.5);
+  font-size: 14px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.progress-steps-mobile {
+  margin: 30px 0;
+  img {
+    margin-right: 15px;
+  }
+  h3 {
+    font-size: 18px;
+    color: $primaryColor;
+  }
+  span {
+    font-size: 13px;
+    color: rgba(51, 50, 50, 0.5);
+  }
+}
+
+.dropdown-currency select {
+  border: none;
+  font-size: 13px;
+  color: rgba(51, 50, 50, 0.5);
+  margin-left: 70px;
+} 

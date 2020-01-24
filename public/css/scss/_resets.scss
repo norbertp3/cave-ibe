@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    &:focus {
+        outline: none;
+    }
 }
 p {
     margin-bottom: 0;
@@ -11,4 +14,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 button {
     margin-bottom: 0;
+}
+
+// Bootstrap buttons reset
+
+.btn-primary {
+    background-color: $primaryColor;
+    border-radius: 0;
+    border: 1px solid $primaryColor;
+}
+
+.btn {
+    border-radius: 0;
+    &:hover {
+        background-color: #fff;
+        color: $primaryColor;
+        border: 1px solid $primaryColor;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    &:not(:disabled):not(.disabled):active {
+        box-shadow: none;
+        background-color: $primaryColor;
+        background-color: $secondaryColor;
+        color: $primaryColor;
+    }
+    &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus {
+        box-shadow: none;
+    }
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
+        border-color: $primaryColor;
+    }
+}
+
+select {
+    &:focus {
+        outline: none;
+    }
 }
