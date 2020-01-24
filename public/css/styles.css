@@ -70,7 +70,7 @@ select:focus {
 }
 
 .hotel-info-buttons .btn-primary {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 #mobile-hotel-info {
@@ -184,6 +184,7 @@ select:focus {
 .room-content h2 {
   font-size: 30px;
   line-height: 1;
+  text-align: right;
 }
 
 .room-content .price-section {
@@ -192,7 +193,7 @@ select:focus {
 
 @media screen and (min-width: 992px) {
   .room-content .price-section {
-    margin-bottom: 60px;
+    margin-bottom: 44px;
   }
 }
 
@@ -237,6 +238,13 @@ select:focus {
 .room-content .view-rates-btn {
   width: 151px;
   height: 50px;
+}
+
+.room-wrapper img {
+  height: 184px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-style {
@@ -453,6 +461,8 @@ body {
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
+  height: 40px;
+  width: 73px;
 }
 
 .open-booking-summery .fa {
@@ -520,6 +530,8 @@ body {
 
 .desktop-sign-up .btn {
   margin-bottom: 15px;
+  height: 50px;
+  width: 186px;
 }
 
 .desktop-sign-up a {

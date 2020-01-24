@@ -7,7 +7,7 @@
 
 // Hotel Info Buttons
 .hotel-info-buttons .btn-primary {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 // Mobile Hotel Info
@@ -96,11 +96,12 @@
     h2 {
         font-size: 30px;
         line-height: 1;
+        text-align: right;
     }
     .price-section {
         position: relative;
         @include mQ(992px) {
-            margin-bottom: 60px;
+            margin-bottom: 44px;
         }
     }
     .price-section .strike-through {
@@ -135,6 +136,11 @@
         width: 151px;
         height: 50px;
     }
+}
+.room-wrapper img {
+    height: 184px;
+    width: 300px;
+    object-fit: cover;
 }
 .card-style {
     box-shadow: inset 0px 0px 0px 1px #d8d8d8;
