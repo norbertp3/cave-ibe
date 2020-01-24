@@ -85,3 +85,58 @@
 .rotate180 {
     transform: rotate(180deg);
 }
+
+// Room with Rates Details
+.room-content {
+    padding: 10px;
+    h3 {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 1;
+    }
+    .price-section {
+        position: relative;
+        @include mQ(992px) {
+            margin-bottom: 60px;
+        }
+    }
+    .price-section .strike-through {
+        position: absolute;
+        top: -20px;
+        right: 0;
+    }
+    .price-section .num-nights {
+        position: absolute;
+        // top: -15px;
+        right: 0;
+    }
+    span {
+        color: rgba(51, 50, 50, 0.5);
+        font-size: 13px;
+    }
+    @include mQ (992px) {
+        padding: 30px;
+    }
+    .from-spam {
+        margin-right: 10px;
+        @include mQmax (991px) {
+            position: absolute;
+            top: -12px;
+        }
+    }
+    .price-after-decimal {
+        font-size: 18px;
+        color: $primaryColor;
+    }
+    .view-rates-btn {
+        width: 151px;
+        height: 50px;
+    }
+}
+.card-style {
+    box-shadow: inset 0px 0px 0px 1px #d8d8d8;
+    margin-bottom: 30px;
+}

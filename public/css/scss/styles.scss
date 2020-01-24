@@ -216,6 +216,7 @@ body {
   color: rgba(51, 50, 50, 0.5);
   font-size: 14px;
   padding-bottom: 30px;
+  margin-bottom: 30px;
   border-bottom: 1px solid #d8d8d8;
 }
 .progress-steps-mobile {
@@ -238,4 +239,14 @@ body {
   font-size: 13px;
   color: rgba(51, 50, 50, 0.5);
   margin-left: 70px;
-} 
+}
+.pr-20 {
+  @include mQ (992px) {
+    padding-right: 20px;
+  }
+}
+.pl-20 {
+  @include mQ (992px) {
+    padding-left: 20px;
+  }
+}
