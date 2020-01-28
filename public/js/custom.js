@@ -13,7 +13,16 @@ if ($(window).width() < 991) {
     $(this).find('.fa').toggleClass('rotate180');
 });
 }
+
 // .Fa rotate
 $('.trigger-rotate').click(function(){
-  $(this).find('.fa').toggleClass('rotate180');
+  $(this).find('img').toggleClass('rotate180');
+});
+
+// View Rates
+$('.view-rates-btn').click(function(){
+  $(this).closest('.room-with-rates-wrapper').find('.rates-wrapper').slideToggle();
+  $("html, body").animate({
+      scrollTop: $(this).closest('.room-with-rates-wrapper').find('.room-wrapper').offset().top - 10
+  }, 'slow');
 });

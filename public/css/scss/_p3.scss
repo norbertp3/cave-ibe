@@ -66,7 +66,7 @@
 }
 .booking-summary-data {
     background-color: $bookingSummaryBackgroundColor;
-    padding: 0 10px;
+    padding: 0 8px;
     p {
         width: 50%;
     }
@@ -86,12 +86,21 @@
     transform: rotate(180deg);
 }
 
+// Card Style
+.card-style {
+    box-shadow: inset 0px 0px 0px 1px #d8d8d8;
+    margin-bottom: 30px;
+}
+
 // Room with Rates Details
 .room-content {
     padding: 10px;
     h3 {
         font-size: 17px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        @include mQ(992px) {
+            margin-bottom: 20px;
+        }
     }
     h2 {
         font-size: 30px;
@@ -135,14 +144,74 @@
     .view-rates-btn {
         width: 151px;
         height: 50px;
+        img {
+            height: 14px;
+            width: 14px;
+        }
     }
 }
 .room-wrapper img {
     height: 184px;
-    width: 300px;
+    width: 100%;
     object-fit: cover;
+    @include mQ(992px) {
+        width: 300px;
+    }
 }
-.card-style {
-    box-shadow: inset 0px 0px 0px 1px #d8d8d8;
-    margin-bottom: 30px;
+.rates-wrapper {
+    display: none;
+    padding: 10px;
+    @include mQ(992px) {
+        padding: 30px;
+    }
+    h3 {
+        font-size: 17px;
+        padding-top: 12px;
+        a {
+            color: $primaryColor;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    span {
+        color: rgba(51, 50, 50, 0.5);
+        font-size: 13px;
+    }
+    .select-rate-btn {
+        width: 125px;
+        height: 50px;
+        font-size: 22px;
+        span {
+            font-size: 16px;
+            color: #fff;
+        }
+        .fa {
+            font-size:14px;
+            padding-bottom: 2px;
+            top: -3px;
+            position: relative;
+        }
+        &:hover span {
+            color: $primaryColor;
+        }
+    }
+    .rate-description {
+        color: rgba(51, 50, 50, 0.8);
+        font-size: 15px;
+        ul {
+            list-style-position: inside;
+            margin-bottom: 15px;
+        }
+    }
+    .select-rate {
+        @include mQ(992px) {
+            height: 53px;
+        }
+    }
+    .mobile-rate-free-cancel {
+        color: #6abb91;
+        font-size: 12px;
+        font-weight: 500;
+    }
 }
