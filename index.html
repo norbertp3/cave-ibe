@@ -26,7 +26,7 @@
 
     <!-- Mobile Nav -->
     <div class="d-lg-none">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-xl navbar-light">
         <div class="mobile-nav-top w-100">
           <a href="#"><img src="/public/images/redworth_logo-1.png" class="logo"></a>
           <div class="float-right">
@@ -101,7 +101,7 @@
         <div class="col-6"></div>
         <div class="col-6">
           <a href="javascript:;"><div class="hotel-gallery">
-            <img src="public/images/icons/icon-open-gallery.svg" class="icon-open-gallery">
+            <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
           </div></a>
         </div>
       </div>
@@ -188,13 +188,13 @@
           </div>
           <div class="pregress-steps-desktop text-center d-none d-lg-flex justify-content-between align-items-center">
             <p class="active">Choose room 1</p>
-            <img src="public/images/icons/icon-chevron-dark-right.png">
+            <img src="public/images/icons/p3/icon-chevron-dark-right.svg">
             <p>Choose room 2</p>
-            <img src="public/images/icons/icon-chevron-dark-right.png">
+            <img src="public/images/icons/p3/icon-chevron-dark-right.svg">
             <p>Extras Room 1</p>
-            <img src="public/images/icons/icon-chevron-dark-right.png">
+            <img src="public/images/icons/p3/icon-chevron-dark-right.svg">
             <p>Extras Room 2</p>
-            <img src="public/images/icons/icon-chevron-dark-right.png">
+            <img src="public/images/icons/p3/icon-chevron-dark-right.svg">
             <p>Your Details</p>
             <form action="" method="get" id="currencyConverter" class="dropdown-currency">
               <input type="hidden" name="redirect">
@@ -208,135 +208,204 @@
         </section>
         <!-- End Progress Steps -->
 
+
+
+        <!-- Start Room with Rates -->
         <section class="card-style room-with-rates-wrapper">
           <div class="room-wrapper d-lg-flex">
-            <img src="public/images/img-room.jpg" alt="">
+            <img src="public/images/img-room.png" alt="">
             <div class="room-content d-block d-lg-flex justify-content-between w-100">
-                <div class="room-left-side">
-                  <h3>Standard Single Room</h3>
-                  <span class="d-none d-lg-block">Sleeps 1<span>
+              <div class="room-left-side">
+                <h3>Standard Single Room <i class="fa fa-info-circle"></i></h3>
+                <span class="d-none d-lg-block">Sleeps 1<span>
+              </div>
+              <div class="d-flex justify-content-between align-items-end d-lg-block room-right-side">
+                <div class="price-section">
+                  <span class="strike-through d-none d-lg-block">€77.00</span>
+                  <h2><span class="from-spam">from</span>€67.<span class="price-after-decimal">50</span></h2>
+                  <span class="num-nights d-none d-lg-block">1 night</span>
                 </div>
-                <div class="d-flex justify-content-between align-items-end d-lg-block room-right-side">
-                  <div class="price-section">
-                    <span class="strike-through d-none d-lg-block">€77.00</span>
-                    <h2><span class="from-spam">from</span>€67.<span class="price-after-decimal">50</span></h2>
-                    <span class="num-nights d-none d-lg-block">1 night</span>
-                  </div>
-                  <button class="btn btn-primary view-rates-btn trigger-rotate">View Rates <img src="public/images/icons/icon-chevron-white-down.png" height="14px" width="14px"></button>
-                </div>
+                <button class="btn btn-primary view-rates-btn trigger-rotate">View Rates <i
+                    class="fa fa-chevron-down ml-2"></i></button>
+              </div>
             </div>
           </div>
           <div class="rates-wrapper">
-            <div class="row">
-              <div class="col-12 col-lg-8">
-                <h3 class=""><a href="javascript:;"><i class="fa fa-info-circle"></i> Standard Single Room</a></h3>
-                <div class="rate-description mt-4 ml-3">
-                  <ul>
-                    <li>Book now, pay on arrival</li>
-                    <li>Cancel for free by 2pm Tue, 29 Nov</li>
-                  </ul>
-                  <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in this rate. </p>
+            <div class="rate-container">
+              <div class="d-block d-lg-flex justify-content-between">
+                <h3 class="rate-name"><a href="javascript:;"><i class="fa fa-info-circle d-lg-none"></i> Room Only - Pay Now,
+                  Non-refundable <i class="fa fa-info-circle d-none d-lg-inline"></i></a></h3>
+                <div class="text-right d-flex justify-content-end select-rate">
+                  <div class="d-flex align-items-end">
+                    <span class="mb-3">1 night</span>
+                    <span class="ml-2 mb-3">€77.50</span>
+                  </div>
+                  <div class="text-center ml-3">
+                    <span class="mobile-rate-free-cancel d-block d-lg-none">Free Cancellation</span>
+                    <button class="btn btn-primary select-rate-btn">€67.<span class="price-after-decimal">50</span> <i
+                        class="fa fa-chevron-right ml-2"></i></button>
+                  </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-4 text-right d-flex justify-content-end select-rate">
-                <div class="d-flex align-items-end">
-                  <span class="mb-3">1 night</span>
-                  <span class="ml-2 mb-3">€77.50</span>
+              <div class="rate-description ml-3 mt-3 mt-lg-0">
+                <ul>
+                  <li>Book now, pay on arrival 111111111111</li>
+                  <li>Cancel for free by 2pm Tue, 29 Nov</li>
+                </ul>
+                <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in
+                  this rate. </p>
+              </div>
+            </div>
+            <div class="rate-container">
+              <div class="d-block d-lg-flex justify-content-between">
+                <h3 class="rate-name"><a href="javascript:;"><i class="fa fa-info-circle d-lg-none"></i> Room Only - Pay Now,
+                  Non-refundable <i class="fa fa-info-circle d-none d-lg-inline"></i></a></h3>
+                <div class="text-right d-flex justify-content-end select-rate">
+                  <div class="d-flex align-items-end">
+                    <span class="mb-3">1 night</span>
+                    <span class="ml-2 mb-3">€77.50</span>
+                  </div>
+                  <div class="text-center ml-3">
+                    <span class="mobile-rate-free-cancel d-block d-lg-none">Free Cancellation</span>
+                    <button class="btn btn-primary select-rate-btn">€67.<span class="price-after-decimal">50</span> <i
+                        class="fa fa-chevron-right ml-2"></i></button>
+                  </div>
                 </div>
-                <div class="text-center ml-3">
-                  <span class="mobile-rate-free-cancel d-block d-lg-none">Free Cancel</span>
-                  <button class="btn btn-primary select-rate-btn">€67.<span class="price-after-decimal">50</span> <i class="fa fa-chevron-right ml-2"></i></button>
+              </div>
+              <div class="rate-description ml-3 mt-3 mt-lg-0">
+                <ul>
+                  <li>Book now, pay on arrival 2222222222</li>
+                  <li>Cancel for free by 2pm Tue, 29 Nov</li>
+                </ul>
+                <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in
+                  this rate. </p>
+              </div>
+            </div>
+            <div class="rate-container">
+              <div class="d-block d-lg-flex justify-content-between">
+                <h3 class="rate-name"><a href="javascript:;"><i class="fa fa-info-circle d-lg-none"></i> Room Only - Pay Now,
+                  Non-refundable <i class="fa fa-info-circle d-none d-lg-inline"></i></a></h3>
+                <div class="text-right d-flex justify-content-end select-rate">
+                  <div class="d-flex align-items-end">
+                    <span class="mb-3">1 night</span>
+                    <span class="ml-2 mb-3">€77.50</span>
+                  </div>
+                  <div class="text-center ml-3">
+                    <span class="mobile-rate-free-cancel d-block d-lg-none">Free Cancellation</span>
+                    <button class="btn btn-primary select-rate-btn">€67.<span class="price-after-decimal">50</span> <i
+                        class="fa fa-chevron-right ml-2"></i></button>
+                  </div>
                 </div>
+              </div>
+              <div class="rate-description ml-3 mt-3 mt-lg-0">
+                <ul>
+                  <li>Book now, pay on arrival 33333333333</li>
+                  <li>Cancel for free by 2pm Tue, 29 Nov</li>
+                </ul>
+                <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in
+                  this rate. </p>
               </div>
             </div>
           </div>
         </section>
         <section class="card-style room-with-rates-wrapper">
           <div class="room-wrapper d-lg-flex">
-            <img src="public/images/img-room.jpg" alt="">
+            <img src="public/images/img-room.png" alt="">
             <div class="room-content d-block d-lg-flex justify-content-between w-100">
-                <div class="room-left-side">
-                  <h3>Standard Single Room</h3>
-                  <span class="d-none d-lg-block">Sleeps 1<span>
+              <div class="room-left-side">
+                <h3>Standard Single Room <i class="fa fa-info-circle"></i></h3>
+                <span class="d-none d-lg-block">Sleeps 1<span>
+              </div>
+              <div class="d-flex justify-content-between align-items-end d-lg-block room-right-side">
+                <div class="price-section">
+                  <span class="strike-through d-none d-lg-block">€77.00</span>
+                  <h2><span class="from-spam">from</span>€67.<span class="price-after-decimal">50</span></h2>
+                  <span class="num-nights d-none d-lg-block">1 night</span>
                 </div>
-                <div class="d-flex justify-content-between align-items-end d-lg-block room-right-side">
-                  <div class="price-section">
-                    <span class="strike-through d-none d-lg-block">€77.00</span>
-                    <h2><span class="from-spam">from</span>€67.<span class="price-after-decimal">50</span></h2>
-                    <span class="num-nights d-none d-lg-block">1 night</span>
-                  </div>
-                  <button class="btn btn-primary view-rates-btn trigger-rotate">View Rates <i class="fa fa-chevron-down ml-2"></i></button>
-                </div>
+                <button class="btn btn-primary view-rates-btn trigger-rotate">View Rates <i
+                    class="fa fa-chevron-down ml-2"></i></button>
+              </div>
             </div>
           </div>
           <div class="rates-wrapper">
-            <div class="row">
-              <div class="col-12 col-lg-8">
-                <h3 class=""><a href="javascript:;"><i class="fa fa-info-circle"></i> Standard Single Room</a></h3>
-                <div class="rate-description mt-4 ml-3">
-                  <ul>
-                    <li>Book now, pay on arrival</li>
-                    <li>Cancel for free by 2pm Tue, 29 Nov</li>
-                  </ul>
-                  <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in this rate. </p>
+            <div class="rate-container">
+              <div class="d-block d-lg-flex justify-content-between">
+                <h3 class="rate-name"><a href="javascript:;"><i class="fa fa-info-circle d-lg-none"></i> Room Only - Pay Now,
+                  Non-refundable <i class="fa fa-info-circle d-none d-lg-inline"></i></a></h3>
+                <div class="text-right d-flex justify-content-end select-rate">
+                  <div class="d-flex align-items-end">
+                    <span class="mb-3">1 night</span>
+                    <span class="ml-2 mb-3">€77.50</span>
+                  </div>
+                  <div class="text-center ml-3">
+                    <span class="mobile-rate-free-cancel d-block d-lg-none">Free Cancellation</span>
+                    <button class="btn btn-primary select-rate-btn">€67.<span class="price-after-decimal">50</span> <i
+                        class="fa fa-chevron-right ml-2"></i></button>
+                  </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-4 text-right d-flex justify-content-end select-rate">
-                <div class="d-flex align-items-end">
-                  <span class="mb-3">1 night</span>
-                  <span class="ml-2 mb-3">€77.50</span>
+              <div class="rate-description ml-3 mt-3 mt-lg-0">
+                <ul>
+                  <li>Book now, pay on arrival 111111111111</li>
+                  <li>Cancel for free by 2pm Tue, 29 Nov</li>
+                </ul>
+                <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in
+                  this rate. </p>
+              </div>
+            </div>
+            <div class="rate-container">
+              <div class="d-block d-lg-flex justify-content-between">
+                <h3 class="rate-name"><a href="javascript:;"><i class="fa fa-info-circle d-lg-none"></i> Room Only - Pay Now,
+                  Non-refundable <i class="fa fa-info-circle d-none d-lg-inline"></i></a></h3>
+                <div class="text-right d-flex justify-content-end select-rate">
+                  <div class="d-flex align-items-end">
+                    <span class="mb-3">1 night</span>
+                    <span class="ml-2 mb-3">€77.50</span>
+                  </div>
+                  <div class="text-center ml-3">
+                    <span class="mobile-rate-free-cancel d-block d-lg-none">Free Cancellation</span>
+                    <button class="btn btn-primary select-rate-btn">€67.<span class="price-after-decimal">50</span> <i
+                        class="fa fa-chevron-right ml-2"></i></button>
+                  </div>
                 </div>
-                <div class="text-center ml-3">
-                  <span class="mobile-rate-free-cancel d-block d-lg-none">Free Cancellation</span>
-                  <button class="btn btn-primary select-rate-btn">€67.<span class="price-after-decimal">50</span> <i class="fa fa-chevron-right ml-2"></i></button>
+              </div>
+              <div class="rate-description ml-3 mt-3 mt-lg-0">
+                <ul>
+                  <li>Book now, pay on arrival 2222222222</li>
+                  <li>Cancel for free by 2pm Tue, 29 Nov</li>
+                </ul>
+                <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in
+                  this rate. </p>
+              </div>
+            </div>
+            <div class="rate-container">
+              <div class="d-block d-lg-flex justify-content-between">
+                <h3 class="rate-name"><a href="javascript:;"><i class="fa fa-info-circle d-lg-none"></i> Room Only - Pay Now,
+                  Non-refundable <i class="fa fa-info-circle d-none d-lg-inline"></i></a></h3>
+                <div class="text-right d-flex justify-content-end select-rate">
+                  <div class="d-flex align-items-end">
+                    <span class="mb-3">1 night</span>
+                    <span class="ml-2 mb-3">€77.50</span>
+                  </div>
+                  <div class="text-center ml-3">
+                    <span class="mobile-rate-free-cancel d-block d-lg-none">Free Cancellation</span>
+                    <button class="btn btn-primary select-rate-btn">€67.<span class="price-after-decimal">50</span> <i
+                        class="fa fa-chevron-right ml-2"></i></button>
+                  </div>
                 </div>
+              </div>
+              <div class="rate-description ml-3 mt-3 mt-lg-0">
+                <ul>
+                  <li>Book now, pay on arrival 33333333333</li>
+                  <li>Cancel for free by 2pm Tue, 29 Nov</li>
+                </ul>
+                <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in
+                  this rate. </p>
               </div>
             </div>
           </div>
         </section>
-        <section class="card-style room-with-rates-wrapper">
-          <div class="room-wrapper d-lg-flex">
-            <img src="public/images/img-room.jpg" alt="">
-            <div class="room-content d-block d-lg-flex justify-content-between w-100">
-                <div class="room-left-side">
-                  <h3>Standard Single Room</h3>
-                  <span class="d-none d-lg-block">Sleeps 1<span>
-                </div>
-                <div class="d-flex justify-content-between align-items-end d-lg-block room-right-side">
-                  <div class="price-section">
-                    <span class="strike-through d-none d-lg-block">€77.00</span>
-                    <h2><span class="from-spam">from</span>€67.<span class="price-after-decimal">50</span></h2>
-                    <span class="num-nights d-none d-lg-block">1 night</span>
-                  </div>
-                  <button class="btn btn-primary view-rates-btn trigger-rotate">View Rates <i class="fa fa-chevron-down ml-2"></i></button>
-                </div>
-            </div>
-          </div>
-          <div class="rates-wrapper">
-            <div class="row">
-              <div class="col-12 col-lg-8">
-                <h3 class=""><a href="javascript:;"><i class="fa fa-info-circle"></i> Standard Single Room</a></h3>
-                <div class="rate-description mt-4 ml-3">
-                  <ul>
-                    <li>Book now, pay on arrival</li>
-                    <li>Cancel for free by 2pm Tue, 29 Nov</li>
-                  </ul>
-                  <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in this rate. </p>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 text-right d-flex justify-content-end select-rate">
-                <div class="d-flex align-items-end">
-                  <span class="mb-3">1 night</span>
-                  <span class="ml-2 mb-3">€77.50</span>
-                </div>
-                <div class="text-center ml-3">
-                  <span class="mobile-rate-free-cancel d-block d-lg-none">Free Cancel</span>
-                  <button class="btn btn-primary select-rate-btn">€67.<span class="price-after-decimal">50</span> <i class="fa fa-chevron-right ml-2"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <!-- End Room with Rates -->
       </div>
     </div>
 

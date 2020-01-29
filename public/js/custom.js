@@ -11,12 +11,22 @@ if ($(window).width() < 991) {
   $('.open-booking-summery').click(function(){
     $('.booking-summary-data').slideToggle();
     $(this).find('.fa').toggleClass('rotate180');
-});
+  });
+  // $('.view-rates-btn').on('click', function(){
+  //   // $(this).closest('.room-with-rates-wrapper').find('.rate-description').detach().insertAfter($(this).closest('.room-with-rates-wrapper').find('.rate-name'));
+  //   $($(this).closest('.room-with-rates-wrapper').find('.rate-description')).each(function( index ) {
+  //     console.log( index + ": " + $( this ).text() );
+  //     $(this).detach().insertAfter('');
+  //   });
+  // })
+  $('.rate-name').click(function(){
+    $(this).find('.rate-description').detach().insertAfter($(this).closest('.rate-container').find('.rate-name'));
+  });
 }
 
 // .Fa rotate
 $('.trigger-rotate').click(function(){
-  $(this).find('img').toggleClass('rotate180');
+  $(this).find('.fa').toggleClass('rotate180');
 });
 
 // View Rates
@@ -25,4 +35,7 @@ $('.view-rates-btn').click(function(){
   $("html, body").animate({
       scrollTop: $(this).closest('.room-with-rates-wrapper').find('.room-wrapper').offset().top - 10
   }, 'slow');
+});
+$('.rate-name').click(function(){
+  $(this).closest('.rate-container').find('.rate-description').slideToggle();
 });

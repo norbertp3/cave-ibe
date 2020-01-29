@@ -179,18 +179,12 @@ select:focus {
 }
 
 .room-content {
-  padding: 10px;
+  padding: 20px 10px 20px 10px;
 }
 
 .room-content h3 {
   font-size: 17px;
-  margin-bottom: 10px;
-}
-
-@media screen and (min-width: 992px) {
-  .room-content h3 {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 }
 
 .room-content h2 {
@@ -272,7 +266,7 @@ select:focus {
 
 .rates-wrapper {
   display: none;
-  padding: 10px;
+  padding: 0 10px 20px 10px;
 }
 
 @media screen and (min-width: 992px) {
@@ -283,7 +277,22 @@ select:focus {
 
 .rates-wrapper h3 {
   font-size: 17px;
-  padding-top: 12px;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .rates-wrapper h3 {
+    text-indent: -10px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .rates-wrapper h3 {
+    text-indent: -10px;
+    padding-left: 20px;
+  }
 }
 
 .rates-wrapper h3 a {
@@ -292,6 +301,12 @@ select:focus {
 
 .rates-wrapper h3 a:hover {
   text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+  .rates-wrapper h3 {
+    padding-top: 12px;
+  }
 }
 
 .rates-wrapper span {
@@ -324,11 +339,18 @@ select:focus {
 .rates-wrapper .rate-description {
   color: rgba(51, 50, 50, 0.8);
   font-size: 15px;
+  display: none;
 }
 
 .rates-wrapper .rate-description ul {
   list-style-position: inside;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 992px) {
+  .rates-wrapper .rate-description {
+    max-width: 550px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -341,6 +363,23 @@ select:focus {
   color: #6abb91;
   font-size: 12px;
   font-weight: 500;
+}
+
+.rates-wrapper .rate-container {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 20px;
+}
+
+.rates-wrapper .rate-container:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.rates-wrapper .rate-container:first-child {
+  border-top: 1px solid #d8d8d8;
+  padding-top: 20px;
 }
 
 @media screen and (min-width: 992px) {
@@ -485,7 +524,7 @@ body {
 }
 
 .hotel-gallery {
-  background: linear-gradient(104deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)), url("https://www.ahstatic.com/photos/9399_ho_00_p_1024x768.jpg") no-repeat center center;
+  background: linear-gradient(104deg, rgba(51, 50, 50, 0.5), rgba(26, 25, 25, 0) 85%, rgba(26, 26, 26, 0) 81%, rgba(0, 0, 0, 0)), url("https://www.ahstatic.com/photos/9399_ho_00_p_1024x768.jpg") no-repeat center center;
   height: 240px;
   width: 100%;
   position: absolute;
