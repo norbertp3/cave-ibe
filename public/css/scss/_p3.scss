@@ -4,6 +4,14 @@
     bottom: 10px;
     left: 10px;
 }
+.icon-info {
+    background: url("../../../public/images/icons/p3/icon-info-dark-default.svg");
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 // Hotel Info Buttons
 .hotel-info-buttons .btn-primary {
@@ -98,6 +106,10 @@
     h3 {
         font-size: 17px;
         margin-bottom: 20px;
+        @include mQmax (992px) {
+            text-indent: -24px;
+            padding-left: 24px;
+        }
     }
     h2 {
         font-size: 30px;
@@ -147,12 +159,23 @@
         }
     }
 }
-.room-wrapper img {
+.room-wrapper .room-image {
     height: 184px;
     width: 100%;
-    object-fit: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
     @include mQ(992px) {
         width: 300px;
+    }
+    .icon-open-gallery {
+        bottom: 10px;
+        left: auto;
+        right: 10px;
     }
 }
 .rates-wrapper {
@@ -162,18 +185,13 @@
         padding: 30px;
     }
     h3 {
-        font-size: 17px;
+        font-size: 15px;
         padding-top: 0;
         padding-bottom: 10px;
-        @include mQmax (991px) {
-            text-indent: -10px;
-            padding-left: 20px;
-        }
         @include mQmax (1200px) {
-            text-indent: -10px;
-            padding-left: 20px;
+            text-indent: -24px;
+            padding-left: 24px;
         }
-
         a {
             color: $primaryColor;
             &:hover {
@@ -181,7 +199,7 @@
             }
         }
         @include mQ(992px) {
-            padding-top: 12px;
+            padding-bottom: 0;
         }
     }
     span {
@@ -240,6 +258,10 @@
         &:first-child {
             border-top: 1px solid #d8d8d8;
             padding-top: 20px;
+            @include mQ(992px) {
+                border-top: none;
+                padding-top: 0;
+            }
         }
     }
 }

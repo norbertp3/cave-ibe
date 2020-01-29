@@ -15,6 +15,18 @@ h1, h2, h3, h4, h5, h6 {
 button {
     margin-bottom: 0;
 }
+a {
+    color: $primaryColor;
+    &:hover {
+        color: $primaryColor;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    &:focus {
+        color: $primaryColor;
+        text-decoration: none;
+    }
+}
 
 // Bootstrap buttons reset
 
