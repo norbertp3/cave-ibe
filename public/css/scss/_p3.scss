@@ -12,6 +12,14 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.icon-info-white {
+    background: url("../../../public/images/icons/p3/icon-info-light-default.svg");
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .icon-chevron-right {
     // background: url("../../../public/images/icons/p3/icon-chevron-white-right.svg");
     -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
@@ -53,6 +61,14 @@
 }
 .select-rate-btn:hover .icon-chevron-right {
     background-color: $primaryColor;
+}
+.icon-search-white {
+    background: url("../../../public/images/icons/p3/icon-new-search.svg");
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .circle-backround {

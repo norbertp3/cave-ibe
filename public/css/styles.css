@@ -109,6 +109,15 @@ form select::-ms-expand {
   background-position: center;
 }
 
+.icon-info-white {
+  background: url("../../../public/images/icons/p3/icon-info-light-default.svg");
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .icon-chevron-right {
   -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
   mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
@@ -152,6 +161,15 @@ form select::-ms-expand {
 
 .select-rate-btn:hover .icon-chevron-right {
   background-color: #333232;
+}
+
+.icon-search-white {
+  background: url("../../../public/images/icons/p3/icon-new-search.svg");
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .circle-backround {
@@ -849,5 +867,15 @@ body {
   position: relative;
   top: 4px;
   left: 5px;
+}
+
+.icon-info-white, .icon-search-white {
+  position: relative;
+  top: 3px;
+}
+
+.icon-info {
+  position: relative;
+  top: 1px;
 }
 /*# sourceMappingURL=styles.css.map */
