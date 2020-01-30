@@ -12,7 +12,55 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.icon-chevron-right {
+    // background: url("../../../public/images/icons/p3/icon-chevron-white-right.svg");
+    -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+    mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+    background-color: white;
+    height: 19px;
+    width: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-chevron-down {
+    // background: url("../../../public/images/icons/p3/icon-chevron-white-right.svg");
+    -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-down.svg);
+    mask-image: url(../../../public/images/icons/p3/icon-chevron-white-down.svg);
+    background-color: white;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-chevron-up {
+    // background: url("../../../public/images/icons/p3/icon-chevron-white-right.svg");
+    -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-up.svg);
+    mask-image: url(../../../public/images/icons/p3/icon-chevron-white-up.svg);
+    background-color: white;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.view-rates-btn:hover .icon-chevron-down {
+    background-color: $primaryColor;
+}
+.view-rates-btn:hover .icon-chevron-up {
+    background-color: $primaryColor;
+}
+.select-rate-btn:hover .icon-chevron-right {
+    background-color: $primaryColor;
+}
 
+.circle-backround {
+    background-color: #000;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+}
 // Hotel Info Buttons
 .hotel-info-buttons .btn-primary {
     margin-right: 20px;

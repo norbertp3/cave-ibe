@@ -175,7 +175,7 @@ body {
   background-color: $bookingSummaryBackgroundColor;
   padding: 10px 10px;
   @include mQ(992px) {
-      padding: 38px 30px;
+      padding: 30px;
   }
   h2 {
       font-size: 20px;
@@ -257,4 +257,15 @@ body {
   @include mQ (992px) {
     padding-left: 20px;
   }
+}
+.open-booking-summery {
+  background: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+}
+.open-booking-summery .icon-chevron-down {
+  position: relative;
+  top: 4px;
+  left: 5px;
 }

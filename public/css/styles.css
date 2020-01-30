@@ -74,8 +74,24 @@ a:focus {
   border-color: #333232;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-size: 10px;
+  background-position: calc(100% - 8px) 50%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-image: url(../../public/images/icons/p3/dropdown-arrows.svg);
+  padding: 4px 23px 4px 10px;
+}
+
 select:focus {
   outline: none;
+}
+
+form select::-ms-expand {
+  display: none;
 }
 
 .icon-open-gallery {
@@ -91,6 +107,58 @@ select:focus {
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.icon-chevron-right {
+  -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+  mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+  background-color: white;
+  height: 19px;
+  width: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-chevron-down {
+  -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-down.svg);
+  mask-image: url(../../../public/images/icons/p3/icon-chevron-white-down.svg);
+  background-color: white;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-chevron-up {
+  -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-up.svg);
+  mask-image: url(../../../public/images/icons/p3/icon-chevron-white-up.svg);
+  background-color: white;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.view-rates-btn:hover .icon-chevron-down {
+  background-color: #333232;
+}
+
+.view-rates-btn:hover .icon-chevron-up {
+  background-color: #333232;
+}
+
+.select-rate-btn:hover .icon-chevron-right {
+  background-color: #333232;
+}
+
+.circle-backround {
+  background-color: #000;
+  border-radius: 25px;
+  width: 30px;
+  height: 30px;
 }
 
 .hotel-info-buttons .btn-primary {
@@ -675,7 +743,7 @@ body {
 
 @media screen and (min-width: 992px) {
   .desktop-sign-up {
-    padding: 38px 30px;
+    padding: 30px;
   }
 }
 
@@ -768,5 +836,18 @@ body {
   .pl-20 {
     padding-left: 20px;
   }
+}
+
+.open-booking-summery {
+  background: #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+}
+
+.open-booking-summery .icon-chevron-down {
+  position: relative;
+  top: 4px;
+  left: 5px;
 }
 /*# sourceMappingURL=styles.css.map */

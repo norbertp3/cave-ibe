@@ -39,3 +39,9 @@ $('.view-rates-btn').click(function(){
 $('.rate-name').click(function(){
   $(this).closest('.rate-container').find('.rate-description').slideToggle();
 });
+$(".view-rates-btn").click(function(){
+  $(".icon-chevron-down").toggleClass("icon-chevron-up");
+});
+$(".open-booking-summery").click(function(){
+  $(".icon-chevron-down").toggleClass("icon-chevron-up");
+});
