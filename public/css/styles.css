@@ -9,8 +9,8 @@
   outline: none;
 }
 
-body {
-  overflow-y: none;
+html, body {
+  overflow-x: hidden !important;
 }
 
 p {
