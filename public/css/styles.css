@@ -9,6 +9,10 @@
   outline: none;
 }
 
+body {
+  overflow-y: none;
+}
+
 p {
   margin-bottom: 0;
 }
@@ -286,6 +290,13 @@ form select::-ms-expand {
   -webkit-box-shadow: inset 0px 0px 0px 1px #d8d8d8;
           box-shadow: inset 0px 0px 0px 1px #d8d8d8;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .px-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .room-content {
@@ -731,7 +742,7 @@ body {
 
 .booking-summary-data p {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .booking-summary-data p:nth-child(even) {

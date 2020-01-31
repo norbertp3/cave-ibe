@@ -20,7 +20,7 @@ if ($(window).width() < 991) {
   //   });
   // })
   $('.rate-name').click(function(){
-    $(this).find('.rate-description').detach().insertAfter($(this).closest('.rate-container').find('.rate-name'));
+    $(this).closest('.rate-container').find('.rate-description').detach().insertAfter($(this).closest('.rate-container').find('.rate-name'));
   });
 }
 
@@ -44,4 +44,9 @@ $(".view-rates-btn").click(function(){
 });
 $(".open-booking-summery").click(function(){
   $(".icon-chevron-down").toggleClass("icon-chevron-up");
+});
+
+// Slick slider single Item
+$('.single-item').slick({
+  arrows: true,
 });

@@ -163,7 +163,12 @@
     box-shadow: inset 0px 0px 0px 1px #d8d8d8;
     margin-bottom: 30px;
 }
-
+.px-10 {
+    @include mQmax (991px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 // Room with Rates Details
 .room-content {
     padding: 20px 10px 20px 10px;
