@@ -334,3 +334,13 @@
         }
     }
 }
+
+// Slick
+.slick-prev {
+    z-index: 100;
+    left: 10px;
+}
+.slick-next {
+    z-index: 100;
+    right: 10px;
+}

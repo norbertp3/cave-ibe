@@ -49,4 +49,5 @@ $(".open-booking-summery").click(function(){
 // Slick slider single Item
 $('.single-item').slick({
   arrows: true,
+  autoplay: true
 });

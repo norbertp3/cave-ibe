@@ -518,6 +518,16 @@ form select::-ms-expand {
   }
 }
 
+.slick-prev {
+  z-index: 100;
+  left: 10px;
+}
+
+.slick-next {
+  z-index: 100;
+  right: 10px;
+}
+
 @media screen and (min-width: 992px) {
   header {
     margin: 20px 0;
