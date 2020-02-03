@@ -301,6 +301,7 @@ form select::-ms-expand {
 
 .room-content {
   padding: 20px 10px 20px 10px;
+  position: relative;
 }
 
 .room-content h3 {
@@ -377,6 +378,27 @@ form select::-ms-expand {
 .room-content .view-rates-btn img {
   height: 14px;
   width: 14px;
+}
+
+.room-content .room-ribbon {
+  position: absolute;
+  top: -15px;
+  right: -76px;
+}
+
+.room-content .room-ribbon span {
+  position: relative;
+  left: -105px;
+  top: -5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 991px) {
+  .room-content .room-ribbon {
+    display: none;
+  }
 }
 
 .room-wrapper .room-image {
@@ -498,6 +520,7 @@ form select::-ms-expand {
   padding-bottom: 20px;
   border-bottom: 1px solid #d8d8d8;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .rates-wrapper .rate-container:last-child {
@@ -518,14 +541,47 @@ form select::-ms-expand {
   }
 }
 
+.rates-wrapper .rate-ribbon {
+  position: absolute;
+  top: -15px;
+  left: -40px;
+}
+
+.rates-wrapper .rate-ribbon span {
+  position: relative;
+  left: -117px;
+  top: -5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 991px) {
+  .rates-wrapper .rate-ribbon {
+    display: none;
+  }
+}
+
 .slick-prev {
   z-index: 100;
   left: 10px;
 }
 
+.slick-prev:before {
+  content: url(../../../public/images/icons/p3/icon-chevron-white-left.svg);
+}
+
 .slick-next {
   z-index: 100;
   right: 10px;
+}
+
+.slick-next:before {
+  content: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+}
+
+.strike-through {
+  text-decoration: line-through;
 }
 
 @media screen and (min-width: 992px) {

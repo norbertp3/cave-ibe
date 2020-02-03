@@ -21,7 +21,6 @@
     background-position: center;
 }
 .icon-chevron-right {
-    // background: url("../../../public/images/icons/p3/icon-chevron-white-right.svg");
     -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
     mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
     background-color: white;
@@ -32,7 +31,6 @@
     background-position: center;
 }
 .icon-chevron-down {
-    // background: url("../../../public/images/icons/p3/icon-chevron-white-right.svg");
     -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-down.svg);
     mask-image: url(../../../public/images/icons/p3/icon-chevron-white-down.svg);
     background-color: white;
@@ -43,7 +41,6 @@
     background-position: center;
 }
 .icon-chevron-up {
-    // background: url("../../../public/images/icons/p3/icon-chevron-white-right.svg");
     -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-up.svg);
     mask-image: url(../../../public/images/icons/p3/icon-chevron-white-up.svg);
     background-color: white;
@@ -172,6 +169,7 @@
 // Room with Rates Details
 .room-content {
     padding: 20px 10px 20px 10px;
+    position: relative;
     h3 {
         font-size: 17px;
         margin-bottom: 20px;
@@ -225,6 +223,22 @@
         img {
             height: 14px;
             width: 14px;
+        }
+    }
+    .room-ribbon {
+        position: absolute;
+        top: -15px;
+        right: -76px;
+        span {
+            position: relative;
+            left: -105px;
+            top: -5px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        @include mQmax(991px) {
+            display: none;
         }
     }
 }
@@ -319,6 +333,7 @@
         padding-bottom: 20px;
         border-bottom: 1px solid #d8d8d8;
         margin-bottom: 20px;
+        position: relative;
         &:last-child {
             border-bottom: none;
             margin-bottom: 0;
@@ -333,14 +348,39 @@
             }
         }
     }
+    .rate-ribbon {
+        position: absolute;
+        top: -15px;
+        left: -40px;
+        span {
+            position: relative;
+            left: -117px;
+            top: -5px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        @include mQmax(991px) {
+            display: none;
+        }
+    }
 }
 
 // Slick
 .slick-prev {
     z-index: 100;
     left: 10px;
+    &:before {
+        content: url(../../../public/images/icons/p3/icon-chevron-white-left.svg);
+    }
 }
 .slick-next {
     z-index: 100;
     right: 10px;
+    &:before {
+        content: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+    }
+}
+.strike-through {
+    text-decoration: line-through;
 }
