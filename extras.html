@@ -28,7 +28,7 @@
     <!-- Mobile Nav -->
     <div class="d-lg-none">
       <nav class="navbar navbar-expand-xl navbar-light">
-        <div class="mobile-nav-top w-100 d-flex justify-content-between align-items-center">
+        <div class="mobile-nav-top d-flex justify-content-between align-items-center w-100">
           <a href="#"><img src="/public/images/redworth_logo-1.png" class="logo"></a>
           <form action="" method="get" id="currencyConverter" class="dropdown-currency">
             <input type="hidden" name="redirect">
@@ -139,6 +139,7 @@
             <button class="btn btn-btn-secondary edit-search-btn d-none d-lg-block">Edit</button>
             <a href="javascript:;" class="open-booking-summery d-lg-none"><i class="icon-chevron-down"></i></a>
           </div>
+          <!-- END Booking Summary Heading -->
           <div class="booking-summary-data">
             <div class="booking-summary-table">
               <div class="booking-row">
@@ -175,6 +176,7 @@
           </div>
         </section>
         <!-- End Booking Summary P3B -->
+
         <div class="desktop-sign-up d-none d-lg-block d-xl-flex">
           <img src="/public/images/img-join.jpg" class="d-none d-xl-block">
           <img src="/public/images/img-join-landscape.png" class="d-xl-none mb-3" height="100px" width="100%">
@@ -191,23 +193,30 @@
 
         <!-- Progress Steps -->
         <section id="progress-steps">
+
+          <!-- Pregress Steps Mobile -->
           <div class="progress-steps-mobile d-flex d-lg-none align-items-center">
-            <img src="public/images/icons/progress-wheel-1-of-5.svg" alt="">
+            <img src="public/images/icons/progress-wheel-3-of-5.svg" alt="">
             <div>
-              <h3>Choose Room 1 of 2</h3>
-              <span>Next : Choose Room 2</span>
+              <h3>Add Extras Room 1</h3>
+              <span>Next : Add Extras Room 2</span>
             </div>
           </div>
+          <!-- END Pregress Steps Mobile -->
+
+          <!-- Progress Steps Desktop -->
           <div class="pregress-steps-desktop text-center d-none d-lg-flex justify-content-between align-items-center">
-            <p class="active">Choose room 1</p>
-            <img src="public/images/icons/p3/icon-chevron-dark-right.svg">
-            <p>Choose room 2</p>
-            <img src="public/images/icons/p3/icon-chevron-dark-right.svg">
-            <p>Extras Room 1</p>
-            <img src="public/images/icons/p3/icon-chevron-dark-right.svg">
-            <p>Extras Room 2</p>
-            <img src="public/images/icons/p3/icon-chevron-dark-right.svg">
-            <p>Your Details</p>
+            <div class="d-flex">
+              <p class="step-complete">Choose room 1</p>
+              <i class="icon-progress-step-separator-complete"></i>
+              <p class="step-complete">Choose room 2</p>
+              <i class="icon-progress-step-separator-complete"></i>
+              <p class="active">Extras Room 1</p>
+              <i class="icon-progress-step-separator"></i>
+              <p>Extras Room 2</p>
+              <i class="icon-progress-step-separator"></i>
+              <p>Your Details</p>
+            </div>
             <form action="" method="get" id="currencyConverter" class="dropdown-currency">
               <input type="hidden" name="redirect">
               <select id="currency-options" class="price-select" name="currencyCode" onchange="">
@@ -217,15 +226,99 @@
               </select>
             </form>
           </div>
+          <!--End Progress Steps Desktop -->
+
         </section>
         <!-- End Progress Steps -->
 
-        <!-- Start Room with Rates -->
-        <section class="card-style">
+        <!-- Start Addons Heading -->
+        <div class="addon-heading-row align-items-center justify-content-between d-none d-lg-flex">
+          <div class="addon-heading d-flex align-items-end">
+            <h2>Enhance Your Stay</h2>
+            <span>(Room 1 of 2)</span>
+          </div>
+          <button class="btn btn-primary skip-btn">SKIP THIS STEP</button>
+        </div>
+        <!-- END Start Addons Heading -->
 
+        <!-- Start Addons Cards P3B LOOP -->
+        <section class="card-style addon-with-checkbox-wrapper d-flex">
+          <img src="public/images/img-extra.jpg" alt="addon img" class="d-none d-lg-block">
+          <div class="row addon-content ">
+            <div class="col-12 col-lg-5">
+              <h3>Breakfast Buffet</h3>
+              <p class="mb-lg-0">What better way to start the day than with a good hearty breakfast. </p>
+            </div>
+            <div class="col-4 col-lg-3 addon-price my-auto">
+              <h4>£24.00</h4>
+              <span>at £12.00 per person</span>
+            </div>
+            <div class="col-8 col-lg-4 my-auto">
+              <div class="form-check mb-2">
+                <label class="form-check-label" for="defaultCheck1">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <span class="custom-check"></span>
+                    1st Morning (£24.00)
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" for="defaultCheck2">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                  <span class="custom-check"></span>
+                    1st Morning (£24.00)
+                </label>
+              </div>
+            </div>
+          </div>
         </section>
+        <section class="card-style addon-with-checkbox-wrapper d-flex">
+          <img src="public/images/img-extra.jpg" alt="addon img" class="d-none d-lg-block">
+          <div class="row addon-content">
+            <div class="col-12 col-lg-5">
+              <h3>Breakfast Buffet</h3>
+              <p class="mb-lg-0">What better way to start the day than with a good hearty breakfast. </p>
+            </div>
+            <div class="col-4 col-lg-3 addon-price my-auto">
+              <h4>£50.00</h4>
+              <span>per booking</span>
+            </div>
+            <div class="col-8 col-lg-4 my-auto">
+              <div class="form-check mb-2">
+                <label class="form-check-label" for="defaultCheck3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                  <span class="custom-check"></span>
 
-        
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="card-style addon-with-checkbox-wrapper d-flex">
+          <img src="public/images/img-extra.jpg" alt="addon img" class="d-none d-lg-block">
+          <div class="row addon-content ">
+            <div class="col-12 col-lg-5">
+              <h3>Breakfast Buffet</h3>
+              <p class="mb-lg-0">What better way to start the day than with a good hearty breakfast. </p>
+            </div>
+            <div class="col-4 col-lg-3 addon-price my-auto">
+              <h4>£50.00</h4>
+              <span>per booking</span>
+            </div>
+            <div class="col-8 col-lg-4 my-auto">
+              <div class="form-check mb-2">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- End Room with Rates -->
       </div>
     </div>

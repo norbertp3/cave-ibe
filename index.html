@@ -16,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.css">
-
     <!-- Main CSS -->
     <link rel="stylesheet" href="public/css/styles.css">
 
@@ -189,6 +188,7 @@
       <div class="col-12 col-lg-8 pl-20 px-10">
         <!-- Progress Steps -->
         <section id="progress-steps">
+          <!-- Progress Steps Mobile -->
           <div class="progress-steps-mobile d-flex d-lg-none align-items-center">
             <img src="public/images/icons/progress-wheel-1-of-5.svg" alt="">
             <div>
@@ -196,16 +196,21 @@
               <span>Next : Choose Room 2</span>
             </div>
           </div>
+          <!-- End Progress Steps Mobile -->
+
+          <!-- Progress Steps Desktop -->
           <div class="pregress-steps-desktop text-center d-none d-lg-flex justify-content-between align-items-center">
-            <p class="active">Choose room 1</p>
-            <img src="public/images/icons/p3/icon-chevron-dark-right.svg">
-            <p>Choose room 2</p>
-            <img src="public/images/icons/p3/icon-chevron-dark-right.svg">
-            <p>Extras Room 1</p>
-            <img src="public/images/icons/p3/icon-chevron-dark-right.svg">
-            <p>Extras Room 2</p>
-            <img src="public/images/icons/p3/icon-chevron-dark-right.svg">
-            <p>Your Details</p>
+            <div class="d-flex">
+              <p class="step-complete">Choose room 1</p>
+              <i class="icon-progress-step-separator-complete"></i>
+              <p class="step-complete">Choose room 2</p>
+              <i class="icon-progress-step-separator-complete"></i>
+              <p class="active">Extras Room 1</p>
+              <i class="icon-progress-step-separator"></i>
+              <p>Extras Room 2</p>
+              <i class="icon-progress-step-separator"></i>
+              <p>Your Details</p>
+            </div>
             <form action="" method="get" id="currencyConverter" class="dropdown-currency">
               <input type="hidden" name="redirect">
               <select id="currency-options" class="price-select" name="currencyCode" onchange="">
@@ -215,61 +220,64 @@
               </select>
             </form>
           </div>
+          <!--End Progress Steps Desktop -->
+
         </section>
         <!-- End Progress Steps -->
 
-
-
-        <!-- Start Room with Rates -->
+        <!-- Start Room With Rates P3B LOOP -->
         <section class="card-style room-with-rates-wrapper">
           <div class="room-wrapper d-lg-flex">
-             <!-- Mobile Room Slider -->
+
+             <!-- Mobile Room Slider LOOP-->
               <div class="single-item d-lg-none">
-                  <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
-                    <a href="#">
-                      <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-                    </a>
+                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('../../public/images/room-image.png')";>
                   </div>
-                  <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
-                    <a href="#">
-                      <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-                    </a>
+                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('../../public/images/room-image.png')";>
                   </div>
-                  <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
-                    <a href="#">
-                      <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-                    </a>
+                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('../../public/images/room-image.png')";>
                   </div>
               </div>
+              <!-- END Mobile Room Slider LOOP-->
+
               <!-- Desktop Img -->
               <div class="d-none d-lg-block">
-                <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
-                  <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-                </div>
-              </div>
-            <div class="room-content d-block d-lg-flex justify-content-between w-100">
-              <div class="room-ribbon">
-                <img src="public/images/icons/p3/ribbons/urgent-ribbon.svg" alt="">
-                <span>Only 1 left</span>
-              </div>
-              <div class="room-left-side">
-                <a href="#">
-                  <h3><i class="icon-info d-inline-block d-lg-none mr-1"></i> Standard Single Room <i class="icon-info d-none d-lg-inline-block ml-1"></i></h3>
+                <a href="javascript:;">
+                  <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
+                    <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
+                  </div>
                 </a>
-                <span class="d-none d-lg-block">Sleeps 1<span>
               </div>
-              <div class="d-flex justify-content-between align-items-end d-lg-block room-right-side">
-                <div class="price-section">
-                  <span class="strike-through d-none d-lg-block">€77.00</span>
-                  <h2><span class="from-spam">from</span><span class="main-price-curreny">€ </span>67<span class="price-after-decimal">.50</span></h2>
-                  <span class="num-nights d-none d-lg-block">1 night</span>
+              <!--END Desktop Img -->
+
+              <!-- Room Content -->
+              <div class="room-content d-block d-lg-flex justify-content-between w-100">
+                <div class="room-ribbon">
+                  <img src="public/images/icons/p3/ribbons/urgent-ribbon.svg" alt="">
+                  <span>Only 1 left</span>
                 </div>
-                <button class="btn btn-primary view-rates-btn">View Rates <i
-                    class="fa icon-chevron-down"></i></button>
+                <div class="room-left-side">
+                  <a href="#">
+                    <h3><i class="icon-info d-inline-block d-lg-none mr-1"></i> Standard Single Room <i class="icon-info d-none d-lg-inline-block ml-1"></i></h3>
+                  </a>
+                  <span class="d-none d-lg-block">Sleeps 1<span>
+                </div>
+                <div class="d-flex justify-content-between align-items-end d-lg-block room-right-side">
+                  <div class="price-section">
+                    <span class="strike-through d-none d-lg-block">€77.00</span>
+                    <h2><span class="from-spam">from</span><span class="main-price-curreny">€ </span>67<span class="price-after-decimal">.50</span></h2>
+                    <span class="num-nights d-none d-lg-block">1 night</span>
+                  </div>
+                  <button class="btn btn-primary view-rates-btn">View Rates <i
+                      class="fa icon-chevron-down"></i></button>
+                </div>
               </div>
-            </div>
+              <!-- END Room Content -->
+
           </div>
           <div class="rates-wrapper">
+
+            <!-- Single Rate Container LOOP -->
             <div class="rate-container">
               <div class="d-block d-lg-flex justify-content-between align-items-center">
                 <h3 class="rate-name"><a href="javascript:;"><i class="icon-info d-inline-block d-lg-none mr-1"></i> Room Only - Pay Now,
@@ -295,6 +303,8 @@
                   this rate. </p>
               </div>
             </div>
+            <!-- End Single Rate LOOP-->
+
             <div class="rate-container">
               <div class="rate-ribbon">
                 <img src="public/images/icons/p3/ribbons/cancel-ribbon.svg" alt="">
@@ -326,55 +336,59 @@
             </div>
           </div>
         </section>
+        <!-- Start Room With Rates P3B LOOP -->
         <section class="card-style room-with-rates-wrapper">
           <div class="room-wrapper d-lg-flex">
-             <!-- Mobile Room Slider -->
+
+             <!-- Mobile Room Slider LOOP-->
               <div class="single-item d-lg-none">
-                  <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
-                    <a href="#">
-                      <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-                    </a>
+                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('../../public/images/room-image.png')";>
                   </div>
-                  <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
-                    <a href="#">
-                      <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-                    </a>
+                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('../../public/images/room-image.png')";>
                   </div>
-                  <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
-                    <a href="#">
-                      <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-                    </a>
+                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('../../public/images/room-image.png')";>
                   </div>
               </div>
+              <!-- END Mobile Room Slider LOOP-->
+
               <!-- Desktop Img -->
               <div class="d-none d-lg-block">
-                <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
-                  <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-                </div>
-              </div>
-            <div class="room-content d-block d-lg-flex justify-content-between w-100">
-              <div class="room-ribbon">
-                <img src="public/images/icons/p3/ribbons/urgent-ribbon.svg" alt="">
-                <span>Only 1 left</span>
-              </div>
-              <div class="room-left-side">
-                <a href="#">
-                  <h3><i class="icon-info d-inline-block d-lg-none mr-1"></i> Standard Single Room <i class="icon-info d-none d-lg-inline-block ml-1"></i></h3>
+                <a href="javascript:;">
+                  <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
+                    <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
+                  </div>
                 </a>
-                <span class="d-none d-lg-block">Sleeps 1<span>
               </div>
-              <div class="d-flex justify-content-between align-items-end d-lg-block room-right-side">
-                <div class="price-section">
-                  <span class="strike-through d-none d-lg-block">€77.00</span>
-                  <h2><span class="from-spam">from</span><span class="main-price-curreny">€ </span>67<span class="price-after-decimal">.50</span></h2>
-                  <span class="num-nights d-none d-lg-block">1 night</span>
+              <!--END Desktop Img -->
+
+              <!-- Room Content -->
+              <div class="room-content d-block d-lg-flex justify-content-between w-100">
+                <div class="room-ribbon">
+                  <img src="public/images/icons/p3/ribbons/urgent-ribbon.svg" alt="">
+                  <span>Only 1 left</span>
                 </div>
-                <button class="btn btn-primary view-rates-btn">View Rates <i
-                    class="fa icon-chevron-down"></i></button>
+                <div class="room-left-side">
+                  <a href="#">
+                    <h3><i class="icon-info d-inline-block d-lg-none mr-1"></i> Standard Single Room <i class="icon-info d-none d-lg-inline-block ml-1"></i></h3>
+                  </a>
+                  <span class="d-none d-lg-block">Sleeps 1<span>
+                </div>
+                <div class="d-flex justify-content-between align-items-end d-lg-block room-right-side">
+                  <div class="price-section">
+                    <span class="strike-through d-none d-lg-block">€77.00</span>
+                    <h2><span class="from-spam">from</span><span class="main-price-curreny">€ </span>67<span class="price-after-decimal">.50</span></h2>
+                    <span class="num-nights d-none d-lg-block">1 night</span>
+                  </div>
+                  <button class="btn btn-primary view-rates-btn">View Rates <i
+                      class="fa icon-chevron-down"></i></button>
+                </div>
               </div>
-            </div>
+              <!-- END Room Content -->
+
           </div>
           <div class="rates-wrapper">
+
+            <!-- Single Rate Container LOOP -->
             <div class="rate-container">
               <div class="d-block d-lg-flex justify-content-between align-items-center">
                 <h3 class="rate-name"><a href="javascript:;"><i class="icon-info d-inline-block d-lg-none mr-1"></i> Room Only - Pay Now,
@@ -400,6 +414,8 @@
                   this rate. </p>
               </div>
             </div>
+            <!-- End Single Rate LOOP-->
+
             <div class="rate-container">
               <div class="rate-ribbon">
                 <img src="public/images/icons/p3/ribbons/cancel-ribbon.svg" alt="">
@@ -431,55 +447,59 @@
             </div>
           </div>
         </section>
+        <!-- Start Room With Rates P3B LOOP -->
         <section class="card-style room-with-rates-wrapper">
           <div class="room-wrapper d-lg-flex">
-             <!-- Mobile Room Slider -->
+
+             <!-- Mobile Room Slider LOOP-->
               <div class="single-item d-lg-none">
-                  <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
-                    <a href="#">
-                      <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-                    </a>
+                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('../../public/images/room-image.png')";>
                   </div>
-                  <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
-                    <a href="#">
-                      <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-                    </a>
+                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('../../public/images/room-image.png')";>
                   </div>
-                  <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
-                    <a href="#">
-                      <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-                    </a>
+                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('../../public/images/room-image.png')";>
                   </div>
               </div>
+              <!-- END Mobile Room Slider LOOP-->
+
               <!-- Desktop Img -->
               <div class="d-none d-lg-block">
-                <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
-                  <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-                </div>
-              </div>
-            <div class="room-content d-block d-lg-flex justify-content-between w-100">
-              <div class="room-ribbon">
-                <img src="public/images/icons/p3/ribbons/urgent-ribbon.svg" alt="">
-                <span>Only 1 left</span>
-              </div>
-              <div class="room-left-side">
-                <a href="#">
-                  <h3><i class="icon-info d-inline-block d-lg-none mr-1"></i> Standard Single Room <i class="icon-info d-none d-lg-inline-block ml-1"></i></h3>
+                <a href="javascript:;">
+                  <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) ,url('../../public/images/room-image.png')";>
+                    <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
+                  </div>
                 </a>
-                <span class="d-none d-lg-block">Sleeps 1<span>
               </div>
-              <div class="d-flex justify-content-between align-items-end d-lg-block room-right-side">
-                <div class="price-section">
-                  <span class="strike-through d-none d-lg-block">€77.00</span>
-                  <h2><span class="from-spam">from</span><span class="main-price-curreny">€ </span>67<span class="price-after-decimal">.50</span></h2>
-                  <span class="num-nights d-none d-lg-block">1 night</span>
+              <!--END Desktop Img -->
+
+              <!-- Room Content -->
+              <div class="room-content d-block d-lg-flex justify-content-between w-100">
+                <div class="room-ribbon">
+                  <img src="public/images/icons/p3/ribbons/urgent-ribbon.svg" alt="">
+                  <span>Only 1 left</span>
                 </div>
-                <button class="btn btn-primary view-rates-btn">View Rates <i
-                    class="fa icon-chevron-down"></i></button>
+                <div class="room-left-side">
+                  <a href="#">
+                    <h3><i class="icon-info d-inline-block d-lg-none mr-1"></i> Standard Single Room <i class="icon-info d-none d-lg-inline-block ml-1"></i></h3>
+                  </a>
+                  <span class="d-none d-lg-block">Sleeps 1<span>
+                </div>
+                <div class="d-flex justify-content-between align-items-end d-lg-block room-right-side">
+                  <div class="price-section">
+                    <span class="strike-through d-none d-lg-block">€77.00</span>
+                    <h2><span class="from-spam">from</span><span class="main-price-curreny">€ </span>67<span class="price-after-decimal">.50</span></h2>
+                    <span class="num-nights d-none d-lg-block">1 night</span>
+                  </div>
+                  <button class="btn btn-primary view-rates-btn">View Rates <i
+                      class="fa icon-chevron-down"></i></button>
+                </div>
               </div>
-            </div>
+              <!-- END Room Content -->
+
           </div>
           <div class="rates-wrapper">
+
+            <!-- Single Rate Container LOOP -->
             <div class="rate-container">
               <div class="d-block d-lg-flex justify-content-between align-items-center">
                 <h3 class="rate-name"><a href="javascript:;"><i class="icon-info d-inline-block d-lg-none mr-1"></i> Room Only - Pay Now,
@@ -505,6 +525,8 @@
                   this rate. </p>
               </div>
             </div>
+            <!-- End Single Rate LOOP-->
+
             <div class="rate-container">
               <div class="rate-ribbon">
                 <img src="public/images/icons/p3/ribbons/cancel-ribbon.svg" alt="">

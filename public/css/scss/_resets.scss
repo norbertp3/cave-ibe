@@ -75,7 +75,20 @@ select {
     padding: 4px 23px 4px 10px;
     &:focus {
         outline: none;
+        border-color: none;
+        box-shadow: none;
     }
+}
+.form-control {
+    &:focus {
+        background-color: #f2f2f2;
+        // box-shadow: inset 1px 1px 0 0 #d8d8d8;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #ccc;
 }
 
 form select::-ms-expand { display: none; }

@@ -50,6 +50,26 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.icon-progress-step-separator {
+    -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+    mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+    background-color: black;
+    height: 19px;
+    width: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-progress-step-separator-complete {
+    -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+    mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+    background-color: #6abb91;
+    height: 19px;
+    width: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .view-rates-btn:hover .icon-chevron-down {
     background-color: $primaryColor;
 }
@@ -73,6 +93,45 @@
     border-radius: 25px;
     width: 30px;
     height: 30px;
+}
+// Checkboxes
+.checkbox-group input {
+    height: auto;
+}
+span.custom-check {
+    background: #fff;
+    border: 1px solid hsla(198,5%,61%,.5);
+    margin-right: 10px;
+    border-radius: 0;
+}
+span.custom-check, span.custom-radio {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 0;
+    top: -2px;
+    position: relative;
+}
+input[type=checkbox]:checked+span.custom-check:after {
+    content: "\f00c";
+    font: normal normal normal 17px/1 FontAwesome;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    animation: form-zoom .5s ease-in-out;
+    padding: 0px 2px;
+    background: $primaryColor;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+}
+.form-check input[type=checkbox], .form-check input[type=radio], label input[type=checkbox], label input[type=radio] {
+    display: none;
+}
+.form-check {
+    padding-left: 0;
 }
 // Hotel Info Buttons
 .hotel-info-buttons .btn-primary {
@@ -162,8 +221,8 @@
 }
 .px-10 {
     @include mQmax (991px) {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 // Room with Rates Details
@@ -388,3 +447,96 @@
 .strike-through {
     text-decoration: line-through;
 }
+
+
+// Large Banner With Half Screen Image
+
+#banner {
+    background-color: $primaryColor;
+    color: #fff;
+    padding: 20px 0 27px 0;
+    position: relative;
+    margin-bottom: 30px;
+    h1 {
+        font-size: 20px;
+        margin-top: 19px;
+        margin-bottom: 32px;
+    }
+    p {
+        font-size: 16px;
+        margin-bottom: 53px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 16px;
+    }
+    @include mQ(992px) {
+        margin-bottom: 40px;
+    }
+}
+
+// Addons Page
+
+.addon-heading {
+    h2 {
+        font-size: 22px;
+        color: $primaryColor;
+        margin-right: 10px;
+    }
+    span {
+        font-size: 14px;
+        color: rgba(51, 50, 50, 0.5);
+    }
+}
+.addon-heading-row {
+    margin-bottom: 20px;
+    .skip-btn {
+        width: 148px;
+        height: 50px;
+    }
+}
+.addon-with-checkbox-wrapper {
+    img {
+        height: 86px;
+        width: 130px;
+        object-fit: cover;
+    }
+    .addon-content {
+        padding: 20px 10px;
+        @include mQ(992px) {
+            padding: 20px;
+            width: 100%;
+        }
+        h3 {
+            font-size: 17px;
+            color: $primaryColor;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 1.73;
+            color: rgba(51, 50, 50, 0.8);
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-size: 22px;
+            font-weight: 500;
+            color: $primaryColor;
+            font-weight: 500;
+        }
+        span {
+            color: rgba(51, 50, 50, 0.5);
+            font-size: 13px;
+            line-height: 1;
+        }
+        label {
+            font-size: 14px;
+            color: rgba(51, 50, 50, 0.8);
+            text-align: right;
+        }
+        .addon-price {
+            @include mQ (992px) {
+                text-align: center;
+            }
+        }
+    }
+}
+

@@ -92,6 +92,23 @@ select {
 
 select:focus {
   outline: none;
+  border-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-control {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #ccc;
+}
+
+.form-control:focus {
+  background-color: #f2f2f2;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #ccc;
 }
 
 form select::-ms-expand {
@@ -155,6 +172,28 @@ form select::-ms-expand {
   background-position: center;
 }
 
+.icon-progress-step-separator {
+  -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+  mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+  background-color: black;
+  height: 19px;
+  width: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-progress-step-separator-complete {
+  -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+  mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+  background-color: #6abb91;
+  height: 19px;
+  width: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .view-rates-btn:hover .icon-chevron-down {
   background-color: #333232;
 }
@@ -181,6 +220,51 @@ form select::-ms-expand {
   border-radius: 25px;
   width: 30px;
   height: 30px;
+}
+
+.checkbox-group input {
+  height: auto;
+}
+
+span.custom-check {
+  background: #fff;
+  border: 1px solid rgba(151, 158, 161, 0.5);
+  margin-right: 10px;
+  border-radius: 0;
+}
+
+span.custom-check, span.custom-radio {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 0;
+  top: -2px;
+  position: relative;
+}
+
+input[type=checkbox]:checked + span.custom-check:after {
+  content: "\f00c";
+  font: normal normal normal 17px/1 FontAwesome;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  -webkit-animation: form-zoom .5s ease-in-out;
+          animation: form-zoom .5s ease-in-out;
+  padding: 0px 2px;
+  background: #333232;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+
+.form-check input[type=checkbox], .form-check input[type=radio], label input[type=checkbox], label input[type=radio] {
+  display: none;
+}
+
+.form-check {
+  padding-left: 0;
 }
 
 .hotel-info-buttons .btn-primary {
@@ -294,8 +378,8 @@ form select::-ms-expand {
 
 @media screen and (max-width: 991px) {
   .px-10 {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -589,6 +673,109 @@ form select::-ms-expand {
   text-decoration: line-through;
 }
 
+#banner {
+  background-color: #333232;
+  color: #fff;
+  padding: 20px 0 27px 0;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#banner h1 {
+  font-size: 20px;
+  margin-top: 19px;
+  margin-bottom: 32px;
+}
+
+#banner p {
+  font-size: 16px;
+  margin-bottom: 53px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  #banner {
+    margin-bottom: 40px;
+  }
+}
+
+.addon-heading h2 {
+  font-size: 22px;
+  color: #333232;
+  margin-right: 10px;
+}
+
+.addon-heading span {
+  font-size: 14px;
+  color: rgba(51, 50, 50, 0.5);
+}
+
+.addon-heading-row {
+  margin-bottom: 20px;
+}
+
+.addon-heading-row .skip-btn {
+  width: 148px;
+  height: 50px;
+}
+
+.addon-with-checkbox-wrapper img {
+  height: 86px;
+  width: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.addon-with-checkbox-wrapper .addon-content {
+  padding: 20px 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .addon-with-checkbox-wrapper .addon-content {
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+.addon-with-checkbox-wrapper .addon-content h3 {
+  font-size: 17px;
+  color: #333232;
+  margin-bottom: 10px;
+}
+
+.addon-with-checkbox-wrapper .addon-content p {
+  font-size: 15px;
+  line-height: 1.73;
+  color: rgba(51, 50, 50, 0.8);
+  margin-bottom: 20px;
+}
+
+.addon-with-checkbox-wrapper .addon-content h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #333232;
+  font-weight: 500;
+}
+
+.addon-with-checkbox-wrapper .addon-content span {
+  color: rgba(51, 50, 50, 0.5);
+  font-size: 13px;
+  line-height: 1;
+}
+
+.addon-with-checkbox-wrapper .addon-content label {
+  font-size: 14px;
+  color: rgba(51, 50, 50, 0.8);
+  text-align: right;
+}
+
+@media screen and (min-width: 992px) {
+  .addon-with-checkbox-wrapper .addon-content .addon-price {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 992px) {
   header {
     margin: 20px 0;
@@ -701,33 +888,6 @@ body {
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-}
-
-#banner {
-  background-color: #333232;
-  color: #fff;
-  padding: 20px 0 27px 0;
-  position: relative;
-  margin-bottom: 30px;
-}
-
-#banner h1 {
-  font-size: 20px;
-  margin-top: 19px;
-  margin-bottom: 32px;
-}
-
-#banner p {
-  font-size: 16px;
-  margin-bottom: 53px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 16px;
-}
-
-@media screen and (min-width: 992px) {
-  #banner {
-    margin-bottom: 40px;
-  }
 }
 
 .hotel-gallery {
@@ -890,7 +1050,7 @@ body {
 
 #progress-steps .active {
   color: #333232;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .pregress-steps-desktop {
@@ -899,6 +1059,15 @@ body {
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid #d8d8d8;
+}
+
+.pregress-steps-desktop p, .pregress-steps-desktop i {
+  margin-right: 10px;
+}
+
+.pregress-steps-desktop .step-complete {
+  color: #6abb91;
+  font-weight: 500;
 }
 
 .progress-steps-mobile {
@@ -912,6 +1081,7 @@ body {
 .progress-steps-mobile h3 {
   font-size: 18px;
   color: #333232;
+  text-transform: uppercase;
 }
 
 .progress-steps-mobile span {
@@ -923,7 +1093,7 @@ body {
   border: none;
   font-size: 13px;
   color: rgba(51, 50, 50, 0.5);
-  margin-left: 70px;
+  margin-left: 30px;
 }
 
 @media screen and (min-width: 992px) {
@@ -959,5 +1129,20 @@ body {
 .icon-info {
   position: relative;
   top: 1px;
+}
+
+.form-check span {
+  -webkit-box-shadow: inset 1px 1px 0 0 #d8d8d8;
+          box-shadow: inset 1px 1px 0 0 #d8d8d8;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.addon-content select {
+  width: 70px;
+  height: 50px;
+  -webkit-box-shadow: inset 1px 1px 0 0 #d8d8d8;
+          box-shadow: inset 1px 1px 0 0 #d8d8d8;
+  background-color: #f2f2f2;
 }
 /*# sourceMappingURL=styles.css.map */

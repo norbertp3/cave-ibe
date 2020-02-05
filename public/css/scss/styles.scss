@@ -28,28 +28,6 @@ body {
     text-transform: uppercase;
 }
 
-#banner {
-    background-color: $primaryColor;
-    color: #fff;
-    padding: 20px 0 27px 0;
-    position: relative;
-    margin-bottom: 30px;
-    h1 {
-        font-size: 20px;
-        margin-top: 19px;
-        margin-bottom: 32px;
-    }
-    p {
-        font-size: 16px;
-        margin-bottom: 53px;
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 16px;
-    }
-    @include mQ(992px) {
-        margin-bottom: 40px;
-    }
-}
-
 .hotel-gallery {
     background: linear-gradient(104deg, rgba(51, 50, 50, 0.5), rgba(26, 25, 25, 0) 85%,rgba(26, 26, 26, 0) 81%, rgba(0, 0, 0, 0)), url("https://www.ahstatic.com/photos/9399_ho_00_p_1024x768.jpg") no-repeat center center;
     height: 240px;
@@ -217,7 +195,7 @@ body {
 #progress-steps {
   .active {
     color: $primaryColor;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 .pregress-steps-desktop {
@@ -226,6 +204,13 @@ body {
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid #d8d8d8;
+  p, i {
+    margin-right: 10px;
+  }
+  .step-complete {
+    color: #6abb91;
+    font-weight: 500;
+  }
 }
 .progress-steps-mobile {
   margin: 30px 0;
@@ -235,6 +220,7 @@ body {
   h3 {
     font-size: 18px;
     color: $primaryColor;
+    text-transform: uppercase;
   }
   span {
     font-size: 13px;
@@ -246,7 +232,7 @@ body {
   border: none;
   font-size: 13px;
   color: rgba(51, 50, 50, 0.5);
-  margin-left: 70px;
+  margin-left: 30px;
 }
 .pr-20 {
   @include mQ (992px) {
@@ -276,4 +262,15 @@ body {
 .icon-info {
   position: relative;
   top: 1px;
+}
+.form-check span {
+  box-shadow: inset 1px 1px 0 0 #d8d8d8;
+  background-color: #f2f2f2;
+  border: none;
+}
+.addon-content select {
+  width: 70px;
+  height: 50px;
+  box-shadow: inset 1px 1px 0 0 #d8d8d8;
+  background-color: #f2f2f2;
 }
