@@ -273,4 +273,24 @@ body {
   height: 50px;
   box-shadow: inset 1px 1px 0 0 #d8d8d8;
   background-color: #f2f2f2;
+  &:focus {
+    box-shadow: inset 1px 1px 0 0 #d8d8d8;
+  }
+}
+.addons-total-row {
+  span {
+    font-size: 13px;
+    color: rgba(51, 50, 50, 0.5);
+  }
+  @include mQmax(991px) {
+    text-align: center;
+  }
+  .continue-btn {
+    height: 50px;
+    width: 100%;
+    max-width: 350px;
+    @include mQ(992px) {
+      width: 116px;
+    }
+  }
 }
