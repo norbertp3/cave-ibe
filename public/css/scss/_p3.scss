@@ -94,6 +94,33 @@
     width: 30px;
     height: 30px;
 }
+
+// Borders
+.bt-desktop {
+    @include mQmin (992px) {
+        border-top: 1px solid #d8d8d8;
+    }
+}
+.bt-mobile {
+    @include mQmax (991px) {
+        border-top: 1px solid #d8d8d8;
+    }
+}
+.bb-desktop {
+    @include mQmin (992px) {
+        border-bottom: 1px solid #d8d8d8;
+    }
+}
+.bb-mobile {
+    @include mQmax (991px) {
+        border-bottom: 1px solid #d8d8d8;
+    }
+}
+.btb-md {
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+}
+
 // Checkboxes
 .checkbox-group input {
     height: auto;
@@ -133,10 +160,6 @@ input[type=checkbox]:checked+span.custom-check:after {
 .form-check {
     padding-left: 0;
 }
-// Hotel Info Buttons
-.hotel-info-buttons .btn-primary {
-    margin-right: 20px;
-}
 
 // Mobile Hotel Info
 #mobile-hotel-info {
@@ -156,6 +179,7 @@ input[type=checkbox]:checked+span.custom-check:after {
 .hotel-info-buttons .btn-primary {
     border: 1px solid rgba(131, 111, 111, 0.8);
     padding: 8.5px 17.5px;
+    margin-right: 20px;
     &:hover {
         border: 1px solid #fff;
     }
@@ -175,7 +199,7 @@ input[type=checkbox]:checked+span.custom-check:after {
     }
 }
 
-// Booking Summery
+// Booking Summary
 .booking-summary-heading {
     padding: 10px;
     background-color: $bookingSummaryBackgroundColor;
@@ -207,6 +231,39 @@ input[type=checkbox]:checked+span.custom-check:after {
     @include mQmax(991px) {
         display: none;
     }
+    h2 {
+        font-size: 22px;   
+    }
+}
+.booking-summary-rooms-section {
+    background-color: #f2f2f2;
+    p {
+        width: 100%;
+        text-align: left!important
+    }
+    img {
+        height: 55px;
+        width: 90px;
+        object-fit: cover;
+    }
+    ul {
+        list-style-position: inside;
+        padding: 0 10px;
+        li {
+            text-indent: -22px;
+            margin-left: 22px;        
+        }
+    }
+    .booking-summary-room-row p {
+        padding: 0 10px;
+    }
+    .booking-summary-room-row {
+        padding: 20px 0;
+    }
+    .booking-summary-room-description
+    {
+        display: none;
+    }
 }
 
 // Rotate on click
@@ -225,6 +282,7 @@ input[type=checkbox]:checked+span.custom-check:after {
         padding-right: 15px;
     }
 }
+
 // Room with Rates Details
 .room-content {
     padding: 20px 10px 20px 10px;
@@ -305,6 +363,7 @@ input[type=checkbox]:checked+span.custom-check:after {
         color: $primaryColor;
     }
 }
+
 .room-wrapper .room-image {
     height: 184px;
     width: 100%;
@@ -324,6 +383,8 @@ input[type=checkbox]:checked+span.custom-check:after {
         right: 10px;
     }
 }
+
+// Rates Wrapper
 .rates-wrapper {
     display: none;
     padding: 0 10px 20px 10px;
@@ -450,7 +511,6 @@ input[type=checkbox]:checked+span.custom-check:after {
 
 
 // Large Banner With Half Screen Image
-
 #banner {
     background-color: $primaryColor;
     color: #fff;
@@ -474,7 +534,6 @@ input[type=checkbox]:checked+span.custom-check:after {
 }
 
 // Addons Page
-
 .addon-heading {
     h2 {
         font-size: 22px;

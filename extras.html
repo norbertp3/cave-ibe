@@ -137,11 +137,11 @@
             <h2>My Booking</h2>
             <span class="d-lg-none">Nov 30 - Dec 02</span>
             <button class="btn btn-btn-secondary edit-search-btn d-none d-lg-block">Edit</button>
-            <a href="javascript:;" class="open-booking-summery d-lg-none"><i class="icon-chevron-down"></i></a>
+            <a href="javascript:;" class="open-booking-summary d-lg-none"><i class="icon-chevron-down"></i></a>
           </div>
           <!-- END Booking Summary Heading -->
           <div class="booking-summary-data">
-            <div class="booking-summary-table">
+            <div class="booking-summary-table bt-desktop bb-desktop">
               <div class="booking-row">
                 <div class="booking-data d-flex">
                     <p>Hotel</p>
@@ -173,20 +173,92 @@
                 </div>
               </div>
             </div>
+            <!-- Room Details P3B VAR LOOP -->
+            <div class="booking-summary-rooms-section">
+              <!-- START Room Details Row-->
+              <div class="booking-summary-room-row d-flex bt-mobile">
+                <img src="public/images/summary-img-1.jpg">
+                <div class="booking-summary-room-heading w-100">
+                  <p>Standard Twin Room</p>
+                  <p>£97.50</p>
+                  <div class="booking-summary-room-description my-2">
+                    <p>Bed & Breakfast - Flexible</p>
+                    <ul class="my-2">
+                      <li>Book now, pay on arrival</li>
+                      <li>Cancel for free by 2pm Tue, 29 Nov</li>
+                    </ul>
+                    <p class="mb-1">For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in this rate. </p>
+                    <p>Dinner (£40.00)</p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <a href="javascript:;" class="open-booking-summary-room-details"><i class="icon-chevron-down"></i></a>
+                </div>
+              </div>
+              <!-- END Room Details Row -->
+
+              <!-- START Room Details Row-->
+              <div class="booking-summary-room-row d-flex bt-mobile bt-desktop">
+                <img src="public/images/summary-img-1.jpg">
+                <div class="booking-summary-room-heading w-100">
+                  <p>Standard Twin Room</p>
+                  <p>£97.50</p>
+                  <div class="booking-summary-room-description my-2">
+                    <p>Bed & Breakfast - Flexible</p>
+                    <ul class="my-2">
+                      <li>Book now, pay on arrival</li>
+                      <li>Cancel for free by 2pm Tue, 29 Nov</li>
+                    </ul>
+                    <p class="mb-1">For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in this rate. </p>
+                    <p>Dinner (£40.00)</p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <a href="javascript:;" class="open-booking-summary-room-details"><i class="icon-chevron-down"></i></a>
+                </div>
+              </div>
+              <!-- END Room Details Row-->
+
+              <!-- START Booking Summary Total -->
+              <div class="booking-summary-total-wrapper">
+                <div class="booking-row btb-md" style="padding: 20px 0;">
+                  <div class="booking-data d-flex">
+                    <h2>Your Total</h2>
+                    <h2>£80.10</h2>
+                  </div>
+                </div>
+                <div class="booking-row" style="padding-top: 20px;">
+                  <div class="booking-data d-flex">
+                    <p>Due Now</p>
+                    <p>£0.00</p>
+                  </div>
+                </div>
+                <div class="booking-row" style="padding-bottom: 20px;">
+                  <div class="booking-data d-flex">
+                    <p>Pay On Arrival</p>
+                    <p>£0.00</p>
+                  </div>
+                </div>
+                <div class="booking-row bt-mobile bt-desktop" style="padding-top: 20px;">
+                  <div class="booking-data d-flex">
+                    <p>Cancel for free by 2pm Tue, 29 Nov</p>
+                  </div>
+                </div>
+                <div class="booking-row" style="padding-bottom: 20px;">
+                  <div class="booking-data d-flex">
+                    <p>Congratulations! You saved £20.00 this booking by joining our loyalty club!</p>
+                  </div>
+                </div>
+              </div>
+              <!-- END Booking Summary Total -->
+
+
+            <!-- END Room Details P3B VAR LOOP -->
+          </div>
           </div>
         </section>
         <!-- End Booking Summary P3B -->
 
-        <div class="desktop-sign-up d-none d-lg-block d-xl-flex">
-          <img src="/public/images/img-join.jpg" class="d-none d-xl-block">
-          <img src="/public/images/img-join-landscape.png" class="d-xl-none mb-3" height="100px" width="100%">
-          <div class="desktop-sign-up-content">
-            <h2>Sign up for 10% off</h2>
-            <p>Join our loyalty club for free for special discounted rates. It only takes a minute!</p>
-            <button class="btn btn-primary">Join & save 10%</button>
-            <p>Already a member? <a href="#">Login</a></p>
-          </div>
-        </div>
 
       </div>
       <div class="col-12 col-lg-8 pl-20 px-10">
@@ -250,7 +322,7 @@
               <p class="mb-lg-0">What better way to start the day than with a good hearty breakfast. </p>
             </div>
             <div class="col-4 col-lg-3 addon-price my-auto">
-              <h4>£24.00</h4>
+              <h4 class="price-currency-decimal"><span>£ </span>50<span>.00</span></h4>
               <span>at £12.00 per person</span>
             </div>
             <div class="col-8 col-lg-4 my-auto">
@@ -279,7 +351,7 @@
               <p class="mb-lg-0">What better way to start the day than with a good hearty breakfast. </p>
             </div>
             <div class="col-4 col-lg-3 addon-price my-auto">
-              <h4>£50.00</h4>
+              <h4 class="price-currency-decimal"><span>£ </span>50<span>.50</span></h4>
               <span>per booking</span>
             </div>
             <div class="col-8 col-lg-4 my-auto">
@@ -287,7 +359,27 @@
                 <label class="form-check-label" for="defaultCheck3">
                   <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
                   <span class="custom-check"></span>
-
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="card-style addon-with-checkbox-wrapper d-flex">
+          <img src="public/images/img-extra.jpg" alt="addon img" class="d-none d-lg-block">
+          <div class="row addon-content">
+            <div class="col-12 col-lg-5">
+              <h3>Breakfast Buffet</h3>
+              <p class="mb-lg-0">What better way to start the day than with a good hearty breakfast. </p>
+            </div>
+            <div class="col-4 col-lg-3 addon-price my-auto">
+              <h4 class="price-currency-decimal"><span>£ </span>50<span>.50</span></h4>
+              <span>per booking</span>
+            </div>
+            <div class="col-8 col-lg-4 my-auto">
+              <div class="form-check mb-2">
+                <label class="form-check-label" for="defaultCheck4">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                  <span class="custom-check"></span>
                 </label>
               </div>
             </div>
@@ -301,7 +393,7 @@
               <p class="mb-lg-0">What better way to start the day than with a good hearty breakfast. </p>
             </div>
             <div class="col-4 col-lg-3 addon-price my-auto">
-              <h4>£50.00</h4>
+              <h4 class="price-currency-decimal"><span>£ </span>50<span>.50</span></h4>
               <span>per booking</span>
             </div>
             <div class="col-8 col-lg-4 my-auto">
@@ -325,7 +417,7 @@
         <div class="addons-total-row row w-auto float-lg-right mb-5">
           <div class="addons-total-details d-flex align-items-center justify-content-center col-12 col-lg-8 mb-2 mb-lg-0">
             <span class="mr-3">Total Added to Room 1</span>
-            <h4>£40.00</h4>
+            <h4 class="price-currency-decimal"><span>£ </span>67<span>.50</span></h4>
           </div>
           <div class="col-12 col-lg-4 float-lg-right">
             <button class="btn btn-primary continue-btn float-lg-right">Continue</button>
@@ -386,6 +478,7 @@
           </script>
     
     <!-- Custom -->
+    <script src="public/js/p3core.js"></script>
     <script src="public/js/custom.js"></script>
 
 </body>
