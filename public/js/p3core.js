@@ -12,7 +12,7 @@ if ($(window).width() < 991) {
 
 // Booking Summary Room Details
 $('.open-booking-summary-room-details').click(function(){
-  $(this).closest('.booking-summary-room-row').find('.booking-summary-room-description').slideToggle();
+  $(this).closest('.booking-summary-room-row').find('.booking-summary-room-row-expanded').slideToggle();
   $(this).find('.icon-chevron-down').toggleClass("icon-chevron-up");
 });
 
@@ -40,3 +40,7 @@ $('.single-item').slick({
   arrows: true,
   autoplay: true
 });
+// Init tooltip
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

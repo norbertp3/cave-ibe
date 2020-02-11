@@ -1,6 +1,7 @@
 @import './variables';
 @import './resets';
 @import './mixins';
+@import './p3mixins';
 @import './p3';
 @import './header';
 @import './footer';
@@ -18,14 +19,6 @@ body {
         padding-left: 10px;
         padding-right: 10px;
     }
-}
-
-.btn-primary {
-    background-color: $primaryColor;
-    border-radius: 25px;
-    font-weight: 500;
-    font-size: 14px;
-    text-transform: uppercase;
 }
 
 .hotel-gallery {
@@ -112,8 +105,8 @@ body {
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
+    color: $primaryColor;
     height: 40px;
-    width: 73px;
 }
 
 .open-booking-summary .fa {
@@ -202,59 +195,19 @@ body {
   }
   .btn {
     margin-bottom: 15px;
-    height: 50px;
     width: 100%;
     max-width: 186px;
-  }
-  a {
-    color: $primaryColor;
-    text-decoration: underline;
-    &:hover {
-      color: $primaryColor;
-      cursor: pointer;
-    }
   }
   img {
     object-fit: cover;
   }
+  a {
+    text-decoration: underline;
+  }
 }
 
-// Progress Steps
-
-#progress-steps {
-  .active {
-    color: $primaryColor;
-    font-weight: 500;
-  }
-}
-.pregress-steps-desktop {
-  color: rgba(51, 50, 50, 0.5);
-  font-size: 14px;
-  padding-bottom: 30px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #d8d8d8;
-  p, i {
-    margin-right: 10px;
-  }
-  .step-complete {
-    color: #6abb91;
-    font-weight: 500;
-  }
-}
-.progress-steps-mobile {
-  margin: 30px 0;
-  img {
-    margin-right: 15px;
-  }
-  h3 {
-    font-size: 18px;
-    color: $primaryColor;
-    text-transform: uppercase;
-  }
-  span {
-    font-size: 13px;
-    color: rgba(51, 50, 50, 0.5);
-  }
+.hotel-info-buttons .btn{
+  border-radius: 25px;
 }
 
 .dropdown-currency select {
@@ -308,14 +261,12 @@ body {
 }
 .addons-total-row {
   span {
-    font-size: 13px;
-    color: rgba(51, 50, 50, 0.5);
+    @include smallText;
   }
   @include mQmax(991px) {
     text-align: center;
   }
   .continue-btn {
-    height: 50px;
     width: 100%;
     max-width: 350px;
     @include mQ(992px) {
@@ -328,5 +279,10 @@ body {
     color: $primaryColor!important;
     font-size: 16px!important;
     font-weight: 500!important;
+  }
+}
+.payment-details-wrapper {
+  a {
+      text-decoration: underline;
   }
 }
