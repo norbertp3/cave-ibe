@@ -329,17 +329,17 @@ span.custom-check, span.custom-radio {
 }
 
 input[type=checkbox]:checked + span.custom-check:after {
-  content: url(../../public/images/icons/p3/tick.svg);
+  content: url(../../public/images/icons/p3/icon-tick-square.svg);
   color: #fff;
   line-height: 20px;
   text-align: center;
   -webkit-animation: form-zoom .5s ease-in-out;
           animation: form-zoom .5s ease-in-out;
-  padding: 0px 2px;
+  padding: 2px 0px;
   background: #333232;
   position: absolute;
-  left: -1px;
-  top: -1px;
+  left: 0;
+  top: 0;
   height: 20px;
   width: 20px;
 }
