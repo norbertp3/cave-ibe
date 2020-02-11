@@ -581,6 +581,48 @@ input[type=checkbox]:checked+span.custom-check:after {
 .addon-heading-row {
     margin-bottom: 20px;
 }
+.addon-with-checkboxes-wrapper {
+    img {
+        height: 86px;
+        width: 130px;
+        object-fit: cover;
+    }
+    .addon-content {
+        padding: 20px 10px;
+        @include mQ(992px) {
+            padding: 20px;
+            width: 100%;
+        }
+        h3 {
+            @include cardHeading;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-size: 22px;
+            font-weight: 500;
+            color: $primaryColor;
+            font-weight: 500;
+        }
+        span {
+            @include smallText;
+        }
+        label {
+            font-size: 14px;
+            color: rgba(51, 50, 50, 0.8);
+            text-align: right;
+        }
+        .addon-price {
+            @include mQmax (991px) {
+                margin: 20px 0 30px 0;
+            }
+            @include mQ (992px) {
+                text-align: center;
+            }
+        }
+    }
+}
 .addon-with-checkbox-wrapper {
     img {
         height: 86px;
@@ -614,8 +656,63 @@ input[type=checkbox]:checked+span.custom-check:after {
             text-align: right;
         }
         .addon-price {
+            @include mQmax (991px) {
+                margin: 20px 0 30px 0;
+            }
             @include mQ (992px) {
                 text-align: center;
+            }
+        }
+        .form-check {
+            @include mQmax (991px) {
+                float: right;
+            }
+        }
+    }
+}
+.addon-with-dropdown-wrapper {
+    img {
+        height: 86px;
+        width: 130px;
+        object-fit: cover;
+    }
+    .addon-content {
+        padding: 20px 10px;
+        @include mQ(992px) {
+            padding: 20px;
+            width: 100%;
+        }
+        h3 {
+            @include cardHeading;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-size: 22px;
+            font-weight: 500;
+            color: $primaryColor;
+            font-weight: 500;
+        }
+        span {
+            @include smallText;
+        }
+        label {
+            font-size: 14px;
+            color: rgba(51, 50, 50, 0.8);
+            text-align: right;
+        }
+        .addon-price {
+            @include mQmax (991px) {
+                margin: 20px 0 30px 0;
+            }
+            @include mQ (992px) {
+                text-align: center;
+            }
+        }
+        .form-check {
+            @include mQmax (991px) {
+                float: right;
             }
         }
     }

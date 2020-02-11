@@ -876,6 +876,64 @@ input[type=checkbox]:checked + span.custom-check:after {
   margin-bottom: 20px;
 }
 
+.addon-with-checkboxes-wrapper img {
+  height: 86px;
+  width: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.addon-with-checkboxes-wrapper .addon-content {
+  padding: 20px 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .addon-with-checkboxes-wrapper .addon-content {
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+.addon-with-checkboxes-wrapper .addon-content h3 {
+  font-size: 17px;
+  color: #333232;
+  margin-bottom: 10px;
+}
+
+.addon-with-checkboxes-wrapper .addon-content p {
+  margin-bottom: 20px;
+}
+
+.addon-with-checkboxes-wrapper .addon-content h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #333232;
+  font-weight: 500;
+}
+
+.addon-with-checkboxes-wrapper .addon-content span {
+  color: rgba(51, 50, 50, 0.5);
+  font-size: 13px;
+}
+
+.addon-with-checkboxes-wrapper .addon-content label {
+  font-size: 14px;
+  color: rgba(51, 50, 50, 0.8);
+  text-align: right;
+}
+
+@media screen and (max-width: 991px) {
+  .addon-with-checkboxes-wrapper .addon-content .addon-price {
+    margin: 20px 0 30px 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .addon-with-checkboxes-wrapper .addon-content .addon-price {
+    text-align: center;
+  }
+}
+
 .addon-with-checkbox-wrapper img {
   height: 86px;
   width: 130px;
@@ -922,9 +980,85 @@ input[type=checkbox]:checked + span.custom-check:after {
   text-align: right;
 }
 
+@media screen and (max-width: 991px) {
+  .addon-with-checkbox-wrapper .addon-content .addon-price {
+    margin: 20px 0 30px 0;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .addon-with-checkbox-wrapper .addon-content .addon-price {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .addon-with-checkbox-wrapper .addon-content .form-check {
+    float: right;
+  }
+}
+
+.addon-with-dropdown-wrapper img {
+  height: 86px;
+  width: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.addon-with-dropdown-wrapper .addon-content {
+  padding: 20px 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .addon-with-dropdown-wrapper .addon-content {
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+.addon-with-dropdown-wrapper .addon-content h3 {
+  font-size: 17px;
+  color: #333232;
+  margin-bottom: 10px;
+}
+
+.addon-with-dropdown-wrapper .addon-content p {
+  margin-bottom: 20px;
+}
+
+.addon-with-dropdown-wrapper .addon-content h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #333232;
+  font-weight: 500;
+}
+
+.addon-with-dropdown-wrapper .addon-content span {
+  color: rgba(51, 50, 50, 0.5);
+  font-size: 13px;
+}
+
+.addon-with-dropdown-wrapper .addon-content label {
+  font-size: 14px;
+  color: rgba(51, 50, 50, 0.8);
+  text-align: right;
+}
+
+@media screen and (max-width: 991px) {
+  .addon-with-dropdown-wrapper .addon-content .addon-price {
+    margin: 20px 0 30px 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .addon-with-dropdown-wrapper .addon-content .addon-price {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .addon-with-dropdown-wrapper .addon-content .form-check {
+    float: right;
   }
 }
 
