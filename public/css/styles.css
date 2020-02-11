@@ -924,7 +924,7 @@ input[type=checkbox]:checked + span.custom-check:after {
 
 @media screen and (max-width: 991px) {
   .addon-with-checkboxes-wrapper .addon-content .addon-price {
-    margin: 20px 0 30px 0;
+    margin: 10px 0;
   }
 }
 
@@ -982,7 +982,7 @@ input[type=checkbox]:checked + span.custom-check:after {
 
 @media screen and (max-width: 991px) {
   .addon-with-checkbox-wrapper .addon-content .addon-price {
-    margin: 20px 0 30px 0;
+    margin: 10px 0;
   }
 }
 
@@ -1046,7 +1046,7 @@ input[type=checkbox]:checked + span.custom-check:after {
 
 @media screen and (max-width: 991px) {
   .addon-with-dropdown-wrapper .addon-content .addon-price {
-    margin: 20px 0 30px 0;
+    margin: 10px 0;
   }
 }
 
@@ -1059,6 +1059,22 @@ input[type=checkbox]:checked + span.custom-check:after {
 @media screen and (max-width: 991px) {
   .addon-with-dropdown-wrapper .addon-content .form-check {
     float: right;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .addon-content {
+    position: relative;
+  }
+  .addon-content i {
+    position: absolute;
+    right: 15px;
+    top: -3px;
+  }
+  .addon-content .icon-info {
+    zoom: 1.4;
+    height: 18px;
+    width: 18px;
   }
 }
 

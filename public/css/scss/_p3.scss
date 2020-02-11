@@ -615,7 +615,7 @@ input[type=checkbox]:checked+span.custom-check:after {
         }
         .addon-price {
             @include mQmax (991px) {
-                margin: 20px 0 30px 0;
+                margin: 10px 0;
             }
             @include mQ (992px) {
                 text-align: center;
@@ -657,7 +657,7 @@ input[type=checkbox]:checked+span.custom-check:after {
         }
         .addon-price {
             @include mQmax (991px) {
-                margin: 20px 0 30px 0;
+                margin: 10px 0;
             }
             @include mQ (992px) {
                 text-align: center;
@@ -704,7 +704,7 @@ input[type=checkbox]:checked+span.custom-check:after {
         }
         .addon-price {
             @include mQmax (991px) {
-                margin: 20px 0 30px 0;
+                margin: 10px 0;
             }
             @include mQ (992px) {
                 text-align: center;
@@ -717,7 +717,21 @@ input[type=checkbox]:checked+span.custom-check:after {
         }
     }
 }
-
+.addon-content {
+    @include mQmax (991px) {
+        position: relative;
+        i {
+            position: absolute;
+            right: 15px;
+            top: -3px;
+        }
+        .icon-info {
+            zoom: 1.4;
+            height: 18px;
+            width: 18px;
+        }
+    }
+}
 // Booker details
 .booker-details-wrapper, .guest-details-wrapper, .payment-details-wrapper {
     padding: 20px 10px;
