@@ -1362,6 +1362,12 @@ input[type=checkbox]:checked + span.custom-check:after {
   font-weight: 500;
 }
 
+@media screen and (min-width: 992px) {
+  .conf-card .booking-summary-rooms-section .booking-summary-room-heading {
+    padding-left: 10px;
+  }
+}
+
 .confirmation-content-box {
   margin-bottom: 30px;
 }
@@ -1487,13 +1493,111 @@ header .logo {
   color: #fff !important;
 }
 
+footer {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    max-width: 1480px;
+    padding: 0 60px 0 60px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  footer {
+    text-align: center;
+  }
+}
+
+footer .container {
+  padding: 0;
+  padding: 28px 0 14px 0;
+}
+
+@media screen and (min-width: 992px) {
+  footer .container {
+    padding: 25px 0 10px 0;
+  }
+}
+
+footer .footer-links ul {
+  -webkit-column-count: 1;
+          column-count: 1;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 767px) {
+  footer .footer-links ul {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+}
+
+footer .footer-links li {
+  list-style: none;
+  margin-bottom: 11px;
+}
+
+@media screen and (max-width: 991px) {
+  footer .logo {
+    margin-bottom: 28px;
+  }
+}
+
+footer .footer-social-media li {
+  display: inline-block;
+}
+
+footer .footer-social-media .fa {
+  background: #333;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  color: #fff;
+  position: relative;
+  font-size: 16px;
+  padding-top: 10px;
+  border: 2px solid #333;
+}
+
+footer .footer-social-media .fa:hover {
+  color: #333;
+  background: #fff;
+}
+
+footer .footer-social-media .fa.fa-instagram {
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+.copy-rights {
+  padding: 10px;
+  background-color: #EDEDED;
+}
+
+.copy-rights p {
+  font-size: 12px !important;
+  line-height: 22px;
+  color: #333232;
+}
+
+@media screen and (min-width: 992px) {
+  .copy-rights {
+    padding: 10px 0;
+  }
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (min-width: 991px) {
   .container {
-    max-width: 1500px;
+    max-width: 1480px;
     padding: 0 60px;
   }
 }

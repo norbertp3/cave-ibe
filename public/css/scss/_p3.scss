@@ -933,6 +933,11 @@ input[type=checkbox]:checked+span.custom-check:after {
             color: $primaryFontColor;
             font-weight: 500;
         }
+        .booking-summary-room-heading {
+            @include mQ (992px) {
+                padding-left: 10px;
+            }
+        }
     }
     .btn-primary {
         
