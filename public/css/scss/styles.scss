@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    @include mQ('991px') {
+    @include mQ(991px) {
         max-width: 1480px;
         padding: 0 60px;
     }

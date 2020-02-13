@@ -72,7 +72,7 @@ a {
     mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
     background-color: black;
     height: 19px;
-    width: 16px;
+    width: 24px;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
@@ -83,7 +83,7 @@ a {
     mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
     background-color: #6abb91;
     height: 19px;
-    width: 16px;
+    width: 24px;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
@@ -341,6 +341,9 @@ input[type=checkbox]:checked+span.custom-check:after {
 .room-content {
     padding: 20px 10px 20px 10px;
     position: relative;
+    @include mQ (992px) {
+        padding: 30px;
+    }
     h3 {
         @include cardHeading;
         @include mQmax (992px) {
@@ -371,9 +374,6 @@ input[type=checkbox]:checked+span.custom-check:after {
     }
     span {
         @include smallText;
-    }
-    @include mQ (992px) {
-        padding: 30px;
     }
     .from-spam {
         margin-right: 10px;
@@ -566,7 +566,7 @@ input[type=checkbox]:checked+span.custom-check:after {
     }
     p {
         font-size: 16px;
-        margin-bottom: 53px;
+        margin-bottom: 50px;
         color: rgba(255, 255, 255, 0.8);
         font-size: 16px;
     }
@@ -966,5 +966,23 @@ input[type=checkbox]:checked+span.custom-check:after {
     }
     p {
         margin-bottom: 20px;
+    }
+}
+
+// Modals
+.modal-full-width {
+    @include mQmax (991px) {
+        .modal-dialog {
+            margin: 0;
+            height: 100%;
+            min-width: 100%!important;
+        }
+        .modal-content {
+            min-width: 100%;
+            min-height: 100%;
+        }
+        .modal-body {
+            padding: 0!important;
+        }
     }
 }

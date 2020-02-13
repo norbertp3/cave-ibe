@@ -98,7 +98,7 @@
       <p>Surtees Rd, Newton Aycliffe DL5 6NL, UK</p>
       <!-- HOTEL INFO BUTTONS P3B -->
       <div class="hotel-info-buttons d-none d-lg-flex">
-        <a href="#"><button class="btn">Hotel Info</button></a>
+        <a href="#" data-toggle="modal" data-target="#modalTabs"><button class="btn">Hotel Info</button></a>
         <a href="#"><button class="btn">Map</button></a>
         <a href="#"><button class="btn">Gallery</button></a>
       </div>
@@ -108,7 +108,7 @@
       <div class="row">
         <div class="col-6"></div>
         <div class="col-6">
-          <a href="javascript:;"><div class="hotel-gallery">
+          <a href="#"><div class="hotel-gallery">
             <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
           </div></a>
         </div>
@@ -119,7 +119,7 @@
   <!-- Mobile Hotel Info P3B -->
   <section id="mobile-hotel-info" class="d-lg-none">
     <div class="container d-flex justify-content-between">
-      <a href="#"><i class="icon-info-white"></i> Hotel Info</a>
+      <a href="#" data-toggle="modal" data-target="#modalTabs"><i class="icon-info-white"></i> Hotel Info</a>
       <a href="#"><i class="icon-search-white"></i> New Search</a>
     </div>
   </section>
@@ -603,7 +603,154 @@
       <p>&copy; All rights reserved | Redworth Hall 2020</p>
     </div>
   </div>
-    
+
+  <!-- Modals -->
+<!-- Info Modal -->
+<div class="modal fade modal-tabs modal-full-width" id="modalTabs" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!-- <div class="modal-header text-right">
+        <a href="#" data-dismiss="modal" aria-label="Close" style="color: #a54b89;">Close <span
+            aria-hidden="true">&times;</span></a>
+      </div> -->
+      <div class="modal-body">
+        <div role="tabpanel">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="info-tab">
+              <a href="#infoTab" aria-controls="uploadTab" role="tab" data-toggle="tab" class="active">Info</a>
+            </li>
+            <li role="presentation" class="gallery-tab">
+              <a href="#galleryTab" aria-controls="browseTab" role="tab" data-toggle="tab">Gallery</a>
+            </li>
+            <li role="presentation" class="map-tab">
+              <a href="#mapTab" aria-controls="browseTab" role="tab" data-toggle="tab">Map</a>
+            </li>
+            <!-- <li role="presentation" class="reviews-tab">
+              <a href="#reviewsList" aria-controls="browseTab" role="tab" data-toggle="tab">Reviews</a>
+            </li> -->
+            <a href="#" data-dismiss="modal" aria-label="Close" style="color: #a54b89;" class="">Close <span
+            aria-hidden="true">&times;</span></a>
+          </ul>
+
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <!-- Tab Info -->
+            <div role="tabpanel" class="tab-pane active" id="infoTab">
+              
+            </div>
+            <div role="tabpanel" class="tab-pane" id="galleryTab">
+              <section class=" slider slider-for">
+                <div>
+                  <img src="public/images/apartment.jpg" alt="">
+                </div>
+                <div>
+                  <img src="public/images/apartment.jpg" alt="" style="">
+                </div>
+                <div>
+                  <img src="public/images/apartment.jpg" alt="" style="">
+                </div>
+                <div>
+                  <img src="public/images/apartment.jpg" alt="" style="">
+                </div>
+              </section>
+              <div class="slider-nav mt-3">
+                <div>
+                  <img src="public/images/apartment.jpg" alt="">
+                </div>
+                <div>
+                  <img src="public/images/apartment.jpg" alt="" style="">
+                </div>
+                <div>
+                  <img src="public/images/apartment.jpg" alt="" style="">
+                </div>
+                <div>
+                  <img src="public/images/apartment.jpg" alt="" style="">
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="mapTab">
+              <div class="tab-map-cover">
+                <div id="googleMap" style="width: 100%; height: 400px; position: relative; overflow: hidden;"></div>
+                <!-- <section class="directions-tabs">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="custom-tab">
+                        <div class="custom-tab-head">
+                          <h4>Getting here from the airport <i class="fa fa-angle-down" style="float: right"></i></h4>
+                        </div>
+                        <div class="custom-tab-body">
+                          <p>Best Option: Take the 747 Bus from Dublin Airport to the City Centre. The 747 Bus stops on
+                            Lower O’Connell Street which is 4 minute walk, along Henry Street then onto Jervis
+                            Apartments Dublin City.
+                            <br>
+                            The bus departs from outside the arrivals hall every 15 minutes. Tickets are €7 per adult
+                            and the journey can take between 20 to 30 minutes depending on traffic.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="custom-tab">
+                        <div class="custom-tab-head">
+                          <h4>Getting here from the airport <i class="fa fa-angle-down" style="float: right"></i></h4>
+                        </div>
+                        <div class="custom-tab-body">
+                          <p>Best Option: Take the 747 Bus from Dublin Airport to the City Centre. The 747 Bus stops on
+                            Lower O’Connell Street which is 4 minute walk, along Henry Street then onto Jervis
+                            Apartments Dublin City.
+                            <br>
+                            The bus departs from outside the arrivals hall every 15 minutes. Tickets are €7 per adult
+                            and the journey can take between 20 to 30 minutes depending on traffic.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="custom-tab">
+                        <div class="custom-tab-head">
+                          <h4>Getting here from the airport <i class="fa fa-angle-down" style="float: right"></i></h4>
+                        </div>
+                        <div class="custom-tab-body">
+                          <p>Best Option: Take the 747 Bus from Dublin Airport to the City Centre. The 747 Bus stops on
+                            Lower O’Connell Street which is 4 minute walk, along Henry Street then onto Jervis
+                            Apartments Dublin City.
+                            <br>
+                            The bus departs from outside the arrivals hall every 15 minutes. Tickets are €7 per adult
+                            and the journey can take between 20 to 30 minutes depending on traffic.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="custom-tab">
+                        <div class="custom-tab-head">
+                          <h4>Getting here from the airport <i class="fa fa-angle-down" style="float: right"></i></h4>
+                        </div>
+                        <div class="custom-tab-body">
+                          <p>Best Option: Take the 747 Bus from Dublin Airport to the City Centre. The 747 Bus stops on
+                            Lower O’Connell Street which is 4 minute walk, along Henry Street then onto Jervis
+                            Apartments Dublin City.
+                            <br>
+                            The bus departs from outside the arrivals hall every 15 minutes. Tickets are €7 per adult
+                            and the journey can take between 20 to 30 minutes depending on traffic.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section> -->
+              </div>
+            </div>
+            <!-- <div role="tabpanel" class="tab-pane" id="reviewsList">PLUGIN</div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     
     <!-- JS Files -->
