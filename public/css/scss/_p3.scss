@@ -628,6 +628,12 @@ input[type=checkbox]:checked+span.custom-check:after {
                 text-align: center;
             }
         }
+        .form-check {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 .addon-with-checkbox-wrapper {
@@ -971,6 +977,8 @@ input[type=checkbox]:checked+span.custom-check:after {
 
 // Modals
 .modal-full-width {
+
+    // Mobile Full Width Styling
     @include mQmax (991px) {
         .modal-dialog {
             margin: 0;
@@ -983,6 +991,70 @@ input[type=checkbox]:checked+span.custom-check:after {
         }
         .modal-body {
             padding: 0!important;
+            background: transparent;
+        }
+    }
+    // End Full Width Styling
+
+    .modal-body {
+        padding: 0;
+    }
+    .modal-dialog {
+        max-width: 945px!important;
+    }
+    .modal-content {
+        background-color: transparent;
+    }
+    .tab-content {
+        padding: 20px 20px;
+        background: $modalBackgroundColour;
+        .modal-heading {
+            h2 {
+                @include sectionHeading;
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        .tab-property-details {
+            p {
+                margin-bottom: 17px;
+            }
+        }
+        .hotel-info-img {
+            margin-bottom: 20px;
+        }
+        .description-2 {
+            padding: 20px;
+            background-color: $modalDescription2Background;
+            h2 {
+                color: $primaryFontColor;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+            ul {
+                margin-left: 20px;
+                line-height: 26px;
+            }
+        } 
+    }
+    .nav-tabs {
+        border-bottom: none;
+        background: transparent;
+        
+        a {
+            padding: 0px 16px;
+            background-color: #f2f2f2;
+            @include mQ(992px) {
+                margin-right: 5px;
+                // padding: 12px 15px;
+            }
+        }
+        li {
+            height: auto;
         }
     }
 }
+

@@ -15,6 +15,7 @@ html, body {
 
 p {
   margin-bottom: 0;
+  word-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -121,13 +122,13 @@ body {
 
 p {
   font-size: 15px;
-  line-height: 1.73;
+  line-height: 26px;
   color: rgba(51, 50, 50, 0.8);
 }
 
 ul, ol {
   font-size: 15px;
-  line-height: 1.73;
+  line-height: 26px;
   color: rgba(51, 50, 50, 0.8);
 }
 
@@ -941,6 +942,14 @@ input[type=checkbox]:checked + span.custom-check:after {
   }
 }
 
+.addon-with-checkboxes-wrapper .addon-content .form-check {
+  margin-bottom: 10px;
+}
+
+.addon-with-checkboxes-wrapper .addon-content .form-check:last-child {
+  margin-bottom: 0;
+}
+
 .addon-with-checkbox-wrapper img {
   height: 86px;
   width: 130px;
@@ -1417,7 +1426,81 @@ input[type=checkbox]:checked + span.custom-check:after {
   }
   .modal-full-width .modal-body {
     padding: 0 !important;
+    background: transparent;
   }
+}
+
+.modal-full-width .modal-body {
+  padding: 0;
+}
+
+.modal-full-width .modal-dialog {
+  max-width: 945px !important;
+}
+
+.modal-full-width .modal-content {
+  background-color: transparent;
+}
+
+.modal-full-width .tab-content {
+  padding: 20px 20px;
+  background: #fff;
+}
+
+.modal-full-width .tab-content .modal-heading h2 {
+  font-size: 22px;
+  color: #333232;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-full-width .tab-content p {
+  margin-bottom: 30px;
+}
+
+.modal-full-width .tab-content .tab-property-details p {
+  margin-bottom: 17px;
+}
+
+.modal-full-width .tab-content .hotel-info-img {
+  margin-bottom: 20px;
+}
+
+.modal-full-width .tab-content .description-2 {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.modal-full-width .tab-content .description-2 h2 {
+  color: #333232;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.modal-full-width .tab-content .description-2 ul {
+  margin-left: 20px;
+  line-height: 26px;
+}
+
+.modal-full-width .nav-tabs {
+  border-bottom: none;
+  background: transparent;
+}
+
+.modal-full-width .nav-tabs a {
+  padding: 0px 16px;
+  background-color: #f2f2f2;
+}
+
+@media screen and (min-width: 992px) {
+  .modal-full-width .nav-tabs a {
+    margin-right: 5px;
+  }
+}
+
+.modal-full-width .nav-tabs li {
+  height: auto;
 }
 
 @media screen and (min-width: 992px) {
