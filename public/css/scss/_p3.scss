@@ -1,5 +1,7 @@
 body {
     background-color: $pageBg;
+    font-family: $textFont;
+    color: $secondaryFontColor;
 }
 p {
     @include bodyText;
@@ -10,96 +12,81 @@ ul, ol {
 a {
     @include bodyLink;
 }
-// Gallery Icon
+
+// Icons
 .icon-open-gallery {
     position: absolute;
     bottom: 10px;
     left: 10px;
 }
 .icon-info {
-    background: url("../../../public/images/icons/p3/icon-info-dark-default.svg");
+    background: $iconInfoDarkDefault;
     height: 16px;
     width: 16px;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 .icon-info-white {
-    background: url("../../../public/images/icons/p3/icon-info-light-default.svg");
+    background: $iconInfoLightDefault;
     height: 16px;
     width: 16px;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 .icon-chevron-right {
-    -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
-    mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
-    background-color: white;
-    height: 19px;
+    background: $iconBtnPrimaryRight;
+    height: 16px;
     width: 16px;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 .icon-chevron-down {
-    -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-down.svg);
-    mask-image: url(../../../public/images/icons/p3/icon-chevron-white-down.svg);
-    background-color: white;
+    background: $iconBtnPrimaryDown;
     height: 16px;
     width: 16px;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 .icon-chevron-up {
-    -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-up.svg);
-    mask-image: url(../../../public/images/icons/p3/icon-chevron-white-up.svg);
-    background-color: white;
+    background: $iconBtnPrimaryUp;
     height: 16px;
     width: 16px;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 .icon-progress-step-separator {
-    -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
-    mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+    background: $iconProgressDefault;
     background-color: black;
     height: 19px;
     width: 24px;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 .icon-progress-step-separator-complete {
-    -webkit-mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
-    mask-image: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+    mask-image: $iconProgressComplete;
     background-color: #6abb91;
     height: 19px;
     width: 24px;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
 }
-.view-rates-btn:hover .icon-chevron-down {
-    background-color: $primaryColor;
-}
-.view-rates-btn:hover .icon-chevron-up {
-    background-color: $primaryColor;
-}
-.select-rate-btn:hover .icon-chevron-right {
-    background-color: $primaryColor;
-}
+
 .icon-search-white {
-    background: url("../../../public/images/icons/p3/icon-new-search.svg");
+    background: $iconSearchAgain;
     height: 16px;
     width: 16px;
     display: inline-block;
@@ -111,6 +98,16 @@ a {
     border-radius: 25px;
     width: 30px;
     height: 30px;
+}
+.dropdown-currency select {
+    border: none;
+    font-size: 13px;
+    color: $primaryFontColor;
+    margin-left: 30px;
+    font-family: $textFont;
+    background-color: inherit;
+    background-image: url(../../../public/images/icons/p3/dropdown-arrows.svg);
+    background-size: 10px;
 }
 
 // Buttons
@@ -124,27 +121,39 @@ a {
 // Deviders
 .devider-top-desktop {
     @include mQmin (992px) {
-        border-top: 1px solid #d8d8d8;
+        border-top: 1px solid $deviderColor;
     }
 }
 .devider-top-mobile{
     @include mQmax (991px) {
-        border-top: 1px solid #d8d8d8;
+        border-top: 1px solid $deviderColor;
     }
 }
 .devider-bottom-desktop {
     @include mQmin (992px) {
-        border-bottom: 1px solid #d8d8d8;
+        border-bottom: 1px solid $deviderColor;
     }
 }
 .devider-bottom-mobile {
     @include mQmax (991px) {
-        border-bottom: 1px solid #d8d8d8;
+        border-bottom: 1px solid $deviderColor;
     }
 }
 .devider-top-bottom {
-    border-top: 1px solid #d8d8d8;
-    border-bottom: 1px solid #d8d8d8;
+    border-top: 1px solid $deviderColor;
+    border-bottom: 1px solid $deviderColor;
+}
+
+// Paddings Custom Grid
+.pr-custom {
+    @include mQ(1200px) {
+        padding-right: $colPadding;
+    }
+}
+.pl-custom {
+    @include mQ(1200px) {
+        padding-left: $colPadding;
+    }
 }
 
 // Checkboxes
@@ -154,10 +163,11 @@ a {
 span.custom-check {
     margin-right: 10px;
     border-radius: 0;
-    @include inputSelect;
+    @include formStyleElements;
 }
 span.custom-check, span.custom-radio {
     width: 20px;
+    min-width: 20px;
     height: 20px;
     vertical-align: middle;
     cursor: pointer;
@@ -187,9 +197,9 @@ input[type=checkbox]:checked+span.custom-check:after {
     padding-left: 0;
 }
 
-// Input, Select
-.form-group input {
-    @include inputSelect;
+// Input, Select, TextArea
+.form-group input, .form-group textarea {
+    @include formStyleElements;
 }
 
 // Mobile Hotel Info
@@ -200,6 +210,7 @@ input[type=checkbox]:checked+span.custom-check:after {
         font-size: 15px;
         color: #fff;
         font-family: $textFont;
+        text-decoration: none;
         &:focus {
             text-decoration: none;
         }
@@ -209,12 +220,15 @@ input[type=checkbox]:checked+span.custom-check:after {
 // Hotel Info Buttons
 .hotel-info-buttons .btn {
     @include hotelInfoBtn;
+    a {
+        text-decoration-line: none;
+    }
 }
 
 // Progress Steps
 #progress-steps {
     .active {
-        color: $primaryColor;
+        color: $primaryFontColor;
         font-weight: 500;
     }
     .pregress-steps-desktop {
@@ -237,11 +251,11 @@ input[type=checkbox]:checked+span.custom-check:after {
         }
         h3 {
             font-size: 18px;
-            color: $primaryColor;
+            color: $primaryFontColor;
             text-transform: uppercase;
         }
         span {
-            @include smallText;
+            @include lightText;
         }
     }
 }
@@ -253,37 +267,38 @@ input[type=checkbox]:checked+span.custom-check:after {
 }
 .booking-summary-heading {
     padding: 10px;
-    // background-color: $bookingSummaryBackgroundColor;
     font-family: $headingFont;
-    @include mQ (992px) {
+    @include mQ (1200px) {
         padding: 30px 30px 20px 30px;
     }
     h2 {
         font-size: 15px;
-        color: $primaryColor;
+        color: $primaryFontColor;
         text-transform: uppercase;
-        @include mQ (992px) {
-            font-size: 22px;
+        font-family: $textFont;
+        @include mQ (1200px) {
+            font-size: 25px;
         }
     }
 }
 .booking-summary-data {
     // background-color: $bookingSummaryBackgroundColor;
-    padding: 0 8px;
+    padding: 0 10px;
     p {
         width: 50%;
     }
     .booking-row {
         padding: 10px 0;
     }
-    @include mQ(992px) {
+    @include mQ(1200px) {
         padding: 0 30px;
     }
-    @include mQmax(991px) {
+    @include mQmax(1200px) {
         display: none;
     }
     h2 {
-        font-size: 22px;   
+        font-size: 22px;
+        font-family: $textFont;
     }
 }
 .booking-summary-rooms-section {
@@ -309,6 +324,9 @@ input[type=checkbox]:checked+span.custom-check:after {
     }
     .booking-summary-room-row {
         padding: 20px 0;
+        &:hover {
+            cursor: pointer;
+        }
     }
     .booking-summary-room-row-expanded
     {
@@ -327,8 +345,8 @@ input[type=checkbox]:checked+span.custom-check:after {
 }
 .px-10 {
     @include mQmax (991px) {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -340,20 +358,26 @@ input[type=checkbox]:checked+span.custom-check:after {
 }
 .room-content {
     padding: 20px 10px 20px 10px;
-    position: relative;
-    @include mQ (992px) {
+    // position: relative;
+    @include mQ (768px) {
+        padding: 30px 20px;
+    }
+    @include mQ (1200px) {
         padding: 30px;
     }
     h3 {
         @include cardHeading;
+        margin-bottom: 20px;
+        @include mQ(992px) {
+            margin-bottom: 25px;
+        }
         @include mQmax (992px) {
             text-indent: -24px;
             padding-left: 24px;
         }
     }
     h2 {
-        font-size: 30px;
-        line-height: 1;
+        @include priceTag;
         text-align: right;
     }
     .price-section {
@@ -373,23 +397,35 @@ input[type=checkbox]:checked+span.custom-check:after {
         right: 0;
     }
     span {
-        @include smallText;
+        @include lightText;
     }
     .from-spam {
         margin-right: 10px;
-        @include mQmax (991px) {
+        @include mQmax (767px) {
             position: absolute;
             top: -15px;
         }
     }
     .price-after-decimal {
         font-size: 18px;
-        color: $primaryColor;
+        color: $primaryFontColor;
+        font-family: $textFont;
+        font-style: normal;
     }
-    .view-rates-btn {
-        img {
-            height: 14px;
-            width: 14px;
+    .room-right-side {
+        position: relative;
+        min-width: 190px;
+        .view-rates-btn {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            @include mQmax (991px) {
+                padding: 12px 20px;
+            }
+            i {
+                top: 3px;
+                position: relative;
+            }
         }
     }
     .room-ribbon {
@@ -410,27 +446,68 @@ input[type=checkbox]:checked+span.custom-check:after {
     }
     .main-price-curreny {
         font-size: 18px;
-        color: $primaryColor;
+        color: $primaryFontColor;
+        font-family: $textFont;
+        font-style: normal;
+    }
+    .room-facilities {
+        div {
+            margin-right: 20px;
+        }
+        img {
+            margin-right: 10px;
+        }
+    }
+    .room-left-side {
+        @include mQmax (991px) {
+            padding-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li {
+            display: inline-block;
+            color: $secondaryFontColor;
+            padding: 10px 30px 10px 0px;
+            text-decoration: none;
+            font-family: $headingFont;
+            font-style: italic;
+            float: left;
+            img {
+                margin-right: 5px;
+            }
+        }
     }
 }
 
-.room-wrapper .room-image {
-    height: 184px;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.room-wrapper {
     position: relative;
-    @include mQ(992px) {
-        width: 300px;
-    }
-    .icon-open-gallery {
-        bottom: 10px;
-        left: auto;
-        right: 10px;
+    .room-image {
+        height: 184px;
+        width: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        @include mQ(768px) {
+            min-width: 270px;
+            height: 100%;
+        }
+        @include mQ(1200px) {
+            min-width: 300px;
+            min-height: 210px;
+        }
+        .icon-open-gallery {
+            bottom: 10px;
+            left: auto;
+            right: 10px;
+        }
     }
 }
 
@@ -457,28 +534,26 @@ input[type=checkbox]:checked+span.custom-check:after {
         }
     }
     span {
-        @include smallText;
+        @include lightText;
     }
     .select-rate-btn {
+        padding: 7px 20px;
         font-size: 22px;
         span {
             font-size: 16px;
-            color: #fff;
-        }
-        .fa {
-            font-size:14px;
-            padding-bottom: 2px;
-            top: -3px;
-            position: relative;
-        }
-        &:hover span {
-            color: $primaryColor;
+            color: inherit;
+            font-family: $textFont;
+            font-style: normal;
         }
     }
     .rate-description {
+        margin: 16px 0 20px 16px;
         ul {
             list-style-position: inside;
             margin-bottom: 15px;
+            line-height: 26px;
+            text-indent: -20px;
+            margin-left: 20px;
         }
         display: none;
         @include mQ(992px) {
@@ -494,6 +569,13 @@ input[type=checkbox]:checked+span.custom-check:after {
         color: #6abb91;
         font-size: 12px;
         font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .mobile-rate-urgency {
+        color: #a51448;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 5px;
     }
     .rate-container {
         padding-bottom: 20px;
@@ -513,6 +595,10 @@ input[type=checkbox]:checked+span.custom-check:after {
                 padding-top: 0;
             }
         }
+        .icon-info {
+            position: relative;
+            top: 3px;
+        }
     }
     .rate-ribbon {
         position: absolute;
@@ -530,6 +616,9 @@ input[type=checkbox]:checked+span.custom-check:after {
             display: none;
         }
     }
+    // .rate-name {
+    //     font-family: $textFont;
+    // }
 }
 
 // Slick
@@ -537,14 +626,14 @@ input[type=checkbox]:checked+span.custom-check:after {
     z-index: 100;
     left: 5px;
     &:before {
-        content: url(../../../public/images/icons/p3/icon-chevron-white-left.svg);
+        content: $iconGalleryArrowLeft;
     }
 }
 .slick-next {
     z-index: 100;
     right: 5px;
     &:before {
-        content: url(../../../public/images/icons/p3/icon-chevron-white-right.svg);
+        content: $iconGalleryArrowRight;
     }
 }
 .strike-through {
@@ -558,7 +647,7 @@ input[type=checkbox]:checked+span.custom-check:after {
     color: #fff;
     padding: 20px 0 27px 0;
     position: relative;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     h1 {
         font-size: 20px;
         margin-top: 19px;
@@ -568,9 +657,8 @@ input[type=checkbox]:checked+span.custom-check:after {
         font-size: 16px;
         margin-bottom: 50px;
         color: rgba(255, 255, 255, 0.8);
-        font-size: 16px;
     }
-    @include mQ(992px) {
+    @include mQ(1200px) {
         margin-bottom: 40px;
     }
 }
@@ -583,14 +671,21 @@ input[type=checkbox]:checked+span.custom-check:after {
     span {
         font-size: 14px;
         color: rgba(51, 50, 50, 0.5);
+        margin-left: 10px;
+        font-family: $textFont;
     }
 }
 .addon-heading-row {
     margin-bottom: 20px;
+    .btn {
+        @include mQmax (991px) {
+            width: 100%;
+        }
+    }
 }
 .addon-with-checkboxes-wrapper {
     img {
-        height: 86px;
+        // height: 86px;
         width: 130px;
         object-fit: cover;
     }
@@ -603,22 +698,20 @@ input[type=checkbox]:checked+span.custom-check:after {
         h3 {
             @include cardHeading;
         }
-        p {
-            margin-bottom: 20px;
-        }
+        // p {
+        //     margin-bottom: 20px;
+        // }
         h4 {
-            font-size: 22px;
-            font-weight: 500;
-            color: $primaryColor;
-            font-weight: 500;
+            @include addonPriceTag;
         }
         span {
-            @include smallText;
+            @include lightText;
         }
         label {
             font-size: 14px;
-            color: rgba(51, 50, 50, 0.8);
+            color: $textFont;
             text-align: right;
+            font-family: $textFont;
         }
         .addon-price {
             @include mQmax (991px) {
@@ -629,7 +722,10 @@ input[type=checkbox]:checked+span.custom-check:after {
             }
         }
         .form-check {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            @include mQ(992px) {
+                margin-bottom: 10px;
+            }
             &:last-child {
                 margin-bottom: 0;
             }
@@ -638,7 +734,7 @@ input[type=checkbox]:checked+span.custom-check:after {
 }
 .addon-with-checkbox-wrapper {
     img {
-        height: 86px;
+        // height: 86px;
         width: 130px;
         object-fit: cover;
     }
@@ -655,13 +751,10 @@ input[type=checkbox]:checked+span.custom-check:after {
             margin-bottom: 20px;
         }
         h4 {
-            font-size: 22px;
-            font-weight: 500;
-            color: $primaryColor;
-            font-weight: 500;
+            @include addonPriceTag;
         }
         span {
-            @include smallText;
+            @include lightText;
         }
         label {
             font-size: 14px;
@@ -685,7 +778,7 @@ input[type=checkbox]:checked+span.custom-check:after {
 }
 .addon-with-dropdown-wrapper {
     img {
-        height: 86px;
+        // height: 86px;
         width: 130px;
         object-fit: cover;
     }
@@ -702,13 +795,10 @@ input[type=checkbox]:checked+span.custom-check:after {
             margin-bottom: 20px;
         }
         h4 {
-            font-size: 22px;
-            font-weight: 500;
-            color: $primaryColor;
-            font-weight: 500;
+            @include addonPriceTag;
         }
         span {
-            @include smallText;
+            @include lightText;
         }
         label {
             font-size: 14px;
@@ -728,6 +818,12 @@ input[type=checkbox]:checked+span.custom-check:after {
                 float: right;
             }
         }
+        select {
+            @include formStyleElements;
+            background-image: $selectIcon;
+            width: 70px!important;
+            height: 50px!important;
+        }
     }
 }
 .addon-content {
@@ -739,12 +835,57 @@ input[type=checkbox]:checked+span.custom-check:after {
             top: -3px;
         }
         .icon-info {
-            zoom: 1.4;
             height: 18px;
             width: 18px;
         }
     }
 }
+.price-currency-decimal {
+    span {
+        font-family: $textFont!important;
+        color: $primaryFontColor!important;
+        font-style: normal!important;
+    }
+}
+.addons-total-details {
+    font-family: $textFont;
+    .price-currency-decimal {
+        span {
+            @include priceSpan;
+        }
+    }
+    button {
+        width: 100%!important;
+    }
+}
+
+.addons-total-row {
+    h4 {
+        color: $primaryFontColor;
+    }
+    span {
+        font-family: $headingFont;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 14px;
+        color: $primaryFontColor;
+        @include mQ(992px) {
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+    @include mQmax(991px) {
+      text-align: center;
+    }
+    .continue-btn {
+      width: 100%;
+      max-width: 350px;
+      @include mQ(992px) {
+        width: 116px;
+      }
+    }
+  }
+
 // Booker details
 .booker-details-wrapper, .guest-details-wrapper, .payment-details-wrapper {
     padding: 20px 10px;
@@ -752,7 +893,7 @@ input[type=checkbox]:checked+span.custom-check:after {
         padding: 20px 40px 40px 40px;
     }
     .custom-select {
-        @include inputSelect;
+        @include formStyleElements;
         border-radius: 0;
     }
     label {
@@ -778,6 +919,9 @@ input[type=checkbox]:checked+span.custom-check:after {
         @include selectIcon;
         width: 80px!important;
     }
+    .form-group {
+        margin-bottom: 20px;
+    }
 }
 .guest-details-wrapper {
     padding: 20px 10px;
@@ -797,9 +941,11 @@ input[type=checkbox]:checked+span.custom-check:after {
     }
 }
 .payment-details-wrapper {
+
     i {
-        font-size: 20px;
-        margin-top: 40px;
+        margin-top: 35px;
+        height: 24px;
+        width: 24px;
     }
     ul {
         margin: 0;
@@ -825,9 +971,12 @@ input[type=checkbox]:checked+span.custom-check:after {
     a {
         text-decoration: underline;
     }
+    a.btn {
+        text-decoration: none;
+    }
 }
 // Payment Summary Box
-.payment-summery-extra {
+.payment-summary-extra {
     margin-bottom: 30px;
     .payment-summary-box {
         border-radius: 2px;
@@ -868,7 +1017,7 @@ input[type=checkbox]:checked+span.custom-check:after {
         padding: 20px 40px;
         margin-bottom: 30px;
     }
-    @include mQmax (991px) {
+    @include mQmax (1200px) {
         margin-top: 20px;
     }
     .conf-icon {
@@ -891,6 +1040,10 @@ input[type=checkbox]:checked+span.custom-check:after {
         margin: 10px 0;
         font-size: 20px;
         color: $primaryFontColor;
+        font-family: $textFont;
+    }
+    .booking-summary-table {
+        border-top: none;
     }
     .booking-summary-data {
         padding: 0;
@@ -903,7 +1056,8 @@ input[type=checkbox]:checked+span.custom-check:after {
             padding: 10px 0;
         }
         h2 {
-            font-size: 22px;   
+            font-size: 22px;
+            font-family: $textFont;
         }
     }
     .booking-summary-rooms-section {
@@ -922,7 +1076,8 @@ input[type=checkbox]:checked+span.custom-check:after {
             li {
                 text-indent: -22px;
                 margin-left: 22px;
-                font-weight: 400;        
+                font-weight: 400;
+                margin-bottom: 5px;      
             }
         }
         .booking-summary-room-row p {
@@ -934,6 +1089,7 @@ input[type=checkbox]:checked+span.custom-check:after {
         .booking-summary-room-row-expanded
         {
             display: block;
+            margin: 20px 0 20px 16px !important;
         }
         p.booking-summary-room-name {
             color: $primaryFontColor;
@@ -945,9 +1101,12 @@ input[type=checkbox]:checked+span.custom-check:after {
             }
         }
     }
-    .btn-primary {
-        
-    }
+}
+.icon-expand {
+    @include iconExpand;
+}
+.icon-collapse {
+    @include iconCollapse;
 }
 .confirmation-content-box {
     margin-bottom: 30px;
@@ -976,6 +1135,18 @@ input[type=checkbox]:checked+span.custom-check:after {
 }
 
 // Modals
+.modal {
+    .icon-close {
+        @include iconClose;
+        @include mQ(992px) {
+            background-image: $iconCloseLightDefault!important;
+            transition: 0.3s;
+            &:hover {
+                background: $iconCloseLightHover!important;
+            }
+        }
+    }
+}
 .modal-full-width {
 
     // Mobile Full Width Styling
@@ -990,71 +1161,345 @@ input[type=checkbox]:checked+span.custom-check:after {
             min-height: 100%;
         }
         .modal-body {
-            padding: 0!important;
-            background: transparent;
+            background: #fff;
+        }
+
+    }
+}
+
+.modal-body {
+    background: transparent;
+    .modal-room-content {
+        padding: 0;
+        .room-facilities {
+            span {
+                @include lightText;
+            }
+            img {
+                margin-right: 10px;
+            }
+            .div {
+                margin-bottom: 15px;
+            }
         }
     }
-    // End Full Width Styling
+    h2 {
+        @include sectionHeading;
+        margin-bottom: 20px;
+    }
 
-    .modal-body {
+    p {
+        margin: 20px 0;
+    }
+    .rates-wrapper {
+        display: block;
         padding: 0;
     }
-    .modal-dialog {
-        max-width: 945px!important;
+
+}
+// End Full Width Styling
+
+.modal-body {
+    padding: 0;
+}
+.modal-dialog {
+    max-width: 945px!important;
+}
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.tab-content {
+    .info-tab {
+        padding: 20px 10px;
+        @include mQ(992px){
+            padding: 30px;
+        }
     }
-    .modal-content {
-        background-color: transparent;
-    }
-    .tab-content {
-        padding: 20px 20px;
+    .gallery-tab {
+        margin: 10px 0;
         background: $modalBackgroundColour;
-        .modal-heading {
-            h2 {
-                @include sectionHeading;
-                margin-bottom: 20px;
-            }
+        // display: inline-block;
+        height: 100%;
+        @include mQ (992px) {
+            padding: 30px;
+            margin:0;
         }
-        p {
-            margin-bottom: 30px;
-        }
-        .tab-property-details {
-            p {
-                margin-bottom: 17px;
-            }
-        }
-        .hotel-info-img {
+    }
+    background: $modalBackgroundColour;
+    .modal-heading {
+        h2 {
+            @include sectionHeading;
             margin-bottom: 20px;
         }
-        .description-2 {
-            padding: 20px;
-            background-color: $modalDescription2Background;
-            h2 {
-                color: $primaryFontColor;
-                font-size: 22px;
-                font-weight: 600;
-                margin-bottom: 30px;
-            }
-            ul {
-                margin-left: 20px;
+    }
+    p {
+        margin-bottom: 30px;
+    }
+    .tab-property-details {
+        p {
+            margin-bottom: 17px;
+            margin-top: 0;
+        }
+    }
+    .hotel-info-img {
+        margin-bottom: 20px;
+    }
+    .hotel-info-wrapper {
+        @include mQmax (991px) {
+            padding: 0 20px;
+        }
+    }
+    .description-2 {
+        padding: 20px;
+        background-color: $modalDescription2Background;
+        h2 {
+            color: $primaryFontColor;
+            font-size: 22px;
+            // font-weight: 600;
+            margin-bottom: 20px;
+        }
+        ul {
+            margin-left: 0;
+            line-height: 24px;
+            @include mQ(992px) {
                 line-height: 26px;
             }
-        } 
-    }
-    .nav-tabs {
-        border-bottom: none;
-        background: transparent;
-        
-        a {
-            padding: 0px 16px;
-            background-color: #f2f2f2;
-            @include mQ(992px) {
-                margin-right: 5px;
-                // padding: 12px 15px;
+            li {
+                text-indent: -22px;
+                margin-left: 20px;
+                margin-bottom: 10px;
             }
         }
-        li {
-            height: auto;
+    } 
+    .gallery-slider {
+        img {
+            height: 184px;
+            width: 100%;
+            object-fit: cover;
+            @include mQ (500px) {
+                height: 498px;
+            }
+        }
+    }
+    .slider-nav {
+        @include mQmax(991px) {
+            display: none;
+        }
+        img {
+            height: 50px;
+            width: 90px!important;
+            object-fit: cover;
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 10px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .slick-list {
+            padding: 0!important;
+            .slick-track {
+                margin-left: 0!important;
+                margin-right: 0!important;
+                transform: none!important;
+                max-width: 885px!important;
+            }
+        }
+    }
+
+}
+.nav-tabs {
+    border-bottom: none;
+    background: #f2f2f2;
+    background-image: linear-gradient(to bottom, #f0f0f0, #f2f2f2 92%, #cccccd);
+    @include mQ (992px) {
+        background: transparent;
+    }
+    .gallery-tab {
+        @include mQmax (991px) {
+            border-right: 1px solid #d8d8d8;
+            border-left: 1px solid #d8d8d8;
+        }
+    }
+    a {
+        padding: 17px 10px;
+        background-color: #f2f2f2;
+        height: 50px;
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        background-image: linear-gradient(to bottom, transparent, transparent 91%, #f2f2f2 92%, #cccccd);
+        @include mQ(992px) {
+            margin-right: 5px;
+            border-top-left-radius: 5px!important;
+            border-top-right-radius: 5px!important;
+            padding: 17px 15px;
+            background-image: none;
+
+        }
+    }
+    .active {
+        background-color: #fff;
+        color: rgba(51, 50, 50, 0.8);
+        background-image: none;
+
+    }
+    .close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        opacity: 1;
+        @include mQ(992px) {
+            right: 0;
         }
     }
 }
 
+.standard-modal {
+    .modal-content {
+        border: none;
+    }
+    .room-modal-slider {
+        @include mQ (992px) {
+            margin-bottom: 30px;
+        }
+        img {
+            height: 184px;
+            width: 100%;
+            object-fit: cover;
+            @include mQ (992px) {
+                height: 498px;
+            }
+        }
+    }
+    .modal-header {
+        background-color: #f6f6f6;
+        .close {
+            padding: 9px;
+            @include mQ(992px) {
+                padding: 0 0 20px 0;
+            }
+        }
+        @include mQ (992px) {
+            background-color: transparent;
+        }
+    }
+    .modal-body {
+        background-color: #fff;
+        padding: 20px;
+        @include mQ(992px) {
+            padding: 30px;
+        }
+        .modal-room-content {
+            padding: 0;
+            h2 {
+                @include sectionHeading;
+                font-family: $headingFont;
+                margin-bottom: 20px;
+            }
+            .room-facilities {
+                span {
+                    @include lightText;
+                }
+                img {
+                    margin-right: 10px;
+                }
+                div {
+                    margin-bottom: 15px;
+                    margin-right: 20px;
+                }
+            }
+            p {
+                margin: 20px 0;
+            }
+        }
+        .rates-wrapper {
+            display: block;
+            padding: 0;
+        }
+    }
+    .close {
+        opacity: 1;
+    }
+}
+.room-modal {
+    ul.room-modal-list {
+        @include mQ (992px) {
+            columns: 2;
+        }
+    }
+    .standard-slider img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        @include mQ (768px) {
+            height: 498px;
+        }
+    }
+
+}
+.terms-modal {
+    text-align: center;
+}
+.addon-modal {
+    img {
+        width: 100%;
+        height: 209px;
+        object-fit: cover;
+        @include mQ(992px) {
+            max-width: 428px;
+            height: 280px;
+        }
+    }
+    .addon-modal-content {
+        @include mQ(992px) {
+            margin-left: 30px;
+        }
+    }
+} 
+.signup-modal {
+    img {
+        min-width: 315px;
+        object-fit: cover;
+    }
+    .signup-modal-content {
+        padding: 20px;
+        @include mQ (992px) {
+            padding: 30px;
+        }
+    }
+    label {
+        @include formLabel;
+    }
+} 
+.sign-up-thanks {
+    @include mQmax (991px) {
+        .btn {
+            width: 100%;
+        }
+    }
+    @include mQ (992px) {
+        text-align: center;
+    }
+}
+
+.icon-info-white, .icon-search-white {
+    position: relative;
+    top: 3px;
+}
+.special-request-input {
+    display: none;
+}
+.invalid-feedback {
+    font-family: $textFont;
+}
+
+.loading-spinner {
+    .fa {
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+}

@@ -9,15 +9,17 @@
 
 
     <!-- Vendors -->
-    <link rel="stylesheet" href="public/bootstrap-4.0.0/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="public/css/slick-theme.css"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="public/css/styles.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -92,218 +94,73 @@
     <!-- End Desktop Nav -->
   </header>
 
-  <!-- Main Banner -->
-  <section id="banner" class="d-none d-lg-block">
-    <div class="container">
-      <h1>The Redworth Hall Hotel</h1>
-      <p>Surtees Rd, Newton Aycliffe DL5 6NL, UK</p>
-      <!-- HOTEL INFO BUTTONS P3B -->
-      <div class="hotel-info-buttons d-none d-lg-flex">
-        <a href="#"><button class="btn">Hotel Info</button></a>
-        <a href="#"><button class="btn">Map</button></a>
-        <a href="#"><button class="btn">Gallery</button></a>
-      </div>
-      <!-- END HOTEL INFO BUTTONS P3B -->
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-6"></div>
-        <div class="col-6">
-          <a href="javascript:;"><div class="hotel-gallery">
-            <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-          </div></a>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Mobile Hotel Info P3B -->
-  <section id="mobile-hotel-info" class="d-lg-none">
-    <div class="container d-flex justify-content-between">
-      <a href="#"><i class="icon-info-white"></i> Hotel Info</a>
-      <a href="#"><i class="icon-search-white"></i> New Search</a>
+<section id="banner" class="d-none d-xl-block">
+  <div class="container">
+    <h1>The Redworth Hall Hotel</h1>
+    <p>Surtees Rd, Newton Aycliffe DL5 6NL, UK</p>
+    <!-- HOTEL INFO BUTTONS P3B -->
+    <div class="hotel-info-buttons d-none d-lg-flex">
+      <a href="#" data-toggle="modal" data-target="#modalTabs" class="btn">Hotel Info</a>
+      <a href="#" class="btn">Map</a>
+      <a href="#" class="btn">Gallery</a>
     </div>
-  </section>
-  <!-- END Mobile Hotel Info P3B -->
+    <!-- END HOTEL INFO BUTTONS P3B -->
+  </div>
+  <div class="container px-0">
+    <div class="row">
+      <div class="col-6"></div>
+      <div class="col-6">
+        <a href="#"><div class="hotel-gallery">
+          <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
+        </div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mobile Hotel Info P3B -->
+<section id="mobile-hotel-info" class="d-xl-none">
+  <div class="container d-flex justify-content-between">
+    <a href="#" data-toggle="modal" data-target="#modalTabs"><i class="icon-info-white"></i> Hotel Info</a>
+    <a href="#"><i class="icon-search-white"></i> New Search</a>
+  </div>
+</section>
+<!-- END Mobile Hotel Info P3B -->
 
   <!-- IBE -->
+
+    <!-- Progress Steps -->
+    <section id="progress-steps">
+      <div class="container">
+        <!-- Progress Steps Mobile -->
+        <div class="progress-steps-mobile d-flex d-xl-none align-items-center">
+          <img src="public/images/icons/p3/icon-progress-1-of-5.svg" alt="">
+          <div>
+            <h3>Choose Room 1 of 2</h3>
+            <span>Next : Choose Room 2</span>
+          </div>
+        </div>
+        <!-- End Progress Steps Mobile -->
+      </div>
+  
+      <!-- Progress Steps Desktop -->
+      <div class="pregress-steps-desktop d-none d-xl-flex">
+        <ul>
+          <li class="active">CHOOSE ROOM</li>
+          <li>ADD EXTRAS</li>
+          <li>YOUR DETAILS</li>
+        </ul>
+      </div>
+      <!--End Progress Steps Desktop -->
+    </section>
+    <!-- End Progress Steps -->
+
+
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-4 pr-20 px-10">
-        <!-- Booking Summary P3B -->
-        <section id="booking-summary">
-          <!-- Booking Summary Heading -->
-          <div class="booking-summary-heading d-flex justify-content-between align-items-center">
-            <h2>My Booking</h2>
-            <span class="d-lg-none">Nov 30 - Dec 02</span>
-            <button class="btn btn-btn-secondary edit-search-btn d-none d-lg-block">Edit</button>
-            <a href="javascript:;" class="open-booking-summary d-lg-none"><i class="icon-chevron-down"></i></a>
-          </div>
-          <!-- END Booking Summary Heading -->
-
-          <!-- START Booking Summary Data -->
-          <div class="booking-summary-data">
-            <div class="booking-summary-table devider-top-desktop devider-bottom-desktop">
-              <div class="booking-row">
-                <div class="booking-data d-flex">
-                    <p>Hotel</p>
-                    <p>Amberley House</p>
-                </div>
-              </div>
-              <div class="booking-row">
-                <div class="booking-data d-flex">
-                    <p>Hotel</p>
-                    <p>Amberley House</p>
-                </div>
-              </div>
-              <div class="booking-row">
-                <div class="booking-data d-flex">
-                    <p>Hotel</p>
-                    <p>Amberley House</p>
-                </div>
-              </div>
-              <div class="booking-row">
-                <div class="booking-data d-flex">
-                    <p>Hotel</p>
-                    <p>Amberley House</p>
-                </div>
-              </div>
-              <div class="booking-row">
-                <div class="booking-data d-flex">
-                    <p>Hotel</p>
-                    <p>Amberley House</p>
-                </div>
-              </div>
-            </div>
-            <!-- Room Details P3B VAR LOOP -->
-            <div class="booking-summary-rooms-section">
-              <!-- START Room Details Row-->
-              <div class="booking-summary-room-row d-flex devider-top-mobile">
-                <img src="public/images/summary-img-1.jpg">
-                <div class="booking-summary-room-heading w-100">
-                  <p>Standard Twin Room</p>
-                  <p>£97.50</p>
-                  <div class="booking-summary-room-row-expanded my-2">
-                    <!-- Start Rate details -->
-                    <p>Bed & Breakfast - Flexible</p>
-                    <ul class="my-2">
-                      <li>Book now, pay on arrival</li>
-                      <li>Cancel for free by 2pm Tue, 29 Nov</li>
-                    </ul>
-                    <p class="mb-1">For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in this rate. </p>
-                    <!-- End Rate Details -->
-                    <!-- Addons -->
-                    <p>Dinner (£40.00)</p>
-                    <!-- End Addons -->
-                  </div>
-                </div>
-                <div class="d-flex">
-                  <a href="javascript:;" class="open-booking-summary-room-details"><i class="icon-chevron-down"></i></a>
-                </div>
-              </div>
-              <!-- END Room Details Row -->
-              <!-- START Room Details Row-->
-              <div class="booking-summary-room-row d-flex devider-top-mobile devider-top-desktop">
-                <img src="public/images/summary-img-1.jpg">
-                <div class="booking-summary-room-heading w-100">
-                  <p>Standard Twin Room</p>
-                  <p>£97.50</p>
-                  <div class="booking-summary-room-row-expanded my-2">
-                    <p>Bed & Breakfast - Flexible</p>
-                    <ul class="my-2">
-                      <li>Book now, pay on arrival</li>
-                      <li>Cancel for free by 2pm Tue, 29 Nov</li>
-                    </ul>
-                    <p class="mb-1">For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in this rate. </p>
-                    <p>Dinner (£40.00)</p>
-                  </div>
-                </div>
-                <div class="d-flex">
-                  <a href="javascript:;" class="open-booking-summary-room-details"><i class="icon-chevron-down"></i></a>
-                </div>
-              </div>
-              <!-- END Room Details Row-->
-              <!-- START Booking Summary Total -->
-              <div class="booking-summary-total-wrapper">
-                <!-- Booking Summary Total -->
-                <div class="booking-row devider-top-bottom" style="padding: 20px 0;">
-                  <div class="booking-data d-flex">
-                    <h2>Your Total</h2>
-                    <h2>£80.10</h2>
-                  </div>
-                </div>
-                <div class="booking-row" style="padding-top: 20px;">
-                  <div class="booking-data d-flex">
-                    <p>Due Now</p>
-                    <p>£0.00</p>
-                  </div>
-                </div>
-                <div class="booking-row" style="padding-bottom: 20px;">
-                  <div class="booking-data d-flex">
-                    <p>Pay On Arrival</p>
-                    <p>£0.00</p>
-                  </div>
-                </div>
-                <!-- End Booking Summary Total -->
-                <!-- Start Cancel Message -->
-                <div class="booking-row devider-top-mobile devider-top-desktop" style="padding-top: 20px;">
-                  <div class="booking-data d-flex">
-                    <p>Cancel for free by 2pm Tue, 29 Nov</p>
-                  </div>
-                </div>
-                <!-- End Cancel Message -->
-                <!-- Start Loyalty Message-->
-                <div class="booking-row" style="padding-bottom: 20px;">
-                  <div class="booking-data d-flex">
-                    <p>Congratulations! You saved £20.00 this booking by joining our loyalty club!</p>
-                  </div>
-                </div>
-                <!-- End Loyalty Message-->
-              </div>
-              <!-- END Booking Summary Total -->
-            <!-- END Room Details P3B VAR LOOP -->
-          </div>
-          </div>
-        </section>
-      </div>
-      <div class="col-12 col-lg-8 pl-20 px-10">
-        <!-- Progress Steps -->
-        <section id="progress-steps">
-          <!-- Progress Steps Mobile -->
-          <div class="progress-steps-mobile d-flex d-lg-none align-items-center">
-            <img src="public/images/icons/progress-wheel-5-of-5.svg">
-            <div>
-              <h3>Your Details</h3>
-              <span>You're on the last step!</span>
-            </div>
-          </div>
-          <!-- End Progress Steps Mobile -->
-
-          <!-- Progress Steps Desktop -->
-          <div class="pregress-steps-desktop text-center d-none d-lg-flex justify-content-between devider-bottom-desktop">
-            <div class="d-flex align-items-center">
-              <p class="step-complete">Choose room 1</p>
-              <i class="icon-progress-step-separator-complete"></i>
-              <p class="step-complete">Choose room 2</p>
-              <i class="icon-progress-step-separator-complete"></i>
-              <p class="step-complete">Extras Room 1</p>
-              <i class="icon-progress-step-separator-complete"></i>
-              <p class="step-complete">Extras Room 2</p>
-              <i class="icon-progress-step-separator"></i>
-              <p>Your Details</p>
-            </div>
-            <form action="" method="get" id="currencyConverter" class="dropdown-currency">
-              <input type="hidden" name="redirect">
-              <select id="currency-options" class="price-select" name="currencyCode" onchange="">
-                  <option value="EUR">€ EUR</option>
-                  <option value="GBP">£ GBP</option>
-                  <option value="USD">$ USD</option>
-              </select>
-            </form>
-          </div>
-          <!--End Progress Steps Desktop -->
-        </section>
-        <!-- End Progress Steps -->
+      <div class="col-12 col-xl-8 pl-custom px-10">
+        
 
         <!-- <div style="margin-top: 30px" class="d-none d-lg-block"></div> -->
 
@@ -349,11 +206,17 @@
                 Please provide a valid state.
               </div>
             </div>
-            <div class="form-group col-sm-12 checkbox-group mb-0">
+            <!-- <div class="form-group col-sm-12 checkbox-group mb-0">
               <label class="d-flex mb-0">
                 <input type="checkbox" name="newsletter"> <span class="custom-check"></span>Send me
                 special
                 offers by email.</label>
+            </div> -->
+            <div class="col-12">
+              <a href="javascript:;" class="expand-special-request d-flex align-items-center plus-minus-icons"><i class="icon-plus-circle"></i> Add Special Request</a>
+            </div>
+            <div class="form-group col-12 mt-3 special-request-input">
+              <textarea class="form-control" id="" rows="3"></textarea>
             </div>
           </div>
         </section>
@@ -368,7 +231,7 @@
       <section class="guest-details-wrapper card-style">
         <div class="row">
           <div class="col-3 pr-0 pr-sm-3">
-            <img class="w-100" src="public/images/summary-img-1.jpg">
+            <img class="w-100 lazyload" data-src="public/images/summary-img-1.jpg">
           </div>
           <div class="col-9">
             <h3>Executive Double</h3>
@@ -407,7 +270,7 @@
         <h2>Payment Details</h2>
       </div>
 
-      <section class="d-lg-none payment-summery-extra">
+      <section class="d-lg-none payment-summary-extra">
         <div class="payment-summary-box">
           <div class="row">
               <div class="col-4">
@@ -435,9 +298,9 @@
           <div class="form-group col-12 col-lg-6">
             <label class="w-100">Card number*
               <ul>
-                  <li><img src="public/images/icons/p3/card-master.svg"></li>
-                  <li><img src="public/images/icons/p3/card-visa.svg"></li>
-                  <li><img src="public/images/icons/p3/card-amex.svg"></li>
+                  <li><img src="public/images/icons/p3/icon-card-mastercard.svg"></li>
+                  <li><img src="public/images/icons/p3/icon-card-visa.svg"></li>
+                  <li><img src="public/images/icons/p3/icon-card-amex.svg"></li>
               </ul>
             </label>
             <input type="text" class="form-control" placeholder="" name="" required="">
@@ -447,7 +310,7 @@
           </div>
           <div class="form-group col-5 col-xl-2 pr-0">
             <label>Expiry Date *</label>
-            <input type="text" class="form-control" placeholder="MM/YY" name="" required="">
+            <input type="text" class="form-control" placeholder="MM / YY" name="" required="">
             <div class="invalid-feedback">
               Please provide a valid state.
             </div>
@@ -464,12 +327,54 @@
               data-original-title="The three or four digit code on the back of your card.">
             </i>
           </div>
-          <div class="col-12 mt-3 mb-4">
+          <div class="form-group col-12 col-sm-6">
+            <label>Street Address*</label>
+            <input type="text" class="form-control" placeholder="" name="" required="">
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="form-group col-12 col-sm-6">
+            <label>Town*</label>
+            <input type="text" class="form-control" placeholder="" name="" required="">
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="form-group col-12 col-sm-6">
+            <label>City*</label>
+            <input type="text" class="form-control" placeholder="" name="" required="">
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="form-group col-12 col-sm-6">
+            <label>Country*</label>
+            <input type="text" class="form-control" placeholder="" name="" required="">
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="form-group col-12 col-sm-6">
+            <label>Eircode*</label>
+            <input type="text" class="form-control" placeholder="" name="" required="">
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="col-12">
+            <a href="javascript:;" class="expand-special-request d-flex align-items-center plus-minus-icons"><i class="icon-plus-circle"></i> Add Company Name</a>
+          </div>
+          <div class="form-group col-6 mt-3 special-request-input">
+            <label>Company Name</label>
+            <input type="text" class="form-control" placeholder="" name="" required="">
+          </div>
+          <div class="col-12 mt-3 mb-4 terms-confirmation">
             <label class="d-flex">
               <input type="checkbox" name=""><span class="custom-check"></span><p>I agree to the&nbsp;<a href="#">Terms & Conditions</a>&nbsp;&&nbsp;<a href="#">Privacy Policy</a>.</p></label>
           </div>
           <div class="col-12 col-md-6">
-            <button class="btn btn-primary w-100">Confirm Booking</button>
+            <a href="#" class="btn btn-primary w-100 loading-spinner">Confirm Booking</a>
           </div>
           <div class="col-12 col-md-6">
             <img src="/public/images/ssl-badge.jpg" class="mt-3 mt-md-0">
@@ -477,6 +382,152 @@
         </div>
         </section>
       </div>
+      <div class="col-12 col-xl-4 pr-custom px-10">
+        <!-- Booking Summary P3B -->
+        <section id="booking-summary">
+          <!-- Booking Summary Heading -->
+          <div class="booking-summary-heading d-flex justify-content-between align-items-center">
+            <div class="d-flex">
+              <h2>My Booking</h2>
+              <span class="d-xl-none">Nov 30 - Dec 02</span>
+            </div>
+            <a href="#" class="btn btn-secondary edit-search-btn d-none d-xl-block">Edit</a>
+            <div class="d-xl-none" style="height: 30px">
+              <i class="icon-expand"></i>
+            </div>
+          </div>
+          <!-- END Booking Summary Heading -->
+
+          <!-- START Booking Summary Data -->
+          <div class="booking-summary-data">
+            <div class="booking-summary-table devider-top-desktop devider-bottom-desktop">
+              <div class="booking-row">
+                <div class="booking-data d-flex">
+                    <p>Hotel</p>
+                    <p>Amberley House</p>
+                </div>
+              </div>
+              <div class="booking-row">
+                <div class="booking-data d-flex">
+                    <p>Hotel</p>
+                    <p>Amberley House</p>
+                </div>
+              </div>
+              <div class="booking-row">
+                <div class="booking-data d-flex">
+                    <p>Hotel</p>
+                    <p>Amberley House</p>
+                </div>
+              </div>
+              <div class="booking-row">
+                <div class="booking-data d-flex">
+                    <p>Hotel</p>
+                    <p>Amberley House</p>
+                </div>
+              </div>
+              <div class="booking-row">
+                <div class="booking-data d-flex">
+                    <p>Hotel</p>
+                    <p>Amberley House</p>
+                </div>
+              </div>
+            </div>
+            <!-- Room Details P3B VAR LOOP -->
+            <div class="booking-summary-rooms-section">
+              <!-- START Room Details Row-->
+              <div class="booking-summary-room-row d-flex devider-top-mobile trigger-rotate">
+                <img data-src="public/images/summary-img-1.jpg" class="lazyload">
+                <div class="booking-summary-room-heading w-100">
+                  <p class="booking-summary-room-name">Standard Twin Room</p>
+                  <p class="booking-summary-room-price">£97.50</p>
+                  <div class="booking-summary-room-row-expanded my-2">
+                    <!-- Start Rate details -->
+                    <p>Bed & Breakfast - Flexible</p>
+                    <ul class="my-2">
+                      <li>Book now, pay on arrival</li>
+                      <li>Cancel for free by 2pm Tue, 29 Nov</li>
+                    </ul>
+                    <p class="mb-1">For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in this rate. </p>
+                    <!-- End Rate Details -->
+                    <!-- Addons -->
+                    <p>Dinner (£40.00)</p>
+                    <!-- End Addons -->
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <i class="icon-expand"></i>
+                </div>
+              </div>
+              <!-- END Room Details Row -->
+              <!-- START Room Details Row-->
+              <div class="booking-summary-room-row d-flex devider-top-mobile devider-top-desktop trigger-rotate">
+                <img data-src="public/images/summary-img-1.jpg" class="lazyload">
+                <div class="booking-summary-room-heading w-100">
+                  <p class="booking-summary-room-name">Standard Twin Room</p>
+                  <p class="booking-summary-room-price">£97.50</p>
+                  <div class="booking-summary-room-row-expanded my-2">
+                    <p>Bed & Breakfast - Flexible</p>
+                    <ul class="my-2">
+                      <li>Book now, pay on arrival</li>
+                      <li>Cancel for free by 2pm Tue, 29 Nov</li>
+                    </ul>
+                    <p class="mb-1">For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in this rate. </p>
+                    <p>Dinner (£40.00)</p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <i class="icon-expand"></i>
+                </div>
+              </div>
+              <!-- END Room Details Row-->
+              <!-- START Booking Summary Total -->
+              <div class="booking-summary-total-wrapper">
+                <!-- Booking Summary Total -->
+                <div class="booking-row devider-top-bottom" style="padding: 20px 0;">
+                  <div class="booking-data d-flex justify-content-between">
+                    <h2>Your Total</h2>
+                    <h2>£80.10</h2>
+                  </div>
+                </div>
+                <div class="booking-row" style="padding-top: 20px;">
+                  <div class="booking-data d-flex justify-content-between">
+                    <p>Due Now</p>
+                    <p>£0.00</p>
+                  </div>
+                </div>
+                <div class="booking-row" style="padding-bottom: 20px;">
+                  <div class="booking-data d-flex justify-content-between">
+                    <p>Pay On Arrival</p>
+                    <p>£0.00</p>
+                  </div>
+                </div>
+              </div>
+                <!-- End Booking Summary Total -->
+              
+                <!-- Start Cancel Message -->
+                <div class="booking-row devider-top-mobile devider-top-desktop" style="padding-top: 20px;">
+                  <div class="booking-data d-flex">
+                    <p>Cancel for free by 2pm Tue, 29 Nov</p>
+                  </div>
+                </div>
+                <!-- End Cancel Message -->
+                <!-- Start Loyalty Message-->
+                <div class="booking-row" style="padding-bottom: 20px;">
+                  <div class="booking-data d-flex">
+                    <p>Congratulations! You saved £20.00 this booking by joining our loyalty club!</p>
+                  </div>
+                </div>
+                <!-- End Loyalty Message-->
+              <!-- END Booking Summary Total -->
+            <!-- END Room Details P3B VAR LOOP -->
+          </div>
+          </div>
+        </section>
+        <!-- End Booking Summary P3B -->
+
+
+      </div>
+
     </div>
 
   </div>
@@ -514,23 +565,16 @@
         </div>
       </div>
     </div>
-
+  
   </footer>
-  <div class="copy-rights">
-    <div class="container">
-      <p>&copy; All rights reserved | Redworth Hall 2020</p>
-    </div>
-  </div>
     
 
     
     <!-- JS Files -->
 
     <!-- jQuery -->
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+    <script src="public/js/jquery-3.5.0.min.js"></script>
+
     
     <!-- Slick -->
     <script type="text/javascript" src="public/js/slick.min.js"></script>
@@ -544,11 +588,12 @@
     <script type="text/javascript" src="public/js/prefixfree.dynamic-dom.min.js"></script>
     <script type="text/javascript" src="public/js/prefixfree.viewport-units.js"></script>
     <script type="text/javascript" src="public/js/prefixfree.jquery.js"></script>
+    
+    <!-- Lazyload -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
 
     <!-- Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <script src="public/js/bootstrap.min.js"></script>
 
     
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

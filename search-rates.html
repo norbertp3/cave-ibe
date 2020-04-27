@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME PAGE</title>
+
+
+
+    <!-- Vendors -->
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/slick-theme.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="public/css/styles.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+
+        <!-- Mobile Nav -->
+        <div class="d-lg-none">
+          <nav class="navbar navbar-expand-xl navbar-light">
+            <div class="mobile-nav-top w-100 d-flex justify-content-between align-items-center">
+              <a href="#"><img src="/public/images/redworth_logo-1.png" class="logo"></a>
+              <form action="" method="get" id="currencyConverter" class="dropdown-currency">
+                <input type="hidden" name="redirect">
+                <select id="currency-options" class="price-select ml-0" name="currencyCode" onchange="">
+                  <option value="EUR">€ EUR</option>
+                  <option value="GBP">£ GBP</option>
+                  <option value="USD">$ USD</option>
+                </select>
+              </form>
+              <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+              <div class="three">
+                <a href="javascript:;" data-toggle="collapse" data-target="#navbarCollapse">
+                  <div class="hamburger" id="hamburger-6">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+    
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active nav-book-now">Book a Room</a>
+                <a href="https://www.redworthhalldurham.co.uk/rooms/" class="nav-item nav-link">Rooms</a>
+                <a href="https://www.redworthhalldurham.co.uk/spa/" class="nav-item nav-link">Retreat Spa</a>
+                <a href="https://www.redworthhalldurham.co.uk/weddings/" class="nav-item nav-link">Weddings</a>
+                <a href="https://www.redworthhalldurham.co.uk/meetings-and-events/" class="nav-item nav-link">Meeting &
+                  Events</a>
+                <a href="https://www.redworthhalldurham.co.uk/restaurant/" class="nav-item nav-link">Restaurant</a>
+                <a href="https://www.redworthhalldurham.co.uk/offers/" class="nav-item nav-link">Offers & What's On</a>
+                <a href="https://www.redworthhalldurham.co.uk/contact-us/" class="nav-item nav-link">Contact</a>
+                <a href="https://shops.giftvoucherbrilliance.co.uk/pages/redworth_hall/Home"
+                  class="nav-item nav-link mb-5">Gift Vouchers</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- End Mobile Nav -->
+    
+        <!-- Desktop Nav -->
+        <div class="d-none d-lg-block">
+          <div class="header-container d-flex justify-content-between align-items-center">
+            <a href="#"><img src="/public/images/redworth_logo-1.png" class="logo"></a>
+            <div class="main-nav">
+              <ul class="mt-auto mb-auto">
+                <li><a href="https://www.redworthhalldurham.co.uk/rooms/">Rooms</a></li>
+                <li><a href="https://www.redworthhalldurham.co.uk/spa/">Retreat Spa</a></li>
+                <li><a href="https://www.redworthhalldurham.co.uk/weddings/">Weedings</a></li>
+                <li><a href="https://www.redworthhalldurham.co.uk/meetings-and-events/">Meetings and Events</a></li>
+                <li><a href="https://www.redworthhalldurham.co.uk/restaurant/">Restaurant</a></li>
+                <li><a href="https://www.redworthhalldurham.co.uk/offers/">Offers & What's On</a></li>
+                <li><a href="https://www.redworthhalldurham.co.uk/contact-us/">Contact</a></li>
+                <li><a href="https://shops.giftvoucherbrilliance.co.uk/pages/redworth_hall/Home">Gift Vouchers</a></li>
+              </ul>
+            </div>
+            <a href="#"><button type="button" class="btn btn-primary float-right">Book a room</button></a>
+          </div>
+        </div>
+        <!-- End Desktop Nav -->
+      </header>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <img src="public/images/icons/close-x.svg" alt="">
+    </a>
+    <div class="side-nav-links text-center">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="d-flex justify-content-center">
+        <a href=""><i class="fa fa-facebook"></i></a>
+        <a href=""><i class="fa fa-instagram"></i></a>
+        <a href=""><i class="fa fa-twitter"></i></a>
+    </div>
+</div>
+
+  <section id="banner" class="d-none d-xl-block">
+    <div class="container">
+      <h1>The Redworth Hall Hotel</h1>
+      <p>Surtees Rd, Newton Aycliffe DL5 6NL, UK</p>
+      <!-- HOTEL INFO BUTTONS P3B -->
+      <div class="hotel-info-buttons d-none d-lg-flex">
+        <a href="#" data-toggle="modal" data-target="#modalTabs" class="btn">Hotel Info</a>
+        <a href="#" class="btn">Map</a>
+        <a href="#" class="btn">Gallery</a>
+      </div>
+      <!-- END HOTEL INFO BUTTONS P3B -->
+    </div>
+    <div class="container px-0">
+      <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6">
+          <a href="#"><div class="hotel-gallery">
+            <img src="public/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Hotel Info P3B -->
+  <section id="mobile-hotel-info" class="d-xl-none">
+    <div class="container d-flex justify-content-between">
+      <a href="#" data-toggle="modal" data-target="#modalTabs"><i class="icon-info-white"></i> Hotel Info</a>
+      <a href="#"><i class="icon-search-white"></i> New Search</a>
+    </div>
+  </section>
+  <!-- END Mobile Hotel Info P3B -->
+
+  <!-- IBE -->
+        <div class="search-rates">
+                <div id="booking-widget" class="booking-widget-search-rates">
+                <div class="widget-form">
+                    <form action="">
+                        <div class="form-group">
+                            <div class="booking-widget-datepicker">
+                                <input class="form-control" type="text" id="trigger-single" :value="formatDates(arrivalDate)" placeholder="Select date" readonly>
+                                <input type="hidden" name="arrival" :value="arrivalDate">
+                                <airbnb-style-datepicker
+                                        :trigger-element-id="'trigger-single'"
+                                        :mode= "'single'"
+                                        :date-one="arrivalDate"
+                                        :months-to-show="1"
+                                        @date-one-selected="dateSelected"
+                                ></airbnb-style-datepicker>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1 Night</option>
+                                <option>2 Nights</option>
+                                <option>3 Nights</option>
+                                <option>4 Nights</option>
+                                <option>5 Nights</option>
+                            </select>
+                        </div>
+            
+                        <div id="guest-widget">
+                            <div class="guest-quantity" v-for="room in rooms">
+                                <div class="d-flex total-guests roll" v-on:click="isHidden = !isHidden">
+                                    <p>{{totalRooms}} room</p>
+                                    <p>{{totalPeople}} people</p>
+                                </div>
+                                <div class="guest-widget-buttons" v-if="!isHidden">
+                                    <div class="guest-widget-buttons-container">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p>How many rooms?</p>
+                                            <div class="d-flex align-items-center justify-content-between w-50">
+                                                <button type="button" @click="room.quantity -= 1" :disabled="room.quantity == 1">-</button>
+                                                    <span>{{room.quantity}}</span>
+                                                <button type="button" @click="room.quantity += 1">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="guest-info" v-if="room.quantity >= 4">
+                                            <p class="room-number">
+                                                <span>Room {{room.quantity}}<span>
+                                            </p>                            
+                                            <div class="align">
+                                                <div class="d-flex align-items-center my-3" v-for="person in people">
+                                                    <p class="person-age">{{person.name}} <span>(15+)</span></p>
+                                                    <div class="d-flex align-items-center justify-content-between w-50">
+                                                        <button type="button" @click="person.quantity -= 1" :disabled="person.quantity == 0">-</button>
+                                                            <span>{{person.quantity}}</span>
+                                                        <button type="button" @click="person.quantity += 1">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="guest-info" v-if="room.quantity >= 3">
+                                            <p class="room-number">
+                                                <span>Room {{room.quantity}}<span>
+                                            </p>                            <div class="align">
+                                                <div class="d-flex align-items-center my-3" v-for="person in people">
+                                                    <p class="person-age">{{person.name}} <span>(15+)</span></p>
+                                                    <div class="d-flex align-items-center justify-content-between w-50">
+                                                        <button type="button" @click="person.quantity -= 1" :disabled="person.quantity == 0">-</button>
+                                                            <span>{{person.quantity}}</span>
+                                                        <button type="button" @click="person.quantity += 1">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="guest-info" v-if="room.quantity >= 2">
+                                            <p class="room-number">
+                                                <span>Room {{room.quantity}}<span>
+                                            </p>                            <div class="align">
+                                                <div class="d-flex align-items-center my-3" v-for="person in people">
+                                                    <p class="person-age">{{person.name}} <span>(15+)</span></p>
+                                                    <div class="d-flex align-items-center justify-content-between w-50">
+                                                        <button type="button" @click="person.quantity -= 1" :disabled="person.quantity == 0">-</button>
+                                                            <span>{{person.quantity}}</span>
+                                                        <button type="button" @click="person.quantity += 1">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="guest-info" v-if="room.quantity >= 1">
+                                            <p class="room-number">
+                                                <span>Room {{room.quantity}}<span>
+                                            </p>
+                                            <div class="align">
+                                                <div class="d-flex align-items-center my-3" v-for="person in people">
+                                                    <p class="person-age">{{person.name}} <span>(15+)</span></p>
+                                                    <div class="d-flex align-items-center justify-content-between w-50">
+                                                        <button type="button" @click="person.quantity -= 1" :disabled="person.quantity == 0">-</button>
+                                                            <span>{{person.quantity}}</span>
+                                                        <button type="button" @click="person.quantity += 1">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="apply-btn" v-on:click="isHidden = true">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-code">
+                            <a href="javascript:;" class="promo-code-link">Add a code +</a>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Type your code...">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-cta w-100">Search</button>
+                    </form>
+                    <div class="d-flex align-items-center free-drink">
+                        <img src="public/images/icons/icon-free-drink.svg">
+                        <p>Book online with us and get a free drink at or hot beverage at the Arkle Bar & Restaurant!</p>
+                    </div>
+                </div>
+                </div>
+        </div>
+
+  
+<!-- Footer -->
+
+<footer>
+    <div class="container devider-top-desktop devider-top-mobile">
+      <div class="row">
+        <div class="col-12 col-lg-12 col-xl-3 text-center text-xl-left mb-3 mb-xl-0">
+          <a href="#"><img src="/public/images/redworth_logo-1.png" class="logo"></a>
+        </div>
+        <div class="col-12 col-lg-8 col-xl-6 mb-2 mb-xl-0">
+          <div class="footer-links">
+            <ul>
+              <li><a href="https://shops.giftvoucherbrilliance.co.uk/pages/redworth_hall/Home">Gift Vouchers</a></li>
+              <li><a href="https://www.redworthhalldurham.co.uk/offers/">Special Offers</a></li>
+              <li><a href="https://www.redworthhalldurham.co.uk/faqs/">FAQs</a></li>
+              <li><a href="https://www.redworthhalldurham.co.uk/contact-us/">Contact Us</a></li>
+              <li><a
+                  href="https://www.thecairncollection.co.uk/?_ga=2.167210235.47086315.1581520921-683091198.1579273141">The
+                  Cairn Collection</a></li>
+              <li><a href="https://www.cairnhotelgroup.com/">The Cairn Group</a></li>
+              <li><a href="https://www.redworthhalldurham.co.uk/terms-conditions/">Terms & Conditions</a></li>
+              <li><a href="https://www.redworthhalldurham.co.uk/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="https://www.redworthhalldurham.co.uk/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-xl-3">
+          <div class="footer-social-media text-center float-lg-right">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li class="mx-3"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+
+    
+    <!-- JS Files -->
+
+    <!-- jQuery -->
+    <script src="public/js/jquery-3.5.0.min.js"></script>
+    
+    <!-- Slick -->
+    <script type="text/javascript" src="public/js/slick.min.js"></script>
+
+    <!-- Multi Select -->
+    <script type="text/javascript" src="public/js/popper.js"></script>
+    <script type="text/javascript" src="public/js/bootstrap-multiselect.js"></script>
+
+    <!-- Prefixfree -->
+    <script type="text/javascript" src="public/js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="public/js/prefixfree.dynamic-dom.min.js"></script>
+    <script type="text/javascript" src="public/js/prefixfree.viewport-units.js"></script>
+    <script type="text/javascript" src="public/js/prefixfree.jquery.js"></script>
+
+    <!-- Lazyload -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="public/js/bootstrap.min.js"></script>
+
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/no-dep/vue-airbnb-style-datepicker.min.js"></script> -->
+
+    <!-- Custom -->
+    <script src="public/js/p3core.js"></script>
+    <script src="public/js/custom.js"></script>
+
+    <!-- Vue Datepicker -->
+    <!-- <script>
+
+      window.datePickerMixin = {
+          data: {
+              dateFormat: '',
+              arrivalDate: ''
+          },
+          methods: {
+              dateSelected: function(date) {
+                  this.arrivalDate = date;
+              },
+
+              getDateSuffix: function(d) {
+                  if (d > 3 && d < 21) return 'th';
+                  switch (d % 10) {
+                      case 1:  return "st";
+                      case 2:  return "nd";
+                      case 3:  return "rd";
+                      default: return "th";
+                  }
+              },
+
+              formatDates: function(date) {
+                  var daysShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                  var shortMonthNames = [
+                      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+                  ];
+
+                  var date = new Date(date);
+
+                  return daysShort[date.getUTCDay()] + ' ' + date.getUTCDate() + this.getDateSuffix(date.getUTCDate()) + ' ' + shortMonthNames[date.getUTCMonth()];
+              }
+          }
+      }
+
+      window.initDatePicker = function(arrivalDate) {
+          var datePickers = document.querySelectorAll('.date-picker');
+          if ( ! datePickers || ! datePickers.length) {
+              return;
+          }
+
+          // define options (optional)
+          var datepickerOptions = {
+              sundayFirst: true,
+              colors: {
+                  selected: '#57565b',
+                  inRange: '#66e2da',
+                  selectedText: '#fff',
+                  text: '#565a5c',
+                  inRangeBorder: '#33dacd',
+                  disabled: '#fff',
+                  hoveredInRange: '#67f6ee'
+              },
+          }
+          // install plugin
+          Vue.use(window.AirbnbStyleDatepicker, datepickerOptions);
+
+          datePickers.forEach(function (element) {
+              new Vue({
+                  el: element,
+                  mixins: [window.datePickerMixin],
+                  mounted: function () {
+
+                      if (arrivalDate) {
+                          this.arrivalDate = arrivalDate;
+                      } else {
+                          this.arrivalDate = new Date();
+                      }
+                  }
+              });
+          });
+      }
+      initDatePicker('2020-03-20');
+
+  
+  </script> -->
+
+<script>
+    new Vue({
+        el: '#guest-widget',
+        data: {
+            rooms: [{"id":1,"quantity":1,"name":"Room"}],
+            people: [{"id":1,"quantity":1,"name":"Adult"},{"id":2,"quantity":0,"name":"Children"},{"id":3,"quantity":0,"name":"Infant"}],
+            isHidden: true
+        },
+        computed: {
+            totalRooms () {
+                return this.rooms.reduce((sum, room) => {
+                    return sum + room.quantity
+                }, 0)
+            },
+            totalPeople () {
+                return this.people.reduce((sum, people) => {
+                    return sum + people.quantity
+                }, 0)
+            }
+        }
+    })
+  </script>
+
+</body>
+</html>
