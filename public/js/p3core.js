@@ -38,9 +38,9 @@ $('.rate-name').click(function(){
 $('.expand-special-request').click(function(){
   $(this).closest('section').find('.special-request-input').slideToggle();
 });
-$(".view-rates-btn").click(function(){
-  $(".icon-chevron-down").toggleClass("icon-chevron-up");
-});
+// $(".view-rates-btn").click(function(){
+//   $(".icon-chevron-down").toggleClass("icon-chevron-up");
+// });
 $(".plus-minus-icons").click(function(){
   $(".icon-plus-circle").toggleClass("icon-minus-circle");
 });

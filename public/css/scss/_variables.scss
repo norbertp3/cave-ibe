@@ -6,7 +6,7 @@ $textFont: 'Raleway', sans-serif;
 $primaryFontColor: #222;
 $secondaryFontColor: #222;
 $lightFontColor: rgba(34, 34, 34, 0.5);
-$bodyLinkColor: brown;
+$bodyLinkColor: #222;
 $primaryColor: #333;
 $secondaryColor: yellow;
 $pageBg: #fff;
@@ -34,7 +34,9 @@ $iconInfoLightDefault: url(../../public/images/icons/p3/icon-info-light-default.
 // $iconBtnPrevPeriod:
 $iconBtnPrimaryUp: url(../../../public/images/icons/p3/icon-btn-primary-up.svg);
 $iconBtnPrimaryDown: url(../../../public/images/icons/p3/icon-btn-primary-down.svg);
+$iconBtnPrimaryDownHover: url(../../../public/images/icons/p3/icon-btn-next-period.svg);
 $iconBtnPrimaryRight: url(../../../public/images/icons/p3/icon-btn-primary-right.svg);
+$iconBtnPrimaryRightHover: url(../../../public/images/icons/p3/icon-btn-primary-right-hover.svg);
 $iconExpand: url(../../../public/images/icons/p3/icon-expand.svg);
 $iconCollapse: url(../../../public/images/icons/p3/icon-collapse.svg);
 $iconCloseLightDefault: url(../../../public/images/icons/p3/icon-close-light-default.svg);
