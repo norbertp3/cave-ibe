@@ -212,12 +212,9 @@
 #progress-steps {
   .pregress-steps-desktop {
     background-color: rgba(34, 34, 34, 0.05);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     padding-bottom: 0;
-    .step {
-      padding-top: 12px;
-      padding-bottom: 12px;
-    }
+    line-height: 50px;
     .active {
       background-color: #e8ecd4;
       font-weight: 500;
@@ -377,6 +374,7 @@
   @include mQ(992px) {
     .strike-through {
       color: #222;
+      font-size: 18px;
     }
   }
 }
@@ -1017,4 +1015,44 @@ p.booking-summary-room-name{
         }
         }
       }
+}
+
+.hotel-info-buttons .btn {
+  text-transform: uppercase;
+}
+
+.room-wrapper .room-image {
+    @include mQ (992px){
+      min-height: 260px;
+    }
+}
+.icon-info {
+  @include mQ (992px) {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .rates-wrapper h3 a {
+      font-size: 18px;
+      line-height: 24px;
+  }
+}
+
+.standard-modal .modal-body .modal-room-content .room-facilities span {
+  color: #222;
+  @include mQ(992px) {
+    font-size: 16px;
+  }
+}
+.room-modal-list li {
+  margin-bottom: 5px;
+}
+
+.signup-modal-content .form-group input {
+  background-color: #f4f4f4;
+}
+.member-login a {
+  text-decoration: underline;
 }

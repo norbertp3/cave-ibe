@@ -22,7 +22,7 @@
 @mixin sectionHeading {
     font-family: $headingFont;
     font-size: 24px;
-    color: #57565b;
+    color: #222;
     font-weight: 500;
     @include mQ(992px) {
         font-size: 30px;
@@ -109,7 +109,8 @@
         box-shadow:inset 0px 0px 0px 1px #f0f0f0;
     }
     &:focus {
-        border: solid 1px #adb971;
+        box-shadow:inset 0px 0px 0px 1px #f0f0f0;
+        border: 2px solid #222222;
     }
     &:disabled {
         background-color: #222222;
@@ -265,7 +266,7 @@
     background-color: #fff;
     color: $primaryFontColor;
     font-size: 16px;
-    border: solid 1px transparent;
+    border: none;
     height: 50px;
     font-family: $textFont;
     &:focus {
