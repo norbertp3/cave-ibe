@@ -2652,6 +2652,10 @@ header .header-container .main-nav a {
   }
 }
 
+header .header-container .main-nav a:hover {
+  text-decoration: underline;
+}
+
 header .header-container .btn-primary {
   padding: 10.5px 32px;
 }
@@ -2742,6 +2746,10 @@ footer .footer-links ul {
 footer .footer-links li {
   list-style: none;
   margin-bottom: 11px;
+}
+
+footer .footer-links li:hover {
+  opacity: .8;
 }
 
 @media screen and (max-width: 991px) {
@@ -3016,7 +3024,7 @@ footer .footer-social-media .fa.fa-instagram {
 }
 
 .page-top {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .page-top h2 {
@@ -4029,6 +4037,11 @@ p.booking-summary-room-name {
   .room-wrapper .room-image {
     min-height: 260px;
   }
+}
+
+.icon-info {
+  position: relative;
+  top: 2px;
 }
 
 @media screen and (min-width: 992px) {
