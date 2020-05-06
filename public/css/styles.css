@@ -4109,4 +4109,13 @@ p.booking-summary-room-name {
 .member-login a {
   text-decoration: underline;
 }
+
+.header-container .dropdown-currency {
+  position: absolute;
+  right: 5px;
+}
+
+.header-container .btn-primary {
+  margin-right: 5px;
+}
 /*# sourceMappingURL=styles.css.map */

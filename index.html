@@ -89,6 +89,14 @@
           </ul>
         </div>
         <a href="#" class="btn btn-primary float-right" onclick="openWidget()">Book a room</a>
+        <form action="" method="get" id="currencyConverter" class="dropdown-currency">
+          <input type="hidden" name="redirect">
+          <select id="currency-options" class="price-select ml-0" name="currencyCode" onchange="">
+            <option value="EUR">€ EUR</option>
+            <option value="GBP">£ GBP</option>
+            <option value="USD">$ USD</option>
+          </select>
+        </form>
       </div>
     </div>
     <!-- End Desktop Nav -->

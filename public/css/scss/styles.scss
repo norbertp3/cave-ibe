@@ -1058,3 +1058,14 @@ p.booking-summary-room-name{
 .member-login a {
   text-decoration: underline;
 }
+
+.header-container {
+  .dropdown-currency {
+    position: absolute;
+    right: 5px;
+    // margin-left: 10px;
+  }
+  .btn-primary {
+    margin-right: 5px;
+  }
+}
