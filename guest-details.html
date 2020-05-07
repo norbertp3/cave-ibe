@@ -332,6 +332,16 @@
         </form>
       </div>
       <div class="col-12 col-xl-4 pr-custom px-10">
+        <div class="d-none d-xl-flex justify-content-end currency-desktop-guests">
+          <form action="" method="get" id="currencyConverter" class="dropdown-currency">
+            <input type="hidden" name="redirect">
+            <select id="currency-options" class="price-select ml-0" name="currencyCode" onchange="">
+              <option value="EUR">€ EUR</option>
+              <option value="GBP">£ GBP</option>
+              <option value="USD">$ USD</option>
+            </select>
+          </form>
+        </div>
         <!-- Booking Summary P3B -->
         <section id="booking-summary">
           <!-- Booking Summary Heading -->

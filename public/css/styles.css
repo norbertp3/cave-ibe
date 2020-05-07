@@ -3039,7 +3039,7 @@ footer .footer-social-media .fa.fa-instagram {
 
 #progress-steps .pregress-steps-desktop {
   background-color: rgba(34, 34, 34, 0.05);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding-bottom: 0;
   line-height: 50px;
 }
@@ -3054,7 +3054,7 @@ footer .footer-social-media .fa.fa-instagram {
 }
 
 .page-top {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .page-top h2 {
@@ -4110,12 +4110,17 @@ p.booking-summary-room-name {
   text-decoration: underline;
 }
 
-.header-container .dropdown-currency {
-  position: absolute;
-  right: 5px;
+.currency-desktop-addons {
+  margin-bottom: 20px;
 }
 
-.header-container .btn-primary {
-  margin-right: 5px;
+.currency-desktop-guests {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 992px) {
+  .dropdown-currency select {
+    height: 50px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
