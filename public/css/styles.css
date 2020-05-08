@@ -4102,6 +4102,11 @@ p.booking-summary-room-name {
   }
 }
 
+.payment-details-wrapper .icon-info:hover {
+  height: 24px;
+  width: 24px;
+}
+
 @media screen and (min-width: 992px) {
   .rates-wrapper h3 a {
     font-size: 18px;
