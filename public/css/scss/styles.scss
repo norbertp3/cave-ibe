@@ -1029,6 +1029,15 @@ p.booking-summary-room-name{
 .icon-info {
   position: relative;
   top: 2px;
+
+  &:hover {
+    height: 16px;
+    width: 16px;
+    @include mQ (992px) {
+      height: 24px;
+      width: 24px;
+    }
+  }
   @include mQ (992px) {
     height: 24px;
     width: 24px;

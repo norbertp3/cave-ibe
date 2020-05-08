@@ -169,6 +169,10 @@ a:hover {
 
 .icon-info:hover {
   background: url(../../public/images/icons/p3/icon-info-dark-hover.svg);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .icon-info-white {
@@ -609,6 +613,11 @@ label.validationError {
   #progress-steps .progress-steps-mobile span {
     font-size: 14px;
   }
+}
+
+#progress-steps .progress-steps-mobile .align-y {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #booking-summary {
@@ -4072,6 +4081,18 @@ p.booking-summary-room-name {
 .icon-info {
   position: relative;
   top: 2px;
+}
+
+.icon-info:hover {
+  height: 16px;
+  width: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  .icon-info:hover {
+    height: 24px;
+    width: 24px;
+  }
 }
 
 @media screen and (min-width: 992px) {

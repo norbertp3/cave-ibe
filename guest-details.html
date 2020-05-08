@@ -31,7 +31,7 @@
       <nav class="navbar navbar-expand-xl navbar-light">
         <div class="mobile-nav-top w-100 d-flex justify-content-between align-items-center">
           <a href="#"><img src="/public/images/redworth_logo-1.png" class="logo"></a>
-          <form action="" method="get" id="currencyConverter" class="dropdown-currency">
+          <form action="" method="get" id="currencyConverter" class="dropdown-currency d-md-none">
             <input type="hidden" name="redirect">
             <select id="currency-options" class="price-select ml-0" name="currencyCode" onchange="">
               <option value="EUR">€ EUR</option>
@@ -134,12 +134,22 @@
     <section id="progress-steps">
       <div class="container">
         <!-- Progress Steps Mobile -->
-        <div class="progress-steps-mobile d-flex d-xl-none align-items-center">
-          <img src="public/images/icons/p3/icon-progress-5-of-5.svg">
-          <div>
-            <h3>Your Details</h3>
-            <span>You're on the last step!</span>
+        <div class="progress-steps-mobile d-flex d-xl-none align-items-center justify-content-between">
+          <div class="d-flex">
+            <img src="public/images/icons/p3/icon-progress-5-of-5.svg" alt="">
+            <div class="align-y">
+              <h3>Your Details</h3>
+              <span>You're on the last step!</span>
+            </div>
           </div>
+          <form action="" method="get" id="currencyConverter" class="dropdown-currency d-none d-md-block">
+            <input type="hidden" name="redirect">
+            <select id="currency-options" class="price-select ml-0" name="currencyCode" onchange="">
+              <option value="EUR">€ EUR</option>
+              <option value="GBP">£ GBP</option>
+              <option value="USD">$ USD</option>
+            </select>
+          </form>
         </div>
         <!-- End Progress Steps Mobile -->
       </div>
