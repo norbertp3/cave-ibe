@@ -1176,6 +1176,7 @@ label.validationError {
 
 .rates-wrapper .rate-ribbon span {
   position: relative;
+  top: -2px;
   color: #fff;
   font-size: 12px;
   font-weight: 400;
