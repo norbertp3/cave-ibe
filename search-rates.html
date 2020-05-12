@@ -9,13 +9,13 @@
 
 
     <!-- Vendors -->
-    <link rel="stylesheet" href="public/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="public/css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="public/css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.css">
     <!-- Main CSS -->
-    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
@@ -293,114 +293,35 @@
     <!-- JS Files -->
 
     <!-- jQuery -->
-    <script src="public/js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     
     <!-- Slick -->
-    <script type="text/javascript" src="public/js/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
 
     <!-- Multi Select -->
-    <script type="text/javascript" src="public/js/popper.js"></script>
-    <script type="text/javascript" src="public/js/bootstrap-multiselect.js"></script>
+    <script type="text/javascript" src="js/popper.js"></script>
+    <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
 
     <!-- Prefixfree -->
-    <script type="text/javascript" src="public/js/prefixfree.min.js"></script>
-    <script type="text/javascript" src="public/js/prefixfree.dynamic-dom.min.js"></script>
-    <script type="text/javascript" src="public/js/prefixfree.viewport-units.js"></script>
-    <script type="text/javascript" src="public/js/prefixfree.jquery.js"></script>
+    <script type="text/javascript" src="js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="js/prefixfree.dynamic-dom.min.js"></script>
+    <script type="text/javascript" src="js/prefixfree.viewport-units.js"></script>
+    <script type="text/javascript" src="js/prefixfree.jquery.js"></script>
 
     <!-- Lazyload -->
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
 
     <!-- Bootstrap -->
-    <script src="public/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-    <!-- Vue -->
+    
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- <script src="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/no-dep/vue-airbnb-style-datepicker.min.js"></script> -->
 
-    <!-- Custom -->
-    <script src="public/js/p3core.js"></script>
-    <script src="public/js/custom.js"></script>
-
     <!-- Vue Datepicker -->
-    <!-- <script>
+    
 
-      window.datePickerMixin = {
-          data: {
-              dateFormat: '',
-              arrivalDate: ''
-          },
-          methods: {
-              dateSelected: function(date) {
-                  this.arrivalDate = date;
-              },
-
-              getDateSuffix: function(d) {
-                  if (d > 3 && d < 21) return 'th';
-                  switch (d % 10) {
-                      case 1:  return "st";
-                      case 2:  return "nd";
-                      case 3:  return "rd";
-                      default: return "th";
-                  }
-              },
-
-              formatDates: function(date) {
-                  var daysShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-                  var shortMonthNames = [
-                      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
-                  ];
-
-                  var date = new Date(date);
-
-                  return daysShort[date.getUTCDay()] + ' ' + date.getUTCDate() + this.getDateSuffix(date.getUTCDate()) + ' ' + shortMonthNames[date.getUTCMonth()];
-              }
-          }
-      }
-
-      window.initDatePicker = function(arrivalDate) {
-          var datePickers = document.querySelectorAll('.date-picker');
-          if ( ! datePickers || ! datePickers.length) {
-              return;
-          }
-
-          // define options (optional)
-          var datepickerOptions = {
-              sundayFirst: true,
-              colors: {
-                  selected: '#57565b',
-                  inRange: '#66e2da',
-                  selectedText: '#fff',
-                  text: '#565a5c',
-                  inRangeBorder: '#33dacd',
-                  disabled: '#fff',
-                  hoveredInRange: '#67f6ee'
-              },
-          }
-          // install plugin
-          Vue.use(window.AirbnbStyleDatepicker, datepickerOptions);
-
-          datePickers.forEach(function (element) {
-              new Vue({
-                  el: element,
-                  mixins: [window.datePickerMixin],
-                  mounted: function () {
-
-                      if (arrivalDate) {
-                          this.arrivalDate = arrivalDate;
-                      } else {
-                          this.arrivalDate = new Date();
-                      }
-                  }
-              });
-          });
-      }
-      initDatePicker('2020-03-20');
-
-  
-  </script> -->
-
-<script>
+  <script>
     new Vue({
         el: '#guest-widget',
         data: {
@@ -422,6 +343,10 @@
         }
     })
   </script>
+    
+    <!-- Custom -->
+    <script src="js/p3core.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 </html>

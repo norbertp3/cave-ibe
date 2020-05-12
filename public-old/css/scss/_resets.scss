@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    &:focus {
+        outline: none;
+    }
+}
+html, body {
+    overflow-x: hidden!important;
+}
+p {
+    margin-bottom: 0;
+    word-wrap: break-word;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+button {
+    margin-bottom: 0;
+    &:focus {
+        outline: none;
+    }
+}
+a {
+    // color: inherit;
+    &:hover {
+        // color: inherit;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    &:focus {
+        // color: inherit;
+        text-decoration: none;
+    }
+    line-height: 1;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+// Bootstrap buttons reset
+
+.btn-primary {
+    background-color: $primaryColor;
+    border-radius: 0;
+    border: 1px solid $primaryColor;
+}
+
+.btn {
+    border-radius: 0;
+    &:hover {
+        background-color: #fff;
+        color: $primaryFontColor;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-size: 15px;
+    background-position: calc(100% - 8px) 50%;
+    background-repeat: no-repeat;
+    // background-color: #fff;
+    // background-image: $selectIcon;
+    padding: 4px 23px 4px 10px;
+    &:focus {
+        outline: none;
+        border-color: none;
+        box-shadow: none;
+    }
+}
+.form-control {
+    &:focus {
+        background-color: #f2f2f2;
+        // box-shadow: inset 1px 1px 0 0 #d8d8d8;
+        box-shadow: none;
+        border: none;
+    }
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+}
+
+form select::-ms-expand { display: none; }
+.modal-header {
+    border-bottom: none;
+}
