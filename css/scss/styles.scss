@@ -5,6 +5,7 @@
 @import './p3';
 @import './header';
 @import './footer';
+@import './laravel';
 
 .container {
     @include mQ(991px) {
