@@ -1640,7 +1640,7 @@ a.confirm-booking {
     }
   }
 
-  .form-control.validationError {
+.form-control.validationError {
     border: 1px solid #dc3545;
     padding-right: calc(1.5em + .75rem);
     background-image: $iconInValid;

@@ -11,7 +11,7 @@ if ($(window).width() < 991) {
   $('.rate-name').click(function(){
     $(this).closest('.rate-container').find('.rate-description').detach().insertAfter($(this).closest('.rate-container').find('.rate-name'));
   });
-  $(".room-slider").detach().insertAfter(".room-modal-header");
+  $(".room-modal-slider").detach().insertAfter(".room-modal-header");
 }
 
 // Booking Summary Room Details
