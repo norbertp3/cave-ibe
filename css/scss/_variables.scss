@@ -2,6 +2,11 @@
 $headingFont: 'EB Garamond', serif;
 $textFont: 'Raleway', sans-serif;
 
+// Custom grid columns padding
+$colPadding: 20px;
+$containerWidth: 1510px;
+$mobileContainerPadding: 10px;
+
 // Colours
 $primaryFontColor: #222;
 $secondaryFontColor: #222;
@@ -73,6 +78,3 @@ $iconValid: url(/images/icons/p3/icon-form-valid.svg);
 // $iconSleeps3:
 // $iconSleeps4:
 // $iconSleeps4Family:
-
-// Custom grid columns padding
-$colPadding: 20px;

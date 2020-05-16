@@ -9,12 +9,11 @@
 
 .container {
     @include mQ(991px) {
-        max-width: 1480px;
-        padding: 0 60px;
+        max-width: $containerWidth;
     }
     @include mQmax(575px) {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: $mobileContainerPadding;
+        padding-right: $mobileContainerPadding;
     }
 }
 

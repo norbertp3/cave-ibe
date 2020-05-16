@@ -166,11 +166,17 @@ a {
 
 // Paddings Custom Grid
 .pr-custom {
+    @include mQmax (991px) {
+        padding: $mobileContainerPadding;
+    }
     @include mQ(1200px) {
         padding-right: $colPadding;
     }
 }
 .pl-custom {
+    @include mQmax (991px) {
+        padding: $mobileContainerPadding;
+    }
     @include mQ(1200px) {
         padding-left: $colPadding;
     }
