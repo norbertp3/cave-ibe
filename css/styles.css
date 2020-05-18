@@ -465,6 +465,19 @@ body {
   color: #222;
 }
 
+@media screen and (min-width: 991px) {
+  .container {
+    max-width: 1510px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 p {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
@@ -3289,6 +3302,10 @@ footer .footer-social-media .fa.fa-instagram {
   color: rgba(34, 34, 34, 0.5);
 }
 
+.calendar .calendar-date:hover.calendar-date--disabled .calendar-date-price {
+  color: rgba(34, 34, 34, 0.5);
+}
+
 .calendar .calendar-date .calendar-date-heading {
   color: rgba(34, 34, 34, 0.5);
 }
@@ -3441,19 +3458,6 @@ footer .footer-social-media .fa.fa-instagram {
   }
   .calendar .calendar-date:hover span {
     color: #fff;
-  }
-}
-
-@media screen and (min-width: 991px) {
-  .container {
-    max-width: 1510px;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 

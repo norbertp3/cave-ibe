@@ -3,6 +3,17 @@ body {
     font-family: $textFont;
     color: $secondaryFontColor;
 }
+
+.container {
+    @include mQ(991px) {
+        max-width: $containerWidth;
+    }
+    @include mQmax(575px) {
+        padding-left: $mobileContainerPadding;
+        padding-right: $mobileContainerPadding;
+    }
+}
+
 p {
     @include bodyText;
 }

@@ -81,6 +81,9 @@
 .calendar .calendar-date:hover.calendar-date--disabled .calendar-date-heading {
   color: $lightFontColor;
 }
+.calendar .calendar-date:hover.calendar-date--disabled .calendar-date-price {
+  color: $lightFontColor;
+}
 
 .calendar .calendar-date .calendar-date-heading {
   color: $lightFontColor;

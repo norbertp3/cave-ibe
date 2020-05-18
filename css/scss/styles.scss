@@ -7,16 +7,6 @@
 @import './footer';
 @import './laravel';
 
-.container {
-    @include mQ(991px) {
-        max-width: $containerWidth;
-    }
-    @include mQmax(575px) {
-        padding-left: $mobileContainerPadding;
-        padding-right: $mobileContainerPadding;
-    }
-}
-
 // Mobile Hamburger
 
 // /* ALL */
