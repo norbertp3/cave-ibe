@@ -980,7 +980,7 @@ label.validationError {
   }
 
 // Booker details
-.booker-details-wrapper, .guest-details-wrapper, .payment-details-wrapper {
+.booker-details-wrapper, .guest-details-wrapper, .payment-details-wrapper, .members-container {
     padding: 20px 10px;
     @include mQ(992px) {
         padding: 20px 40px 40px 40px;
@@ -1683,4 +1683,8 @@ a.confirm-booking {
         background-image: none;
         border: 1px solid #28a745;
     }
+}
+
+.members-container {
+    @include cardStyle;
 }

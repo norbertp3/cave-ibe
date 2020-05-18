@@ -2010,17 +2010,17 @@ label.validationError {
   }
 }
 
-.booker-details-wrapper, .guest-details-wrapper, .payment-details-wrapper {
+.booker-details-wrapper, .guest-details-wrapper, .payment-details-wrapper, .members-container {
   padding: 20px 10px;
 }
 
 @media screen and (min-width: 992px) {
-  .booker-details-wrapper, .guest-details-wrapper, .payment-details-wrapper {
+  .booker-details-wrapper, .guest-details-wrapper, .payment-details-wrapper, .members-container {
     padding: 20px 40px 40px 40px;
   }
 }
 
-.booker-details-wrapper .custom-select, .guest-details-wrapper .custom-select, .payment-details-wrapper .custom-select {
+.booker-details-wrapper .custom-select, .guest-details-wrapper .custom-select, .payment-details-wrapper .custom-select, .members-container .custom-select {
   -webkit-box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
           box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
   background-color: #fff;
@@ -2032,28 +2032,28 @@ label.validationError {
   border-radius: 0;
 }
 
-.booker-details-wrapper .custom-select:focus, .guest-details-wrapper .custom-select:focus, .payment-details-wrapper .custom-select:focus {
+.booker-details-wrapper .custom-select:focus, .guest-details-wrapper .custom-select:focus, .payment-details-wrapper .custom-select:focus, .members-container .custom-select:focus {
   border: solid 1px #222222;
   background-color: #ffffff;
 }
 
-.booker-details-wrapper .custom-select::-webkit-input-placeholder, .guest-details-wrapper .custom-select::-webkit-input-placeholder, .payment-details-wrapper .custom-select::-webkit-input-placeholder {
+.booker-details-wrapper .custom-select::-webkit-input-placeholder, .guest-details-wrapper .custom-select::-webkit-input-placeholder, .payment-details-wrapper .custom-select::-webkit-input-placeholder, .members-container .custom-select::-webkit-input-placeholder {
   color: rgba(34, 34, 34, 0.5);
 }
 
-.booker-details-wrapper .custom-select:-ms-input-placeholder, .guest-details-wrapper .custom-select:-ms-input-placeholder, .payment-details-wrapper .custom-select:-ms-input-placeholder {
+.booker-details-wrapper .custom-select:-ms-input-placeholder, .guest-details-wrapper .custom-select:-ms-input-placeholder, .payment-details-wrapper .custom-select:-ms-input-placeholder, .members-container .custom-select:-ms-input-placeholder {
   color: rgba(34, 34, 34, 0.5);
 }
 
-.booker-details-wrapper .custom-select::-ms-input-placeholder, .guest-details-wrapper .custom-select::-ms-input-placeholder, .payment-details-wrapper .custom-select::-ms-input-placeholder {
+.booker-details-wrapper .custom-select::-ms-input-placeholder, .guest-details-wrapper .custom-select::-ms-input-placeholder, .payment-details-wrapper .custom-select::-ms-input-placeholder, .members-container .custom-select::-ms-input-placeholder {
   color: rgba(34, 34, 34, 0.5);
 }
 
-.booker-details-wrapper .custom-select::placeholder, .guest-details-wrapper .custom-select::placeholder, .payment-details-wrapper .custom-select::placeholder {
+.booker-details-wrapper .custom-select::placeholder, .guest-details-wrapper .custom-select::placeholder, .payment-details-wrapper .custom-select::placeholder, .members-container .custom-select::placeholder {
   color: rgba(34, 34, 34, 0.5);
 }
 
-.booker-details-wrapper label, .guest-details-wrapper label, .payment-details-wrapper label {
+.booker-details-wrapper label, .guest-details-wrapper label, .payment-details-wrapper label, .members-container label {
   font-size: 16px;
   color: rgba(87, 86, 91, 0.8);
   margin-bottom: 5px;
@@ -2061,22 +2061,22 @@ label.validationError {
 }
 
 @media screen and (min-width: 992px) {
-  .booker-details-wrapper label, .guest-details-wrapper label, .payment-details-wrapper label {
+  .booker-details-wrapper label, .guest-details-wrapper label, .payment-details-wrapper label, .members-container label {
     font-size: 16px;
   }
 }
 
-.booker-details-wrapper p, .guest-details-wrapper p, .payment-details-wrapper p {
+.booker-details-wrapper p, .guest-details-wrapper p, .payment-details-wrapper p, .members-container p {
   color: #222;
 }
 
-.booker-details-wrapper .collapse.show, .guest-details-wrapper .collapse.show, .payment-details-wrapper .collapse.show {
+.booker-details-wrapper .collapse.show, .guest-details-wrapper .collapse.show, .payment-details-wrapper .collapse.show, .members-container .collapse.show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.booker-details-wrapper h3, .guest-details-wrapper h3, .payment-details-wrapper h3 {
+.booker-details-wrapper h3, .guest-details-wrapper h3, .payment-details-wrapper h3, .members-container h3 {
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -2086,7 +2086,7 @@ label.validationError {
 }
 
 @media screen and (min-width: 992px) {
-  .booker-details-wrapper h3, .guest-details-wrapper h3, .payment-details-wrapper h3 {
+  .booker-details-wrapper h3, .guest-details-wrapper h3, .payment-details-wrapper h3, .members-container h3 {
     line-height: 30px;
     font-size: 26px;
     letter-spacing: -0.3px;
@@ -2095,16 +2095,16 @@ label.validationError {
 }
 
 @media screen and (min-width: 992px) {
-  .booker-details-wrapper h3, .guest-details-wrapper h3, .payment-details-wrapper h3 {
+  .booker-details-wrapper h3, .guest-details-wrapper h3, .payment-details-wrapper h3, .members-container h3 {
     margin-bottom: 20px;
   }
 }
 
-.booker-details-wrapper span.custom-check, .booker-details-wrapper span.custom-radio, .guest-details-wrapper span.custom-check, .guest-details-wrapper span.custom-radio, .payment-details-wrapper span.custom-check, .payment-details-wrapper span.custom-radio {
+.booker-details-wrapper span.custom-check, .booker-details-wrapper span.custom-radio, .guest-details-wrapper span.custom-check, .guest-details-wrapper span.custom-radio, .payment-details-wrapper span.custom-check, .payment-details-wrapper span.custom-radio, .members-container span.custom-check, .members-container span.custom-radio {
   top: 0;
 }
 
-.booker-details-wrapper select, .guest-details-wrapper select, .payment-details-wrapper select {
+.booker-details-wrapper select, .guest-details-wrapper select, .payment-details-wrapper select, .members-container select {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -2117,14 +2117,14 @@ label.validationError {
   width: 80px !important;
 }
 
-.booker-details-wrapper select:focus, .guest-details-wrapper select:focus, .payment-details-wrapper select:focus {
+.booker-details-wrapper select:focus, .guest-details-wrapper select:focus, .payment-details-wrapper select:focus, .members-container select:focus {
   outline: none;
   border-color: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.booker-details-wrapper .form-group, .guest-details-wrapper .form-group, .payment-details-wrapper .form-group {
+.booker-details-wrapper .form-group, .guest-details-wrapper .form-group, .payment-details-wrapper .form-group, .members-container .form-group {
   margin-bottom: 20px;
 }
 
@@ -3018,6 +3018,17 @@ label.validationError {
   border: 1px solid #28a745;
 }
 
+.members-container {
+  margin-bottom: 30px;
+  background-color: rgba(34, 34, 34, 0.05);
+}
+
+@media screen and (min-width: 992px) {
+  .members-container {
+    margin-bottom: 40px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   header {
     margin: 20px 0;
@@ -3119,7 +3130,6 @@ footer {
 @media screen and (min-width: 992px) {
   footer {
     max-width: 1480px;
-    padding: 0 60px 0 60px;
     margin-top: 40px;
   }
 }
