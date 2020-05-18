@@ -3461,6 +3461,17 @@ footer .footer-social-media .fa.fa-instagram {
   }
 }
 
+.icon-min-stay {
+  background-image: url(/images/icons/p3/icon-min-stay.svg);
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  margin-left: 5px;
+}
+
 .three {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
