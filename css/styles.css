@@ -2,6 +2,16 @@ html, body {
   overflow-x: hidden !important;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 p {
   margin-bottom: 0;
   word-wrap: break-word;
@@ -436,20 +446,6 @@ template {
    */
 [hidden] {
   display: none;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*, *:after, *:before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-*:focus, *:after:focus, *:before:focus {
-  outline: none;
 }
 
 body {
@@ -3147,13 +3143,14 @@ footer .container {
 
 @media screen and (min-width: 992px) {
   footer .container {
-    padding: 25px 0 10px 0;
+    padding: 25px 20px 10px 20px;
   }
 }
 
 footer .footer-links ul {
   -webkit-column-count: 1;
           column-count: 1;
+  padding-left: 0;
   font-size: 14px;
 }
 
@@ -3177,6 +3174,10 @@ footer .footer-links li:hover {
   footer .logo {
     margin-bottom: 28px;
   }
+}
+
+footer .footer-social-media ul {
+  padding-left: 0;
 }
 
 footer .footer-social-media li {

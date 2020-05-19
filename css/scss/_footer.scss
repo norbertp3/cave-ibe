@@ -14,12 +14,13 @@ footer {
         padding: 0;
         padding: 28px 0 14px 0;
         @include mQ(992px) {
-            padding: 25px 0 10px 0;
+            padding: 25px 20px 10px 20px;
         }
     }
     .footer-links {
         ul {
             column-count: 1;
+            padding-left: 0;
             @include mQ(767px) {
                 column-count: 3;
             }
@@ -40,6 +41,9 @@ footer {
         }
     }
     .footer-social-media {
+        ul {
+            padding-left: 0;
+        }
         li {
             display: inline-block;
         }

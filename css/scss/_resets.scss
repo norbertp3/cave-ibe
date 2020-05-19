@@ -1,6 +1,18 @@
 html, body {
     overflow-x: hidden!important;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+  // &:focus {
+  //   outline: none;
+  // }
+}
+
 p {
     margin-bottom: 0;
     word-wrap: break-word;
@@ -435,15 +447,4 @@ form select::-ms-expand { display: none; }
   
   [hidden] {
     display: none;
-  }
-
-  html {
-    box-sizing: border-box;
-  }
-  
-  *, *:after, *:before {
-    box-sizing: inherit;
-    &:focus {
-      outline: none;
-    }
   }
