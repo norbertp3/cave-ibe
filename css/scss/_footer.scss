@@ -20,7 +20,6 @@ footer {
     .footer-links {
         ul {
             column-count: 1;
-            padding-left: 0;
             @include mQ(767px) {
                 column-count: 3;
             }
