@@ -25,6 +25,7 @@ $('.trigger-rotate').click(function(){
   $(this).find('i').toggleClass('rotate180');
 });
 
+
 // View Rates P3B
 $('.view-rates-btn').click(function(){
   $(this).closest('.room-with-rates-wrapper').find('.rates-wrapper').slideToggle();
@@ -134,4 +135,6 @@ $('.loading-spinner').one('click', function () {
       initSlickSlider();
   });
 
-  
+  $('.offers-form__filter-btn').click(function(){
+    $(this).closest('.offers-form').find('.offers-form__filter').slideToggle();
+  });

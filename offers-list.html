@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME PAGE</title>
+    <!-- Vendors -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Mobile Nav -->
+        <div class="d-lg-none">
+            <nav class="navbar navbar-expand-xl navbar-light">
+                <div class="mobile-nav-top w-100 d-flex justify-content-between align-items-center">
+                    <a href="#"><img src="/images/redworth_logo-1.png" class="logo"></a>
+                    <form action="" method="get" id="currencyConverter" class="dropdown-currency d-md-none">
+                        <input type="hidden" name="redirect">
+                        <select id="currency-options" class="price-select ml-0" name="currencyCode" onchange="">
+                            <option value="EUR">€ EUR</option>
+                            <option value="GBP">£ GBP</option>
+                            <option value="USD">$ USD</option>
+                        </select>
+                    </form>
+                    <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+                    <div class="three">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#navbarCollapse">
+                            <div class="hamburger" id="hamburger-6">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-item nav-link active nav-book-now">Book a Room</a>
+                        <a href="https://www.redworthhalldurham.co.uk/rooms/" class="nav-item nav-link">Rooms</a>
+                        <a href="https://www.redworthhalldurham.co.uk/spa/" class="nav-item nav-link">Retreat Spa</a>
+                        <a href="https://www.redworthhalldurham.co.uk/weddings/" class="nav-item nav-link">Weddings</a>
+                        <a href="https://www.redworthhalldurham.co.uk/meetings-and-events/"
+                            class="nav-item nav-link">Meeting &
+                            Events</a>
+                        <a href="https://www.redworthhalldurham.co.uk/restaurant/"
+                            class="nav-item nav-link">Restaurant</a>
+                        <a href="https://www.redworthhalldurham.co.uk/offers/" class="nav-item nav-link">Offers & What's
+                            On</a>
+                        <a href="https://www.redworthhalldurham.co.uk/contact-us/" class="nav-item nav-link">Contact</a>
+                        <a href="https://shops.giftvoucherbrilliance.co.uk/pages/redworth_hall/Home"
+                            class="nav-item nav-link mb-5">Gift Vouchers</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End Mobile Nav -->
+
+        <!-- Desktop Nav -->
+        <div class="d-none d-lg-block">
+            <div class="header-container d-flex justify-content-between align-items-center">
+                <a href="#"><img src="/images/redworth_logo-1.png" class="logo"></a>
+                <div class="main-nav">
+                    <ul class="mt-auto mb-auto">
+                        <li><a href="https://www.redworthhalldurham.co.uk/rooms/">Rooms</a></li>
+                        <li><a href="https://www.redworthhalldurham.co.uk/spa/">Retreat Spa</a></li>
+                        <li><a href="https://www.redworthhalldurham.co.uk/weddings/">Weedings</a></li>
+                        <li><a href="https://www.redworthhalldurham.co.uk/meetings-and-events/">Meetings and Events</a>
+                        </li>
+                        <li><a href="https://www.redworthhalldurham.co.uk/restaurant/">Restaurant</a></li>
+                        <li><a href="https://www.redworthhalldurham.co.uk/offers/">Offers & What's On</a></li>
+                        <li><a href="https://www.redworthhalldurham.co.uk/contact-us/">Contact</a></li>
+                        <li><a href="https://shops.giftvoucherbrilliance.co.uk/pages/redworth_hall/Home">Gift
+                                Vouchers</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-primary float-right" onclick="openWidget()">Book a room</a>
+            </div>
+        </div>
+        <!-- End Desktop Nav -->
+    </header>
+
+
+
+    <section id="banner" class="d-none d-xl-block">
+        <div class="container">
+            <h1>The Redworth Hall Hotel</h1>
+            <p>Surtees Rd, Newton Aycliffe DL5 6NL, UK</p>
+            <!-- HOTEL INFO BUTTONS P3B -->
+            <div class="hotel-info-buttons d-none d-lg-flex">
+                <a href="#" data-toggle="modal" data-target="#modalTabs" class="btn">Hotel Info</a>
+                <a href="#" class="btn">Map</a>
+                <a href="#" class="btn">Gallery</a>
+            </div>
+            <!-- END HOTEL INFO BUTTONS P3B -->
+        </div>
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <a href="#">
+                        <div class="hotel-gallery"
+                            style="background-image: linear-gradient(104deg, rgba(51, 50, 50, 0.5), rgba(26, 25, 25, 0) 85%,rgba(26, 26, 26, 0) 81%, rgba(0, 0, 0, 0)), url(https://www.ahstatic.com/photos/9399_ho_00_p_1024x768.jpg)">
+                            <img src="images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Hotel Info P3B -->
+    <section id="mobile-hotel-info" class="d-xl-none">
+        <div class="container d-flex justify-content-between">
+            <a href="#" data-toggle="modal" data-target="#modalTabs"><i class="icon-info-white"></i> Hotel Info</a>
+            <a href="javascript:;" onclick="openWidget()"><i class="icon-search-white"></i> New Search</a>
+        </div>
+    </section>
+    <!-- END Mobile Hotel Info P3B -->
+
+    <!-- IBE -->
+    <main class="container">
+        <section class="offers-form">
+            <h1 class="offers-form__heading">Special Offers</h1>
+            <div class="offers-form__filter-btn trigger-rotate">
+                <a href="javascript:;">Filter options <i></i></a>
+            </div>
+            <form action="">
+                <div class="offers-form__filter">
+                    <div class="form-group">
+                        <select class="form-control" name="">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="d-lg-flex justify-content-between align-items-end">
+                        <div class="offers-form__category d-lg-flex">
+                            <label class="d-flex mb-3 mb-lg-0 mr-0 mr-lg-3">
+                                <input type="checkbox" name=""> <span class="custom-check"></span>Summer
+                            </label>
+                            <label class="d-flex mb-3 mb-lg-0 mr-0 mr-lg-3">
+                                <input type="checkbox" name=""> <span class="custom-check"></span>Summer
+                            </label>
+                            <label class="d-flex mb-3 mb-lg-0 mr-0 mr-lg-3">
+                                <input type="checkbox" name=""> <span class="custom-check"></span>Summer
+                            </label>
+                            <label class="d-flex mb-3 mb-lg-0 mr-0 mr-lg-3">
+                                <input type="checkbox" name=""> <span class="custom-check"></span>Summer
+                            </label>
+                            <label class="d-flex mb-3 mb-lg-0 mr-0 mr-lg-3">
+                                <input type="checkbox" name=""> <span class="custom-check"></span>Summer
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Apply Filters</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="offers-list">
+            <article class="offers-list__article d-lg-flex card-style">
+                <a href="#" class="w-50"><img src="/images/img-hotel-info.jpg" alt="" class="offers-list__article--image"></a>
+                <div class="offers-list__article--description">
+                    <a href=""><h2 class="offers-list__article--offer-name">Offer Heading Goes Here</h2></a>
+                    <span class="offers-list__article--offer-available">Available : 23 Oct 2019 - 31 Dec 2020 </span>
+                    <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus.</p>
+                    </br>
+                    <p>Offer Also Includes:</p>
+                    <ul>
+                        <li>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.</li>
+                        <li>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.</li>
+                    </ul>
+                    <div class="d-sm-flex justify-content-between align-items-end">
+                        <a href="#" class="btn btn-primary loading-spinner">find out more</a>
+                        <div class="offers--social-media-share">
+                            <span>share:</span>
+                            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container devider-top-desktop devider-top-mobile">
+            <div class="row">
+                <div class="col-12 col-lg-12 col-xl-3 text-center text-xl-left mb-3 mb-xl-0">
+                    <a href="#"><img src="/images/redworth_logo-1.png" class="logo"></a>
+                </div>
+                <div class="col-12 col-lg-8 col-xl-6 mb-2 mb-xl-0">
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="https://shops.giftvoucherbrilliance.co.uk/pages/redworth_hall/Home">Gift
+                                    Vouchers</a></li>
+                            <li><a href="https://www.redworthhalldurham.co.uk/offers/">Special Offers</a></li>
+                            <li><a href="https://www.redworthhalldurham.co.uk/faqs/">FAQs</a></li>
+                            <li><a href="https://www.redworthhalldurham.co.uk/contact-us/">Contact Us</a></li>
+                            <li><a
+                                    href="https://www.thecairncollection.co.uk/?_ga=2.167210235.47086315.1581520921-683091198.1579273141">The
+                                    Cairn Collection</a></li>
+                            <li><a href="https://www.cairnhotelgroup.com/">The Cairn Group</a></li>
+                            <li><a href="https://www.redworthhalldurham.co.uk/terms-conditions/">Terms & Conditions</a>
+                            </li>
+                            <li><a href="https://www.redworthhalldurham.co.uk/privacy-policy/">Privacy Policy</a></li>
+                            <li><a href="https://www.redworthhalldurham.co.uk/sitemap/">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-3">
+                    <div class="footer-social-media text-center float-lg-right">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li class="mx-3"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- JS Files -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Slick -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <!-- Multi Select -->
+    <script type="text/javascript" src="js/popper.js"></script>
+    <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+
+    <!-- Prefixfree -->
+    <script type="text/javascript" src="js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="js/prefixfree.dynamic-dom.min.js"></script>
+    <script type="text/javascript" src="js/prefixfree.viewport-units.js"></script>
+    <script type="text/javascript" src="js/prefixfree.jquery.js"></script>
+
+    <!-- Lazyload -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/no-dep/vue-airbnb-style-datepicker.min.js"></script> -->
+
+    <!-- Vue Datepicker -->
+
+
+    <script>
+        new Vue({
+            el: '#guest-widget',
+            data: {
+                rooms: [{ "id": 1, "quantity": 1, "name": "Room" }],
+                people: [{ "id": 1, "quantity": 1, "name": "Adult" }, { "id": 2, "quantity": 0, "name": "Children" }, { "id": 3, "quantity": 0, "name": "Infant" }],
+                isHidden: true
+            },
+            computed: {
+                totalRooms() {
+                    return this.rooms.reduce((sum, room) => {
+                        return sum + room.quantity
+                    }, 0)
+                },
+                totalPeople() {
+                    return this.people.reduce((sum, people) => {
+                        return sum + people.quantity
+                    }, 0)
+                }
+            }
+        })
+    </script>
+
+    <!-- Custom -->
+    <script src="js/p3core.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
