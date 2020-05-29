@@ -3343,6 +3343,410 @@ label.validationError {
   }
 }
 
+.offer-details {
+  position: relative;
+  margin: 30px 0;
+}
+
+@media screen and (min-width: 992px) {
+  .offer-details {
+    margin: 50px 0;
+  }
+}
+
+.offer-details__image {
+  width: 100%;
+  height: 199px;
+}
+
+@media screen and (min-width: 992px) {
+  .offer-details__image {
+    height: 238px;
+  }
+}
+
+.offer-details__offer-name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .offer-details__offer-name {
+    line-height: 30px;
+    font-size: 26px;
+    letter-spacing: -0.3px;
+    font-family: "EB Garamond", serif;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .offer-details__offer-name {
+    width: 80%;
+  }
+}
+
+.offer-details__offer-available {
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: rgba(34, 34, 34, 0.5);
+  margin: 20px 0;
+  display: block;
+}
+
+@media screen and (min-width: 992px) {
+  .offer-details__offer-available {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .offer-details__content {
+    padding: 20px 0 30px 0;
+  }
+}
+
+.offer-details__content ul {
+  margin-left: 4px;
+}
+
+.offer-details__content ul li {
+  text-indent: -22px;
+  margin-left: 20px;
+}
+
+.offer-details__terms-link {
+  text-decoration: underline;
+}
+
+.offer-details__terms-link:active, .offer-details__terms-link:focus {
+  text-decoration: underline;
+}
+
+.offer-details__terms-link i {
+  background: url(/images/icons/p3/icon-btn-next-period.svg);
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+  top: 3px;
+}
+
+.offer-details__terms-content {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .offer-details .offers--social-media-share {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+}
+
+.offer__search {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 992px) {
+  .offer__search--widget {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 1fr 1fr 1fr 20%;
+        grid-template-columns: 25% 1fr 1fr 1fr 20%;
+    grid-gap: 30px;
+  }
+  .offer__search--widget .form-group {
+    margin-bottom: 0;
+  }
+}
+
+.offer__search--widget .form-group select {
+  -webkit-box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
+          box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
+  background-color: #fff;
+  color: #222;
+  font-size: 16px;
+  border: none;
+  height: 50px;
+  font-family: "Raleway", sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-size: 15px;
+  background-position: calc(100% - 8px) 50%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-image: url(/images/icons/p3/icon-btn-next-period.svg);
+  padding: 4px 23px 4px 10px;
+}
+
+.offer__search--widget .form-group select:focus {
+  border: solid 1px #222222;
+  background-color: #ffffff;
+}
+
+.offer__search--widget .form-group select::-webkit-input-placeholder {
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.offer__search--widget .form-group select:-ms-input-placeholder {
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.offer__search--widget .form-group select::-ms-input-placeholder {
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.offer__search--widget .form-group select::placeholder {
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.offer__search--widget .form-group select:focus {
+  outline: none;
+  border-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.offer__search--widget .btn-offer {
+  width: 100%;
+  background-color: rgba(51, 50, 50, 0);
+  color: #fff;
+  border-radius: 25px;
+  border: solid 1px rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  height: 50px;
+}
+
+.offer__search--widget .btn-offer:hover {
+  background-color: rgba(51, 50, 50, 0);
+  color: #ffffff;
+}
+
+.offer__search--widget .btn-offer:active {
+  background-color: rgba(51, 50, 50, 0);
+  color: #ffffff;
+}
+
+.offer__search--widget .btn-offer:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #fff;
+  color: #000;
+  border: solid 1px rgba(255, 255, 255, 0.8);
+}
+
+.offer__search--widget .btn-offer:not(:disabled):not(.disabled):active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: rgba(51, 50, 50, 0);
+  color: #ffffff;
+  border: solid 1px rgba(255, 255, 255, 0.8);
+}
+
+.offer__search--widget .btn-offer:not(:disabled):not(.disabled).active:focus, .offer__search--widget .btn-offer:not(:disabled):not(.disabled):active:focus, .show > .offer__search--widget .btn-offer.dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: rgba(51, 50, 50, 0);
+  color: #ffffff;
+  border: solid 1px rgba(255, 255, 255, 0.8);
+}
+
+.offer__search--widget .btn-offer:not(:disabled):not(.disabled).active, .offer__search--widget .btn-offer:not(:disabled):not(.disabled):active, .show > .offer__search--widget .btn-offer.dropdown-toggle {
+  border-color: rgba(51, 50, 50, 0) r;
+}
+
+.offer__calendar {
+  background-color: #f2f2f2;
+}
+
+@media screen and (min-width: 992px) {
+  .offer__calendar {
+    padding: 25px 0;
+  }
+}
+
+.offer__calendar .container .calendar-rows {
+  background-color: transparent !important;
+}
+
+@media screen and (min-width: 992px) {
+  .offer__calendar .container .calendar-rows {
+    padding: 0;
+  }
+}
+
+.offer__calendar .calendar-heading-arrows {
+  font-size: 22px !important;
+  font-weight: 500;
+}
+
+.offer__calendar .calendar-btn-img {
+  margin: 0 0 3px 5px !important;
+}
+
+.offer__confirm--mobile {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  bottom: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  background-color: #333;
+  color: #fff;
+}
+
+.offer__confirm--mobile .grid-item {
+  padding: 10px 10px 10px 10px;
+}
+
+.offer__confirm--mobile .grid-2 {
+  text-align: right;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.offer__confirm--mobile .btn-offer {
+  width: 100%;
+  background-color: rgba(51, 50, 50, 0);
+  color: #fff;
+  border-radius: 25px;
+  border: solid 1px rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  height: 50px;
+  height: 40px;
+}
+
+.offer__confirm--mobile .btn-offer:hover {
+  background-color: rgba(51, 50, 50, 0);
+  color: #ffffff;
+}
+
+.offer__confirm--mobile .btn-offer:active {
+  background-color: rgba(51, 50, 50, 0);
+  color: #ffffff;
+}
+
+.offer__confirm--mobile .btn-offer:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #fff;
+  color: #000;
+  border: solid 1px rgba(255, 255, 255, 0.8);
+}
+
+.offer__confirm--mobile .btn-offer:not(:disabled):not(.disabled):active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: rgba(51, 50, 50, 0);
+  color: #ffffff;
+  border: solid 1px rgba(255, 255, 255, 0.8);
+}
+
+.offer__confirm--mobile .btn-offer:not(:disabled):not(.disabled).active:focus, .offer__confirm--mobile .btn-offer:not(:disabled):not(.disabled):active:focus, .show > .offer__confirm--mobile .btn-offer.dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: rgba(51, 50, 50, 0);
+  color: #ffffff;
+  border: solid 1px rgba(255, 255, 255, 0.8);
+}
+
+.offer__confirm--mobile .btn-offer:not(:disabled):not(.disabled).active, .offer__confirm--mobile .btn-offer:not(:disabled):not(.disabled):active, .show > .offer__confirm--mobile .btn-offer.dropdown-toggle {
+  border-color: rgba(51, 50, 50, 0) r;
+}
+
+.offer__confirm--mobile .form-group {
+  margin-bottom: 0;
+}
+
+.offer__confirm--mobile .form-group select {
+  -webkit-box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
+          box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
+  background-color: #fff;
+  color: #222;
+  font-size: 16px;
+  border: none;
+  height: 50px;
+  font-family: "Raleway", sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-size: 15px;
+  background-position: calc(100% - 8px) 50%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-image: url(/images/icons/p3/icon-btn-next-period.svg);
+  padding: 4px 23px 4px 10px;
+  max-width: 94px;
+  height: 40px;
+}
+
+.offer__confirm--mobile .form-group select:focus {
+  border: solid 1px #222222;
+  background-color: #ffffff;
+}
+
+.offer__confirm--mobile .form-group select::-webkit-input-placeholder {
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.offer__confirm--mobile .form-group select:-ms-input-placeholder {
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.offer__confirm--mobile .form-group select::-ms-input-placeholder {
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.offer__confirm--mobile .form-group select::placeholder {
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.offer__confirm--mobile .form-group select:focus {
+  outline: none;
+  border-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.offer__confirm--desktop {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  bottom: 0;
+  background-color: #e8ecd4;
+}
+
+.offer__confirm--desktop .confirm-block {
+  padding: 40px;
+  text-align: center;
+}
+
+.offer__confirm--desktop .confirm-block--border {
+  border-left: solid 1px rgba(34, 34, 34, 0.2);
+  border-right: solid 1px rgba(34, 34, 34, 0.2);
+}
+
+.offer__confirm--desktop .confirm-block h3 {
+  font-family: "EB Garamond", serif;
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+.offer__confirm--desktop .btn-primary {
+  margin-top: 50px;
+  padding: 13.5px 30px;
+  margin-left: 30px;
+}
+
 @media screen and (min-width: 992px) {
   header {
     margin: 20px 0;
@@ -3563,7 +3967,7 @@ footer .footer-social-media .fa.fa-instagram {
 }
 
 .container .calendar-heading {
-  font-size: 22px;
+  font-size: 26px;
   color: #222;
   margin-bottom: 30px;
   font-family: "EB Garamond", serif;
@@ -3591,7 +3995,13 @@ footer .footer-social-media .fa.fa-instagram {
 .calendar .calendar-date {
   border-radius: 5px;
   border: solid 1px #d8d8d8;
-  min-height: 100px;
+  min-height: 50px;
+}
+
+@media screen and (min-width: 992px) {
+  .calendar .calendar-date {
+    min-height: 100px;
+  }
 }
 
 .calendar .calendar-date-no-availability {
@@ -3735,10 +4145,6 @@ footer .footer-social-media .fa.fa-instagram {
   .calendar .calendar-date-price {
     text-align: right;
     margin-top: 0px;
-  }
-  .calendar .calendar-date {
-    border: 1px solid #abaaad;
-    min-height: 50px;
   }
   .calendar .calendar-mobile-btn {
     width: 100%;

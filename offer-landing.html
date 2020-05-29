@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Offer Landing</title>
+    <!-- Vendors -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./calendar_files/vue-calendar-core.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" charset="UTF-8" src="./calendar_files/common.js.download"></script>
+    <script type="text/javascript" charset="UTF-8" src="./calendar_files/util.js.download"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Mobile Nav -->
+        <div class="d-lg-none">
+            <nav class="navbar navbar-expand-xl navbar-light">
+                <div class="mobile-nav-top w-100 d-flex justify-content-between align-items-center">
+                    <a href="#"><img src="/images/redworth_logo-1.png" class="logo"></a>
+                    <form action="" method="get" id="currencyConverter" class="dropdown-currency d-md-none">
+                        <input type="hidden" name="redirect">
+                        <select id="currency-options" class="price-select ml-0" name="currencyCode" onchange="">
+                            <option value="EUR">€ EUR</option>
+                            <option value="GBP">£ GBP</option>
+                            <option value="USD">$ USD</option>
+                        </select>
+                    </form>
+                    <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+                    <div class="three">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#navbarCollapse">
+                            <div class="hamburger" id="hamburger-6">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-item nav-link active nav-book-now">Book a Room</a>
+                        <a href="https://www.redworthhalldurham.co.uk/rooms/" class="nav-item nav-link">Rooms</a>
+                        <a href="https://www.redworthhalldurham.co.uk/spa/" class="nav-item nav-link">Retreat Spa</a>
+                        <a href="https://www.redworthhalldurham.co.uk/weddings/" class="nav-item nav-link">Weddings</a>
+                        <a href="https://www.redworthhalldurham.co.uk/meetings-and-events/"
+                            class="nav-item nav-link">Meeting &
+                            Events</a>
+                        <a href="https://www.redworthhalldurham.co.uk/restaurant/"
+                            class="nav-item nav-link">Restaurant</a>
+                        <a href="https://www.redworthhalldurham.co.uk/offers/" class="nav-item nav-link">Offers & What's
+                            On</a>
+                        <a href="https://www.redworthhalldurham.co.uk/contact-us/" class="nav-item nav-link">Contact</a>
+                        <a href="https://shops.giftvoucherbrilliance.co.uk/pages/redworth_hall/Home"
+                            class="nav-item nav-link mb-5">Gift Vouchers</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End Mobile Nav -->
+
+        <!-- Desktop Nav -->
+        <div class="d-none d-lg-block">
+            <div class="header-container d-flex justify-content-between align-items-center">
+                <a href="#"><img src="/images/redworth_logo-1.png" class="logo"></a>
+                <div class="main-nav">
+                    <ul class="mt-auto mb-auto">
+                        <li><a href="https://www.redworthhalldurham.co.uk/rooms/">Rooms</a></li>
+                        <li><a href="https://www.redworthhalldurham.co.uk/spa/">Retreat Spa</a></li>
+                        <li><a href="https://www.redworthhalldurham.co.uk/weddings/">Weedings</a></li>
+                        <li><a href="https://www.redworthhalldurham.co.uk/meetings-and-events/">Meetings and Events</a>
+                        </li>
+                        <li><a href="https://www.redworthhalldurham.co.uk/restaurant/">Restaurant</a></li>
+                        <li><a href="https://www.redworthhalldurham.co.uk/offers/">Offers & What's On</a></li>
+                        <li><a href="https://www.redworthhalldurham.co.uk/contact-us/">Contact</a></li>
+                        <li><a href="https://shops.giftvoucherbrilliance.co.uk/pages/redworth_hall/Home">Gift
+                                Vouchers</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-primary float-right" onclick="openWidget()">Book a room</a>
+            </div>
+        </div>
+        <!-- End Desktop Nav -->
+    </header>
+
+
+
+    <section id="banner" class="d-none d-xl-block">
+        <div class="container">
+            <h1>The Redworth Hall Hotel</h1>
+            <p>Surtees Rd, Newton Aycliffe DL5 6NL, UK</p>
+            <!-- HOTEL INFO BUTTONS P3B -->
+            <div class="hotel-info-buttons d-none d-lg-flex">
+                <a href="#" data-toggle="modal" data-target="#modalTabs" class="btn">Hotel Info</a>
+                <a href="#" class="btn">Map</a>
+                <a href="#" class="btn">Gallery</a>
+            </div>
+            <!-- END HOTEL INFO BUTTONS P3B -->
+        </div>
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <a href="#">
+                        <div class="hotel-gallery"
+                            style="background-image: linear-gradient(104deg, rgba(51, 50, 50, 0.5), rgba(26, 25, 25, 0) 85%,rgba(26, 26, 26, 0) 81%, rgba(0, 0, 0, 0)), url(https://www.ahstatic.com/photos/9399_ho_00_p_1024x768.jpg)">
+                            <img src="images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Hotel Info P3B -->
+    <section id="mobile-hotel-info" class="d-xl-none">
+        <div class="container d-flex justify-content-between">
+            <a href="#" data-toggle="modal" data-target="#modalTabs"><i class="icon-info-white"></i> Hotel Info</a>
+            <a href="javascript:;" onclick="openWidget()"><i class="icon-search-white"></i> New Search</a>
+        </div>
+    </section>
+    <!-- END Mobile Hotel Info P3B -->
+
+    <!-- IBE -->
+    <main>
+        <section class="offer-details">
+            <div class="container">
+                <article>
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <img src="https://via.placeholder.com/347x238" alt="" class="offer-details__image">
+                        </div>
+                        <div class="col-12 col-lg-9">
+                            <div class="offer-details__content">
+                                <h2 class="offer-details__offer-name">Offer Heading Goes Here</h2>
+                                <span class="offer-details__offer-available">Available : 23 Oct 2019 - 31 Dec 2020
+                                </span>
+                                <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat
+                                    augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi
+                                    sollicitudin porttitor id sit amet risus.</p>
+                                </br>
+                                <p>Offer Also Includes:</p>
+                                <ul>
+                                    <li>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.</li>
+                                    <li>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.</li>
+                                </ul>
+                                <a href="javascript:;" class="offer-details__terms-link trigger-rotate">Terms &
+                                    Conditions <i></i></a>
+                                <div class="offer-details__terms-content">
+                                    <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque
+                                        volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut
+                                        mi sollicitudin porttitor id sit amet risus.</p>
+                                </div>
+                            </div>
+                            <div class="offers--social-media-share">
+                                <span>share:</span>
+                                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="offer__search">
+            <div class="container">
+                <div class="offer__search--widget">
+                    <div class="form-group">
+                        <select name="" class="form-control" id="">
+                            <option>room 1</option>
+                            <option>room 2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="" class="form-control" id="">
+                            <option>1 adult (18+)</option>
+                            <option>2 adults (18+)</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="" class="form-control" id="">
+                            <option>0 children (2+)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="" class="form-control" id="">
+                            <option>0 infancts (0-1)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-offer">Search</button>
+                </div>
+            </div>
+        </section>
+        <section class="offer__calendar">
+            <div id="calendar-prev-html" class="d-none">
+                <div class="d-flex d-lg-none justify-content-end">
+                    <div class="calendar-btn">
+                        More Dates <img class="calendar-btn-img rotate180"
+                            src="./calendar_files/arrrow-dropdown-grey.png">
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex justify-content-end">
+                    <div class="calendar-btn">
+                        <img class="calendar-btn-img" src="./calendar_files/arrrow-dropdown-grey.png"> More Dates
+                    </div>
+                </div>
+            </div>
+            <div id="calendar-next-html" class="d-none">
+                <div class="d-flex d-lg-none justify-content-end">
+                    <div class="calendar-btn">
+                        More Dates <img class="calendar-btn-img" src="./calendar_files/arrrow-dropdown-grey.png">
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex justify-content-end">
+                    <div class="calendar-btn">
+                        More Dates <img class="calendar-btn-img" src="./calendar_files/arrrow-dropdown-grey.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 px-0 px-md-3">
+                        <div style="max-height: auto;">
+                            <div class="container calendar px-0">
+                                <div class="row">
+                                    <div class="col-md-12 d-none d-lg-block">
+                                        <h2 class="text-center calendar-heading">
+                                            <span
+                                                class="calendar-heading-arrows calendar-heading-arrows--left calendar-heading-arrows--disabled">
+                                                <span>
+                                                    <div class="d-flex d-lg-none justify-content-end">
+                                                        <div class="calendar-btn">
+                                                            More Dates <img class="calendar-btn-img "
+                                                                src="./calendar_files/icon-calendar-arrow-left.png">
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-none d-lg-flex justify-content-end">
+                                                        <div class="calendar-btn">
+                                                            <img class="calendar-btn-img"
+                                                                src="/images/icons/p3/icon-calendar-arrow-left.svg">
+                                                            {{Month Prev}}
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </span>
+                                            May 2020
+                                            <span class="calendar-heading-arrows calendar-heading-arrows--right">
+                                                <div>
+                                                    <div class="d-flex d-lg-none justify-content-end">
+                                                        <div class="calendar-btn">
+                                                            More Dates <img class="calendar-btn-img"
+                                                                src="/images/icons/p3/icon-calendar-arrow-left.svg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-none d-lg-flex justify-content-end">
+                                                        <div class="calendar-btn">
+                                                            {{Month Next}}
+                                                            <img class="calendar-btn-img"
+                                                                src="/images/icons/p3/icon-calendar-arrow-right.svg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </h2>
+                                    </div>
+                                    <div class="col-12 d-block d-lg-none"><button
+                                            class="btn calendar-mobile-btn calendar-mobile-btn--prev calendar-heading-arrows--disabled">
+                                            <div>
+                                                <div class="d-flex d-lg-none justify-content-end">
+                                                    <!-- <div class="calendar-btn">
+                                                        Jun <img class="calendar-btn-img"
+                                                            src="/images/icons/p3/icon-btn-prev-month.svg">
+                                                    </div> -->
+                                                    <div class="calendar-btn">
+                                                        More Dates <img class="calendar-btn-img"
+                                                            src="/images/icons/p3/icon-btn-prev-period.svg">
+                                                    </div>
+                                                </div>
+                                                <div class="d-none d-lg-flex justify-content-end">
+                                                    <div class="calendar-btn">
+                                                        <img class="calendar-btn-img fa-rotate-90"
+                                                            src="./calendar_files/arrrow-dropdown-grey.png"> More Dates
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="calendar-rows">
+                                    <div class="row calendar-weekdays d-none d-lg-flex">
+                                        <div class="col-lg col-md-12 px-2">
+                                            <p class="calendar-weekday">Mon</p>
+                                        </div>
+                                        <div class="col-lg col-md-12 px-2">
+                                            <p class="calendar-weekday">Tue</p>
+                                        </div>
+                                        <div class="col-lg col-md-12 px-2">
+                                            <p class="calendar-weekday">Wed</p>
+                                        </div>
+                                        <div class="col-lg col-md-12 px-2">
+                                            <p class="calendar-weekday">Thur</p>
+                                        </div>
+                                        <div class="col-lg col-md-12 px-2">
+                                            <p class="calendar-weekday">Fri</p>
+                                        </div>
+                                        <div class="col-lg col-md-12 px-2">
+                                            <p class="calendar-weekday">Sat</p>
+                                        </div>
+                                        <div class="col-lg col-md-12 px-2">
+                                            <p class="calendar-weekday">Sun</p>
+                                        </div>
+                                    </div>
+                                    <div class="row calendar-date-row">
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a
+                                                class="calendar-date calendar-date--disabled"
+                                                href="http://dave.com.dev.p3.ie/test-cal.html#">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>11</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">11th</p>
+                                                <div class="calendar-date-no-availability"><span
+                                                        class="d-inline d-lg-none not-available-text">Not
+                                                        Available</span><img class="not-available-icon"
+                                                        src="/images/icons/p3/icon-not-available.png"></div>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a
+                                                class="calendar-date calendar-date--disabled"
+                                                href="http://dave.com.dev.p3.ie/test-cal.html#">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>12</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">12th</p>
+                                                <div class="calendar-date-no-availability"><span
+                                                        class="d-inline d-lg-none not-available-text">Not
+                                                        Available</span><img class="not-available-icon"
+                                                        src="/images/icons/p3/icon-not-available.png"></div>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>13</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">13th</p>
+                                                <div class="calendar-date-loading"><i
+                                                        class="fa fas fa-spinner fa-spin"></i>
+                                                </div>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-14&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>14</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">14th</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-15&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>15</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">15th</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-16&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>15</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">16th</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-17&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>17</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">17th</p>
+                                                <p class="calendar-date-price">€170.10</p>
+                                            </a></div>
+                                    </div>
+                                    <div class="row calendar-date-row">
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-18&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>18</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">18th</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-19&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>19</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">19th</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-20&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>20</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">20th</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a
+                                                class="calendar-date calendar-date--disabled"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-21&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>21</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">21st</p>
+                                                <p class="calendar-date-price two-night">Must stay two nights <i
+                                                        class="icon-min-stay d-lg-none"></i></p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-22&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>22</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">22nd</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-23&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>23</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">23rd</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-24&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>24</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">24th</p>
+                                                <p class="calendar-date-price">€170.10</p>
+                                            </a></div>
+                                    </div>
+                                    <div class="row calendar-date-row">
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a
+                                                class="calendar-date calendar-date--disabled"
+                                                href="http://dave.com.dev.p3.ie/test-cal.html#">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>11</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">11th</p>
+                                                <div class="calendar-date-no-availability"><span
+                                                        class="d-inline d-lg-none not-available-text">Not
+                                                        Available</span><img class="not-available-icon"
+                                                        src="/images/icons/p3/icon-not-available.png"></div>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a
+                                                class="calendar-date calendar-date--disabled"
+                                                href="http://dave.com.dev.p3.ie/test-cal.html#">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>12</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">12th</p>
+                                                <div class="calendar-date-no-availability"><span
+                                                        class="d-inline d-lg-none not-available-text">Not
+                                                        Available</span><img class="not-available-icon"
+                                                        src="/images/icons/p3/icon-not-available.png"></div>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>13</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">13th</p>
+                                                <div class="calendar-date-loading"><i
+                                                        class="fa fas fa-spinner fa-spin"></i>
+                                                </div>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-14&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>14</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">14th</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-15&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>15</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">15th</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-16&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>15</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">16th</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-17&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>17</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">17th</p>
+                                                <p class="calendar-date-price">€170.10</p>
+                                            </a></div>
+                                    </div>
+                                    <div class="row calendar-date-row">
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-18&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>18</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">18th</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-19&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>19</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">19th</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-20&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>20</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">20th</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a
+                                                class="calendar-date calendar-date--disabled"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-21&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>21</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">21st</p>
+                                                <p class="calendar-date-price two-night">Must stay two nights <i
+                                                        class="icon-min-stay d-lg-none"></i></p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-22&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>22</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">22nd</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-23&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>23</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">23rd</p>
+                                                <p class="calendar-date-price">€89.10</p>
+                                            </a></div>
+                                        <div class="col-lg col-md-12 px-1 col-xs-2"><a class="calendar-date"
+                                                href="http://dave.bookings.glenroyal.ie.dev.p3.ie/rates-room1?arrival=2020-05-24&amp;nights=1&amp;rooms=1&amp;city=undefined&amp;hotel=90001&amp;adults[1]=1&amp;adults[2]=1&amp;children[1]=0&amp;children[2]=0">
+                                                <p class="calendar-date-heading d-lg-none">Sun <span>24</span> May</p>
+                                                <p class="calendar-date-heading d-none d-lg-block">24th</p>
+                                                <p class="calendar-date-price">€170.10</p>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="row d-flex d-lg-none">
+                                    <div class="col-12"><button
+                                            class="btn calendar-mobile-btn calendar-mobile-btn--next">
+                                            <div>
+                                                <div class="d-flex d-lg-none justify-content-end">
+                                                    <!-- <div class="calendar-btn">
+                                                        Jun <img class="calendar-btn-img"
+                                                            src="/images/icons/p3/icon-btn-next-month.svg">
+                                                    </div> -->
+                                                    <div class="calendar-btn">
+                                                        More Dates <img class="calendar-btn-img"
+                                                            src="/images/icons/p3/icon-btn-next-period.svg">
+                                                    </div>
+                                                </div>
+                                                <div class="d-none d-lg-flex justify-content-end">
+                                                    <div class="calendar-btn">
+                                                        More Dates <img class="calendar-btn-img fa-rotate-270"
+                                                            src="/images/icons/p3/icon-btn-next-period.svg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offer__confirm">
+                <form action=""></form>
+                    <div class="offer__confirm--mobile d-lg-none">
+                        <div class="grid-item grid-1">Arrive 19 Dec</div>
+                        <div class="grid-item grid-2">Leave 20 Dec</div>
+                        <div class="grid-item grid-3 d-flex justify-content-between align-items-center"><span>Stay:</span>
+                            <div class="form-group">
+                                <select name="" class="form-control" id="">
+                                    <option>1 night</option>
+                                    <option>2 nights</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid-item grid-4 pl-0"><button type="submit" class="btn-offer">BOOK</button></div>
+                    </div>
+                    <div class="offer__confirm--desktop d-none d-lg-flex justify-content-center">
+                        <div class="confirm-block">
+                            <span>Arriving</span>
+                            <h3>12 Dec</h3>
+                        </div>
+                        <div class="confirm-block confirm-block--border">
+                            <span>Departing</span>
+                            <h3>14 Dec</h3>
+                        </div>
+                        <div class="confirm-block">
+                            <span>Staying</span>
+                            <h3>2 Nights</h3>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary">book offer</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container devider-top-desktop devider-top-mobile">
+            <div class="row">
+                <div class="col-12 col-lg-12 col-xl-3 text-center text-xl-left mb-3 mb-xl-0">
+                    <a href="#"><img src="/images/redworth_logo-1.png" class="logo"></a>
+                </div>
+                <div class="col-12 col-lg-8 col-xl-6 mb-2 mb-xl-0">
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="https://shops.giftvoucherbrilliance.co.uk/pages/redworth_hall/Home">Gift
+                                    Vouchers</a></li>
+                            <li><a href="https://www.redworthhalldurham.co.uk/offers/">Special Offers</a></li>
+                            <li><a href="https://www.redworthhalldurham.co.uk/faqs/">FAQs</a></li>
+                            <li><a href="https://www.redworthhalldurham.co.uk/contact-us/">Contact Us</a></li>
+                            <li><a
+                                    href="https://www.thecairncollection.co.uk/?_ga=2.167210235.47086315.1581520921-683091198.1579273141">The
+                                    Cairn Collection</a></li>
+                            <li><a href="https://www.cairnhotelgroup.com/">The Cairn Group</a></li>
+                            <li><a href="https://www.redworthhalldurham.co.uk/terms-conditions/">Terms & Conditions</a>
+                            </li>
+                            <li><a href="https://www.redworthhalldurham.co.uk/privacy-policy/">Privacy Policy</a></li>
+                            <li><a href="https://www.redworthhalldurham.co.uk/sitemap/">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-3">
+                    <div class="footer-social-media text-center float-lg-right">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li class="mx-3"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- JS Files -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Slick -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <!-- Multi Select -->
+    <script type="text/javascript" src="js/popper.js"></script>
+    <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+
+    <!-- Prefixfree -->
+    <script type="text/javascript" src="js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="js/prefixfree.dynamic-dom.min.js"></script>
+    <script type="text/javascript" src="js/prefixfree.viewport-units.js"></script>
+    <script type="text/javascript" src="js/prefixfree.jquery.js"></script>
+
+    <!-- Lazyload -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/no-dep/vue-airbnb-style-datepicker.min.js"></script> -->
+
+    <!-- Vue Datepicker -->
+
+
+    <script>
+        new Vue({
+            el: '#guest-widget',
+            data: {
+                rooms: [{ "id": 1, "quantity": 1, "name": "Room" }],
+                people: [{ "id": 1, "quantity": 1, "name": "Adult" }, { "id": 2, "quantity": 0, "name": "Children" }, { "id": 3, "quantity": 0, "name": "Infant" }],
+                isHidden: true
+            },
+            computed: {
+                totalRooms() {
+                    return this.rooms.reduce((sum, room) => {
+                        return sum + room.quantity
+                    }, 0)
+                },
+                totalPeople() {
+                    return this.people.reduce((sum, people) => {
+                        return sum + people.quantity
+                    }, 0)
+                }
+            }
+        })
+    </script>
+
+    <!-- Custom -->
+    <script src="js/p3core.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

@@ -21,7 +21,7 @@
 }
 
 .container .calendar-heading {
-  font-size: 22px;
+  font-size: 26px;
   color: $primaryFontColor;
   margin-bottom: 30px;
   font-family: $headingFont;
@@ -49,7 +49,10 @@
 .calendar .calendar-date {
   border-radius: 5px;
   border: solid 1px #d8d8d8;
-  min-height: 100px;
+  min-height: 50px;
+  @include mQ (992px) {
+    min-height: 100px;
+  }
 }
 
 .calendar .calendar-date-no-availability {
@@ -173,12 +176,6 @@
   .calendar .calendar-date-price {
     text-align: right;
     margin-top: 0px;
-  }
-
-
-  .calendar .calendar-date {
-    border: 1px solid #abaaad;
-    min-height: 50px;
   }
 
   .calendar .calendar-mobile-btn {
