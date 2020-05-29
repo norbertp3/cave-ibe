@@ -184,6 +184,8 @@
                 </article>
             </div>
         </section>
+
+        <!-- Search Offer Widget Start -->
         <section class="offer__search">
             <div class="container">
                 <div class="offer__search--widget">
@@ -227,36 +229,34 @@
                 </div>
             </div>
         </section>
-        <section class="offer__calendar">
-            <div id="calendar-prev-html" class="d-none">
-                <div class="d-flex d-lg-none justify-content-end">
-                    <div class="calendar-btn">
-                        More Dates <img class="calendar-btn-img rotate180"
-                            src="./calendar_files/arrrow-dropdown-grey.png">
-                    </div>
-                </div>
-                <div class="d-none d-lg-flex justify-content-end">
-                    <div class="calendar-btn">
-                        <img class="calendar-btn-img" src="./calendar_files/arrrow-dropdown-grey.png"> More Dates
-                    </div>
-                </div>
-            </div>
-            <div id="calendar-next-html" class="d-none">
-                <div class="d-flex d-lg-none justify-content-end">
-                    <div class="calendar-btn">
-                        More Dates <img class="calendar-btn-img" src="./calendar_files/arrrow-dropdown-grey.png">
-                    </div>
-                </div>
-                <div class="d-none d-lg-flex justify-content-end">
-                    <div class="calendar-btn">
-                        More Dates <img class="calendar-btn-img" src="./calendar_files/arrrow-dropdown-grey.png">
-                    </div>
-                </div>
-            </div>
+        <!-- Search Offer Widget End -->
 
+
+        <!-- Start Offer Calendar -->
+        <section class="offer__calendar">
+
+            <!-- ----- -->
+            <!-- Start Calendar with Vue -->
+            <!-- <section class="offer__calendar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 px-0" v-show="showOffersCalendar" style="display: none;">
+                            <div id="calendar-picker">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- End Calendar With Vue -->
+            <!-- ----- -->
+
+            <!-- ----- -->
+            <!-- Start Demo/Preview - -->
             <div class="container">
                 <div class="row">
-                    <div class="col-12 px-0 px-md-3">
+                    <div class="col-12 px-0 py-lg-4">
                         <div style="max-height: auto;">
                             <div class="container calendar px-0">
                                 <div class="row">
@@ -575,41 +575,79 @@
                     </div>
                 </div>
             </div>
-            <div class="offer__confirm">
-                <form action=""></form>
-                    <div class="offer__confirm--mobile d-lg-none">
-                        <div class="grid-item grid-1">Arrive 19 Dec</div>
-                        <div class="grid-item grid-2">Leave 20 Dec</div>
-                        <div class="grid-item grid-3 d-flex justify-content-between align-items-center"><span>Stay:</span>
-                            <div class="form-group">
-                                <select name="" class="form-control" id="">
-                                    <option>1 night</option>
-                                    <option>2 nights</option>
-                                </select>
+            <!-- End Demo/Preview -->
+            <!-- ----- -->
+            
+            <!-- Start Sticky Bottom Banner  -->
+            <div class="container-fluid offer__banner" id="sticky-offer-banner" v-show="showOfferBanner" style="">
+                <div class="container px-0 text-center">
+                    <div v-show="showOfferBtn" class="row d-lg-flex justify-content-center">
+                        <div class="col-6 col-lg-2">
+                            <!-- <p>Arrive on @{{ selectedArrivalDate }}</p> -->
+                            <div class="confirm-block">
+                                <div class="d-none d-lg-block">
+                                    <span>Arriving</span>
+                                    <h3>12 Dec</h3>
+                                </div>
+                                <div class="d-lg-none">
+                                    <span>Arrive 12 Dec</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="grid-item grid-4 pl-0"><button type="submit" class="btn-offer">BOOK</button></div>
+                        <div class="col-6 col-lg-2 confirm-block--border">
+                            <!-- <p>Leave on @{{ selectedDepartureDate }}</p> -->
+                            <div class="confirm-block">
+                                <div class="d-none d-lg-block">
+                                    <span>Leave</span>
+                                    <h3>12 Dec</h3>
+                                </div>
+                                <div class="d-lg-none">
+                                    <span>Leave 12 Dec</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ---- -->
+                        <!-- It's in design, but we never do this with VUE -->
+                        <div class="col-6 col-lg-2 d-none d-lg-block">
+                            <!-- <p>Leave on @{{ selectedDepartureDate }}</p> -->
+                            <div class="confirm-block">
+                                <div class="d-none d-lg-block">
+                                    <span>Staying</span>
+                                    <h3>2 Nights</h3>
+                                </div>
+                                <div class="d-lg-none">
+                                    <span>Leave 12 Dec</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-3">
+                            <a :href="scrollToRateUrl" class="btn btn-primary btn-primary--offer">Book Offer</a>
+                        </div>
                     </div>
-                    <div class="offer__confirm--desktop d-none d-lg-flex justify-content-center">
-                        <div class="confirm-block">
-                            <span>Arriving</span>
-                            <h3>12 Dec</h3>
-                        </div>
-                        <div class="confirm-block confirm-block--border">
-                            <span>Departing</span>
-                            <h3>14 Dec</h3>
-                        </div>
-                        <div class="confirm-block">
-                            <span>Staying</span>
-                            <h3>2 Nights</h3>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary">book offer</button>
+
+                    <!-- I'm not sure how that supposed to work. -->
+                    <div v-show="!showOfferBtn" class="row" style="display: none;">
+                        <div class="col-12">
+                            <p>@{{ datesNotBookableMessage }}</p>
                         </div>
                     </div>
-                </form>
+
+                </div>
             </div>
+            <div class="container-fluid offer__banner offer__banner--select-departure" v-show="selectedDepartureDateMessage"  style="display: none;">
+                <div class="container px-0">
+                    <div class="row">
+                        <div class="col-12 py-3">
+                            <p class="text-center">Please select your departure date</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Sticky Bootom Banner -->
         </section>
+        <!-- End Offer Calendar -->
     </main>
 
 

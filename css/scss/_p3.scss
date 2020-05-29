@@ -1750,6 +1750,7 @@ a.confirm-booking {
     }
     &__category {
         flex-wrap: wrap;
+        @include formLabel; 
     }
     .btn-primary {
         @include mQmax (991px) {
@@ -1920,7 +1921,7 @@ a.confirm-booking {
     &__calendar {
         background-color: #f2f2f2;
         @include mQ (992px) {
-            padding: 25px 0;
+            // padding: 25px 0;
         }
         .container .calendar-rows {
             background-color: transparent!important;
@@ -1937,62 +1938,77 @@ a.confirm-booking {
             margin: 0 0 3px 5px!important;
         }
     }
-    &__confirm {
-        &--mobile{
-            position: fixed;
-            width: 100%;
-            z-index: 10;
-            bottom: 0;
-            display: grid;
-            grid-template-columns: 50% 50%;
+    &__banner {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        bottom: 0;
+        background-color: #e8ecd4;
+        @include mQmax(991px) {
             background-color: $primaryColor;
-            color: #fff;
-            .grid-item {
-                padding: 10px 10px 10px 10px;
-            }
-            .grid-2 {
-                text-align: right;
-                border-left: 1px solid rgba(255, 255, 255, 0.3);
-            }
-            .btn-offer {
-                @include offerSearchBtn;
-                height: 40px;
-            }
-            .form-group {
-                // float: right;
-                margin-bottom:0;
-                select {
-                    @include formStyleElements;
-                    @include selectIcon;
-                    max-width: 94px;
-                    height: 40px;
+        }
+        color: #fff;
+        &--select-departure {
+            padding: 10px 0;
+            p {
+                text-align: center;
+                font-family: $textFont;
+                font-size: 15px;
+                color: #fff;
+                @include mQ (992px) {
+                    padding: 42px 0;
+                    font-family: $headingFont;
+                    font-size: 32px;
+                    color: $primaryFontColor;
                 }
             }
         }
-        &--desktop {
-            position: fixed;
+        .confirm-block {
+            text-align: center;
+            @include mQ(992px) {
+                padding: 40px 0;
+            }
+            color: $primaryFontColor;
+            &--border {
+                @include mQmax (991px) {
+                    border-left: solid 1px #fff;
+                    text-align: right;
+                }
+                border-left: solid 1px rgba(34, 34, 34, 0.2);
+                border-right: solid 1px rgba(34, 34, 34, 0.2);
+            }
+            h3 {
+                font-family: $headingFont;
+                font-size: 32px;
+                margin-top: 20px;
+            }
+            @include mQmax (991px) {
+                h3, span {
+                    font-family: $textFont;
+                    font-size: 14px;
+                    line-height: 40px;
+                    color: #fff;
+                }
+            }
+        }
+        a.btn-primary--offer {
+            margin-top: 50px;
             width: 100%;
-            z-index: 10;
-            bottom: 0;
-            background-color: #e8ecd4;
-            .confirm-block {
-                padding: 40px;
-                text-align: center;
-                &--border {
-                    border-left: solid 1px rgba(34, 34, 34, 0.2);
-                    border-right: solid 1px rgba(34, 34, 34, 0.2);
-                }
-                h3 {
-                    font-family: $headingFont;
-                    font-size: 32px;
-                    margin-top: 20px;
+            @include mQ (992px) {
+                &:hover, &:active {
+                    color: $primaryFontColor;
                 }
             }
-            .btn-primary {
-                margin-top: 50px;
-                padding: 13.5px 30px;
-                margin-left: 30px;
+            @include mQmax (991px) {
+                padding: 10px;
+                color: #fff;
+                background-color: transparent;
+                border-color: #fff;
+                width: 100%;
+                margin-bottom: 10px;
+                margin-top: 0;
             }
+            
         }
     }
 }
