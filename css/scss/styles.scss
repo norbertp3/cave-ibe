@@ -1079,10 +1079,40 @@ p.booking-summary-room-name{
   }
 }
 
-// .offer {
-//   &__calendar {
-//     .container.calendar {
-//       background-color: transparent;
-//     }
-//   }
-// }
+.offer__calendar {
+  .calendar .calendar-date-price {
+    font-weight: 500;
+    @include mQmax (991px) {
+      font-size: 20px;
+    }
+  }
+  .container .calendar-heading {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .calendar-btn {
+    @include mQ (992px) {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.25px;
+    }
+  }
+  .calendar-date-price.two-night {
+    @include mQmax (991px) {
+      font-size: 13px;
+    }
+  }
+  .calendar-date-no-availability {
+    @include mQmax (991px) {
+      font-size: 13px;
+    }
+  }
+}
+
+.offer-details__offer-available, .offers-list__article--offer-available {
+  font-size: 15px;
+  @include mQ (992px) {
+    font-size: 16px;
+  }
+}
