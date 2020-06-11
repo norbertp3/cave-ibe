@@ -1745,6 +1745,9 @@ a.confirm-booking {
                 @include formStyleElements;
                 @include selectIcon;
                 max-width: 300px;
+                &:focus {
+                    background-image: $selectIconUp;
+                }
             }
         }
     }
@@ -1913,6 +1916,9 @@ a.confirm-booking {
                 select {
                     @include formStyleElements;
                     @include selectIcon;
+                    &:focus {
+                        background-image: $selectIconUp;
+                    }
                 }
             }
             .btn-offer {
