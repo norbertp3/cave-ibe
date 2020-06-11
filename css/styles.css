@@ -3492,10 +3492,6 @@ label.validationError {
           box-shadow: none;
 }
 
-.offers-form__filter .form-group select:focus {
-  background-image: url(/images/icons/p3/icon-btn-prev-period.svg);
-}
-
 .offers-form__category {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -3523,11 +3519,11 @@ label.validationError {
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .offers-form__filter-btn i {
-  background: url(/images/icons/p3/icon-btn-next-period.svg);
+  background: url(/images/icons/p3/icon-btn-prev-period.svg);
   height: 16px;
   width: 16px;
   display: inline-block;
@@ -3801,10 +3797,6 @@ label.validationError {
   border-color: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-.offer__search--widget .form-group select:focus {
-  background-image: url(/images/icons/p3/icon-btn-prev-period.svg);
 }
 
 .offer__search--widget .btn-offer {

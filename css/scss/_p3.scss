@@ -1745,9 +1745,6 @@ a.confirm-booking {
                 @include formStyleElements;
                 @include selectIcon;
                 max-width: 300px;
-                &:focus {
-                    background-image: $selectIconUp;
-                }
             }
         }
     }
@@ -1766,9 +1763,9 @@ a.confirm-booking {
         font-weight: 600;
         font-size: 14px;
         text-transform: uppercase;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         i {
-            background: $selectIcon;
+            background: $selectIconUp;
             height: 16px;
             width: 16px;
             display: inline-block;
@@ -1916,9 +1913,6 @@ a.confirm-booking {
                 select {
                     @include formStyleElements;
                     @include selectIcon;
-                    &:focus {
-                        background-image: $selectIconUp;
-                    }
                 }
             }
             .btn-offer {
