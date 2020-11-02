@@ -1,12 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
     <defs>
-        <path id="prefix__a" d="M1.817 19.748c-5.666 15.569 2.361 32.784 17.93 38.45 15.57 5.668 32.785-2.36 38.452-17.93 5.667-15.569-2.36-32.784-17.93-38.45-15.57-5.667-32.785 2.36-38.452 17.93z"/>
-        <mask id="prefix__b" width="60.016" height="60.016" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
-            <use xlink:href="#prefix__a"/>
+        <path id="gv33qoysra" d="M1.817 19.748c-5.666 15.569 2.361 32.784 17.93 38.45 15.57 5.668 32.785-2.36 38.452-17.93 5.667-15.569-2.36-32.784-17.93-38.45-15.57-5.667-32.785 2.36-38.452 17.93z"/>
+        <mask id="cv63sa9vhb" width="60.016" height="60.016" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+            <use xlink:href="#gv33qoysra"/>
         </mask>
     </defs>
-    <g fill="none">
-        <path stroke="#222" stroke-opacity=".08" stroke-width="5" d="M30 2.5c-7.594 0-14.469 3.078-19.445 8.055C5.578 15.53 2.5 22.406 2.5 30c0 7.594 3.078 14.469 8.055 19.445C15.53 54.422 22.406 57.5 30 57.5c7.594 0 14.469-3.078 19.445-8.055C54.422 44.47 57.5 37.594 57.5 30c0-7.594-3.078-14.469-8.055-19.445C44.47 5.578 37.594 2.5 30 2.5z"/>
-        <use stroke="#333" stroke-dasharray="150.72 133.67" stroke-linejoin="round" stroke-width="10" mask="url(#prefix__b)" xlink:href="#prefix__a"/>
+    <g fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <g transform="translate(-1396 -6128) translate(1359 6091) translate(37 37)">
+                    <path stroke="#FFF" stroke-opacity=".2" stroke-width="5" d="M30 2.5c7.594 0 14.469 3.078 19.445 8.055C54.422 15.53 57.5 22.406 57.5 30c0 7.594-3.078 14.469-8.055 19.445C44.47 54.422 37.594 57.5 30 57.5c-7.594 0-14.469-3.078-19.445-8.055C5.578 44.47 2.5 37.594 2.5 30c0-7.594 3.078-14.469 8.055-19.445C15.53 5.578 22.406 2.5 30 2.5z"/>
+                    <use stroke="#7AB9A9" stroke-dasharray="150.72 133.67" stroke-linejoin="round" stroke-width="10" mask="url(#cv63sa9vhb)" xlink:href="#gv33qoysra"/>
+                </g>
+            </g>
+        </g>
     </g>
 </svg>

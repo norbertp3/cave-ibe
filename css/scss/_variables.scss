@@ -1,32 +1,32 @@
 // Fonts
-$headingFont: 'EB Garamond', serif;
-$textFont: 'Raleway', sans-serif;
+$headingFont: 'open-sans';
+$textFont: 'open-sans';
 
 // Custom grid columns padding
-$colPadding: 20px;
+$colPadding: 25px;
 $containerWidth: 1510px;
-$mobileContainerPadding: 10px;
+$mobileContainerPadding: 15px;
 
 // Colours
-$primaryFontColor: #222;
-$secondaryFontColor: #222;
-$lightFontColor: rgba(34, 34, 34, 0.5);
-$bodyLinkColor: #222;
-$primaryColor: #333;
+$primaryFontColor: #fff;
+$secondaryFontColor: #fff;
+$lightFontColor:rgba(255, 255, 255, 0.8);
+$bodyLinkColor: #ffd75c;
+$primaryColor: #5db7da;
 $secondaryColor: yellow;
-$pageBg: #fff;
-$bookingSummaryBackgroundColor: rgba(34, 34, 34, 0.05);
-$bookingSummaryBackgroundColorDesktop: rgba(34, 34, 34, 0.05);
-$cardBackgroundColor: rgba(34, 34, 34, 0.05);
-$modalDescription2Background: rgba(34, 34, 34, 0.05);;
-$modalBackgroundColour: #fff;
-$deviderColor: rgba(87, 86, 91, 0.3);
-$bookingWidgetBg: #f4f4f4;
+$pageBg: #495a7f;
+$bookingSummaryBackgroundColor: #6b7997;
+$bookingSummaryBackgroundColorDesktop:  #6b7997;
+$cardBackgroundColor: #6b7997;
+$modalDescription2Background: #495a7f;
+$modalBackgroundColour: #6b7997;
+$deviderColor: rgba(255, 255, 255, 0.4);;
+$bookingWidgetBg: #6b7997;
 
 // Icons
-$selectIcon: url(/images/icons/p3/icon-btn-next-period.svg);
+$selectIcon: url(/images/icons/p3/icon-btn-primary-down.svg);
 $selectIconUp: url(/images/icons/p3/icon-btn-prev-period.svg);
-$tickIcon: url(/images/icons/p3/icon-tick-square.svg);
+$tickIcon: url(/images/icons/p3/icon-form-checked.svg);
 $confirmationIcon: url(/images/icons/p3/icon-confirmation.svg);
 
 $iconProgressComplete: url(/images/icons/p3/icon-progress-complete.svg);
@@ -47,7 +47,7 @@ $iconExpand: url(/images/icons/p3/icon-expand.svg);
 $iconCollapse: url(/images/icons/p3/icon-collapse.svg);
 $iconCloseLightDefault: url(/images/icons/p3/icon-close-light-default.svg);
 $iconCloseLightHover: url(/images/icons/p3/icon-close-light-hover.svg);
-$iconCloseDarkDefault: url(/images/icons/p3/icon-close-dark-default.svg);
+$iconCloseDarkDefault: url(/images/icons/p3/icon-close-light-default.svg);
 $iconCloseDarkHover: url(/images/icons/p3/icon-close-dark-hover.svg);
 $iconSearchAgain: url(/images/icons/p3/icon-search-again.svg);
 // $iconOpenGallery: 

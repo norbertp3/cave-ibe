@@ -279,7 +279,6 @@ label.validationError {
     .pregress-steps-desktop {
         color: rgba(51, 50, 50, 0.5);
         font-size: 14px;
-        padding-bottom: 30px;
         margin-bottom: 20px;
         p, i {
             margin-right: 10px;
@@ -358,7 +357,6 @@ label.validationError {
 .booking-summary-rooms-section {
     p {
         width: 100%;
-        text-align: left!important
     }
     img {
         height: 55px;
@@ -386,6 +384,9 @@ label.validationError {
     {
         display: none;
     }
+}
+p.booking-summary-room-price {
+    text-align: left!important;
 }
 
 // Rotate on click
@@ -460,6 +461,7 @@ label.validationError {
             position: absolute;
             top: -25px;
         }
+        @include priceSpan;
     }
     .price-after-decimal {
         font-size: 18px;
@@ -657,7 +659,7 @@ label.validationError {
     }
     .rate-container {
         padding-bottom: 20px;
-        border-bottom: 1px solid #d8d8d8;
+        border-bottom: 1px solid $deviderColor;
         margin-bottom: 20px;
         position: relative;
         &:last-child {
@@ -666,7 +668,7 @@ label.validationError {
             padding-bottom: 0;
         }
         &:first-child {
-            border-top: 1px solid #d8d8d8;
+            border-top: 1px solid $deviderColor;
             padding-top: 20px;
             @include mQ(992px) {
                 border-top: none;
@@ -1155,7 +1157,6 @@ label.validationError {
     .booking-summary-rooms-section {
         p {
             width: 100%;
-            text-align: left!important
         }
         img {
             height: 55px;
@@ -1253,7 +1254,7 @@ label.validationError {
             min-height: 100%;
         }
         .modal-body {
-            background: #fff;
+            background: $modalBackgroundColour;
         }
         .modal-header {
             position: fixed!important;
@@ -1488,7 +1489,7 @@ label.validationError {
         }
     }
     .modal-body {
-        background-color: #fff;
+        background-color:$modalBackgroundColour;
         padding: 20px;
         @include mQ(992px) {
             padding: 30px;
@@ -1841,7 +1842,7 @@ a.confirm-booking {
             height: 199px;
             object-fit: cover;
             @include mQ(992px) {
-                height: 238px;
+                height: 100%;
             }
         }
         &__offer-name {
@@ -2055,4 +2056,10 @@ a.confirm-booking {
       background-image: $iconCloseLightDefault!important;
     }
   }
-  
+  .mymenu {
+      background-color: #ccc;
+      padding: 0 10px;
+      li {
+          display: inline;
+      }
+  }

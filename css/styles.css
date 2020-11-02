@@ -32,18 +32,18 @@ button:focus {
 }
 
 a {
-  color: #333;
+  color: #5db7da;
   line-height: 1;
 }
 
 a:hover {
-  color: #333;
+  color: #5db7da;
   cursor: pointer;
   text-decoration: none;
 }
 
 a:focus {
-  color: #333;
+  color: #5db7da;
   text-decoration: none;
 }
 
@@ -52,9 +52,9 @@ ul {
 }
 
 .btn-primary {
-  background-color: #333;
+  background-color: #5db7da;
   border-radius: 0;
-  border: 1px solid #333;
+  border: 1px solid #5db7da;
 }
 
 .btn {
@@ -63,8 +63,8 @@ ul {
 
 .btn:hover {
   background-color: #fff;
-  color: #333;
-  border: 1px solid #333;
+  color: #5db7da;
+  border: 1px solid #5db7da;
 }
 
 .btn:focus {
@@ -75,8 +75,8 @@ ul {
 .btn:not(:disabled):not(.disabled):active {
   -webkit-box-shadow: none;
           box-shadow: none;
-  background-color: #333;
-  color: #333;
+  background-color: #5db7da;
+  color: #5db7da;
 }
 
 .btn:not(:disabled):not(.disabled).active:focus, .btn:not(:disabled):not(.disabled):active:focus, .show > .btn.dropdown-toggle:focus {
@@ -85,7 +85,7 @@ ul {
 }
 
 .btn:not(:disabled):not(.disabled).active, .btn:not(:disabled):not(.disabled):active, .show > .btn.dropdown-toggle {
-  border-color: #333;
+  border-color: #5db7da;
 }
 
 select {
@@ -470,6 +470,45 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'open-sans';
+  src: url("/css/fonts/OpenSans-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url("/css/fonts/OpenSans-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url("/css/fonts/OpenSans-SemiBold.ttf");
+  font-weight: 600;
+}
+
+#progress-steps .pregress-steps-desktop {
+  background-color: #6b7997;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-bottom: 0;
+  line-height: 50px;
+}
+
+#progress-steps .pregress-steps-desktop span {
+  color: #fff;
+}
+
+#progress-steps .pregress-steps-desktop .active {
+  background-color: #7ab9a9;
+  font-weight: 500;
+}
+
+#progress-steps .pregress-steps-desktop .past {
+  background-color: #7ab9a9;
+}
+
 .single-form {
   max-width: 600px;
   background-color: #fff;
@@ -494,13 +533,13 @@ template {
 
 .container .calendar-heading {
   font-size: 26px;
-  color: #222;
+  color: #fff;
   margin-bottom: 30px;
-  font-family: "EB Garamond", serif;
+  font-family: "open-sans";
 }
 
 .container .calendar-rows {
-  background-color: rgba(34, 34, 34, 0.05);
+  background-color: #6b7997;
   padding: 15px;
 }
 
@@ -510,7 +549,7 @@ template {
 }
 
 .calendar-weekday {
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
 }
 
@@ -547,7 +586,7 @@ template {
 }
 
 .calendar .calendar-date:not(.calendar-date--disabled):hover {
-  background-color: #333;
+  background-color: #5db7da;
   color: #fff;
 }
 
@@ -556,15 +595,15 @@ template {
 }
 
 .calendar .calendar-date:hover.calendar-date--disabled .calendar-date-heading {
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .calendar .calendar-date:hover.calendar-date--disabled .calendar-date-price {
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .calendar .calendar-date .calendar-date-heading {
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .calendar .calendar-date:hover .calendar-date-heading {
@@ -582,13 +621,13 @@ template {
 .calendar .calendar-date-price {
   text-align: center;
   margin-top: 10px;
-  color: #222;
+  color: #fff;
   font-size: 18px;
 }
 
 .calendar .calendar-heading-arrows {
   font-size: 16px;
-  font-family: "EB Garamond", serif;
+  font-family: "open-sans";
 }
 
 .calendar .calendar-heading-arrows.calendar-heading-arrows--left {
@@ -607,7 +646,7 @@ template {
 }
 
 .not-available-message {
-  color: #222;
+  color: #fff;
   margin-bottom: 30px;
   margin-top: 30px;
 }
@@ -620,24 +659,25 @@ template {
 }
 
 .not-available-message h4 {
-  font-family: "EB Garamond", serif;
-  font-size: 24px;
-  color: #222;
-  font-weight: 500;
+  font-family: "open-sans";
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 992px) {
   .not-available-message h4 {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
 .not-available-message p {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 15px;
   line-height: 24px;
-  color: #222;
+  color: #fff;
 }
 
 @media screen and (min-width: 992px) {
@@ -648,7 +688,7 @@ template {
 }
 
 .calendar-date-price.two-night {
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
 }
 
@@ -666,7 +706,7 @@ template {
   .container.calendar {
     padding-left: 0px;
     padding-right: 0px;
-    background-color: rgba(34, 34, 34, 0.05);
+    background-color: #6b7997;
   }
   .calendar .calendar-date-price {
     text-align: right;
@@ -686,7 +726,7 @@ template {
   .calendar .calendar-btn {
     border: solid 1px rgba(51, 50, 50, 0.8);
     border-radius: 25px;
-    color: #222;
+    color: #fff;
     padding: 8.5px 25px;
     background-color: none;
     font-size: 14px;
@@ -700,14 +740,14 @@ template {
     margin-bottom: 0px;
   }
   .calendar-date-heading {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
   }
   .calendar-date-heading span {
     font-size: 22px;
     font-weight: 500;
-    color: #222;
+    color: #fff;
   }
   .calendar .calendar-date:hover span {
     color: #fff;
@@ -730,7 +770,7 @@ template {
 }
 
 .calendar-date--selected {
-  background-color: #333;
+  background-color: #5db7da;
   color: #fff;
 }
 
@@ -745,9 +785,9 @@ template {
 }
 
 body {
-  background-color: #fff;
-  font-family: "Raleway", sans-serif;
-  color: #222;
+  background-color: #495a7f;
+  font-family: "open-sans";
+  color: #fff;
 }
 
 @media screen and (min-width: 991px) {
@@ -758,16 +798,16 @@ body {
 
 @media screen and (max-width: 575px) {
   .container {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 p {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 15px;
   line-height: 24px;
-  color: #222;
+  color: #fff;
 }
 
 @media screen and (min-width: 992px) {
@@ -778,10 +818,10 @@ p {
 }
 
 ul, ol {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 15px;
   line-height: 24px;
-  color: #222;
+  color: #fff;
 }
 
 @media screen and (min-width: 992px) {
@@ -792,11 +832,11 @@ ul, ol {
 }
 
 a {
-  color: #222;
+  color: #ffd75c;
 }
 
 a:hover {
-  color: #222;
+  color: #ffd75c;
   cursor: pointer;
 }
 
@@ -908,9 +948,9 @@ a:hover {
 .dropdown-currency select {
   border: none;
   font-size: 13px;
-  color: #222;
+  color: #fff;
   margin-left: 30px;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   background-color: inherit;
   background-image: url(/images/icons/p3/dropdown-arrows.svg);
   background-size: 10px;
@@ -918,60 +958,56 @@ a:hover {
 
 .btn-primary {
   display: inline-block;
-  border: 1px solid #222;
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  background-color: #222;
-  border-radius: 25px;
-  padding: 13px 20px;
+  border: 1px solid #ffd75c;
+  background-color: #ffd75c;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1b315f;
+  padding: 12px 20px;
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
 }
 
 .btn-primary:hover {
-  color: #222222;
+  color: #1b315f;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0);
-  border: solid 1px #222222;
-  -webkit-box-shadow: inset 0px 0px 0px 1px #f0f0f0;
-          box-shadow: inset 0px 0px 0px 1px #f0f0f0;
+  background-color: #f1c66b;
+  border: solid 1px #f1c66b;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active {
-  color: #222222;
+  color: #1b315f;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0);
-  border: solid 1px #222222;
+  background-color: #f1c66b;
+  border: solid 1px #1b315f;
   -webkit-box-shadow: inset 0px 0px 0px 1px #f0f0f0;
           box-shadow: inset 0px 0px 0px 1px #f0f0f0;
 }
 
 .btn-primary:focus {
-  -webkit-box-shadow: inset 0px 0px 0px 1px #f0f0f0;
-          box-shadow: inset 0px 0px 0px 1px #f0f0f0;
-  border: 2px solid #222222;
-  color: #fff;
+  border: 1px solid #f1c66b;
+  color: #1b315f;
 }
 
 .btn-primary:focus:hover {
-  color: #222;
+  color: #1b315f;
 }
 
 .btn-primary:disabled {
-  background-color: #222222;
+  background-color: #1b315f;
   opacity: 0.3;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #222222;
+  color: #1b315f;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
-  border-color: #222222;
-  color: #fff;
+  border-color: #f1c66b;
+  color: #1b315f;
 }
 
 .btn-primary a {
@@ -996,40 +1032,41 @@ a:hover {
 
 .btn-secondary {
   background-color: rgba(255, 255, 255, 0);
-  border-radius: 25px;
-  border: solid 1px #222222;
+  border-radius: 3px;
+  border: solid 1px #ffd75c;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
-  color: #222222;
-  padding: 13.5px 20px;
-  font-family: "Raleway", sans-serif;
+  color: #ffd75c;
+  padding: 12px 20px;
+  font-family: "open-sans";
 }
 
 .btn-secondary:hover {
-  background-color: #222222;
-  color: #ffffff;
+  background-color: #f1c66b;
+  color: #1b315f;
+  border-color: #ffd75c;
 }
 
 .btn-secondary:active {
-  background-color: #222222;
+  background-color: #1b315f;
   color: #ffffff;
 }
 
 .btn-secondary:focus {
-  border: solid 2px #222222;
+  border: solid 2px #1b315f;
 }
 
 .btn-secondary:disabled {
   background-color: rgba(255, 255, 255, 0);
-  border: solid 1px #222222;
+  border: solid 1px #1b315f;
   opacity: 0.3;
-  color: #222222;
+  color: #1b315f;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary .show > .btn-secondary.dropdown-toggle {
-  background-color: #222222;
-  border-color: #222222;
+  background-color: #1b315f;
+  border-color: #1b315f;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary .show > .btn-secondary.dropdown-toggle:focus {
@@ -1039,54 +1076,54 @@ a:hover {
 
 @media screen and (min-width: 992px) {
   .devider-top-desktop {
-    border-top: 1px solid rgba(87, 86, 91, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
   }
 }
 
 @media screen and (max-width: 991px) {
   .devider-top-mobile {
-    border-top: 1px solid rgba(87, 86, 91, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
   }
 }
 
 @media screen and (min-width: 992px) {
   .devider-bottom-desktop {
-    border-bottom: 1px solid rgba(87, 86, 91, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
 }
 
 @media screen and (max-width: 991px) {
   .devider-bottom-mobile {
-    border-bottom: 1px solid rgba(87, 86, 91, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
 }
 
 .devider-top-bottom {
-  border-top: 1px solid rgba(87, 86, 91, 0.3);
-  border-bottom: 1px solid rgba(87, 86, 91, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 @media screen and (max-width: 991px) {
   .pr-custom {
-    padding: 10px;
+    padding: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .pr-custom {
-    padding-right: 20px;
+    padding-right: 25px;
   }
 }
 
 @media screen and (max-width: 991px) {
   .pl-custom {
-    padding: 10px;
+    padding: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .pl-custom {
-    padding-left: 20px;
+    padding-left: 25px;
   }
 }
 
@@ -1097,18 +1134,19 @@ a:hover {
 span.custom-check {
   margin-right: 10px;
   border-radius: 0;
-  -webkit-box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
-          box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
   background-color: #fff;
-  color: #222;
+  color: #fff;
   font-size: 16px;
   border: none;
   height: 50px;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
+  border-radius: 3px;
+  color: #1b315f;
+  font-size: 16px;
 }
 
 span.custom-check:focus {
-  border: solid 1px #222222;
+  border: solid 1px #f1c66b;
   background-color: #ffffff;
 }
 
@@ -1141,14 +1179,14 @@ span.custom-check, span.custom-radio {
 }
 
 input[type=checkbox]:checked + span.custom-check:after {
-  content: url(/images/icons/p3/icon-tick-square.svg);
+  content: url(/images/icons/p3/icon-form-checked.svg);
   color: #fff;
   line-height: 20px;
   text-align: center;
   -webkit-animation: form-zoom .5s ease-in-out;
           animation: form-zoom .5s ease-in-out;
   padding: 2px 0px;
-  background: #333;
+  background: #5db7da;
   position: absolute;
   left: 0;
   top: 0;
@@ -1165,18 +1203,19 @@ input[type=checkbox]:checked + span.custom-check:after {
 }
 
 .form-group input, .form-group textarea {
-  -webkit-box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
-          box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
   background-color: #fff;
-  color: #222;
+  color: #fff;
   font-size: 16px;
   border: none;
   height: 50px;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
+  border-radius: 3px;
+  color: #1b315f;
+  font-size: 16px;
 }
 
 .form-group input:focus, .form-group textarea:focus {
-  border: solid 1px #222222;
+  border: solid 1px #f1c66b;
   background-color: #ffffff;
 }
 
@@ -1205,14 +1244,14 @@ label.validationError {
 }
 
 #mobile-hotel-info {
-  background-color: #333;
+  background-color: #5db7da;
   padding: 14px 0;
 }
 
 #mobile-hotel-info a {
   font-size: 15px;
   color: #fff;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   text-decoration: none;
 }
 
@@ -1221,14 +1260,16 @@ label.validationError {
 }
 
 .hotel-info-buttons .btn {
-  border: solid 1px rgba(255, 255, 255, 0.8);
+  border: solid 1px #fff;
   margin-right: 20px;
   background-color: rgba(51, 50, 50, 0);
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   padding: 12px 20px;
-  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-family: "open-sans";
+  border-radius: 3px;
 }
 
 .hotel-info-buttons .btn:hover {
@@ -1275,14 +1316,13 @@ label.validationError {
 }
 
 #progress-steps .active {
-  color: #222;
+  color: #fff;
   font-weight: 500;
 }
 
 #progress-steps .pregress-steps-desktop {
   color: rgba(51, 50, 50, 0.5);
   font-size: 14px;
-  padding-bottom: 30px;
   margin-bottom: 20px;
 }
 
@@ -1305,19 +1345,19 @@ label.validationError {
 
 #progress-steps .progress-steps-mobile h3 {
   font-size: 18px;
-  color: #222;
+  color: #fff;
   text-transform: uppercase;
 }
 
 #progress-steps .progress-steps-mobile span {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 13px;
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (min-width: 992px) {
   #progress-steps .progress-steps-mobile span {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -1327,12 +1367,12 @@ label.validationError {
 }
 
 #booking-summary {
-  background-color: rgba(34, 34, 34, 0.05);
+  background-color: #6b7997;
 }
 
 @media screen and (min-width: 1200px) {
   #booking-summary {
-    background-color: rgba(34, 34, 34, 0.05);
+    background-color: #6b7997;
   }
 }
 
@@ -1344,7 +1384,7 @@ label.validationError {
 
 .booking-summary-heading {
   padding: 10px;
-  font-family: "EB Garamond", serif;
+  font-family: "open-sans";
 }
 
 @media screen and (min-width: 1200px) {
@@ -1355,9 +1395,9 @@ label.validationError {
 
 .booking-summary-heading h2 {
   font-size: 15px;
-  color: #222;
+  color: #fff;
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
 }
 
 @media screen and (min-width: 1200px) {
@@ -1392,12 +1432,11 @@ label.validationError {
 
 .booking-summary-data h2 {
   font-size: 22px;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
 }
 
 .booking-summary-rooms-section p {
   width: 100%;
-  text-align: left !important;
 }
 
 .booking-summary-rooms-section img {
@@ -1433,6 +1472,10 @@ label.validationError {
   display: none;
 }
 
+p.booking-summary-room-price {
+  text-align: left !important;
+}
+
 .rotate180 {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -1440,7 +1483,8 @@ label.validationError {
 
 .card-style {
   margin-bottom: 30px;
-  background-color: rgba(34, 34, 34, 0.05);
+  background-color: #6b7997;
+  border-radius: 2px;
 }
 
 @media screen and (min-width: 992px) {
@@ -1478,20 +1522,19 @@ label.validationError {
 }
 
 .room-content h3 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-family: "open-sans";
+  font-weight: 600;
   font-size: 17px;
-  color: #222;
+  color: #fff;
   margin-bottom: 10px;
   margin-bottom: 20px;
 }
 
 @media screen and (min-width: 992px) {
   .room-content h3 {
-    line-height: 30px;
-    font-size: 26px;
-    letter-spacing: -0.3px;
-    font-family: "EB Garamond", serif;
+    line-height: 1.2;
+    font-size: 20px;
+    font-family: "open-sans";
   }
 }
 
@@ -1509,11 +1552,11 @@ label.validationError {
 }
 
 .room-content h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 30px;
   font-weight: 600;
   line-height: 30px;
-  color: #222;
+  color: #fff;
   text-align: right;
 }
 
@@ -1545,19 +1588,24 @@ label.validationError {
 }
 
 .room-content span {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 13px;
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (min-width: 992px) {
   .room-content span {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 .room-content .from-spam {
   margin-right: 10px;
+  font-family: "open-sans";
+  color: rgba(255, 255, 255, 0.8);
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 767px) {
@@ -1567,10 +1615,16 @@ label.validationError {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .room-content .from-spam {
+    font-size: 16px;
+  }
+}
+
 .room-content .price-after-decimal {
   font-size: 18px;
-  color: #222;
-  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-family: "open-sans";
   font-style: normal;
 }
 
@@ -1641,8 +1695,8 @@ label.validationError {
 
 .room-content .main-price-curreny {
   font-size: 18px;
-  color: #222;
-  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-family: "open-sans";
   font-style: normal;
 }
 
@@ -1669,10 +1723,10 @@ label.validationError {
 
 .room-content .room-left-side li {
   display: inline-block;
-  color: #222;
+  color: #fff;
   padding: 10px 30px 10px 0px;
   text-decoration: none;
-  font-family: "EB Garamond", serif;
+  font-family: "open-sans";
   font-style: italic;
   float: left;
 }
@@ -1739,15 +1793,15 @@ label.validationError {
 }
 
 .rates-wrapper h3 a {
-  color: #222;
-  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-family: "open-sans";
   font-size: 15px;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 992px) {
   .rates-wrapper h3 a {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
   }
 }
 
@@ -1762,14 +1816,14 @@ label.validationError {
 }
 
 .rates-wrapper span {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 13px;
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (min-width: 992px) {
   .rates-wrapper span {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -1781,7 +1835,7 @@ label.validationError {
 .rates-wrapper .select-rate-btn span {
   font-size: 16px;
   color: inherit;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-style: normal;
 }
 
@@ -1830,7 +1884,7 @@ label.validationError {
 
 .rates-wrapper .rate-container {
   padding-bottom: 20px;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   margin-bottom: 20px;
   position: relative;
 }
@@ -1842,7 +1896,7 @@ label.validationError {
 }
 
 .rates-wrapper .rate-container:first-child {
-  border-top: 1px solid #d8d8d8;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
   padding-top: 20px;
 }
 
@@ -1917,7 +1971,7 @@ label.validationError {
 }
 
 #banner {
-  background-color: #333;
+  background-color: #5db7da;
   color: #fff;
   padding: 20px 0 27px 0;
   position: relative;
@@ -1942,15 +1996,16 @@ label.validationError {
 }
 
 .addon-heading h2 {
-  font-family: "EB Garamond", serif;
-  font-size: 24px;
-  color: #222;
-  font-weight: 500;
+  font-family: "open-sans";
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 992px) {
   .addon-heading h2 {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
@@ -1958,7 +2013,7 @@ label.validationError {
   font-size: 14px;
   color: rgba(51, 50, 50, 0.5);
   margin-left: 10px;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
 }
 
 .addon-heading-row {
@@ -1989,52 +2044,51 @@ label.validationError {
 }
 
 .addon-with-checkboxes-wrapper .addon-content h3 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-family: "open-sans";
+  font-weight: 600;
   font-size: 17px;
-  color: #222;
+  color: #fff;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 992px) {
   .addon-with-checkboxes-wrapper .addon-content h3 {
-    line-height: 30px;
-    font-size: 26px;
-    letter-spacing: -0.3px;
-    font-family: "EB Garamond", serif;
+    line-height: 1.2;
+    font-size: 20px;
+    font-family: "open-sans";
   }
 }
 
 .addon-with-checkboxes-wrapper .addon-content h4 {
-  font-family: "Raleway", sans-serif;
-  color: #222;
+  font-family: "open-sans";
+  color: #fff;
   font-size: 26px;
   font-weight: 600;
 }
 
 @media screen and (min-width: 992px) {
   .addon-with-checkboxes-wrapper .addon-content h4 {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 
 .addon-with-checkboxes-wrapper .addon-content span {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 13px;
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (min-width: 992px) {
   .addon-with-checkboxes-wrapper .addon-content span {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 .addon-with-checkboxes-wrapper .addon-content label {
   font-size: 14px;
-  color: "Raleway", sans-serif;
+  color: "open-sans";
   text-align: right;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
 }
 
 @media screen and (max-width: 991px) {
@@ -2081,19 +2135,18 @@ label.validationError {
 }
 
 .addon-with-checkbox-wrapper .addon-content h3 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-family: "open-sans";
+  font-weight: 600;
   font-size: 17px;
-  color: #222;
+  color: #fff;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 992px) {
   .addon-with-checkbox-wrapper .addon-content h3 {
-    line-height: 30px;
-    font-size: 26px;
-    letter-spacing: -0.3px;
-    font-family: "EB Garamond", serif;
+    line-height: 1.2;
+    font-size: 20px;
+    font-family: "open-sans";
   }
 }
 
@@ -2102,27 +2155,27 @@ label.validationError {
 }
 
 .addon-with-checkbox-wrapper .addon-content h4 {
-  font-family: "Raleway", sans-serif;
-  color: #222;
+  font-family: "open-sans";
+  color: #fff;
   font-size: 26px;
   font-weight: 600;
 }
 
 @media screen and (min-width: 992px) {
   .addon-with-checkbox-wrapper .addon-content h4 {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 
 .addon-with-checkbox-wrapper .addon-content span {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 13px;
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (min-width: 992px) {
   .addon-with-checkbox-wrapper .addon-content span {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -2169,19 +2222,18 @@ label.validationError {
 }
 
 .addon-with-dropdown-wrapper .addon-content h3 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-family: "open-sans";
+  font-weight: 600;
   font-size: 17px;
-  color: #222;
+  color: #fff;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 992px) {
   .addon-with-dropdown-wrapper .addon-content h3 {
-    line-height: 30px;
-    font-size: 26px;
-    letter-spacing: -0.3px;
-    font-family: "EB Garamond", serif;
+    line-height: 1.2;
+    font-size: 20px;
+    font-family: "open-sans";
   }
 }
 
@@ -2190,27 +2242,27 @@ label.validationError {
 }
 
 .addon-with-dropdown-wrapper .addon-content h4 {
-  font-family: "Raleway", sans-serif;
-  color: #222;
+  font-family: "open-sans";
+  color: #fff;
   font-size: 26px;
   font-weight: 600;
 }
 
 @media screen and (min-width: 992px) {
   .addon-with-dropdown-wrapper .addon-content h4 {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 
 .addon-with-dropdown-wrapper .addon-content span {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 13px;
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (min-width: 992px) {
   .addon-with-dropdown-wrapper .addon-content span {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -2239,21 +2291,22 @@ label.validationError {
 }
 
 .addon-with-dropdown-wrapper .addon-content select {
-  -webkit-box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
-          box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
   background-color: #fff;
-  color: #222;
+  color: #fff;
   font-size: 16px;
   border: none;
   height: 50px;
-  font-family: "Raleway", sans-serif;
-  background-image: url(/images/icons/p3/icon-btn-next-period.svg);
+  font-family: "open-sans";
+  border-radius: 3px;
+  color: #1b315f;
+  font-size: 16px;
+  background-image: url(/images/icons/p3/icon-btn-primary-down.svg);
   width: 70px !important;
   height: 50px !important;
 }
 
 .addon-with-dropdown-wrapper .addon-content select:focus {
-  border: solid 1px #222222;
+  border: solid 1px #f1c66b;
   background-color: #ffffff;
 }
 
@@ -2289,21 +2342,27 @@ label.validationError {
 }
 
 .price-currency-decimal span {
-  font-family: "Raleway", sans-serif !important;
-  color: #222 !important;
+  font-family: "open-sans" !important;
+  color: #fff !important;
   font-style: normal !important;
 }
 
 .addons-total-details {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
 }
 
 .addons-total-details .price-currency-decimal span {
-  font-family: "Raleway", sans-serif;
-  color: #222;
+  font-family: "open-sans";
+  color: rgba(255, 255, 255, 0.8);
   font-style: normal;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 992px) {
+  .addons-total-details .price-currency-decimal span {
+    font-size: 16px;
+  }
 }
 
 .addons-total-details button {
@@ -2311,15 +2370,15 @@ label.validationError {
 }
 
 .addons-total-row h4 {
-  color: #222;
+  color: #fff;
 }
 
 .addons-total-row span {
-  font-family: "EB Garamond", serif;
+  font-family: "open-sans";
   font-size: 14px;
   font-style: italic;
   line-height: 14px;
-  color: #222;
+  color: #fff;
 }
 
 @media screen and (min-width: 992px) {
@@ -2356,19 +2415,20 @@ label.validationError {
 }
 
 .booker-details-wrapper .custom-select, .guest-details-wrapper .custom-select, .payment-details-wrapper .custom-select, .members-container .custom-select {
-  -webkit-box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
-          box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
   background-color: #fff;
-  color: #222;
+  color: #fff;
   font-size: 16px;
   border: none;
   height: 50px;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
+  border-radius: 3px;
+  color: #1b315f;
+  font-size: 16px;
   border-radius: 0;
 }
 
 .booker-details-wrapper .custom-select:focus, .guest-details-wrapper .custom-select:focus, .payment-details-wrapper .custom-select:focus, .members-container .custom-select:focus {
-  border: solid 1px #222222;
+  border: solid 1px #f1c66b;
   background-color: #ffffff;
 }
 
@@ -2390,9 +2450,9 @@ label.validationError {
 
 .booker-details-wrapper label, .guest-details-wrapper label, .payment-details-wrapper label, .members-container label {
   font-size: 16px;
-  color: rgba(87, 86, 91, 0.8);
+  color: #fff;
   margin-bottom: 5px;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
 }
 
 @media screen and (min-width: 992px) {
@@ -2402,7 +2462,7 @@ label.validationError {
 }
 
 .booker-details-wrapper p, .guest-details-wrapper p, .payment-details-wrapper p, .members-container p {
-  color: #222;
+  color: #fff;
 }
 
 .booker-details-wrapper .collapse.show, .guest-details-wrapper .collapse.show, .payment-details-wrapper .collapse.show, .members-container .collapse.show {
@@ -2413,19 +2473,18 @@ label.validationError {
 
 .booker-details-wrapper h3, .guest-details-wrapper h3, .payment-details-wrapper h3, .members-container h3 {
   margin-bottom: 16px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-family: "open-sans";
+  font-weight: 600;
   font-size: 17px;
-  color: #222;
+  color: #fff;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 992px) {
   .booker-details-wrapper h3, .guest-details-wrapper h3, .payment-details-wrapper h3, .members-container h3 {
-    line-height: 30px;
-    font-size: 26px;
-    letter-spacing: -0.3px;
-    font-family: "EB Garamond", serif;
+    line-height: 1.2;
+    font-size: 20px;
+    font-family: "open-sans";
   }
 }
 
@@ -2446,7 +2505,7 @@ label.validationError {
   background-size: 15px;
   background-position: calc(100% - 8px) 50%;
   background-repeat: no-repeat;
-  background-image: url(/images/icons/p3/icon-btn-next-period.svg);
+  background-image: url(/images/icons/p3/icon-btn-primary-down.svg);
   padding: 4px 23px 4px 10px;
   width: 80px !important;
 }
@@ -2481,15 +2540,16 @@ label.validationError {
 }
 
 .section-heading h2 {
-  font-family: "EB Garamond", serif;
-  font-size: 24px;
-  color: #222;
-  font-weight: 500;
+  font-family: "open-sans";
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 992px) {
   .section-heading h2 {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
@@ -2612,8 +2672,8 @@ label.validationError {
 .conf-card h3 {
   margin: 10px 0;
   font-size: 20px;
-  color: #222;
-  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-family: "open-sans";
 }
 
 .conf-card .booking-summary-table {
@@ -2636,12 +2696,11 @@ label.validationError {
 
 .conf-card .booking-summary-data h2 {
   font-size: 22px;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
 }
 
 .conf-card .booking-summary-rooms-section p {
   width: 100%;
-  text-align: left !important;
 }
 
 .conf-card .booking-summary-rooms-section img {
@@ -2677,7 +2736,7 @@ label.validationError {
 }
 
 .conf-card .booking-summary-rooms-section p.booking-summary-room-name {
-  color: #222;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -2736,7 +2795,7 @@ label.validationError {
 
 .confirmation-content-box h3 {
   font-size: 20px;
-  color: #222;
+  color: #fff;
   margin-bottom: 10px;
 }
 
@@ -2745,7 +2804,7 @@ label.validationError {
 }
 
 .modal .icon-close {
-  background: url(/images/icons/p3/icon-close-dark-default.svg) !important;
+  background: url(/images/icons/p3/icon-close-light-default.svg) !important;
   height: 30px;
   width: 30px;
   display: inline-block;
@@ -2782,7 +2841,7 @@ label.validationError {
     min-height: 100%;
   }
   .modal-full-width .modal-body {
-    background: #fff;
+    background: #6b7997;
   }
   .modal-full-width .modal-header {
     position: fixed !important;
@@ -2805,14 +2864,14 @@ label.validationError {
 }
 
 .modal-body .modal-room-content .room-facilities span {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 13px;
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (min-width: 992px) {
   .modal-body .modal-room-content .room-facilities span {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -2825,16 +2884,17 @@ label.validationError {
 }
 
 .modal-body h2 {
-  font-family: "EB Garamond", serif;
-  font-size: 24px;
-  color: #222;
-  font-weight: 500;
+  font-family: "open-sans";
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 @media screen and (min-width: 992px) {
   .modal-body h2 {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
@@ -2861,7 +2921,7 @@ label.validationError {
 }
 
 .tab-content {
-  background: #fff;
+  background: #6b7997;
 }
 
 .tab-content .info-tab {
@@ -2876,7 +2936,7 @@ label.validationError {
 
 .tab-content .gallery-tab {
   margin: 10px 0;
-  background: #fff;
+  background: #6b7997;
   height: 100%;
 }
 
@@ -2888,16 +2948,17 @@ label.validationError {
 }
 
 .tab-content .modal-heading h2 {
-  font-family: "EB Garamond", serif;
-  font-size: 24px;
-  color: #222;
-  font-weight: 500;
+  font-family: "open-sans";
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 @media screen and (min-width: 992px) {
   .tab-content .modal-heading h2 {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
@@ -2922,11 +2983,11 @@ label.validationError {
 
 .tab-content .description-2 {
   padding: 20px;
-  background-color: rgba(34, 34, 34, 0.05);
+  background-color: #495a7f;
 }
 
 .tab-content .description-2 h2 {
-  color: #222;
+  color: #fff;
   font-size: 22px;
   margin-bottom: 20px;
 }
@@ -3097,7 +3158,7 @@ label.validationError {
 }
 
 .standard-modal .modal-body {
-  background-color: #fff;
+  background-color: #6b7997;
   padding: 20px;
 }
 
@@ -3112,29 +3173,30 @@ label.validationError {
 }
 
 .standard-modal .modal-body .modal-room-content h2 {
-  font-family: "EB Garamond", serif;
-  font-size: 24px;
-  color: #222;
-  font-weight: 500;
-  font-family: "EB Garamond", serif;
+  font-family: "open-sans";
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "open-sans";
   margin-bottom: 20px;
 }
 
 @media screen and (min-width: 992px) {
   .standard-modal .modal-body .modal-room-content h2 {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
 .standard-modal .modal-body .modal-room-content .room-facilities span {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 13px;
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (min-width: 992px) {
   .standard-modal .modal-body .modal-room-content .room-facilities span {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -3222,9 +3284,9 @@ label.validationError {
 
 .signup-modal label {
   font-size: 16px;
-  color: rgba(87, 86, 91, 0.8);
+  color: #fff;
   margin-bottom: 5px;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
 }
 
 @media screen and (min-width: 992px) {
@@ -3255,7 +3317,7 @@ label.validationError {
 }
 
 .invalid-feedback {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
 }
 
 .loading-spinner .fa {
@@ -3354,7 +3416,8 @@ label.validationError {
 
 .members-container {
   margin-bottom: 30px;
-  background-color: rgba(34, 34, 34, 0.05);
+  background-color: #6b7997;
+  border-radius: 2px;
 }
 
 @media screen and (min-width: 992px) {
@@ -3364,7 +3427,7 @@ label.validationError {
 }
 
 .offers--social-media-share .fa {
-  background: #333;
+  background: #5db7da;
   height: 30px;
   width: 30px;
   border-radius: 50px;
@@ -3372,12 +3435,12 @@ label.validationError {
   position: relative;
   font-size: 16px;
   padding-top: 5px;
-  border: 2px solid #333;
+  border: 2px solid #5db7da;
   margin-left: 10px;
 }
 
 .offers--social-media-share .fa:hover {
-  color: #333;
+  color: #5db7da;
   background: inherit;
 }
 
@@ -3390,29 +3453,30 @@ label.validationError {
 }
 
 .offers--social-media-share span {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 13px;
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (min-width: 992px) {
   .offers--social-media-share span {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 .offers-form__heading {
-  font-family: "EB Garamond", serif;
-  font-size: 24px;
-  color: #222;
-  font-weight: 500;
+  font-family: "open-sans";
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
   text-align: center;
   margin: 30px 0;
 }
 
 @media screen and (min-width: 992px) {
   .offers-form__heading {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
@@ -3424,7 +3488,8 @@ label.validationError {
 
 .offers-form__filter {
   margin-bottom: 30px;
-  background-color: rgba(34, 34, 34, 0.05);
+  background-color: #6b7997;
+  border-radius: 2px;
   padding: 20px 15px;
 }
 
@@ -3445,27 +3510,28 @@ label.validationError {
 }
 
 .offers-form__filter .form-group select {
-  -webkit-box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
-          box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
   background-color: #fff;
-  color: #222;
+  color: #fff;
   font-size: 16px;
   border: none;
   height: 50px;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
+  border-radius: 3px;
+  color: #1b315f;
+  font-size: 16px;
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   background-size: 15px;
   background-position: calc(100% - 8px) 50%;
   background-repeat: no-repeat;
-  background-image: url(/images/icons/p3/icon-btn-next-period.svg);
+  background-image: url(/images/icons/p3/icon-btn-primary-down.svg);
   padding: 4px 23px 4px 10px;
   max-width: 300px;
 }
 
 .offers-form__filter .form-group select:focus {
-  border: solid 1px #222222;
+  border: solid 1px #f1c66b;
   background-color: #ffffff;
 }
 
@@ -3496,9 +3562,9 @@ label.validationError {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 16px;
-  color: rgba(87, 86, 91, 0.8);
+  color: #fff;
   margin-bottom: 5px;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
 }
 
 @media screen and (min-width: 992px) {
@@ -3515,7 +3581,7 @@ label.validationError {
 
 .offers-form__filter-btn {
   text-align: right;
-  color: #222;
+  color: #fff;
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
@@ -3581,33 +3647,32 @@ label.validationError {
 }
 
 .offers-list__article--offer-name {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-family: "open-sans";
+  font-weight: 600;
   font-size: 17px;
-  color: #222;
+  color: #fff;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 992px) {
   .offers-list__article--offer-name {
-    line-height: 30px;
-    font-size: 26px;
-    letter-spacing: -0.3px;
-    font-family: "EB Garamond", serif;
+    line-height: 1.2;
+    font-size: 20px;
+    font-family: "open-sans";
   }
 }
 
 .offers-list__article--offer-available {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 13px;
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   margin: 20px 0;
   display: block;
 }
 
 @media screen and (min-width: 992px) {
   .offers-list__article--offer-available {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -3645,24 +3710,23 @@ label.validationError {
 
 @media screen and (min-width: 992px) {
   .offer-details__image {
-    height: 238px;
+    height: 100%;
   }
 }
 
 .offer-details__offer-name {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-family: "open-sans";
+  font-weight: 600;
   font-size: 17px;
-  color: #222;
+  color: #fff;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 992px) {
   .offer-details__offer-name {
-    line-height: 30px;
-    font-size: 26px;
-    letter-spacing: -0.3px;
-    font-family: "EB Garamond", serif;
+    line-height: 1.2;
+    font-size: 20px;
+    font-family: "open-sans";
   }
 }
 
@@ -3673,16 +3737,16 @@ label.validationError {
 }
 
 .offer-details__offer-available {
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 13px;
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   margin: 20px 0;
   display: block;
 }
 
 @media screen and (min-width: 992px) {
   .offer-details__offer-available {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -3710,7 +3774,7 @@ label.validationError {
 }
 
 .offer-details__terms-link i {
-  background: url(/images/icons/p3/icon-btn-next-period.svg);
+  background: url(/images/icons/p3/icon-btn-primary-down.svg);
   height: 16px;
   width: 16px;
   display: inline-block;
@@ -3735,7 +3799,7 @@ label.validationError {
 }
 
 .offer__search {
-  background-color: #333;
+  background-color: #5db7da;
   padding: 20px 0;
 }
 
@@ -3753,26 +3817,27 @@ label.validationError {
 }
 
 .offer__search--widget .form-group select {
-  -webkit-box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
-          box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
   background-color: #fff;
-  color: #222;
+  color: #fff;
   font-size: 16px;
   border: none;
   height: 50px;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
+  border-radius: 3px;
+  color: #1b315f;
+  font-size: 16px;
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   background-size: 15px;
   background-position: calc(100% - 8px) 50%;
   background-repeat: no-repeat;
-  background-image: url(/images/icons/p3/icon-btn-next-period.svg);
+  background-image: url(/images/icons/p3/icon-btn-primary-down.svg);
   padding: 4px 23px 4px 10px;
 }
 
 .offer__search--widget .form-group select:focus {
-  border: solid 1px #222222;
+  border: solid 1px #f1c66b;
   background-color: #ffffff;
 }
 
@@ -3887,7 +3952,7 @@ label.validationError {
 
 @media screen and (max-width: 991px) {
   .offer__banner {
-    background-color: #333;
+    background-color: #5db7da;
   }
 }
 
@@ -3897,7 +3962,7 @@ label.validationError {
 
 .offer__banner--select-departure p {
   text-align: center;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
   font-size: 15px;
   color: #fff;
 }
@@ -3905,15 +3970,15 @@ label.validationError {
 @media screen and (min-width: 992px) {
   .offer__banner--select-departure p {
     padding: 42px 0;
-    font-family: "EB Garamond", serif;
+    font-family: "open-sans";
     font-size: 32px;
-    color: #222;
+    color: #fff;
   }
 }
 
 .offer__banner .confirm-block {
   text-align: center;
-  color: #222;
+  color: #fff;
 }
 
 @media screen and (min-width: 992px) {
@@ -3935,14 +4000,14 @@ label.validationError {
 }
 
 .offer__banner .confirm-block h3 {
-  font-family: "EB Garamond", serif;
+  font-family: "open-sans";
   font-size: 32px;
   margin-top: 20px;
 }
 
 @media screen and (max-width: 991px) {
   .offer__banner .confirm-block h3, .offer__banner .confirm-block span {
-    font-family: "Raleway", sans-serif;
+    font-family: "open-sans";
     font-size: 14px;
     line-height: 40px;
     color: #fff;
@@ -3956,7 +4021,7 @@ label.validationError {
 
 @media screen and (min-width: 992px) {
   .offer__banner a.btn-primary--offer:hover, .offer__banner a.btn-primary--offer:active {
-    color: #222;
+    color: #fff;
   }
 }
 
@@ -3975,7 +4040,7 @@ label.validationError {
 .ibe-join-mobile {
   position: fixed;
   bottom: 0;
-  background-color: #333;
+  background-color: #5db7da;
   width: 100%;
   z-index: 15;
   padding: 5px;
@@ -3984,11 +4049,11 @@ label.validationError {
 .ibe-join-mobile a {
   background-color: #fff;
   padding: 8px 15px;
-  color: #333 !important;
+  color: #5db7da !important;
   border-radius: 15px !important;
   font-size: 14px;
   font-weight: 500;
-  font-family: "Raleway", sans-serif;
+  font-family: "open-sans";
 }
 
 .ibe-join-mobile p {
@@ -3999,14 +4064,14 @@ label.validationError {
 }
 
 a.ibe-join-mobile-close {
-  background-color: #333;
+  background-color: #5db7da;
   color: #fff !important;
   padding: 0;
   font-size: 23px;
 }
 
 a.ibe-join-mobile-close .icon-close {
-  background: url(/images/icons/p3/icon-close-dark-default.svg) !important;
+  background: url(/images/icons/p3/icon-close-light-default.svg) !important;
   height: 30px;
   width: 30px;
   display: inline-block;
@@ -4020,6 +4085,15 @@ a.ibe-join-mobile-close .icon-close {
 
 a.ibe-join-mobile-close .icon-close:hover {
   background: url(/images/icons/p3/icon-close-dark-hover.svg) !important;
+}
+
+.mymenu {
+  background-color: #ccc;
+  padding: 0 10px;
+}
+
+.mymenu li {
+  display: inline;
 }
 
 @media screen and (min-width: 992px) {
@@ -4210,7 +4284,7 @@ footer .footer-social-media .fa.fa-instagram {
 .copy-rights p {
   font-size: 12px !important;
   line-height: 22px;
-  color: #222;
+  color: #fff;
 }
 
 @media screen and (min-width: 992px) {
@@ -4219,79 +4293,29 @@ footer .footer-social-media .fa.fa-instagram {
   }
 }
 
-.three {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  color: #222222;
-  text-align: center;
+#progress-steps .pregress-steps-desktop .active::after {
+  content: '';
+  position: absolute;
+  right: -35px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 20px solid #7ab9a9;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  clear: both;
 }
 
-.hamburger .line {
-  width: 30px;
-  height: 5px;
-  background-color: #333;
-  display: block;
-  margin: 8px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.hamburger:hover {
-  cursor: pointer;
-}
-
-#hamburger-6.is-active {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition-delay: 0.6s;
-  transition-delay: 0.6s;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-#hamburger-6.is-active .line:nth-child(2) {
-  width: 0px;
-}
-
-#hamburger-6.is-active .line:nth-child(1),
-#hamburger-6.is-active .line:nth-child(3) {
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-
-#hamburger-6.is-active .line:nth-child(1) {
-  -webkit-transform: translateY(13px);
-  transform: translateY(13px);
-}
-
-#hamburger-6.is-active .line:nth-child(3) {
-  -webkit-transform: translateY(-13px) rotate(90deg);
-  transform: translateY(-13px) rotate(90deg);
-}
-
-.booking-summary-heading h2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-weight: 26px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-@media screen and (min-width: 1200px) {
-  .booking-summary-heading h2 {
-    font-family: "EB Garamond", serif;
-    text-transform: capitalize;
-    font-weight: 500;
-  }
-}
-
-.booking-summary-data p {
-  font-weight: 400;
+.booking-summary-table {
+  padding-top: 10px;
 }
 
 @media screen and (min-width: 992px) {
-  .booking-summary-data p {
-    font-size: 16px;
+  .booking-summary-table {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -4299,1267 +4323,407 @@ footer .footer-social-media .fa.fa-instagram {
   text-align: right;
 }
 
-.booking-summary-data .booking-summary-table p {
-  width: 30%;
-}
-
-.booking-summary-data .booking-summary-table p:nth-child(even) {
-  width: 70%;
-}
-
-.booking-summary-total-wrapper h2 {
-  width: 50%;
-}
-
-@media screen and (max-width: 991px) {
-  .booking-summary-total-wrapper h2 {
-    font-size: 18px;
-  }
-}
-
-.booking-summary-total-wrapper p:nth-child(even) {
-  text-align: right !important;
-}
-
-.booking-summary-total-wrapper h2:nth-child(even) {
-  text-align: right !important;
-}
-
-@media screen and (min-width: 576px) and (max-width: 1200px) {
-  .booking-summary-heading {
-    padding: 10px 60px;
-  }
-}
-
-.booking-summary-heading span {
-  font-size: 13px;
-  color: rgba(51, 50, 50, 0.5);
-  font-family: "Raleway", sans-serif;
-  margin-left: 10px;
-}
-
-@media screen and (min-width: 1200px) {
-  .booking-summary-table {
-    border-top: 1px solid #ccc;
-    padding: 10px 0;
-  }
-}
-
-.booking-summary-table .btn {
-  margin: 10px 0 20px 0;
-}
-
-.open-booking-summary-room-details {
-  background: #000;
-  width: 27px;
-  height: 27px;
-  border-radius: 25px;
-}
-
-.open-booking-summary-room-details i {
-  top: 3px;
-  left: 3px;
-  position: relative;
-}
-
-.desktop-sign-up {
-  background-color: #e8ecd4;
-  margin-top: 30px;
-  padding: 10px 10px;
-}
-
-@media screen and (min-width: 1400px) {
-  .desktop-sign-up {
-    padding: 40px;
-  }
-}
-
-.desktop-sign-up h2 {
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-@media screen and (min-width: 1200px) {
-  .desktop-sign-up .desktop-sign-up-content {
-    padding: 10px 0 0 20px;
-  }
-}
-
-.desktop-sign-up p {
-  font-size: 16px;
-  line-height: 26px;
-  color: #222;
-  margin-bottom: 20px;
-}
-
-.desktop-sign-up .btn {
-  margin-bottom: 15px;
-  width: 100%;
-  max-width: 186px;
-  text-decoration: none;
-}
-
-.desktop-sign-up img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.hotel-info-buttons .btn {
-  border-radius: 25px;
-}
-
-#progress-steps .pregress-steps-desktop {
-  background-color: rgba(34, 34, 34, 0.05);
-  margin-bottom: 20px;
-  padding-bottom: 0;
-  line-height: 50px;
-}
-
-#progress-steps .pregress-steps-desktop .active {
-  background-color: #e8ecd4;
-  font-weight: 500;
-}
-
-#progress-steps .pregress-steps-desktop .past {
-  background-color: #e8ecd4;
-}
-
-.page-top {
-  margin-bottom: 20px;
-}
-
-.page-top h2 {
-  font-family: "EB Garamond", serif;
-  font-size: 24px;
-  color: #222;
-  font-weight: 500;
-}
-
-@media screen and (min-width: 992px) {
-  .page-top h2 {
-    font-size: 30px;
+@media screen and (max-width: 1200px) {
+  .booking-summary-data {
+    padding-bottom: 20px;
   }
 }
 
 .room-content .room-left-side li {
-  font-family: "Raleway", sans-serif;
   font-style: normal;
 }
 
-#banner {
-  margin-bottom: 0px;
+.booking-summary-heading h2 {
+  font-weight: 700;
 }
 
-#banner h1 {
-  font-size: 30px;
-  font-weight: 500;
-  letter-spacing: -0.3px;
-  font-family: "EB Garamond", serif;
-  margin-top: 20px;
-  margin-bottom: 25px;
+.booking-summary-heading span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 1px;
+  padding-left: 15px;
 }
 
-#banner p {
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: -0.3px;
-  font-family: "EB Garamond", serif;
-  margin-bottom: 35px;
+#mobile-hotel-info {
+  padding: 17px 0;
+  background-color: #a5acb9;
 }
 
-.hotel-gallery {
-  height: 236px;
-  width: 100%;
-  position: absolute;
-  top: -209px;
-  right: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.rates-wrapper .mobile-rate-urgency {
-  color: #e1574c;
-}
-
-@media screen and (min-width: 992px) {
-  .nav-tabs a {
-    border-top-left-radius: 2px !important;
-    border-top-right-radius: 2px !important;
-    padding: 17px 15px;
-  }
-}
-
-.room-content .room-ribbon {
-  background: #e1574c;
-}
-
-.room-content .room-ribbon:after {
-  border-left: solid 10px #cc4e44;
-}
-
-.rates-wrapper .rate-ribbon {
-  background: #adb971;
-}
-
-.rates-wrapper .rate-ribbon:after {
-  border-right: solid 10px #8f9b54;
-}
-
-@media screen and (max-width: 992px) {
-  .rates-wrapper .rate-ribbon {
-    display: block;
-    position: relative;
-    top: -10px;
-    left: -10px;
-    width: 120px;
-  }
-  .rates-wrapper .rate-ribbon:after {
-    display: none;
-  }
-  .rates-wrapper .rate-ribbon span {
-    font-weight: 600;
-  }
-}
-
-.grid {
-  float: left;
-  margin-right: 10;
-  margin-bottom: 10;
-  width: 26.66667%;
-}
-
-.grid:nth-child(3n) {
-  margin-right: 0;
-}
-
-.section-heading:first-child {
-  margin-top: 0;
-}
-
-.addons-total-row h4 {
-  font-size: 22px;
+#mobile-hotel-info a {
   font-weight: 600;
 }
 
+.desktop-sign-up {
+  padding: 30px;
+  background-color: #6b7997;
+}
+
+.desktop-sign-up-content {
+  padding-left: 20px;
+}
+
+.desktop-sign-up-content h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.desktop-sign-up-content p {
+  line-height: 1.63;
+  margin-bottom: 20px;
+}
+
+.desktop-sign-up-content .btn-primary {
+  margin-bottom: 20px;
+}
+
+.strike-through {
+  text-decoration: none;
+  position: relative;
+}
+
+.strike-through::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  display: block;
+  background-color: #ffd75c;
+  top: 50%;
+}
+
+.rates-wrapper .rate-ribbon {
+  position: absolute;
+  top: -15px;
+  left: -30px;
+  background: #7ab9a9;
+  padding: 0 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.rates-wrapper .rate-ribbon:after {
+  content: '';
+  position: absolute;
+  left: 109px;
+  top: 7px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid #7ab9a9;
+  border-right: 12px solid #7ab9a9;
+  border-top: 0px solid transparent;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  clear: both;
+}
+
+.rates-wrapper .mobile-rate-urgency {
+  color: #fff;
+  background-color: #f58220;
+  font-weight: 600;
+}
+
+.rates-wrapper .mobile-rate-free-cancel {
+  color: #fff;
+  background-color: #7ab9a9;
+  font-weight: 600;
+}
+
+#progress-steps .progress-steps-mobile h3 {
+  font-size: 17px;
+  font-size: 600;
+}
+
+#progress-steps .progress-steps-mobile span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 @media screen and (min-width: 992px) {
-  .addons-total-row h4 {
-    font-size: 36px;
+  .section-heading h2 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
   }
 }
 
+input[type=checkbox]:checked + span.custom-check:after {
+  background-color: #ffd75c;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 992px) {
+  .addon-heading h2 {
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+}
+
+.addon-heading span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.select-rate .strike-through {
+  font-size: 16px;
+  padding-top: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .select-rate .strike-through {
+    font-size: 18px;
+  }
+}
+
+.room-right-side .price-section .strike-through {
+  color: #fff;
+}
+
 .addons-total-row span {
-  font-family: "Raleway", sans-serif;
   font-style: normal;
-  line-height: 23px;
-}
-
-.addons-total-details .price-currency-decimal span {
-  font-size: 18px;
-}
-
-@media screen and (min-width: 992px) {
-  .addons-total-details .price-currency-decimal span {
-    font-size: 20px;
-  }
-}
-
-.addon-content .price-currency-decimal span {
-  font-size: 18px !important;
-  font-weight: 400 !important;
-}
-
-@media screen and (min-width: 992px) {
-  .addon-content .price-currency-decimal span {
-    font-size: 20px !important;
-  }
-}
-
-.addons-total-row span {
   font-size: 15px;
-  line-height: 20px;
+  padding-bottom: 4px;
 }
 
 @media screen and (min-width: 992px) {
   .addons-total-row span {
     font-size: 16px;
-    line-height: 28px;
   }
+}
+
+.addon-with-checkboxes-wrapper .addon-content span {
+  padding-bottom: 1px;
+}
+
+.addons-total-row h4 {
+  font-size: 22px;
 }
 
 @media screen and (min-width: 992px) {
-  .room-content h2 {
-    font-size: 40px;
+  .addons-total-row h4 {
+    font-size: 30px;
   }
 }
 
-.room-content .main-price-curreny, .room-content .price-after-decimal {
-  color: #222222;
-  font-weight: 400;
+.booking-summary-room-name {
+  color: #ffd75c;
+  font-weight: 700;
+}
+
+.expand-special-request {
+  text-decoration: none;
+}
+
+.payment-details-wrapper a {
+  text-decoration: none;
+}
+
+.booker-details-wrapper .custom-select, .guest-details-wrapper .custom-select, .payment-details-wrapper .custom-select, .members-container .custom-select, .form-group input, .form-group textarea {
+  color: #1b315f;
+}
+
+.payment-summary-extra .payment-summary-box {
+  background-color: #6b7997;
+}
+
+.payment-summary-extra .payment-summary-box h4 {
+  font-weight: 700;
+}
+
+.booking-summary-room-heading p {
+  text-align: left;
+}
+
+.confirmation-content-box h3 {
+  font-size: 17px;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 992px) {
-  .room-content .main-price-curreny, .room-content .price-after-decimal {
-    font-size: 22px;
+  .confirmation-content-box h3 {
+    font-size: 20px;
   }
-}
-
-.room-content .from-spam {
-  font-weight: 400;
-}
-
-.rates-wrapper .select-rate-btn span {
-  font-weight: 400;
-}
-
-@media screen and (min-width: 992px) {
-  .select-rate .strike-through {
-    color: #222;
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .continue-btn {
-    margin-top: 12px;
-  }
-}
-
-p.booking-summary-room-name {
-  font-weight: 500;
 }
 
 .confirmation-content-box img {
   height: 200px;
 }
 
-@media screen and (min-width: 721px) {
-  .confirmation-content-box img {
-    height: 250px;
-  }
-}
-
-.confirmation-content-box .box-content {
-  padding: 30px 15px 40px 15px;
+.standard-modal .modal-header {
+  border-radius: 0;
+  background-color: #495a7f;
 }
 
 @media screen and (min-width: 992px) {
-  .confirmation-content-box .box-content {
-    padding: 40px;
+  .standard-modal .modal-header {
+    background-color: transparent;
   }
 }
 
-.confirmation-content-box h3 {
-  margin-bottom: 15px;
-}
-
-@media screen and (min-width: 992px) {
-  .confirmation-content-box h3 {
-    margin-bottom: 20px;
-  }
-}
-
-.booking-summary-data .booking-row {
-  padding: 7.5px 0;
-}
-
-.booking-widget {
-  z-index: 999 !important;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #333;
-  overflow-x: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding-top: 65px;
-  max-width: 500px;
-}
-
-@media screen and (min-width: 992px) {
-  .booking-widget {
-    padding-top: 80px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .booking-widget {
-    overflow-y: hidden;
-  }
-}
-
-.booking-widget input {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: none;
-}
-
-.booking-widget input:active, .booking-widget input:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: none;
-}
-
-.booking-widget a {
-  padding: 15px 0;
-  text-decoration: none;
-  font-size: 25px;
-  color: #abaaad;
-  display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.booking-widget a:hover {
-  color: #f1f1f1;
-}
-
-.booking-widget .closebtn {
-  position: absolute;
-  top: 0;
-  right: 20px;
-  font-size: 36px;
-}
-
-@media screen and (min-width: 992px) {
-  .booking-widget .closebtn {
-    right: 40px;
-    top: 5px;
-  }
-}
-
-.booking-widget h2 {
-  text-align: center;
-  font-size: 35px;
-  color: #f0f0f0;
-  font-weight: 400;
-  font-family: "EB Garamond", serif;
-  margin-bottom: 60px;
-}
-
-.booking-widget .widget-form {
-  padding: 20px;
-}
-
-@media screen and (min-width: 992px) {
-  .booking-widget .widget-form {
-    padding: 20px 40px;
-  }
-}
-
-.booking-widget .widget-form .form-control {
-  color: #222;
-  padding: 0 10px;
-  height: 50px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  background-size: 15px;
-  background-position: calc(100% - 8px) 50%;
-  background-repeat: no-repeat;
-  background-color: #fff;
-  font-family: "Raleway", sans-serif;
-}
-
-.booking-widget .widget-form .form-control:hover {
-  cursor: pointer;
-}
-
-.booking-widget .widget-form .form-control option {
-  background-color: #fff;
-}
-
-.booking-widget .widget-form .form-control::-webkit-input-placeholder {
-  color: #222;
-  font-size: 15px;
-  line-height: 24px;
-}
-
-.booking-widget .widget-form .form-control:-ms-input-placeholder {
-  color: #222;
-  font-size: 15px;
-  line-height: 24px;
-}
-
-.booking-widget .widget-form .form-control::-ms-input-placeholder {
-  color: #222;
-  font-size: 15px;
-  line-height: 24px;
-}
-
-.booking-widget .widget-form .form-control::placeholder {
-  color: #222;
-  font-size: 15px;
-  line-height: 24px;
-}
-
-.booking-widget .widget-form select {
-  background-image: url(/images/icons/arrrow-dropdown-light.png) !important;
-}
-
-.booking-widget .widget-form .booking-widget-datepicker .form-control {
-  background-image: url(/images/icons/calendar-light.png) !important;
-}
-
-.booking-widget .widget-form .booking-widget-datepicker .asd__wrapper {
-  right: 0 !important;
-  top: 121px !important;
-  left: 20px !important;
-}
-
-@media screen and (min-width: 991px) {
-  .booking-widget .widget-form .booking-widget-datepicker .asd__wrapper {
-    right: 0 !important;
-    top: 240px !important;
-    left: 40px !important;
-  }
-}
-
-.booking-widget .widget-form .form-group {
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 992px) {
-  .booking-widget .widget-form .form-group {
-    margin-bottom: 30px;
-  }
-}
-
-.booking-widget .widget-form .promo-code a {
-  font-size: 15px;
-  font-style: italic;
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-  text-decoration: underline;
-  margin-bottom: 15px;
-}
-
-.booking-widget .widget-form .promo-code a:hover {
-  text-decoration: none;
-}
-
-.booking-widget .widget-form .promo-code .form-group {
-  display: none;
-}
-
-.booking-widget .widget-form .btn-secondary {
-  background: rgba(51, 50, 50, 0);
-  border: solid 1px rgba(255, 255, 255, 0.8);
-  color: #fff;
-}
-
-.booking-widget .widget-form .btn-secondary:hover {
-  background: #fff;
-  color: #333;
-}
-
-.booking-widget .widget-form .guest-quantity {
-  position: relative;
-}
-
-.booking-widget .widget-form .guest-quantity p {
-  color: #fff;
-  width: 100px;
-}
-
-.booking-widget .widget-form .guest-quantity .total-guests {
-  margin-bottom: 20px;
-  height: 50px;
-  background: #fff;
-  color: #222;
-  padding: 10px 15px;
-}
-
-.booking-widget .widget-form .guest-quantity .total-guests p {
-  color: #222;
-  width: auto;
-  line-height: 30px;
-}
-
-.booking-widget .widget-form .guest-quantity .total-guests p:after {
-  content: "\2022";
-  padding: 0 10px;
-  color: #abaaad;
-}
-
-.booking-widget .widget-form .guest-quantity .total-guests p:last-child:after {
-  content: '';
-}
-
-.booking-widget .widget-form .guest-quantity .total-guests:hover {
-  cursor: pointer;
-}
-
-.booking-widget .widget-form .guest-quantity button {
-  text-align: center;
-  height: 45px;
-  min-width: 45px;
-  border: solid 1px #333;
-  color: #fff;
-  border-radius: 2px;
-  background-color: #333;
-  font-size: 18px;
-}
-
-.booking-widget .widget-form .guest-quantity button:hover {
-  cursor: pointer;
-}
-
-.booking-widget .widget-form .guest-quantity button:disabled {
-  border: solid 1px #ccc;
-  color: #fff;
-  background-color: #ccc;
-}
-
-.booking-widget .widget-form .guest-quantity .guest-info .room-number {
-  margin: 20px 0;
-  width: 100%;
-  text-align: left;
-  border-bottom: 1px solid rgba(87, 86, 91, 0.2);
-  line-height: .1em;
-}
-
-.booking-widget .widget-form .guest-quantity .guest-info .room-number span {
-  background-color: #fff;
-  padding: 0 10px 0 0;
-}
-
-@media screen and (min-width: 992px) {
-  .booking-widget .widget-form .guest-quantity .guest-info .room-number {
-    margin: 30px 0 40px 0;
-  }
-}
-
-.booking-widget .widget-form .guest-quantity .guest-info .align {
-  padding: 0 0 0 20px;
-}
-
-@media screen and (min-width: 500px) {
-  .booking-widget .widget-form .guest-quantity .guest-info .align {
-    padding: 0 0 0 30px;
-  }
-}
-
-.booking-widget .widget-form .guest-quantity .guest-info .age {
-  font-size: 18px;
-  color: #abaaad;
-}
-
-.booking-widget .widget-form .guest-quantity span {
-  text-align: center;
-  width: 50px;
-  color: #222222;
-  font-weight: 500;
-  font-family: "Raleway", sans-serif;
-}
-
-@media screen and (max-width: 500px) {
-  .booking-widget .widget-form .guest-quantity .guest-widget-buttons {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-}
-
-.booking-widget .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container {
-  scroll-behavior: smooth;
-  display: none;
-  position: absolute;
-  padding: 20px 15px;
-  background: #fff;
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 992px) {
-  .booking-widget .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container {
-    padding: 30px 20px 24px 20px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .booking-widget .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container {
-    bottom: 0;
-    width: 100vw;
-    margin-bottom: 0;
-    height: 70vh;
-    overflow-y: auto;
-  }
-}
-
-.booking-widget .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container:before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: 0px;
-  right: 0;
-  margin-left: 20px;
-  width: 0;
-  height: 0;
-  border-bottom: solid 10px #fff;
-  border-left: solid 10px transparent;
-  border-right: solid 10px transparent;
-}
-
-.booking-widget .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container p {
-  color: #222;
-  font-weight: 500;
-  width: 100%;
-}
-
-.booking-widget .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container .person-age span {
-  color: rgba(43, 43, 43, 0.5);
-}
-
-.booking-widget .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container .apply-btn {
-  display: inline-block;
-  font-size: 14px;
+.nav-tabs a {
+  color: #ffffff;
   font-weight: 600;
-  color: #fff;
-  background-color: #222;
-  border-radius: 2px;
-  border: 1px solid #222;
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  width: auto;
-  padding: 0 30px;
-  margin-top: 10px;
-  float: right;
-  border-radius: 25px;
+  background-color: #a5acb9;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 }
 
-@media screen and (min-width: 992px) {
-  .booking-widget .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container .apply-btn {
-    margin-top: 30px;
-  }
+.nav-tabs .active {
+  background-color: #6b7997;
+  color: #fff;
 }
 
-.booking-widget .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container .apply-btn:hover {
-  cursor: pointer;
-  background-color: #fff;
-  border: 1px solid #222;
-  color: #222;
+.btn:not(:disabled):not(.disabled).active, .btn:not(:disabled):not(.disabled):active, .show > .btn.dropdown-toggle {
+  border-color: #fff;
 }
 
-.search-rates .booking-widget-search-rates {
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #333;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding-top: 0;
-  max-width: 500px;
-}
-
-@media screen and (max-width: 500px) {
-  .search-rates .booking-widget-search-rates {
-    overflow-y: hidden;
-  }
-}
-
-.search-rates .booking-widget-search-rates input {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.calendar .calendar-date {
+  border-radius: 5px;
   border: none;
 }
 
-.search-rates .booking-widget-search-rates input:active, .search-rates .booking-widget-search-rates input:focus {
+@media screen and (min-width: 992px) {
+  .calendar .calendar-date {
+    border-radius: 0;
+  }
+}
+
+.calendar .calendar-date:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border: none;
 }
 
-.search-rates .booking-widget-search-rates a {
-  padding: 15px 0;
+.calendar .calendar-date:hover .calendar-date-heading {
+  color: #a5acb9;
+}
+
+.calendar .calendar-date:hover .calendar-date-price {
+  color: #1b315f;
+}
+
+.calendar .calendar-date:not(.calendar-date--disabled):hover {
+  background-color: #ffd75c;
+  color: #1b315f;
+}
+
+.calendar .calendar-date .calendar-date-price {
+  color: #1b315f;
+  font-weight: 700;
+}
+
+.calendar .calendar-date .calendar-date-heading {
+  color: #1b315f;
+}
+
+@media screen and (max-width: 992px) {
+  .calendar .calendar-date .calendar-date-heading span {
+    color: #1b315f;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .calendar .calendar-btn {
+    border-radius: 3px;
+    border: solid 1px #ffd75c;
+    color: #ffd75c;
+  }
+}
+
+.offers-form__filter .form-group select {
+  color: #1b315f;
+}
+
+a:focus {
+  color: #ffd75c;
+}
+
+.offer-details__terms-link i {
+  background: url(/images/icons/p3/icon-btn-next-period.svg);
+}
+
+a.offer-details__terms-link {
   text-decoration: none;
-  font-size: 25px;
-  color: #abaaad;
-  display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
 }
 
-.search-rates .booking-widget-search-rates a:hover {
-  color: #f1f1f1;
-}
-
-.search-rates .booking-widget-search-rates .closebtn {
-  position: absolute;
-  top: 0;
-  right: 20px;
-  font-size: 36px;
-}
-
-@media screen and (min-width: 992px) {
-  .search-rates .booking-widget-search-rates .closebtn {
-    right: 40px;
-    top: 5px;
-  }
-}
-
-.search-rates .booking-widget-search-rates h2 {
-  text-align: center;
-  font-size: 35px;
-  color: #f0f0f0;
-  font-weight: 400;
-  font-family: "EB Garamond", serif;
-  margin-bottom: 60px;
-}
-
-.search-rates .booking-widget-search-rates .widget-form {
-  padding: 20px;
-}
-
-@media screen and (min-width: 992px) {
-  .search-rates .booking-widget-search-rates .widget-form {
-    padding: 40px;
-  }
-}
-
-.search-rates .booking-widget-search-rates .widget-form .error-message {
-  color: #fff;
-  padding-bottom: 20px;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .form-control {
-  color: #222;
-  padding: 0 10px;
-  height: 50px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  background-size: 15px;
-  background-position: calc(100% - 8px) 50%;
-  background-repeat: no-repeat;
-  background-color: #fff;
-  font-family: "Raleway", sans-serif;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .form-control:hover {
-  cursor: pointer;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .form-control option {
-  background-color: #fff;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .form-control::-webkit-input-placeholder {
-  color: #222;
-  font-size: 15px;
-  line-height: 24px;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .form-control:-ms-input-placeholder {
-  color: #222;
-  font-size: 15px;
-  line-height: 24px;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .form-control::-ms-input-placeholder {
-  color: #222;
-  font-size: 15px;
-  line-height: 24px;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .form-control::placeholder {
-  color: #222;
-  font-size: 15px;
-  line-height: 24px;
-}
-
-.search-rates .booking-widget-search-rates .widget-form select {
-  background-image: url(/images/icons/arrrow-dropdown-light.png) !important;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .booking-widget-datepicker .form-control {
-  background-image: url(/images/icons/calendar-light.png) !important;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .booking-widget-datepicker .asd__wrapper {
-  right: 0 !important;
-  top: 121px !important;
-  left: 20px !important;
-}
-
-@media screen and (min-width: 991px) {
-  .search-rates .booking-widget-search-rates .widget-form .booking-widget-datepicker .asd__wrapper {
-    right: 0 !important;
-    top: 240px !important;
-    left: 40px !important;
-  }
-}
-
-.search-rates .booking-widget-search-rates .widget-form .form-group {
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 992px) {
-  .search-rates .booking-widget-search-rates .widget-form .form-group {
-    margin-bottom: 30px;
-  }
-}
-
-.search-rates .booking-widget-search-rates .widget-form .promo-code a {
-  font-size: 15px;
-  font-style: italic;
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-  text-decoration: underline;
-  margin-bottom: 15px;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .promo-code a:hover {
+a.offer-details__terms-link:active, a.offer-details__terms-link:focus {
   text-decoration: none;
 }
 
-.search-rates .booking-widget-search-rates .widget-form .promo-code .form-group {
-  display: none;
+.offer__search {
+  background-color: #495a7f;
 }
 
-.search-rates .booking-widget-search-rates .widget-form .btn-secondary {
-  background: rgba(51, 50, 50, 0);
-  border: solid 1px rgba(255, 255, 255, 0.8);
-  color: #fff;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .btn-secondary:hover {
-  background: #fff;
-  color: #333;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity {
-  position: relative;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity p {
-  color: #fff;
-  width: 100px;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .total-guests {
-  margin-bottom: 20px;
-  height: 50px;
-  background: #fff;
-  color: #222;
-  padding: 10px 15px;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .total-guests p {
-  color: #222;
-  width: auto;
-  line-height: 30px;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .total-guests p:after {
-  content: "\2022";
-  padding: 0 10px;
-  color: #abaaad;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .total-guests p:last-child:after {
-  content: '';
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .total-guests:hover {
-  cursor: pointer;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity button {
-  text-align: center;
-  height: 45px;
-  min-width: 45px;
-  border: solid 1px #333;
-  color: #fff;
-  border-radius: 2px;
-  background-color: #333;
-  font-size: 18px;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity button:hover {
-  cursor: pointer;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity button:disabled {
-  border: solid 1px #ccc;
-  color: #fff;
-  background-color: #ccc;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-info .room-number {
-  margin: 20px 0;
-  width: 100%;
-  text-align: left;
-  border-bottom: 1px solid rgba(87, 86, 91, 0.2);
-  line-height: .1em;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-info .room-number span {
-  background-color: #fff;
-  padding: 0 10px 0 0;
-}
-
-@media screen and (min-width: 992px) {
-  .search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-info .room-number {
-    margin: 30px 0 40px 0;
-  }
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-info .align {
-  padding: 0 0 0 20px;
-}
-
-@media screen and (min-width: 500px) {
-  .search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-info .align {
-    padding: 0 0 0 30px;
-  }
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-info .age {
-  font-size: 18px;
-  color: #abaaad;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity span {
-  text-align: center;
-  width: 50px;
-  color: #222222;
-  font-weight: 500;
-  font-family: "Raleway", sans-serif;
-}
-
-@media screen and (max-width: 500px) {
-  .search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-widget-buttons {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container {
-  scroll-behavior: smooth;
-  display: none;
-  position: releative;
-  padding: 20px 15px;
-  background: #fff;
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 992px) {
-  .search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container {
-    padding: 30px 20px 100px 20px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container {
-    bottom: 0;
-    width: 100vw;
-    margin-bottom: 0;
-    height: 70vh;
-    overflow-y: auto;
-  }
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container:before {
-  content: '';
-  position: absolute;
-  top: 60px;
-  left: 0px;
-  right: 0;
-  margin-left: 20px;
-  width: 0;
-  height: 0;
-  border-bottom: solid 10px #fff;
-  border-left: solid 10px transparent;
-  border-right: solid 10px transparent;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container p {
-  color: #222;
-  font-weight: 500;
-  width: 100%;
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container .person-age span {
-  color: rgba(43, 43, 43, 0.5);
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container .apply-btn {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  background-color: #222;
-  border-radius: 2px;
-  border: 1px solid #222;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  width: auto;
-  padding: 0 30px;
-  margin-top: 10px;
-  float: right;
-  border-radius: 25px;
-}
-
-@media screen and (min-width: 992px) {
-  .search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container .apply-btn {
-    margin-top: 30px;
-  }
-}
-
-.search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container .apply-btn:hover {
-  cursor: pointer;
-  background-color: #fff;
-  border: 1px solid #222;
-  color: #222;
-}
-
-.hotel-info-buttons .btn {
+.offer__search--widget .btn-offer {
+  border-radius: 3px;
+  border: solid 1px #ffd75c;
+  color: #ffd75c;
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 992px) {
-  .room-wrapper .room-image {
-    min-height: 260px;
-  }
+.offer__search--widget .btn-offer:focus {
+  color: #1b315f;
+  background-color: #ffe38c;
+  border: solid 1px #f1c66b;
 }
 
-.icon-info {
-  position: relative;
-  top: 2px;
+.offer__search--widget .btn-offer:hover {
+  color: #1b315f;
+  background-color: #f1c66b;
+  border: solid 1px #f1c66b;
 }
 
-.icon-info:hover {
-  height: 16px;
-  width: 16px;
+.offer__search--widget .btn-offer:active {
+  color: #1b315f;
+  background-color: #f1c66b;
+  border: solid 1px #f1c66b;
 }
 
-@media screen and (min-width: 992px) {
-  .icon-info:hover {
-    height: 24px;
-    width: 24px;
-  }
+.offer__calendar {
+  background-color: #495a7f;
 }
 
-@media screen and (min-width: 992px) {
-  .icon-info {
-    height: 24px;
-    width: 24px;
-  }
+.offer__banner {
+  background-color: #f1c66b;
 }
 
-.payment-details-wrapper .icon-info:hover {
-  height: 24px;
-  width: 24px;
+.offer__banner .btn-primary {
+  border: 1px solid #1b315f;
+  background-color: #1b315f;
 }
 
-@media screen and (min-width: 992px) {
-  .rates-wrapper h3 a {
-    font-size: 18px;
-    line-height: 24px;
-  }
+.offer__banner .btn-primary:not(:disabled):not(.disabled):active {
+  border: 1px solid #1b315f;
 }
 
-.standard-modal .modal-body .modal-room-content .room-facilities span {
-  color: #222;
-}
-
-@media screen and (min-width: 992px) {
-  .standard-modal .modal-body .modal-room-content .room-facilities span {
-    font-size: 16px;
-  }
-}
-
-.room-modal-list li {
-  margin-bottom: 5px;
-}
-
-.signup-modal-content .form-group input {
-  background-color: #f4f4f4;
-}
-
-.member-login a {
-  text-decoration: underline;
-}
-
-.currency-desktop-addons {
-  margin-bottom: 20px;
-}
-
-.currency-desktop-guests {
-  margin-bottom: 15px;
-}
-
-@media screen and (min-width: 992px) {
-  .dropdown-currency select {
-    height: 50px;
-  }
-}
-
-.offer__calendar .calendar .calendar-date-price {
-  font-weight: 500;
+.offer__banner .confirm-block {
+  color: #1b315f;
 }
 
 @media screen and (max-width: 991px) {
-  .offer__calendar .calendar .calendar-date-price {
-    font-size: 20px;
-  }
-}
-
-.offer__calendar .container .calendar-heading {
-  font-size: 30px;
-  font-weight: 500;
-}
-
-@media screen and (min-width: 992px) {
-  .offer__calendar .calendar-btn {
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.25px;
+  .offer__banner .confirm-block h3, .offer__banner .confirm-block span {
+    color: #1b315f;
+    font-weight: 700;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .offer__calendar .calendar-date-price.two-night {
-    font-size: 13px;
+  .offer__banner a.btn-primary--offer {
+    border: 1px solid #1b315f;
+    background-color: #1b315f;
+  }
+  .offer__banner a.btn-primary--offer:not(:disabled):not(.disabled):active {
+    border: 1px solid #1b315f;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .offer__calendar .calendar-date-no-availability {
-    font-size: 13px;
-  }
-}
-
-.offer-details__offer-available, .offers-list__article--offer-available {
-  font-size: 15px;
-}
-
-@media screen and (min-width: 992px) {
-  .offer-details__offer-available, .offers-list__article--offer-available {
-    font-size: 16px;
+  .offer__banner .confirm-block--border {
+    border-left: solid 1px #1b315f;
   }
 }
 /*# sourceMappingURL=styles.css.map */

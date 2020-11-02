@@ -1,12 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
     <defs>
-        <path id="prefix__a" d="M56.483 44.081c7.777-14.626 2.225-32.787-12.402-40.564C29.455-4.26 11.294 1.292 3.517 15.919-4.26 30.545 1.292 48.706 15.919 56.483c14.626 7.777 32.787 2.225 40.564-12.402z"/>
-        <mask id="prefix__b" width="60" height="60" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
-            <use xlink:href="#prefix__a"/>
+        <path id="26toyhnfya" d="M56.483 44.081c7.777-14.626 2.225-32.787-12.402-40.564C29.455-4.26 11.294 1.292 3.517 15.919-4.26 30.545 1.292 48.706 15.919 56.483c14.626 7.777 32.787 2.225 40.564-12.402z"/>
+        <mask id="bqhc1tshpb" width="60" height="60" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+            <use xlink:href="#26toyhnfya"/>
         </mask>
     </defs>
-    <g fill="none">
-        <circle cx="30.006" cy="30.006" r="27.5" stroke="#222" stroke-opacity=".08" stroke-width="5"/>
-        <use stroke="#333" stroke-dasharray="61.77 151.151" stroke-linejoin="round" stroke-width="9.836" mask="url(#prefix__b)" xlink:href="#prefix__a"/>
+    <g fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <g transform="translate(-655 -6331) translate(618 6294) translate(37 37)">
+                    <circle cx="30.006" cy="30.006" r="27.5" stroke="#FFF" stroke-opacity=".2" stroke-width="5"/>
+                    <use stroke="#7AB9A9" stroke-dasharray="61.77 151.151" stroke-linejoin="round" stroke-width="9.836" mask="url(#bqhc1tshpb)" xlink:href="#26toyhnfya"/>
+                </g>
+            </g>
+        </g>
     </g>
 </svg>
