@@ -152,6 +152,10 @@ input[type=checkbox]:checked + span.custom-check:after {
   background-color: #ffd75c;
   border-radius: 3px;
 }
+input[type=radio]:checked + span.custom-check:after {
+  background-color: #ffd75c;
+  border-radius: 3px;
+}
 .addon-heading {
   h2 {
     @include mQ(992px) {
@@ -365,5 +369,19 @@ a.offer-details__terms-link {
 .offer__banner .confirm-block--border {
   @include mQmax (991px) {
     border-left: solid 1px #1b315f;
+  }
+}
+.btn-primary:hover .icon-chevron-down {
+  background: url("/images/icons/p3/icon-btn-primary-down.svg")
+}
+#banner {
+  height: 185px;
+}
+.addon-with-checkboxes-wrapper .addon-content {
+  padding: 20px;
+}
+.card-style .addon-with-checkboxes-wrapper {
+  h3 {
+    margin-bottom: 20px!important;
   }
 }

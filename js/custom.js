@@ -1,10 +1,12 @@
 // Hamburger
 $(document).ready(function(){
-  $(".hamburger").click(function(){
-    $(this).toggleClass("is-active");
+  $('.hamburger').click(function(e) {
+    e.preventDefault();
+    $('.mobile-nav__collapse').slideToggle();
   });
-  $('#guest-widget').on('click', function () {
-    $('.guest-widget-buttons-container').show();
+  $('.mobile-nav__link--dropdown').click(function(e) {
+    e.preventDefault();
+    $(this).next('.mobile-nav__sub-nav').slideToggle();
   });
 });
 
@@ -13,14 +15,3 @@ function noScroll() {
   window.scrollTo(0, 0);
 }
 
-// Booking Widget
-
-function openWidget() {
-  document.getElementById("booking-widget").style.width = "100%";
-  window.addEventListener('scroll', noScroll);
-}
-
-function closeWidget() {
-  document.getElementById("booking-widget").style.width = "0";
-  window.removeEventListener('scroll', noScroll);
-}

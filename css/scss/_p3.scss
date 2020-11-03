@@ -197,7 +197,7 @@ a {
 .checkbox-group input {
     height: auto;
 }
-span.custom-check {
+span.custom-check, span.custom-radio {
     margin-right: 10px;
     border-radius: 0;
     @include formStyleElements;
@@ -213,6 +213,9 @@ span.custom-check, span.custom-radio {
     top: -2px;
     position: relative;
 }
+span.custom-radio {
+    border-radius: 50%;
+}
 input[type=checkbox]:checked+span.custom-check:after {
     content: $tickIcon;
     color: #fff;
@@ -227,11 +230,31 @@ input[type=checkbox]:checked+span.custom-check:after {
     height: 20px;
     width: 20px;
 }
+input[type=radio]:checked+span.custom-check:after {
+    content: $tickIcon;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    animation: form-zoom .5s ease-in-out;
+    padding: 2px 0px;
+    background: $primaryColor;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%!important;
+}
 .form-check input[type=checkbox], .form-check input[type=radio], label input[type=checkbox], label input[type=radio] {
     display: none;
 }
 .form-check {
     padding-left: 0;
+}
+.form-check-label--radio {
+    span.custom-check {
+        border-radius: 50%;
+    }
 }
 
 // Input, Select, TextArea
@@ -2063,3 +2086,39 @@ a.confirm-booking {
           display: inline;
       }
   }
+
+  .hotel-gallery {
+    height: 186px;
+    width: 100%;
+    position: absolute;
+    top: -146px;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.addon-with-checkboxes-wrapper .addon-content label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    @include mQ(992px) {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+.form-check-label--border {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding-top: 20px;
+    margin-top: 20px;
+    @include mQ(992px) {
+        border-top: none;
+        border-left: 1px solid rgba(255, 255, 255, 0.4);
+        padding-top: 0;
+        margin-top: 0;
+        padding-left: 20px;
+    }
+}
+.addon-radios {
+    margin-top: 20px;
+}

@@ -22,7 +22,7 @@
 
   </head>
 <body>
-  <ul class="mymenu">
+  <!-- <ul class="mymenu">
     <li><a href="index.html">index</a></li>
     <li><a href="extras.html">extras</a></li>
     <li><a href="guest-details.html">g details</a></li>
@@ -32,101 +32,100 @@
     <li><a href="search-rates.html">error</a></li>
     <li><a href="offers-list.html">offers</a></li>
     <li><a href="offer-landing.html">offer</a></li>
-  </ul>
+  </ul> -->
 
   <header>
-
-    <!-- Mobile Nav -->
-    <div class="d-lg-none">
-      <nav class="navbar navbar-expand-xl navbar-light">
-        <div class="mobile-nav-top w-100 d-flex justify-content-between align-items-center">
-          <a href="#"><img src="/images/redworth_logo-1.png" class="logo"></a>
-          <form action="" method="get" id="currencyConverter" class="dropdown-currency d-md-none">
-            <input type="hidden" name="redirect">
-            <select id="currency-options" class="price-select ml-0" name="currencyCode" onchange="">
-              <option value="EUR">€ EUR</option>
-              <option value="GBP">£ GBP</option>
-              <option value="USD">$ USD</option>
-            </select>
-          </form>
-          <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-          <div class="three">
-            <a href="javascript:;" data-toggle="collapse" data-target="#navbarCollapse">
-              <div class="hamburger" id="hamburger-6">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-            </a>
+    <div class="container">
+      <nav class="mobile-nav d-lg-none">
+        <img src="/images/logo.png" alt="" class="mobile-logo">
+        <div class="mobile-nav__right-side">
+          <a href="#" class="mobile-nav__offers">Offers</a>
+          <div class="hamburger">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </div>
         </div>
-
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav">
-            <a href="#" class="nav-item nav-link active nav-book-now">Book a Room</a>
-            <a href="https://www.redworthhalldurham.co.uk/rooms/" class="nav-item nav-link">Rooms</a>
-            <a href="https://www.redworthhalldurham.co.uk/spa/" class="nav-item nav-link">Retreat Spa</a>
-            <a href="https://www.redworthhalldurham.co.uk/weddings/" class="nav-item nav-link">Weddings</a>
-            <a href="https://www.redworthhalldurham.co.uk/meetings-and-events/" class="nav-item nav-link">Meeting &
-              Events</a>
-            <a href="https://www.redworthhalldurham.co.uk/restaurant/" class="nav-item nav-link">Restaurant</a>
-            <a href="https://www.redworthhalldurham.co.uk/offers/" class="nav-item nav-link">Offers & What's On</a>
-            <a href="https://www.redworthhalldurham.co.uk/contact-us/" class="nav-item nav-link">Contact</a>
-            <a href="https://shops.giftvoucherbrilliance.co.uk/pages/redworth_hall/Home"
-              class="nav-item nav-link mb-5">Gift Vouchers</a>
+      </nav>
+      <div class="mobile-nav__collapse">
+        <a href="#" class="mobile-nav__link mobile-nav__link--dropdown">Gallery</a>
+        <div class="mobile-nav__sub-nav">
+          <a href="#" class="mobile-nav__sub-link">NEST</a>
+          <a href="#" class="mobile-nav__sub-link">NEST</a>
+          <a href="#" class="mobile-nav__sub-link">NEST</a>
+        </div>
+        <a href="#" class="mobile-nav__link">Gallery</a>
+        <a href="#" class="mobile-nav__link mobile-nav__link--dropdown">Gallery</a>
+        <div class="mobile-nav__sub-nav">
+          <a href="#" class="mobile-nav__sub-link">NEST</a>
+        </div>
+      </div>
+      <nav class="desktop-nav d-none d-lg-block">
+        <div class="desktop-nav__top">
+          <img src="/images/logo.png" alt="" class="desktop-logo">
+          <div class="desktop-nav__top-links">
+            <a href="#"><i class="icon-blog"></i> Our Blog</a>
+            <a href="#"><i class="icon-contact"></i> Contact Us</a>
+            <a href="#"><i class="icon-gifts"></i> Gift Vouvher</a>
+          </div>
+        </div>
+        <div class="dektop-nav__bottom">
+          <div class="navbar navbar-expand-lg">
+            <a href="#" class="desktop-nav__home"><img src="/images/icons/p3/home-icon.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="desktop-nav__button">Special Offers</a>
+            </div>
           </div>
         </div>
       </nav>
     </div>
-    <!-- End Mobile Nav -->
-
-    <!-- Desktop Nav -->
-    <div class="d-none d-lg-block">
-      <div class="header-container d-flex justify-content-between align-items-center">
-        <a href="#"><img src="/images/redworth_logo-1.png" class="logo"></a>
-        <div class="main-nav">
-          <ul class="mt-auto mb-auto">
-            <li><a href="https://www.redworthhalldurham.co.uk/rooms/">Rooms</a></li>
-            <li><a href="https://www.redworthhalldurham.co.uk/spa/">Retreat Spa</a></li>
-            <li><a href="https://www.redworthhalldurham.co.uk/weddings/">Weedings</a></li>
-            <li><a href="https://www.redworthhalldurham.co.uk/meetings-and-events/">Meetings and Events</a></li>
-            <li><a href="https://www.redworthhalldurham.co.uk/restaurant/">Restaurant</a></li>
-            <li><a href="https://www.redworthhalldurham.co.uk/offers/">Offers & What's On</a></li>
-            <li><a href="https://www.redworthhalldurham.co.uk/contact-us/">Contact</a></li>
-            <li><a href="https://shops.giftvoucherbrilliance.co.uk/pages/redworth_hall/Home">Gift Vouchers</a></li>
-          </ul>
-        </div>
-        <a href="#"><button type="button" class="btn btn-primary float-right">Book a room</button></a>
-      </div>
-    </div>
-    <!-- End Desktop Nav -->
   </header>
 
-<section id="banner" class="d-none d-xl-block">
-  <div class="container">
-    <h1>The Redworth Hall Hotel</h1>
-    <p>Surtees Rd, Newton Aycliffe DL5 6NL, UK</p>
-    <!-- HOTEL INFO BUTTONS P3B -->
-    <div class="hotel-info-buttons d-none d-lg-flex">
-      <a href="#" data-toggle="modal" data-target="#modalTabs" class="btn">Hotel Info</a>
-      <a href="#" class="btn">Map</a>
-      <a href="#" class="btn">Gallery</a>
+
+
+  <section id="banner" class="d-none d-xl-block">
+    <div class="container">
+      <h1>The Redworth Hall Hotel</h1>
+      <!-- <p>Surtees Rd, Newton Aycliffe DL5 6NL, UK</p> -->
+      <!-- HOTEL INFO BUTTONS P3B -->
+      <div class="hotel-info-buttons d-none d-lg-flex">
+        <a href="#" data-toggle="modal" data-target="#modalTabs" class="btn">Hotel Info</a>
+        <a href="#" class="btn">Map</a>
+        <a href="#" class="btn">Gallery</a>
+      </div>
+      <!-- END HOTEL INFO BUTTONS P3B -->
     </div>
-    <!-- END HOTEL INFO BUTTONS P3B -->
-  </div>
-  <div class="container px-0">
-    <div class="row">
-      <div class="col-6"></div>
-      <div class="col-6">
-        <a href="#"><div class="hotel-gallery">
-          <img src="/images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-        </div></a>
+    <div class="container-fluid px-0">
+      <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6">
+          <a href="#"><div class="hotel-gallery" style="background-image: linear-gradient(104deg, rgba(51, 50, 50, 0.5), rgba(26, 25, 25, 0) 85%,rgba(26, 26, 26, 0) 81%, rgba(0, 0, 0, 0)), url(https://www.hodsonbayhotel.com/image/resize/315x550/cms/hodson-bay/images/new/hbh_gallery_andrew-bradley-retreat-room_1.jpg)">
+            <img src="images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
+          </div></a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <!-- Mobile Hotel Info P3B -->
 <section id="mobile-hotel-info" class="d-xl-none">
@@ -189,6 +188,33 @@
 
         <!-- START Addons Cards P3B LOOP -->
         <form id="addOnsForm" method="get" action="{{ $urlBaseForNextStep }}">
+          <section class="card-style addon-with-checkboxes-wrapper">
+            <div class="addon-content">
+              <h3>Your Preferences</h3>
+              <div class="addon-radios">
+              <label class="form-check-label form-check-label--radio">
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="optradio">
+                  <span class="custom-check"></span>
+                  Option 1
+                </div>
+              </label>
+              <label class="form-check-label form-check-label--radio">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="optradio">
+                    <span class="custom-check"></span>
+                    Option 2
+                  </div>
+              </label>
+              <label class="form-check-label form-check-label--border">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <span class="custom-check"></span>
+                  1st Morning (£24.00)
+              </label>
+              </div>
+            </div>
+
+          </section>
           <section class="card-style addon-with-checkboxes-wrapper d-lg-flex">
             <img data-src="/images/img-extra.jpg" alt="addon img" class="d-none d-lg-block lazyload">
             <div class="row addon-content">
@@ -451,40 +477,75 @@
   </div>
 
   <footer>
-    <div class="container devider-top-desktop devider-top-mobile">
-      <div class="row">
-        <div class="col-12 col-lg-12 col-xl-3 text-center text-xl-left mb-3 mb-xl-0">
-          <a href="#"><img src="/images/redworth_logo-1.png" class="logo"></a>
-        </div>
-        <div class="col-12 col-lg-8 col-xl-6 mb-2 mb-xl-0">
-          <div class="footer-links">
-            <ul>
-              <li><a href="https://shops.giftvoucherbrilliance.co.uk/pages/redworth_hall/Home">Gift Vouchers</a></li>
-              <li><a href="https://www.redworthhalldurham.co.uk/offers/">Special Offers</a></li>
-              <li><a href="https://www.redworthhalldurham.co.uk/faqs/">FAQs</a></li>
-              <li><a href="https://www.redworthhalldurham.co.uk/contact-us/">Contact Us</a></li>
-              <li><a
-                  href="https://www.thecairncollection.co.uk/?_ga=2.167210235.47086315.1581520921-683091198.1579273141">The
-                  Cairn Collection</a></li>
-              <li><a href="https://www.cairnhotelgroup.com/">The Cairn Group</a></li>
-              <li><a href="https://www.redworthhalldurham.co.uk/terms-conditions/">Terms & Conditions</a></li>
-              <li><a href="https://www.redworthhalldurham.co.uk/privacy-policy/">Privacy Policy</a></li>
-              <li><a href="https://www.redworthhalldurham.co.uk/sitemap/">Sitemap</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4 col-xl-3">
-          <div class="footer-social-media text-center float-lg-right">
-            <ul>
-              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li class="mx-3"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            </ul>
-          </div>
-        </div>
+    <div class="container">
+      <div class="footer__wrapper">
+        <h3 class="footer__h3">HODSON BAY HOTEL</h3>
+        <p class="footer__p">Roscommon Road, Athlone, N37 XR82, <a href="tel:+353906442004">+353 (0) 90 6442004</a>, <a href="mailto:info@hodsonbayhotel.com">info@hodsonbayhotel.com</a> </p>
+        <ul class="footer__social">
+          <li>
+              <a href="http://www.youtube.com/user/HodsonBayHotel" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          </li>
+          <li>
+              <a href="http://www.facebook.com/hodsonbay" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li>
+              <a href="http://twitter.com/Hodsonbayhotel" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+              <a href="https://plus.google.com/+hodsonbayhotel/posts" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          </li>
+          <li>
+              <a href="http://pinterest.com/hodsonbayhotel/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+          </li>
+          <li>
+              <a href="https://instagram.com/hodsonbayhotel/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+      </ul>
+      <ul class="footer__links">
+        <li>
+          <a href="https://www.hodsonbayhotel.com/faq" target="_top">
+            Frequently Asked Questions
+          </a>
+        </li>
+        <li>
+          <a href="https://www.hodsonbayhotel.com/privacy-policy" target="_top">
+            PRIVACY POLICY
+          </a>
+        </li>
+        <li>
+          <a href="https://www.hodsonbayhotel.com/gallery" target="_top">
+            GALLERY
+          </a>
+        </li>
+        <li>
+          <a href="https://www.hodsonbayhotel.com/athlone-accommodation" target="_top">
+            SLEEP
+          </a>
+        </li>
+        <li>
+          <a href="https://www.hodsonbayhotel.com/weddings" target="_top">
+            WEDDINGS
+          </a>
+        </li>
+        <li>
+          <a href="https://www.hodsonbayhotel.com/giftvouchers" target="_top">
+            Gift Vouchers
+          </a>
+        </li>
+        <li>
+          <a href="https://www.hodsonbayhotel.com/enquire" target="_top">
+            Enquire
+          </a>
+        </li>
+        <li>
+          <a href="https://www.hodsonbayhotel.com/group" target="_top">
+            Careers
+          </a>
+        </li>
+      </ul>
+      <span class="footer__copyright">Copyright © Hodson Bay Hotel 2020 All Rights Reserved</span>
       </div>
     </div>
-  
   </footer>
 
     
