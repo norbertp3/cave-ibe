@@ -146,3 +146,8 @@ $('.loading-spinner').one('click', function () {
 $('.ibe-join-mobile-close').click(function(){
   $('.ibe-join-mobile').hide();
 });
+
+// Added
+$('#guest-widget').on('click', function () {
+  $('.guest-widget-buttons-container').show();
+});

@@ -45,6 +45,11 @@
     padding-bottom: 20px;
   }
 }
+.room-content {
+  @include mQ (992px) {
+    min-height: 260px;
+  }
+}
 .room-content .room-left-side li {
   font-style: normal;
 }
@@ -384,4 +389,67 @@ a.offer-details__terms-link {
   h3 {
     margin-bottom: 20px!important;
   }
+}
+#progress-steps .pregress-steps-desktop {
+  margin-bottom: 56px;
+  margin-top: 0;
+}
+#banner {
+  @include mQ(992px) {
+    margin-bottom: 10px;
+    border-top: 10px solid #495a7f;
+  }
+}
+.hotel-gallery {
+  border-left: 10px solid #495a7f;
+  height: 176px;
+}
+#progress-steps .pregress-steps-desktop span {
+  font-weight: 700;
+}
+.room-content .room-right-side .view-rates-btn {
+  @include mQmax (991px) {
+    padding: 12px 12px
+  }
+  @include mQmax (500px) {
+    padding: 12px 20px
+  }
+}
+.search-rates .booking-widget-search-rates {
+  background-color: #6b7997;
+}
+.search-rates .booking-widget-search-rates .widget-form .guest-quantity button {
+  border: 1px solid #ffd75c;
+  background-color: #ffd75c;
+  color:#1b315f;
+}
+.search-rates .booking-widget-search-rates .widget-form .guest-quantity .guest-widget-buttons .guest-widget-buttons-container .apply-btn {
+  border-radius: 3px;
+  border: 1px solid #ffd75c;
+  background-color: #ffd75c;
+  color:#1b315f;
+  font-size: 16px;
+  font-weight: bold;
+  &:hover {
+    background-color: #f1c66b;
+    border: 1px solid #f1c66b;
+  }
+}
+.search-rates .booking-widget-search-rates .widget-form .btn-secondary {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 3px;
+  border: solid 1px #ffd75c;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffd75c;
+  &:hover {
+    border: solid 1px #f1c66b;
+    background-color: #ffe38c;
+  }
+}
+.search-rates .booking-widget-search-rates .widget-form .guest-quantity button:disabled {
+  background-color: #ffd75c;
+  opacity: 0.3;
+  border: none;
 }
