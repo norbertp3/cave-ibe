@@ -407,6 +407,35 @@ label.validationError {
     {
         display: none;
     }
+    .booking-summary-room-heading {
+        .rate-ribbon {
+            position: relative;
+            background: #7ab9a9;
+            padding: 1.5px 10px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            margin-left: 10px;
+            margin-top: 5px;
+            font-size: 14px;
+            display: inline-block;
+            &:after {
+                content: '';
+                position: absolute;
+                right: -17px;
+                top: 7px;
+                width: 0;
+                height: 0;
+                border-left: 12px solid #7ab9a9;
+                border-right: 12px solid #7ab9a9;
+                border-top: 0px solid transparent;
+                border-bottom: solid 10px transparent;
+                -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+                clear: both; 
+            }
+
+        }
+    }
 }
 p.booking-summary-room-price {
     text-align: left!important;
@@ -976,6 +1005,9 @@ p.booking-summary-room-price {
             background-image: $selectIcon;
             width: 70px!important;
             height: 50px!important;
+        }
+        .form-group {
+            margin-bottom: 0;
         }
     }
 }
@@ -1648,6 +1680,7 @@ p.booking-summary-room-price {
 .icon-info-white, .icon-search-white {
     position: relative;
     top: 3px;
+    margin-right: 5px;
 }
 .special-request-input {
     display: none;
@@ -1671,7 +1704,7 @@ a.confirm-booking {
 }
 
 .icon-plus-circle {
-    background: url(/images/icons/p3/icon-add-default.svg);
+    background: $iconPlusCircle;
     height: 24px;
     width: 24px;
     display: inline-block;
@@ -1681,11 +1714,11 @@ a.confirm-booking {
     margin-right: 10px;
     transition: 0.5s;
     &:hover {
-        background: url(/images/icons/p3/icon-add-hover.svg);
+        background: $iconPlusCircleHover;
     }
   }
   .icon-minus-circle {
-    background: url(/images/icons/p3/icon-remove-default.svg);
+    background: $iconMinusCircle;
     height: 24px;
     width: 24px;
     display: inline-block;
@@ -1695,7 +1728,7 @@ a.confirm-booking {
     margin-right: 10px;
     transition: 0.5s;
     &:hover {
-        background: url(/images/icons/p3/icon-remove-hover.svg);
+        background: $iconMinusCircleHover;
     }
   }
   
@@ -1708,10 +1741,10 @@ a.confirm-booking {
     }
     &:hover {
         .icon-plus-circle {
-            background: url(/images/icons/p3/icon-add-hover.svg);
+            background: $iconPlusCircleHover;
         }
         .icon-minus-circle {
-            background: url(/images/icons/p3/icon-remove-hover.svg);
+            background: $iconMinusCircleHover;
         }
     }
   }
@@ -2000,9 +2033,6 @@ a.confirm-booking {
             font-weight: 500;
 
         }
-        .calendar-btn-img {
-            margin: 0 0 3px 5px!important;
-        }
     }
     &__banner {
         position: fixed;
@@ -2151,7 +2181,7 @@ a.confirm-booking {
         border-left: 1px solid rgba(255, 255, 255, 0.4);
         padding-top: 0;
         margin-top: 0;
-        padding-left: 20px;
+        padding-left: 30px;
     }
 }
 .addon-radios {
@@ -2244,11 +2274,11 @@ a.confirm-booking {
         }
       }
       select {
-        background-image: url(/images/icons/arrrow-dropdown-light.png)!important;
+        background-image: url(/images/icons/p3/arrrow-dropdown-light.png)!important;
       }
       .booking-widget-datepicker {
         .form-control {
-          background-image: url(/images/icons/calendar-light.png)!important;
+          background-image: url(/images/icons/p3/calendar-light.png)!important;
         }
         .asd__wrapper {
           right: 0!important;
@@ -2550,11 +2580,11 @@ a.confirm-booking {
             }
           }
           select {
-            background-image: url(/images/icons/arrrow-dropdown-light.png)!important;
-          }
+            @include selectIcon;
+            }
           .booking-widget-datepicker {
             .form-control {
-              background-image: url(/images/icons/calendar-light.png)!important;
+              background-image: url(/images/icons/p3/icon-form-datepicker.svg)!important;
             }
             .asd__wrapper {
               right: 0!important;
@@ -2763,3 +2793,38 @@ a.confirm-booking {
           }
         }
   }
+.booking-widget-modal {
+    .modal-dialog {
+        max-width: 355px!important;
+    }
+    .widget-wrapper {
+        margin-top: 50px;
+    }
+    .widget-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 20px;
+        grid-template-areas:
+            ". .";
+    }
+    select {
+        @include formStyleElements;
+        @include selectIcon;
+    }
+    .promo-code {
+        margin: 10px 0 20px 0;
+    }
+    .widget-room-label {
+        font-size: 14px;
+        color: #fff;
+    }
+    .booking-widget-datepicker {
+        .form-control {
+            background-image: url(/images/icons/p3/icon-form-datepicker.svg)!important;
+            background-size: 15px;
+            background-position: calc(100% - 8px) 50%;
+            background-repeat: no-repeat;
+        }
+    }
+}
