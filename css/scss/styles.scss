@@ -654,3 +654,11 @@ span.custom-radio {
 .signup-modal .custom-check {
   top: 2px;
 }
+.calendar-date-price.two-night {
+  @include mQmax(991px) {
+    font-size: 11px;
+  }
+}
+.hotel-gallery {
+  top: -147px;
+}

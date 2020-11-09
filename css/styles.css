@@ -5146,9 +5146,13 @@ header {
   color: #1f3161;
   background-color: #F1C66B;
   text-transform: uppercase;
-  padding: 10px;
   margin-right: 10px;
   font-weight: 700;
+  font-size: 13px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding-top: 18px;
 }
 
 .mobile-nav__collapse {
@@ -5159,6 +5163,12 @@ header {
   width: 100%;
   margin: 0px -15px;
   z-index: 1000;
+}
+
+@media screen and (min-width: 760px) {
+  .mobile-nav__collapse {
+    margin: 0px -40px;
+  }
 }
 
 .mobile-nav__link {
@@ -5262,14 +5272,22 @@ a.desktop-nav__button:hover {
 
 .navbar-nav .nav-link {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
-  margin-right: 40px;
+  margin-right: 20px;
   text-transform: uppercase;
 }
 
 .navbar-nav .nav-link:hover {
   color: #ffd75c;
+}
+
+@media screen and (min-width: 1400px) {
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 40px;
+  }
 }
 
 .dropdown-menu {
@@ -6174,5 +6192,15 @@ span.custom-radio {
 
 .signup-modal .custom-check {
   top: 2px;
+}
+
+@media screen and (max-width: 991px) {
+  .calendar-date-price.two-night {
+    font-size: 11px;
+  }
+}
+
+.hotel-gallery {
+  top: -147px;
 }
 /*# sourceMappingURL=styles.css.map */

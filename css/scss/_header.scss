@@ -28,9 +28,14 @@ header {
         color: #1f3161;
         background-color: #F1C66B;
         text-transform: uppercase;
-        padding: 10px;
+        // padding: 10px;
         margin-right: 10px;
         font-weight: 700;
+        font-size: 13px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding-top: 18px;
     }
     &__collapse {
         display: none;
@@ -39,7 +44,10 @@ header {
         padding: 15px;
         width: 100%;
         margin: 0px -15px;
-        z-index: 1000;;
+        z-index: 1000;
+        @include mQ(760px) {
+            margin: 0px -40px;
+        }
     }
     &__link {
         display: block;
@@ -132,12 +140,17 @@ a.desktop-nav__button {
 }
 .navbar-nav .nav-link {
     color:#fff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
-    margin-right: 40px;
+    margin-right: 20px;
     text-transform: uppercase;
     &:hover {
         color: #ffd75c;
+    }
+    @include mQ(1400px) {
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 40px;
     }
 }
 .dropdown-menu {
