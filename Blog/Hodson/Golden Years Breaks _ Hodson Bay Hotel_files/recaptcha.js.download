@@ -1,0 +1,59 @@
+$(document).ready(function() {
+    //cms form submit
+    $('.cms-form-recap').submit(function(e) {
+        if (!grecaptcha.getResponse()) {
+            e.preventDefault(); //prevent form submit
+            grecaptcha.execute();
+        }
+    });
+
+    onCompleted = function() {
+        cmsAjaxSubmit();
+    };
+
+    cmsAjaxSubmit = function() {
+        //external signup if signup tickbox and email in the form
+        var signupemail = $(this).children().find('input[type=email].cms-email').first().val();
+        if (signupemail && $('input[name=SUBSCRIBE]').is(':checked')) {
+            var toPost = {
+                homesignup: signupemail,
+                _token: $('input[name=_token]').val()
+            };
+            signup_external(signupemail, false, toPost);
+        }
+
+        //cms post
+        $.ajax({
+            url: '/cms-form-recap',
+            type: "POST",
+            data: $('.cms-form-recap').serialize(),
+            success: confirm(1),
+            dataType: 'json',
+            error: function(data) {
+                $('.msg-error').html(data.message);
+                grecaptcha.reset();
+            }
+        });
+    };
+
+    var confirm = function (formType) {
+        if (formType === 1) {
+            $('.cms-form-recap').hide();
+            $('.conftext').show();
+        } else if (formType === 2) {
+            $('.confshow').show();
+            $('.confhide').hide();
+        }
+
+    };
+
+    $('.conftext input[type=button]').click(function () {
+        $('.conftext').hide();
+        $('.cms-form-recap').show();
+        $('.cms-form-recap input, .cms-form-recap textarea, .cms-form-recap select').each(function () {
+            if ($(this).val() != 'Send' && $(this).attr('type') != 'hidden') {
+                $(this).val('');
+            }
+        });
+    });
+});

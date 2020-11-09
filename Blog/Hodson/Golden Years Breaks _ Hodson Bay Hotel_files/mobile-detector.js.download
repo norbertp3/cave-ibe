@@ -1,0 +1,51 @@
+/**
+* jQuery.browser.mobile (http://detectmobilebrowser.com/)
+*
+* jQuery.browser.mobile will be true if the browser is a mobile device
+*/
+var mobileDetector = {
+    /**
+     * Test if the site is running on Android.
+     * @returns {boolean} True if it is, else false.
+     */
+    isAndroid: function () {
+        return !!navigator.userAgent.match(/Android/i);
+    },
+    /**
+     * Test if the site is running on BlackBerry.
+     * @returns {boolean} True if it is, else false.
+     */
+    isBlackBerry: function () {
+        return !!navigator.userAgent.match(/BlackBerry/i);
+    },
+    /**
+     * Test if the site is running on iOS.
+     * @returns {boolean} True if it is, else false.
+     */
+    isIOS: function () {
+        return !!navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    /**
+     * Test if the site is running on Opera.
+     * @returns {boolean} True if it is, else false.
+     */
+    isOpera: function () {
+        return !!navigator.userAgent.match(/Opera Mini/i);
+    },
+    /**
+     * Test if the site is running on Windows.
+     * @returns {boolean} True if it is, else false.
+     */
+    isWindows: function () {
+        return !!navigator.userAgent.match(/IEMobile/i);
+    },
+    /**
+     * Test if the site is running on mobile or tablet.
+     * @returns {boolean} True if it is, else false.
+     */
+    any: function () {
+        return (this.isAndroid() || this.isIOS() || this.isOpera() || this.isWindows() || this.isBlackBerry());
+    }
+};
+
+var isMobile = mobileDetector.any();

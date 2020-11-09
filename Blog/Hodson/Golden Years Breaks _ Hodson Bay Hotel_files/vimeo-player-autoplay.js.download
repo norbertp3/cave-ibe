@@ -1,0 +1,78 @@
+(function () {
+    'use strict';
+
+    // Don't run in IE (as it breaks things)
+    if (!ie) {
+
+        $(document).ready(function () {
+
+            //alert('IE: ' + ie);
+            /**
+             * Indicates if the the specified element is a generic vimeo player (cf vimeo-player template).
+             * @param index Index.
+             * @param elem Element.
+             * @returns {boolean} True if it is, else false.
+             */
+            function filterFnc(index, elem) {
+                var classes = $(elem).attr('class');
+                return !!(classes && classes.indexOf('vimeo-player') >= 0);
+            }
+
+            /**
+             * Apply the wanted configuration to a player.
+             * @param index Index.
+             * @param elem Player's html node.
+             */
+            function applyConfiguration(index, elem) {
+                // Finds the node.
+                var node = $(elem);
+
+                // Sets an id in order to be able to create a vimeo player javascript object.
+                var id = 'vimeo-player-' + index;
+                node.attr('id', id);
+
+                // Creates the vimeo player.
+                var player = new Vimeo.Player(id);
+
+                // Configuration for mobile and desktop.
+                if (isMobile) {
+                    player.setVolume(1);
+                } else {
+                    player.setVolume(0);
+
+                    if (index == 0) player.play(); // play only first one
+                }
+
+                // Configuration for the potential overlay.
+                var overlayId = node.data('overlay-id');
+
+                if (overlayId) {
+                    player.on('play', function () {
+                        $('#' + overlayId).css('visibility', 'hidden');
+
+                        // find others and stop
+                        $("iframe.vimeo-player").not("#" + id).each(function () {
+                            new Vimeo.Player(this).pause();
+                        });
+
+                    });
+
+                    player.on('pause', function () {
+                        $('#' + overlayId).css('visibility', 'visible');
+                    });
+
+                    player.on('ended', function () {
+                        $('#' + overlayId).css('visibility', 'visible');
+                    });
+                }
+            }
+
+            // Searchs all iframes and setups configurations.
+            $('iframe')
+                .filter(filterFnc)
+                .each(applyConfiguration);
+        });
+
+    }
+
+})();

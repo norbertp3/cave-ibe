@@ -1,0 +1,270 @@
+function showOrHideOccupancy(widgetNumber, numberOfRooms) {
+    for (var i = 1; i <= 4; i++) {
+    	if (i <= numberOfRooms) {
+    		jQuery(".widget_" + widgetNumber + "_row_count_" + i).show();
+    	} else {
+    		jQuery(".widget_" + widgetNumber + "_row_count_" + i).hide();
+    	}
+    }
+    if (numberOfRooms > 1){
+    	disableElement('widget_' + widgetNumber + '_adultsForRoom1');
+    	disableElement('widget_' + widgetNumber + '_childrenForRoom1');
+    } else {
+    	enableElement('widget_' + widgetNumber + '_adultsForRoom1');
+    	enableElement('widget_' + widgetNumber + '_childrenForRoom1');
+    }
+}
+function get_children(widgetNumber, id, numOfChildren) {
+    var res = id.split("widget_" + widgetNumber + "_select_numChildren_");
+    var roomNumber = res[1];
+    for (var i = 1; i <= 4; i++) {
+    	if (i <= numOfChildren) {
+    		jQuery("#widget_" + widgetNumber + "_room_" + roomNumber + "_child_" + i).show();
+    	} else {
+    		jQuery("#widget_" + widgetNumber + "_room_" + roomNumber + "_child_" + i).hide();
+    	}    	
+    }
+    if (roomNumber == 1){
+    	setSelectionForDropDown("widget_" + widgetNumber + "_childrenForRoom1",numOfChildren);
+    }
+}
+
+function showOccupancyFromChildSelector(widgetNumber,sel){
+	setSelectionForDropDown("widget_" + widgetNumber + "_select_numChildren_1", sel.value);
+	if (sel.value > 0){
+		showOrHideOccupancy(widgetNumber, 1);
+		get_children(widgetNumber, "widget_" + widgetNumber + "_select_numChildren_1", sel.value);
+	} else {
+		showOrHideOccupancy(widgetNumber, 0);
+		get_children(widgetNumber, "widget_" + widgetNumber + "_select_numChildren_1", sel.value);
+	}
+}
+
+function setSelectionForDropDown(idOfSelectToChange, valueToSelect) {
+    $("#" + idOfSelectToChange).val(valueToSelect);
+}
+
+function disableElement(idOfElement) {
+    $('#' + idOfElement).attr("disabled", true);
+    // wasn't able to do this by adding a class to the css
+    $('#' + idOfElement).css("background-color", "#ababab");
+}
+
+function enableElement(idOfElement) {
+    $('#' + idOfElement).attr("disabled", false);
+    $('#' + idOfElement).css("background-color", "");
+}
+
+
+function form_action() {
+    jQuery(".ul_count").empty();
+    jQuery(".booking-header").hide();
+    jQuery(".booking-header2").show();
+    jQuery("input[type='text']").each(function () {
+        jQuery(this).val("");
+    })
+}
+
+function start_again() {
+    jQuery(".booking-header").show();
+    jQuery(".booking-header2").hide();
+}
+
+function openPdf(pdf, newWindow) {
+    if (pdf) {
+        if (newWindow == false) {
+            location.href = pdf;
+			return;
+        }
+
+        window.open(pdf, "_blank");
+    }
+}
+function checkFlexibleDates() {
+	
+	var flexi = document.getElementById("flexisearch").checked;
+	if (flexi) {
+    document.getElementById("overlay").style.display = "block";
+	}
+}
+
+
+$(document).ready(function () {
+
+    /* Add adterShow event for the default jQuery datepicker */
+    $.datepicker._updateDatepicker_original = $.datepicker._updateDatepicker;
+    $.datepicker._updateDatepicker = function(inst) {
+        $.datepicker._updateDatepicker_original(inst);
+        var afterShow = this._get(inst, 'afterShow');
+        if (afterShow)
+            afterShow.apply((inst.input ? inst.input[0] : null));  // trigger custom callback
+    }
+
+    /* Datepicker */
+    $('[id^="date_arrival_widget_"]').each(function(index) {
+        var targetForDatePickerNumber = index + 1;
+        $(this).datepicker({
+            dateFormat : 'd M yy',
+            minDate : 0,
+            altField : "#targetForDatepicker"+targetForDatePickerNumber,
+            altFormat : 'yy-mm-dd',
+            afterShow : function(inst) {
+                console.log('aftershow');
+                var flexisearch = $('.flexi_wrapper');
+                if (!flexisearch.length) {
+                    console.log('have_datepicker');
+                    var html = '<div class="flexi_wrapper"><div class="doubleOrSingleCheckbox"><input id="flexisearch" type="checkbox" name=""><label for="flexisearch"></label></div><div class="doubleOrSingleText">My dates are flexible</div></div>';
+                    $('#ui-datepicker-div').append(html);
+                    jQuery('#ui-datepicker-div label').click(function(){
+                        var input = jQuery(this).prev('#flexisearch');
+                        if ( input.prop('checked') ){
+                            jQuery('#flexi_search').val(0);
+                        } else {
+                            jQuery('#flexi_search').val(1);
+                        }
+                    });
+                }
+            }
+        });
+    });
+
+    /* Loading effect and disable for buttons */
+    jQuery('.spinner').click(function(){
+        var button = jQuery(this);
+        if ( !button.hasClass('new-form-btn') ) {
+            button.addClass('loading disable');
+        }
+    });
+
+    $('.opn-book').click(function () {
+        $(".opn").addClass("shw");
+        $(this).css('display', 'none');
+        $(".clos-book").css('display', 'block');
+    });
+
+    $('.clos-book').click(function () {
+        $(".opn").removeClass("shw");
+        $(".opn-book").css('display', 'block');
+        $(this).css('display', 'none');
+    });
+
+    $('.details').click(function () {
+        $(".room-detail").toggleClass("no-more");
+        $(this).toggleClass("invert");
+    });
+
+    $('.lft span').hide();
+
+    $('#btn-offers').on('click', function () {
+    	var currentDomain = window.location.hostname;
+    	var currentProtocol = window.location.protocol;
+    	var newDomain = currentProtocol + "//" + currentDomain;
+    	location.href =  newDomain + '/athlone-hotel-special-offers';
+    });
+
+    $('#code').on('focus', function () {
+        $('#code').css({"width": "100px"});
+        $('#codeType').show();
+    });
+
+	// $('[id^="date_arrival_widget_"]').each(function(index) {
+	// 	var targetForDatePickerNumber = index + 1;
+	// 	$(this).datepicker({
+	// 		dateFormat : 'd M yy',
+	// 		minDate : 0,
+	// 		altField : "#targetForDatepicker"+targetForDatePickerNumber,
+	// 		altFormat : 'yy-mm-dd'
+	// 	});
+	// });
+
+    $('[id^="booking-engine-widget-submit-button"]').on('click', function () {
+        var form = $(this).closest('form');
+        form.submit();
+    });
+
+    //cms form submit
+    $('.cms-form').submit(function (e) {
+        e.preventDefault();
+
+        //external signup if signup tickbox and email in the form
+        var signupemail = $(this).children().find('input[type=email].cms-email').first().val();
+        if (signupemail && $('input[name=SUBSCRIBE]').is(':checked')) {
+            var toPost = {
+                homesignup: signupemail,
+                _token: $('input[name=_token]').val()
+            };
+            signup_external(signupemail, false, toPost);
+        }
+
+        //cms post
+        $.ajax({
+            url: '/cms-form',
+            type: "POST",
+            data: $(this).serialize(),
+            success: confirm(1),
+            dataType: 'json'
+        });
+    });
+
+    var confirm = function (formType) {
+        if (formType === 1) {
+            $('.cms-form').hide();
+            $('.conftext').show();
+        } else if (formType === 2) {
+            $('.confshow').show();
+            $('.confhide').hide();
+        }
+
+    };
+
+    $('.conftext input[type=button]').click(function () {
+        $('.conftext').hide();
+        $('.cms-form').show();
+        $('.cms-form input, .cms-form textarea, .cms-form select').each(function () {
+            if ($(this).val() != 'Send' && $(this).attr('type') != 'hidden') {
+                $(this).val('');
+            }
+        });
+    });
+
+    $('.confshow').click(function () {
+        $(this).hide();
+        $('.confhide').show();
+    });
+
+    // Setups mobile image overlays.
+    if (isMobile) {
+        var boxes = $('.box-overlay');
+
+        boxes.find('a').on('click.boxes-links', function (event) {
+            event.preventDefault();
+        });
+
+        boxes.on('tap', function (e) {
+            var url = $(this).data('overlay-url');
+            if (url) {
+                window.location.href = url;
+            }
+        });
+    }
+
+    $('#newsletterSignup input[type=text]').on('click', function() {
+        $('#interestedIn').slideDown();
+    });
+
+
+    $('.newsletter-signup-form').submit(function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: '/newsletter-signup-form',
+            type: "POST",
+            data: $(this).serialize(),
+            success: confirm(1),
+            dataType: 'json'
+        });
+        $('#newsletterSignupWithImage').html('<h4>Signup complete. Thank you.</h4>');
+        $('#newsletterSignup').html('<h4 style="text-align: center;">Signup complete. Thank you.</h4>');
+    });
+
+
+});

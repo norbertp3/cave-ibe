@@ -1,0 +1,95 @@
+var cutOffWidthForMobile = 768;
+
+(function(){
+	$(document).ready(function(){
+		// when document is ready, we make the header sticky
+		makeBookingHeaderFixed();
+		// update the position (width and left) of the header when window is resized
+
+		$(window).on("resize", function(){
+			computeHeaderFixedWidth();
+		});
+
+		setInterval(makeFixedIfIsNotYet, 2000); // hack for issue with Safari cache
+
+		$(".booking-header").on("click", function(){
+			if ($(window).width() < cutOffWidthForMobile){
+				window.scrollTo(0, 0);
+			}
+		});
+
+	})
+})();
+
+
+// hack for issue with Safari cache
+function makeFixedIfIsNotYet() {
+	// only for Safari
+	var isSafari = (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1 &&  navigator.userAgent.indexOf('Android') == -1);
+	if (isSafari == false) return;
+
+	// only if far then 200px from top
+	var offsetTop = $("head").offset().top;
+	if (offsetTop < 200) return;
+
+	var isSmallDisplay = ($(window).width() < cutOffWidthForMobile);
+	var isNotSticked   = ($(".booking-header").hasClass("stickyHeader") == false);
+
+	if (isSmallDisplay && isNotSticked) {
+		makeBookingHeaderFixed();
+	}
+}
+
+/**
+ * Make the header fixed
+ */
+function makeBookingHeaderFixed() {
+	$(".booking-header").makeFixed({
+		onFixed: function (el)
+		{
+			// add the class stickyHeader to change the background color (was transparent before)
+			$("#ui-datepicker-div").css("top", getCalendarDatePickerNewTopPosition()+"px");
+			$(el).addClass("stickyHeader");
+
+		},
+		onUnFixed: function (el)
+		{
+			$("#ui-datepicker-div").css("top", getCalendarDatePickerNewTopPosition()+"px");
+			// get back to transparent background color
+			$(el).removeClass("stickyHeader");
+		}
+	});
+}
+
+/**
+ * Compute the calendar top position
+ */
+function getCalendarDatePickerNewTopPosition() {
+	// get the arrival date box
+	var dateArrivalBox = $('[id^="date_arrival_widget_"]');
+	// get the first form group parent div of arrival date box
+	var formGroupDateArrival = $('[id^="date_arrival_widget_"]').closest(".form-group");
+	// compute the offset between arrivalBox and the form group parent
+	var boxOffset = (formGroupDateArrival.offset().top + formGroupDateArrival.height()) - (dateArrivalBox.outerHeight() + dateArrivalBox.offset().top);
+	// compute the new position
+	var newPosition = formGroupDateArrival.offset().top + formGroupDateArrival.height() - boxOffset;
+	// if the date picker has a fixed position (happens when we clicked on the arrival date box while the booking widget was also fixed
+	if($("#ui-datepicker-div").css("position") === "fixed") {
+		// it that case we substract the scroll pos
+		newPosition = newPosition - $(document).scrollTop();
+	}
+	return newPosition;
+}
+
+
+/**
+ * Compute header position (widget and left)
+ */
+function computeHeaderFixedWidth() {
+	var mainHeaderContainer = $(".main-header .container:first");
+	var newLeft = $(".main-header .header-top").position().left+"px";
+	var newWidth = mainHeaderContainer.width()+"px";
+	// set data attr mfx of the makeFixed library
+	$(".booking-header").attr("data-mfx-width", newWidth).attr("data-mfx-current-width", newWidth).css("width", newWidth);
+	$(".booking-header.stickyHeader").attr("data-mfx-left", newLeft).css("left", newLeft);
+}

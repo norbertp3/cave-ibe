@@ -1,0 +1,213 @@
+.blog__heading {
+    text-align: center;
+}
+.blog__heading h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.blog__filter {
+    display: block;
+    margin-bottom: 30px;
+}
+.blog__filter a {
+    display: block;
+    font-size: 16px;
+    font-weight: bold; 
+    margin-bottom: 10px;
+}
+.blog__filter a::before {
+    content: url('../images/icon-blog-tag.svg');
+    margin-right: 5px;
+}
+.blog__card {
+    margin-bottom: 30px;
+}
+.blog__details {
+    background-color: #495a7f;
+    padding: 20px;
+    width: 100%;
+    margin-top: -2px;
+}
+.blog__details h2 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.67;
+    margin-top: 0;
+    min-height: 60px;
+}
+.blog__card__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+a.blog__card__link {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: inline-block;
+}
+.blog__card figure {
+    position: relative;
+}
+.blog__card figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 5px 20px;
+    background-color: rgba(15, 34, 76, 0.6);
+    font-size: 14px;
+    color: #fff;
+}
+.blog__banner__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.blog__content__header {
+    display: block;
+    justify-content: space-between;
+    background-color: #6d7998;
+    padding: 20px;
+    position: relative;
+}
+.blog__content__header:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    border-top: solid 10px #6d7998;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+}
+.blog__content__header p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.blog__content__header span {
+    font-size: 15px;
+    font-weight: 400;
+}
+.blog__share {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.blog__share a {
+    background-color: #f1c66d;
+    border-radius: 50%;
+    color:#6d7998;
+    display: table;
+    font-size: 16px;
+    height: 30px;
+    margin: 0 2px;
+    width: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+.blog__share a:hover {
+    background-color: #f2be15;
+}
+.blog__share i {
+    display: table-cell;
+    vertical-align: middle;
+}
+.blog__share a:hover {
+    color: #1b315f!important;
+}
+.blog__content__text {
+    padding: 60px 20px;
+    background-color: #495a7f;
+}
+.blog__content__text h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.blog__content__text p {
+    line-height: 33px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.blog__content__text h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.blog__content__text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.blog__footer {
+    margin-top: 50px;
+}
+.blog__footer p {
+    margin-bottom: 0;
+}
+.blog__footer a {
+    font-size: 16px;
+    font-weight: bold;
+}
+.blog__footer .blog__share a {
+    color: #495a7f;
+}
+.blog__footer .fa-caret-left {
+    margin-right: 5px;
+}
+@media only screen and (min-width: 992px) {
+    .blog__filter a {
+        display: inline;
+        margin-right: 40px;
+    }
+    .blog__heading h1 {
+        margin-bottom: 40px;
+    }
+    .blog__details h2 {
+        font-size: 18px;
+    }
+    a.blog__card__link {
+        font-size: 20px;
+    }
+    .blog__content__header {
+        padding: 20px 15%;
+        display: flex;
+        align-items: center;
+    }
+    .blog__share {
+        margin-top: 0;
+    }
+    .blog__content__header span {
+        font-size: 18px;
+    }
+    .blog__content__header p {
+        font-size: 18px;
+    }
+    .blog__content__text {
+        padding: 20px 15% 50px 15%;
+    }
+    .blog__content__text h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .blog__content__text h2 {
+        font-size: 24px;
+    }
+    .blog__content__text h3 {
+        font-size: 20px;
+    }
+    .blog__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
