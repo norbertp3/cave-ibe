@@ -1,15 +1,20 @@
 @font-face {
-    font-family: 'open-sans';
-    src: url('/css/fonts/OpenSans-Regular.ttf');
-    font-weight: 400;
+    font-family: 'museosans';
+    src: url('/css/fonts/MuseoSans_100.otf');
+    font-weight: 100;
 }
 @font-face {
-    font-family: 'open-sans';
-    src: url('/css/fonts/OpenSans-Bold.ttf');
-    font-weight: 700;
+    font-family: 'museosans';
+    src: url('/css/fonts/MuseoSans_300.otf');
+    font-weight: 300;
 }
 @font-face {
-    font-family: 'open-sans';
-    src: url('/css/fonts/OpenSans-SemiBold.ttf');
+    font-family: 'museosans';
+    src: url('/css/fonts/MuseoSans_500.otf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'trajanpro';
+    src: url('/css/fonts/TrajanPro-Bold.otf');
     font-weight: 600;
 }

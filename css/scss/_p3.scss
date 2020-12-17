@@ -4,6 +4,7 @@ body {
     color: $secondaryFontColor;
 }
 
+
 .container {
     @include mQ(991px) {
         max-width: $containerWidth;
@@ -73,7 +74,9 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
+    margin-bottom: -3px;
 }
+
 .icon-chevron-up {
     background: $iconBtnPrimaryUp;
     height: 16px;
@@ -138,6 +141,7 @@ a {
     &:hover {
         .icon-chevron-down {
             background: $iconBtnPrimaryDownHover;
+            // background: $iconBtnPrimaryHover;
         }
         .icon-chevron-right {
             background: $iconBtnPrimaryRightHover;
@@ -218,12 +222,13 @@ span.custom-radio {
 }
 input[type=checkbox]:checked+span.custom-check:after {
     content: $tickIcon;
-    color: #fff;
+    content: url("/images/icons/p3/icon-form-checked1.svg");
+    color: #b7996d;
     line-height: 20px;
     text-align: center;
     animation: form-zoom .5s ease-in-out;
     padding: 2px 0px;
-    background: $primaryColor;
+    background: #b7996d;
     position: absolute;
     left: 0;
     top: 0;
@@ -231,13 +236,13 @@ input[type=checkbox]:checked+span.custom-check:after {
     width: 20px;
 }
 input[type=radio]:checked+span.custom-check:after {
-    content: $tickIcon;
-    color: #fff;
+    // content: $tickIcon;
+    color: #b7996d;
     line-height: 20px;
     text-align: center;
     animation: form-zoom .5s ease-in-out;
     padding: 2px 0px;
-    background: $primaryColor;
+    background: #b7996d;
     position: absolute;
     left: 0;
     top: 0;
@@ -272,7 +277,8 @@ label.validationError {
 
 // Mobile Hotel Info
 #mobile-hotel-info {
-    background-color: $primaryColor;
+    // background-color: $primaryColor;
+    background: #3a3738;
     padding: 14px 0;
     a {
         font-size: 15px;
@@ -334,7 +340,9 @@ label.validationError {
 
 // Booking Summary
 #booking-summary {
-    @include bookingSummaryBackground;
+    // @include bookingSummaryBackground;
+    background: #3a3738;
+    position: relative;
     @include mQmax(1200px) {
         &:hover {
             cursor: pointer;
@@ -353,16 +361,18 @@ label.validationError {
         text-transform: uppercase;
         font-family: $textFont;
         @include mQ (1200px) {
-            font-size: 25px;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 4px;
         }
     }
 }
 .booking-summary-data {
     // background-color: $bookingSummaryBackgroundColor;
     padding: 0 10px;
-    p {
-        width: 50%;
-    }
+    // p {
+    //     width: 50%;
+    // }
     .booking-row {
         padding: 10px 0;
     }
@@ -378,9 +388,9 @@ label.validationError {
     }
 }
 .booking-summary-rooms-section {
-    p {
-        width: 100%;
-    }
+    // p {
+    //     width: 100%;
+    // }
     img {
         height: 55px;
         width: 90px;
@@ -394,11 +404,11 @@ label.validationError {
             margin-left: 22px;        
         }
     }
-    .booking-summary-room-row p {
-        padding: 0 10px;
-    }
+    // .booking-summary-room-row p {
+    //     padding: 0 10px;
+    // }
     .booking-summary-room-row {
-        padding: 20px 0;
+        // padding: 20px 0;
         &:hover {
             cursor: pointer;
         }
@@ -465,12 +475,14 @@ p.booking-summary-room-price {
 }
 .room-content {
     padding: 20px 10px 20px 10px;
+    margin-top: -20px;
     // position: relative;
     @include mQ (768px) {
         padding: 30px 20px;
         min-height: 210px;
     }
     @include mQ (1200px) {
+        margin-top: 0;
         padding: 30px;
     }
     h3 {
@@ -639,7 +651,7 @@ p.booking-summary-room-price {
             text-decoration: none;
             font-family: $headingFont;
             font-style: italic;
-            float: left;
+            // float: left;
             img {
                 margin-right: 5px;
             }
@@ -649,6 +661,7 @@ p.booking-summary-room-price {
 
 .room-wrapper {
     position: relative;
+    height: 337px;
     .room-image {
         height: 184px;
         width: 100%;
@@ -664,8 +677,8 @@ p.booking-summary-room-price {
             height: 100%;
         }
         @include mQ(1200px) {
-            min-width: 300px;
-            min-height: 210px;
+            min-width: 650px;
+            min-height: 337px;
         }
         .icon-open-gallery {
             bottom: 10px;
@@ -678,13 +691,14 @@ p.booking-summary-room-price {
 // Rates Wrapper
 .rates-wrapper {
     display: none;
-    padding: 0 10px 20px 10px;
+    padding: 0 10px;
+    background-color: #3a3738;
     @include mQ(992px) {
-        padding: 30px;
+        padding: 0;
     }
     h3 {
         font-size: 15px;
-        padding-top: 0;
+        padding-top: 20px;
         padding-bottom: 10px;
         @include mQmax (1200px) {
             text-indent: -24px;
@@ -730,6 +744,7 @@ p.booking-summary-room-price {
     .select-rate {
         @include mQ(992px) {
             height: 53px;
+            text-transform: uppercase;
         }
     }
     .mobile-rate-free-cancel {
@@ -745,18 +760,23 @@ p.booking-summary-room-price {
         margin-bottom: 5px;
     }
     .rate-container {
-        padding-bottom: 20px;
-        border-bottom: 1px solid $deviderColor;
-        margin-bottom: 20px;
+        // padding-bottom: 20px;
+        // border-bottom: 1px solid $deviderColor;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);;
+        // margin-bottom: 20px;
         position: relative;
+        padding: 0;
+        @include mQ(992px) {
+            padding: 0px 30px;
+        }
         &:last-child {
             border-bottom: none;
             margin-bottom: 0;
             padding-bottom: 0;
         }
         &:first-child {
-            border-top: 1px solid $deviderColor;
-            padding-top: 20px;
+            // border-top: 1px solid $deviderColor;
+            // padding-top: 20px;
             @include mQ(992px) {
                 border-top: none;
                 padding-top: 0;
@@ -874,11 +894,12 @@ p.booking-summary-room-price {
     .addon-content {
         padding: 20px 10px;
         @include mQ(992px) {
-            padding: 20px;
+            padding: 27px;
             width: 100%;
         }
         h3 {
             @include cardHeading;
+            letter-spacing: 1px;
         }
         // p {
         //     margin-bottom: 20px;
@@ -921,13 +942,14 @@ p.booking-summary-room-price {
         object-fit: cover;
     }
     .addon-content {
-        padding: 20px 10px;
+        // padding: 20px 10px;
         @include mQ(992px) {
-            padding: 20px;
+            padding: 30px;
             width: 100%;
         }
         h3 {
             @include cardHeading;
+            padding-left: 30px;
         }
         p {
             margin-bottom: 20px;
@@ -1016,8 +1038,8 @@ p.booking-summary-room-price {
         position: relative;
         i {
             position: absolute;
-            right: 15px;
-            top: -3px;
+            left: 15px;
+            top: 1px;
         }
         .icon-info {
             height: 18px;
@@ -1127,9 +1149,9 @@ p.booking-summary-room-price {
 }
 .payment-details-wrapper {
     i {
-        margin-top: 44px;
-        height: 24px;
-        width: 24px;
+        margin-top: 45px;
+        height: 16px;
+        width: 16px;
     }
     ul {
         margin: 0;
@@ -1195,10 +1217,10 @@ p.booking-summary-room-price {
 
 // Cofirmation Page
 .conf-card {
-    padding: 20px 10px;
+    padding: 20px 15px;
     margin-bottom: 20px;
     @include mQ(992px) {
-        padding: 20px 40px;
+        padding: 20px 40px 20px 30px;
         margin-bottom: 30px;
     }
     @include mQmax (1200px) {
@@ -1233,21 +1255,22 @@ p.booking-summary-room-price {
         padding: 0;
         display: block;
         p {
-            width: 50%;
             font-weight: 400;
         }
         .booking-row {
             padding: 10px 0;
         }
         h2 {
-            font-size: 22px;
+            font-size: 16px;
             font-family: $textFont;
+            margin-top: 10px;
+            // padding-left: 10px;
         }
     }
     .booking-summary-rooms-section {
-        p {
-            width: 100%;
-        }
+        // p {
+        //     width: 100%;
+        // }
         img {
             height: 55px;
             width: 90px;
@@ -1267,26 +1290,33 @@ p.booking-summary-room-price {
             padding: 0 10px;
         }
         .booking-summary-room-row {
-            padding: 20px 0;
+            padding: 5px 0;
         }
         .booking-summary-room-row-expanded
         {
-            display: block;
-            margin: 20px 0 20px 16px !important;
+            display: none;
+            // margin: 20px 0 20px 16px !important;
+            background: #3a3738;
         }
         p.booking-summary-room-name {
             color: $primaryFontColor;
             font-weight: 500;
+            background: #3a3738;
+            padding: 10px;
+
         }
         .booking-summary-room-heading {
             @include mQ (992px) {
-                padding-left: 10px;
+                padding-left: 0px;
             }
         }
     }
 }
 .icon-expand {
     @include iconExpand;
+    position: absolute;
+    top: 2px;
+    right: 3px;
 }
 .icon-collapse {
     @include iconCollapse;
@@ -1395,7 +1425,7 @@ p.booking-summary-room-price {
     padding: 0;
 }
 .modal-dialog {
-    max-width: 945px!important;
+    max-width: 1110px!important;
 }
 .modal-content {
     background-color: transparent;
@@ -1440,7 +1470,7 @@ p.booking-summary-room-price {
     }
     .hotel-info-wrapper {
         @include mQmax (991px) {
-            padding: 0 20px;
+            padding: 40px 26px 30px 36px;
         }
     }
     .description-2 {
@@ -1480,12 +1510,12 @@ p.booking-summary-room-price {
             display: none;
         }
         img {
-            height: 50px;
-            width: 90px!important;
+            height: 150px;
+            width: 277px!important;
             object-fit: cover;
             display: inline-block;
-            margin-top: 10px;
-            margin-right: 10px;
+            // margin-top: 10px;
+            // margin-right: 10px;
             &:hover {
                 cursor: pointer;
             }
@@ -1496,7 +1526,7 @@ p.booking-summary-room-price {
                 margin-left: 0!important;
                 margin-right: 0!important;
                 transform: none!important;
-                max-width: 885px!important;
+                max-width: 1110px!important;
             }
         }
     }
@@ -1504,15 +1534,15 @@ p.booking-summary-room-price {
 }
 .nav-tabs {
     border-bottom: none;
-    background: #f2f2f2;
+    background: #1a1919;
     background-image: linear-gradient(to bottom, #f0f0f0, #f2f2f2 92%, #cccccd);
     @include mQ (992px) {
-        background: transparent;
+        background: rgba(41, 38, 36, 0.9);
     }
     .gallery-tab {
         @include mQmax (991px) {
-            border-right: 1px solid #d8d8d8;
-            border-left: 1px solid #d8d8d8;
+            // border-right: 1px solid rgba(255, 255, 255, 0.3);
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
         }
     }
     a {
@@ -1525,8 +1555,8 @@ p.booking-summary-room-price {
         background-image: linear-gradient(to bottom, transparent, transparent 91%, #f2f2f2 92%, #cccccd);
         @include mQ(992px) {
             margin-right: 5px;
-            border-top-left-radius: 5px!important;
-            border-top-right-radius: 5px!important;
+            // border-top-left-radius: 5px!important;
+            // border-top-right-radius: 5px!important;
             padding: 17px 15px;
             background-image: none;
 
@@ -1562,16 +1592,16 @@ p.booking-summary-room-price {
             width: 100%;
             object-fit: cover;
             @include mQ (992px) {
-                height: 498px;
+                height: 600px;
             }
         }
     }
     .modal-header {
-        background-color: #f6f6f6;
+        background-color: #3a3738;
         .close {
             padding: 9px;
             @include mQ(992px) {
-                padding: 0 0 20px 0;
+                padding: 0 0 5px 0;
             }
         }
         @include mQ (992px) {
@@ -1826,18 +1856,18 @@ a.confirm-booking {
         @include cardStyle;
         padding: 20px 15px;
         @include mQ (992px) {
-            padding: 20px;
+            padding: 20px 20px 5px 20px;
         }
         .form-group input, .form-group select {
-            
-            max-width: 300px;
+            @include mQ (992px) {
+            max-width: 190px;
+            }
         }
         .form-group {
             select {
                 @include formStyleElements;
                 @include selectIcon;
-                max-width: 300px;
-            }
+               }
         }
     }
     &__category {
@@ -1852,20 +1882,21 @@ a.confirm-booking {
     &__filter-btn {
         text-align: right;
         color: $primaryFontColor;
-        font-weight: 600;
-        font-size: 14px;
+        font-weight: 500;
+        font-size: 15px;
         text-transform: uppercase;
         margin-bottom: 20px;
         i {
-            background: $selectIconUp;
-            height: 16px;
-            width: 16px;
+            // background: $selectIconUp;
+            background-image: url(http://127.0.0.1:8887/images/icons/p3/icon-open-filters.svg);
+            height: 8px;
+            width: 8px;
             display: inline-block;
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100% 100%;
             position: relative;
-            top: 3px
+            top: -2px
         }
     }
 }
@@ -1875,6 +1906,7 @@ a.confirm-booking {
         margin-bottom: 20px;
         @include mQ (992px) {
             margin-bottom: 50px;
+            height: 365px;
         }
         &--description {
             padding: 20px 15px;
@@ -1915,7 +1947,8 @@ a.confirm-booking {
             object-fit: cover;
             min-height: 235px;
             @include mQ(992px) {
-                max-width: 488px;
+                width: 365px;
+                height: 364px;
             }
         }
     }
@@ -1991,11 +2024,11 @@ a.confirm-booking {
     
     &__search {
         background-color: $primaryColor;
-        padding: 20px 0;
+        padding: 0 0 50px 0;
         &--widget {
             @include mQ(992px) {
                 display: grid;
-                grid-template-columns: 25% 1fr 1fr 1fr 20% ;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-gap: 30px;
                 .form-group {
                     margin-bottom: 0;
@@ -2039,9 +2072,9 @@ a.confirm-booking {
         width: 100%;
         z-index: 10;
         bottom: 0;
-        background-color: #e8ecd4;
+        background-color: #b7996d;
         @include mQmax(991px) {
-            background-color: $primaryColor;
+            background-color: #b7996d;
         }
         color: #fff;
         &--select-departure {
@@ -2081,7 +2114,7 @@ a.confirm-booking {
             @include mQmax (991px) {
                 h3, span {
                     font-family: $textFont;
-                    font-size: 14px;
+                    font-size: 16px;
                     line-height: 40px;
                     color: #fff;
                 }
@@ -2093,6 +2126,7 @@ a.confirm-booking {
             @include mQ (992px) {
                 &:hover, &:active {
                     color: $primaryFontColor;
+                    border: 1px solid $primaryColor;
                 }
             }
             @include mQmax (991px) {
@@ -2108,6 +2142,46 @@ a.confirm-booking {
         }
     }
 }
+
+
+.room_rates {
+    &__search {
+        background-color: $primaryColor;
+        padding: 20px 0;
+        &--widget {
+            @include mQ(992px) {
+                display: grid;
+                grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr 1.5fr ;
+                grid-gap: 5px;
+                .form-group {
+                    margin-bottom: 5px;
+                    border: none;
+                    height: 50px;
+                }
+            }
+            .form-group {
+                select {
+                    @include formStyleElements;
+                    background-color:#474344;
+                    border: 1px solid #474344 !important;
+                    border: none;
+                    font-size: 15px;
+                    font-weight: 300;
+                    height: 51px;
+                    @include selectIcon;
+                }
+            }
+            .btn-offer {
+                @include offerSearchBtn;
+                border-radius: 0;
+                font-size: 15px;
+                letter-spacing: 2px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
 
 // Mobile sign-up Bottom
 
@@ -2469,7 +2543,7 @@ a.confirm-booking {
               // height: 50px;
               padding: 0 30px;
               margin-top: 10px;
-              float: right;
+            //   float: right;
               border-radius: 25px;
               @include mQ (992px) {
                 margin-top: 30px;
@@ -2775,7 +2849,7 @@ a.confirm-booking {
                   // height: 50px;
                   padding: 0 30px;
                   margin-top: 10px;
-                  float: right;
+                //   float: right;
                   border-radius: 25px;
                   @include mQ (992px) {
                     margin-top: 30px;
@@ -2814,6 +2888,7 @@ a.confirm-booking {
     }
     .promo-code {
         margin: 10px 0 20px 0;
+        font-size: 12px;
     }
     .widget-room-label {
         font-size: 14px;

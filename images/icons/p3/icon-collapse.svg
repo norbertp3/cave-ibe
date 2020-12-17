@@ -1,10 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
     <g fill="none" fill-rule="evenodd">
-        <g fill-rule="nonzero">
+        <g fill="#FFF" fill-rule="nonzero">
             <g>
-                <g transform="translate(-1403 -5331) translate(1351 5279) translate(52 52)">
-                    <rect width="30" height="30" fill="#F1C66B" rx="15"/>
-                    <path fill="#1B315F" d="M12.251 10.244c.309-.3.795-.323 1.131-.07l.081.07 4.286 4.167c.309.3.333.773.071 1.1l-.071.078-4.286 4.167c-.335.325-.877.325-1.212 0-.309-.3-.333-.773-.071-1.1l.071-.079L15.93 15l-3.679-3.577c-.309-.3-.333-.774-.071-1.1l.071-.079z" transform="matrix(0 -1 -1 0 30 30)"/>
+                <g>
+                    <path d="M17.953 17.301l.707-.707-3.448-3.448c-.172-.172-.44-.192-.634-.06L11 16.588l.7.713 3.155-3.097 3.098 3.097z" transform="translate(-671 -3240) translate(0 3067) translate(671 173)"/>
                 </g>
             </g>
         </g>

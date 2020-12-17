@@ -1,11 +1,11 @@
 @mixin bodyText {
     font-family: $textFont;
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 21px;
     color: $secondaryFontColor;
     @include mQ (992px) {
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 14px;
+        line-height: 21px;
     }
 }
 @mixin lightText {
@@ -23,8 +23,9 @@
     font-family: $headingFont;
     font-size: 18px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 100;
     text-transform: uppercase;
+    letter-spacing: 4px;
     @include mQ(992px) {
         font-size: 22px;
     }
@@ -39,8 +40,8 @@
 @mixin rateName {
     color: $primaryFontColor;
     font-family: $textFont;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 100;
     // line-height: 1.6;
     @include mQ (992px) {
         font-size: 18px;
@@ -52,14 +53,15 @@
 }
 @mixin cardHeading {
     font-family: $textFont;
-    font-weight: 600;
-    font-size: 17px;
+    font-weight: 100;
+    font-size: 18px;
     color: $primaryFontColor;
     margin-bottom: 10px;
+    text-transform: uppercase;
     @include mQ (992px) {
         line-height: 1.2;
-        font-size: 20px;
-        // letter-spacing: -0.3px;
+        font-size: 22px;
+        letter-spacing: 4px;
         font-family: $headingFont;
     }
 }
@@ -85,51 +87,51 @@
 }
 @mixin btnPrimary {
     display: inline-block;
-    border: 1px solid #ffd75c;
-    background-color: #ffd75c;
-    border-radius: 3px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #1b315f;
-    // letter-spacing: 2px;
+    border: solid 1px #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+    // border-radius: 3px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
     // border: 2px solid #57565b;
-    padding: 12px 20px;
+    padding: 13px 20px;
+    letter-spacing: 1px;
     // box-shadow:inset 0px 0px 0px 1px #f0f0f0;
     text-transform: uppercase;
     font-family: $textFont;
     &:hover {
-        color: #1b315f;
+        color: #b7996d;
         cursor: pointer;
-        background-color: #f1c66b;
-        border: solid 1px #f1c66b;
+        background-color: rgba(255, 255, 255, 0);
+        border: solid 1px #b7996d;
         // box-shadow:inset 0px 0px 0px 1px #f0f0f0;
     }
     &:not(:disabled):not(.disabled):active {
-        color: #1b315f;
+        color: #b7996d;
         cursor: pointer;
-        background-color: #f1c66b;
-        border: solid 1px #1b315f;
+        background-color: rgba(255, 255, 255, 0);
+        border: solid 1px #b7996d;
         box-shadow:inset 0px 0px 0px 1px #f0f0f0;
     }
     &:focus {
         // box-shadow:inset 0px 0px 0px 1px #f0f0f0;
-        border: 1px solid #f1c66b;
-        color: #1b315f;
+        border: 1px solid #fff;
+        color: #fff;
         &:hover {
-            color: #1b315f;
+            color: #fff;
         }
     }
     &:disabled {
-        background-color: #1b315f;
+        background-color: #b7996d;
         opacity: 0.3;
     }
     &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus {
         box-shadow: none;
-        color: #1b315f;
+        color: #fff;
     }
     &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
-        border-color: #f1c66b;
-        color: #1b315f;
+        border-color: #fff;
+        color: #fff;
     }
     a {
         color: #fff;
@@ -141,37 +143,41 @@
 @mixin btnSecondary {
     background-color: rgba(255, 255, 255, 0);
     border-radius: 3px;
-    border: solid 1px #ffd75c;
+    // border: solid 1px #ffd75c;
     font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
-    color: #ffd75c;
+    color: #b7996d;
     padding: 12px 20px;
     font-family: $textFont;
     &:hover {
-        background-color: #f1c66b;
-        color: #1b315f;
-        border-color: #ffd75c;
+        background-color: transparent;
+        color: #b7996d;
+        border-color: #b7996d;
     }
     &:active {
-        background-color: #1b315f;
-        color: #ffffff;
+        background-color:#b7996d;
+        color: #b7996d;
+        text-decoration: underline;
     }
     &:focus {
-        border: solid 2px #1b315f;
+        border: none;
+        color: #b7996d;
+        text-decoration: underline;
     }
     &:disabled {
         background-color: rgba(255, 255, 255, 0);
-        border: solid 1px #1b315f;
+        border: 1px solid #fff;
         opacity: 0.3;
-        color: #1b315f;
+        color:#fff;
     }
     &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
-        background-color: #1b315f;
-        border-color: #1b315f;
+        background-color: transparent;
+        border-color: transparent;
     }
     &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
         box-shadow: none!important;
+        // color: #fff;
     }
 
 }
@@ -257,14 +263,15 @@
 }
 
 @mixin formLabel {
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     margin-bottom: 5px;
     font-family: $textFont;
     @include mQ(992px) {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
+
 @mixin selectIcon {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -280,6 +287,56 @@
         box-shadow: none;
     }
 }
+
+@mixin FormPeople {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-size: 15px;
+    background-position: calc(100% - 8px) 50%;
+    background-repeat: no-repeat;
+    background-image: $iconFormPeople;
+    padding: 4px 23px 4px 10px;
+    &:focus {
+        outline: none;
+        border-color: none;
+        box-shadow: none;
+    }
+}
+
+@mixin FormBed {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-size: 15px;
+    background-position: calc(100% - 8px) 50%;
+    background-repeat: no-repeat;
+    background-image: $iconRoomBed;
+    padding: 4px 23px 4px 10px;
+    &:focus {
+        outline: none;
+        border-color: none;
+        box-shadow: none;
+    }
+}
+
+@mixin FormCalendar {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-size: 15px;
+    background-position: calc(100% - 8px) 50%;
+    background-repeat: no-repeat;
+    background-image: $iconFormCalendar;
+    padding: 4px 23px 4px 10px;
+    &:focus {
+        outline: none;
+        border-color: none;
+        box-shadow: none;
+    }
+}
+
+
 @mixin priceTag {
     font-family: $textFont;
     font-size: 30px;
@@ -343,22 +400,24 @@
 
 @mixin formStyleElements {
     // box-shadow: inset 1px 1px 0 0 rgba(34, 34, 34, 0.2);
-    background-color: #fff;
+    background-color: #3a3738;
     color: $primaryFontColor;
-    font-size: 16px;
-    border: none;
+    font-size: 14px;
+    border: solid 1px #474344;;
     height: 50px;
     font-family: $textFont;
-    border-radius: 3px;
-    color: #1b315f;
-    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    // border-radius: 3px;
     &:focus {
         // box-shadow: inset 1px 1px 0 0 #d8d8d8;
-        border: solid 1px #f1c66b;
-        background-color: #ffffff;
+        border: solid 1px #fff;
+        background-color: #3a3738;
+        color: #fff;
     }
     &::placeholder {
-        color: rgba(34, 34, 34, 0.5);;
+        color: rgba(255, 255, 255, 0.5);
     }
 }
 

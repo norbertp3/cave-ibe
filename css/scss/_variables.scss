@@ -1,6 +1,6 @@
 // Fonts
-$headingFont: 'open-sans';
-$textFont: 'open-sans';
+$headingFont: 'museosans';
+$textFont: 'museosans';
 
 // Custom grid columns padding
 $colPadding: 25px;
@@ -11,17 +11,17 @@ $mobileContainerPadding: 15px;
 $primaryFontColor: #fff;
 $secondaryFontColor: #fff;
 $lightFontColor:rgba(255, 255, 255, 0.8);
-$bodyLinkColor: #ffd75c;
-$primaryColor: #5db7da;
+$bodyLinkColor: #fff;
+$primaryColor: #fff;
 $secondaryColor: yellow;
-$pageBg: #495a7f;
-$bookingSummaryBackgroundColor: #6b7997;
-$bookingSummaryBackgroundColorDesktop:  #6b7997;
-$cardBackgroundColor: #6b7997;
-$modalDescription2Background: #495a7f;
-$modalBackgroundColour: #6b7997;
+$pageBg: #1a1919;
+$bookingSummaryBackgroundColor: #474344;
+$bookingSummaryBackgroundColorDesktop:  #474344;
+$cardBackgroundColor: #474344;
+$modalDescription2Background: #3a3738;
+$modalBackgroundColour: #474344;
 $deviderColor: rgba(255, 255, 255, 0.4);
-$bookingWidgetBg: #6b7997;
+$bookingWidgetBg: #474344;
 
 // Icons
 $selectIcon: url(/images/icons/p3/icon-btn-primary-down.svg);
@@ -38,6 +38,11 @@ $iconInfoLightDefault: url(/images/icons/p3/icon-info-light-default.svg);
 // $iconBtnPrevMonth:
 // $iconBtnNextPeriod:
 // $iconBtnPrevPeriod:
+$iconFormCalendar: url(/images/icons/p3/icon-form-datepicker.svg);
+$iconRoomBed: url(/images/icons/p3/icon-form-rooms.svg);
+$iconFormPeople: url(/images/icons/p3/icon-form-people.svg);
+$iconFilterDown: url(/images/icons/p3/icon-form-dropdown.svg);
+$iconBtnPrimaryHover: url(/images/icons/p3/icon-btn-primary-down-hover.svg);
 $iconBtnPrimaryUp: url(/images/icons/p3/icon-btn-primary-up.svg);
 $iconBtnPrimaryDown: url(/images/icons/p3/icon-btn-primary-down.svg);
 $iconBtnPrimaryDownHover: url(/images/icons/p3/icon-btn-next-period.svg);

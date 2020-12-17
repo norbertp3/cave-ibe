@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HOME PAGE</title>
-    <!-- Vendors -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.css">
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HOME PAGE</title>
+  <!-- Vendors -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/vue-airbnb-style-datepicker.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet">
 
 </head>
+
 <body>
   <ul class="mymenu">
     <li><a href="index.html">index</a></li>
@@ -33,121 +38,179 @@
   </ul>
 
   <header>
-    <div class="container">
-      <nav class="mobile-nav d-lg-none">
-        <img src="/images/logo.png" alt="" class="mobile-logo">
-        <div class="mobile-nav__right-side">
-          <a href="#" class="mobile-nav__offers">Offers</a>
-          <div class="hamburger">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </div>
-        </div>
-      </nav>
-      <div class="mobile-nav__collapse">
-        <a href="#" class="mobile-nav__link mobile-nav__link--dropdown">Gallery</a>
-        <div class="mobile-nav__sub-nav">
-          <a href="#" class="mobile-nav__sub-link">NEST</a>
-          <a href="#" class="mobile-nav__sub-link">NEST</a>
-          <a href="#" class="mobile-nav__sub-link">NEST</a>
-        </div>
-        <a href="#" class="mobile-nav__link">Gallery</a>
-        <a href="#" class="mobile-nav__link mobile-nav__link--dropdown">Gallery</a>
-        <div class="mobile-nav__sub-nav">
-          <a href="#" class="mobile-nav__sub-link">NEST</a>
+    <nav class="mobile-nav d-lg-none">
+      <img src="/images/cave_mobile_logo.svg" alt="" class="mobile-logo">
+      <div class="mobile-nav__right-side">
+        <form action="" method="get" id="currencyConverter" class="dropdown-currency">
+          <input type="hidden" name="redirect">
+          <select id="currency-options" class="ml-0 custom-select" name="currencyCode" onchange="">
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+          </select>
+        </form>
+        <div class="hamburger">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </div>
       </div>
-      <nav class="desktop-nav d-none d-lg-block">
-        <div class="desktop-nav__top">
-          <img src="/images/logo.png" alt="" class="desktop-logo">
-          <div class="desktop-nav__top-links">
-            <a href="#"><i class="icon-blog"></i> Our Blog</a>
+    </nav>
+    <div class="mobile-nav__collapse">
+      <a href="#" class="mobile-nav__link mobile-nav__link--dropdown">Gallery</a>
+      <div class="mobile-nav__sub-nav">
+        <a href="#" class="mobile-nav__sub-link">NEST</a>
+        <a href="#" class="mobile-nav__sub-link">NEST</a>
+        <a href="#" class="mobile-nav__sub-link">NEST</a>
+      </div>
+      <a href="#" class="mobile-nav__link">Gallery</a>
+      <a href="#" class="mobile-nav__link mobile-nav__link--dropdown">Gallery</a>
+      <div class="mobile-nav__sub-nav">
+        <a href="#" class="mobile-nav__sub-link">NEST</a>
+      </div>
+    </div>
+    <nav class="desktop-nav d-none d-lg-block">
+      <div class="desktop-nav__top">
+        <div class="sliding-buttons-container">
+          <a href="#" class="booking">Golf</a>
+          <a href="#" class="booking">Table</a>
+          <a href="#" class="booking">Room</a>
+          <a href="#" class="booking">Book now</a>
+        </div>
+        <img src="/images/cave_hotel_logo.svg" alt="" class="desktop-logo">
+        <p class="phone-number">
+          <a href="tel:01227752277"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        </p>
+        <div class="desktop-nav__top-links">
+          <a href="#">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <img src="images/icons/p3/icon-parler.svg" alt="parler icon" />
+          </a>
+          <!-- <a href="#"><i class="icon-blog"></i> Our Blog</a>
             <a href="#"><i class="icon-contact"></i> Contact Us</a>
-            <a href="#"><i class="icon-gifts"></i> Gift Vouvher</a>
+            <a href="#"><i class="icon-gifts"></i> Gift Vouvher</a> -->
+          <div class="bars" onclick="openNav()">
+            <i class="fa fa-bars"></i>
           </div>
         </div>
+        <div id="mySidenav" class="sidenav">
+          <div class="main-links">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Coronavirus FAQs</a>
+            <a href="#">Christmas At Cave</a>
+            <a href="#">Offers At Cave</a>
+            <a href="#">Rooms & Rates</a>
+            <button class="dropdown-btn">Golf
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <a href="#">Firepit Restaurant</a>
+            <a href="#">Cave Bar & Dining On The Deck</a>
+            <a href="#">Pool & Gym</a>
+            <a href="#">Meetings & Conferences</a>
+            <a href="#">Weddings</a>
+            <a href="#">Gift Vouchers</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="bottom-links">
+            <a href="#">Events</a>
+            <a href="#">In The Press</a>
+            <a href="#">Join the team</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="container">
         <div class="dektop-nav__bottom">
           <div class="navbar navbar-expand-lg">
-            <a href="#" class="desktop-nav__home"><img src="/images/icons/p3/home-icon.svg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <a href="#" class="desktop-nav__home"><img src="/images/icons/p3/home-icon.svg" alt=""></a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#modalTabs">Hotel Info <span
+                      class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">Map</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reviews</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
                     Dropdown
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                   </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </div>
-                </li>
+                </li> -->
               </ul>
-              <a href="#" class="desktop-nav__button">Special Offers</a>
+              <!-- <a href="#" class="desktop-nav__button">Special Offers</a> -->
+              <form action="" method="get" id="currencyConverter" class="dropdown-currency">
+                <input type="hidden" name="redirect">
+                <select id="currency-options" class="ml-0 custom-select" name="currencyCode" onchange="">
+                  <option value="GBP">GBP</option>
+                  <option value="EUR">EUR</option>
+                  <option value="USD">USD</option>
+                </select>
+              </form>
             </div>
           </div>
         </div>
-      </nav>
+    </nav>
     </div>
   </header>
 
 
 
-  <section id="banner" class="d-none d-xl-block">
+  <!-- <section id="banner" class="d-none d-xl-block">
     <div class="container">
-      <h1>The Redworth Hall Hotel</h1>
-      <!-- <p>Surtees Rd, Newton Aycliffe DL5 6NL, UK</p> -->
-      <!-- HOTEL INFO BUTTONS P3B -->
-      <div class="hotel-info-buttons d-none d-lg-flex">
+      <h1>The Redworth Hall Hotel</h1> -->
+  <!-- <p>Surtees Rd, Newton Aycliffe DL5 6NL, UK</p> -->
+  <!-- HOTEL INFO BUTTONS P3B -->
+  <!-- <div class="hotel-info-buttons d-none d-lg-flex">
         <a href="#" data-toggle="modal" data-target="#modalTabs" class="btn">Hotel Info</a>
         <a href="#" class="btn">Map</a>
         <a href="#" class="btn">Gallery</a>
-      </div>
-      <!-- END HOTEL INFO BUTTONS P3B -->
-    </div>
+      </div> -->
+  <!-- END HOTEL INFO BUTTONS P3B -->
+  <!-- </div>
     <div class="container-fluid px-0">
       <div class="row">
         <div class="col-6"></div>
         <div class="col-6">
-          <a href="#"><div class="hotel-gallery" style="background-image: linear-gradient(104deg, rgba(51, 50, 50, 0.5), rgba(26, 25, 25, 0) 85%,rgba(26, 26, 26, 0) 81%, rgba(0, 0, 0, 0)), url(https://www.hodsonbayhotel.com/image/resize/315x550/cms/hodson-bay/images/new/hbh_gallery_andrew-bradley-retreat-room_1.jpg)">
-            <img src="images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-          </div></a>
+          <a href="#">
+            <div class="hotel-gallery"
+              style="background-image: linear-gradient(104deg, rgba(51, 50, 50, 0.5), rgba(26, 25, 25, 0) 85%,rgba(26, 26, 26, 0) 81%, rgba(0, 0, 0, 0)), url(https://www.hodsonbayhotel.com/image/resize/315x550/cms/hodson-bay/images/new/hbh_gallery_andrew-bradley-retreat-room_1.jpg)">
+              <img src="images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
+            </div>
+          </a>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Mobile Hotel Info P3B -->
   <section id="mobile-hotel-info" class="d-xl-none">
@@ -161,10 +224,10 @@
   <!-- IBE -->
 
   <!-- Progress Steps -->
-  <section id="progress-steps">
-    <div class="container">
-      <!-- Progress Steps Mobile -->
-      <div class="progress-steps-mobile d-flex d-xl-none align-items-center justify-content-between">
+  <!-- <section id="progress-steps">
+    <div class="container"> -->
+  <!-- Progress Steps Mobile -->
+  <!-- <div class="progress-steps-mobile d-flex d-xl-none align-items-center justify-content-between">
         <div class="d-flex">
           <img src="images/icons/p3/icon-progress-1-of-5.svg" alt="">
           <div class="align-y">
@@ -180,87 +243,237 @@
             <option value="USD">$ USD</option>
           </select>
         </form>
-      </div>
-      <!-- End Progress Steps Mobile -->
-    </div>
+      </div> -->
+  <!-- End Progress Steps Mobile -->
+  <!-- </div> -->
 
-    <!-- Progress Steps Desktop -->
-    <div class="pregress-steps-desktop d-none d-xl-block text-center">
-      <div class="row">
-        <div class="active col-4 step"><span>CHOOSE ROOM</span></div>
-        <div class="col-4 step"><span>ADD EXTRAS</span></div>
-        <div class="col-4 step"><span>YOUR DETAILS</span></div>
-      </div>
+  <!-- Progress Steps Desktop -->
+  <!-- <div class="pregress-steps-desktop d-none d-xl-block text-center">
+    <div class="row">
+      <div class="active col-4 step"><span>CHOOSE ROOM</span></div>
+      <div class="col-4 step"><span>ADD EXTRAS</span></div>
+      <div class="col-4 step"><span>YOUR DETAILS</span></div>
     </div>
-    <!--End Progress Steps Desktop -->
-  </section>
+  </div> -->
+  <!--End Progress Steps Desktop -->
+  <!-- </section> -->
   <!-- End Progress Steps -->
 
   <div class="container">
-    <div class="section-heading d-none d-lg-block">
-      <h2>Choose Your Room</h2> 
+    <div class="notification">
+      <img class="d-none d-lg-block" src="/images/icons/p3/icon-notice.svg" alt="notice info" />
+      <h5>Important Notice</h5>
+      <p>Due to COVID restrictions, until Dec 1st, we can only accept guests who need to travel for work purposes, with
+        a letter from their employer.</p>
     </div>
+    <div class="section-heading">
+      <h1>spoil yourself, you deserve it!</h1>
+    </div>
+    <!-- Search Offer Widget Start -->
+    <form action="" menthod="post" class="d-none d-lg-block">
+      <div class="room_rates__search--widget">
+        <div class="form-group">
+          <div class="booking-widget-datepicker">
+            <input class="form-control" type="text" id="trigger-single" :value="formatDates(arrivalDate)"
+              placeholder="Select date" readonly>
+            <input type="hidden" name="arrival" :value="arrivalDate">
+            <airbnb-style-datepicker :trigger-element-id="'trigger-single'" :mode="'single'" :date-one="arrivalDate"
+              :months-to-show="1" @date-one-selected="dateSelected">
+            </airbnb-style-datepicker>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="booking-widget-datepicker">
+            <input class="form-control" type="text" id="trigger-single" :value="formatDates(arrivalDate)"
+              placeholder="Select date" readonly>
+            <input type="hidden" name="arrival" :value="arrivalDate">
+            <airbnb-style-datepicker :trigger-element-id="'trigger-single'" :mode="'single'" :date-one="arrivalDate"
+              :months-to-show="1" @date-one-selected="dateSelected">
+            </airbnb-style-datepicker>
+          </div>
+        </div>
+        <div class="form-group bed">
+          <select name="" class="form-control" id="">
+            <option> 1 Room</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group people">
+          <select name="" class="form-control" id="">
+            <option>Adults</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group people">
+          <select name="" class="form-control" id="">
+            <option>0 Children</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <button class="btn btn-offer w-100 loading-spinner">Check Availability</button>
+      </div>
+      <div class="promo-code">
+        <a href="javascript:;" class="promo-code-link">Enter promo code</a>
+        <div class="form-group" style="display: none;">
+          <input type="email" class="form-control" placeholder="Type your code...">
+        </div>
+      </div>
+      <div class="row room_rates__search--widget extra-booking-widget-row" id="extra-booking-fields">
+        <div class="widget-size">
+          <div class="form-group">
+            <p>Room 1</p>
+          </div>
+          <div class="form-group people">
+            <select name="" class="form-control" id="">
+              <option>Adults</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group people">
+            <select name="" class="form-control" id="">
+              <option>0 Children</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>Room 2</p>
+          </div>
+          <div class="form-group people">
+            <select name="" class="form-control" id="">
+              <option>Adults</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group people">
+            <select name="" class="form-control" id="">
+              <option>0 Children</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="filters">
+      <p data-toggle="modal" data-target="#filtersModal">Filter<i class="icon-filter-down"></i></p>
+
+    </div>
+    <!-- Search Offer Widget End -->
+
     <div class="row">
-      <div class="col-12 col-xl-8 pr-custom">
+      <div class="col-12 col-xl-12 pr-custom">
         <div class="d-none d-lg-block"></div>
         <!-- Start Room With Rates P3B LOOP -->
         <section class="card-style room-with-rates-wrapper">
           <div class="room-wrapper d-md-flex">
 
-             <!-- Mobile Room Slider LOOP-->
-              <div class="standard-slider d-md-none">
-                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/room-image.png')";>
-                  </div>
-                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/room-image.png')";>
-                  </div>
-                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/room-image.png')";>
-                  </div>
+            <!-- Mobile Room Slider LOOP-->
+            <div class="standard-slider d-md-none">
+              <div class="room-image"
+                style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room2.jpg')"
+                ;>
               </div>
-              <!-- END Mobile Room Slider LOOP-->
-
-              <!-- Desktop Img -->
-              <div class="d-none d-md-block">
-                <a href="javascript:;">
-                  <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) , url('/images/room-image.png')";>
-                    <img src="images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-                  </div>
-                </a>
+              <div class="room-image"
+                style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room.jpg')"
+                ;>
               </div>
-              <!--END Desktop Img -->
+              <div class="room-image"
+                style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room3.jpg')"
+                ;>
+              </div>
+            </div>
+            <span class="no-rooms-avail d-block d-lg-none">Only 3 left</span>
 
-              <!-- Room Content -->
-              <div class="room-content d-block d-md-flex justify-content-between w-100">
-                <!-- <div class="room-ribbon">
+            <!-- END Mobile Room Slider LOOP-->
+
+            <!-- Desktop slider -->
+            <div class="d-none d-md-block desktop-slider">
+              <div class="room-image"
+                style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room3.jpg')"
+                ;>
+              </div>
+              <div class="room-image"
+                style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room2.jpg')"
+                ;>
+              </div>
+              <div class="room-image"
+                style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room3.jpg')"
+                ;>
+              </div>
+            </div>
+            <!--END Desktop slider -->
+
+            <!-- Room Content -->
+            <div class="room-content d-block d-md-flex justify-content-between w-100">
+              <!-- <div class="room-ribbon">
                   <span>Only 1 left!</span>
                 </div> -->
-                <!-- <div class="room-ribbon">
+              <!-- <div class="room-ribbon">
                   <img src="images/icons/p3/ribbons/urgent-ribbon.svg" >
                   <span>Only 1 left</span>
                 </div> -->
-                <div class="room-ribbon-left">
-                  <span>Only 1 left!</span>
+              <!-- <div class="room-ribbon-left">
+                <span>Only 1 left!</span>
+              </div> -->
+              <div class="room-left-side">
+                <a href="#">
+                  <h3>
+                    <i class="icon-info d-inline-block d-md-none mr-1"></i>
+                    Standard Single Room
+                    <!-- <i class="icon-info d-none d-md-inline-block ml-1"></i> -->
+                  </h3>
+                </a>
+                <!-- <ul class="d-none d-md-block">
+                  <li><img src="images/icons/p3/icon-sleeps-3.svg" alt="">Sleeps 3</li>
+                  <li><img src="images/icons/p3/icon-room-size.svg" alt="">18m<sup>2</sup></li>
+                  <li><img src="images/icons/p3/icon-beds.svg" alt="">Double & Single Bed</li>
+                </ul> -->
+                <div class="d-none d-lg-block">
+                  <p class="price">2 nights from &pound;125</p>
+                  <p class="availability">Only 3 rooms available</p>
+                  <p class="room-desc">Udant et liam, quiatem porectur rptatur magina ium magina ium harcitem assus ea
+                    veriass untrosry.</p>
+                  <a class="more-desc" href="#">More Info</a>
                 </div>
-                <div class="room-left-side">
-                  <a href="#">
-                    <h3><i class="icon-info d-inline-block d-md-none mr-1"></i> Standard Single Room <i class="icon-info d-none d-md-inline-block ml-1"></i></h3>
-                  </a>
-                  <ul class="d-none d-md-block">
-                    <li><img src="images/icons/p3/icon-sleeps-3.svg" alt="">Sleeps 3</li>
-                    <li><img src="images/icons/p3/icon-room-size.svg" alt="">18m<sup>2</sup></li>
-                    <li><img src="images/icons/p3/icon-beds.svg" alt="">Double & Single Bed</li>
-                  </ul>
-                </div>
-                <div class="d-flex justify-content-between align-items-end d-md-block room-right-side">
-                  <div class="price-section">
-                    <span class="strike-through">€320.00</span>
-                    <h2><span class="from-spam">from</span><span class="main-price-curreny">€ </span>280<span class="price-after-decimal">.50</span></h2>
-                    <span class="num-nights d-none d-md-block">1 night</span>
-                  </div>
-                  <button class="btn btn-primary view-rates-btn trigger-rotate">view rates <i
+                <div class="d-flex justify-content-between">
+                  <p class="price mobile-layout-price d-block d-lg-none">2 nights from &pound;125</p>
+                  <button class="btn btn-primary view-rates-btn trigger-rotate">Show Rates <i
                       class="icon-chevron-down"></i></button>
                 </div>
               </div>
-              <!-- END Room Content -->
+              <!-- <div class="d-flex justify-content-between align-items-end d-md-block room-right-side">
+                <div class="price-section">
+                  <span class="strike-through">€320.00</span>
+                  <h2><span class="from-spam">from</span><span class="main-price-curreny">€ </span>280<span
+                      class="price-after-decimal">.50</span></h2>
+                  <span class="num-nights d-none d-md-block">1 night</span>
+                </div>
+                <button class="btn btn-primary view-rates-btn trigger-rotate">view rates <i
+                    class="icon-chevron-down"></i></button>
+              </div> -->
+            </div>
+            <!-- END Room Content -->
 
           </div>
           <div class="rates-wrapper">
@@ -268,233 +481,541 @@
             <!-- Single Rate Container LOOP -->
             <div class="rate-container">
               <div class="d-block d-lg-flex justify-content-between align-items-center">
-                <h3 class="rate-name"><a href="javascript:;"><i class="icon-info d-inline-block d-lg-none mr-1"></i> Room Only - Pay Now,
-                  Non-refundable <i class="icon-info d-none d-lg-inline-block ml-lg-3"></i></a></h3>
+                <h3 class="rate-name"><a href="javascript:;"><i class="icon-info d-inline-block d-lg-none mr-1"></i>
+                    Room Only <i class="icon-info d-none d-lg-inline-block ml-lg-3"></i></a></h3>
                 <div class="text-right d-flex justify-content-end select-rate">
                   <div class="d-flex align-items-end">
-                    <span class="mb-2">1 night</span>
-                    <span class="ml-2 mb-2 strike-through">€77.50</span>
+                    <span class="ml-4 d-none d-lg-block">1 night</span>
+                    <span class="ml-3 strike-through r-price">&pound;77.50</span>
+                    <button class="rate-button">Select</button>
                   </div>
-                  <div class="text-center ml-3">
-                    <!-- <span class="mobile-rate-free-cancel d-block d-lg-none">Free Cancellation</span> -->
-                    <a href="#" class="btn btn-primary select-rate-btn loading-spinner"><span class="">€ </span>67<span class="price-after-decimal">.50</span> <i
-                        class="icon-chevron-right"></i></a>
-                  </div>
+                  <!-- <div class="text-center ml-3"> -->
+                  <!-- <span class="mobile-rate-free-cancel d-block d-lg-none">Free Cancellation</span> -->
+                  <!-- <a href="#" class="btn btn-primary select-rate-btn loading-spinner"><span class="">€ </span>67<span
+                        class="price-after-decimal">.50</span> <i class="icon-chevron-right"></i></a>
+                  </div> -->
                 </div>
               </div>
-              <div class="rate-description">
+              <!-- <div class="rate-description">
                 <ul>
                   <li>Book now, pay on arrival 111111111111</li>
                   <li>Cancel for free by 2pm Tue, 29 Nov</li>
                 </ul>
                 <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in
                   this rate. </p>
-              </div>
+              </div> -->
             </div>
             <!-- End Single Rate LOOP-->
 
             <div class="rate-container">
-              <div class="rate-ribbon">
+              <!-- <div class="rate-ribbon">
                 <span>Free Cancellation</span>
-              </div>
+              </div> -->
               <div class="d-block d-lg-flex justify-content-between align-items-center">
-                <h3 class="rate-name"><a href="javascript:;"><i class="icon-info d-inline-block d-lg-none mr-1"></i> Room Only - Pay Now,
-                  Non-refundable <i class="icon-info d-none d-lg-inline-block ml-lg-3"></i></a></h3>
+                <h3 class="rate-name"><a href="javascript:;"><i class="icon-info d-inline-block d-lg-none mr-1"></i>
+                    Bed & Breakfast <i class="icon-info d-none d-lg-inline-block ml-lg-3"></i></a></h3>
                 <div class="text-right d-flex justify-content-end select-rate">
                   <div class="d-flex align-items-end">
-                    <span class="mb-2">1 night</span>
-                    <span class="ml-2 mb-2 strike-through">€77.50</span>
+                    <span class="ml-4 r-price d-none d-lg-block">1 night</span>
+                    <span class="ml-3 strike-through r-price">&pound;77.50</span>
+                    <button class="rate-button">Select</button>
                   </div>
-                  <div class="text-center ml-3">
+                  <!-- <div class="text-center ml-3">
                     <span class="mobile-rate-urgency d-block d-lg-none">Only 1 left!</span>
-                    <a href="#" class="btn btn-primary select-rate-btn loading-spinner"><span class="">€ </span>67<span class="price-after-decimal">.50</span> <i
-                        class="icon-chevron-right"></i></a>
-                  </div>
+                    <a href="#" class="btn btn-primary select-rate-btn loading-spinner"><span class="">€ </span>67<span
+                        class="price-after-decimal">.50</span> <i class="icon-chevron-right"></i></a>
+                  </div> -->
                 </div>
               </div>
-              <div class="rate-description ml-3 mt-3 mt-lg-0">
+              <!-- <div class="rate-description ml-3 mt-3 mt-lg-0">
                 <ul>
                   <li>Book now, pay on arrival 2222222</li>
                   <li>Cancel for free by 2pm Tue, 29 Nov</li>
                 </ul>
                 <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in
                   this rate. </p>
+              </div> -->
+            </div>
+
+            <div class="rate-container">
+              <!-- <div class="rate-ribbon">
+                <span>Free Cancellation</span>
+              </div> -->
+              <div class="d-block d-lg-flex justify-content-between align-items-center">
+                <h3 class="rate-name"><a href="javascript:;"><i class="icon-info d-inline-block d-lg-none mr-1"></i>
+                    Summer Romance Offer <i class="icon-info d-none d-lg-inline-block ml-lg-3"></i></a></h3>
+                <div class="text-right d-flex justify-content-end select-rate">
+                  <div class="d-flex align-items-end">
+                    <span class="ml-2 d-none d-lg-block">1 night</span>
+                    <span class="ml-4 strike-through r-price">&pound;77.50</span>
+                    <span class="ml-3 r-price">&pound;77.50</span>
+                    <button class="rate-button">Select</button>
+                  </div>
+                  <!-- <div class="text-center ml-3"> -->
+                  <!-- <span class="mobile-rate-urgency d-block d-lg-none">Only 1 left!</span> -->
+                  <!-- <a href="#" class="btn btn-primary select-rate-btn loading-spinner"><span class="">€ </span>67<span
+                        class="price-after-decimal">.50</span> <i class="icon-chevron-right"></i></a> -->
+                  <!-- </div> -->
+                </div>
               </div>
+              <!-- <div class="rate-description ml-3 mt-3 mt-lg-0">
+                <ul>
+                  <li>Book now, pay on arrival 2222222</li>
+                  <li>Cancel for free by 2pm Tue, 29 Nov</li>
+                </ul>
+                <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in
+                  this rate. </p>
+              </div> -->
             </div>
           </div>
         </section>
+        <!-- End Room with Rates P3B LOOP-->
+
+        <!-- Start Room With Rates P3B LOOP -->
         <section class="card-style room-with-rates-wrapper">
           <div class="room-wrapper d-md-flex">
-             <!-- Mobile Room Slider LOOP-->
+
+            <!-- Mobile Room Slider LOOP-->
+            <div class="standard-slider d-md-none">
+              <div class="room-image"
+                style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room.jpg')"
+                ;>
+              </div>
+              <div class="room-image"
+                style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room2.jpg')"
+                ;>
+              </div>
+              <div class="room-image"
+                style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room3.jpg')"
+                ;>
+              </div>
+            </div>
+            <span class="no-rooms-avail d-block d-lg-none">Only 3 left</span>
+            <!-- END Mobile Room Slider LOOP-->
+
+            <!-- Desktop slider -->
+            <div class="d-none d-md-block desktop-slider">
+              <div class="room-image"
+                style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room.jpg')"
+                ;>
+              </div>
+              <div class="room-image"
+                style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room2.jpg')"
+                ;>
+              </div>
+              <div class="room-image"
+                style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room3.jpg')"
+                ;>
+              </div>
+            </div>
+            <!--END Desktop slider -->
+
+            <!-- Room Content -->
+            <div class="room-content d-block d-md-flex justify-content-between w-100">
+              <!-- <div class="room-ribbon">
+                <span>Only 1 left!</span>
+              </div> -->
+              <!-- <div class="room-ribbon">
+                <img src="images/icons/p3/ribbons/urgent-ribbon.svg" >
+                <span>Only 1 left</span>
+              </div> -->
+              <!-- <div class="room-ribbon-left">
+              <span>Only 1 left!</span>
+            </div> -->
+              <div class="room-left-side">
+                <a href="#">
+                  <h3>
+                    <i class="icon-info d-inline-block d-md-none mr-1"></i>
+                    Standard Single Room
+                    <!-- <i class="icon-info d-none d-md-inline-block ml-1"></i> -->
+                  </h3>
+                </a>
+                <!-- <ul class="d-none d-md-block">
+                <li><img src="images/icons/p3/icon-sleeps-3.svg" alt="">Sleeps 3</li>
+                <li><img src="images/icons/p3/icon-room-size.svg" alt="">18m<sup>2</sup></li>
+                <li><img src="images/icons/p3/icon-beds.svg" alt="">Double & Single Bed</li>
+              </ul> -->
+                <div class="d-none d-lg-block">
+                  <p class="price">2 nights from &pound;125</p>
+                  <p class="availability">Only 3 rooms available</p>
+                  <p class="room-desc">Udant et liam, quiatem porectur rptatur magina ium magina ium harcitem assus ea
+                    veriass untrosry.</p>
+                  <a class="more-desc" href="#">More Info</a>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p class="price mobile-layout-price d-block d-lg-none">2 nights from &pound;125</p>
+                  <button class="btn btn-primary view-rates-btn trigger-rotate">Show Rates <i
+                      class="icon-chevron-down"></i></button>
+                </div>
+              </div>
+              <!-- <div class="d-flex justify-content-between align-items-end d-md-block room-right-side">
+              <div class="price-section">
+                <span class="strike-through">€320.00</span>
+                <h2><span class="from-spam">from</span><span class="main-price-curreny">€ </span>280<span
+                    class="price-after-decimal">.50</span></h2>
+                <span class="num-nights d-none d-md-block">1 night</span>
+              </div>
+              <button class="btn btn-primary view-rates-btn trigger-rotate">view rates <i
+                  class="icon-chevron-down"></i></button>
+            </div> -->
+            </div>
+            <!-- END Room Content -->
+
+          </div>
+          <div class="rates-wrapper">
+
+            <!-- Single Rate Container LOOP -->
+            <div class="rate-container">
+              <div class="d-block d-lg-flex justify-content-between align-items-center">
+                <h3 class="rate-name"><a href="javascript:;"><i class="icon-info d-inline-block d-lg-none mr-1"></i>
+                    Room Only <i class="icon-info d-none d-lg-inline-block ml-lg-3"></i></a></h3>
+                <div class="text-right d-flex justify-content-end select-rate">
+                  <div class="d-flex align-items-end">
+                    <span class="ml-4 d-none d-lg-block">1 night</span>
+                    <span class="ml-3 strike-through r-price">&pound;77.50</span>
+                    <button class="rate-button">Select</button>
+                  </div>
+                  <!-- <div class="text-center ml-3"> -->
+                  <!-- <span class="mobile-rate-free-cancel d-block d-lg-none">Free Cancellation</span> -->
+                  <!-- <a href="#" class="btn btn-primary select-rate-btn loading-spinner"><span class="">€ </span>67<span
+                      class="price-after-decimal">.50</span> <i class="icon-chevron-right"></i></a>
+                </div> -->
+                </div>
+              </div>
+              <!-- <div class="rate-description">
+              <ul>
+                <li>Book now, pay on arrival 111111111111</li>
+                <li>Cancel for free by 2pm Tue, 29 Nov</li>
+              </ul>
+              <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in
+                this rate. </p>
+            </div> -->
+            </div>
+            <!-- End Single Rate LOOP-->
+
+            <div class="rate-container">
+              <!-- <div class="rate-ribbon">
+              <span>Free Cancellation</span>
+            </div> -->
+              <div class="d-block d-lg-flex justify-content-between align-items-center">
+                <h3 class="rate-name"><a href="javascript:;"><i class="icon-info d-inline-block d-lg-none mr-1"></i>
+                    Bed & Breakfast <i class="icon-info d-none d-lg-inline-block ml-lg-3"></i></a></h3>
+                <div class="text-right d-flex justify-content-end select-rate">
+                  <div class="d-flex align-items-end">
+                    <span class="ml-4 r-price d-none d-lg-block">1 night</span>
+                    <span class="ml-3 strike-through r-price">&pound;77.50</span>
+                    <button class="rate-button">Select</button>
+                  </div>
+                  <!-- <div class="text-center ml-3">
+                  <span class="mobile-rate-urgency d-block d-lg-none">Only 1 left!</span>
+                  <a href="#" class="btn btn-primary select-rate-btn loading-spinner"><span class="">€ </span>67<span
+                      class="price-after-decimal">.50</span> <i class="icon-chevron-right"></i></a>
+                </div> -->
+                </div>
+              </div>
+              <!-- <div class="rate-description ml-3 mt-3 mt-lg-0">
+              <ul>
+                <li>Book now, pay on arrival 2222222</li>
+                <li>Cancel for free by 2pm Tue, 29 Nov</li>
+              </ul>
+              <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in
+                this rate. </p>
+            </div> -->
+            </div>
+
+            <div class="rate-container">
+              <!-- <div class="rate-ribbon">
+              <span>Free Cancellation</span>
+            </div> -->
+              <div class="d-block d-lg-flex justify-content-between align-items-center">
+                <h3 class="rate-name"><a href="javascript:;"><i class="icon-info d-inline-block d-lg-none mr-1"></i>
+                    Summer Romance Offer <i class="icon-info d-none d-lg-inline-block ml-lg-3"></i></a></h3>
+                <div class="text-right d-flex justify-content-end select-rate">
+                  <div class="d-flex align-items-end">
+                    <span class="ml-2">1 night</span>
+                    <span class="ml-4 strike-through r-price">&pound;77.50</span>
+                    <span class="ml-3 r-price">&pound;77.50</span>
+                    <button class="rate-button">Select</button>
+                  </div>
+                  <!-- <div class="text-center ml-3"> -->
+                  <!-- <span class="mobile-rate-urgency d-block d-lg-none">Only 1 left!</span> -->
+                  <!-- <a href="#" class="btn btn-primary select-rate-btn loading-spinner"><span class="">€ </span>67<span
+                      class="price-after-decimal">.50</span> <i class="icon-chevron-right"></i></a> -->
+                  <!-- </div> -->
+                </div>
+              </div>
+              <!-- <div class="rate-description ml-3 mt-3 mt-lg-0">
+              <ul>
+                <li>Book now, pay on arrival 2222222</li>
+                <li>Cancel for free by 2pm Tue, 29 Nov</li>
+              </ul>
+              <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in
+                this rate. </p>
+            </div> -->
+            </div>
+          </div>
+        </section>
+        <!-- End Room with Rates P3B LOOP-->
+      </div>
+      <section id="show-unavailable">
+        <div class="button">
+          <button class="btn btn-primary trigger-availability">show unavailable rooms</button>
+        </div>
+        <div class="unavailable-rooms">
+          <div class="section-heading">
+            <h1>sorry, these rooms are fully booked on your<br /> selected dates</h1>
+          </div>
+
+          <!-- Start Room With Rates P3B LOOP -->
+          <section class="card-style room-with-rates-wrapper">
+            <div class="room-wrapper d-md-flex">
+
+              <!-- Mobile Room Slider LOOP-->
               <div class="standard-slider d-md-none">
-                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/room-image.png')";>
-                  </div>
-                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/room-image.png')";>
-                  </div>
-                  <div class="room-image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/room-image.png')";>
-                  </div>
+                <div class="room-image"
+                  style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room2.jpg')"
+                  ;>
+                </div>
+                <div class="room-image"
+                  style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room.jpg')"
+                  ;>
+                </div>
+                <div class="room-image"
+                  style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room3.jpg')"
+                  ;>
+                </div>
               </div>
               <!-- END Mobile Room Slider LOOP-->
 
-              <!-- Desktop Img -->
-              <div class="d-none d-md-block">
-                <a href="javascript:;">
-                  <div class="room-image" style="background-image: linear-gradient(122deg, rgba(0, 0, 0, 0), rgba(26, 26, 26, 0) 81%, rgba(26, 25, 25, 0) 85%, rgba(51, 50, 50, 0.5)) , url('/images/room-image.png')";>
-                    <img src="images/icons/p3/icon-open-gallery.svg" class="icon-open-gallery">
-                  </div>
-                </a>
+              <!-- Desktop slider -->
+              <div class="d-none d-md-block unavailable-rooms-slider">
+                <div class="room-image"
+                  style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room.jpg')"
+                  ;>
+                </div>
+                <div class="room-image"
+                  style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room2.jpg')"
+                  ;>
+                </div>
+                <div class="room-image"
+                  style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room3.jpg')"
+                  ;>
+                </div>
               </div>
-              <!--END Desktop Img -->
+              <div class="display-unavailability-message">
+                <p>Unavailable on selected dates</p>
+              </div>
+              <!--END Desktop slider -->
 
               <!-- Room Content -->
               <div class="room-content d-block d-md-flex justify-content-between w-100">
                 <!-- <div class="room-ribbon">
+                    <span>Only 1 left!</span>
+                  </div> -->
+                <!-- <div class="room-ribbon">
+                    <img src="images/icons/p3/ribbons/urgent-ribbon.svg" >
+                    <span>Only 1 left</span>
+                  </div> -->
+                <!-- <div class="room-ribbon-left">
                   <span>Only 1 left!</span>
                 </div> -->
                 <div class="room-left-side">
                   <a href="#">
-                    <h3><i class="icon-info d-inline-block d-md-none mr-1"></i> Standard Single Room <i class="icon-info d-none d-md-inline-block ml-1"></i></h3>
+                    <h3>
+                      <i class="icon-info d-inline-block d-md-none mr-1"></i>
+                      Junior Suite
+                      <!-- <i class="icon-info d-none d-md-inline-block ml-1"></i> -->
+                    </h3>
                   </a>
-                  <ul class="d-none d-md-block">
+                  <!-- <ul class="d-none d-md-block">
                     <li><img src="images/icons/p3/icon-sleeps-3.svg" alt="">Sleeps 3</li>
                     <li><img src="images/icons/p3/icon-room-size.svg" alt="">18m<sup>2</sup></li>
                     <li><img src="images/icons/p3/icon-beds.svg" alt="">Double & Single Bed</li>
-                  </ul>
+                  </ul> -->
+                  <div class="d-none d-lg-block">
+                    <p class="price d-none">2 nights from &pound;125</p>
+                    <p class="availability d-none">Only 3 rooms available</p>
+                    <p class="room-desc">Udant et liam, quiatem porectur rptatur magina ium magina ium harcitem assus ea
+                      veriass untrosry.</p>
+                    <a class="more-desc" href="#">More Info</a>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <!-- <p class="price mobile-layout-price d-block d-lg-none">2 nights from &pound;125</p> -->
+                    <button class="btn btn-primary view-rates-btn trigger-rotate">Show Availability
+                      <!-- <i class="icon-chevron-down"></i> -->
+                    </button>
+                  </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-end d-md-block room-right-side">
+                <!-- <div class="d-flex justify-content-between align-items-end d-md-block room-right-side">
                   <div class="price-section">
                     <span class="strike-through">€320.00</span>
-                    <h2><span class="from-spam">from</span><span class="main-price-curreny">€ </span>280<span class="price-after-decimal">.50</span></h2>
+                    <h2><span class="from-spam">from</span><span class="main-price-curreny">€ </span>280<span
+                        class="price-after-decimal">.50</span></h2>
                     <span class="num-nights d-none d-md-block">1 night</span>
                   </div>
                   <button class="btn btn-primary view-rates-btn trigger-rotate">view rates <i
                       class="icon-chevron-down"></i></button>
-                </div>
+                </div> -->
               </div>
               <!-- END Room Content -->
 
-          </div>
-          <div class="rates-wrapper">
+            </div>
+          </section>
+          <!-- End Room with Rates P3B LOOP-->
+          <!-- Start Room With Rates P3B LOOP -->
+          <section class="card-style room-with-rates-wrapper">
+            <div class="room-wrapper d-md-flex">
 
-            <!-- Single Rate Container LOOP -->
-            <div class="rate-container">
-              <div class="d-block d-lg-flex justify-content-between align-items-center">
-                <h3 class="rate-name"><a href="javascript:;"><i class="icon-info d-inline-block d-lg-none mr-1"></i> Room Only - Pay Now,
-                  Non-refundable <i class="icon-info d-none d-lg-inline-block ml-lg-3"></i></a></h3>
-                <div class="text-right d-flex justify-content-end select-rate">
-                  <div class="d-flex align-items-end">
-                    <span class="mb-2">1 night</span>
-                    <span class="ml-2 mb-2 strike-through">€77.50</span>
-                  </div>
-                  <div class="text-center ml-3">
-                    <span class="mobile-rate-free-cancel d-block d-lg-none">Free Cancellation</span>
-                    <a href="#" class="btn btn-primary select-rate-btn loading-spinner"><span class="">€ </span>67<span class="price-after-decimal">.50</span> <i
-                        class="icon-chevron-right"></i></a>
-                  </div>
+              <!-- Mobile Room Slider LOOP-->
+              <div class="standard-slider d-md-none">
+                <div class="room-image"
+                  style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room2.jpg')"
+                  ;>
+                </div>
+                <div class="room-image"
+                  style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room.jpg')"
+                  ;>
+                </div>
+                <div class="room-image"
+                  style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room3.jpg')"
+                  ;>
                 </div>
               </div>
-              <div class="rate-description">
-                <ul>
-                  <li>Book now, pay on arrival 111111111111</li>
-                  <li>Cancel for free by 2pm Tue, 29 Nov</li>
-                </ul>
-                <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in
-                  this rate. </p>
-              </div>
-            </div>
-            <!-- End Single Rate LOOP-->
+              <!-- END Mobile Room Slider LOOP-->
 
-            <div class="rate-container">
-              <div class="rate-ribbon">
-                <span>Free Cancellation</span>
-              </div>
-              <div class="d-block d-lg-flex justify-content-between align-items-center">
-                <h3 class="rate-name"><a href="javascript:;"><i class="icon-info d-inline-block d-lg-none mr-1"></i> Room Only - Pay Now,
-                  Non-refundable <i class="icon-info d-none d-lg-inline-block ml-lg-3"></i></a></h3>
-                <div class="text-right d-flex justify-content-end select-rate">
-                  <div class="d-flex align-items-end">
-                    <span class="mb-2">1 night</span>
-                    <span class="ml-2 mb-2 strike-through">€77.50</span>
-                  </div>
-                  <div class="text-center ml-3">
-                    <span class="mobile-rate-urgency d-block d-lg-none">Only 1 left!</span>
-                    <a href="#" class="btn btn-primary select-rate-btn loading-spinner"><span class="">€ </span>67<span class="price-after-decimal">.50</span> <i
-                        class="icon-chevron-right"></i></a>
-                  </div>
+              <!-- Desktop slider -->
+              <div class="d-none d-md-block unavailable-rooms-slider">
+                <div class="room-image"
+                  style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room.jpg')"
+                  ;>
+                </div>
+                <div class="room-image"
+                  style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room2.jpg')"
+                  ;>
+                </div>
+                <div class="room-image"
+                  style="background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(4,3,62,0) 20%, rgba(9,9,121,0) 50%, rgba(4,115,191,0) 80%, rgba(0,0,0,0.3) 100%), url('/images/img-room3.jpg')"
+                  ;>
                 </div>
               </div>
-              <div class="rate-description ml-3 mt-3 mt-lg-0">
-                <ul>
-                  <li>Book now, pay on arrival 2222222</li>
-                  <li>Cancel for free by 2pm Tue, 29 Nov</li>
-                </ul>
-                <p>For when your plans are open to change, stay flexible! Enjoy a full English breakfast included in
-                  this rate. </p>
+              <div class="display-unavailability-message">
+                <p>Unavailable on selected dates</p>
               </div>
-            </div>
-          </div>
-        </section>
+              <!--END Desktop slider -->
 
-        <!-- End Room with Rates P3B LOOP-->
-      </div>
-      <div class="col-12 col-xl-4 pl-custom">
-        <!-- Booking Summary P3B -->
-        <section id="booking-summary">
+              <!-- Room Content -->
+              <div class="room-content d-block d-md-flex justify-content-between w-100">
+                <!-- <div class="room-ribbon">
+                    <span>Only 1 left!</span>
+                  </div> -->
+                <!-- <div class="room-ribbon">
+                    <img src="images/icons/p3/ribbons/urgent-ribbon.svg" >
+                    <span>Only 1 left</span>
+                  </div> -->
+                <!-- <div class="room-ribbon-left">
+                  <span>Only 1 left!</span>
+                </div> -->
+                <div class="room-left-side">
+                  <a href="#">
+                    <h3>
+                      <i class="icon-info d-inline-block d-md-none mr-1"></i>
+                      Junior Suite
+                      <!-- <i class="icon-info d-none d-md-inline-block ml-1"></i> -->
+                    </h3>
+                  </a>
+                  <!-- <ul class="d-none d-md-block">
+                    <li><img src="images/icons/p3/icon-sleeps-3.svg" alt="">Sleeps 3</li>
+                    <li><img src="images/icons/p3/icon-room-size.svg" alt="">18m<sup>2</sup></li>
+                    <li><img src="images/icons/p3/icon-beds.svg" alt="">Double & Single Bed</li>
+                  </ul> -->
+                  <div class="d-none d-lg-block">
+                    <p class="price d-none">2 nights from &pound;125</p>
+                    <p class="availability d-none">Only 3 rooms available</p>
+                    <p class="room-desc">Udant et liam, quiatem porectur rptatur magina ium magina ium harcitem assus ea
+                      veriass untrosry.</p>
+                    <a class="more-desc" href="#">More Info</a>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <!-- <p class="price mobile-layout-price d-block d-lg-none">2 nights from &pound;125</p> -->
+                    <button class="btn btn-primary view-rates-btn trigger-rotate">Show Availability
+                      <!-- <i class="icon-chevron-down"></i> -->
+                    </button>
+                  </div>
+                </div>
+                <!-- <div class="d-flex justify-content-between align-items-end d-md-block room-right-side">
+                  <div class="price-section">
+                    <span class="strike-through">€320.00</span>
+                    <h2><span class="from-spam">from</span><span class="main-price-curreny">€ </span>280<span
+                        class="price-after-decimal">.50</span></h2>
+                    <span class="num-nights d-none d-md-block">1 night</span>
+                  </div>
+                  <button class="btn btn-primary view-rates-btn trigger-rotate">view rates <i
+                      class="icon-chevron-down"></i></button>
+                </div> -->
+              </div>
+              <!-- END Room Content -->
+
+            </div>
+
+          </section>
+          <!-- <div class="col-12 col-xl-4 pl-custom d-none"> -->
+          <!-- Booking Summary P3B -->
+          <!-- <section id="booking-summary"> -->
           <!-- Booking Summary Heading -->
-          <div class="booking-summary-heading d-flex justify-content-between align-items-center">
-            <div class="d-flex">
+          <!-- <div class="booking-summary-heading d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between">
               <h2 class="d-none d-xl-block">Booking Summary</h2>
               <h2 class="d-xl-none">My booking</h2>
-              <span class="d-xl-none">Nov 30 - Dec 02</span>
+              <span class="d-xl-none ">Nov 30 - Dec 02</span>
             </div>
             <a href="#" class="btn btn-secondary edit-search-btn d-none d-xl-block">Edit</a>
-            <div class="d-xl-none" style="height: 30px">
+            <div class="d-xl-none">
               <i class="icon-expand"></i>
             </div>
           </div>
           <div class="booking-summary-data">
             <div class="booking-summary-table">
               <div class="booking-row">
-                <div class="booking-data d-flex">
-                    <p>Hotel</p>
-                    <p>The Redworth Hall Hotel</p>
+                <div class="booking-data d-flex justify-content-between">
+                  <p>Hotel</p>
+                  <p>The Redworth Hall Hotel</p>
                 </div>
               </div>
               <div class="booking-row">
-                <div class="booking-data d-flex">
-                    <p>Arrival Date</p>
-                    <p>Wed, 30 Nov 2019</p>
+                <div class="booking-data d-flex justify-content-between">
+                  <p>Arrival Date</p>
+                  <p>Wed, 30 Nov 2019</p>
                 </div>
               </div>
               <div class="booking-row">
-                <div class="booking-data d-flex">
-                    <p>Nights</p>
-                    <p>1 night</p>
+                <div class="booking-data d-flex justify-content-between">
+                  <p>Nights</p>
+                  <p>1 night</p>
                 </div>
               </div>
               <div class="booking-row">
-                <div class="booking-data d-flex">
-                    <p>Guests</p>
-                    <p>2 adults</p>
+                <div class="booking-data d-flex justify-content-between">
+                  <p>Guests</p>
+                  <p>2 adults</p>
                 </div>
               </div>
               <div class="booking-row">
-                <div class="booking-data d-flex">
-                    <p>Rooms</p>
-                    <p>1 room</p>
+                <div class="booking-data d-flex justify-content-between">
+                  <p>Rooms</p>
+                  <p>1 room</p>
                 </div>
               </div>
               <div class="booking-row">
-                <div class="booking-data d-flex">
-                    <p>Promo Code</p>
-                    <p>SAVE123</p>
+                <div class="booking-data d-flex justify-content-between">
+                  <p>Promo Code</p>
+                  <p>SAVE123</p>
                 </div>
               </div>
               <a href="javascript:;" class="btn btn-primary d-xl-none w-100">Change Search</a>
             </div>
           </div>
-        </section>
-        <div class="desktop-sign-up d-none d-xl-block d-xl-flex mb-4">
+        </section> -->
+          <!-- <div class="desktop-sign-up d-none d-xl-block d-xl-flex mb-4">
           <img data-src="/images/img-join.jpg" class="lazyload d-none d-xl-block">
           <img data-src="/images/img-join-landscape.png" class="lazyload d-xl-none mb-3" height="200px" width="100%">
           <div class="desktop-sign-up-content">
@@ -504,90 +1025,319 @@
             <p>Already a member? <a href="#">Login</a></p>
           </div>
         </div>
+      </div> -->
+        </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer__wrapper">
+      <div class="column">
+        <h3 class="footer__h3">CAVE HOTEL<br />
+          & GOLF RESORT</h3>
+        <p class="footer__p">
+          Brickfield Lane<br />
+          Boughton<br />
+          Nr Canterbury<br />
+          Kent ME13 9AJ
+        </p>
+      </div>
+      <div class="column">
+        <h3 class="footer__h3">Enquires<br />
+          & Reservations</h3>
+        <p class="footer__p">
+          <i class="fa fa-phone"></i><a class="phone" href="tel:01227752277"> 01227 752 277</a>
+        </p>
+        <p class="enquires">
+          <span>General Enquiries</span><br />
+          enquiries@cavehotels.com<br />
+          <span>Reservations</span><br />
+          reservations@cavehotels.com
+        </p>
+      </div>
+      <div class="column">
+        <h3 class="footer__h3">Get<br /> Social</h3>
+        <p class="footer--social-media-share">
+          <a href="#">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <img src="images/icons/p3/icon-parler.svg" alt="parler icon" />
+          </a>
+        </p>
+      </div>
+      <div class="column d-none d-lg-block">
+        <a class="logo">
+          <img src="/images/cave_hotel_logo.svg">
+        </a>
+      </div>
+      <span class="footer__copyright">© 2020 Cave Hotels Ltd. All rights reserved. Designed by The Wow Factory |
+        <a href="#" target="_blank">Contact Us</a> | <a href="#" target="_blank">Privacy</a> | <a href="#"
+          target="_blank">Terms and Conditions</a></span>
+    </div>
+  </footer>
+
+  <!-- Filters Modal -->
+  <!-- <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#filtersModal">Filters Modal</a> -->
+
+  <div class="modal fade modal-full-width standard-modal display-block filters-modal" id="filtersModal" tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg">
+          <h2 class="d-none d-lg-block">Filters</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="icon-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="" method="get">
+            <h2 class="d-block d-lg-none">Filters</h2>
+            <div class="form-group checkbox-group mb-0">
+              <label class="d-flex">
+                <input type="checkbox" name="" checked="" value="">
+                <span class="custom-check"></span>
+                <div class="guest-text">Show All Rooms</div>
+              </label>
+            </div>
+            <div class="form-group checkbox-group mb-0">
+              <label class="d-flex">
+                <input type="checkbox" name="" checked="" value="">
+                <span class="custom-check"></span>
+                <div class="guest-text">Show Suites Only</div>
+              </label>
+            </div>
+            <div class="form-group checkbox-group mb-0">
+              <label class="d-flex">
+                <input type="checkbox" name="" checked="" value="">
+                <span class="custom-check"></span>
+                <div class="guest-text">Show Penthouse Only</div>
+              </label>
+            </div>
+            <div class="form-group checkbox-group mb-0">
+              <label class="d-flex">
+                <input type="checkbox" name="" checked="" value="">
+                <span class="custom-check"></span>
+                <div class="guest-text">Show Room Only Rate</div>
+              </label>
+            </div>
+            <div class="form-group checkbox-group mb-0">
+              <label class="d-flex">
+                <input type="checkbox" name="" checked="" value="">
+                <span class="custom-check"></span>
+                <div class="guest-text">Show Bed & Breakfast Rate Only</div>
+              </label>
+            </div>
+            <div class="filter-buttons">
+              <button class="btn btn-primary" data-dismiss="modal">Cancel</button>
+              <button class="btn btn-primary">Clear</button>
+              <button class="btn btn-primary">Apply</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 
-  
-<!-- Footer -->
 
-<footer>
-  <div class="container">
-    <div class="footer__wrapper">
-      <h3 class="footer__h3">HODSON BAY HOTEL</h3>
-      <p class="footer__p">Roscommon Road, Athlone, N37 XR82, <a href="tel:+353906442004">+353 (0) 90 6442004</a>, <a href="mailto:info@hodsonbayhotel.com">info@hodsonbayhotel.com</a> </p>
-      <ul class="footer__social">
-        <li>
-            <a href="http://www.youtube.com/user/HodsonBayHotel" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-        </li>
-        <li>
-            <a href="http://www.facebook.com/hodsonbay" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        </li>
-        <li>
-            <a href="http://twitter.com/Hodsonbayhotel" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        </li>
-        <li>
-            <a href="https://plus.google.com/+hodsonbayhotel/posts" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-        </li>
-        <li>
-            <a href="http://pinterest.com/hodsonbayhotel/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-        </li>
-        <li>
-            <a href="https://instagram.com/hodsonbayhotel/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        </li>
-    </ul>
-    <ul class="footer__links">
-      <li>
-        <a href="https://www.hodsonbayhotel.com/faq" target="_top">
-          Frequently Asked Questions
-        </a>
-      </li>
-      <li>
-        <a href="https://www.hodsonbayhotel.com/privacy-policy" target="_top">
-          PRIVACY POLICY
-        </a>
-      </li>
-      <li>
-        <a href="https://www.hodsonbayhotel.com/gallery" target="_top">
-          GALLERY
-        </a>
-      </li>
-      <li>
-        <a href="https://www.hodsonbayhotel.com/athlone-accommodation" target="_top">
-          SLEEP
-        </a>
-      </li>
-      <li>
-        <a href="https://www.hodsonbayhotel.com/weddings" target="_top">
-          WEDDINGS
-        </a>
-      </li>
-      <li>
-        <a href="https://www.hodsonbayhotel.com/giftvouchers" target="_top">
-          Gift Vouchers
-        </a>
-      </li>
-      <li>
-        <a href="https://www.hodsonbayhotel.com/enquire" target="_top">
-          Enquire
-        </a>
-      </li>
-      <li>
-        <a href="https://www.hodsonbayhotel.com/group" target="_top">
-          Careers
-        </a>
-      </li>
-    </ul>
-    <span class="footer__copyright">Copyright © Hodson Bay Hotel 2020 All Rights Reserved</span>
+  <!-- Hotel Info Modal -->
+  <div class="modal fade modal-tabs modal-full-width" id="modalTabs" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div role="tabpanel">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="info-tab">
+                <a href="#infoTab" role="tab" data-toggle="tab" class="active nav-tab-infoTab">Info</a>
+              </li>
+              <li role="presentation" class="map-tab">
+                <a href="#mapTab" role="tab" data-toggle="tab" class="nav-tab-mapTab">Map</a>
+              </li>
+              <li class="gallery-tab">
+                <a href="#galleryTab" role="tab" data-toggle="tab" class="nav-tab-galleryTab">Gallery</a>
+              </li>
+              <!-- <li role="presentation" class="reviews-tab">
+            <a href="#reviewsList" aria-controls="browseTab" role="tab" data-toggle="tab">Reviews</a>
+          </li> -->
+              <!-- <a href="#" data-dismiss="modal" aria-label="Close" style="color: #a54b89;" class="">Close <span
+          aria-hidden="true">&times;</span></a> -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="icon-close"></i>
+              </button>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <!-- Tab Info -->
+              <div role="tabpanel" class="tab-pane active info-tab" id="infoTab">
+                <div class="large-image d-none d-lg-block">
+                  <img src="images/img-room.jpg" alt="img" />
+                </div>
+                <div class="row wrap-all">
+                  <div class="col-12 col-lg-5 hotel-info-wrapper">
+                    <img data-src="/images/img-hotel-info.jpg" alt="" class="lazyload d-none d-lg-block hotel-info-img">
+                    <div class="modal-heading">
+                      <h2>CAVE HOTEL & GOLF RESORT BOUGHTON</h2>
+                    </div>
+                    <p class="checkin-time">CHECK IN : 3PM</p>
+                    <p class="checkout-time">CHECK out : 3PM</p>
+                    <div class="tab-property-details">
+                      <div class="row">
+                        <div class="col-1"><img src="/images/icons/p3/address-pin.svg"></div>
+                        <div class="col-10">
+                          <p>Cave Hotel & Golf Resort, Brickield Lane, Boughton, Nr Canterbury, Kent ME13 9AJ</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-1"><img src="/images/icons/p3/icon-contact-phone.svg"></div>
+                        <div class="col-10">
+                          <p>+44 (0) 1227 913063</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-1"><img src="/images/icons/p3/icon-contact-email.svg"></div>
+                        <div class="col-10">
+                          <p>enquiries@cavehotels.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-7">
+                    <div class="description-2">
+                      <p>Cave Hotel & Golf Resort ofers et que nam porttitor blandit accumsan. Ut vel dictum sem, a
+                        pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
+                        Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut
+                        ipsum.
+                      </p>
+                      <p>Cave Hotel & Golf Resort ofers et que nam porttitor blandit accumsan. Ut vel dictum sem, a
+                        pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
+                        Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut
+                        ipsum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div role="tabpanel" class="tab-pane gallery-tab" id="galleryTab">
+                <div class="gallery-slider slider">
+                  <img data-src="/images/img-room.jpg" class="lazyload" alt="">
+                  <img data-src="/images/img-room2.jpg" class="lazyload" alt="">
+                  <img data-src="/images/img-room3.jpg" class="lazyload" alt="">
+                  <img data-src="/images/img-room.jpg" class="lazyload" alt="">
+                  <img data-src="/images/iimg-room2.jpg" class="lazyload" alt="">
+                  <img data-src="/images/img-room3.jpg" class="lazyload" alt="">
+
+                </div>
+                <div class="slider slider-nav">
+                  <img data-src="/images/img-room.jpg" class="lazyload" alt="">
+                  <img data-src="/images/img-room2.jpg" class="lazyload" alt="">
+                  <img data-src="/images/img-room3.jpg" class="lazyload" alt="">
+                  <img data-src="/images/img-room2.jpg" class="lazyload" alt="">
+                  <img data-src="/images/img-room3.jpg" class="lazyload" alt="">
+                  <img data-src="/images/img-room.jpg" class="lazyload" alt="">
+                  <img data-src="/images/img-room2.jpg" class="lazyload" alt="">
+                  <img data-src="/images/img-room3.jpg" class="lazyload" alt="">
+
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="mapTab">
+                <div class="tab-map-cover">
+                  <div id="googleMap" style="width: 100%; height: 400px; position: relative; overflow: hidden;"></div>
+                  <button class="btn btn-primary w-100 d-block d-lg-none">Open in Google Maps</button>
+                  <!-- <section class="directions-tabs">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="custom-tab">
+                      <div class="custom-tab-head">
+                        <h4>Getting here from the airport <i class="fa fa-angle-down" style="float: right"></i></h4>
+                      </div>
+                      <div class="custom-tab-body">
+                        <p>Best Option: Take the 747 Bus from Dublin Airport to the City Centre. The 747 Bus stops on
+                          Lower O’Connell Street which is 4 minute walk, along Henry Street then onto Jervis
+                          Apartments Dublin City.
+                          <br>
+                          The bus departs from outside the arrivals hall every 15 minutes. Tickets are €7 per adult
+                          and the journey can take between 20 to 30 minutes depending on traffic.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="custom-tab">
+                      <div class="custom-tab-head">
+                        <h4>Getting here from the airport <i class="fa fa-angle-down" style="float: right"></i></h4>
+                      </div>
+                      <div class="custom-tab-body">
+                        <p>Best Option: Take the 747 Bus from Dublin Airport to the City Centre. The 747 Bus stops on
+                          Lower O’Connell Street which is 4 minute walk, along Henry Street then onto Jervis
+                          Apartments Dublin City.
+                          <br>
+                          The bus departs from outside the arrivals hall every 15 minutes. Tickets are €7 per adult
+                          and the journey can take between 20 to 30 minutes depending on traffic.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="custom-tab">
+                      <div class="custom-tab-head">
+                        <h4>Getting here from the airport <i class="fa fa-angle-down" style="float: right"></i></h4>
+                      </div>
+                      <div class="custom-tab-body">
+                        <p>Best Option: Take the 747 Bus from Dublin Airport to the City Centre. The 747 Bus stops on
+                          Lower O’Connell Street which is 4 minute walk, along Henry Street then onto Jervis
+                          Apartments Dublin City.
+                          <br>
+                          The bus departs from outside the arrivals hall every 15 minutes. Tickets are €7 per adult
+                          and the journey can take between 20 to 30 minutes depending on traffic.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="custom-tab">
+                      <div class="custom-tab-head">
+                        <h4>Getting here from the airport <i class="fa fa-angle-down" style="float: right"></i></h4>
+                      </div>
+                      <div class="custom-tab-body">
+                        <p>Best Option: Take the 747 Bus from Dublin Airport to the City Centre. The 747 Bus stops on
+                          Lower O’Connell Street which is 4 minute walk, along Henry Street then onto Jervis
+                          Apartments Dublin City.
+                          <br>
+                          The bus departs from outside the arrivals hall every 15 minutes. Tickets are €7 per adult
+                          and the journey can take between 20 to 30 minutes depending on traffic.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section> -->
+                </div>
+              </div>
+              <!-- <div role="tabpanel" class="tab-pane" id="reviewsList">PLUGIN</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</footer>
 
-<!-- <div id="booking-widget" class="booking-widget">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeWidget()">
-      <img src="/images/icons/p3/icon-close-light-default.svg">
-  </a>
-  <div class="widget-form">
+
+
+
+  <!-- <div id="booking-widget" class="booking-widget">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeWidget()">
+          <img src="/images/icons/p3/icon-close-light-default.svg">
+      </a>
+      <div class="widget-form">
       <form action="">
           <div class="form-group">
               <div class="booking-widget-datepicker">
@@ -703,76 +1453,79 @@
   </div>
 </div> -->
 
-<div class="d-lg-none ibe-join-mobile">
-  <div class="d-flex align-items-center justify-content-between ibe-join-mobile-btn">
-      <div class="d-flex align-items-center">
+  <!-- <div class="d-lg-none ibe-join-mobile">
+      <div class="d-flex align-items-center justify-content-between ibe-join-mobile-btn">
+        <div class="d-flex align-items-center">
           <a href="#" class="join-btn-mobile">JOIN</a>
           <p class="mb-0">To get 10% off today!</p>
-      </div>
-      <div class="pt-1">
+        </div>
+        <div class="pt-1">
           <a href="javascript:" class="ibe-join-mobile-close"><i class="icon-close"></i></a>
+        </div>
       </div>
-  </div>
-</div>
+    </div> -->
 
-    
-    <!-- JS Files -->
 
-    <!-- jQuery -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    
-    <!-- Slick -->
-    <script type="text/javascript" src="js/slick.min.js"></script>
+  <!-- JS Files -->
 
-    <!-- Multi Select -->
-    <script type="text/javascript" src="js/popper.js"></script>
-    <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+  <!-- jQuery -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <!-- Prefixfree -->
-    <script type="text/javascript" src="js/prefixfree.min.js"></script>
-    <script type="text/javascript" src="js/prefixfree.dynamic-dom.min.js"></script>
-    <script type="text/javascript" src="js/prefixfree.viewport-units.js"></script>
-    <script type="text/javascript" src="js/prefixfree.jquery.js"></script>
+  <!-- Slick -->
+  <script type="text/javascript" src="js/slick.min.js"></script>
 
-    <!-- Lazyload -->
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
+  <!-- Multi Select -->
+  <script type="text/javascript" src="js/popper.js"></script>
+  <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
+  <!-- Prefixfree -->
+  <script type="text/javascript" src="js/prefixfree.min.js"></script>
+  <script type="text/javascript" src="js/prefixfree.dynamic-dom.min.js"></script>
+  <script type="text/javascript" src="js/prefixfree.viewport-units.js"></script>
+  <script type="text/javascript" src="js/prefixfree.jquery.js"></script>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <!-- <script src="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/no-dep/vue-airbnb-style-datepicker.min.js"></script> -->
+  <!-- Lazyload -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
 
-    <!-- Vue Datepicker -->
-    
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- <script src="https://unpkg.com/vue-airbnb-style-datepicker@2.1.0/dist/no-dep/vue-airbnb-style-datepicker.min.js"></script> -->
+
+  <!-- Vue Datepicker -->
+
 
   <script>
     new Vue({
-        el: '#guest-widget',
-        data: {
-            rooms: [{"id":1,"quantity":1,"name":"Room"}],
-            people: [{"id":1,"quantity":1,"name":"Adult"},{"id":2,"quantity":0,"name":"Children"},{"id":3,"quantity":0,"name":"Infant"}],
-            isHidden: true
+      el: '#guest-widget',
+      data: {
+        rooms: [{ "id": 1, "quantity": 1, "name": "Room" }],
+        people: [{ "id": 1, "quantity": 1, "name": "Adult" }, { "id": 2, "quantity": 0, "name": "Children" }, { "id": 3, "quantity": 0, "name": "Infant" }],
+        isHidden: true
+      },
+      computed: {
+        totalRooms() {
+          return this.rooms.reduce((sum, room) => {
+            return sum + room.quantity
+          }, 0)
         },
-        computed: {
-            totalRooms () {
-                return this.rooms.reduce((sum, room) => {
-                    return sum + room.quantity
-                }, 0)
-            },
-            totalPeople () {
-                return this.people.reduce((sum, people) => {
-                    return sum + people.quantity
-                }, 0)
-            }
+        totalPeople() {
+          return this.people.reduce((sum, people) => {
+            return sum + people.quantity
+          }, 0)
         }
+      }
     })
   </script>
-    
-    <!-- Custom -->
-    <script src="js/p3core.js"></script>
-    <script src="js/custom.js"></script>
+
+  <!-- Custom -->
+  <script src="js/p3core.js"></script>
+  <script src="js/custom.js"></script>
 
 </body>
+
 </html>

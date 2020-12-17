@@ -1,7 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-    <g fill="none" fill-rule="evenodd">
-        <g fill="#1B315F" fill-rule="nonzero">
-            <path d="M4.335 2.342c.412-.42 1.06-.453 1.508-.097l.108.097 5.714 5.833c.412.42.444 1.082.095 1.54l-.095.11-5.714 5.833c-.446.456-1.17.456-1.616 0-.412-.42-.444-1.082-.095-1.54l.095-.11L9.24 9 4.335 3.992c-.412-.42-.444-1.083-.095-1.54l.095-.11z" transform="rotate(90 8 9)"/>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #b7996d } 
+	</style>
+	<g id="Layer">
+		<g id="Layer">
+			<g id="Layer">
+				<g id="Layer">
+					<path id="Layer" class="shp0" d="M5.69 6.02L4.98 6.73L8.43 10.17C8.6 10.35 8.87 10.37 9.07 10.23L12.64 6.73L11.94 6.02L8.79 9.12L5.69 6.02Z" />
+				</g>
+			</g>
+		</g>
+	</g>
 </svg>

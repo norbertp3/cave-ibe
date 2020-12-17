@@ -1,5 +1,5 @@
 header {
-    background: #1b315f;
+    background: #000;
     @include mQ(992px) {
         padding: 20px 0;
     }
@@ -87,7 +87,7 @@ header {
     }
 }
 .mobile-logo {
-    max-width: 162px;
+    max-width: 117px;
 }
 .desktop-nav {
     &__top {
@@ -141,16 +141,19 @@ a.desktop-nav__button {
 .navbar-nav .nav-link {
     color:#fff;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 300;
     margin-right: 20px;
     text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.5);
     &:hover {
-        color: #ffd75c;
+        color: #fff;
     }
     @include mQ(1400px) {
-        font-size: 16px;
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: 300;
         margin-right: 40px;
+        
     }
 }
 .dropdown-menu {
