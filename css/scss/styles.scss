@@ -267,8 +267,8 @@ text-transform: uppercase;
   font-size: 14px;
 }
  input[type=checkbox]:checked + span.custom-check:after {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
 }
  span.custom-check {
   width: 14px;
@@ -340,10 +340,10 @@ text-transform: uppercase;
 }
 }
 /* booking widget */
-.form-group input, .form-group textarea {
-  background-color: #474344 !important; 
-  color: #fff !important;
-}
+// .form-group input, .form-group textarea {
+//   background-color: #474344 !important; 
+//   color: #fff !important;
+// }
 .booking-widget-modal .widget-room-label {
   font-size: 14px;
   color: #fff;
@@ -708,7 +708,6 @@ header {
 }
 .section-heading h1 {
   text-align: center;
-  margin-top: 100px;
   font-family: trajanpro;
   font-size: 20px;
   letter-spacing:1.6px;
@@ -716,6 +715,7 @@ header {
   line-height: 1.7;
   @include mQ(992px) {
     font-size: 30px;
+    margin-top: 100px;
   }
 }
 @media (min-width: 1200px) {
@@ -965,12 +965,14 @@ header {
     background: rgba(51, 51, 49, 0.7);
     padding: 1px 1px 0 5px;
 }
-
 .rates-wrapper h3 a {
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
-
+}
+.form-control:disabled, .form-control[readonly] {
+  background-color: #474344;
+  border: 1px solid #474344;
 }
 
 
@@ -1055,6 +1057,9 @@ button {
     margin-bottom: 5px;
 }
 }
+.booking-summary-data .booking-summary-room-name .icon-expand {
+  top: 6px;
+}
 .booking-summary-total-wrapper .booking-data h2:last-child {
   padding-left: 10px;
 }
@@ -1079,9 +1084,9 @@ button {
 }
 .booking-summary-room-name {
   margin-bottom: 0;
-  padding: 7px 0 7px 7px;
+  padding: 15px 0 14px 7px;
   .icon-expand {
-    top: 6px;
+    top: 10px;
   }
 }
 .message{
@@ -1135,6 +1140,7 @@ button {
 @include mQ(992px) {
   #addOnsForm {
     width: 730px;
+    clear: both;
   }
 }
 .addon-with-checkboxes-wrapper img {
@@ -1162,6 +1168,9 @@ button {
 }
 .addon-buttons {
   text-align: right;
+  button {
+    line-height: 20px;
+  }
 }
 .addon-content select,
 .addon-buttons button {
@@ -1210,10 +1219,30 @@ button {
 .addon-with-checkboxes-wrapper .addon-content h3 {
   padding-left: 30px;
 }
-.booking-summary-heading h2 {
+.booking-summary-heading {
+  background-color: #474344;
+  padding: 10px;
+  @include mQ (992px) {
+    padding: 30px 30px 20px 30px;
+    background: #3a3738;
+  }
+ h2 {
 padding-right: 10px;
+font-size: 15px;
+letter-spacing: 2px;
 }
-
+ span {
+  padding-left: 5px;
+  font-size: 13px;
+  font-weight: 100;
+}
+}
+@include mQ(992px) {
+.addon-heading-row {
+  float: right !important;
+  margin-right: -20px;
+}
+}
 
 /* footer */
 .footer__wraper  .column {

@@ -1132,7 +1132,7 @@ span.custom-check, span.custom-radio {
   background-color: #3a3738;
   color: #fff;
   font-size: 14px;
-  border: solid 1px #474344;
+  border: solid 1px rgba(255, 255, 255, 0.3);
   height: 50px;
   font-family: "museosans";
   font-weight: 300;
@@ -1178,8 +1178,8 @@ input[type=checkbox]:checked + span.custom-check:after {
   position: absolute;
   left: 0;
   top: 0;
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
 }
 
 input[type=radio]:checked + span.custom-check:after {
@@ -1213,7 +1213,7 @@ input[type=radio]:checked + span.custom-check:after {
   background-color: #3a3738;
   color: #fff;
   font-size: 14px;
-  border: solid 1px #474344;
+  border: solid 1px rgba(255, 255, 255, 0.3);
   height: 50px;
   font-family: "museosans";
   font-weight: 300;
@@ -1241,7 +1241,7 @@ label.validationError {
 
 #mobile-hotel-info {
   background: #3a3738;
-  padding: 14px 0;
+  padding: 16px 0;
 }
 
 #mobile-hotel-info a {
@@ -2340,7 +2340,7 @@ p.booking-summary-room-price {
   background-color: #3a3738;
   color: #fff;
   font-size: 14px;
-  border: solid 1px #474344;
+  border: solid 1px rgba(255, 255, 255, 0.3);
   height: 50px;
   font-family: "museosans";
   font-weight: 300;
@@ -2457,7 +2457,7 @@ p.booking-summary-room-price {
   background-color: #3a3738;
   color: #fff;
   font-size: 14px;
-  border: solid 1px #474344;
+  border: solid 1px rgba(255, 255, 255, 0.3);
   height: 50px;
   font-family: "museosans";
   font-weight: 300;
@@ -2749,10 +2749,6 @@ p.booking-summary-room-price {
   padding: 0 10px;
 }
 
-.conf-card .booking-summary-rooms-section .booking-summary-room-row {
-  padding: 5px 0;
-}
-
 .conf-card .booking-summary-rooms-section .booking-summary-room-row-expanded {
   display: none;
   background: #3a3738;
@@ -2780,7 +2776,7 @@ p.booking-summary-room-price {
   background-position: center;
   background-size: cover;
   position: absolute;
-  top: 2px;
+  top: 10px;
   right: 3px;
 }
 
@@ -3528,7 +3524,7 @@ p.booking-summary-room-price {
   background-color: #3a3738;
   color: #fff;
   font-size: 14px;
-  border: solid 1px #474344;
+  border: solid 1px rgba(255, 255, 255, 0.3);
   height: 50px;
   font-family: "museosans";
   font-weight: 300;
@@ -3823,7 +3819,7 @@ p.booking-summary-room-price {
   background-color: #3a3738;
   color: #fff;
   font-size: 14px;
-  border: solid 1px #474344;
+  border: solid 1px rgba(255, 255, 255, 0.3);
   height: 50px;
   font-family: "museosans";
   font-weight: 300;
@@ -4044,7 +4040,7 @@ p.booking-summary-room-price {
   background-color: #3a3738;
   color: #fff;
   font-size: 14px;
-  border: solid 1px #474344;
+  border: solid 1px rgba(255, 255, 255, 0.3);
   height: 50px;
   font-family: "museosans";
   font-weight: 300;
@@ -4989,7 +4985,7 @@ a.ibe-join-mobile-close .icon-close:hover {
   background-color: #3a3738;
   color: #fff;
   font-size: 14px;
-  border: solid 1px #474344;
+  border: solid 1px rgba(255, 255, 255, 0.3);
   height: 50px;
   font-family: "museosans";
   font-weight: 300;
@@ -5617,8 +5613,8 @@ footer {
 }
 
 .filters-modal input[type=checkbox]:checked + span.custom-check:after {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
 }
 
 .filters-modal span.custom-check {
@@ -5699,11 +5695,6 @@ footer {
 }
 
 /* booking widget */
-.form-group input, .form-group textarea {
-  background-color: #474344 !important;
-  color: #fff !important;
-}
-
 .booking-widget-modal .widget-room-label {
   font-size: 14px;
   color: #fff;
@@ -6138,7 +6129,6 @@ header {
 
 .section-heading h1 {
   text-align: center;
-  margin-top: 100px;
   font-family: trajanpro;
   font-size: 20px;
   letter-spacing: 1.6px;
@@ -6149,6 +6139,7 @@ header {
 @media screen and (min-width: 992px) {
   .section-heading h1 {
     font-size: 30px;
+    margin-top: 100px;
   }
 }
 
@@ -6453,6 +6444,11 @@ header {
   letter-spacing: 1px;
 }
 
+.form-control:disabled, .form-control[readonly] {
+  background-color: #474344;
+  border: 1px solid #474344;
+}
+
 /* confirmation page */
 @media screen and (min-width: 992px) {
   .conf-card {
@@ -6544,6 +6540,10 @@ header {
   }
 }
 
+.booking-summary-data .booking-summary-room-name .icon-expand {
+  top: 6px;
+}
+
 .booking-summary-total-wrapper .booking-data h2:last-child {
   padding-left: 10px;
 }
@@ -6575,11 +6575,11 @@ header {
 
 .booking-summary-room-name {
   margin-bottom: 0;
-  padding: 7px 0 7px 7px;
+  padding: 15px 0 14px 7px;
 }
 
 .booking-summary-room-name .icon-expand {
-  top: 6px;
+  top: 10px;
 }
 
 .message {
@@ -6638,6 +6638,7 @@ header {
 @media screen and (min-width: 992px) {
   #addOnsForm {
     width: 730px;
+    clear: both;
   }
 }
 
@@ -6673,6 +6674,10 @@ header {
 
 .addon-buttons {
   text-align: right;
+}
+
+.addon-buttons button {
+  line-height: 20px;
 }
 
 .addon-content select,
@@ -6732,8 +6737,35 @@ header {
   padding-left: 30px;
 }
 
+.booking-summary-heading {
+  background-color: #474344;
+  padding: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .booking-summary-heading {
+    padding: 30px 30px 20px 30px;
+    background: #3a3738;
+  }
+}
+
 .booking-summary-heading h2 {
   padding-right: 10px;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.booking-summary-heading span {
+  padding-left: 5px;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 992px) {
+  .addon-heading-row {
+    float: right !important;
+    margin-right: -20px;
+  }
 }
 
 /* footer */
