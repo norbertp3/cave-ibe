@@ -49,24 +49,41 @@
             <option value="USD">USD</option>
           </select>
         </form>
-        <div class="hamburger">
+        <div class="hamburger" onclick="openNav()">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </div>
       </div>
     </nav>
-    <div class="mobile-nav__collapse">
-      <a href="#" class="mobile-nav__link mobile-nav__link--dropdown">Gallery</a>
-      <div class="mobile-nav__sub-nav">
-        <a href="#" class="mobile-nav__sub-link">NEST</a>
-        <a href="#" class="mobile-nav__sub-link">NEST</a>
-        <a href="#" class="mobile-nav__sub-link">NEST</a>
+    <div id="mySidenav" class="sidenav">
+      <div class="main-links">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Coronavirus FAQs</a>
+        <a href="#">Christmas At Cave</a>
+        <a href="#">Offers At Cave</a>
+        <a href="#">Rooms & Rates</a>
+        <button class="dropdown-btn">Golf
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <a href="#">Firepit Restaurant</a>
+        <a href="#">Cave Bar & Dining On The Deck</a>
+        <a href="#">Pool & Gym</a>
+        <a href="#">Meetings & Conferences</a>
+        <a href="#">Weddings</a>
+        <a href="#">Gift Vouchers</a>
+        <a href="#">Contact Us</a>
       </div>
-      <a href="#" class="mobile-nav__link">Gallery</a>
-      <a href="#" class="mobile-nav__link mobile-nav__link--dropdown">Gallery</a>
-      <div class="mobile-nav__sub-nav">
-        <a href="#" class="mobile-nav__sub-link">NEST</a>
+      <div class="bottom-links">
+        <a href="#">Events</a>
+        <a href="#">In The Press</a>
+        <a href="#">Join the team</a>
       </div>
     </div>
     <nav class="desktop-nav d-none d-lg-block">

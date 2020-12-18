@@ -948,8 +948,8 @@ a:hover {
   margin-left: 30px;
   font-family: "museosans";
   background-color: inherit;
-  background-image: url(/images/icons/p3/dropdown-arrows.svg);
-  background-size: 10px;
+  background-image: url(/images/icons/p3/icon-form-dropdown.svg);
+  background-size: 13px;
 }
 
 .btn-primary {
@@ -5366,8 +5366,34 @@ footer {
 
 .sidenav .main-links,
 .sidenav .bottom-links {
-  padding: 0 110px;
-  width: 550px;
+  width: 100%;
+  min-width: 320px;
+}
+
+@media screen and (min-width: 992px) {
+  .sidenav .main-links,
+  .sidenav .bottom-links {
+    padding: 0 110px;
+    width: 550px;
+  }
+}
+
+.hamburger {
+  margin-right: 25px;
+}
+
+.hamburger span.icon-bar {
+  background-color: #b7996d;
+}
+
+.dropdown-currency {
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .dropdown-currency {
+    margin-right: 0;
+  }
 }
 
 .sidenav .bottom-links a {
@@ -6108,7 +6134,7 @@ header {
   padding: 23px 20px;
   background: #b7996d;
   color: #fff;
-  margin: 50px 0 -65px 0;
+  margin: 50px 0 0 0;
 }
 
 .notification img {
@@ -6578,10 +6604,6 @@ header {
   padding: 15px 0 14px 7px;
 }
 
-.booking-summary-room-name .icon-expand {
-  top: 10px;
-}
-
 .message {
   background: #3a3738;
   padding: 10px 15px;
@@ -6846,5 +6868,9 @@ header {
 /* calendar date */
 .calendar-date {
   padding: 0 10px;
+}
+
+.calendar .justify-content-end {
+  justify-content: space-between !important;
 }
 /*# sourceMappingURL=styles.css.map */

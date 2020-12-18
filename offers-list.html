@@ -37,43 +37,122 @@
     <li><a href="offer-landing.html">offer</a></li>
   </ul>
   <header>
-    <div class="container">
-      <nav class="mobile-nav d-lg-none">
-        <img src="/images/logo.png" alt="" class="mobile-logo">
-        <div class="mobile-nav__right-side">
-          <a href="#" class="mobile-nav__offers">Offers</a>
-          <div class="hamburger">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </div>
-        </div>
-      </nav>
-      <div class="mobile-nav__collapse">
-        <a href="#" class="mobile-nav__link mobile-nav__link--dropdown">Gallery</a>
-        <div class="mobile-nav__sub-nav">
-          <a href="#" class="mobile-nav__sub-link">NEST</a>
-          <a href="#" class="mobile-nav__sub-link">NEST</a>
-          <a href="#" class="mobile-nav__sub-link">NEST</a>
-        </div>
-        <a href="#" class="mobile-nav__link">Gallery</a>
-        <a href="#" class="mobile-nav__link mobile-nav__link--dropdown">Gallery</a>
-        <div class="mobile-nav__sub-nav">
-          <a href="#" class="mobile-nav__sub-link">NEST</a>
+    <nav class="mobile-nav d-lg-none">
+      <img src="/images/cave_mobile_logo.svg" alt="" class="mobile-logo">
+      <div class="mobile-nav__right-side">
+        <form action="" method="get" id="currencyConverter" class="dropdown-currency">
+          <input type="hidden" name="redirect">
+          <select id="currency-options" class="ml-0 custom-select" name="currencyCode" onchange="">
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+          </select>
+        </form>
+        <div class="hamburger" onclick="openNav()">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </div>
       </div>
-      <nav class="desktop-nav d-none d-lg-block">
-        <div class="desktop-nav__top">
-          <img src="/images/logo.png" alt="" class="desktop-logo">
-          <div class="desktop-nav__top-links">
-            <a href="#"><i class="icon-blog"></i> Our Blog</a>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+      <div class="main-links">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Coronavirus FAQs</a>
+        <a href="#">Christmas At Cave</a>
+        <a href="#">Offers At Cave</a>
+        <a href="#">Rooms & Rates</a>
+        <button class="dropdown-btn">Golf
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <a href="#">Firepit Restaurant</a>
+        <a href="#">Cave Bar & Dining On The Deck</a>
+        <a href="#">Pool & Gym</a>
+        <a href="#">Meetings & Conferences</a>
+        <a href="#">Weddings</a>
+        <a href="#">Gift Vouchers</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="bottom-links">
+        <a href="#">Events</a>
+        <a href="#">In The Press</a>
+        <a href="#">Join the team</a>
+      </div>
+    </div>
+    <nav class="desktop-nav d-none d-lg-block">
+      <div class="desktop-nav__top">
+        <div class="sliding-buttons-container">
+          <a href="#" class="booking">Golf</a>
+          <a href="#" class="booking">Table</a>
+          <a href="#" class="booking">Room</a>
+          <a href="#" class="booking">Book now</a>
+        </div>
+        <img src="/images/cave_hotel_logo.svg" alt="" class="desktop-logo">
+        <p class="phone-number">
+          <a href="tel:01227752277"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        </p>
+        <div class="desktop-nav__top-links">
+          <a href="#">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <img src="images/icons/p3/icon-parler.svg" alt="parler icon" />
+          </a>
+          <!-- <a href="#"><i class="icon-blog"></i> Our Blog</a>
             <a href="#"><i class="icon-contact"></i> Contact Us</a>
-            <a href="#"><i class="icon-gifts"></i> Gift Vouvher</a>
+            <a href="#"><i class="icon-gifts"></i> Gift Vouvher</a> -->
+          <div class="bars" onclick="openNav()">
+            <i class="fa fa-bars"></i>
           </div>
         </div>
+        <div id="mySidenav" class="sidenav">
+          <div class="main-links">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Coronavirus FAQs</a>
+            <a href="#">Christmas At Cave</a>
+            <a href="#">Offers At Cave</a>
+            <a href="#">Rooms & Rates</a>
+            <button class="dropdown-btn">Golf
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <a href="#">Firepit Restaurant</a>
+            <a href="#">Cave Bar & Dining On The Deck</a>
+            <a href="#">Pool & Gym</a>
+            <a href="#">Meetings & Conferences</a>
+            <a href="#">Weddings</a>
+            <a href="#">Gift Vouchers</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="bottom-links">
+            <a href="#">Events</a>
+            <a href="#">In The Press</a>
+            <a href="#">Join the team</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="container">
         <div class="dektop-nav__bottom">
           <div class="navbar navbar-expand-lg">
-            <a href="#" class="desktop-nav__home"><img src="/images/icons/p3/home-icon.svg" alt=""></a>
+            <!-- <a href="#" class="desktop-nav__home"><img src="/images/icons/p3/home-icon.svg" alt=""></a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -81,12 +160,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#modalTabs">Hotel Info <span
+                      class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">Map</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reviews</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Dropdown
@@ -95,13 +181,21 @@
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                   </div>
-                </li>
+                </li> -->
               </ul>
-              <a href="#" class="desktop-nav__button">Special Offers</a>
+              <!-- <a href="#" class="desktop-nav__button">Special Offers</a> -->
+              <form action="" method="get" id="currencyConverter" class="dropdown-currency">
+                <input type="hidden" name="redirect">
+                <select id="currency-options" class="ml-0 custom-select" name="currencyCode" onchange="">
+                  <option value="GBP">GBP</option>
+                  <option value="EUR">EUR</option>
+                  <option value="USD">USD</option>
+                </select>
+              </form>
             </div>
           </div>
         </div>
-      </nav>
+    </nav>
     </div>
   </header>
 

@@ -28,12 +28,20 @@ $(function () {
 });
 
 //navigation
-function openNav() {
-  document.getElementById("mySidenav").style.width = "550px";
+if ($(window).width() < 1200) {
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "550px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
 }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+if ($(window).width() < 991) {
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
 }
 
 /* dropdown menu */

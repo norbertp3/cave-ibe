@@ -47,8 +47,24 @@
 }
 .sidenav .main-links,
 .sidenav .bottom-links {
+  width: 100%;
+  min-width: 320px;
+  @include mQ(992px) {
   padding: 0 110px;
   width: 550px;
+}
+}
+.hamburger {
+  margin-right: 25px;
+  span.icon-bar {
+    background-color: #b7996d;
+  }
+}
+.dropdown-currency {
+  margin-right: 20px;
+  @include mQ (992px) {
+    margin-right: 0;
+  }
 }
 .sidenav .bottom-links a {
     font-size: 14px;
@@ -691,7 +707,7 @@ header {
   padding: 23px 20px;
   background: #b7996d;
   color: #fff;
-  margin: 50px 0 -65px 0;
+  margin: 50px 0 0 0;
   img {
     float: left;
     margin-right: 20px;
@@ -1085,9 +1101,6 @@ button {
 .booking-summary-room-name {
   margin-bottom: 0;
   padding: 15px 0 14px 7px;
-  .icon-expand {
-    top: 10px;
-  }
 }
 .message{
   background: #3a3738;
@@ -1313,9 +1326,9 @@ letter-spacing: 2px;
 padding: 0 10px;
 }
 
-// .justify-content-end {
-//   justify-content: space-between !important;
-// }
+.calendar .justify-content-end {
+  justify-content: space-between !important;
+}
 
 // Mobile Hamburger
 
