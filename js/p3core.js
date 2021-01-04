@@ -30,12 +30,12 @@ $('.trigger-rotate').click(function () {
 
 // View Rates P3B
 $('.view-rates-btn').click(function () {
-  // var rotate = $('<i class="icon-chevron-down"></i>').addClass('rotate180');
-  $(this).text() == 'Hide Rates' ? 'View Rates' : 'Hide Rates';
   $(this).closest('.room-with-rates-wrapper').find('.rates-wrapper').slideToggle();
-  // $("html, body").animate({
-  //   scrollTop: $(this).closest('.room-with-rates-wrapper').find('.room-wrapper').offset().top - 10
-  // }, 'slow');
+  // var btnTxt = $('.view-rates-btn').text();
+  // $(this).text($(this).text() == 'hide rates' ? 'show rates' : 'hide rates');
+  $("html, body").animate({
+    scrollTop: $(this).closest('.room-with-rates-wrapper').find('.room-wrapper').offset().top - 10
+  }, 'slow');
 });
 
 

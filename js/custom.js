@@ -19,7 +19,8 @@ function noScroll() {
 //show/hide unavailable rooms
 $('.trigger-availability').on('click', function () {
   $('.unavailable-rooms').slideToggle(1000);
-
+  var btnTxt = $('.trigger-availability').text();
+  $(this).text($(this).text() == 'show unavailable rooms' ? 'hide unavailable rooms' : 'show unavailable rooms');
 });
 
 
@@ -51,7 +52,6 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
-
 $('.desktop-slider').slick({
   dots: true,
   infinite: true,

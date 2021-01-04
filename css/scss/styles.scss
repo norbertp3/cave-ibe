@@ -65,6 +65,7 @@
 }
 .dropdown-currency {
   margin-right: 20px;
+  background-color: #000;
   @include mQ (992px) {
     margin-right: -16px;
   }
@@ -385,7 +386,8 @@ text-transform: uppercase;
   display: block;
   margin-bottom: 10px;
   text-transform: uppercase;
-  font-weight: 100
+  font-weight: 100;
+  padding: 10px 0 4px;
 }
 .widget-wrapper button {
   text-transform: capitalize;
@@ -1605,10 +1607,20 @@ input {
   margin-bottom: 20px;
 }
   float: none;
+  text-align: left;
+  margin: 5px 0 10px;
+  
+  font-weight: 500;
+  .promo-code-link {
+    font-size: 12px !important;
+  }
 }
 
-.booking-widget-modal select {
-  background-image: url("images/icons/p3/icon-form-people.svg") !important;
+.booking-widget-modal .bed select {
+  background-image: url(/images/icons/p3/icon-form-rooms.svg) !important;
+}
+.booking-widget-modal .people select {
+  background-image: url(/images/icons/p3/icon-form-people.svg) !important;
 }
 .desktop-slider {
   visibility: hidden;
@@ -1616,3 +1628,19 @@ input {
  .desktop-slider.slick-initialized {
   visibility: visible;
 }
+
+
+// .view-rates-btn:after {
+//   content: "";
+//   background: url(/images/icons/p3/icon-btn-primary-down.svg) no-repeat;
+//   background-size: 100%;
+//   width: 16px;
+//   height: 16px;
+//   display: inline-block;
+//   position: relative;
+//   vertical-align: middle;
+//   top: -1px;
+//   margin-left: 8px;
+//   -webkit-transition: all 0.3s ease-in-out;
+//   transition: all 0.3s ease-in-out;
+// }

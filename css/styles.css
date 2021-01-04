@@ -4978,10 +4978,6 @@ a.ibe-join-mobile-close .icon-close:hover {
   max-width: 355px !important;
 }
 
-.booking-widget-modal .widget-wrapper {
-  margin-top: 50px;
-}
-
 .booking-widget-modal .widget-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -5402,6 +5398,7 @@ footer {
 
 .dropdown-currency {
   margin-right: 20px;
+  background-color: #000;
 }
 
 @media screen and (min-width: 992px) {
@@ -5768,6 +5765,7 @@ footer {
   margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 100;
+  padding: 10px 0 4px;
 }
 
 .widget-wrapper button {
@@ -7191,6 +7189,9 @@ header {
 
 .widget-wrapper .promo-code {
   float: none;
+  text-align: left;
+  margin: 5px 0 10px;
+  font-weight: 500;
 }
 
 .widget-wrapper .promo-code input {
@@ -7198,8 +7199,16 @@ header {
   margin-bottom: 20px;
 }
 
-.booking-widget-modal select {
-  background-image: url("images/icons/p3/icon-form-people.svg") !important;
+.widget-wrapper .promo-code .promo-code-link {
+  font-size: 12px !important;
+}
+
+.booking-widget-modal .bed select {
+  background-image: url(/images/icons/p3/icon-form-rooms.svg) !important;
+}
+
+.booking-widget-modal .people select {
+  background-image: url(/images/icons/p3/icon-form-people.svg) !important;
 }
 
 .desktop-slider {
