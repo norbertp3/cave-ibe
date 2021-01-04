@@ -290,7 +290,7 @@
             <h2>Enhance Your Stay</h2>
             <span>(Room 1 of 2)</span>
           </div> -->
-          <a href="#" class="btn btn-primary skip-btn loading-spinner">SKIP THIS STEP</a>
+          <a href="#" class="btn btn-primary d-block d-lg-none skip-btn loading-spinner">SKIP THIS STEP</a>
         </div>
         <!-- END Addons Heading -->
 
@@ -327,14 +327,17 @@
             <img data-src="/images/addn-image.jpg" alt="addon img" class=" lazyload">
             <div class="row addon-content">
               <div class="col-12">
-                <h3>CHAMPAGNE IN ROOM</h3>
-                <p class="price">£42 Per Room</p>
+                <h3><a href="#">CHAMPAGNE IN ROOM</a></h3>
+                <p class="price d-none d-lg-block">£42 Per Room</p>
                 <p class="d-none d-lg-block addon-info">Add a chilled bottle of Baron Fuente Brut Reserve Champagne to
                   your room
                 </p>
                 <a href="#"><i class="icon-info ml-1 d-lg-none"></i></a>
               </div>
-              <div class="col-12 addon-buttons"><button class="btn btn-primary">added</button></div>
+              <div class="col-12 addon-buttons">
+                <p class="price d-block d-lg-none">£42 Per Room</p>
+                <button class="btn btn-primary single-btn">added</button>
+              </div>
               <!-- <div class="col-12 col-lg-3 addon-price mb-3 my-lg-auto d-flex d-lg-block align-items-end">
                 <h4 class="price-currency-decimal"><span>£ </span>50<span>.00</span></h4>
                 <span class="ml-2 ml-lg-0">at £12.00 per person</span>
@@ -362,14 +365,17 @@
             <img data-src="/images/addn-image1.jpg" alt="addon img" class="lazyload">
             <div class="row addon-content">
               <div class="col-12">
-                <h3>DOG FACILITIES PACKAGE</h3>
-                <p class="price">£50 Per dog</p>
+                <h3><a href="#">DOG FACILITIES PACKAGE</a></h3>
+                <p class="price d-none d-lg-block">£42 Per Room</p>
                 <p class="d-none d-lg-block addon-info">Are you bringing your dog along to enjoy the experience? <a
                     href="#"><span>More Info</span></a>
                 </p>
                 <a href="#"><i class="icon-info ml-1 d-lg-none"></i></a>
               </div>
-              <div class="col-12 addon-buttons"><button class="btn btn-primary">add</button></div>
+              <div class="col-12 addon-buttons">
+                <p class="price d-block d-lg-none">£42 Per Room</p>
+                <button class="btn btn-primary single-btn">add</button>
+              </div>
             </div>
           </section>
 
@@ -377,7 +383,7 @@
             <img data-src="/images/addn-image2.jpg" alt="addon img" class="lazyload">
             <div class="row addon-content">
               <div class="col-12">
-                <h3>CHAMPAGNE IN ROOM</h3>
+                <h3><a href="#">CHAMPAGNE IN ROOM</a></h3>
                 <p class="price">£42 Per Room</p>
                 <p class="d-none d-lg-block addon-info">Add a chilled bottle of Baron Fuente Brut Reserve Champagne to
                   your room
@@ -385,8 +391,6 @@
                 <a href="#"><i class="icon-info ml-1 d-lg-none"></i></a>
               </div>
               <div class="col-12 addon-buttons">
-
-
                 <div class="form-check mr-2">
                   <div class="form-group">
                     <select class="form-control" id="exampleFormControlSelect1">
@@ -398,7 +402,7 @@
                     </select>
                   </div>
                 </div>
-                <button class="btn btn-primary">add</button>
+                <button class="btn btn-primary single-btn">add</button>
               </div>
             </div>
           </section>
@@ -463,7 +467,7 @@
           <div class="booking-summary-heading d-flex justify-content-between align-items-center">
             <div class="d-flex">
               <h2 class="d-none d-xl-block">Your Booking</h2>
-              <h2 class="d-xl-none">My booking</h2>
+              <h2 class="d-xl-none d">My booking</h2>
               <span class="d-xl-none">&pound;125</span>
             </div>
             <a href="#" class="btn btn-secondary edit-search-btn d-none d-xl-block">Edit</a>
@@ -477,7 +481,7 @@
           <div class="booking-summary-data">
             <div class="booking-summary-table devider-top-desktop ">
               <div class="booking-row">
-                <div class="booking-data d-flex justify-content-between">
+                <div class="booking-data top-padding d-flex justify-content-between">
                   <p>Check - In</p>
                   <p>Wed, 30 Nov 2019</p>
                 </div>
@@ -512,11 +516,11 @@
               <!-- START Room Details Row-->
               <div class="booking-summary-room-row d-flex trigger-rotate">
                 <!-- <img data-src="/images/summary-img-1.jpg" class="lazyload"> -->
-                <div class="booking-summary-room-heading w-100">
+                <div class="booking-summary-room-heading w-100 first-heading">
                   <p class="booking-summary-room-name d-flex justify-content-between">Family Cave Room <i
                       class="icon-expand"></i></p>
                   <!-- <p class="booking-summary-room-price">£97.50</p> -->
-                  <div class="booking-summary-room-row-expanded mb-2">
+                  <div class="booking-summary-room-row-expanded">
                     <div class="booking-row">
                       <div class="booking-data d-flex justify-content-between">
                         <p>Room Price</p>
@@ -572,7 +576,7 @@
                   <p class="booking-summary-room-name d-flex justify-content-between">Standard Twin Room</p><i
                     class="icon-expand"></i>
                   <!-- <p class="booking-summary-room-price">£97.50</p> -->
-                  <div class="booking-summary-room-row-expanded mb-2">
+                  <div class="booking-summary-room-row-expanded">
                     <div class="booking-row">
                       <div class="booking-data d-flex justify-content-between">
                         <p>Room Price</p>
@@ -613,25 +617,25 @@
               <!-- START Booking Summary Total -->
               <div class="booking-summary-total-wrapper">
                 <!-- Booking Summary Total -->
-                <div class="booking-row devider-top-desktop">
+                <div class="booking-row devider-top-desktop devider-top-mobile">
                   <div class="booking-row">
-                    <div class="booking-data d-flex justify-content-between">
+                    <div class="booking-data d-flex justify-content-between pb-2">
                       <p>Total</p>
                       <p>£167.00</p>
                     </div>
                   </div>
-                  <div class="booking-data d-flex justify-content-between">
+                  <div class=" booking-data d-flex justify-content-between pb-1">
                     <h2>Pay Now</h2>
                     <h2>£80.10</h2>
                   </div>
                 </div>
-                <div class="booking-row" style="padding-bottom: 20px;">
+                <div class="booking-row pb-2">
                   <div class="booking-data d-flex justify-content-between">
                     <p>Pay On Arrival</p>
                     <p>£0.00</p>
                   </div>
                 </div>
-                <div class="booking-row devider-top-desktop" style="padding-top: 20px;">
+                <div class="booking-row devider-top-desktop devider-top-mobile pb-4 pt-2">
                   <div class="booking-data d-flex">
                     <p>All taxes & charges included.</p>
                   </div>
@@ -644,8 +648,9 @@
               <!-- END Room Details P3B VAR LOOP -->
             </div>
           </div>
+
         </section>
-        <div class="addon-messages d-none d-lg-block">
+        <div class="addon-messages">
           <!-- End Booking Summary P3B -->
           <!-- Start Cancel Message -->
           <div class="booking-row">
@@ -657,7 +662,8 @@
           <!-- Start Cancel Message -->
           <div class="booking-row">
             <div class="booking-data d-flex">
-              <p class="message">Please ensure cancellations are made within 24 hours of booking to avoid charges.</p>
+              <p class="message">Please ensure cancellations are made within 24 hours of booking to avoid charges.
+              </p>
             </div>
           </div>
           <!-- End Cancel Message -->
@@ -676,7 +682,7 @@
             <h4 class="price-currency-decimal"><span>£</span>67<span>.50</span></h4>
           </div>
           <div class="col-12 col-lg-4 float-lg-right">
-            <button type="button" class="btn btn-primary continue-btn float-lg-right loading-spinner">Continue</button>
+            <button type="button" class="btn btn-primary continue-btn float-lg-right">Continue</button>
           </div>
         </div>
         <!-- END  Addons Total - Continue -->

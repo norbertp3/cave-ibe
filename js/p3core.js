@@ -1,8 +1,10 @@
 // Booking Summary Mobile and iPad
 if ($(window).width() < 1200) {
   $("#booking-summary").detach().insertAfter("#mobile-hotel-info");
+  $('.addon-messages').hide();
   $('.booking-summary-heading').click(function () {
     $('.booking-summary-data').slideToggle();
+    $('.addon-messages').slideToggle();
     $(this).find('.icon-expand').toggleClass("rotate180");
   });
 }
@@ -28,11 +30,15 @@ $('.trigger-rotate').click(function () {
 
 // View Rates P3B
 $('.view-rates-btn').click(function () {
+  // var rotate = $('<i class="icon-chevron-down"></i>').addClass('rotate180');
+  $(this).text() == 'Hide Rates' ? 'View Rates' : 'Hide Rates';
   $(this).closest('.room-with-rates-wrapper').find('.rates-wrapper').slideToggle();
   // $("html, body").animate({
   //   scrollTop: $(this).closest('.room-with-rates-wrapper').find('.room-wrapper').offset().top - 10
   // }, 'slow');
 });
+
+
 $('.rate-name').click(function () {
   $(this).closest('.rate-container').find('.rate-description').slideToggle();
 });

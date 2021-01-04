@@ -22,30 +22,22 @@ $('.trigger-availability').on('click', function () {
 
 });
 
-$(function () {
-  $("#datepicker1").datepicker();
-  $("#datepicker2").datepicker();
-});
 
 //navigation
-// if ($(window).width() < 1200) {
 function openNav() {
-  document.getElementById("mySidenav").style.width = "550px";
+  if ($(window).width() < 991) {
+    $("#mySidenav").css("width", "100%");
+  } else if ($(window).width() > 992) {
+    $("#mySidenav").css("width", "550px");
+  }
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  $("#mySidenav").css("width", "0");
 }
-// }
-
-// if ($(window).width() < 991) {
-//   function openNav() {
-//     document.getElementById("mySidenav").style.width = "100%";
-//   }
-// }
 
 /* dropdown menu */
-var dropdown = document.getElementsByClassName("dropdown-btn");
+var dropdown = $(".dropdown-btn");
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
@@ -69,11 +61,4 @@ $('.desktop-slider').slick({
   autoplay: true,
 });
 
-$('.unavailable-rooms-slider').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  arrows: false,
-  autoplay: true,
-});
+$('.addon-messages').detach().insertAfter('#booking-summary');

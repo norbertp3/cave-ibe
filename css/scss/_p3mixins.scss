@@ -111,7 +111,7 @@
         cursor: pointer;
         background-color: rgba(255, 255, 255, 0);
         border: solid 1px #b7996d;
-        box-shadow:inset 0px 0px 0px 1px #f0f0f0;
+        // box-shadow:inset 0px 0px 0px 1px #f0f0f0;
     }
     &:focus {
         // box-shadow:inset 0px 0px 0px 1px #f0f0f0;
@@ -127,11 +127,11 @@
     }
     &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus {
         box-shadow: none;
-        color: #fff;
+        color: #b7996d;
     }
     &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
-        border-color: #fff;
-        color: #fff;
+        border-color: #b7996d;
+        color: #b7996d;
     }
     a {
         color: #fff;
