@@ -31,8 +31,7 @@ $('.trigger-rotate').click(function () {
 // View Rates P3B
 $('.view-rates-btn').click(function () {
   $(this).closest('.room-with-rates-wrapper').find('.rates-wrapper').slideToggle();
-  // var btnTxt = $('.view-rates-btn').text();
-  // $(this).text($(this).text() == 'hide rates' ? 'show rates' : 'hide rates');
+  $(this).toggleClass('active');
   $("html, body").animate({
     scrollTop: $(this).closest('.room-with-rates-wrapper').find('.room-wrapper').offset().top - 10
   }, 'slow');

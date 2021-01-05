@@ -21,6 +21,7 @@ $('.trigger-availability').on('click', function () {
   $('.unavailable-rooms').slideToggle(1000);
   var btnTxt = $('.trigger-availability').text();
   $(this).text($(this).text() == 'show unavailable rooms' ? 'hide unavailable rooms' : 'show unavailable rooms');
+  $(this).toggleClass('active');
 });
 
 
